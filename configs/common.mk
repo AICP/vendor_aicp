@@ -32,6 +32,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
+# Installer
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
+    vendor/aokp/prebuilt/common/etc/persist.conf:system/etc/persist.conf
+
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/lib/libmicrobes_jni.so:system/lib/libmicrobes_jni.so \
     vendor/aokp/prebuilt/common/etc/resolv.conf:system/etc/resolv.conf
