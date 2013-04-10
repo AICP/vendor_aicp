@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
     LatinImeDictionaryPack \
+    mGerrit \
     Microbes \
     ROMControl \
     Superuser \
