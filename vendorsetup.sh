@@ -22,6 +22,8 @@ add_lunch_combo aokp_solana-userdebug
 add_lunch_combo aokp_spyder-userdebug
 add_lunch_combo aokp_su640-userdebug
 add_lunch_combo aokp_t0lte-userdebug
+add_lunch_combo aokp_t0lteatt-userdebug
+add_lunch_combo aokp_t0ltetmo-userdebug
 add_lunch_combo aokp_targa-userdebug
 add_lunch_combo aokp_umtsspyder-userdebug
 add_lunch_combo aokp_vibrantmtd-userdebug
