@@ -1,2 +1,2 @@
 #!/bin/sh
-LC_ALL=C date +%h-%d-%y
+LC_ALL=C date +%Y-%m-%d
