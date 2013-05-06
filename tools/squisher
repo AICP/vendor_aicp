@@ -26,6 +26,14 @@ if [ -z "$OUT" -o ! -d "$OUT" ]; then
 	exit 1
 fi
 
+# out/ dir defined elsewhere
+if [ ! -z $OUT_DIR_COMMON_BASE ]; then
+	TREE_NAME=`basename $ANDROID_BUILD_TOP`
+	OUT_DIR=$OUT_DIR_COMMON_BASE/$TREE_NAME
+else
+	OUT_DIR=$ANDROID_BUILD_TOP/out
+fi
+
 if [ "$TARGET_BUILD_TYPE" = "debug" ]; then
     OTAPACKAGE=$OUT/${TARGET_PRODUCT}_debug-ota-$TARGET_BUILD_VARIANT.$USER.zip
 elif [ "$TARGET_BUILD_VARIANT" = "userdebug" ]; then
@@ -171,7 +179,7 @@ echo -e
 echo -e $CL_CYN"Signing package..."$CL_RST
 SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
 java -Xmx1024m \
-	-jar $ANDROID_BUILD_TOP/out/host/$OUT_TARGET_HOST/framework/signapk.jar \
+	-jar $OUT_DIR/host/$OUT_TARGET_HOST/framework/signapk.jar \
 	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
 	$REPACK/update.zip $OUTFILE
 echo -e
