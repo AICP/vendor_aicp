@@ -11,3 +11,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltetmo TARGET_DEVICE=jfltetmo BUI
 
 PRODUCT_NAME := aokp_jfltetmo
 PRODUCT_DEVICE := jfltetmo
+
+#bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
