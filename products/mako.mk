@@ -4,9 +4,6 @@ $(call inherit-product, device/lge/mako/full_mako.mk)
 # Inherit AOKP common bits
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Mako Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/mako
 

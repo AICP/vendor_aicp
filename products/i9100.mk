@@ -4,9 +4,6 @@ $(call inherit-product, device/samsung/i9100/full_i9100.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # SGS2 overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/i9100
 

@@ -4,9 +4,6 @@ $(call inherit-product, device/samsung/vibrantmtd/full_vibrantmtd.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit Aries-common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/aries-common
 

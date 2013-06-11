@@ -4,9 +4,6 @@ $(call inherit-product, device/lge/su640/full_su640.mk)
 # Release name
 PRODUCT_RELEASE_NAME := OptimusLTE
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

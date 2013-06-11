@@ -1,9 +1,6 @@
 # Inherit AOSP device configuration for d2att.
 $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
-# Inherit GSM common stuff.
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

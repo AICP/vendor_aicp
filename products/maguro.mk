@@ -4,9 +4,6 @@ $(call inherit-product, device/samsung/maguro/full_maguro.mk)
 # Inherit AOKP common bits
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Tuna Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
 

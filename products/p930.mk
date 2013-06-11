@@ -4,9 +4,6 @@ $(call inherit-product, device/lge/p930/full_p930.mk)
 # Release name
 PRODUCT_RELEASE_NAME := NitroHD
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

@@ -9,11 +9,13 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/dictionaries
 PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
+    CellBroadcastReceiver \
     LatinImeDictionaryPack \
     mGerrit \
     Microbes \
     PermissionsManager \
     ROMControl \
+    Stk \
     Superuser \
     su \
     SwagPapers \
@@ -83,3 +85,7 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # common boot animation
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
+
+# World APNs
+PRODUCT_COPY_FILES += \
+    vendor/aokp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
