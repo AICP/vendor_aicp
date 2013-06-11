@@ -1,9 +1,6 @@
 $(call inherit-product, device/samsung/jfltetmo/full_jfltetmo.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
-# Inherit some common stuff.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 $(call inherit-product, vendor/aokp/configs/common_versions.mk)
 

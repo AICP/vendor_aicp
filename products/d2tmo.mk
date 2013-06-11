@@ -1,9 +1,6 @@
 # Inherit AOSP device configuration for d2tmo.
 $(call inherit-product, device/samsung/d2tmo/full_d2tmo.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

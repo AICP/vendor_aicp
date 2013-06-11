@@ -1,9 +1,6 @@
 # Inherit AOSP device configuration for jfltevzw
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
-# Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
-
 # Inherit common Verizon Wireless Perms and Lib
 $(call inherit-product, vendor/aokp/configs/vzw.mk)
 

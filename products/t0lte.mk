@@ -4,9 +4,6 @@ $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 # Release name
 PRODUCT_RELEASE_NAME := t0lte
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
