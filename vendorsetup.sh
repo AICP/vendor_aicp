@@ -28,6 +28,8 @@ add_lunch_combo aokp_maserati-userdebug
 add_lunch_combo aokp_mint-userdebug
 add_lunch_combo aokp_odin-userdebug
 add_lunch_combo aokp_p930-userdebug
+add_lunch_combo aokp_pollux-userdebug
+add_lunch_combo aokp_pollux_windy-userdebug
 add_lunch_combo aokp_solana-userdebug
 add_lunch_combo aokp_spyder-userdebug
 add_lunch_combo aokp_su640-userdebug
