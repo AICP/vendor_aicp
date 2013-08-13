@@ -2,7 +2,7 @@
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
 
 DATE = $(shell vendor/aokp/tools/getdate)
-AOKP_BRANCH=jb-mr1
+AOKP_BRANCH=jb-mr2
 
 ifneq ($(AOKP_BUILD),)
     # AOKP_BUILD=<goo version int>/<build string>
