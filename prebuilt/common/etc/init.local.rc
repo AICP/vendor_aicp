@@ -16,3 +16,5 @@ on property:service.adb.tcp.port=-1
 service sysinit /system/bin/sysinit
     user root
     oneshot
+
+import /init.superuser.rc
