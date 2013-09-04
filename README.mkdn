@@ -7,31 +7,27 @@ Download the source
 
 Please read the [AOSP building instructions](http://source.android.com/source/index.html) before proceeding.
 
-Initialize
+Initialize:
 
-    repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr1
+Init core trees without any device/kernel/vendor :
 
-Run the following to sync the source
+    $ repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr2
 
-    repo sync
+Init repo with all devices, kernels and vendors supported by AOKP :
 
-***
+    $ repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr2 -g all,kernel,device,vendor
 
-Download the kernel source
---------------------------
+Init repo only for a particular device
 
-Integrated kernel building is now **required** to compile AOKP for _all_ supported devices (even Nexus devices!)
+    $ repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr2 -g all,-notdefault,<devicename>,<vendorname>
 
-From the root of your source tree, run the following script to grab the kernel sources required
+for example, to init only trees needed to build i9300
 
-    . ./platform_manifest/manual_add_kernel_manifest.sh
+    $ repo init -u https://github.com/AOKP/platform_manifest.git -b jb-mr2 -g all,-notdefault,i9300,samsung
 
-Then run another `repo sync`
+sync repo
 
-
-**Advanced users:**
-Since the kernel trees are fairly large, you may want to sync only specific kernel trees for devices you build for, take a look at the file `.repo/local_manifests/kernel_manifest.xml`. You can edit this file to suite your needs.
-
+    $ repo sync
 
 ***
 
