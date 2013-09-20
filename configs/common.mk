@@ -9,6 +9,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/dictionaries
 PRODUCT_PACKAGES += \
     AOKPtips \
     AppWidgetPicker \
+    BluetoothExt \
     CellBroadcastReceiver \
     LatinImeDictionaryPack \
     mGerrit \
