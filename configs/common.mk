@@ -20,9 +20,7 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
-    HALO \
     VoicePlus \
-    Focal \
     Zips-WallPapers
 
 PRODUCT_PROPERTY_OVERRIDES += \
