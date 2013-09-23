@@ -63,8 +63,9 @@ PRODUCT_PACKAGES += \
     libssh \
     ssh \
     sshd \
-    sshd-config \
+    sshd_config \
     ssh-keygen \
+    start-ssh \
     sftp \
     scp
 
