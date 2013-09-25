@@ -1,3 +1,6 @@
+# Specify phone tech before including full_phone
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
+
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit device configuration

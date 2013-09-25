@@ -1,6 +1,9 @@
 # Inherit AOSP device configuration for jflteusc
 $(call inherit-product, device/samsung/jflteusc/full_jflteusc.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

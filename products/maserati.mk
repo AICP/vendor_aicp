@@ -1,6 +1,9 @@
 # Inherit device configuration for VZW Droid 4.
 $(call inherit-product, device/motorola/maserati/full_maserati.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

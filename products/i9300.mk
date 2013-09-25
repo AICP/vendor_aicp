@@ -4,6 +4,9 @@ $(call inherit-product, device/samsung/i9300/full_i9300.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_i9300
 PRODUCT_BRAND := samsung

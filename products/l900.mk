@@ -1,6 +1,9 @@
 # Inherit AOSP device configuration for l900.
 $(call inherit-product, device/samsung/l900/full_l900.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

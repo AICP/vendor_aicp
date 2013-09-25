@@ -4,6 +4,9 @@ $(call inherit-product, device/lge/vs920/full_vs920.mk)
 # Release name
 PRODUCT_RELEASE_NAME := Spectrum
 
+# Inherit CDMA common stuff
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
