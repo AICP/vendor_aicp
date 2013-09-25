@@ -4,6 +4,9 @@ $(call inherit-product, device/oppo/find5/full_find5.mk)
 # Inherit AOSP device configuration for find5
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 # boot animation
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
