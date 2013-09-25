@@ -4,6 +4,9 @@ $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 # Inherit AOKP common_tablet bits
 $(call inherit-product, vendor/aokp/configs/common_tablet.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 # Grouper Overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/grouper
 

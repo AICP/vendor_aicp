@@ -1,6 +1,9 @@
 # Inherit device configuration for VZW Droid RAZR.
 $(call inherit-product, device/motorola/spyder/full_spyder.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

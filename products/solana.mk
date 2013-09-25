@@ -1,6 +1,9 @@
 # Inherit device configuration for Droid3.
 $(call inherit-product, device/motorola/solana/full_solana.mk)
 
+# Inherit common cdma apns
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
+
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 

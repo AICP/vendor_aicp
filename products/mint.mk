@@ -4,6 +4,9 @@ $(call inherit-product, device/sony/mint/full_mint.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 # mint overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/mint
 

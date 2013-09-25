@@ -4,6 +4,9 @@ $(call inherit-product, device/motorola/umts_spyder/full_umts_spyder.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/umts_spyder
 
 # Setup device specific product configuration.

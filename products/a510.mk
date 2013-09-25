@@ -1,3 +1,6 @@
+## Specify phone tech before including full_phone
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := A510
 
