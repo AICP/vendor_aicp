@@ -1,1 +1,1 @@
-$(call inherit-product-if-exists, device/sony/pollux/aokp.mk)
+$(call inherit-product-if-exists, device/sony/pollux/aicp.mk)

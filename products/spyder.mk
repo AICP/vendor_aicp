@@ -2,15 +2,15 @@
 $(call inherit-product, device/motorola/spyder/full_spyder.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/spyder
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/spyder
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_spyder
+PRODUCT_NAME := aicp_spyder
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := spyder
 PRODUCT_DEVICE_PREFIX := cdma
@@ -34,5 +34,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_DEFAULT_REGION=US \
 
 PRODUCT_COPY_FILES +=  \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
 

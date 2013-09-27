@@ -1,18 +1,18 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := A510
 
-# Inherit some common AOKP stuff.
-$(call inherit-product, vendor/aokp/configs/common_tablet.mk)
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/acer/a510/full_a510.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := a510
-PRODUCT_NAME := aokp_a510
+PRODUCT_NAME := aicp_a510
 PRODUCT_BRAND := Acer
 PRODUCT_MODEL := A510
 PRODUCT_MANUFACTURER := Acer
