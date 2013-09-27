@@ -2,15 +2,15 @@
 $(call inherit-product, device/samsung/i605/full_i605.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/t0ltecdma
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/t0ltecdma
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_i605
+PRODUCT_NAME := aicp_i605
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := i605
 PRODUCT_MODEL := SCH-I605
@@ -20,4 +20,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=t0ltevzw TARGET_DEVICE=t0ltevzw BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

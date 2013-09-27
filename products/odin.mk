@@ -2,16 +2,16 @@
 $(call inherit-product-if-exists, device/sony/odin/full_odin.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # hayabusa overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/odin
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/odin
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_odin
+PRODUCT_NAME := aicp_odin
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := odin
 PRODUCT_MODEL := C6503
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6503_1271-0336 BUILD_FINGERPRINT=S
 TARGET_OTA_ASSERT_SKIP := true
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

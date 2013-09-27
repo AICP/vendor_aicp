@@ -2,16 +2,16 @@
 $(call inherit-product, device/sony/tsubasa/full_tsubasa.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # tsubasa overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tsubasa
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/tsubasa
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_tsubasa
+PRODUCT_NAME := aicp_tsubasa
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := tsubasa
 PRODUCT_MODEL := LT25i
@@ -25,4 +25,4 @@ TARGET_OTA_ASSERT_SKIP := true
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+	vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

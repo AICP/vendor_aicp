@@ -2,19 +2,19 @@
 $(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Inherit common Verizon Wireless Perms and Lib
-$(call inherit-product, vendor/aokp/configs/vzw.mk)
+$(call inherit-product, vendor/aicp/configs/vzw.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/jf-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_jfltevzw
+PRODUCT_NAME := aicp_jfltevzw
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := jfltevzw
 PRODUCT_MODEL := SCH-I545
@@ -24,4 +24,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltevzw TARGET_DEVICE=jfltevzw BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-       vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+       vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

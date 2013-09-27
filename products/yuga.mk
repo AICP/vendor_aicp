@@ -2,16 +2,16 @@
 $(call inherit-product-if-exists, device/sony/yuga/full_yuga.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # hayabusa overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/yuga
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/yuga
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_yuga
+PRODUCT_NAME := aicp_yuga
 PRODUCT_BRAND := Sony
 PRODUCT_DEVICE := yuga
 PRODUCT_MODEL := C6603
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6603_1270-4975 BUILD_FINGERPRINT=S
 TARGET_OTA_ASSERT_SKIP := true
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
