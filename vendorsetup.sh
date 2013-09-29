@@ -10,6 +10,7 @@ add_lunch_combo aicp_d2att-userdebug
 add_lunch_combo aicp_d2tmo-userdebug
 add_lunch_combo aicp_d2usc-userdebug
 add_lunch_combo aicp_d2vzw-userdebug
+add_lunch_combo aicp_endeavoru-userdebug
 add_lunch_combo aicp_evita-userdebug
 add_lunch_combo aicp_find5-userdebug
 add_lunch_combo aicp_hercules-userdebug
