@@ -4,6 +4,9 @@ on boot
     # Run sysinit
     start sysinit
 
+    chown system system /dev/cpuctl/apps/cpu.notify_on_migrate
+    chmod 0644 /dev/cpuctl/apps/cpu.notify_on_migrate
+
 # adb over network
 on property:service.adb.tcp.port=5555
     stop adbd
