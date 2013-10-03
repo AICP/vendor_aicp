@@ -37,6 +37,7 @@ add_lunch_combo aicp_solana-userdebug
 add_lunch_combo aicp_spyder-userdebug
 add_lunch_combo aicp_su640-userdebug
 add_lunch_combo aicp_t0lte-userdebug
+add_lunch_combo aicp_tf201-userdebug
 add_lunch_combo aicp_t0lteatt-userdebug
 add_lunch_combo aicp_t0ltetmo-userdebug
 add_lunch_combo aicp_targa-userdebug
