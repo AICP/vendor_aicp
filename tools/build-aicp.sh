@@ -2,9 +2,6 @@
 
 ## Setup Variables Here 
 
-export USE_CCACHE=1                                  # Cache set to true by default
-CACHEDIR=$(pwd |awk -F"/" '{print $(NF)}')           # We take cache name from our directory name
-export CCACHE_DIR=/Development/cache/$CACHEDIR              # Where to put the Cache Directory
 CPUS=$(grep "^processor" /proc/cpuinfo | wc -l)      # How many cpu do we have
 date=$(date +%Y%m%d-%H%M)			     # Can you tell me the time & date
 startt=$(date +%s)				     # start time
@@ -23,7 +20,7 @@ usage()
 	echo -e ""
 	echo -e $CL_BOL"  Options:"$CL_RST
 	echo -e "    -c  Clean before build"
-	echo -e "    -d  Use dex optimizations"
+	echo -e "    -d  Use debugging file build.log"
 	echo -e "    -j# Set jobs"
 	echo -e ""
 	echo -e $CL_BOL"  Example:"$CL_RST
@@ -40,23 +37,18 @@ if [ ! -d ".repo" ]; then
           exit 1
 fi
 
-# We setup Cache If Active
-if [ $USE_CCACHE -eq 1 ] 
-then
-       prebuilts/misc/linux-x86/ccache/ccache -M 40G
-fi
-
 # Let's build the options for the Menu
 opt_clean=0
-opt_dex=0
+opt_deb=0
 opt_jobs="$CPUS"
 opt_sync=0
 
-while getopts "cdj:s" opt; do
+while getopts "cdjL:s" opt; do
 	case "$opt" in
 	c) opt_clean=1 ;;
-	d) opt_dex=1 ;;
+	d) opt_deb=1 ;;
 	j) opt_jobs="$OPTARG" ;;
+        L) opt_log=1 ;;
 	s) opt_sync=1 ;;
 	*) usage
 	esac
@@ -77,7 +69,12 @@ if [ "$opt_clean" -ne 0 ]; then
 	make clean >/dev/null
 fi
 
+
 rm -f out/target/product/$device/obj/KERNEL_OBJ/.version
+
+if [ "$opt_deb" -ne 0 ]; then
+       exec > >(tee build.log ) 
+fi
 
 # setup environment
 echo -e $CL_BLU"Setting up environment"$CL_RST
@@ -89,17 +86,12 @@ rm -rf out/target/product/$device/system/
 # lunch device
 echo -e ""
 echo -e $CL_BLU"Lunching device,"
-echo -e "open a new terminal tail -f log-$device.txt"$CL_RST
-lunch "aicp_$device-userdebug" >> log-$device.txt 2>&1
+lunch "aicp_$device-userdebug" 
 
 echo -e ""
 echo -e $CL_BLU"Starting compilation;"$CL_RST
 
-# start compilation
-if [ "$opt_dex" -ne 0 ]; then
-	export WITH_DEXPREOPT=true
-fi
-make -j"$opt_jobs" bacon  > log-$device.txt 2>&1
+make -j"$opt_jobs" bacon  
 echo -e ""
 
 
