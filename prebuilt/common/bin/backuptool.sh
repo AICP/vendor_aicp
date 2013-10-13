@@ -58,6 +58,14 @@ check_whitelist() {
   return $found
 }
 
+ffc_fix_m7() {
+  sed -i 's/ro.product.device=m7ul/ro.product.device=m7/' /system/build.prop
+  sed -i 's/ro.product.device=m7att/ro.product.device=m7/' /system/build.prop
+  sed -i 's/ro.product.device=m7spr/ro.product.device=m7/' /system/build.prop
+  sed -i 's/ro.product.device=m7tmo/ro.product.device=m7/' /system/build.prop
+  sed -i 's/ro.product.device=m7vzw/ro.product.device=m7/' /system/build.prop
+}
+
 # Execute /system/addon.d/*.sh scripts with $1 parameter
 run_stage() {
 for script in $(find /tmp/addon.d/ -name '*.sh' |sort -n); do
@@ -90,6 +98,7 @@ case "$1" in
     run_stage restore
     run_stage post-restore
     restore_addon_d
+    ffc_fix_m7
     rm -rf $C
     sync
   ;;
