@@ -9,6 +9,9 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
+# Endeavoru overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/endeavoru
+
 # Device naming
 PRODUCT_DEVICE := endeavoru
 PRODUCT_NAME := aicp_endeavoru

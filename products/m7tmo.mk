@@ -6,6 +6,8 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/htc/m7tmo/full_m7tmo.mk)
 
+# M7 overlays
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/m7
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PPRODUCT_NAME=m7 BUILD_ID=JZO54K BUILD_FINGERPRINT="tmous/m7/m7:4.1.2/JZO54K/177101.16:user/release-keys" PRIVATE_BUILD_DESC="1.29.531.16 CL177101 release-keys"
