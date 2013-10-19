@@ -15,4 +15,7 @@
 
     <!-- Whether can use color tuning -->
     <bool name="has_color_tuning">false</bool>
+
+    <!-- Whether device has button leds -->
+    <bool name="has_button_led">true</bool>
 </resources>
