@@ -6,4 +6,8 @@
 
     <!-- Whether device has led charging feature -->
     <bool name="has_led_charging_feature">true</bool>
+
+    <!-- Whether device has hardware buttons -->
+    <bool name="has_hardware_buttons">true</bool>
+
 </resources>
