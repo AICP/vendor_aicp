@@ -7,17 +7,13 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
-    AOKPtips \
-    AppWidgetPicker \
     BluetoothExt \
     CellBroadcastReceiver \
     LatinImeDictionaryPack \
     mGerrit \
     Microbes \
-    PermissionsManager \
     ROMControl \
     Stk \
-    Superuser \
     su \
     SwagPapers \
     Torch \
@@ -69,7 +65,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 PRODUCT_PACKAGES += \
-    openvpn \
     e2fsck \
     mke2fs \
     tune2fs \
