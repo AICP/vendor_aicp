@@ -45,5 +45,6 @@ add_lunch_combo aicp_tsubasa-userdebug
 add_lunch_combo aicp_umtsspyder-userdebug
 add_lunch_combo aicp_vibrantmtd-userdebug
 add_lunch_combo aicp_vs920-userdebug
+add_lunch_combo aicp_xt1053-userdebug
 add_lunch_combo aicp_xt1060-userdebug
 add_lunch_combo aicp_yuga-userdebug
