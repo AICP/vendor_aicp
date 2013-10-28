@@ -103,3 +103,23 @@ PRODUCT_COPY_FILES += \
 # World APNs
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+
+# AICP RELEASE VERSION
+AICP_VERSION_MAJOR = 2
+AICP_VERSION_MINOR = 1
+AICP_VERSION_MAINTENANCE = 1-RC1
+
+
+VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)$(AICP_VERSION_MAINTENANCE)
+
+ifeq ($(DEVELOPER_VERSION),true)
+    AICP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
+else
+    AICP_VERSION := $(TARGET_PRODUCT)-$(VERSION)-$(shell date -u +%Y%m%d)
+endif
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=$(AICP_VERSION) \
+    ro.aicp.version=$(VERSION) 
+
