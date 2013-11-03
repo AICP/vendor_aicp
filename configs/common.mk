@@ -18,7 +18,6 @@ PRODUCT_PACKAGES += \
     SwagPapers \
     Torch \
     VoicePlus \
-    Focal \
     DashClock \
     PerformanceControl
 
