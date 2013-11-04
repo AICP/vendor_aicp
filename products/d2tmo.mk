@@ -7,7 +7,7 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 # Inherit common product files.
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d2-common
+#PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d2-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_d2tmo

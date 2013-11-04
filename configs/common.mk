@@ -1,7 +1,7 @@
 SUPERUSER_EMBEDDED := true
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
+#PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common
 
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/dictionaries
