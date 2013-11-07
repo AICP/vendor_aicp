@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aokp/configs/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
-# hayabusa overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/yuga
-
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_yuga
 PRODUCT_BRAND := Sony
