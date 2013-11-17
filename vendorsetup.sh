@@ -11,6 +11,7 @@ add_lunch_combo aokp_d2att-userdebug
 add_lunch_combo aokp_d2tmo-userdebug
 add_lunch_combo aokp_d2usc-userdebug
 add_lunch_combo aokp_d2vzw-userdebug
+add_lunch_combo aokp_dogo-userdebug
 add_lunch_combo aokp_evita-userdebug
 add_lunch_combo aokp_find5-userdebug
 add_lunch_combo aokp_hercules-userdebug
