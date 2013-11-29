@@ -5,8 +5,7 @@ $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 $(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit GSM common stuff
-# TODO what to use for Hammerhead?
-#$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Overlay
 #PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/hammerhead
