@@ -32,6 +32,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
+
 # Installer
 PRODUCT_COPY_FILES += \
     vendor/aokp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
