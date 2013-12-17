@@ -14,7 +14,7 @@ PRODUCT_DEVICE := manta
 PRODUCT_MODEL := Nexus 10
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mantaray BUILD_FINGERPRINT=google/mantaray/manta:4.4/KRT16S/920375:user/release-keys PRIVATE_BUILD_DESC="mantaray-user 4.4 KRT16S 920375 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES := PRODUCT_NAME=mantaray BUILD_FINGERPRINT=google/mantaray/manta:4.4.2/KOT49H/937116:user/release-keys PRIVATE_BUILD_DESC="mantaray-user 4.4.2 KOT49H 937116 release-keys"
 
 PRODUCT_COPY_FILES +=  \
     vendor/aokp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation-alt.zip
