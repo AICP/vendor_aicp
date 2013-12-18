@@ -82,6 +82,12 @@ on boot
     chown system system /sys/block/mmcblk0/queue/scheduler
     chmod 0664 /sys/block/mmcblk0/queue/scheduler
 
+    # In the Linux kernel's drivers/char/random.c
+    # flash storage is cited as a bad
+    # source of flash entropy, it just
+    # slows down generation of random. Disable it.
+    write /sys/block/mmcblk0/queue/add_random 0
+
     # allow system to modify ksm control files
     chown root system /sys/kernel/mm/ksm/pages_to_scan
     chmod 0664 /sys/kernel/mm/ksm/pages_to_scan
