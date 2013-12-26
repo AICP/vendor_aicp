@@ -4,6 +4,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d2tmo.mk \
     $(LOCAL_DIR)/d2vzw.mk \
     $(LOCAL_DIR)/d2usc.mk \
+    $(LOCAL_DIR)/d800.mk \
+    $(LOCAL_DIR)/d801.mk \
+    $(LOCAL_DIR)/d802.mk \
     $(LOCAL_DIR)/dogo.mk \
     $(LOCAL_DIR)/e980.mk \
     $(LOCAL_DIR)/evita.mk \
@@ -22,6 +25,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/jflteusc.mk \
     $(LOCAL_DIR)/jfltevzw.mk \
     $(LOCAL_DIR)/l900.mk \
+    $(LOCAL_DIR)/ls980.mk \
     $(LOCAL_DIR)/m7att.mk \
     $(LOCAL_DIR)/m7spr.mk \
     $(LOCAL_DIR)/m7tmo.mk \
@@ -47,6 +51,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tsubasa.mk \
     $(LOCAL_DIR)/umtsspyder.mk \
     $(LOCAL_DIR)/vs920.mk \
+    $(LOCAL_DIR)/vs980.mk \
     $(LOCAL_DIR)/xt1053.mk \
     $(LOCAL_DIR)/xt1060.mk \
     $(LOCAL_DIR)/yuga.mk
