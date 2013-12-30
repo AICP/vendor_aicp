@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <string-array name="navigation_bar_qty_entries">
+  <!-- <string-array name="navigation_bar_qty_entries">
     <item>1</item>
     <item>2</item>
     <item>3</item>
@@ -18,5 +18,5 @@
     <item>5</item>
     <item>6</item>
     <item>7</item>
-  </string-array>
+  </string-array> -->
 </resources>

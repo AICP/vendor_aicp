@@ -10,7 +10,10 @@ $(call inherit-product, vendor/aokp/configs/common.mk)
 # Inherit common Verizon Wireless Perms and Lib
 $(call inherit-product, vendor/aokp/configs/vzw.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d2-common
+# Inherit common d2 overlays
+DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/d2-common \
+                           vendor/aokp/overlay/samsung/msm8960-common \
+                           vendor/aokp/overlay/samsung/qcom-common
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aokp_d2vzw

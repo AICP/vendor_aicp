@@ -26,10 +26,10 @@
     <bool name="config_forceDisableHardwareKeyboard">true</bool>
 
     <!-- empty string to disable, or like: /sys/kernel/fast_charge
-         it is disabled by default so devices need to add an overlay to enable -->
-    <string name="config_fastChargePath" translatable="false">/sys/kernel/fast_charge/force_fast_charge</string>
+         it is disabled by default so devices need to add an overlay to enable
+    <string name="config_fastChargePath" translatable="false">/sys/kernel/fast_charge/force_fast_charge</string> -->
 
-    <!-- Panel auto brightness value -->
-    <integer name="config_panelAutoBrightnessValue">1</integer>
+    <!-- Panel auto brightness value
+    <integer name="config_panelAutoBrightnessValue">1</integer> -->
 
 </resources>
