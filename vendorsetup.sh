@@ -12,6 +12,7 @@ add_lunch_combo aokp_d800-userdebug
 add_lunch_combo aokp_d801-userdebug
 add_lunch_combo aokp_d802-userdebug
 add_lunch_combo aokp_i605-userdebug
+add_lunch_combo aokp_i9300-userdebug
 add_lunch_combo aokp_jfltecri-userdebug
 add_lunch_combo aokp_jfltecsp-userdebug
 add_lunch_combo aokp_jfltespr-userdebug
