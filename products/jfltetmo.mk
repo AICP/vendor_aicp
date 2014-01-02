@@ -5,10 +5,11 @@ $(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/aokp/configs/common.mk)
-$(call inherit-product, vendor/aokp/configs/common_versions.mk)
 
 # Inherit common jf overlays
-#DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/jf-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/jf-common \
+                           vendor/aokp/overlay/samsung/msm8960-common \
+                           vendor/aokp/overlay/samsung/qcom-common
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltetmo TARGET_DEVICE=jfltetmo BUILD_FINGERPRINT="samsung/jfltetmo/jfltetmo:4.2.2/JDQ39/M919UVUAMDB:user/release-keys" PRIVATE_BUILD_DESC="jfltetmo-user 4.2.2 JDQ39 M919UVUAMDB release-keys"
 
