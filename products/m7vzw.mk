@@ -13,8 +13,6 @@ PRODUCT_COPY_FILES += \
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=HTCOneVZW BUILD_FINGERPRINT="VERIZON/HTCOneVZW/m7wlv:4.2.2/JDQ39/221778.10:user/release-keys" PRIVATE_BUILD_DESC="1.10.605.10 CL221778 release-keys"
 
-PRODUCT_GMS_CLIENTID_BASE := android-verizon
-
 # Device naming
 PRODUCT_DEVICE := m7vzw
 PRODUCT_NAME := aokp_m7vzw
