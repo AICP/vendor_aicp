@@ -32,6 +32,7 @@ add_lunch_combo aokp_m7vzw-userdebug
 add_lunch_combo aokp_mint-userdebug
 add_lunch_combo aokp_odin-userdebug
 add_lunch_combo aokp_pollux-userdebug
+add_lunch_combo aokp_polluxwindy-userdebug
 add_lunch_combo aokp_t0lte-userdebug
 add_lunch_combo aokp_t0lteatt-userdebug
 add_lunch_combo aokp_t0ltetmo-userdebug
