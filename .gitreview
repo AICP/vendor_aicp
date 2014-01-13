@@ -2,6 +2,6 @@
 host=gerrit.aokp.co
 port=29418
 project=AOKP/vendor_aokp
-defaultbranch=jb-mr2
+defaultbranch=kitkat
 defaultremote=review
 defaultrebase=0
