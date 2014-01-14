@@ -18,7 +18,8 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
-    UnicornPorn
+    UnicornPorn \
+    KitKatWhite
 
 # AICP packages
 PRODUCT_PACKAGES += \
