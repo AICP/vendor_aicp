@@ -2,20 +2,20 @@
 $(call inherit-product, device/oppo/find5/full_find5.mk)
 
 # Inherit AOSP device configuration for find5
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/find5
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/find5
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := find5
-PRODUCT_NAME := aokp_find5
+PRODUCT_NAME := aicp_find5
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := Find 5
 PRODUCT_MANUFACTURER := Oppo

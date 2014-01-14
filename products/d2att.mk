@@ -2,18 +2,18 @@
 $(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
 # Inherit GSM common stuff.
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit common d2 overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/d2-common \
-                           vendor/aokp/overlay/samsung/msm8960-common \
-                           vendor/aokp/overlay/samsung/qcom-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/d2-common \
+                           vendor/aicp/overlay/samsung/msm8960-common \
+                           vendor/aicp/overlay/samsung/qcom-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_d2att
+PRODUCT_NAME := aicp_d2att
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2att
 PRODUCT_MODEL := SGH-I747
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2att TARGET_DEVICE=d2att BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

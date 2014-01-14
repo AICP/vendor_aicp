@@ -1,7 +1,7 @@
 [gerrit]
-host=gerrit.aokp.co
+host=gerrit.aicp-rom.com
 port=29418
-project=AOKP/vendor_aokp
+project=AICP/vendor_aicp
 defaultbranch=kitkat
 defaultremote=review
 defaultrebase=0

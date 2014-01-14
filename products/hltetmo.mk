@@ -16,15 +16,15 @@
 $(call inherit-product, device/samsung/hltetmo/full_hltetmo.mk)
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aokp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # Inherit some common CM stuff.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=hltetmo TARGET_DEVICE=hltetmo BUILD_FINGERPRINT="samsung/hltetmo/hltetmo:4.3/JSS15J/N900TUVUBMI7:user/release-keys" PRIVATE_BUILD_DESC="hltetmo-user 4.3 JSS15J N900TUVUBMI7 release-keys"
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aokp_hltetmo
+PRODUCT_NAME := aicp_hltetmo
 PRODUCT_DEVICE := hltetmo
 PRODUCT_MODEL := SM-N900T

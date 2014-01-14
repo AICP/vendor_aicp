@@ -2,17 +2,17 @@
 $(call inherit-product, device/samsung/jfltecri/full_jfltecri.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/jf-common \
-                           vendor/aokp/overlay/samsung/msm8960-common \
-                           vendor/aokp/overlay/samsung/qcom-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/jf-common \
+                           vendor/aicp/overlay/samsung/msm8960-common \
+                           vendor/aicp/overlay/samsung/qcom-common
 
-PRODUCT_NAME := aokp_jfltecri
+PRODUCT_NAME := aicp_jfltecri
 PRODUCT_DEVICE := jfltecri
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SCH-R970C
@@ -22,4 +22,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltecri TARGET_DEVICE=jfltecri BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-       vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+       vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip

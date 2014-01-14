@@ -2,18 +2,18 @@
 $(call inherit-product, device/samsung/d2usc/full_d2usc.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aokp/configs/cdma.mk)
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aokp/configs/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit common d2 overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/d2-common \
-                           vendor/aokp/overlay/samsung/msm8960-common \
-                           vendor/aokp/overlay/samsung/qcom-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/d2-common \
+                           vendor/aicp/overlay/samsung/msm8960-common \
+                           vendor/aicp/overlay/samsung/qcom-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aokp_d2usc
+PRODUCT_NAME := aicp_d2usc
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2usc
 PRODUCT_MODEL := SCH-R530U
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2usc TARGET_DEVICE=d2usc BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

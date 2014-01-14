@@ -1,12 +1,12 @@
-# Inherit AOKP device configuration for d802
-$(call inherit-product-if-exists, device/lge/d802/aokp.mk)
+# Inherit AICP device configuration for d802
+$(call inherit-product-if-exists, device/lge/d802/aicp.mk)
 
 # d802 overlay
-# PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/d802
+# PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/d802
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d802
-PRODUCT_NAME := aokp_d802
+PRODUCT_NAME := aicp_d802
 PRODUCT_BRAND := LGE
 PRODUCT_MODEL := LG-D802
 PRODUCT_MANUFACTURER := lge
