@@ -18,6 +18,7 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
+    OmniSwitch \
     UnicornPorn
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
