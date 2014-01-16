@@ -1,5 +1,5 @@
 BOARD_SEPOLICY_DIRS += \
-    vendor/aicp/sepolicy
+    vendor/aokp/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \

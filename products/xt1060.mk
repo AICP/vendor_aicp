@@ -2,19 +2,19 @@
 $(call inherit-product, device/motorola/xt1060/full_xt1060.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
 
 # Inherit common Verizon Wireless Perms and Lib
-$(call inherit-product, vendor/aicp/configs/vzw.mk)
+$(call inherit-product, vendor/aokp/configs/vzw.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/ghost
+DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/ghost
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aicp_xt1060
+PRODUCT_NAME := aokp_xt1060
 PRODUCT_BRAND := verizon
 PRODUCT_DEVICE := xt1060
 PRODUCT_MODEL := XT1060
@@ -25,4 +25,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=ghost TARGET_DEVICE=XT1060 BUILD_FI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

@@ -1,17 +1,17 @@
 # Inherit AOSP device configuration for toro.
 $(call inherit-product, device/samsung/toro/full_toro.mk)
 
-# Inherit AICP common bits
-$(call inherit-product, vendor/aicp/configs/common.mk)
+# Inherit AOKP common bits
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit common Verizon Wireless Files
-$(call inherit-product, vendor/aicp/configs/vzw.mk)
+$(call inherit-product, vendor/aokp/configs/vzw.mk)
 
 # Tuna Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/tuna
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/tuna
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aicp_toro
+PRODUCT_NAME := aokp_toro
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
@@ -24,4 +24,4 @@ PRODUCT_PACKAGES += \
     Thinkfree
 
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

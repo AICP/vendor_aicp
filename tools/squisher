@@ -4,9 +4,8 @@
 #
 # cyanogen
 # AOKP
-# AICP
 
-. $ANDROID_BUILD_TOP/vendor/aicp/tools/colors
+. $ANDROID_BUILD_TOP/vendor/aokp/tools/colors
 
 OUT_TARGET_HOST=`uname -a | grep Darwin`
 if [ -z "$OUT_TARGET_HOST" ]
@@ -47,7 +46,7 @@ if [ ! -f "$OTAPACKAGE" ]; then
 	exit 1
 fi
 
-OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aicp/tools/opticharger
+OPTICHARGER=$ANDROID_BUILD_TOP/vendor/aokp/tools/opticharger
 QUIET=-q
 DELETE_BINS="applypatch applypatch_static check_prereq recovery updater"
 
@@ -174,7 +173,7 @@ rm -rf $REPACK/ota/recovery
 # Determine what to name the new signed package
 
 #MODVERSION=`sed -n -e'/ro\.modversion/s/^.*=//p' $REPACK/ota/system/build.prop`
-VERSION=`sed -n -e'/ro.aicp.version/s/^.*=//p' $REPACK/ota/system/build.prop`
+VERSION=`sed -n -e'/ro.aokp.version/s/^.*=//p' $REPACK/ota/system/build.prop`
 MODVERSION="$VERSION"
 OUTFILE=$OUT/$MODVERSION.zip
 
