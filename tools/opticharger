@@ -25,7 +25,7 @@ else
 	OUT_DIR=$ANDROID_BUILD_TOP/out
 fi
 
-. $ANDROID_BUILD_TOP/vendor/aokp/tools/colors
+. $ANDROID_BUILD_TOP/vendor/aicp/tools/colors
 
 set -e
 QUIET=1
