@@ -1,5 +1,5 @@
 # Inherit common stuff
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common_tablet
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/common_tablet
 

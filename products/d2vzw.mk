@@ -2,21 +2,21 @@
 $(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 # Inherit common cdma apns
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
+$(call inherit-product, vendor/aokp/configs/cdma.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit common Verizon Wireless Perms and Lib
-$(call inherit-product, vendor/aicp/configs/vzw.mk)
+$(call inherit-product, vendor/aokp/configs/vzw.mk)
 
 # Inherit common d2 overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/d2-common \
-                           vendor/aicp/overlay/samsung/msm8960-common \
-                           vendor/aicp/overlay/samsung/qcom-common
+DEVICE_PACKAGE_OVERLAYS += vendor/aokp/overlay/samsung/d2-common \
+                           vendor/aokp/overlay/samsung/msm8960-common \
+                           vendor/aokp/overlay/samsung/qcom-common
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aicp_d2vzw
+PRODUCT_NAME := aokp_d2vzw
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := d2vzw
 PRODUCT_MODEL := SCH-I535
@@ -26,4 +26,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2vzw TARGET_DEVICE=d2vzw BUILD_FIN
 
 # boot animation
 PRODUCT_COPY_FILES += \
-vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip

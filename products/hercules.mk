@@ -2,16 +2,16 @@
 $(call inherit-product, device/samsung/hercules/full_hercules.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # skyrocket overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/hercules
+PRODUCT_PACKAGE_OVERLAYS += vendor/aokp/overlay/hercules
 
 # Setup device specific product configuration.
-PRODUCT_NAME := aicp_hercules
+PRODUCT_NAME := aokp_hercules
 PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := hercules
 PRODUCT_MODEL := SGH-T989
@@ -21,4 +21,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T989 TARGET_DEVICE=SGH-T989 BUI
 
 # boot animation
 PRODUCT_COPY_FILES += \
-	vendor/aicp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
+	vendor/aokp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip

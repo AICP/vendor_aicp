@@ -5,18 +5,18 @@ $(call inherit-product, device/samsung/t0lteatt/full_t0lteatt.mk)
 PRODUCT_RELEASE_NAME := t0lteatt
 
 # Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+$(call inherit-product, vendor/aokp/configs/gsm.mk)
 
 # Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, vendor/aokp/configs/common.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/aokp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lteatt
-PRODUCT_NAME := aicp_t0lteatt
+PRODUCT_NAME := aokp_t0lteatt
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SAMSUNG-SGH-I317
 PRODUCT_MANUFACTURER := samsung
