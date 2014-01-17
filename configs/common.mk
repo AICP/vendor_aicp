@@ -23,7 +23,8 @@ PRODUCT_PACKAGES += \
 
 # AICP packages
 PRODUCT_PACKAGES += \
-    OmniSwitch
+    OmniSwitch \
+    DashClock
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
