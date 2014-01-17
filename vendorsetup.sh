@@ -5,6 +5,7 @@ add_lunch_combo aicp_maguro-userdebug
 add_lunch_combo aicp_toro-userdebug
 add_lunch_combo aicp_manta-userdebug
 add_lunch_combo aicp_grouper-userdebug
+add_lunch_combo aicp_deb-userdebug
 add_lunch_combo aicp_d2att-userdebug
 add_lunch_combo aicp_d2tmo-userdebug
 add_lunch_combo aicp_d2usc-userdebug
