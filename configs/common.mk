@@ -18,8 +18,11 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
-    OmniSwitch \
     UnicornPorn
+
+# AICP packages
+PRODUCT_PACKAGES += \
+    OmniSwitch
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
