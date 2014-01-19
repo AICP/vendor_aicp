@@ -14,6 +14,7 @@ add_lunch_combo aicp_d800-userdebug
 add_lunch_combo aicp_d801-userdebug
 add_lunch_combo aicp_d802-userdebug
 add_lunch_combo aicp_dogo-userdebug
+add_lunch_combo aicp_endeavoru-userdebug
 add_lunch_combo aicp_find5-userdebug
 add_lunch_combo aicp_hltetmo-userdebug
 add_lunch_combo aicp_huashan-userdebug

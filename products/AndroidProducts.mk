@@ -9,6 +9,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d802.mk \
     $(LOCAL_DIR)/dogo.mk \
     $(LOCAL_DIR)/e980.mk \
+    $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/evita.mk \
     $(LOCAL_DIR)/find5.mk \
     $(LOCAL_DIR)/grouper.mk \
