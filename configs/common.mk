@@ -47,6 +47,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aicp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
+
 # Installer
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
