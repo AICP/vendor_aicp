@@ -1438,6 +1438,14 @@
   <apn carrier="Wap OPT KNC" mcc="546" mnc="01" apn="wap" user="Wap" password="Wap123" proxy="192.168.39.101" port="3130" type="default,supl" />
   <apn carrier="Mms OPT KNC" mcc="546" mnc="01" apn="mms" user="mms" password="mms123" mmsproxy="192.168.39.201" mmsport="3130" mmsc="http://mms.mobitag.nc/mmsc/" type="mms" />
   <apn carrier="Internet OPT KNC" mcc="546" mnc="01" apn="internet" user="internet" type="default,supl" />
+  <apn carrier="Claro SV" mcc="706" mnc="01" apn="internet.claro.sv" type="default,supl" />
+  <apn carrier="Claro SV MMS" mcc="706" mnc="01" apn="mms.claro.sv" mmsc="http://mms.claro.sv" mmsproxy="216.230.133.66" mmsport="8080" type="mms" />
+  <apn carrier="Digicel SV" mcc="706" mnc="02" apn="wap.digicelsv.com" type="default,supl" />
+  <apn carrier="Digicel SV MMS" mcc="706" mnc="02" apn="wap.digicelsv.com" mmsc="http://172.26.5.132/servlets/mms" mmsproxy="172.26.5.12" mmsport="8080" type="mms" />
+  <apn carrier="Tigo SV" mcc="706" mnc="03" apn="broadband.tigo.sv" type="default,supl" />
+  <apn carrier="Tigo SV MMS" mcc="706" mnc="03" apn="mms.tigo.sv" mmsc="http://mms" mmsproxy="10.16.27.12" mmsport="8888" type="mms" />
+  <apn carrier="Movistar SV" mcc="706" mnc="04" apn="internet.movistar.sv" user="movistarsv" password="movistarsv" type="default,supl" />
+  <apn carrier="Movistar SV MMS" mcc="706" mnc="04" apn="mms.movistar.sv" user="movistarsv" password="movistarsv" mmsc="http://mms.movistar.sv" mmsproxy="10.12.20.1" mmsport="80" type="mms" />
   <!-- END GSM APNs -->
 </apns>
 
