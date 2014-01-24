@@ -35,6 +35,7 @@ add_lunch_combo aicp_m7tmo-userdebug
 add_lunch_combo aicp_m7ul-userdebug
 add_lunch_combo aicp_m7vzw-userdebug
 add_lunch_combo aicp_mint-userdebug
+add_lunch_combo aicp_n1-userdebug
 add_lunch_combo aicp_odin-userdebug
 add_lunch_combo aicp_pollux-userdebug
 add_lunch_combo aicp_polluxwindy-userdebug
