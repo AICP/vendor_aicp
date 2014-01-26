@@ -29,10 +29,8 @@ add_lunch_combo aicp_jflteusc-userdebug
 add_lunch_combo aicp_jfltevzw-userdebug
 add_lunch_combo aicp_l900-userdebug
 add_lunch_combo aicp_ls980-userdebug
-add_lunch_combo aicp_m7att-userdebug
+add_lunch_combo aicp_m7-userdebug
 add_lunch_combo aicp_m7spr-userdebug
-add_lunch_combo aicp_m7tmo-userdebug
-add_lunch_combo aicp_m7ul-userdebug
 add_lunch_combo aicp_m7vzw-userdebug
 add_lunch_combo aicp_mint-userdebug
 add_lunch_combo aicp_n1-userdebug
