@@ -1,5 +1,5 @@
 # Inherit AICP device configuration for huashan
-$(call inherit-product-if-exists, device/sony/huashan/aicp.mk)
+$(call inherit-product-if-exists, device/sony/huashan/aokp.mk)
 
 # huashan overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/huashan

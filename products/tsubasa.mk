@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for tsubasa
-$(call inherit-product-if-exists, device/sony/tsubasa/aicp.mk)
+$(call inherit-product-if-exists, device/sony/tsubasa/aokp.mk)
 
 # tsubasa overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/tsubasa

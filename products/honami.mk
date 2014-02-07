@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for honami
-$(call inherit-product-if-exists, device/sony/honami/aicp.mk)
+$(call inherit-product-if-exists, device/sony/honami/aokp.mk)
 
 # honami overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/honami

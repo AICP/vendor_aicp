@@ -1,5 +1,5 @@
 #inherit AICP device config
-$(call inherit-product-if-exists, device/sony/pollux/aicp.mk)
+$(call inherit-product-if-exists, device/sony/pollux/aokp.mk)
 
 # pollux overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/pollux

@@ -1,5 +1,5 @@
 #Inherit device config from relection
-$(call inherit-product-if-exists, device/sony/pollux_windy/aicp.mk)
+$(call inherit-product-if-exists, device/sony/pollux_windy/aokp.mk)
 
 # pollux_windy overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/pollux

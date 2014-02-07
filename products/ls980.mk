@@ -1,5 +1,5 @@
 # Inherit AICP device configuration for ls980
-$(call inherit-product-if-exists, device/lge/ls980/aicp.mk)
+$(call inherit-product-if-exists, device/lge/ls980/aokp.mk)
 
 # ls980 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/ls980

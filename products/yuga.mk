@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for yuga
-$(call inherit-product-if-exists, device/sony/yuga/aicp.mk)
+$(call inherit-product-if-exists, device/sony/yuga/aokp.mk)
 
 # yuga overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/yuga
