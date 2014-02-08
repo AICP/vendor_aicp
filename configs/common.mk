@@ -114,3 +114,8 @@ PRODUCT_COPY_FILES += \
 # World APNs
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+# HFM Files
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
+    vendor/aicp/prebuilt/etc/hosts.og:system/etc/hosts.og
