@@ -4,41 +4,44 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-bui
 DATE = $(shell vendor/aicp/tools/getdate)
 AICP_BRANCH=kitkat
 
-#ifneq ($(AICP_BUILD),)
-#    # AICP_BUILD=<goo version int>/<build string>
-#    PRODUCT_PROPERTY_OVERRIDES += \
-#        ro.goo.developerid=aicp \
-#        ro.goo.rom=aicp \
-#        ro.goo.version=$(shell echo $(AICP_BUILD) | cut -d/ -f1) \
-#        ro.aicp.version=$(TARGET_PRODUCT)_$(AICP_BRANCH)_$(shell echo $(AICP_BUILD) | cut -d/ -f2)
-#else
-#    ifneq ($(AICP_NIGHTLY),)
-#        # AICP_NIGHTLY=true
-#        PRODUCT_PROPERTY_OVERRIDES += \
-#            ro.aicp.version=$(TARGET_PRODUCT)_$(AICP_BRANCH)_nightly_$(DATE)
-#    else
-#        PRODUCT_PROPERTY_OVERRIDES += \
-#            ro.aicp.version=$(TARGET_PRODUCT)_$(AICP_BRANCH)_unofficial_$(DATE)
-#    endif
-#endif
-
 # AICP RELEASE VERSION
 AICP_VERSION_MAJOR = 2
 AICP_VERSION_MINOR = 0
 AICP_VERSION_MAINTENANCE =
 
-
-VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)$(AICP_VERSION_MAINTENANCE)
-
-ifeq ($(DEVELOPER_VERSION),true)
-    AICP_VERSION := dev_$(BOARD)-$(VERSION)-$(shell date -u +%Y%m%d)
-else
-    AICP_VERSION := $(TARGET_PRODUCT)-$(AICP_BRANCH)-V$(VERSION)-$(shell date -u +%Y%m%d)
+ifndef AICP_BUILD
+    ifdef RELEASE_TYPE
+        RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^AICP_||g')
+        AICP_BUILD := $(RELEASE_TYPE)
+    else
+        AICP_BUILD := UNOFFICIAL
+    endif
 endif
+
+ifdef AICP_BUILD
+    ifeq ($(AICP_BUILD), RELEASE)
+       VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)$(AICP_VERSION_MAINTENANCE)
+       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_V$(VERSION)_RELEASE_$(shell date -u +%Y%m%d)
+    endif
+    ifeq ($(AICP_BUILD), NIGHTLY)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_NIGHTLY_$(shell date -u +%Y%m%d)
+    endif
+    ifeq ($(AICP_BUILD), EXPERIMENTAL)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_EXPERIMENTAL_$(shell date -u +%Y%m%d)
+    endif
+    ifeq ($(AICP_BUILD), UNOFFICIAL)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_UNOFFICIAL_$(shell date -u +%Y%m%d)
+    endif
+else
+#We reset back to UNOFFICIAL
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_UNOFFICIAL_$(shell date -u +%Y%m%d)
+endif
+
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)
+    ro.aicp.version=$(AICP_VERSION)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
