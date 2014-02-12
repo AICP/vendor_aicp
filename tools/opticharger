@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Super-mega opticharger of doom
-# Shrinks apks by running pngcrush or optipng or pngout on png images
+# Shrinks apks by running pngquant or pngcrush or optipng or pngout on png images
 #
 # Point APKCERTS at the full path to a generated apkcerts.txt file, such as:
 # /home/shade/dev/sources/android-cm-eclair/out/target/product/dream_sapphire/obj/PACKAGING/target_files_intermediates/cyanogen_dream_sapphire-target_files-eng.shade/META/apkcerts.txt
@@ -57,7 +57,12 @@ then
     echo -e $CL_RED"Invalid path to apkcerts.txt, set APKCERTS to the correct path."$CL_RST
 fi
 
-if [ "$(which pngcrush)" != "" ];
+if [ "$(which pngquant)" != "" ];
+then
+    optimize_png () {
+        pngquant --speed 1 --force --ext .png $1 1> /dev/null 2> /dev/null
+    }
+elif [ "$(which pngcrush)" != "" ];
 then
     optimize_png () {
         pngcrush -q ${BRUTECRUSH} $1 ${1}.out 1> /dev/null 2> /dev/null
@@ -79,7 +84,7 @@ then
         pngout $1
     }
 else
-    echo -e $CL_RED"Please install pngcrush, optipng, or pngout"$CL_RST
+    echo -e $CL_RED"Please install pngquant, pngcrush, optipng, or pngout"$CL_RST
     exit 1;
 fi
 
