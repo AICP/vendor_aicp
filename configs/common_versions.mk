@@ -9,6 +9,8 @@ AICP_VERSION_MAJOR = 2
 AICP_VERSION_MINOR = 5
 AICP_VERSION_MAINTENANCE =
 
+VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)$(AICP_VERSION_MAINTENANCE)
+
 ifndef AICP_BUILD
     ifdef RELEASE_TYPE
         RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^AICP_||g')
@@ -20,7 +22,6 @@ endif
 
 ifdef AICP_BUILD
     ifeq ($(AICP_BUILD), RELEASE)
-       VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)$(AICP_VERSION_MAINTENANCE)
        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_V$(VERSION)_RELEASE_$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILD), NIGHTLY)
@@ -41,7 +42,7 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(AICP_VERSION)
+    ro.aicp.version=$(VERSION)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
