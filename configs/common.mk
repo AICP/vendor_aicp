@@ -7,7 +7,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
-    BluetoothExt \
     CellBroadcastReceiver \
     libemoji \
     LatinImeDictionaryPack \
