@@ -22,27 +22,27 @@ endif
 
 ifdef AICP_BUILD
     ifeq ($(AICP_BUILD), RELEASE)
-       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_V$(VERSION)_RELEASE_$(shell date -u +%Y%m%d)
+       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-RELEASE-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILD), NIGHTLY)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_NIGHTLY_$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-NIGHTLY-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILD), EXPERIMENTAL)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_EXPERIMENTAL_$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-EXPERIMENTAL-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILD), UNOFFICIAL)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_UNOFFICIAL_$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
     endif
 else
 #We reset back to UNOFFICIAL
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)_UNOFFICIAL_$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
 
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)
+    ro.aicp.version=$(VERSION)-$(AICP_BUILD)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
