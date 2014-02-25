@@ -27,7 +27,7 @@ add_lunch_combo aicp_jfltespr-userdebug
 add_lunch_combo aicp_jfltetmo-userdebug
 add_lunch_combo aicp_jflteusc-userdebug
 add_lunch_combo aicp_jfltevzw-userdebug
-add_lunch_combo aicp_jfltexx-userdebug
+add_lunch_combo aicp_jflte-userdebug
 add_lunch_combo aicp_l900-userdebug
 add_lunch_combo aicp_ls980-userdebug
 add_lunch_combo aicp_m7-userdebug
