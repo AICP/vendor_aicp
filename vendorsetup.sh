@@ -21,6 +21,7 @@ add_lunch_combo aicp_huashan-userdebug
 add_lunch_combo aicp_honami-userdebug
 add_lunch_combo aicp_i605-userdebug
 add_lunch_combo aicp_i9300-userdebug
+add_lunch_combo aicp_i9500-userdebug
 add_lunch_combo aicp_jfltecri-userdebug
 add_lunch_combo aicp_jfltecsp-userdebug
 add_lunch_combo aicp_jfltespr-userdebug
