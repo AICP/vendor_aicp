@@ -46,8 +46,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.aicp.branch=$(AICP_BRANCH) \
-        ro.aicp.device=$(DEVICE)
+    ro.aicp.branch=$(AICP_BRANCH) \
+    ro.aicp.device=$(AICP_PRODUCT)
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
