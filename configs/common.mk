@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     DashClock \
     AICP_OTA \
-    KernelTweaker
+    KernelTweaker \
+    Apollo
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
