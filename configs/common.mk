@@ -69,7 +69,6 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.aicp.rc \
     vendor/aicp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/aicp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
-    vendor/aicp/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel \
     vendor/aicp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
     vendor/aicp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
