@@ -26,7 +26,10 @@ PRODUCT_PACKAGES += \
     DashClock \
     AICP_OTA \
     KernelTweaker \
-    Apollo
+    Apollo \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
