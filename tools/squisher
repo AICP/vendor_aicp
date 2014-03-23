@@ -180,13 +180,20 @@ OUTFILE=$OUT/$MODVERSION.zip
 # Pack it up and sign
 echo -e $CL_CYN"Zipping package..."$CL_RST
 ( cd $REPACK/ota; zip $QUIET -r $REPACK/update.zip . )
-echo -e
-echo -e $CL_CYN"Signing package..."$CL_RST
-SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
-java -Xmx1024m \
-	-jar $OUT_DIR/host/$OUT_TARGET_HOST/framework/signapk.jar \
-	-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
-	$REPACK/update.zip $OUTFILE
+
+# No need to spend timing signing for personal builds.
+if [ "$SKIP_SIGNING" == "1" ] ; then
+	cp $REPACK/update.zip $OUTFILE
+else
+	echo -e
+	echo -e $CL_CYN"Signing package..."$CL_RST
+	SECURITYDIR=$ANDROID_BUILD_TOP/build/target/product/security
+	java -Xmx1024m \
+		-jar $OUT_DIR/host/$OUT_TARGET_HOST/framework/signapk.jar \
+		-w $SECURITYDIR/testkey.x509.pem $SECURITYDIR/testkey.pk8 \
+		$REPACK/update.zip $OUTFILE
+fi
+
 echo -e
 echo -e $CL_CYN"Cleaning up..."$CL_RST
 rm -rf $REPACK
