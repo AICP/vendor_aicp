@@ -53,6 +53,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/toroplus.mk \
     $(LOCAL_DIR)/tsubasa.mk \
     $(LOCAL_DIR)/umtsspyder.mk \
+    $(LOCAL_DIR)/v500.mk \
     $(LOCAL_DIR)/vs920.mk \
     $(LOCAL_DIR)/vs980.mk \
     $(LOCAL_DIR)/xt1053.mk \
