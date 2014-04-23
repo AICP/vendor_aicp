@@ -1587,4 +1587,5 @@
   <apn carrier="Movistar PA" apn="internet.movistar.pa" user="movistarpa" password="movistarpa" type="default,supl"/>
   <apn carrier="Claro PA" apn="web.claro.com.pa" user="CLAROWEB" pass="CLAROWEB" type="default,supl" />
   <apn carrier="Digicel PA" apn="web.digicelpanama.com" type="default,supl"/>
+  <apn carrier="NET10" apn="tfdata" mmsc="http://mms-tf.net" mmsproxy="mms3.tracfone.com" mmsport="80" type="default,mms,supl" />
 </apns>
