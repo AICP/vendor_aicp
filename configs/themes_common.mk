@@ -1,8 +1,7 @@
-# T-Mobile theme engine
+# Theme engine
 PRODUCT_PACKAGES += \
-       ThemeManager \
-       ThemeChooser \
-       com.tmobile.themes 
+    ThemeChooser \
+    ThemesProvider
 
 PRODUCT_COPY_FILES += \
        vendor/aicp/prebuilt/common/etc/permissions/com.tmobile.software.themes.xml:system/etc/permissions/com.tmobile.software.themes.xml
