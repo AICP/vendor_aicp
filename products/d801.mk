@@ -1,5 +1,5 @@
 # Inherit AICP device configuration for d801
-$(call inherit-product-if-exists, device/lge/d801/aokp.mk)
+$(call inherit-product-if-exists, device/lge/d801/aicp.mk)
 
 # d801 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/d801
