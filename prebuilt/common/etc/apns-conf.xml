@@ -38,6 +38,10 @@
     <apn carrier="LTE DNSADMIN" mcc="310" mnc="090" apn="apndnsota.4g.mycricket.com" user="" password="" type="fota" authtype="0" mmsc="http://mms.mycricket.com/servlets/mms" protocol="IP" roaming_protocol="IP" bearer="14"/>
     <!-- end Cricket: LTE Apn -->
 
+    <!-- Cricket: AIO Wireless Apn -->
+    <apn carrier="Cricket AIO Wireless" mcc="310" mnc="150" apn="ndo" user="" password="" server="" proxy="" port="" mmsc="http://mmsc.aiowireless.net" mmsproxy="proxy.aiowireless.net" mmsport="80" type="default,mms,fota,hipri,supl" authtype="0" />
+    <!-- end Cricket: AIO Wireless Apn -->
+
     <!-- MetroPCS: LTE Apn -->
     <apn carrier="MetroPCS DEFAULT" mcc="311" mnc="660" apn="internet.metropcs" user="" password="" type="default,hipri,admin,mms" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
     <apn carrier="MetroPCS IMS" mcc="311" mnc="660" apn="ims.metropcs" user="" password="" type="ims" authtype="0" mmsc="http://mms.metropcs.net:3128/mmsc" protocol="IP" roaming_protocol="IP" bearer="14" inactivity_timer="7080" />
