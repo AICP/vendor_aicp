@@ -4,9 +4,7 @@ $(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-BUILD_ID=KOT49H.H1 BUILD_FINGERPRINT="htc/m7_google/m7:4.4.2/KOT49H.H1/288144:user/release-keys" \
-PRIVATE_BUILD_DESC="3.62.1700.1 CL288144 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=KTU84L.H4 BUILD_FINGERPRINT="htc/m7_google/m7:4.4.3/KTU84L.H4/347097:user/release-keys" PRIVATE_BUILD_DESC="4.07.1700.4 CL347097 release-keys"
 
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
