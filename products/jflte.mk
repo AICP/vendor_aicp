@@ -10,6 +10,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/jf-common
 $(call inherit-product, vendor/aicp/configs/gsm.mk)
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
 
