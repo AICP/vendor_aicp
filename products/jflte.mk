@@ -7,6 +7,12 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/jf-common
 $(call inherit-product, vendor/aicp/configs/gsm.mk)
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Unified device flag for Verizon permissions
+VZW_UNIFIED := true
+
+# Inherit common Verizon Wireless Perms and Lib
+$(call inherit-product, vendor/aicp/configs/vzw.mk)
+
 
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
