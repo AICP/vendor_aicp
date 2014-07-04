@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     DSPManager \
     libcyanogen-dsp \
-    audio_effects.conf
+    audio_effects.conf \
+    EOSWeather
 
 ## Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
