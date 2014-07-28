@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    EOSWeather
+    EOSWeather \
+    Mira4U
 
 ## Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
