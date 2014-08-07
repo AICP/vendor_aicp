@@ -48,10 +48,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.branch=$(AICP_BRANCH) \
     ro.aicp.device=$(AICP_PRODUCT) \
-    ro.romstats.url=http://stats.aicp-rom.com/submit \
+    ro.romstats.url=http://stats.aicp-rom.com/ \
     ro.romstats.name=AICP \
-    ro.romstats.version=$(VERSION) \
-    ro.romstats.tframe=1
+    ro.romstats.version=$(VERSION)-$(AICP_BUILD) \
+    ro.romstats.tframe=1 \
+    ro.romstats.askfirst=1 \
+    ro.romstats.ga=UA-48128535-2
 
 # Camera shutter sound property
 PRODUCT_PROPERTY_OVERRIDES += \
