@@ -18,13 +18,12 @@ PRODUCT_PACKAGES += \
     su \
     SwagPapers \
     Torch \
-    UnicornPorn \
+    UnicornPorn 
 
 # AICP packages
 PRODUCT_PACKAGES += \
     OmniSwitch \
     DashClock \
-    AICP_OTA \
     KernelTweaker \
     Apollo \
     DSPManager \
@@ -135,3 +134,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
     vendor/aicp/prebuilt/etc/hosts.og:system/etc/hosts.og
+
+# OTA
+PRODUCT_COPY_FILES +=  \
+    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
+
