@@ -79,7 +79,11 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.aicp.rc \
     vendor/aicp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/aicp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/aicp/prebuilt/common/etc/init.d/99crontab:system/etc/init.d/99crontab \
+    vendor/aicp/prebuilt/common/etc/init.d/99trim_partitions:system/etc/init.d/99trim_partitions \
     vendor/aicp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/aicp/prebuilt/common/etc/cron.d/root:system/etc/cron.d/root \
+    vendor/aicp/prebuilt/common/bin/trim_partitions:system/bin/trim_partitions \
     vendor/aicp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # Enable SIP+VoIP on all targets
