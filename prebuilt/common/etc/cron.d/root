@@ -1,1 +1,1 @@
-* */2 * * * /system/bin/trim_partitions
+0 * * * * /system/bin/trim_partitions

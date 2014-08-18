@@ -1,3 +1,4 @@
 #!/system/bin/sh
-fstrim -v /system
-fstrim -v /data
+date >> /data/crontab.log
+fstrim -v /system >> /data/crontab.log
+fstrim -v /data >> /data/crontab.log
