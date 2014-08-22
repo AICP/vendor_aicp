@@ -1487,6 +1487,10 @@
   <apn carrier="Movilnet MMS" mcc="734" mnc="06" apn="mm.movilnet.com.ve" mmsc="http://mms2.movilnet.com.ve/servlets/mms" mmsproxy="192.168.16.12" mmsport="8080" type="mms" />
   <apn carrier="Movistar EC" mcc="740" mnc="00" apn="internet.movistar.com.ec" type="default,supl" />
   <apn carrier="Porta EC" mcc="740" mnc="010" apn="internet.porta.com.ec" type="default,supl" />
+  <apn carrier="VOX Internet" mcc="744" mnc="01" apn="vox.internet" type="default,supl" />
+  <apn carrier="VOX MMS" mcc="744" mnc="01" apn="vox.mms" type="mms" user="vox" password="vox" mmsc="http://mms.vox.com.py/mmsc" mmsproxy="172.24.97.29" mmsport="8080" />
+  <apn carrier="Tigo Internet" mcc="744" mnc="04" apn="internet.tigo.py" type="default,supl" />
+  <apn carrier="Tigo MMS" mcc="744" mnc="04" apn="mms.tigo.py" user="tigo" password="tigo" mmsproxy="10.16.17.12" mmsport="8888" mmsc="http://mms" type="mms" />
   <apn carrier="Ancel" mcc="748" mnc="01" apn="ancel" type="default,supl" />
   <apn carrier="Ancel MMS" mcc="748" mnc="01" apn="mms" mmsc="http://mmsc.mms.ancelutil.com.uy" mmsproxy="200.40.246.2" mmsport="3128" type="mms" />
   <apn carrier="Movistar UY MMS" mcc="748" mnc="07" apn="apnmms.movistar.com.uy" user="mmsuy" password="mmsuy" mmsc="http://mmsc.movistar.com.uy" mmsproxy="010.000.002.029" mmsport="9201" type="mms" />
