@@ -8,7 +8,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation.zip
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/bacon
 
