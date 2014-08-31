@@ -203,7 +203,7 @@ echo -e
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
-$MD5 $img >$img.md5sum
+$MD5 $img >$img.md5
 ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}' `
 echo -e
 echo -e $CL_RED"      ___"$CL_CYN"                        ___"$CL_BLU"            ___"$CL_RST   
@@ -220,7 +220,7 @@ echo -e $CL_RED"     \/__/"$CL_MAG"          \/__/"$CL_CYN"       \/__/"$CL_BLU"
 echo -e
 echo -e $CL_CYN"===========-Package complete-==========="$CL_RST
 echo -e $CL_CYN"zip:"$CL_MAG" $OUTFILE"$CL_RST
-echo -e $CL_CYN"md5:"$CL_MAG" $(cat $img.md5sum | awk '{ print $1 }')"$CL_RST
+echo -e $CL_CYN"md5:"$CL_MAG" $(cat $img.md5 | awk '{ print $1 }')"$CL_RST
 echo -e $CL_CYN"size:"$CL_MAG" $ZIPSIZE"$CL_RST
 echo -e $CL_CYN"========================================"$CL_RST
 echo -e
