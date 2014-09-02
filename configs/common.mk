@@ -17,8 +17,7 @@ PRODUCT_PACKAGES += \
     Stk \
     su \
     SwagPapers \
-    Torch \
-    UnicornPorn 
+    Torch
 
 # AICP packages
 PRODUCT_PACKAGES += \
