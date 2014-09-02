@@ -9,6 +9,7 @@ BOARD_SEPOLICY_UNION += \
     seapp_contexts \
     installd.te \
     system.te \
+    netd.te \
     ueventd.te \
     vold.te \
     mac_permissions.xml
