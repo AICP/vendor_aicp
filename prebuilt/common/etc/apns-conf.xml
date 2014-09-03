@@ -281,7 +281,7 @@
   <apn carrier="Vodafone CZ MMS" mcc="230" mnc="03" apn="mms" user="mms" password="mms" server="mms" mmsc="http://mms" mmsproxy="10.11.10.111" mmsport="80" type="mms" />
   <apn carrier="Vodafone CZ Prepaid" mcc="230" mnc="03" apn="ointernet" type="default,supl" />
   <apn carrier="Orange SK" mcc="231" mnc="01" apn="internet" type="default,supl" />
-  <apn carrier="Orange SK MMS" mcc="231" mnc="01" apn="mms" user="wap" password="wap" mmsc="http://imms.orange.sk" mmsproxy="213.151.208.145" mmsport="8799" type="mms" />
+  <apn carrier="Orange SK MMS" mcc="231" mnc="01" apn="mms" user="wap" password="wap" mmsc="http://imms.orange.sk" mmsproxy="213.151.208.145" mmsport="8799" authtype="1" type="mms" />
   <apn carrier="T-Mobile SK" mcc="231" mnc="02" apn="internet" type="default,supl" />
   <apn carrier="T-Mobile SK MMS" mcc="231" mnc="02" apn="mms" user="mms" password="mms" mmsc="http://mms" mmsproxy="192.168.1.1" mmsport="8080" type="mms" />
   <apn carrier="T-Mobile SK" mcc="231" mnc="04" apn="internet" type="default,supl" />
@@ -510,7 +510,7 @@
   <apn carrier="Life:) // Internet" mcc="257" mnc="04" apn="mms.life.com.by" type="default,supl" />
   <apn carrier="Life:) // MMS" mcc="257" mnc="04" apn="mms.life.com.by" mmsc="http://mms.life.com.by/mmsc/" mmsproxy="10.10.10.20" mmsport="8080" type="mms" />
   <apn carrier="GaduAIR" mcc="260" mnc="01" apn="internet.gadu-gadu.pl" type="default,supl" />
-  <apn carrier="PlusGSM" mcc="260" mnc="01" apn="internet" type="default,supl" />
+  <apn carrier="PlusGSM" mcc="260" mnc="01" apn="plus" type="default,supl" />
   <apn carrier="FM Group Mobile MMS" mcc="260" mnc="01" apn="mms.fmgmobile.pl" mmsc="http://mms.fmgmobile.pl:8002/" mmsproxy="212.002.096.016" mmsport="8080" type="mms" />
   <apn carrier="GaduAIR MMS" mcc="260" mnc="01" apn="mms.gadu-gadu.pl" mmsc="http://mms.gadu-gadu.pl:8002/" mmsproxy="212.002.096.016" mmsport="8080" type="mms" />
   <apn carrier="mBank mobile MMS" mcc="260" mnc="01" apn="mms.mobile.pl" user="true" password="true" mmsc="http://mms.mobile.pl:8080" mmsproxy="212.2.96.16" mmsport="8080" type="mms" />
@@ -1250,8 +1250,7 @@
   <apn carrier="Virgin AU" mcc="505" mnc="02" apn="virgininternet" user="*" password="*" server="*" type="default,supl" />
   <apn carrier="Virgin AU MMS" mcc="505" mnc="02" apn="virginmms" user="*" password="*" server="*" proxy="202.139.083.152" port="8070" mmsc="http://mms.virginvibe.com.au:8002/" mmsproxy="202.139.083.152" mmsport="8070" type="mms" />
   <apn carrier="Optus Internet" mcc="505" mnc="02" apn="yesinternet" user="*" password="*" server="*" type="default,supl" />
-  <apn carrier="Vodafone AU-MMS" mcc="505" mnc="03" apn="live.vodafone.com" user="*" password="*" server="*" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms" />
-  <apn carrier="Vodafone AU" mcc="505" mnc="03" apn="vfinternet.au" user="*" password="*" server="*" type="default,supl" />
+  <apn carrier="Vodafone AU" mcc="505" mnc="03" apn="live.vodafone.com" user="*" password="*" server="*" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms,default,supl" />
   <apn carrier="3 AU" apn="3services" mmsc="http://mmsc.three.net.au:10021/mmsc" mmsproxy="10.176.57.25" mmsport="8799" mcc="505" mnc="06" type="default,supl,mms"/>
   <apn carrier="VF AU PXT" mcc="505" mnc="07" apn="live.vodafone.com" mmsc="http://pxt.vodafone.net.au/pxtsend" mmsproxy="10.202.2.60" mmsport="8080" type="mms" />
   <apn carrier="VF Internet" mcc="505" mnc="07" apn="vfinternet.au" type="default,supl" />
