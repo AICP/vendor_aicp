@@ -29,7 +29,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     EOSWeather \
-    PhotoPhase
+    PhotoPhase \
+    MonthCalendarWidget
 
 ## Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
