@@ -675,6 +675,8 @@
   <apn carrier="Rogers MMS" mcc="302" mnc="72" apn="rogers-core-appl1.apn" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" mmsport="80" type="mms" />
   <apn carrier="Rogers LTE" mcc="302" mnc="720" apn="ltemobile.apn" port="80" mmsc="http://mms.gprs.rogers.com" mmsproxy="10.128.1.69" type="default,supl,mms"/>
   <apn carrier="Cellular South" mcc="311" mnc="23" apn="Cellular South" user="" password="*" server="*" mmsc="http://pix.cellularsouth.com/servlets/mms" type="" />
+  <apn carrier="Sasktel 3G" mcc="302" mnc="780" apn="inet.stm.sk.ca" type="default,supl" />
+  <apn carrier="Sasktel MMS" mcc="302" mnc="780" apn="proxy.stm.sk.ca" port="80" mmsc="http://mms.sasktel.com" mmsproxy="mig.sasktel.com" mmsport="80" type="mms" />
   <apn carrier="metropcs" mcc="310" mnc="027" apn="wap.metropcs.net" user="MDN@mymetropcs.com" password="metropcs" server="http://mms.metropcs.net/servlets/mmsc" mmsc="http://mms.metropcs.net/mmsc" mmsport="3128" type="default,supl,mms" />
   <apn carrier="myBlue Pix" mcc="310" mnc="030" apn="mmswap.centennialwireless.com" mmsc="http://mms.myblue.com/servlets/mms" mmsproxy="63.99.231.135" mmsport="8080" type="mms" />
   <apn carrier="Internet" mcc="310" mnc="030" apn="private.centennialwireless.com" user="privuser" password="priv" type="default,supl" />
