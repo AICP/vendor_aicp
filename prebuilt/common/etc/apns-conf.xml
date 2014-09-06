@@ -155,6 +155,7 @@
   <apn carrier="Orange NL" mcc="204" mnc="20" apn="internet" type="default,supl" />
   <apn carrier="Orange NL MMS" mcc="204" mnc="20" apn="mms" mmsc="http://mms.orange.nl:8002" mmsproxy="10.250.255.183" mmsport="9201" type="mms" />
   <apn carrier="rabo.plus" mcc="204" mnc="20" apn="rabo.plus" type="default,supl" />
+  <apn carrier="Ziggo Mobiel" mcc="204" mnc="04" apn="ziggo.dataxs.mobi" authenticationtype="PAP" type="default" />
   <apn carrier="Proximus MMS" mcc="206" mnc="01" apn="event.proximus.be" user="mms" password="mms" mmsc="http://mmsc.proximus.be/mms" mmsproxy="10.55.14.75" mmsport="8080" type="mms" />
   <apn carrier="Proximus Internet" mcc="206" mnc="01" apn="internet.proximus.be" type="default,supl" />
   <apn carrier="Mobistar MMS" mcc="206" mnc="10" apn="mms.be" user="mobistar" password="mobistar" mmsc="http://mmsc.mobistar.be" mmsproxy="212.65.63.143" mmsport="8080" type="mms" />
