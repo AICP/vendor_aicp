@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     audio_effects.conf \
     EOSWeather \
     PhotoPhase \
-    MonthCalendarWidget
+    MonthCalendarWidget \
+    SlimFileManager
 
 ## Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
