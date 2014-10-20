@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for dogo
-$(call inherit-product-if-exists, device/sony/dogo/aokp.mk)
+$(call inherit-product-if-exists, device/sony/dogo/aicp.mk)
 
 # dogo overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dogo

@@ -1,5 +1,5 @@
 # Inherit AOSP device configuration for togari
-$(call inherit-product-if-exists, device/sony/togari/aokp.mk)
+$(call inherit-product-if-exists, device/sony/togari/aicp.mk)
 
 # togari overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/togari
