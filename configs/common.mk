@@ -124,6 +124,8 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # Inherit common build.prop overrides
 -include vendor/aicp/configs/common_versions.mk
 
+-include vendor/aicp/sepolicy/sepolicy.mk
+
 # T-Mobile theme engine
 -include vendor/aicp/configs/themes_common.mk
 
