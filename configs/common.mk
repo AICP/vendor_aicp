@@ -11,26 +11,14 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     libemoji \
     LatinImeDictionaryPack \
-    mGerrit \
     Microbes \
-    ROMControl \
     Stk \
     su \
-    SwagPapers \
     Torch
 
 # AICP packages
 PRODUCT_PACKAGES += \
-    OmniSwitch \
-    DashClock \
-    KernelTweaker \
-    Apollo \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
-    EOSWeather \
     PhotoPhase \
-    MonthCalendarWidget \
     SlimFileManager \
     SlimLauncher
 
@@ -121,7 +109,7 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 -include vendor/aicp/sepolicy/sepolicy.mk
 
 # T-Mobile theme engine
--include vendor/aicp/configs/themes_common.mk
+# -include vendor/aicp/configs/themes_common.mk
 
 # common boot animation
 PRODUCT_COPY_FILES += \
@@ -141,6 +129,6 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/etc/hosts.og:system/etc/hosts.og
 
 # OTA
-PRODUCT_COPY_FILES +=  \
-    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
+# PRODUCT_COPY_FILES +=  \
+#    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
 
