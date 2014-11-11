@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     PhotoPhase \
     SlimFileManager \
-    SlimLauncher
+    SlimLauncher \
+    DashClock
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
