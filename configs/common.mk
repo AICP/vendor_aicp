@@ -113,6 +113,11 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # T-Mobile theme engine
 # -include vendor/aicp/configs/themes_common.mk
 
+# CM Hardware Abstraction Framework
+PRODUCT_PACKAGES += \
+    org.cyanogenmod.hardware \
+    org.cyanogenmod.hardware.xml
+
 # common boot animation
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
