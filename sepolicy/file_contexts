@@ -1,7 +1,5 @@
 #/cache/dalvik-cache(/.*)? u:object_r:dalvikcache_data_file:s0
 
-/system/bin/sysinit       u:object_r:sysinit_exec:s0
-
 #############################
 # performance-related sysfs files (CM)
 #/sys/kernel/mm/ksm(/.*)?       --          u:object_r:sysfs_writable:s0
