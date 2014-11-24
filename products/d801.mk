@@ -1,5 +1,11 @@
-# Inherit AICP device configuration for d801
-$(call inherit-product-if-exists, device/lge/d801/aicp.mk)
+# Inherit AOSP device configuration for d801
+$(call inherit-product, device/lge/d801/d801.mk)
+
+# Inherit AICP common bits
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # d801 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/d801

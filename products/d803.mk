@@ -1,5 +1,11 @@
 # Inherit AICP device configuration for d803
-$(call inherit-product-if-exists, device/lge/d803/aicp.mk)
+$(call inherit-product, device/lge/d803/d803.mk)
+
+# Inherit AICP common bits
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # d803 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/d803

@@ -1,5 +1,11 @@
 # Inherit AICP device configuration for ls980
-$(call inherit-product-if-exists, device/lge/ls980/aicp.mk)
+$(call inherit-product, device/lge/ls980/ls980.mk)
+
+# Inherit AICP common bits
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # ls980 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/ls980
