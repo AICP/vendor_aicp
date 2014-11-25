@@ -84,8 +84,8 @@ PRODUCT_COPY_FILES += \
 
 # Bring in camera effects
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/aicp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/aicp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
