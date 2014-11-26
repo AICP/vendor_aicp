@@ -99,18 +99,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
-# Extra tools in AICP
 PRODUCT_PACKAGES += \
-    libsepol \
-    openvpn \
     e2fsck \
     mke2fs \
     tune2fs \
-    bash \
-    nano \
-    htop \
-    powertop \
-    lsof \
+    libssh \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh \
+    sftp \
+    scp \
     mount.exfat \
     fsck.exfat \
     mkfs.exfat \
@@ -118,22 +118,7 @@ PRODUCT_PACKAGES += \
     fsck.f2fs \
     fibmap.f2fs \
     ntfsfix \
-    ntfs-3g \
-    gdbserver \
-    micro_bench \
-    oprofiled \
-    sqlite3 \
-    strace
-
-# Openssh
-PRODUCT_PACKAGES += \
-    scp \
-    sftp \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
-    start-ssh
+    ntfs-3g
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
