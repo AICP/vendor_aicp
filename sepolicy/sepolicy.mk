@@ -11,10 +11,12 @@ BOARD_SEPOLICY_UNION += \
     file_contexts \
     genfs_contexts \
     seapp_contexts \
+    service_contexts \
     auditd.te \
     installd.te \
     netd.te \
     su.te \
+    sysinit.te \
     system.te \
     ueventd.te \
     vold.te \
