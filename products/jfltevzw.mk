@@ -1,14 +1,8 @@
-# Inherit AOSP device configuration for jfltevzw
-$(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit common cdma apns
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltevzw \
