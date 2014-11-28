@@ -165,6 +165,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
     vendor/aicp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
+# Copy latinime for gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
 # OTA
 # PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
