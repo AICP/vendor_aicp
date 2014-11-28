@@ -160,6 +160,11 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
     vendor/aicp/prebuilt/etc/hosts.og:system/etc/hosts.og
 
+# SuperSU
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+    vendor/aicp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+
 # OTA
 # PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
