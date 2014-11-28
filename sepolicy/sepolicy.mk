@@ -17,7 +17,6 @@ BOARD_SEPOLICY_UNION += \
     installd.te \
     netd.te \
     recovery.te \
-    su.te \
     sysinit.te \
     system.te \
     ueventd.te \
