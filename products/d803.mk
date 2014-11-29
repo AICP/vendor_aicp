@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aicp/configs/gsm.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
 # d803 overlay
 # PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/d803
 
