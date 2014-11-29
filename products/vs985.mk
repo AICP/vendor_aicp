@@ -11,10 +11,10 @@ $(call inherit-product, vendor/aicp/configs/cdma.mk)
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := ls990
-PRODUCT_NAME := aicp_ls990
+PRODUCT_DEVICE := vs985
+PRODUCT_NAME := aicp_vs985
 PRODUCT_BRAND := LGE
-PRODUCT_MODEL := LG-LS990
+PRODUCT_MODEL := LG-VS985
 PRODUCT_MANUFACTURER := lge
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
