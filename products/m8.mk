@@ -1,10 +1,12 @@
-$(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
-
 $(call inherit-product, device/htc/m8/full_m8.mk)
 
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
+# Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+$(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
 
 PRODUCT_NAME := aicp_m8
 PRODUCT_BRAND := google
