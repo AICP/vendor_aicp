@@ -2,7 +2,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-$(call inherit-product, device/samsung/d2spr/full_d2att.mk)
+$(call inherit-product, device/samsung/d2att/full_d2att.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2uc \

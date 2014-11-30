@@ -2,7 +2,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-$(call inherit-product, device/samsung/d2spr/full_d2vzw.mk)
+$(call inherit-product, device/samsung/d2vzw/full_d2vzw.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=d2vzw \
