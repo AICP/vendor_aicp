@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     SlimFileManager \
     SlimLauncher \
     DashClock \
-    Apollo
+    Apollo \
+    Development
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
