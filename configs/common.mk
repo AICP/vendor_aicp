@@ -24,7 +24,6 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     SlimFileManager \
     SlimLauncher \
-    DashClock \
     Apollo \
     Development \
     LockClock
