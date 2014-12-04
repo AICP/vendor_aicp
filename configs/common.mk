@@ -62,6 +62,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
 
+# Signature compatibility validation
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
+
 # Installer
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/persist.sh:install/bin/persist.sh \
