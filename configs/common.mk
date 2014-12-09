@@ -24,9 +24,10 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     SlimFileManager \
     SlimLauncher \
-    Apollo \
+    Eleven \
     Development \
-    LockClock
+    LockClock \
+    AudioFX
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
