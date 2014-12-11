@@ -1,25 +1,19 @@
-# Inherit AOSP device configuration for jfltespr
-$(call inherit-product, device/samsung/jfltespr/full_jfltespr.mk)
-
-# Inherit common cdma apns
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
-
-# Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit common jf overlays
-DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/samsung/jf-common \
-                           vendor/aicp/overlay/samsung/msm8960-common \
-                           vendor/aicp/overlay/samsung/qcom-common
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Setup device specific product configuration.
+$(call inherit-product, device/samsung/jfltespr/full_jfltespr.mk)
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=jfltespr \
+    TARGET_DEVICE=jfltespr \
+    BUILD_FINGERPRINT="samsung/jfltespr/jfltespr:4.4.2/KOT49H/L720VPUFNG2:user/release-keys" \
+    PRIVATE_BUILD_DESC="jfltespr-user 4.4.2 KOT49H L720VPUFNG2 release-keys"
+
+PRODUCT_GMS_CLIENTID_BASE := android-samsung
+
 PRODUCT_NAME := aicp_jfltespr
-PRODUCT_BRAND := Samsung
 PRODUCT_DEVICE := jfltespr
-PRODUCT_MODEL := SPH-L720
-PRODUCT_MANUFACTURER := Samsung
-
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=jfltespr TARGET_DEVICE=jfltespr BUILD_FINGERPRINT="samsung/jfltespr/jfltespr:4.2.2/JDQ39/L720VPUAMF9:user/release-keys" PRIVATE_BUILD_DESC="jfltespr-user 4.2.2 JDQ39 L720VPUAMF9 release-keys"
 
 # boot animation
 PRODUCT_COPY_FILES += \
