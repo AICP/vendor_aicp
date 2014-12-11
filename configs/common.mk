@@ -27,6 +27,7 @@ PRODUCT_PACKAGES += \
     Eleven \
     Development \
     LockClock \
+    AICP_OTA \
     AudioFX
 
 # Stagefright FFMPEG plugin
