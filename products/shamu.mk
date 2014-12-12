@@ -1,5 +1,8 @@
-## Specify phone tech before including full_phone
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
+$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := shamu
@@ -7,15 +10,6 @@ PRODUCT_RELEASE_NAME := shamu
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
-
-# Inherit some common Validus stuff.
-$(call inherit-product, vendor/aicp/configs/common.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/moto/shamu/aosp_shamu.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := shamu
