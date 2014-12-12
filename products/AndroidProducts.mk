@@ -45,6 +45,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/p930.mk \
     $(LOCAL_DIR)/pollux.mk \
     $(LOCAL_DIR)/pollux_windy.mk \
+    $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/solana.mk \
     $(LOCAL_DIR)/spyder.mk \
     $(LOCAL_DIR)/su640.mk \
