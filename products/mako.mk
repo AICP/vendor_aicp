@@ -1,17 +1,11 @@
-# Inherit AOSP device configuration for mako
-$(call inherit-product, device/lge/mako/full_mako.mk)
-
-# Inherit AICP common bits
 $(call inherit-product, vendor/aicp/configs/common.mk)
-
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Mako Overlay
-#PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/mako
+# Inherit AOSP device configuration for mako
+$(call inherit-product, device/lge/mako/full_mako.mk)
+
 
 # Setup device specific product configuration
 PRODUCT_NAME := aicp_mako
@@ -20,7 +14,7 @@ PRODUCT_DEVICE := mako
 PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:5.0/LRX21T/1576899:user/release-keys PRIVATE_BUILD_DESC="occam-user 5.0 LRX21T 1576899 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:5.0.1/LRX22C/1602158:user/release-keys PRIVATE_BUILD_DESC="occam-user 5.0.1 LRX22C 1602158 release-keys"
 
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
