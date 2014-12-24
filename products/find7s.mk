@@ -1,4 +1,4 @@
-$(call inherit-product, device/oppo/find7u/full_find7u.mk)
+$(call inherit-product, device/oppo/find7s/full_find7s.mk)
 
 # Inherit GSM common stuff
 $(call inherit-product, vendor/aicp/configs/gsm.mk)
@@ -16,7 +16,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/find7
 TARGET_KERNEL_SOURCE := kernel/oppo/find7
 TARGET_KERNEL_CONFIG := custom_find7_defconfig
 
-PRODUCT_NAME := aicp_find7u
+PRODUCT_NAME := aicp_find7s
 PRODUCT_DEVICE := find7
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := Find7
