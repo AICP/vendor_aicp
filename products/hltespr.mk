@@ -1,10 +1,10 @@
-$(call inherit-product, device/samsung/hltespr/full_hltespr.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, device/samsung/hltespr/full_hltespr.mk)
+
 
 PRODUCT_DEVICE := hltespr
 PRODUCT_NAME := aicp_hltespr
