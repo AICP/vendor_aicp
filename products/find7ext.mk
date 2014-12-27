@@ -8,7 +8,7 @@ $(call inherit-product, device/oppo/find7ext/full_find7ext.mk)
 
 
 PRODUCT_NAME := aicp_find7ext
-PRODUCT_DEVICE := find7
+PRODUCT_DEVICE := find7ext
 PRODUCT_BRAND := Oppo
 PRODUCT_MODEL := Find7
 PRODUCT_MANUFACTURER := Oppo
