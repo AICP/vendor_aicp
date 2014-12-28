@@ -1,18 +1,18 @@
-# Inherit AOSP device configuration for grouper
-$(call inherit-product, device/asus/tilapia/full_tilapia.mk)
+# Release name
+PRODUCT_RELEASE_NAME := Nexus7
 
-# Inherit AICP common_tablet bits
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
+
+# Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Grouper Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/asus/grouper
-
-# AICP common stuff
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation-alt.zip
+# Inherit AOSP device configuration for tilapia
+$(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
 #MMS and Phone
 PRODUCT_PACKAGES += \
@@ -27,5 +27,9 @@ PRODUCT_MANUFACTURER := asus
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasig BUILD_FINGERPRINT="google/nakasig/tilapia:4.4.2/KOT49H/937116:user/release-keys" PRIVATE_BUILD_DESC="nakasig-user 4.4.2 KOT49H 937116 release-keys"
+
+# AICP common stuff
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation-alt.zip
 
 

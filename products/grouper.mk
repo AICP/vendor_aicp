@@ -1,22 +1,30 @@
-# Inherit AOSP device configuration for grouper
-$(call inherit-product, device/asus/grouper/full_grouper.mk)
+# Release name
+PRODUCT_RELEASE_NAME := Nexus7
 
-# Inherit AICP common_tablet bits
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 800
+
+# Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Grouper Overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/grouper
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Setup device specific product configuration.
+# Inherit device configuration
+$(call inherit-product, device/asus/grouper/full_grouper.mk)
+
+## Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := grouper
 PRODUCT_NAME := aicp_grouper
 PRODUCT_BRAND := google
-PRODUCT_DEVICE := grouper
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
-
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:5.0/LRX21P/1570855:user/release-keys"  PRIVATE_BUILD_DESC="nakasi-user 5.0   LRX21P 1570855 release-keys"
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/nakasi/grouper:5.0/LRX21P/1570855:user/release-keys" PRIVATE_BUILD_DESC="nakasi-user 5.0 LRX21P 1570855 release-keys"
+
 
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bootanimation/bootanimation_1280_800.zip:system/media/bootanimation-alt.zip
