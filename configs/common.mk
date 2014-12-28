@@ -28,7 +28,8 @@ PRODUCT_PACKAGES += \
     Development \
     LockClock \
     AICP_OTA \
-    AudioFX
+    AudioFX \
+    PhotoPhase
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
