@@ -1,14 +1,11 @@
-# Inherit AOSP device configuration for vs985
-$(call inherit-product, device/lge/vs985/full_vs985.mk)
-
 # Inherit AICP common bits
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit CDMA common stuff
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
+# Inherit AOSP device configuration for vs985
+$(call inherit-product, device/lge/vs985/full_vs985.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs985

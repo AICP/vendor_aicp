@@ -1,17 +1,12 @@
-# Inherit AICP device configuration for ls980
-$(call inherit-product, device/lge/ls980/ls980.mk)
-
 # Inherit AICP common bits
 $(call inherit-product, vendor/aicp/configs/common.mk)
-
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# ls980 overlay
-# PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/ls980
+# Inherit AICP device configuration for ls980
+$(call inherit-product, device/lge/ls980/ls980.mk)
+
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := ls980

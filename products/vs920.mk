@@ -1,20 +1,17 @@
+# Inherit common product files.
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/lge/vs920/full_vs920.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := Spectrum
 
-# Inherit CDMA common stuff
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
-
-# Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
-
 DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/iprj-common
 
-# boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vs920

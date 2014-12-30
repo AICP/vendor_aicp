@@ -1,14 +1,12 @@
-# Inherit AOSP device configuration for serranoltexx.
-$(call inherit-product, device/samsung/serranoltexx/full_serranoltexx.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
+# Inherit AOSP device configuration for serranoltexx.
+$(call inherit-product, device/samsung/serranoltexx/full_serranoltexx.mk)
+
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aicp_serranoltexx

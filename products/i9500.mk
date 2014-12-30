@@ -1,13 +1,10 @@
-$(call inherit-product, device/samsung/i9500/full_i9500.mk)
-
-# Inherit some common AICP stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit common product files.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, device/samsung/i9500/full_i9500.mk)
 
 
 PRODUCT_NAME := aicp_i9500

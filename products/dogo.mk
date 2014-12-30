@@ -11,6 +11,6 @@ PRODUCT_DEVICE := dogo
 PRODUCT_MODEL := Xperia ZR
 PRODUCT_MANUFACTURER := Sony
 
-#bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720

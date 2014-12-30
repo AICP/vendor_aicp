@@ -13,6 +13,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_NAME := aicp_jfltetmo
 PRODUCT_DEVICE := jfltetmo
 
-#bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080

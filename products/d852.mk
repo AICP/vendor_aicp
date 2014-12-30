@@ -1,14 +1,12 @@
-# Inherit AOSP device configuration for d852
-$(call inherit-product, device/lge/d852/full_d852.mk)
-
 # Inherit AICP common bits
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
-
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
+
+# Inherit AOSP device configuration for d852
+$(call inherit-product, device/lge/d852/full_d852.mk)
+
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d852

@@ -11,6 +11,6 @@ PRODUCT_DEVICE := yuga
 PRODUCT_MODEL := Xperia Z
 PRODUCT_MANUFACTURER := Sony
 
-# boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080

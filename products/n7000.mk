@@ -1,14 +1,9 @@
-# Inherit AOSP device configuration for galaxys2.
-$(call inherit-product, device/samsung/n7000/full_n7000.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+# Inherit AOSP device configuration for galaxys2.
+$(call inherit-product, device/samsung/n7000/full_n7000.mk)
 
-# N7000 overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/n7000
 
 # Setup device specific product configuration.
 PRODUCT_DEVICE := n7000
@@ -24,6 +19,7 @@ PRODUCT_RELEASE_NAME := GT-N7000
 PRODUCT_PACKAGES += \
     Thinkfree
 
-PRODUCT_COPY_FILES += \
-   vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 

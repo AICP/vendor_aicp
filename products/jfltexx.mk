@@ -1,13 +1,12 @@
-$(call inherit-product, device/samsung/jfltexx/full_jfltexx.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
 
-# Inherit some common stuff.
-$(call inherit-product, vendor/aicp/configs/common.mk)
+$(call inherit-product, device/samsung/jfltexx/full_jfltexx.mk)
+
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltexx \
@@ -18,7 +17,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_NAME := aicp_jfltexx
 PRODUCT_DEVICE := jfltexx
 
-#bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 

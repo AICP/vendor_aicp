@@ -1,17 +1,13 @@
-# Inherit AOSP device configuration for device
-$(call inherit-product, device/lge/e980/full_e980.mk)
-
 # Inherit AOSP device configuration
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
+# Inherit AOSP device configuration for device
+$(call inherit-product, device/lge/e980/full_e980.mk)
 
-# boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/e980
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := e980
