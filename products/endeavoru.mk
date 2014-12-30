@@ -25,5 +25,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	BUILD_FINGERPRINT="htc/htc_europe/endeavoru:4.2.2/JDQ39/231174.2:user/release-keys" \
 	PRIVATE_BUILD_DESC="4.18.401.2 CL231174 release-keys"
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
