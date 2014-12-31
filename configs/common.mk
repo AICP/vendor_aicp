@@ -22,14 +22,14 @@ PRODUCT_PACKAGES += \
 # AICP packages
 PRODUCT_PACKAGES += \
     PhotoPhase \
-    SlimFileManager \
     SlimLauncher \
     Eleven \
     Development \
     LockClock \
     AICP_OTA \
     AudioFX \
-    PhotoPhase
+    PhotoPhase \
+    CMFileManager \
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
