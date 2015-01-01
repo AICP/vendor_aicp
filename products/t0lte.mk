@@ -4,6 +4,12 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 
+# Configure dalvik heap
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
 
 # Device identifier. This must come after all inclusions
 PRODUCT_RELEASE_NAME := t0lte
