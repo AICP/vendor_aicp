@@ -18,3 +18,6 @@ PRODUCT_RELEASE_NAME := GT-I9300
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip

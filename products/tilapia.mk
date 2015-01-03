@@ -28,4 +28,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasig BUILD_FINGERPRINT="google/nakasig/tilapia:4.4.2/KOT49H/937116:user/release-keys" PRIVATE_BUILD_DESC="nakasig-user 4.4.2 KOT49H 937116 release-keys"
 
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_800_1280.zip:system/media/bootanimation.zip
+
 

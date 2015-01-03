@@ -20,3 +20,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="g3_global_com" \
     BUILD_FINGERPRINT="lge/g3_global_com/g3:4.4.2/KVT49L.A1404795316/1404795316:user/release-keys" \
     PRIVATE_BUILD_DESC="g3_global_com-user 4.4.2 KVT49L.A1404795316 1404795316 release-keys"
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation.zip

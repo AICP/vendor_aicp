@@ -12,3 +12,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=D6503 BUILD_FINGERPRINT=Sony/D6503/
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := aicp_sirius
 PRODUCT_DEVICE := sirius
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation.zip

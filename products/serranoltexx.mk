@@ -14,3 +14,6 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := serranoltexx
 PRODUCT_MODEL := GT-I9195
 PRODUCT_MANUFACTURER := samsung
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip

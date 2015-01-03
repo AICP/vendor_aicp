@@ -14,3 +14,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_NAME := aicp_d2spr
 PRODUCT_DEVICE := d2spr
 
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+

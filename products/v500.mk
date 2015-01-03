@@ -11,3 +11,6 @@ PRODUCT_MANUFACTURER := LGE
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_1200_1920.zip:system/media/bootanimation.zip

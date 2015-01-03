@@ -24,3 +24,6 @@ PRODUCT_PACKAGES += \
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+

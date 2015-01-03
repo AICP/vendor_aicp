@@ -13,3 +13,6 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := serrano3gxx
 PRODUCT_MODEL := GT-I9190
 PRODUCT_MANUFACTURER := samsung
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip

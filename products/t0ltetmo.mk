@@ -12,7 +12,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # boot animation
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0ltetmo

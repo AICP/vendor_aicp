@@ -18,3 +18,6 @@ $(call inherit-product, device/amazon/otterx/full_otterx.mk)
 
 PRODUCT_NAME := aicp_otterx
 PRODUCT_RELEASE_NAME := KFire
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_600_1024.zip:system/media/bootanimation.zip

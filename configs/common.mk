@@ -147,10 +147,6 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
 
-# common boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-
 # World APNs
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml

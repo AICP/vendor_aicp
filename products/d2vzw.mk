@@ -15,3 +15,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 PRODUCT_NAME := aicp_d2vzw
 PRODUCT_DEVICE := d2vzw
 
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation.zip
+
