@@ -12,10 +12,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/iprj-common
 
-# boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_720_1280.zip:system/media/bootanimation-alt.zip
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := p930
 PRODUCT_NAME := aicp_p930
@@ -25,3 +21,8 @@ PRODUCT_MANUFACTURER := LGE
 
 # Set build fingerprint / ID / Product Name ect.
 # PRODUCT_BUILD_PROP_OVERRIDES ...
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+-include vendor/aicp/configs/bootanimation.mk

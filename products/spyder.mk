@@ -33,6 +33,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
    PRODUCT_DEFAULT_LANGUAGE=en \
    PRODUCT_DEFAULT_REGION=US \
 
-PRODUCT_COPY_FILES +=  \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation-alt.zip
-
+# Boot animation
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
+-include vendor/aicp/configs/bootanimation.mk

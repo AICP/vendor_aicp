@@ -21,5 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="lge/g3_spr_us/g3:4.4.2/KVT49L.LS990ZV4/LS990ZV4.1403169216:user/release-keys" \
     PRIVATE_BUILD_DESC="g3_spr_us-user 4.4.2 KVT49L.LS990ZV4 LS990ZV4.1403169216 release-keys"
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1440_2560.zip:system/media/bootanimation.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+-include vendor/aicp/configs/bootanimation.mk

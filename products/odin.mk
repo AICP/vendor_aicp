@@ -11,6 +11,7 @@ PRODUCT_DEVICE := odin
 PRODUCT_MODEL := Xperia ZL
 PRODUCT_MANUFACTURER := Sony
 
-# boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1080_1920.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk

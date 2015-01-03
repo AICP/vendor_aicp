@@ -18,6 +18,4 @@ PRODUCT_RELEASE_NAME := GT-I9100G
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
-
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
+-include vendor/aicp/configs/bootanimation.mk

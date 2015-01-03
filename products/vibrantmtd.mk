@@ -22,5 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-T959 TARGET_DEVICE=SGH-T959 BUI
 PRODUCT_PACKAGES += \
     Thinkfree
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation-alt.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+-include vendor/aicp/configs/bootanimation.mk

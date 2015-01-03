@@ -15,5 +15,7 @@ PRODUCT_DEVICE := serranoltexx
 PRODUCT_MODEL := GT-I9195
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 960
+TARGET_SCREEN_WIDTH := 540
+-include vendor/aicp/configs/bootanimation.mk

@@ -18,7 +18,8 @@ PRODUCT_MODEL := GT-I9070
 PRODUCT_MANUFACTURER := samsung
  
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=GT-I9070 TARGET_DEVICE=GT-I9070
- 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_480_800.zip:system/media/bootanimation.zip
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+-include vendor/aicp/configs/bootanimation.mk

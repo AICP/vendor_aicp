@@ -23,5 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=google/shamu/shamu:5.0.1/LRX22C/1602158:user/release-keys \
     PRIVATE_BUILD_DESC="shamu-user 5.0.1 LRX22C 1602158 release-keys"
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_1440_2560.zip:system/media/bootanimation.zip
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1440
+-include vendor/aicp/configs/bootanimation.mk

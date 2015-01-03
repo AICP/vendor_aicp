@@ -14,3 +14,4 @@ PRODUCT_MANUFACTURER := Sony
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+-include vendor/aicp/configs/bootanimation.mk
