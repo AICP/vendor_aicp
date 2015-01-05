@@ -1,7 +1,3 @@
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2048
-TARGET_SCREEN_WIDTH := 1536
-
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
@@ -19,3 +15,7 @@ PRODUCT_MODEL := Nexus 9
 PRODUCT_MANUFACTURER := htc
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2048
+TARGET_SCREEN_WIDTH := 1536
+-include vendor/aicp/configs/bootanimation.mk
