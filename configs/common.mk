@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     AudioFX \
     PhotoPhase \
     CMFileManager \
+    OmniSwitch
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
