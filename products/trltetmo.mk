@@ -13,17 +13,27 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, vendor/aicp/configs/common.mk)
 
-$(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
+# Inherit common product files.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
+# Inherit device configuration
+$(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
 
+
+PRODUCT_NAME := trltetmo
 PRODUCT_DEVICE := trltetmo
 PRODUCT_NAME := aicp_trltetmo
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
 
+
+PRODUCT_BUILD_PROP_OVERRIDES +=  PRODUCT_NAME=trltetmo TARGET_DEVICE=trltetmo BUILD_FINGERPRINT="samsung/trltetmo/trltetmo:5.0.2/LRX22G/N910TUVU1ANIH:user/release-keys" PRIVATE_BUILD_DESC="trltetmo-user 5.0.2 LRX22G N910TUVU1ANIH release-keys"
+
+#Bootanimation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
 -include vendor/aicp/configs/bootanimation.mk
