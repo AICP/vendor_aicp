@@ -141,7 +141,7 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 -include vendor/aicp/configs/common_versions.mk
 
 # T-Mobile theme engine
-# -include vendor/aicp/configs/themes_common.mk
+-include vendor/aicp/configs/themes_common.mk
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
