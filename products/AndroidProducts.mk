@@ -42,6 +42,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mint.mk \
     $(LOCAL_DIR)/moto_msm8960dt.mk \
     $(LOCAL_DIR)/n7000.mk \
+    $(LOCAL_DIR)/n7100.mk \
     $(LOCAL_DIR)/odin.mk \
     $(LOCAL_DIR)/p930.mk \
     $(LOCAL_DIR)/pollux.mk \
