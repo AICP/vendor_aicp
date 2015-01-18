@@ -54,6 +54,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/targa.mk \
     $(LOCAL_DIR)/t0lte.mk \
     $(LOCAL_DIR)/trltetmo.mk \
+    $(LOCAL_DIR)/trltexx.mk \
     $(LOCAL_DIR)/tilapia.mk \
     $(LOCAL_DIR)/togari.mk \
     $(LOCAL_DIR)/toro.mk \
