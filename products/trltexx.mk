@@ -21,7 +21,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/samsung/trltetmo/full_trltetmo.mk)
+$(call inherit-product, device/samsung/trltexx/full_trltexx.mk)
 
 
 PRODUCT_NAME := trltexx
