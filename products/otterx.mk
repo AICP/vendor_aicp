@@ -19,8 +19,7 @@ $(call inherit-product, device/amazon/otterx/full_otterx.mk)
 PRODUCT_NAME := aicp_otterx
 PRODUCT_RELEASE_NAME := KFire
 
-
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1024
+TARGET_SCREEN_HEIGHT := 1024_otterx
 TARGET_SCREEN_WIDTH := 600
 -include vendor/aicp/configs/bootanimation.mk
