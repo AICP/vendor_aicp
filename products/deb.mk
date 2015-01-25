@@ -27,6 +27,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/deb:4.4.3/KTU84L/1148727:user/release-keys PRIVATE_BUILD_DESC="razor-user 4.4.3 KTU84L 1148727 release-keys"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_HEIGHT := 1920_deb
 TARGET_SCREEN_WIDTH := 1200
 -include vendor/aicp/configs/bootanimation.mk
