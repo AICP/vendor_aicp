@@ -7,6 +7,11 @@ $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 # Inherit AOSP device configuration for serranoltexx.
 $(call inherit-product, device/samsung/serranoltexx/full_serranoltexx.mk)
 
+# Device uses high-density artwork where available
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=serranoltexx TARGET_DEVICE=serranolte
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aicp_serranoltexx
