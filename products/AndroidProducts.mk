@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/a510.mk \
+    $(LOCAL_DIR)/amami.mk \
     $(LOCAL_DIR)/bacon.mk \
     $(LOCAL_DIR)/d2att.mk \
     $(LOCAL_DIR)/d2tmo.mk \
