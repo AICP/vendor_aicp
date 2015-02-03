@@ -27,6 +27,6 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razorg BUILD_FINGERPRINT=google/razorg/deb:5.0.2/LRX22G/1649326:user/release-keys PRIVATE_BUILD_DESC="razorg-user 5.0.2 LRX22G 1649326 release-keys"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920_deb
-TARGET_SCREEN_WIDTH := 1200
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 -include vendor/aicp/configs/bootanimation.mk
