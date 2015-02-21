@@ -59,6 +59,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/trltetmo.mk \
     $(LOCAL_DIR)/trltexx.mk \
     $(LOCAL_DIR)/tilapia.mk \
+    $(LOCAL_DIR)/titan.mk \
     $(LOCAL_DIR)/togari.mk \
     $(LOCAL_DIR)/toro.mk \
     $(LOCAL_DIR)/toroplus.mk \
