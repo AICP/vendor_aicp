@@ -27,6 +27,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/i9100.mk \
     $(LOCAL_DIR)/i9100g.mk \
     $(LOCAL_DIR)/i9300.mk \
+    $(LOCAL_DIR)/i9305.mk \
     $(LOCAL_DIR)/jfltecri.mk \
     $(LOCAL_DIR)/jfltecsp.mk \
     $(LOCAL_DIR)/jfltespr.mk \
