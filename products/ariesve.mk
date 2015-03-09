@@ -12,10 +12,6 @@ TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
 -include vendor/aicp/configs/bootanimation.mk
 
-# This device is hdpi
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
