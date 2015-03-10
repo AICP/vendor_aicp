@@ -19,6 +19,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/find5.mk \
     $(LOCAL_DIR)/flounder.mk \
     $(LOCAL_DIR)/grouper.mk \
+    $(LOCAL_DIR)/hammerhead.mk \
+    $(LOCAL_DIR)/hammerheadcaf.mk \
     $(LOCAL_DIR)/hercules.mk \
     $(LOCAL_DIR)/honami.mk \
     $(LOCAL_DIR)/huashan.mk \
