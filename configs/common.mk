@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 # AICP packages
 PRODUCT_PACKAGES += \
     PhotoPhase \
-    SlimLauncher \
+    Trebuchet \
     Eleven \
     Development \
     LockClock \
