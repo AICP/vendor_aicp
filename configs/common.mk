@@ -56,7 +56,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.locationfeatures=1 \
     ro.setupwizard.enterprise_mode=1 \
     ro.kernel.android.checkjni=0 \
-    persist.sys.root_access=3
+    persist.sys.root_access=3 \
+    ro.setupwizard.network_required=false \
+    ro.setupwizard.gservices_delay=-1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
