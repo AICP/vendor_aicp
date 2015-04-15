@@ -11,7 +11,7 @@ $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 $(call inherit-product, device/samsung/i9305/full_i9305.mk)
 
 # Configure dalvik heap
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)vvvvvvvvv
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := i9305
