@@ -61,6 +61,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/su640.mk \
     $(LOCAL_DIR)/targa.mk \
     $(LOCAL_DIR)/t0lte.mk \
+    $(LOCAL_DIR)/tomato.mk \
     $(LOCAL_DIR)/trltespr.mk \
     $(LOCAL_DIR)/trltetmo.mk \
     $(LOCAL_DIR)/trltexx.mk \
