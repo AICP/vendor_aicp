@@ -43,6 +43,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/m7.mk \
     $(LOCAL_DIR)/m7spr.mk \
     $(LOCAL_DIR)/m7vzw.mk \
+    $(LOCAL_DIR)/m9gsm.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
