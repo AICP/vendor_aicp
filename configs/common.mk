@@ -31,7 +31,8 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     CMFileManager \
     OmniSwitch \
-    WhisperPush
+    WhisperPush \
+    Profiles
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
