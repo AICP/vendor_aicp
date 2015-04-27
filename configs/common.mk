@@ -161,10 +161,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
-# World SPN overrides list
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/spn-conf.xml:system/etc/spn-conf.xml
-
 # HFM Files
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
