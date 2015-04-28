@@ -12,3 +12,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+-include vendor/aicp/configs/bootanimation.mk
