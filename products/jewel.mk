@@ -21,3 +21,4 @@ PRODUCT_RELEASE_NAME := jewel
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
+-include vendor/aicp/configs/bootanimation.mk
