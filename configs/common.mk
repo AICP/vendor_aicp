@@ -149,12 +149,9 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # T-Mobile theme engine
 -include vendor/aicp/configs/themes_common.mk
 
-# CM Platform Library Resource Package
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.platform-res
-
 # CM Platform Library
 PRODUCT_PACKAGES += \
+    org.cyanogenmod.platform-res \
     org.cyanogenmod.platform \
     org.cyanogenmod.platform.xml
 
