@@ -34,13 +34,6 @@ PRODUCT_PACKAGES += \
     WhisperPush \
     Profiles
 
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libstagefright_soft_ffmpegadec \
-    libstagefright_soft_ffmpegvdec \
-    libFFmpegExtractor \
-    libnamparser
-
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google
@@ -191,4 +184,7 @@ PRODUCT_COPY_FILES += \
 # OTA
 # PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
+
+# Inherit Stagefright FFMPEG plugins
+$(call inherit-product, vendor/aicp/configs/stagefrightplugins.mk)
 
