@@ -57,6 +57,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/nicki.mk \
     $(LOCAL_DIR)/odin.mk \
     $(LOCAL_DIR)/p930.mk \
+    $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/pollux.mk \
     $(LOCAL_DIR)/pollux_windy.mk \
     $(LOCAL_DIR)/shamu.mk \
