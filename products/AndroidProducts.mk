@@ -42,6 +42,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/jfltexx.mk \
     $(LOCAL_DIR)/l900.mk \
     $(LOCAL_DIR)/ls980.mk \
+    $(LOCAL_DIR)/lettuce.mk \
     $(LOCAL_DIR)/m7.mk \
     $(LOCAL_DIR)/m7spr.mk \
     $(LOCAL_DIR)/m7vzw.mk \
