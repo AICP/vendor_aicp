@@ -68,13 +68,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/aicp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aicp/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aicp/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/bin/otasigcheck.sh:system/bin/otasigcheck.sh
+    vendor/aicp/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
 # Installer
 PRODUCT_COPY_FILES += \
