@@ -64,6 +64,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/pollux_windy.mk \
     $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/solana.mk \
+    $(LOCAL_DIR)/sprout4.mk \
     $(LOCAL_DIR)/spyder.mk \
     $(LOCAL_DIR)/su640.mk \
     $(LOCAL_DIR)/targa.mk \
