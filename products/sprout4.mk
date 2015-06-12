@@ -5,7 +5,7 @@ $(call inherit-product, device/google/sprout4/sprout4.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=5.1/LMY47O/1783956:user/release-keys PRIVATE_BUILD_DESC="sprout-user 5.1 LMY47O 1783956 release-keys"
 
-PRODUCT_NAME := cm_sprout4
+PRODUCT_NAME := aicp_sprout4
 PRODUCT_DEVICE :=sprout4
 PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
