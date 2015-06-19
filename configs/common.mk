@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_ffmpegadec \
     libstagefright_soft_ffmpegvdec \
     libFFmpegExtractor \
-    libnamparser
+    media_codecs_ffmpeg.xml
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \
