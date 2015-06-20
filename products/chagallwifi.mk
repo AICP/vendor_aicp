@@ -14,5 +14,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
-TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_WIDTH := 1600
 -include vendor/aicp/configs/bootanimation.mk
