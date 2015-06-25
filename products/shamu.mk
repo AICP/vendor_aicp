@@ -14,6 +14,8 @@ PRODUCT_NAME := aicp_shamu
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 6
 
+TARGET_VENDOR := moto
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
     BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LYZ28E/1914015:user/release-keys \
