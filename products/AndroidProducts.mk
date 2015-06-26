@@ -75,6 +75,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/tomato.mk \
     $(LOCAL_DIR)/trltespr.mk \
     $(LOCAL_DIR)/trltetmo.mk \
+    $(LOCAL_DIR)/trltevzw.mk \
     $(LOCAL_DIR)/trltexx.mk \
     $(LOCAL_DIR)/tilapia.mk \
     $(LOCAL_DIR)/titan.mk \
