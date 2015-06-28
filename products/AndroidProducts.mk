@@ -5,6 +5,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/ariesve.mk \
     $(LOCAL_DIR)/armani.mk \
     $(LOCAL_DIR)/bacon.mk \
+    $(LOCAL_DIR)/cancro.mk \
     $(LOCAL_DIR)/chagalllte.mk \
     $(LOCAL_DIR)/chagallwifi.mk \
     $(LOCAL_DIR)/condor.mk \
