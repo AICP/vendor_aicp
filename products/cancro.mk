@@ -12,8 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from cancro device
-$(call inherit-product, device/xiaomi/cancro/cancro.mk)
+
+# Inherit some common AICP stuff
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -21,10 +22,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit some common AICP stuff
-$(call inherit-product, vendor/aicp/configs/common.mk)
+# Inherit from cancro device
+$(call inherit-product, device/xiaomi/cancro/cancro.mk)
 
-PRODUCT_NAME := cm_cancro
+
+PRODUCT_NAME := aicp_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
@@ -43,4 +45,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Xiaomi/cancro/cancro:5.1.1/LMY
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 -include vendor/aicp/configs/bootanimation.mk
-
