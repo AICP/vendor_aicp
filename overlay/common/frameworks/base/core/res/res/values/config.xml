@@ -43,6 +43,7 @@
          should publish as a binder services in its onStart -->
     <string-array name="config_externalCMServices">
         <item>org.cyanogenmod.platform.internal.CMStatusBarManagerService</item>
+        <item>org.cyanogenmod.platform.internal.ProfileManagerService</item>
     </string-array>
 
 </resources>
