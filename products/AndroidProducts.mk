@@ -27,6 +27,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/hammerhead.mk \
     $(LOCAL_DIR)/hammerheadcaf.mk \
     $(LOCAL_DIR)/hercules.mk \
+    $(LOCAL_DIR)/himaul.mk \
     $(LOCAL_DIR)/honami.mk \
     $(LOCAL_DIR)/huashan.mk \
     $(LOCAL_DIR)/hltetmo.mk \
@@ -51,7 +52,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/m7.mk \
     $(LOCAL_DIR)/m7spr.mk \
     $(LOCAL_DIR)/m7vzw.mk \
-    $(LOCAL_DIR)/m9gsm.mk \
     $(LOCAL_DIR)/maguro.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
