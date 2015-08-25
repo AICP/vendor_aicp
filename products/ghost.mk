@@ -10,6 +10,8 @@ $(call inherit-product, device/motorola/ghost/full_ghost.mk)
 PRODUCT_RELEASE_NAME := MOTO X
 PRODUCT_NAME := aicp_ghost
 
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080

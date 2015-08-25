@@ -6,6 +6,8 @@ $(call inherit-product, device/motorola/peregrine/full_peregrine.mk)
 PRODUCT_RELEASE_NAME := peregrine
 PRODUCT_NAME := aicp_peregrine
 
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720

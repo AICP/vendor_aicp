@@ -7,6 +7,8 @@ $(call inherit-product, device/motorola/condor/full_condor.mk)
 PRODUCT_NAME := aicp_condor
 PRODUCT_RELEASE_NAME := MOTO E
 
+PRODUCT_GMS_CLIENTID_BASE := android-motorola
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
