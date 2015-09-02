@@ -36,6 +36,13 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     CMSettingsProvider
 
+# Extra tools in CM
+PRODUCT_PACKAGES += \
+    vim \
+    zip \
+    unrar \
+    curl
+
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
     libffmpeg_extractor \
