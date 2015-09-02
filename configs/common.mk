@@ -33,7 +33,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     WhisperPush \
     Profiles \
-    WallpaperPicker
+    WallpaperPicker \
+    CMSettingsProvider
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
