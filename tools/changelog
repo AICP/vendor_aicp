@@ -1,5 +1,5 @@
 #!/bin/sh
-
+#
 # Exports
 dir=$ANDROID_BUILD_TOP
 out=$dir/out/target/product
@@ -47,3 +47,7 @@ fi
 cp $Changelog $OUT/system/etc/
 cp $Changelog $OUT/
 rm $Changelog
+
+mv $OUT/Changelog.txt $OUT/Changelog.txt
+
+exit 0
