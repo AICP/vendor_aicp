@@ -30,6 +30,9 @@ PRODUCT_NAME := aicp_trltexx
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
 
 #Bootanimation
 TARGET_SCREEN_HEIGHT := 2560

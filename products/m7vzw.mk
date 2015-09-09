@@ -15,6 +15,10 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 PRODUCT_NAME := aicp_m7vzw
 PRODUCT_DEVICE := m7vzw
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Brian L (Chezbel), doc HD (semdoc)"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080

@@ -33,6 +33,10 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES +=  PRODUCT_NAME=trltetmo TARGET_DEVICE=trltetmo BUILD_FINGERPRINT="samsung/trltetmo/trltetmo:5.0.2/LRX22G/N910TUVU1ANIH:user/release-keys" PRIVATE_BUILD_DESC="trltetmo-user 5.0.2 LRX22G N910TUVU1ANIH release-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
+
 #Bootanimation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440

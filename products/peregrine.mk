@@ -8,6 +8,10 @@ PRODUCT_NAME := aicp_peregrine
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="doc HD (semdoc)"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720

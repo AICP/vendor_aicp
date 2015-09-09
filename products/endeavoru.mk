@@ -21,6 +21,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	BUILD_FINGERPRINT="htc/htc_europe/endeavoru:4.2.2/JDQ39/231174.2:user/release-keys" \
 	PRIVATE_BUILD_DESC="4.18.401.2 CL231174 release-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Ali B (eyosen), Davor Bertovic (LorD ClockaN)"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720

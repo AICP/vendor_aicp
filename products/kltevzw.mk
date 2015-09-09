@@ -8,6 +8,10 @@ $(call inherit-product, device/samsung/kltevzw/full_kltevzw.mk)
 PRODUCT_DEVICE := kltevzw
 PRODUCT_NAME := aicp_kltevzw
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Alex S (OptX), doc HD (semdoc)"
+
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

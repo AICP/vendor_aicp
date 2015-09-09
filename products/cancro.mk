@@ -41,6 +41,10 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 ## Use the latest approved GMS identifiers unless running a signed build
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_FINGERPRINT=Xiaomi/cancro/cancro:5.1.1/LMY47V/5.4.24:userdebug/test-keys PRIVATE_BUILD_DESC="cancro-userdebug 5.1.1 LMY47V 5.4.24 test-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Wan A (audahadi)"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080

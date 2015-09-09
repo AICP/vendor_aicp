@@ -18,6 +18,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
        BUILD_ID=KOT49H BUILD_FINGERPRINT="htc/htc_europe/htc_m8:4.4.2/KOT49H/325784.5:user/release-keys" \
        PRIVATE_BUILD_DESC="1.54.401.5 CL325784 release-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="doc HD (semdoc), Davor B (LorD CloCKaN)"
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080

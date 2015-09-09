@@ -30,6 +30,10 @@ PRODUCT_MANUFACTURER := samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=trltespr BUILD_FINGERPRINT=samsung/trltespr/trltespr:4.4.4/KTU84P/N910PVPU1ANK2:user/release-keys PRIVATE_BUILD_DESC="trltespr-user 5.0.2 LRX22G N910PVPU1ANK2 release-keys"
 
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+	DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
+
 #Bootanimation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
