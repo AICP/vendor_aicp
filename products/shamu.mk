@@ -18,8 +18,8 @@ TARGET_VENDOR := moto
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LYZ28E/1914015:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LYZ28E 1914015 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:5.1.1/LMY48M/2167285:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 5.1.1 LMY48M 2167285 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
