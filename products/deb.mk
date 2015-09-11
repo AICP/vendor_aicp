@@ -20,7 +20,10 @@ PRODUCT_MANUFACTURER := Asus
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 #Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razorg BUILD_FINGERPRINT=google/razorg/deb:5.1.1/LMY47V/1836172:user/release-keys PRIVATE_BUILD_DESC="razorg-user 5.1.1 LMY47V 1836172 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=razorg \
+    BUILD_FINGERPRINT=google/razorg/deb:5.1.1/LMY48P/2170233:user/release-keys \
+    PRIVATE_BUILD_DESC="razorg-user 5.1.1 LMY48P 2170233 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
