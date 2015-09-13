@@ -46,6 +46,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/sprout4.mk \
+    $(LOCAL_DIR)/thea.mk \
     $(LOCAL_DIR)/t0lte.mk \
     $(LOCAL_DIR)/tomato.mk \
     $(LOCAL_DIR)/trltespr.mk \
