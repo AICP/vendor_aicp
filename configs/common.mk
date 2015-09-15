@@ -34,7 +34,8 @@ PRODUCT_PACKAGES += \
     WhisperPush \
     Profiles \
     WallpaperPicker \
-    CMSettingsProvider
+    CMSettingsProvider \
+    CMResolver
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
