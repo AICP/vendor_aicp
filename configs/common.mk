@@ -178,11 +178,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
 
-# HFM Files
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/etc/hosts.alt:system/etc/hosts.alt \
-    vendor/aicp/prebuilt/etc/hosts.og:system/etc/hosts.og
-
 # SuperSU
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
@@ -215,4 +210,3 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # OTA
 # PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
-
