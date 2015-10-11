@@ -44,6 +44,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/m7vzw.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/nicki.mk \
+    $(LOCAL_DIR)/oneplus2.mk \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/sprout4.mk \
