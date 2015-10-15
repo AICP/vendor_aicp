@@ -20,7 +20,6 @@
 /sys/block/mmcblk.*/queue/scheduler  --    u:object_r:sysfs_devices_system_iosched:s0
 
 /data/hostapd(/.*)?         u:object_r:wifi_data_file:s0
-/data/misc/radio(/.*)?      u:object_r:radio_data_file:s0
 
 # Expansion of these hooks is a bit unconventional
 /cache/com.cyanogenmod.keyhandler.dex   u:object_r:dalvikcache_data_file:s0
