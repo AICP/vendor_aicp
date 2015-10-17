@@ -174,6 +174,13 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
 
+# TCM (TCP Connection Management)
+PRODUCT_PACKAGES += \
+    tcmiface
+
+PRODUCT_BOOT_JARS += \
+    tcmiface
+
 # World APNs
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
