@@ -110,11 +110,6 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/trim_partitions:system/bin/trim_partitions \
     vendor/aicp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-# Bring in camera effects
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/aicp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
-
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
