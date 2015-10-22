@@ -97,7 +97,7 @@ PRODUCT_COPY_FILES += \
 
 # init.d
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.aicp.rc \
+    vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.cm.rc \
     vendor/aicp/prebuilt/common/etc/init.d/00start:system/etc/init.d/00start \
     vendor/aicp/prebuilt/common/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
     vendor/aicp/prebuilt/common/etc/init.d/99crontab:system/etc/init.d/99crontab \
