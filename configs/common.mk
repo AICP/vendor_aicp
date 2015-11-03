@@ -30,7 +30,6 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     CMFileManager \
     OmniSwitch \
-    WhisperPush \
     Profiles \
     WallpaperPicker \
     CMSettingsProvider
@@ -158,7 +157,7 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # Inherit common build.prop overrides
 -include vendor/aicp/configs/common_versions.mk
 
-# T-Mobile theme engine
+# Theme engine
 -include vendor/aicp/configs/themes_common.mk
 
 # CM Platform Library
