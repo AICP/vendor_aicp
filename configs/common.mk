@@ -32,7 +32,8 @@ PRODUCT_PACKAGES += \
     OmniSwitch \
     Profiles \
     WallpaperPicker \
-    CMSettingsProvider
+    CMSettingsProvider \
+    ExactCalculator
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
