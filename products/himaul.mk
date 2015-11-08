@@ -7,6 +7,9 @@ $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 $(call inherit-product, device/htc/himaul/full_himaul.mk)
 
 PRODUCT_NAME := aicp_himaul
+BOARD_VENDOR := htc
+TARGET_VENDOR := htc
+PRODUCT_DEVICE := himaul
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="htc_himaulatt" \
