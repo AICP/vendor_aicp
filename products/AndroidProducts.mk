@@ -2,6 +2,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/amami.mk \
     $(LOCAL_DIR)/armani.mk \
     $(LOCAL_DIR)/bacon.mk \
+    $(LOCAL_DIR)/bullhead.mk \
     $(LOCAL_DIR)/cancro.mk \
     $(LOCAL_DIR)/chagalllte.mk \
     $(LOCAL_DIR)/chagallwifi.mk \
