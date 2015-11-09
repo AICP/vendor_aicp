@@ -1,5 +1,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/amami.mk \
+    $(LOCAL_DIR)/angler.mk \
     $(LOCAL_DIR)/armani.mk \
     $(LOCAL_DIR)/bacon.mk \
     $(LOCAL_DIR)/cancro.mk \
