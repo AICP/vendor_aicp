@@ -5,7 +5,10 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/angler/aosp_shamu.mk)
+$(call inherit-product, device/huawei/angler/aosp_angler.mk)
+
+# vendor blobs
++$(call inherit-product, vendor/huawei/angler/angler-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/angler/overlay-cm
 
