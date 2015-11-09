@@ -127,26 +127,46 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 PRODUCT_PACKAGES += \
+    libsepol \
     e2fsck \
     mke2fs \
     tune2fs \
-    libssh \
-    ssh \
-    sshd \
-    sshd_config \
-    ssh-keygen \
-    start-ssh \
-    sftp \
-    scp \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
+    bash \
+    nano \
+    htop \
+    powertop \
+    lsof \
     mkfs.f2fs \
     fsck.f2fs \
     fibmap.f2fs \
     mkntfs \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    sqlite3 \
+    strace
+
+WITH_EXFAT ?= true
+ifeq ($(WITH_EXFAT),true)
+TARGET_USES_EXFAT := true
+PRODUCT_PACKAGES += \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat
+endif
+
+# Openssh
+PRODUCT_PACKAGES += \
+    libssh \
+    scp \
+    sftp \
+    ssh \
+    sshd \
+    sshd_config \
+    ssh-keygen \
+    start-ssh
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
