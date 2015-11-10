@@ -31,3 +31,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # whitelist packages for location providers not in system
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.services.whitelist.packagelist=com.google.android.gms
+
+# Disable ADB authentication
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += ro.adb.secure=0
