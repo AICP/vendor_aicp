@@ -32,9 +32,9 @@
                        CallPromptText="CallPromptId2"/>
 
          <EriInfo RoamingIndicator="0"
-                  IconIndex="0"
+                  IconIndex="1"
                   IconMode="0"
-                  EriText="Digital Roaming"
+                  EriText="Sprint"
                   CallPromptId="0"
                   AlertId="0"/>
 
