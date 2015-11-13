@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/huawei/angler/aosp_angler.mk)
 
-# vendor blobs
-$(call inherit-product, vendor/huawei/angler/angler-vendor.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/huawei/angler/overlay-cm
 
 ## Device identifier. This must come after all inclusions
@@ -21,8 +18,8 @@ TARGET_VENDOR := huawei
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0/MDA89D/2294819:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0 MDA89D 2294819 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:6.0/MDB08M/2353240:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 6.0 MDB08M 2353240 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
