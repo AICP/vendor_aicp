@@ -33,9 +33,10 @@ PRODUCT_PACKAGES += \
     Profiles \
     WallpaperPicker \
     CMSettingsProvider \
-    ExactCalculator
+    ExactCalculator \
+    AicpExtras
 
-# Extra tools in CM
+# Extra tools in AICP
 PRODUCT_PACKAGES += \
     vim \
     zip \
