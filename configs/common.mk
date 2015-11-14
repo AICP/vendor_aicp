@@ -38,10 +38,11 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
-    vim \
-    zip \
+    bzip2 \
+    curl \
     unrar \
-    curl
+    vim \
+    zip
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
@@ -136,7 +137,6 @@ PRODUCT_PACKAGES += \
     nano \
     htop \
     powertop \
-    lsof \
     mkfs.f2fs \
     fsck.f2fs \
     fibmap.f2fs \
@@ -147,7 +147,8 @@ PRODUCT_PACKAGES += \
     micro_bench \
     oprofiled \
     sqlite3 \
-    strace
+    strace \
+    pgiz
 
 WITH_EXFAT ?= true
 ifeq ($(WITH_EXFAT),true)
