@@ -1,0 +1,113 @@
+#!/system/bin/sh
+# wget-curl, a curl wrapper acting as a wget drop-in replacement - version git-HEAD
+# Usage: wget [wget args] [i need to fill this in later] <url(s)>
+# Download all URLs given using curl, but using wget's options.
+#
+#
+# End of help.
+# Copyright (c) 2015 Kylie McClain <somasis@exherbo.org>
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+#
+# End of copyright.
+#
+
+set -o pipefail
+shopt -u shift_verbose >/dev/null 2>&1
+
+help() {
+    sed -n '/^#/!d;s/^# //;s/^#//;3,${p;}' "$0" | \
+        while IFS= read help_line;do
+            if [[ "$help_line" == "End of help." ]];then
+                exit 0
+            else
+                printf "%s\n" "$help_line"
+            fi
+        done
+    exit 0
+}
+
+version() {
+    sed 's/^# //;s/, .* - version / /;2q;$!d' "$0"
+    copyright
+    exit 0
+}
+
+copyright() {
+    sed -n '/^#/!d;s/^# //;s/^#//;/End of help./,${p;}' "$0" | \
+        while IFS= read copyright_line;do
+            if [[ "$copyright_line" == "End of help." ]];then
+                true
+            elif [[ "$copyright_line" == "End of copyright." ]];then
+                break
+            else
+                printf '%s\n' "$copyright_line"
+            fi
+        done
+}#!/system/bin/sh
+# wget-curl, a curl wrapper acting as a wget drop-in replacement - version git-HEAD
+# Usage: wget [wget args] [i need to fill this in later] <url(s)>
+# Download all URLs given using curl, but using wget's options.
+#
+#
+# End of help.
+# Copyright (c) 2015 Kylie McClain <somasis@exherbo.org>
+#
+# Permission to use, copy, modify, and/or distribute this software for any
+# purpose with or without fee is hereby granted, provided that the above
+# copyright notice and this permission notice appear in all copies.
+#
+# THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+# REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
+# AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+# INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+# LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+# OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+# PERFORMANCE OF THIS SOFTWARE.
+#
+# End of copyright.
+#
+
+set -o pipefail
+shopt -u shift_verbose >/dev/null 2>&1
+
+help() {
+    sed -n '/^#/!d;s/^# //;s/^#//;3,${p;}' "$0" | \
+        while IFS= read help_line;do
+            if [[ "$help_line" == "End of help." ]];then
+                exit 0
+            else
+                printf "%s\n" "$help_line"
+            fi
+        done
+    exit 0
+}
+
+version() {
+    sed 's/^# //;s/, .* - version / /;2q;$!d' "$0"
+    copyright
+    exit 0
+}
+
+copyright() {
+    sed -n '/^#/!d;s/^# //;s/^#//;/End of help./,${p;}' "$0" | \
+        while IFS= read copyright_line;do
+            if [[ "$copyright_line" == "End of help." ]];then
+                true
+            elif [[ "$copyright_line" == "End of copyright." ]];then
+                break
+            else
+                printf '%s\n' "$copyright_line"
+            fi
+        done
+}

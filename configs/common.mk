@@ -42,6 +42,7 @@ PRODUCT_PACKAGES += \
     curl \
     unrar \
     vim \
+    wget \
     zip
 
 # Stagefright FFMPEG plugin
