@@ -38,9 +38,13 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
+    7z \
+    bash \
     bzip2 \
     curl \
+    powertop \
     unrar \
+    unzip \
     vim \
     wget \
     zip
@@ -134,10 +138,8 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
-    bash \
     nano \
     htop \
-    powertop \
     mkfs.f2fs \
     fsck.f2fs \
     fibmap.f2fs \
