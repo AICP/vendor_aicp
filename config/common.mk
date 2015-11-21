@@ -139,6 +139,11 @@ PRODUCT_PACKAGES += \
 # Custom AICP packages
 PRODUCT_PACKAGES += \
     AicpExtras
+# AICP OTA
+ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+PRODUCT_PACKAGES +=  \
+   AICP_OTA
+endif
 
 # Exchange support
 PRODUCT_PACKAGES += \
