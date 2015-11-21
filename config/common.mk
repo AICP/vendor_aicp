@@ -175,6 +175,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 include vendor/aicp/config/aicp_version.mk
 
+# AICP OTA
+ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+PRODUCT_PACKAGES +=  \
+   AICP_OTA_Updater
+endif
+
 # Google sounds
 include vendor/aicp/google/GoogleAudio.mk
 
