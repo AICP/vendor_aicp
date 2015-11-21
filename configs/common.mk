@@ -237,8 +237,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # -include vendor/cyngn/product.mk
 
-# OTA
-#ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
-#PRODUCT_COPY_FILES +=  \
-#    vendor/aicp/proprietary/AICP_OTA.apk:system/priv-app/AICP_OTA.apk
-#endif
+# AICP OTA
+ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+PRODUCT_PACKAGES +=  \
+   AICP_OTA
+endif
