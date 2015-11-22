@@ -1,6 +1,9 @@
 # Inherit some common AICP stuff
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/armani/full_armani.mk)
 

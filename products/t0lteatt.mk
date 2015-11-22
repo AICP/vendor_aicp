@@ -1,14 +1,14 @@
-# Inherit device configuration
-$(call inherit-product, device/samsung/t0lteatt/full_t0lteatt.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := t0lteatt
 
-# Inherit GSM common stuff
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
+# Inherit device configuration
+$(call inherit-product, device/samsung/t0lteatt/full_t0lteatt.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := t0lteatt

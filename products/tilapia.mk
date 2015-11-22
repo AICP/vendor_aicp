@@ -4,6 +4,9 @@ PRODUCT_RELEASE_NAME := Nexus7
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 

@@ -1,6 +1,9 @@
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 

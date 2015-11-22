@@ -1,6 +1,9 @@
 # Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 $(call inherit-product, device/samsung/klimtlte/full_klimtlte.mk)
 
 PRODUCT_NAME := aicp_klimtlte

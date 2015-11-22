@@ -8,11 +8,9 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    CellBroadcastReceiver \
     libemoji \
     LatinImeDictionaryPack \
     Microbes \
-    Stk \
     su \
     procmem \
     procrank \

@@ -1,6 +1,9 @@
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/samsung/t0lte/full_t0lte.mk)
 

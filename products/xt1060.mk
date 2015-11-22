@@ -1,14 +1,11 @@
-# Inherit AOSP device configuration for xt1060
-$(call inherit-product, device/motorola/xt1060/full_xt1060.mk)
-
-# Inherit common cdma apns
-$(call inherit-product, vendor/aicp/configs/cdma.mk)
-
-# Inherit common Verizon Wireless Perms and Lib
-$(call inherit-product, vendor/aicp/configs/vzw.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
+# Inherit AOSP device configuration for xt1060
+$(call inherit-product, device/motorola/xt1060/full_xt1060.mk)
 
 # Inherit common jf overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/ghost

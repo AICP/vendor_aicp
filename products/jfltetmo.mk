@@ -1,5 +1,8 @@
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 $(call inherit-product, device/samsung/jfltetmo/full_jfltetmo.mk)

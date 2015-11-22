@@ -1,11 +1,11 @@
-# Inherit AOSP device configuration for xt1053
-$(call inherit-product, device/motorola/xt1053/full_xt1053.mk)
-
-# Inherit common gsm config
-$(call inherit-product, vendor/aicp/configs/gsm.mk)
-
 # Inherit common product files.
 $(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
+# Inherit AOSP device configuration for xt1053
+$(call inherit-product, device/motorola/xt1053/full_xt1053.mk)
 
 # Inherit common ghost overlays
 DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/ghost

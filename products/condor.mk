@@ -1,6 +1,9 @@
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 $(call inherit-product, device/motorola/condor/full_condor.mk)
 
 ## Device identifier. This must come after all inclusions

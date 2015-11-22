@@ -1,6 +1,9 @@
 # Inherit AOSP device configuration
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Inherit AOSP device configuration for device
 $(call inherit-product, device/lge/e980/full_e980.mk)
 

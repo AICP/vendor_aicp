@@ -15,6 +15,9 @@
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
 PRODUCT_NAME := aicp_tomato
