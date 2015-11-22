@@ -15,7 +15,12 @@ PRODUCT_PACKAGES += \
     procmem \
     procrank \
     Superuser \
-    Torch
+    Torch \
+    librs_jni \
+    LiveWallpapers \
+    LiveWallpapersPicker \
+    MagicSmokeWallpapers \
+    VisualizationWallpapers
 
 # AICP packages
 PRODUCT_PACKAGES += \
