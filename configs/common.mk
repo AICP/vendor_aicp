@@ -192,14 +192,6 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
 
-# World APNs
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/apns-conf.xml:system/etc/apns-conf.xml
-
-# Selective SPN list for operator number who has the problem.
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/selective-spn-conf.xml:system/etc/selective-spn-conf.xml
-
 # SuperSU
 #PRODUCT_COPY_FILES += \
 #    vendor/aicp/prebuilt/common/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
