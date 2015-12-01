@@ -22,6 +22,10 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     VisualizationWallpapers
 
+# Include librsjni explicitly to workaround GMS issue
+PRODUCT_PACKAGES += \
+    librsjni
+
 # AICP packages
 PRODUCT_PACKAGES += \
     PhotoPhase \
