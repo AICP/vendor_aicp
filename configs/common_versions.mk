@@ -47,7 +47,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.branch=$(AICP_BRANCH) \
-    ro.aicp.device=$(AICP_PRODUCT) \
     ro.romstats.url=http://stats.aicp-rom.com/ \
     ro.romstats.name=AICP \
     ro.romstats.version=$(VERSION)-$(AICP_BUILDTYPE) \
