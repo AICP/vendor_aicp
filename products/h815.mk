@@ -11,7 +11,7 @@ $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 $(call inherit-product, device/lge/h815/full_h815.mk)
 
 # Setup device specific product configuration
-PRODUCT_NAME := cm_h815
+PRODUCT_NAME := aicp_h815
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g4" \
