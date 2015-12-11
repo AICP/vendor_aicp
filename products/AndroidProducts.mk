@@ -61,6 +61,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/titan.mk \
     $(LOCAL_DIR)/togari.mk \
     $(LOCAL_DIR)/v500.mk \
+    $(LOCAL_DIR)/victara.mk \
     $(LOCAL_DIR)/vs920.mk \
     $(LOCAL_DIR)/vs980.mk \
     $(LOCAL_DIR)/wx_na_wf.mk \
