@@ -1,4 +1,4 @@
-                                #!/bin/sh
+#!/bin/sh
 #
 # Exports
 dir=$ANDROID_BUILD_TOP
@@ -17,8 +17,8 @@ touch $Changelog
 # Print something to build output
 echo ${bldppl}"Generating changelog..."${txtrst}
 
-if [ "$AICP_BUILDTYPE" != "RELEASE" ] && [ "$AICP_BUILDTYPE" != "NIGHTLY" ]; then
-  echo "Skipped for experimental/unofficial builds" >> $Changelog;
+if [ "$USER_BUILD_NO_CHANGELOG" = "1" ] ; then
+  echo "Skipped because 'USER_BUILD_NO_CHANGELOG' was 1" >> $Changelog;
 else
   for i in $(seq 10);
   do
