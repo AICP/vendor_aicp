@@ -13,6 +13,5 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
 # Default ringtone
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.config.ringtone=Titania.ogg \
-    ro.config.notification_sound=Tethys.ogg
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.ringtone=Orion.ogg
