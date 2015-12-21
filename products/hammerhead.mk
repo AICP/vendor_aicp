@@ -25,7 +25,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Davor B (LorD CloCKaN), doc HD (semdoc)"
+	DEVICE_MAINTAINERS="Raienryu, Davor B (LorD CloCKaN)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
