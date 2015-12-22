@@ -41,7 +41,8 @@ PRODUCT_PACKAGES += \
     WallpaperPicker \
     CMSettingsProvider \
     ExactCalculator \
-    AicpExtras
+    AicpExtras \
+    Screencast
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
