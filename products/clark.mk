@@ -21,8 +21,11 @@ PRODUCT_BRAND := motorola
 PRODUCT_MODEL := XT1575
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=motorola/clark_retus/clark:5.1.1/LPH23.116-18/18:user/release-keys \
-    PRIVATE_BUILD_DESC="clark_retus-user 5.1.1 LPH23.116-18 18 release-keys"
+    PRODUCT_NAME=clark
+
+# AICP Device Maintainer
+PRODUCT_BUILD_PROP_OVERRIDES += \
+   DEVICE_MAINTAINERS="Hashbang173"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
