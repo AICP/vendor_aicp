@@ -23,6 +23,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="mantaray-user 5.1.1 LMY47V 1836172 release-keys"
 
 # Bootanimation
-TARGET_SCREEN_HEIGHT := 1600
-TARGET_SCREEN_WIDTH := 2560
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1600
 -include vendor/aicp/configs/bootanimation.mk
