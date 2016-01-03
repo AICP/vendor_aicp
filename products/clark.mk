@@ -20,6 +20,9 @@ PRODUCT_NAME := aicp_clark
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := XT1575
 
+PRODUCT_PROPERTY_OVERRIDES +=\
+    ro.product.device=clark
+
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=clark
 
