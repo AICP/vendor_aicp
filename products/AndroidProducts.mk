@@ -48,6 +48,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
     $(LOCAL_DIR)/nicki.mk \
+    $(LOCAL_DIR)/oneplus2.mk \
     $(LOCAL_DIR)/otus.mk \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/shamu.mk \
