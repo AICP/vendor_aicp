@@ -22,22 +22,19 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-# Inherit from cancro device
-$(call inherit-product, device/xiaomi/cancro/cancro.mk)
+# Inherit from dior device
+$(call inherit-product, device/xiaomi/cancro/full_dior.mk)
 
 
-PRODUCT_NAME := aicp_cancro
-PRODUCT_DEVICE := cancro
+PRODUCT_NAME := aicp_dior
+PRODUCT_DEVICE := dior
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := MI 3W
+PRODUCT_MODEL := REDMI NOTE 4G
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=cancro PRODUCT_NAME=cancro
+PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=dior PRODUCT_NAME=dior
 
 TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
@@ -46,6 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="W. Audahadi"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
+

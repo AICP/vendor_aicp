@@ -16,6 +16,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/d800.mk \
     $(LOCAL_DIR)/d801.mk \
     $(LOCAL_DIR)/d802.mk \
+    $(LOCAL_DIR)/dior.mk \
     $(LOCAL_DIR)/e980.mk \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/falcon.mk \
