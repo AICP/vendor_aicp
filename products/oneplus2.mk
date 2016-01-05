@@ -38,7 +38,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 PRODUCT_BRAND := oneplus
 TARGET_VENDOR := oneplus
 TARGET_VENDOR_PRODUCT_NAME := oneplus2
-TARGET_VENDOR_DEVICE_NAME := A0001
+TARGET_VENDOR_DEVICE_NAME := oneplus2
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=oneplus2 PRODUCT_NAME=oneplus2
 
 ## Use the latest approved GMS identifiers unless running a signed build
@@ -48,7 +48,7 @@ PRIVATE_BUILD_DESC="oneplus2-userdebug 6.0.1 MMB29M 2431559 dev-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Demian Schneller"
+	DEVICE_MAINTAINERS="Domenic Schaller"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
