@@ -42,7 +42,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     AicpExtras \
-    Screencast
+    Screencast \
+    Snap
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
