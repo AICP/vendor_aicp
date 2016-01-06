@@ -23,7 +23,7 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from dior device
-$(call inherit-product, device/xiaomi/cancro/full_dior.mk)
+$(call inherit-product, device/xiaomi/dior/full_dior.mk)
 
 
 PRODUCT_NAME := aicp_dior
