@@ -27,7 +27,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="doc HD (semdoc), Daniel G (Drgravy)"
+	DEVICE_MAINTAINERS="doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
