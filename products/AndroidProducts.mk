@@ -71,4 +71,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/wx_na_wf.mk \
     $(LOCAL_DIR)/xt1053.mk \
     $(LOCAL_DIR)/xt1060.mk \
+    $(LOCAL_DIR)/Z008.mk \
+    $(LOCAL_DIR)/Z00A.mk \
     $(LOCAL_DIR)/z3c.mk
