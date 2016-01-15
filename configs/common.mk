@@ -138,6 +138,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
+# CM Platform Library
 PRODUCT_PACKAGES += \
     libsepol \
     mke2fs \
@@ -152,7 +153,7 @@ PRODUCT_PACKAGES += \
     oprofiled \
     sqlite3 \
     strace \
-    pgiz
+    pigz
 
 WITH_EXFAT ?= true
 ifeq ($(WITH_EXFAT),true)
@@ -165,7 +166,6 @@ endif
 
 # Openssh
 PRODUCT_PACKAGES += \
-    libssh \
     scp \
     sftp \
     ssh \
@@ -173,6 +173,10 @@ PRODUCT_PACKAGES += \
     sshd_config \
     ssh-keygen \
     start-ssh
+
+# rsync
+PRODUCT_PACKAGES += \
+    rsync
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
