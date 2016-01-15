@@ -24,6 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="asusmofd_hd-user 5.0 LRX21V 2.19.40.23_20150701_1487_user release-keys"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 720
-TARGET_SCREEN_WIDTH := 1280
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
