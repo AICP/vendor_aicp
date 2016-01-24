@@ -42,7 +42,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     AicpExtras \
-    Screencast
+    Screencast \
+    CyanogenSetupWizard
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
