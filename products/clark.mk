@@ -24,7 +24,7 @@ PRODUCT_PROPERTY_OVERRIDES +=\
     ro.product.device=clark
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=clark
+    PRODUCT_NAME="Moto X Pure"
 
 # AICP Device Maintainer
 PRODUCT_BUILD_PROP_OVERRIDES += \
