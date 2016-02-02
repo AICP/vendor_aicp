@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
-    VisualizationWallpapers
+    VisualizationWallpapers \
+    BasicDreams
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
