@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2015 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,39 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, device/oneplus/oneplus2/full_oneplus2.mk)
 
-# Inherit from bacon device
-$(call inherit-product, device/oneplus/oneplus2/oneplus2.mk)
-
-# Inherit telephony stuff
-$(call inherit-product, vendor/aicp/configs/telephony.mk)
-
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-# Inherit some common AICP stuff
+# Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Device identifier. This must come after all inclusions
-PRODUCT_NAME := aicp_oneplus2
-PRODUCT_DEVICE := oneplus2
-PRODUCT_MANUFACTURER := OnePlus
-PRODUCT_MODEL := A0001
+# Inherit oneplus2-specific vendor tree
+$(call inherit-product-if-exists, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
 
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-PRODUCT_BRAND := oneplus
-TARGET_VENDOR := oneplus
-TARGET_VENDOR_PRODUCT_NAME := oneplus2
-TARGET_VENDOR_DEVICE_NAME := oneplus2
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=oneplus2 PRODUCT_NAME=oneplus2
-
-## Use the latest approved GMS identifiers unless running a signed build
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus2/oneplus2:6.0.1/MMB29M/2431559:userdebug/dev-keys
-PRIVATE_BUILD_DESC="oneplus2-userdebug 6.0.1 MMB29M 2431559 dev-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
