@@ -5,7 +5,7 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit AOSP device configuration for xt1060
+# Inherit AICP device configuration for ghost
 $(call inherit-product, device/motorola/ghost/full_ghost.mk)
 
 
@@ -17,9 +17,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="John B (TheRingmaster), doc HD (semdoc)"
+	DEVICE_MAINTAINERS="Omkar (Megatron007)"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
