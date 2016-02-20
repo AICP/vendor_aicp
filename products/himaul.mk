@@ -14,8 +14,8 @@ PRODUCT_NAME := aicp_himaul
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="htc_himaulatt" \
     PRODUCT_NAME="himaulatt_na_gen_unlock" \
-    BUILD_FINGERPRINT="htc/himaulatt_na_gen_unlock/htc_himaulatt:5.1/LMY47O/559710.4:user/release-keys" \
-    PRIVATE_BUILD_DESC="2.8.617.4 CL559710 release-keys"
+    BUILD_FINGERPRINT="htc/himaulatt_na_gen_unlock/htc_himaulatt:6.0/MRA58K/669696.12:user/release-keys" \
+    PRIVATE_BUILD_DESC="3.35.617.12 CL669696 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
