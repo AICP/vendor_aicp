@@ -14,7 +14,7 @@ $(call inherit-product, device/asus/flo/full_flo.mk)
 PRODUCT_DEVICE := flo
 PRODUCT_NAME := aicp_flo
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 7
+PRODUCT_MODEL := Nexus 7 2013 WiFi
 PRODUCT_MANUFACTURER := Asus
 
 PRODUCT_RESTRICT_VENDOR_FILES := false

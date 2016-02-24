@@ -17,7 +17,7 @@ $(call inherit-product, device/asus/deb/full_deb.mk)
 PRODUCT_DEVICE := deb
 PRODUCT_NAME := aicp_deb
 PRODUCT_BRAND := Google
-PRODUCT_MODEL := Nexus 7
+PRODUCT_MODEL := Nexus 7 2013 LTE
 PRODUCT_MANUFACTURER := Asus
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
