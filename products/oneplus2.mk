@@ -17,13 +17,9 @@ $(call inherit-product, device/oneplus/oneplus2/full_oneplus2.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Inherit oneplus2-specific vendor tree
-$(call inherit-product-if-exists, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
-
-
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Demian Schneller (Trafalgar Square)"
+	DEVICE_MAINTAINERS="Trafalgar Square"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
