@@ -52,6 +52,4 @@ cp $Changelog $OUT/system/etc/
 cp $Changelog $OUT/
 rm $Changelog
 
-mv $OUT/Changelog.txt $OUT/Changelog.txt
-
 exit 0
