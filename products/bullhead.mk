@@ -19,9 +19,9 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:6.0.1/MMB29Q/2480792:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 6.0.1 MMB29Q 2480792 release-keys" \
-    BUILD_ID=MMB29Q
+    BUILD_FINGERPRINT=google/bullhead/bullhead:6.0.1/MMB29V/2554798:user/release-keys \
+    PRIVATE_BUILD_DESC="bullhead-user 6.0.1 MMB29V 2554798 release-keys" \
+    BUILD_ID=MMB29V
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
