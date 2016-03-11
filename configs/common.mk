@@ -1,7 +1,7 @@
 SUPERUSER_EMBEDDED := true
 
 # Common overlay
-PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
+DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 
 # Common dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
