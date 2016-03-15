@@ -45,6 +45,10 @@ PRODUCT_PACKAGES += \
     AicpExtras \
     Screencast
 
+# Exchange support
+PRODUCT_PACKAGES += \
+    Exchange2
+
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
     7z \
