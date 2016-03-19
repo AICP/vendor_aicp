@@ -54,7 +54,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/osprey.mk \
     $(LOCAL_DIR)/otus.mk \
     $(LOCAL_DIR)/peregrine.mk \
-    $(LOCAL_DIR)/serranodsxx.mk \
+    $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
     $(LOCAL_DIR)/sprout4.mk \
     $(LOCAL_DIR)/surnia.mk \
