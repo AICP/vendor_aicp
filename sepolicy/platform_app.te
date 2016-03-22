@@ -2,6 +2,8 @@
 # This is a performance optimization that allows platform apps to bypass the FUSE layer
 allow platform_app sdcard_posix:dir create_dir_perms;
 allow platform_app sdcard_posix:file create_file_perms;
+allow platform_app battery_service:service_manager find;
+allow platform_app healthd_service:service_manager find;
 
 # Allow Gallery3D to crop user images
 allow platform_app system_app_data_file:file rw_file_perms;
