@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := fugu
 
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/configs/common_full_tv.mk)
+$(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/fugu/aosp_fugu.mk)
