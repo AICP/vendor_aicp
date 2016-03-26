@@ -6,7 +6,8 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/configs/permissions/org.cyanogenmod.profiles.xml:system/etc/permissions/org.cyanogenmod.profiles.xml \
     vendor/aicp/configs/permissions/org.cyanogenmod.appsuggest.xml:system/etc/permissions/org.cyanogenmod.appsuggest.xml \
     vendor/aicp/configs/permissions/org.cyanogenmod.telephony.xml:system/etc/permissions/org.cyanogenmod.telephony.xml \
-    vendor/aicp/configs/permissions/org.cyanogenmod.performance.xml:system/etc/permissions/org.cyanogenmod.performance.xml
+    vendor/aicp/configs/permissions/org.cyanogenmod.performance.xml:system/etc/permissions/org.cyanogenmod.performance.xml \
+    vendor/aicp/configs/permissions/org.cyanogenmod.partner.xml:system/etc/permissions/org.cyanogenmod.partner.xml
 
 # CM Platform Library
 PRODUCT_PACKAGES += \
