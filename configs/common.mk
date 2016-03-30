@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     CMSettingsProvider \
     ExactCalculator \
     AicpExtras \
-    Screencast
+    Screencast \
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
