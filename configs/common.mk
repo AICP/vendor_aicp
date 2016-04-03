@@ -44,8 +44,7 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     AicpExtras \
     Screencast \
-    LiveLockScreenService \
-    WeatherProvider
+    LiveLockScreenService
 
 # Exchange support
 PRODUCT_PACKAGES += \
