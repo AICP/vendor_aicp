@@ -228,8 +228,8 @@ PRODUCT_COPY_FILES += \
 #    vendor/aicp/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
 
 # AdAway App
-#PRODUCT_COPY_FILES += \
-#    vendor/aicp/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
 
 # -include vendor/cyngn/product.mk
 
