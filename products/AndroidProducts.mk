@@ -21,6 +21,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/falcon.mk \
     $(LOCAL_DIR)/flounder.mk \
+    $(LOCAL_DIR)/g2m.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/h815.mk \
     $(LOCAL_DIR)/hammerhead.mk \
