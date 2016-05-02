@@ -32,6 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="ether-user 6.0.1 MMB29M 00WW_1_290 release-keys"
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 1080 
-TARGET_SCREEN_WIDTH := 1920
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
 -include vendor/aicp/configs/bootanimation.mk
