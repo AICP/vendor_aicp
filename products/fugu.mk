@@ -18,8 +18,8 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=fugu \
-    BUILD_FINGERPRINT=google/fugu/fugu:6.0/MRA58K/2256973:user/release-keys \
-    PRIVATE_BUILD_DESC="fugu-user 6.0 MRA58K 2256973 release-keys"
+    BUILD_FINGERPRINT=google/fugu/fugu:6.0.1/MOB30G/2723637:user/release-keys \
+    PRIVATE_BUILD_DESC="fugu-user 6.0.1 MOB30G 2723637 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
