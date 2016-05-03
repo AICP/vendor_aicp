@@ -19,6 +19,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/dior.mk \
     $(LOCAL_DIR)/e980.mk \
     $(LOCAL_DIR)/endeavoru.mk \
+    $(LOCAL_DIR)/ether.mk \
     $(LOCAL_DIR)/falcon.mk \
     $(LOCAL_DIR)/flounder.mk \
     $(LOCAL_DIR)/fugu.mk \
@@ -55,6 +56,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/oneplus2.mk \
     $(LOCAL_DIR)/osprey.mk \
     $(LOCAL_DIR)/otus.mk \
+    $(LOCAL_DIR)/onyx.mk \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
