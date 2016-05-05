@@ -40,7 +40,7 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="W. Audahadi"
+	DEVICE_MAINTAINERS="audahadi/msfkonsole"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
