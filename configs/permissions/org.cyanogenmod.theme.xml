@@ -25,4 +25,7 @@
 
     <!-- Supports themes using v1 of the theme engine -->
     <feature name="org.cyanogenmod.theme.v1" />
+
+    <!-- Supports CMTE extensions -->
+    <feature name="org.cyanogenmod.theme.extensions" />
 </permissions>
