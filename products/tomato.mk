@@ -21,6 +21,9 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit from device
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8939
+
 PRODUCT_NAME := aicp_tomato
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := tomato
