@@ -7,8 +7,8 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Enhanced NFC
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
-# Inherit device configuration for huashan
-$(call inherit-product, device/sony/huashan/huashan.mk)
+# Inherit device configurations
+$(call inherit-product, device/sony/huashan/device.mk)
 
 # Device display
 TARGET_SCREEN_HEIGHT := 1280
