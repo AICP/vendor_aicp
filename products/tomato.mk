@@ -18,6 +18,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
+# Inherit from device
 $(call inherit-product, device/yu/tomato/full_tomato.mk)
 
 PRODUCT_NAME := aicp_tomato
@@ -30,13 +31,16 @@ TARGET_VENDOR_PRODUCT_NAME := YUREKA
 TARGET_VENDOR_DEVICE_NAME := YUREKA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUREKA PRODUCT_NAME=YUREKA
 
+## Use the latest approved GMS identifiers unless running a signed build
+ifneq ($(SIGN_BUILD),true)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=YU/YUREKA/YUREKA:5.0.2/LRX22G/YNG1TAS1K0:user/release-keys \
-    PRIVATE_BUILD_DESC="YUREKA-user 5.0.2 LRX22G YNG1TAS1K0 release-keys"
+    BUILD_FINGERPRINT=YU/YUREKA/YUREKA:5.1.1/LMY49J/YOG4PAS8A4:user/release-keys \
+    PRIVATE_BUILD_DESC="YUREKA-user 5.1.1 LMY49J YOG4PAS8A4 release-keys"
+endif
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Parth B (TheStrix)"
+        DEVICE_MAINTAINERS="Sanyam Jain (Men_in_black007)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
