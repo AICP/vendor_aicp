@@ -18,8 +18,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-$(call inherit-product, device/yu/lettuce/full_lettuce.mk)
-
 PRODUCT_NAME := aicp_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
