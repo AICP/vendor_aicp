@@ -18,6 +18,9 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
+
 PRODUCT_NAME := aicp_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
