@@ -27,9 +27,9 @@ PRODUCT_NAME := aicp_m7
 
 # Override build props
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="htc/m7_google/m7:5.0.1/LRX22C.H3/434277:user/release-keys" \
-    BUILD_ID=LRX22C.H3 \
-    PRIVATE_BUILD_DESC="5.11.1700.3 CL434277 release-keys"
+    BUILD_FINGERPRINT="htc/m7_google/m7:5.1/LMY47O.H18/666675:user/release-keys" \
+    BUILD_ID=LMY47O.H18 \
+    PRIVATE_BUILD_DESC="6.04.1700.18 CL536258 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
