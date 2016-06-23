@@ -43,6 +43,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/jflteusc.mk \
     $(LOCAL_DIR)/jfltevzw.mk \
     $(LOCAL_DIR)/jfltexx.mk \
+    $(LOCAL_DIR)/kenzo.mk \
     $(LOCAL_DIR)/klimtlte.mk \
     $(LOCAL_DIR)/klimtwifi.mk \
     $(LOCAL_DIR)/ls980.mk \
