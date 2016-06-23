@@ -12,7 +12,7 @@ PRODUCT_NAME := aicp_kltekdi
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Alex S (OptX), doc HD (semdoc)"
+        DEVICE_MAINTAINERS="kbc-developers, Garry050"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
