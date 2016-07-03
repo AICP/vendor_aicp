@@ -19,10 +19,9 @@ PRODUCT_NAME := aicp_leo
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="nian0114"
+    DEVICE_MAINTAINERS="nian0114"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1440
-
 -include vendor/aicp/configs/bootanimation.mk
