@@ -63,6 +63,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
+    $(LOCAL_DIR)/shieldtablet.mk \
     $(LOCAL_DIR)/sprout4.mk \
     $(LOCAL_DIR)/surnia.mk \
     $(LOCAL_DIR)/thea.mk \
