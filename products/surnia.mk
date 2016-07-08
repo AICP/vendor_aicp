@@ -38,3 +38,7 @@ PRODUCT_RELEASE_NAME := surnia
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto E LTE (2nd gen)"
+
+# Copy bootanimation for surnia
+PRODUCT_COPY_FILES +=  \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip
