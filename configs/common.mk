@@ -234,6 +234,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
 
+# AICP memo App
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/app/AICP-memo.apk:system/priv-app/AICP-memo/AICP-memo.apk
+
 # -include vendor/cyngn/product.mk
 
 # AICP OTA
