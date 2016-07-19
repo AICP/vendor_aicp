@@ -1,5 +1,5 @@
 # Inherit some common Tablet stuff.
-$(call inherit-product, vendor/aicp/configs/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit device configuration for wx_na_wf.
 $(call inherit-product, device/nvidia/shieldtablet/full_shieldtablet.mk)
