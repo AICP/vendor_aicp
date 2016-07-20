@@ -45,7 +45,8 @@ PRODUCT_PACKAGES += \
     AicpExtras \
     Screencast \
     LiveLockScreenService \
-    DataUsageProvider
+    DataUsageProvider \
+    ThemeManagerService
 
 # Exchange support
 PRODUCT_PACKAGES += \
