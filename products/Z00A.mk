@@ -1,13 +1,16 @@
+# Inherit some common AICP stuff.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/Z00A/device.mk)
+
+# Enhanced NFC
+$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z00A/overlay
 
@@ -24,6 +27,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=WW_Z00A \
     BUILD_FINGERPRINT=asus/WW_Z00A/Z00A:5.0/LRX21V/2.20.40.165_20160118_6541_user:user/release-keys \
     PRIVATE_BUILD_DESC="asusmofd_fhd-user 5.0 LRX21V 2.20.40.165_20160118_6541_user release-keys"
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+        DEVICE_MAINTAINERS="Hakan (Nyks45)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
