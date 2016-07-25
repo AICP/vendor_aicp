@@ -31,6 +31,7 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     Trebuchet \
     Eleven \
+    CMAudioService \
     Development \
     LockClock \
     AudioFX \
