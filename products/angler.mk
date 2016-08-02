@@ -21,12 +21,12 @@ TARGET_VENDOR := huawei
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MTC19X/2960136:user/release-keys \
-    PRIVATE_BUILD_DESC="angler-user 6.0.1 MTC19X 2960136 release-keys"
+    BUILD_FINGERPRINT=google/angler/angler:6.0.1/MTC20F/3031278:user/release-keys \
+    PRIVATE_BUILD_DESC="angler-user 6.0.1 MTC20F 3031278 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Davor B (LorD CloCKaN)"
+    DEVICE_MAINTAINERS="Davor B (LorD CloCKaN)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
