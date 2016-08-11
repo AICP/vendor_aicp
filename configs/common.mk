@@ -66,6 +66,10 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Themes
+PRODUCT_PACKAGES += \
+    HexoLibre
+
 # DU Utils Library
 PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
