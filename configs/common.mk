@@ -224,8 +224,10 @@ PRODUCT_COPY_FILES += packages/wallpapers/LivePicker/android.software.live_wallp
 # Theme engine
 -include vendor/aicp/configs/themes_common.mk
 
+ifneq ($(TARGET_DISABLE_CMSDK), true)
 # CMSDK
 include vendor/aicp/configs/cmsdk_common.mk
+endif
 
 # SuperSU
 #PRODUCT_COPY_FILES += \
