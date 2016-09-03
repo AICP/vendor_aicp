@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
 
 # AICP packages
 PRODUCT_PACKAGES += \
+    CMParts \
     PhotoPhase \
     Trebuchet \
     Eleven \
