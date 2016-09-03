@@ -830,7 +830,7 @@ function extract() {
 
         # Check pinned files
         local HASH="${HASHLIST[$i-1]}"
-        if [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
+        if [ "$DISABLE_PINNING" != "1" ] && [ ! -z "$HASH" ] && [ "$HASH" != "x" ]; then
             local KEEP=""
             local TMP="$TMP_DIR/$FROM"
             if [ -f "$TMP" ]; then
