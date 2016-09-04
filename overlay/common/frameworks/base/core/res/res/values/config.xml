@@ -13,7 +13,7 @@
 
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
-    <!-- Disable stock OTA components if installed
+    <!-- Disable stock OTA components if installed -->
     <string-array name="config_disabledComponents" translatable="false">
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateActivity</item>
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService$Receiver</item>
@@ -22,13 +22,13 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$ActiveReceiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService$SecretCodeReceiver</item>
-    </string-array> -->
+    </string-array>
 
-    <!-- Force enabling of some services that could have been previously disabled
+    <!-- Force enabling of some services that could have been previously disabled -->
     <string-array name="config_forceEnabledComponents" translatable="false">
         <item>com.google.android.gsf/com.google.android.gsf.update.SystemUpdateService</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
-    </string-array> -->
+    </string-array>
 
     <!-- Defines the default set of global actions. Actions may still be disabled or hidden based
          on the current state of the device. -->
@@ -43,6 +43,6 @@
     <!-- Enable lockscreen rotation by default -->
     <bool name="config_enableLockScreenRotation">true</bool>
 
-    <!-- Whether to persist the notification for when a usb drive device is plugged in
-    <bool name="config_persistUsbDriveNotification">true</bool> -->
+    <!-- Whether to persist the notification for when a usb drive device is plugged in -->
+    <bool name="config_persistUsbDriveNotification">true</bool>
 </resources>
