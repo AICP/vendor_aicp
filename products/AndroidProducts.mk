@@ -61,6 +61,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/osprey.mk \
     $(LOCAL_DIR)/otus.mk \
     $(LOCAL_DIR)/onyx.mk \
+    $(LOCAL_DIR)/pme.mk \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
