@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
-    BasicDreams
+    BasicDreams \
+    WeatherManagerService
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
@@ -40,13 +41,11 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     OmniSwitch \
     Profiles \
-    WallpaperPicker \
     CMSettingsProvider \
     ExactCalculator \
     Screencast \
     LiveLockScreenService \
-    DataUsageProvider \
-    ThemeManagerService
+    WeatherProvider
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -71,21 +70,21 @@ PRODUCT_PACKAGES += \
     HexoLibre
 
 # DU Utils Library
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
-PRODUCT_BOOT_JARS += \
+#PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 # Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libffmpeg_extractor \
-    libffmpeg_omx \
-    media_codecs_ffmpeg.xml
+#PRODUCT_PACKAGES += \
+#    libffmpeg_extractor \
+#    libffmpeg_omx \
+#    media_codecs_ffmpeg.xml
 
-PRODUCT_PROPERTY_OVERRIDES += \
-    media.sf.omx-plugin=libffmpeg_omx.so \
-    media.sf.extractor-plugin=libffmpeg_extractor.so
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    media.sf.omx-plugin=libffmpeg_omx.so \
+#    media.sf.extractor-plugin=libffmpeg_extractor.so
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_PROPERTY_OVERRIDES += \

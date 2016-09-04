@@ -1,6 +1,6 @@
 # Theme engine
-PRODUCT_PACKAGES += \
-    aapt \
-    ThemeChooser \
-    ThemesProvider
+#PRODUCT_PACKAGES += \
+#    aapt \
+#    ThemeChooser \
+#    ThemesProvider
 
