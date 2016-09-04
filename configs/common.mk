@@ -21,7 +21,8 @@ PRODUCT_PACKAGES += \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
     BasicDreams \
-    WeatherManagerService
+    WeatherManagerService \
+    Browser2
 
 # Include librsjni explicitly to workaround GMS issue
 PRODUCT_PACKAGES += \
