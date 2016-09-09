@@ -21,8 +21,8 @@ TARGET_VENDOR := huawei
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=angler \
-    BUILD_FINGERPRINT="google/angler/angler:7.0/NRD90M/3085278:user/release-keys" \
-    PRIVATE_BUILD_DESC="angler-user 7.0 NRD90M 3085278 release-keys"
+    BUILD_FINGERPRINT="google/angler/angler:7.0/NRD90U/3155372:user/release-keys" \
+    PRIVATE_BUILD_DESC="angler-user 7.0 NRD90U 3155372 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
