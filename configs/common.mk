@@ -10,6 +10,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     libemoji \
     LatinImeDictionaryPack \
+    LatinIME \
     su \
     procmem \
     procrank \
@@ -236,8 +237,11 @@ endif
 #    vendor/aicp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
 
 # Copy latinime for gesture typing
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+#PRODUCT_COPY_FILES += \
+#    vendor/aicp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
+
+# Include AICP LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 # Kernel Adiutor App
 # PRODUCT_COPY_FILES += \
