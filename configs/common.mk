@@ -19,6 +19,7 @@ PRODUCT_PACKAGES += \
     librs_jni \
     LiveWallpapers \
     LiveWallpapersPicker \
+    PhotoTable \
     MagicSmokeWallpapers \
     VisualizationWallpapers \
     BasicDreams \
@@ -47,7 +48,8 @@ PRODUCT_PACKAGES += \
     ExactCalculator \
     Screencast \
     LiveLockScreenService \
-    WeatherProvider
+    WeatherProvider \
+    SoundRecorder
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -55,6 +57,20 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
+    libsepol \
+    mke2fs \
+    tune2fs \
+    nano \
+    htop \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    sqlite3 \
+    strace \
+    pigz \
     7z \
     lib7z \
     bash \
@@ -160,23 +176,6 @@ PRODUCT_COPY_FILES += \
 # Enable wireless Xbox 360 controller support
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
-
-# CM Platform Library
-PRODUCT_PACKAGES += \
-    libsepol \
-    mke2fs \
-    tune2fs \
-    nano \
-    htop \
-    mkfs.ntfs \
-    fsck.ntfs \
-    mount.ntfs \
-    gdbserver \
-    micro_bench \
-    oprofiled \
-    sqlite3 \
-    strace \
-    pigz
 
 # Custom off-mode charger
 ifneq ($(WITH_CM_CHARGER),false)
