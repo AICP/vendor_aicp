@@ -44,12 +44,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
-ifeq ($(OTA_PACKAGE_SIGNING_KEY),)
-    PRODUCT_EXTRA_RECOVERY_KEYS += \
-        vendor/aicp/build/target/product/security/aicp \
-        vendor/aicp/build/target/product/security/aicp-devkey
-endif
-
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.branch=$(AICP_BRANCH) \
