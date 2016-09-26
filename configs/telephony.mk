@@ -9,7 +9,8 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     telephony-ext
 
-PRODUCT_BOOT_JARS += telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Default ringtone
 PRODUCT_PROPERTY_OVERRIDES += \
