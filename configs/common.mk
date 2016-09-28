@@ -55,7 +55,8 @@ PRODUCT_PACKAGES += \
     su \
     Superuser \
     Torch \
-    VisualizationWallpapers
+    VisualizationWallpapers \
+    AicpExtras
 
 # Exchange support
 PRODUCT_PACKAGES += \
