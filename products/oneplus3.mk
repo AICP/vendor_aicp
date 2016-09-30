@@ -35,7 +35,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="genesixxbf3"
+        DEVICE_MAINTAINERS="Trafalgar Square"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
