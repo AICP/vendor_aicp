@@ -16,19 +16,39 @@
 #
 
 PRODUCT_COPY_FILES_LIST=()
+PRODUCT_COPY_FILES_HASHES=()
 PRODUCT_PACKAGES_LIST=()
+PRODUCT_PACKAGES_HASHES=()
 PACKAGE_LIST=()
 VENDOR_STATE=-1
+VENDOR_RADIO_STATE=-1
 COMMON=-1
+ARCHES=
+FULLY_DEODEXED=-1
+
+TMPDIR="/tmp/extractfiles.$$"
+mkdir "$TMPDIR"
+
+#
+# cleanup
+#
+# kill our tmpfiles with fire on exit
+#
+function cleanup() {
+    rm -rf "${TMPDIR:?}"
+}
+
+trap cleanup EXIT INT TERM ERR
 
 #
 # setup_vendor
 #
 # $1: device name
 # $2: vendor name
-# $3: gzosp root directory
+# $3: CM root directory
 # $4: is common device - optional, default to false
 # $5: cleanup - optional, default to true
+# $6: custom vendor makefile name - optional, default to false
 #
 # Must be called before any other functions can be used. This
 # sets up the internal state for a new vendor configuration.
@@ -46,20 +66,25 @@ function setup_vendor() {
         exit 1
     fi
 
-    export GZOSP_ROOT="$3"
-    if [ ! -d "$GZOSP_ROOT" ]; then
-        echo "\$GZOSP_ROOT must be set and valid before including this script!"
+    export CM_ROOT="$3"
+    if [ ! -d "$CM_ROOT" ]; then
+        echo "\$CM_ROOT must be set and valid before including this script!"
         exit 1
     fi
 
     export OUTDIR=vendor/"$VENDOR"/"$DEVICE"
-    if [ ! -d "$GZOSP_ROOT/$OUTDIR" ]; then
-        mkdir -p "$GZOSP_ROOT/$OUTDIR"
+    if [ ! -d "$CM_ROOT/$OUTDIR" ]; then
+        mkdir -p "$CM_ROOT/$OUTDIR"
     fi
 
-    export PRODUCTMK="$GZOSP_ROOT"/"$OUTDIR"/"$DEVICE"-vendor.mk
-    export ANDROIDMK="$GZOSP_ROOT"/"$OUTDIR"/Android.mk
-    export BOARDMK="$GZOSP_ROOT"/"$OUTDIR"/BoardConfigVendor.mk
+    VNDNAME="$6"
+    if [ -z "$VNDNAME" ]; then
+        VNDNAME="$DEVICE"
+    fi
+
+    export PRODUCTMK="$CM_ROOT"/"$OUTDIR"/"$VNDNAME"-vendor.mk
+    export ANDROIDMK="$CM_ROOT"/"$OUTDIR"/Android.mk
+    export BOARDMK="$CM_ROOT"/"$OUTDIR"/BoardConfigVendor.mk
 
     if [ "$4" == "true" ] || [ "$4" == "1" ]; then
         COMMON=1
@@ -69,8 +94,10 @@ function setup_vendor() {
 
     if [ "$5" == "true" ] || [ "$5" == "1" ]; then
         VENDOR_STATE=1
+        VENDOR_RADIO_STATE=1
     else
         VENDOR_STATE=0
+        VENDOR_RADIO_STATE=0
     fi
 }
 
@@ -488,25 +515,47 @@ function _adb_connected {
 };
 
 #
-# parse_file_list
+# parse_file_list:
+#
+# $1: input file
+#
+# Sets PRODUCT_PACKAGES and PRODUCT_COPY_FILES while parsing the input file
 #
 function parse_file_list() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
+    if [ -z "$1" ]; then
+        echo "An input file is expected!"
+        exit 1
+    elif [ ! -f "$1" ]; then
+        echo "Input file "$1" does not exist!"
         exit 1
     fi
 
     PRODUCT_PACKAGES_LIST=()
+    PRODUCT_PACKAGES_HASHES=()
     PRODUCT_COPY_FILES_LIST=()
+    PRODUCT_COPY_FILES_HASHES=()
 
     while read -r line; do
         if [ -z "$line" ]; then continue; fi
 
+        # If the line has a pipe delimiter, a sha1 hash should follow.
+        # This indicates the file should be pinned and not overwritten
+        # when extracting files.
+        local SPLIT=(${line//\|/ })
+        local COUNT=${#SPLIT[@]}
+        local SPEC=${SPLIT[0]}
+        local HASH="x"
+        if [ "$COUNT" -gt "1" ]; then
+            HASH=${SPLIT[1]}
+        fi
+
         # if line starts with a dash, it needs to be packaged
-        if [[ "$line" =~ ^- ]]; then
-            PRODUCT_PACKAGES_LIST+=("${line#-}")
+        if [[ "$SPEC" =~ ^- ]]; then
+            PRODUCT_PACKAGES_LIST+=("${SPEC#-}")
+            PRODUCT_PACKAGES_HASHES+=("$HASH")
         else
-            PRODUCT_COPY_FILES_LIST+=("$line")
+            PRODUCT_COPY_FILES_LIST+=("$SPEC")
+            PRODUCT_COPY_FILES_HASHES+=("$HASH")
         fi
 
     done < <(egrep -v '(^#|^[[:space:]]*$)' "$1" | sort | uniq)
@@ -522,13 +571,118 @@ function parse_file_list() {
 # the product makefile.
 #
 function write_makefiles() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
-        exit 1
-    fi
     parse_file_list "$1"
     write_product_copy_files
     write_product_packages
+}
+
+#
+# append_firmware_calls_to_makefiles:
+#
+# Appends to Android.mk the calls to all images present in radio folder
+# (filesmap file used by releasetools to map firmware images should be kept in the device tree)
+#
+function append_firmware_calls_to_makefiles() {
+    cat << EOF >> "$ANDROIDMK"
+ifeq (\$(LOCAL_PATH)/radio, \$(wildcard \$(LOCAL_PATH)/radio))
+
+RADIO_FILES := \$(wildcard \$(LOCAL_PATH)/radio/*)
+\$(foreach f, \$(notdir \$(RADIO_FILES)), \\
+    \$(call add-radio-file,radio/\$(f)))
+\$(call add-radio-file,../../../device/$VENDOR/$DEVICE/radio/filesmap)
+
+endif
+
+EOF
+}
+
+#
+# get_file:
+#
+# $1: input file
+# $2: target file/folder
+# $3: source of the file (can be "adb" or a local folder)
+#
+# Silently extracts the input file to defined target
+# Returns success if file can be pulled from the device or found locally
+#
+function get_file() {
+    local SRC="$3"
+
+    if [ "$SRC" = "adb" ]; then
+        # try to pull
+        adb pull "$1" "$2" >/dev/null 2>&1 && return 0
+
+        return 1
+    else
+        # try to copy
+        cp "$SRC/$1" "$2" 2>/dev/null && return 0
+
+        return 1
+    fi
+};
+
+#
+# oat2dex:
+#
+# $1: extracted apk|jar (to check if deodex is required)
+# $2: odexed apk|jar to deodex
+# $3: source of the odexed apk|jar
+#
+# Convert apk|jar .odex in the corresposing classes.dex
+#
+function oat2dex() {
+    local CM_TARGET="$1"
+    local OEM_TARGET="$2"
+    local SRC="$3"
+    local TARGET=
+    local OAT=
+
+    if [ -z "$BAKSMALIJAR" ] || [ -z "$SMALIJAR" ]; then
+        export BAKSMALIJAR="$CM_ROOT"/vendor/cm/build/tools/smali/baksmali.jar
+        export SMALIJAR="$CM_ROOT"/vendor/cm/build/tools/smali/smali.jar
+    fi
+
+    # Extract existing boot.oats to the temp folder
+    if [ -z "$ARCHES" ]; then
+        echo "Checking if system is odexed and extracting boot.oats, if applicable. This may take a while..."
+        for ARCH in "arm64" "arm" "x86_64" "x86"; do
+            if get_file "system/framework/$ARCH/boot.oat" "$TMPDIR/boot_$ARCH.oat" "$SRC"; then
+                ARCHES+="$ARCH "
+            fi
+        done
+    fi
+
+    if [ -z "$ARCHES" ]; then
+        FULLY_DEODEXED=1 && return 0 # system is fully deodexed, return
+    fi
+
+    if [ ! -f "$CM_TARGET" ]; then
+        return;
+    fi
+
+    if grep "classes.dex" "$CM_TARGET" >/dev/null; then
+        return 0 # target apk|jar is already odexed, return
+    fi
+
+    for ARCH in $ARCHES; do
+        BOOTOAT="$TMPDIR/boot_$ARCH.oat"
+
+        local OAT="$(dirname "$OEM_TARGET")/oat/$ARCH/$(basename "$OEM_TARGET" ."${OEM_TARGET##*.}").odex"
+
+        if get_file "$OAT" "$TMPDIR" "$SRC"; then
+            java -jar "$BAKSMALIJAR" -x -o "$TMPDIR/dexout" -c "$BOOTOAT" -d "$TMPDIR" "$TMPDIR/$(basename "$OAT")"
+        elif [[ "$CM_TARGET" =~ .jar$ ]]; then
+            # try to extract classes.dex from boot.oat for framework jars
+            java -jar "$BAKSMALIJAR" -x -o "$TMPDIR/dexout" -c "$BOOTOAT" -d "$TMPDIR" -e "/$OEM_TARGET" "$BOOTOAT"
+        else
+            continue
+        fi
+
+        java -jar "$SMALIJAR" "$TMPDIR/dexout" -o "$TMPDIR/classes.dex" && break
+    done
+
+    rm -rf "$TMPDIR/dexout"
 }
 
 #
@@ -562,17 +716,27 @@ function init_adb_connection() {
 }
 
 #
+# fix_xml:
+#
+# $1: xml file to fix
+#
+function fix_xml() {
+    local XML="$1"
+    local TEMP_XML="$TMPDIR/`basename "$XML"`.temp"
+
+    grep '^<?xml version' "$XML" > "$TEMP_XML"
+    grep -v '^<?xml version' "$XML" >> "$TEMP_XML"
+
+    mv "$TEMP_XML" "$XML"
+}
+
+#
 # extract:
 #
 # $1: file containing the list of items to extract
 # $2: path to extracted system folder, or "adb" to extract from device
 #
 function extract() {
-    if [ ! -e "$1" ]; then
-        echo "$1 does not exist!"
-        exit 1
-    fi
-
     if [ -z "$OUTDIR" ]; then
         echo "Output dir not set!"
         exit 1
@@ -584,16 +748,21 @@ function extract() {
     set +e
 
     local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} ${PRODUCT_PACKAGES_LIST[@]} )
+    local HASHLIST=( ${PRODUCT_COPY_FILES_HASHES[@]} ${PRODUCT_PACKAGES_HASHES[@]} )
     local COUNT=${#FILELIST[@]}
     local SRC="$2"
-    local OUTPUT_ROOT="$GZOSP_ROOT"/"$OUTDIR"/proprietary
+    local OUTPUT_ROOT="$CM_ROOT"/"$OUTDIR"/proprietary
+    local OUTPUT_TMP="$TMPDIR"/"$OUTDIR"/proprietary
+
     if [ "$SRC" = "adb" ]; then
         init_adb_connection
     fi
 
     if [ "$VENDOR_STATE" -eq "0" ]; then
         echo "Cleaning output directory ($OUTPUT_ROOT).."
-        rm -rf "${OUTPUT_ROOT:?}/"*
+        rm -rf "${OUTPUT_TMP:?}"
+        mkdir -p "${OUTPUT_TMP:?}"
+        mv "${OUTPUT_ROOT:?}/"* "${OUTPUT_TMP:?}/"
         VENDOR_STATE=1
     fi
 
@@ -606,11 +775,13 @@ function extract() {
         local SPLIT=(${FILELIST[$i-1]//:/ })
         local FILE="${SPLIT[0]#-}"
         local OUTPUT_DIR="$OUTPUT_ROOT"
+        local TMP_DIR="$OUTPUT_TMP"
         local TARGET=
 
         if [ "$ARGS" = "rootfs" ]; then
             TARGET="$FROM"
             OUTPUT_DIR="$OUTPUT_DIR/rootfs"
+            TMP_DIR="$TMP_DIR/rootfs"
         else
             TARGET="system/$FROM"
             FILE="system/$FILE"
@@ -637,18 +808,28 @@ function extract() {
             fi
         else
             # Try OEM target first
-            cp "$SRC/$FILE" "$DEST"
+            if [ -f "$SRC/$FILE" ]; then
+                cp "$SRC/$FILE" "$DEST"
             # if file does not exist try CM target
-            if [ "$?" != "0" ]; then
+            elif [ -f "$SRC/$TARGET" ]; then
                 cp "$SRC/$TARGET" "$DEST"
+            else
+                printf '    !! file not found in source\n'
             fi
         fi
 
-        local TYPE="${DEST##*/}"
-        if [ "$TYPE" = "bin" -o "$TYPE" = "sbin" ]; then
-            chmod 755 "$DEST"
-        else
-            chmod 644 "$DEST"
+        if [ "$?" == "0" ]; then
+            # Deodex apk|jar if that's the case
+            if [[ "$FULLY_DEODEXED" -ne "1" && "$DEST" =~ .(apk|jar)$ ]]; then
+                oat2dex "$DEST" "$FILE" "$SRC"
+                if [ -f "$TMPDIR/classes.dex" ]; then
+                    zip -gjq "$DEST" "$TMPDIR/classes.dex"
+                    rm "$TMPDIR/classes.dex"
+                    printf '    (updated %s from odex files)\n' "/$FILE"
+                fi
+            elif [[ "$DEST" =~ .xml$ ]]; then
+                fix_xml "$DEST"
+            fi
         fi
 
         # Check pinned files
@@ -683,8 +864,51 @@ function extract() {
                 chmod 644 "$DEST"
             fi
         fi
+
     done
 
     # Don't allow failing
     set -e
+}
+
+#
+# extract_firmware:
+#
+# $1: file containing the list of items to extract
+# $2: path to extracted radio folder
+#
+function extract_firmware() {
+    if [ -z "$OUTDIR" ]; then
+        echo "Output dir not set!"
+        exit 1
+    fi
+
+    parse_file_list "$1"
+
+    # Don't allow failing
+    set -e
+
+    local FILELIST=( ${PRODUCT_COPY_FILES_LIST[@]} )
+    local COUNT=${#FILELIST[@]}
+    local SRC="$2"
+    local OUTPUT_DIR="$CM_ROOT"/"$OUTDIR"/radio
+
+    if [ "$VENDOR_RADIO_STATE" -eq "0" ]; then
+        echo "Cleaning firmware output directory ($OUTPUT_DIR).."
+        rm -rf "${OUTPUT_DIR:?}/"*
+        VENDOR_RADIO_STATE=1
+    fi
+
+    echo "Extracting $COUNT files in $1 from $SRC:"
+
+    for (( i=1; i<COUNT+1; i++ )); do
+        local FILE="${FILELIST[$i-1]}"
+        printf '  - %s \n' "/radio/$FILE"
+
+        if [ ! -d "$OUTPUT_DIR" ]; then
+            mkdir -p "$OUTPUT_DIR"
+        fi
+        cp "$SRC/$FILE" "$OUTPUT_DIR/$FILE"
+        chmod 644 "$OUTPUT_DIR/$FILE"
+    done
 }
