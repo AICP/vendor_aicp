@@ -48,6 +48,7 @@ trap cleanup EXIT INT TERM ERR
 # $3: AICP root directory
 # $4: is common device - optional, default to false
 # $5: cleanup - optional, default to true
+# $6: custom vendor makefile name - optional, default to false
 #
 # Must be called before any other functions can be used. This
 # sets up the internal state for a new vendor configuration.
@@ -76,7 +77,12 @@ function setup_vendor() {
         mkdir -p "$AICP_ROOT/$OUTDIR"
     fi
 
-    export PRODUCTMK="$AICP_ROOT"/"$OUTDIR"/"$DEVICE"-vendor.mk
+    VNDNAME="$6"
+    if [ -z "$VNDNAME" ]; then
+        VNDNAME="$DEVICE"
+    fi
+
+    export PRODUCTMK="$AICP_ROOT"/"$OUTDIR"/"$VNDNAME"-vendor.mk
     export ANDROIDMK="$AICP_ROOT"/"$OUTDIR"/Android.mk
     export BOARDMK="$AICP_ROOT"/"$OUTDIR"/BoardConfigVendor.mk
 
