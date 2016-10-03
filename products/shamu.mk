@@ -21,8 +21,8 @@ TARGET_VENDOR := moto
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=shamu \
-    BUILD_FINGERPRINT=google/shamu/shamu:7.0/NPD90G/3051502:user/release-keys \
-    PRIVATE_BUILD_DESC="shamu-user 7.0 NPD90G 3051502 release-keys"
+    BUILD_FINGERPRINT=google/shamu/shamu:7.0/NBD90Z/3264873:user/release-keys \
+    PRIVATE_BUILD_DESC="shamu-user 7.0 NBD90Z 3264873 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
