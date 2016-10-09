@@ -1,3 +1,14 @@
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+
+PRODUCT_PROPERTY_OVERRIDES += \
+     persist.camera.cpp.duplication=false
+
+# Gello
+PRODUCT_PACKAGES += \
+     Gello
+
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
@@ -42,9 +53,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
-    BUILD_FINGERPRINT=google/volantis/flounder:6.0.1/MOB30W/3031100:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 6.0.1 MOB30W 3031100 release-keys" \
-    BUILD_ID=MOB30W
+    BUILD_FINGERPRINT=google/volantis/flounder:7.0/NRD91D/3234828:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 7.0 NRD91D 3234828 release-keys" \
+    BUILD_ID=NRD91D
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2048
