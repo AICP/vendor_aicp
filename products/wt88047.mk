@@ -12,7 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/wingtech/wt88047/full_wt88047.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+$(call inherit-product, device/wingtech/wt88047/device.mk)
 
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
@@ -21,11 +24,17 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := HM2014811,HM2014812,HM2014813,HM2014814,HM2014815,HM2014816,HM2014817,HM2014818,HM2014819,HM2014820,HM2014821,HM2014112
+TARGET_OTA_ASSERT_DEVICE := HM2014811,HM2014812,HM2014813,HM2014814,HM2014815,HM2014816,HM2014817,HM2014818,HM2014819,HM2014820,HM2014821,HM2014112,wt88047
 
+# Must define platform variant before including any common things
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
+
+PRODUCT_BRAND := Xiaomi
 PRODUCT_NAME := aicp_wt88047
 BOARD_VENDOR := wingtech
 PRODUCT_DEVICE := wt88047
+PRODUCT_MANUFACTURER := Wingtech
+PRODUCT_MODEL := Redmi 2
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
