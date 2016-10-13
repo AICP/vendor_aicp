@@ -29,18 +29,20 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
-    Eleven \
-    LockClock \
     CMSettingsProvider \
+    Eleven \
     ExactCalculator \
     LiveLockScreenService \
-    WeatherProvider \
-    SoundRecorder \
+    LockClock \
     Screencast \
-    Trebuchet
+    SoundRecorder \
+    Trebuchet \
+    WallpaperPicker \
+    WeatherProvider
 
 # AICP packages
 PRODUCT_PACKAGES += \
+    AicpExtras \
     BasicDreams \
     Browser2 \
     LatinImeDictionaryPack \
@@ -55,8 +57,7 @@ PRODUCT_PACKAGES += \
     su \
     Superuser \
     Torch \
-    VisualizationWallpapers \
-    AicpExtras
+    VisualizationWallpapers
 
 # Exchange support
 PRODUCT_PACKAGES += \
@@ -64,26 +65,25 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
-    libsepol \
-    mke2fs \
-    tune2fs \
-    nano \
-    htop \
-    mkfs.ntfs \
-    fsck.ntfs \
-    mount.ntfs \
-    gdbserver \
-    micro_bench \
-    oprofiled \
-    sqlite3 \
-    strace \
-    pigz \
     7z \
-    lib7z \
     bash \
     bzip2 \
     curl \
+    fsck.ntfs \
+    gdbserver \
+    htop \
+    lib7z \
+    libsepol \
+    micro_bench \
+    mke2fs \
+    mkfs.ntfs \
+    mount.ntfs \
+    oprofiled \
+    pigz \
     powertop \
+    sqlite3 \
+    strace \
+    tune2fs \
     unrar \
     unzip \
     vim \
