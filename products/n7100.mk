@@ -25,7 +25,6 @@ PRODUCT_MANUFACTURER := samsung
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFND3:user/release-keys" PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFND3 release-keys" 
-PRODUCT_NAME=t03gxx \
 TARGET_DEVICE=t03g \
 
 # AICP Device Maintainers
