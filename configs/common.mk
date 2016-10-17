@@ -144,11 +144,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     HexoLibre
 
-# DU Utils Library
-#PRODUCT_PACKAGES += \
+#DU Utils Library
+PRODUCT_PACKAGES += \
     org.dirtyunicorns.utils
 
-#PRODUCT_BOOT_JARS += \
+PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
