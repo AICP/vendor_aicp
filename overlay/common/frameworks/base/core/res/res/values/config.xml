@@ -47,4 +47,7 @@
 
     <!-- Whether to persist the notification for when a usb drive device is plugged in -->
     <bool name="config_persistUsbDriveNotification">true</bool>
+
+    <!-- Flag indicating whether round icons should be parsed from the application manifest. -->
+    <bool name="config_useRoundIcon">true</bool>
 </resources>
