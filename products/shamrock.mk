@@ -30,6 +30,6 @@ TARGET_VENDOR_DEVICE_NAME := shamrock
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Caner Aydın (Deftones)"
-  DEVICE_MAINTAINERS="Vedat Ak (Incredible)"
-  DEVICE_MAINTAINERS="Kaan Külahlı (Rygebin)"
+	DEVICE_MAINTAINERS="Caner Aydın (Deftones)" \
+  	DEVICE_MAINTAINERS="Vedat Ak (Incredible)" \
+  	DEVICE_MAINTAINERS="Kaan Külahlı (Rygebin)" 
