@@ -15,7 +15,7 @@ $(call inherit-product, device/google/shamrock/full_shamrock.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8952
 PRODUCT_NAME := aicp_shamrock
