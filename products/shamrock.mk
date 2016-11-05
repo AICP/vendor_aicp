@@ -11,25 +11,36 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
 $(call inherit-product, device/google/shamrock/full_shamrock.mk)
+
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
+
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8952
+
 PRODUCT_NAME := aicp_shamrock
 BOARD_VENDOR := google
 PRODUCT_DEVICE := shamrock
+
 PRODUCT_GMS_CLIENTID_BASE := android-google
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Google
+
 TARGET_VENDOR := google
 TARGET_VENDOR_PRODUCT_NAME := Shamrock
 TARGET_VENDOR_DEVICE_NAME := shamrock
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Caner Aydın (Deftones)" \
-  	DEVICE_MAINTAINERS="Vedat Ak (Incredible)" \
-  	DEVICE_MAINTAINERS="Kaan Külahlı (Rygebin)" 
+	DEVICE_MAINTAINERS="Caner Aydın (Deftones), Vedat Ak (Incredible), Kaan Külahlı (Rygebin)"
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+-include vendor/aicp/configs/bootanimation.mk
