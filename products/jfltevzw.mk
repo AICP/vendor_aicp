@@ -1,11 +1,11 @@
+$(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
+
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 $(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-$(call inherit-product, device/samsung/jfltevzw/full_jfltevzw.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jfltevzw \
