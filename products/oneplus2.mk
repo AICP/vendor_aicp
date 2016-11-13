@@ -22,6 +22,9 @@ $(call inherit-product, device/oneplus/oneplus2/device.mk)
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
 PRODUCT_NAME := aicp_oneplus2
 PRODUCT_DEVICE := oneplus2
 PRODUCT_MANUFACTURER := OnePlus
