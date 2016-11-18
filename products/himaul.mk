@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/htc/himaul/full_himaul.mk)
 
 PRODUCT_NAME := aicp_himaul
@@ -19,7 +16,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Ali B (eyosen), Brian L (chezbel)"
+    DEVICE_MAINTAINERS="Ali B (eyosen), Brian L (chezbel)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/full_deb.mk)
 
@@ -30,7 +27,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="doc HD (semdoc), Ali B (eyosen)"
+    DEVICE_MAINTAINERS="doc HD (semdoc), Ali B (eyosen)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit AOSP device configuration for H815
 $(call inherit-product, device/lge/h815/full_h815.mk)
 
@@ -21,7 +18,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Sinisa (thermskin)"
+    DEVICE_MAINTAINERS="Sinisa (thermskin)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560

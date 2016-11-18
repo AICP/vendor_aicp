@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/sony/togari/aicp.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6833
@@ -19,7 +16,7 @@ PRODUCT_DEVICE := togari
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Peter R (Alia5)"
+    DEVICE_MAINTAINERS="Peter R (Alia5)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

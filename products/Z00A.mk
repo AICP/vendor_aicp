@@ -9,9 +9,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit device configuration
 $(call inherit-product, device/asus/Z00A/device.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 DEVICE_PACKAGE_OVERLAYS += device/asus/Z00A/overlay
 
 PRODUCT_RUNTIMES := runtime_libart_default
@@ -30,7 +27,7 @@ BUILD_FINGERPRINT=asus/WW_Z00A/Z00A:6.0.1/MMB29P/4.21.40.134_20160825_4746_user:
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Hakan (Nyks45)"
+    DEVICE_MAINTAINERS="Hakan (Nyks45)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

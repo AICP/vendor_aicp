@@ -4,9 +4,6 @@ PRODUCT_RELEASE_NAME := flo
 # Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/flo/full_flo.mk)
 
@@ -27,7 +24,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Ali B (eyosen), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Ali B (eyosen), doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

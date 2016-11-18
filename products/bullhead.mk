@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit AOSP device configuration for bullhead
 $(call inherit-product, device/lge/bullhead/aosp_bullhead.mk)
 
@@ -18,13 +15,13 @@ TARGET_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=bullhead \
-    BUILD_FINGERPRINT=google/bullhead/bullhead:7.0/NRD91N/3318108:user/release-keys \
-    PRIVATE_BUILD_DESC="bullhead-user 7.0 NRD91N 3318108 release-keys"
+  PRODUCT_NAME=bullhead \
+  BUILD_FINGERPRINT=google/bullhead/bullhead:7.0/NRD91N/3318108:user/release-keys \
+  PRIVATE_BUILD_DESC="bullhead-user 7.0 NRD91N 3318108 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Omkar Shinde (Megatron007),doc HD (semdoc)"
+  DEVICE_MAINTAINERS="Omkar Shinde (Megatron007),doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

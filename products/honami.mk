@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/sony/honami/aicp.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=C6903

@@ -3,9 +3,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit AOSP device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
@@ -23,7 +20,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Davor B (LorD CloCKaN), Toni T (TToivanen)"
+    DEVICE_MAINTAINERS="Davor B (LorD CloCKaN), Toni T (TToivanen)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

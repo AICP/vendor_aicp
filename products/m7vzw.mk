@@ -3,8 +3,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/htc/m7vzw/full_m7vzw.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -20,7 +18,7 @@ PRODUCT_DEVICE := m7vzw
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Brian L (Chezbel), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Brian L (Chezbel), doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

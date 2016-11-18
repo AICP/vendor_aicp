@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit AOSP device configuration for vs985
 $(call inherit-product, device/lge/vs985/full_vs985.mk)
 
@@ -27,7 +24,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Drgravy"
+    DEVICE_MAINTAINERS="Drgravy"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560

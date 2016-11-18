@@ -20,9 +20,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 $(call inherit-product, device/motorola/lux/full_lux.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := lux
 PRODUCT_NAME := aicp_lux

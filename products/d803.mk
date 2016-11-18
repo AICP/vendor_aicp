@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit AICP device configuration for d803
 $(call inherit-product, device/lge/d803/d803.mk)
 
@@ -20,7 +17,7 @@ PRODUCT_MANUFACTURER := lge
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Drgravy"
+    DEVICE_MAINTAINERS="Drgravy"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

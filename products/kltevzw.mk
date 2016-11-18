@@ -3,8 +3,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/samsung/kltevzw/full_kltevzw.mk)
 
 
@@ -13,7 +11,7 @@ PRODUCT_NAME := aicp_kltevzw
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Alex S (OptX), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Alex S (OptX), doc HD (semdoc)"
 
 
 # Boot animation

@@ -12,9 +12,6 @@ PRODUCT_PACKAGES += \
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/htc/flounder/aosp_flounder.mk)
 

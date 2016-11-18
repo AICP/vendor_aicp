@@ -5,9 +5,6 @@ PRODUCT_RELEASE_NAME := Nexus7
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
@@ -24,7 +21,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/na
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

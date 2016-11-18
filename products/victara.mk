@@ -4,9 +4,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/motorola/victara/full_victara.mk)
 
 # Overlay
@@ -19,7 +16,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Omkar Shinde (Megatron007)"
+    DEVICE_MAINTAINERS="Omkar Shinde (Megatron007)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

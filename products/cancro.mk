@@ -24,10 +24,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-
 PRODUCT_NAME := aicp_cancro
 PRODUCT_DEVICE := cancro
 PRODUCT_BRAND := Xiaomi
@@ -42,7 +38,7 @@ TARGET_CONTINUOUS_SPLASH_ENABLED := true
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="W. Audahadi"
+   DEVICE_MAINTAINERS="W. Audahadi"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

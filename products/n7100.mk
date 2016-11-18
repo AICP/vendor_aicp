@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/samsung/n7100/full_n7100.mk)
 
@@ -28,11 +25,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=t03gxx \
     TARGET_DEVICE=t03g \
     PRIVATE_BUILD_DESC="t03gxx-user 4.4.2 KOT49H N7100XXUFND3 release-keys" \
-	BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFND3:user/release-keys"
+    BUILD_FINGERPRINT="samsung/t03gxx/t03g:4.4.2/KOT49H/N7100XXUFND3:user/release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="Trafalgar Square"
+    DEVICE_MAINTAINERS="Trafalgar Square"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280

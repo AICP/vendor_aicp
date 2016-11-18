@@ -7,9 +7,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Release name
 PRODUCT_RELEASE_NAME := LG G2 Mini
 PRODUCT_NAME := aicp_g2m
@@ -20,7 +17,7 @@ PRODUCT_BRAND := lge
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	DEVICE_MAINTAINERS="MobiusM"
+    DEVICE_MAINTAINERS="MobiusM"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960

@@ -19,9 +19,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from oneplus3 device
 $(call inherit-product, device/oneplus/oneplus3/device.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
@@ -49,7 +46,7 @@ TARGET_VENDOR := oneplus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-        DEVICE_MAINTAINERS="Trafalgar Square"
+    DEVICE_MAINTAINERS="Trafalgar Square"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

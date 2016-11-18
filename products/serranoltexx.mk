@@ -24,9 +24,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=serranoltexx \
     TARGET_DEVICE=serranolte
