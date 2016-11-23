@@ -31,9 +31,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/hammerhead.mk \
     $(LOCAL_DIR)/hammerheadcaf.mk \
     $(LOCAL_DIR)/himaul.mk \
+    $(LOCAL_DIR)/hltetmo.mk \
     $(LOCAL_DIR)/honami.mk \
     $(LOCAL_DIR)/huashan.mk \
-    $(LOCAL_DIR)/hltetmo.mk \
+    $(LOCAL_DIR)/hydrogen.mk \
     $(LOCAL_DIR)/i9300.mk \
     $(LOCAL_DIR)/i9305.mk \
     $(LOCAL_DIR)/jewel.mk \
