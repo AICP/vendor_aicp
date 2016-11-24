@@ -4,9 +4,8 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Inherit AOSP device configuration for hammerhead
-$(call inherit-product, device/lge/hammerheadcaf/full_hammerhead.mk)
-
+# Inherit device configuration
+$(call inherit-product, device/lge/hammerheadcaf/device.mk)
 
 # Setup device specific product configuration
 PRODUCT_DEVICE := hammerheadcaf
