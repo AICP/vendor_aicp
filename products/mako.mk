@@ -6,7 +6,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit AOSP device configuration for mako
 $(call inherit-product, device/lge/mako/full_mako.mk)
 
-
 # Setup device specific product configuration
 PRODUCT_NAME := aicp_mako
 PRODUCT_BRAND := google
@@ -20,7 +19,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Davor B (LorD CloCKaN), Toni T (TToivanen)"
+    DEVICE_MAINTAINERS="Izumi Inami (droidfivex)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
