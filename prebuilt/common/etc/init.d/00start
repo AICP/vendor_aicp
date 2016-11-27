@@ -1,3 +1,10 @@
 #!/system/bin/sh
-log -p i -t start "    A wise man never plays leapfrog with a unicorn";
+#
+# Print startup info
+#
+L="log -p i -t start"
 
+$L "____  _  ____  ____";
+$L "|__|  |  |     |__|";
+$L "|  |  |  |___  |      C  U  S  T  O  M    R  O  M";
+$L "Welcome to Android `getprop ro.build.version.release` / AICP-`getprop ro.aicp.version`";
