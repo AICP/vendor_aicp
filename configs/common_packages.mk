@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Trebuchet \
     WallpaperPicker \
-    WeatherProvider
+    WeatherProvider \
+    Terminal
 
 # AICP packages
 PRODUCT_PACKAGES += \
