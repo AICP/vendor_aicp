@@ -6,9 +6,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 $(call inherit-product, device/htc/pme/full_pme.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := pme
 PRODUCT_NAME := aicp_pme
