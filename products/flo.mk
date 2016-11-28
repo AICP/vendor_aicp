@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := flo
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aicp/configs/common_tablet.mk)
+$(call inherit-product, vendor/aicp/configs/common_mini_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/asus/flo/full_flo.mk)
