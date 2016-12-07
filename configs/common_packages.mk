@@ -132,3 +132,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+
+# OMS MASQUERADE
+PRODUCT_PACKAGES += \
+   masquerade
