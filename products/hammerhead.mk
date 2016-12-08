@@ -7,7 +7,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit AOSP device configuration for hammerhead
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
-
 # Setup device specific product configuration
 PRODUCT_NAME := aicp_hammerhead
 PRODUCT_BRAND := google
@@ -17,8 +16,8 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=hammerhead \
-    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/M4B30X/3237893:user/release-keys \
-    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 M4B30X 3237893 release-keys"
+    BUILD_FINGERPRINT=google/hammerhead/hammerhead:6.0.1/M4B30Z/3437181:user/release-keys \
+    PRIVATE_BUILD_DESC="hammerhead-user 6.0.1 M4B30Z 3437181 release-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
