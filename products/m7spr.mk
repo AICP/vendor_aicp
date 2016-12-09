@@ -1,10 +1,10 @@
+# Inherit device configuration
+$(call inherit-product, device/htc/m7spr/full_m7spr.mk)
+
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
-
-# Inherit device configuration
-$(call inherit-product, device/htc/m7spr/full_m7spr.mk)
 
 # Set build fingerprint / ID / Product Name ect.
 PRODUCT_BUILD_PROP_OVERRIDES += \
@@ -22,7 +22,7 @@ PRODUCT_MANUFACTURER := HTC
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Brian L (Chezbel), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
