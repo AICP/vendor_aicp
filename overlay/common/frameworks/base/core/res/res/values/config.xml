@@ -68,5 +68,12 @@
     <!-- Night display  -->
     <bool name="config_nightDisplayAvailable">true</bool>
 
+    <!-- non blockable notification packages -->
+    <string-array name="config_nonBlockableNotificationPackages">
+        <item>com.android.dialer</item>
+        <item>com.google.android.dialer</item>
+        <item>com.google.android.deskclock</item>
+    </string-array>
+
 </resources>
 
