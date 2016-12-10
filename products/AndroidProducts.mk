@@ -48,6 +48,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/kenzo.mk \
     $(LOCAL_DIR)/klimtlte.mk \
     $(LOCAL_DIR)/klimtwifi.mk \
+    $(LOCAL_DIR)/l01f.mk \
     $(LOCAL_DIR)/ls980.mk \
     $(LOCAL_DIR)/lettuce.mk \
     $(LOCAL_DIR)/lux.mk \
