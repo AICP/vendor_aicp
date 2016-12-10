@@ -1,4 +1,4 @@
-$(call inherit-product, device/htc/m8/full_m8.mk)
+$(call inherit-product, device/htc/m8/device.mk)
 
 # Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
