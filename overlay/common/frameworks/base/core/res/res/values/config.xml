@@ -75,5 +75,9 @@
         <item>com.google.android.deskclock</item>
     </string-array>
 
+    <!-- empheral resolver packages -->
+    <string-array name="config_ephemeralResolverPackage">
+        <item>com.google.android.gms</item>
+    </string-array>
 </resources>
 
