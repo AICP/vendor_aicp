@@ -4,9 +4,6 @@ PRODUCT_RELEASE_NAME := flocaf
 # Inherit some common stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/asus/flocaf/full_flo.mk)
 

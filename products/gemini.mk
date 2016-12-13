@@ -22,10 +22,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 PRODUCT_NAME := aicp_gemini
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi

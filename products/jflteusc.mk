@@ -4,11 +4,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 $(call inherit-product, device/samsung/jflteusc/full_jflteusc.mk)
-
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
   PRODUCT_NAME=jflteusc \

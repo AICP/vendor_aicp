@@ -1,11 +1,6 @@
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
-
 $(call inherit-product, device/oppo/find7u/full_find7u.mk)
-
 
 PRODUCT_NAME := aicp_find7u
 PRODUCT_DEVICE := find7u

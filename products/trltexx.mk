@@ -20,12 +20,8 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/samsung/trltexx/full_trltexx.mk)
-
 
 PRODUCT_NAME := trltexx
 PRODUCT_DEVICE := trltexx
