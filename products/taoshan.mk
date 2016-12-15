@@ -18,9 +18,6 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/aicp/configs/nfc_enhanced.mk)
-
 # Inherit device configuration
 $(call inherit-product, device/sony/taoshan/device.mk)
 
@@ -34,6 +31,12 @@ PRODUCT_CHARACTERISTICS := phone
 
 # Release name
 PRODUCT_RELEASE_NAME := taoshan
+
+# Build fingerprints
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=C2105 \
+    BUILD_FINGERPRINT="Sony/C2105/C2105:4.2.2/15.3.A.1.17/Android.1016:user/release-keys" \
+    PRIVATE_BUILD_DESC="C2105-user 4.2.2 JDQ39 Android.1016 test-keys"
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
