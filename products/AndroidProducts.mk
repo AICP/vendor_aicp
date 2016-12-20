@@ -21,6 +21,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/endeavoru.mk \
     $(LOCAL_DIR)/ether.mk \
     $(LOCAL_DIR)/falcon.mk \
+    $(LOCAL_DIR)/ferrari.mk \
     $(LOCAL_DIR)/flounder.mk \
     $(LOCAL_DIR)/fugu.mk \
     $(LOCAL_DIR)/g2m.mk \
