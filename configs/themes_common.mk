@@ -4,3 +4,6 @@
 #    ThemeChooser \
 #    ThemesProvider
 
+# Themes
+#PRODUCT_PACKAGES += \
+#    HexoLibre

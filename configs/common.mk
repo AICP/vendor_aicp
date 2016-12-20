@@ -17,10 +17,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true
 
-# Themes
-PRODUCT_PACKAGES += \
-    HexoLibre
-
 PRODUCT_BOOT_JARS += \
     org.dirtyunicorns.utils
 
