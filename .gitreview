@@ -2,6 +2,4 @@
 host=gerrit.aicp-rom.com
 port=29418
 project=AICP/vendor_aicp
-defaultbranch=lp5.1
-defaultremote=review
-defaultrebase=0
+defaultbranch=n7.1
