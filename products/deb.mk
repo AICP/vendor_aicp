@@ -8,7 +8,8 @@ $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/asus/deb/full_deb.mk)
+$(call inherit-product, device/asus/deb/device.mk)
+$(call inherit-product-if-exists, vendor/asus/deb/device-vendor.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
