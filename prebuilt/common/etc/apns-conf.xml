@@ -531,6 +531,7 @@
   <apn carrier="O2 MMS(post)" mcc="234" mnc="02" apn="wap.o2.co.uk" proxy="" port="" mmsproxy="193.113.200.195" mmsport="8080" mmsc="http://mmsc.mms.o2.co.uk:8002" user="o2wap" password="password" type="mms" />
   <apn carrier="BT One Phone Internet" mcc="234" mnc="08" apn="btmobile.bt.com" proxy="" port="" user="" password="" mmsc="" mvno_type="spn" mvno_match_data="BT" type="default,supl" />
   <apn carrier="BT MMS" mcc="234" mnc="08" apn="mms.btonephone.com" proxy="" port="" user="" password="" mmsc="http://mmsc" mmsproxy="proxy.btonephone.com" mmsport="8080" mvno_type="spn" mvno_match_data="BT" type="mms" />
+  <apn carrier="FreedomPop" mcc="234" mnc="20" apn="freedompop.foggmobile.com" type="default,supl" />
   <apn carrier="Sure Internet" mcc="234" mnc="09" apn="internet" type="default,supl" />
   <apn carrier="Sure WAP" mcc="234" mnc="09" apn="wap" proxy="10.0.3.101" port="80" type="default,supl" />
   <apn carrier="Sure MMS" mcc="234" mnc="09" apn="mms" mmsproxy="10.0.3.101" mmsport="80" mmsc="http://mmsc.gprs.cw.com/" type="mms" />
