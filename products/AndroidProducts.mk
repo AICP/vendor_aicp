@@ -51,6 +51,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/kltekdi.mk \
     $(LOCAL_DIR)/klimtwifi.mk \
     $(LOCAL_DIR)/l01f.mk \
+    $(LOCAL_DIR)/libra.mk \
     $(LOCAL_DIR)/ls980.mk \
     $(LOCAL_DIR)/lettuce.mk \
     $(LOCAL_DIR)/lux.mk \
