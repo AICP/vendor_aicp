@@ -34,7 +34,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.com.google.locationfeatures=1 \
     ro.kernel.android.checkjni=0 \
-    persist.sys.root_access=3 \
     ro.setupwizard.network_required=false \
     ro.setupwizard.gservices_delay=-1
 
