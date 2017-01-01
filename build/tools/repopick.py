@@ -363,8 +363,6 @@ if __name__ == '__main__':
             cmd = ['git fetch', item['fetch'][method]['url'], item['fetch'][method]['ref']]
         if args.quiet:
             cmd.append('--quiet')
-        else:
-            print(cmd)
         result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
         if result != 0:
             print('ERROR: git command failed')
