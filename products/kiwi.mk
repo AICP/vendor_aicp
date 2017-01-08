@@ -22,7 +22,7 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE:= kiwi
-PRODUCT_NAME := full_kiwi
+PRODUCT_NAME := aicp_kiwi
 PRODUCT_BRAND:= HONOR
 PRODUCT_MODEL := KIW-L24
 PRODUCT_MANUFACTURER := HUAWEI
