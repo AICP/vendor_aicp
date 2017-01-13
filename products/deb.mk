@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := deb
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aicp/configs/common_tablet.mk)
+$(call inherit-product, vendor/aicp/configs/common_mini_tablet_wifionly.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
