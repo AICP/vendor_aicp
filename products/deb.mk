@@ -27,7 +27,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="doc HD (semdoc), Ali B (eyosen)"
+    DEVICE_MAINTAINERS="Andrew Vance (Startrek852), doc HD (semdoc)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
