@@ -13,8 +13,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-$(call inherit-product, device/xiaomi/gemini/full_gemini.mk)
+$(call inherit-product, device/xiaomi/gemini/device.mk)
 
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
@@ -22,19 +25,26 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_gemini
-BOARD_VENDOR := Xiaomi
-PRODUCT_BRAND := Xiaomi
-TARGET_VENDOR := Xiaomi
 PRODUCT_DEVICE := gemini
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := MI 5
+PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="gemini" \
     PRODUCT_NAME="gemini" \
-    BUILD_FINGERPRINT="Xiaomi/gemini/gemini:6.0.1/MXB48T/6.7.10:user/release-keys" \
-    PRIVATE_BUILD_DESC="gemini-user 6.0.1 MXB48T 6.7.10 release-keys"
+    BUILD_FINGERPRINT="Xiaomi/gemini/gemini:7.0/NRD90M/6.12.22:user/release-keys" \
+    PRIVATE_BUILD_DESC="gemini-user 7.0 NRD90M 6.12.22 release-keys"
+
+TARGET_VENDOR := Xiaomi
+
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Rahul Patel (WhyOrean@XDA)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920

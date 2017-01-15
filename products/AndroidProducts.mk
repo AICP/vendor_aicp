@@ -27,6 +27,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/fugu.mk \
     $(LOCAL_DIR)/g2m.mk \
     $(LOCAL_DIR)/geehrc.mk \
+    $(LOCAL_DIR)/gemini.mk \
     $(LOCAL_DIR)/grouper.mk \
     $(LOCAL_DIR)/h811.mk \
     $(LOCAL_DIR)/h815.mk \
