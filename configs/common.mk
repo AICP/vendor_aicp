@@ -29,12 +29,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.error.receiver.system.apps=com.google.android.feedback \
+    keyguard.no_require_sim=true \
     ro.com.google.locationfeatures=1 \
-    ro.setupwizard.enterprise_mode=1 \
     ro.kernel.android.checkjni=0 \
     persist.sys.root_access=3 \
     ro.setupwizard.network_required=false \
