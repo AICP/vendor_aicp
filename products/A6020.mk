@@ -26,7 +26,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainer
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="...."
+    DEVICE_MAINTAINERS="Prateek Chaubey (chaubeyprateek)"
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 720
