@@ -12,7 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Inherit device configuration
 $(call inherit-product, device/lenovo/A6020/full_A6020.mk)
+
+# Inherit some common AICP stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
+
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
