@@ -64,6 +64,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/m7vzw.mk \
     $(LOCAL_DIR)/mako.mk \
     $(LOCAL_DIR)/manta.mk \
+    $(LOCAL_DIR)/marlin.mk \
     $(LOCAL_DIR)/nicki.mk \
     $(LOCAL_DIR)/oneplus2.mk \
     $(LOCAL_DIR)/oneplus3.mk \
