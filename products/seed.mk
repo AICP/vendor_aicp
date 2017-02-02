@@ -45,3 +45,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
 -include vendor/aicp/configs/bootanimation.mk
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=seed \
+    BUILD_FINGERPRINT=google/seed_l8150/seed:7.1.1/N4F26I/3532671:user/release-keys \
+    PRIVATE_BUILD_DESC="seed_l8150-user 7.1.1 N4F26I 3532671 release-keys"
