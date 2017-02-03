@@ -30,7 +30,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Ali Al-Asadi (alial04)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
