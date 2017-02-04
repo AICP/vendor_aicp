@@ -9,10 +9,16 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 $(call inherit-product-if-exists, vendor/htc/m8/m8-vendor.mk)
 
 PRODUCT_NAME := aicp_m8
+PRODUCT_DEVICE := m8
+PRODUCT_BRAND := htc
+PRODUCT_MANUFACTURER := htc
+PRODUCT_MODEL := One M8
+
+
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Mihran Thalhath (mihranz7)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
