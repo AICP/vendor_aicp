@@ -34,6 +34,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/gts210vewifi.mk \
     $(LOCAL_DIR)/h811.mk \
     $(LOCAL_DIR)/h815.mk \
+    $(LOCAL_DIR)/h918.mk \
     $(LOCAL_DIR)/hammerhead.mk \
     $(LOCAL_DIR)/hammerheadcaf.mk \
     $(LOCAL_DIR)/himaul.mk \
