@@ -47,7 +47,6 @@ PRODUCT_PACKAGES += \
     PhotoPhase \
     procmem \
     procrank \
-    Superuser \
     Torch \
     VisualizationWallpapers
 
@@ -149,3 +148,7 @@ PRODUCT_PACKAGES += \
 # OMS Verified
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
+
+# Magisk Manager
+PRODUCT_PACKAGES += \
+    MagiskManager
