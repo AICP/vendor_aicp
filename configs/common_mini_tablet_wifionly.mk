@@ -1,4 +1,6 @@
-SUPERUSER_EMBEDDED := true
+ifeq ($(WITH_SU),true)
+    SUPERUSER_EMBEDDED := true
+endif
 
 # Common overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/common_tablet
