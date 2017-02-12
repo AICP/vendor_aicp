@@ -17,6 +17,11 @@
 # Release name
 PRODUCT_RELEASE_NAME := GT-I9100
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_WIDTH := 480
+TARGET_BOOTANIMATION_HALF_RES := true
+
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
