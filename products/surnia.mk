@@ -21,14 +21,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 $(call inherit-product, device/motorola/surnia/full_surnia.mk)
 
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Vatsal K (Vatsal)"
-
-# Boot animation
-TARGET_SCREEN_WIDTH := 540
-TARGET_SCREEN_HEIGHT := 960
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := surnia
 PRODUCT_NAME := aicp_surnia
@@ -39,6 +31,11 @@ PRODUCT_RELEASE_NAME := surnia
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="Moto E LTE (2nd gen)"
 
-# Copy bootanimation for surnia
-PRODUCT_COPY_FILES +=  \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_540_960.zip:system/media/bootanimation.zip
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Hernán F (ElDainosor)"
+
+# Boot animation
+TARGET_SCREEN_WIDTH := 540
+TARGET_SCREEN_HEIGHT := 960
+-include vendor/aicp/configs/bootanimation.mk
