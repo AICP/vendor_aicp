@@ -1,6 +1,3 @@
-# Release name
-PRODUCT_RELEASE_NAME := pme
-
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common.mk)
 
