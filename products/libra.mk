@@ -46,6 +46,6 @@ TARGET_SCREEN_WIDTH := 1080
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="diegocr (Diego Casasnovas) & csolanol (Carlos Solano)"
+    DEVICE_MAINTAINERS="Demon000 (Cosmin Tanislav) & csolanol (Carlos Solano)"
 
 TARGET_OTA_ASSERT_DEVICE := libra,aqua
