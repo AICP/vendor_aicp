@@ -28,10 +28,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=m0 \
     BUILD_FINGERPRINT="samsung/m0xx/m0:4.3/JSS15J/I9300XXUGMJ9:user/release-keys" \
     PRIVATE_BUILD_DESC="m0xx-user 4.3 JSS15J I9300XXUGMJ9 release-keys"
-		
+
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Trafalgar Square"
+    DEVICE_MAINTAINERS="Ali Al-Asadi (alial04)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
