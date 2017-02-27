@@ -14,7 +14,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-   DEVICE_MAINTAINERS="Sean H (deadman96385)"
+   DEVICE_MAINTAINERS="Darragh McGee (DarkExistence)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
