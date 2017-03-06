@@ -152,3 +152,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
 # Magisk Manager
 PRODUCT_PACKAGES += \
     MagiskManager
+
+#OmniJaws 
+PRODUCT_PACKAGES += \
+    OmniJaws
+
