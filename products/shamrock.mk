@@ -46,5 +46,5 @@ TARGET_SCREEN_WIDTH := 1080
 -include vendor/aicp/configs/bootanimation.mk
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=qcom/shamrock/shamrock:7.0/N3G06/3620323:user/dev-keys \
-    PRIVATE_BUILD_DESC="shamrock-user 7.0 N3G06 3620323 release-keys"
+    BUILD_FINGERPRINT=qcom/shamrock/shamrock:7.1.1/NNG20/3658197:user/dev-keys \
+    PRIVATE_BUILD_DESC="shamrock-user 7.1.1 NNG20 3658197 release-keys"
