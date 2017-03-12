@@ -39,7 +39,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Ashish Kotnala"
+    DEVICE_MAINTAINERS="Hemant Sharma (hemantbeast)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
