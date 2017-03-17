@@ -23,7 +23,6 @@ PRODUCT_PACKAGES += \
     AudioFX \
     CMFileManager \
     CMSettingsProvider \
-    CustomTiles \
     Eleven \
     ExactCalculator \
     LiveLockScreenService \
@@ -154,6 +153,7 @@ PRODUCT_PROPERTY_OVERRIDES := \
 PRODUCT_PACKAGES += \
     MagiskManager
 
-#OmniJaws
+#OmniJaws 
 PRODUCT_PACKAGES += \
     OmniJaws
+
