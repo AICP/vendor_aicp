@@ -50,8 +50,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Xiaomi/libra/libra:7.0/NRD90M/7.2.16:user/release-keys" \
-    PRIVATE_BUILD_DESC="libra-user 7.0 NRD90M 7.2.16 release-keys"
+    BUILD_FINGERPRINT="Xiaomi/libra/libra:5.1.1/LMY47V/V8.1.2.0.LXKCNDI:user/release-keys" \
+    PRIVATE_BUILD_DESC="libra-user 5.1.1 LMY47V V8.1.2.0.LXKCNDI release-keys"
 
 
 TARGET_OTA_ASSERT_DEVICE := libra
