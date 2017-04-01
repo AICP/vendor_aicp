@@ -10,9 +10,6 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 # Inherit AOSP device configuration for tilapia
 $(call inherit-product, device/asus/tilapia/full_tilapia.mk)
 
-#MMS and Phone
-PRODUCT_PACKAGES += \
-    Mms
 
 # Setup device specific product configuration.
 PRODUCT_NAME := aicp_tilapia
@@ -26,7 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasig BUILD_FINGERPRINT="google/n
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Kaan Külahlı (Rygebin)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
