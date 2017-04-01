@@ -22,6 +22,7 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
+TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
 PRODUCT_NAME := aicp_a6000
 BOARD_VENDOR := Lenovo
