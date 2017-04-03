@@ -46,7 +46,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="GreekDragon""
+    DEVICE_MAINTAINERS="GreekDragon"
 
 # Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
