@@ -55,9 +55,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
 
-# Backup Services whitelist
+# System feature whitelists
 PRODUCT_COPY_FILES += \
-    vendor/aicp/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml
+    vendor/aicp/configs/permissions/backup.xml:system/etc/sysconfig/backup.xml \
+    vendor/aicp/configs/permissions/power-whitelist.xml:system/etc/sysconfig/power-whitelist.xml
 
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
