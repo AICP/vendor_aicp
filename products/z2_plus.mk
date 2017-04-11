@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
 # Inherit some common AICP stuff.
-$(call inherit-product, vendor/aicp/config/common.mk)
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
