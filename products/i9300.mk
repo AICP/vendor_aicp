@@ -31,7 +31,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Ali Al-Asadi (alial04)"
+    DEVICE_MAINTAINERS="Ali Al-Asadi (alial04), Alex Tsanis (GreekDragon)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
