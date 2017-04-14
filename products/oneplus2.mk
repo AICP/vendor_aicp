@@ -46,7 +46,7 @@ TARGET_VENDOR := oneplus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Subham Padhi"
+    DEVICE_MAINTAINERS="Suraj Das"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
