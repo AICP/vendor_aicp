@@ -24,18 +24,12 @@ $(call inherit-product, vendor/aicp/configs/telephony.mk)
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := A6020
 PRODUCT_NAME := aicp_A6020
-PRODUCT_RELEASE_NAME := A6020
-PRODUCT_BRAND := lenovo
-PRODUCT_MANUFACTURER := lenovo
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME="Lenovo Vibe K5"
 
 # AICP Device Maintainer
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Prateek Chaubey (chaubeyprateek)"
 
 # Boot animation
-TARGET_SCREEN_WIDTH := 720
-TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
 -include vendor/aicp/configs/bootanimation.mk
