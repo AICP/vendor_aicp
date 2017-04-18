@@ -30,6 +30,7 @@ PRODUCT_DEVICE := shamrock
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
 PRODUCT_MANUFACTURER := Google
+PRODUCT_MODEL := GM 5 Plus
 PRODUCT_BRAND := Google
 
 TARGET_VENDOR := google
@@ -39,6 +40,10 @@ TARGET_VENDOR_DEVICE_NAME := shamrock
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Vedat Ak (Incredible), Kaan Külahlı (Rygebin)"
+
+PRODUCT_PROPERTY_OVERRIDES +=\
+    ro.product.device=shamrock \
+    ro.product.model=GM 5 Plus
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
