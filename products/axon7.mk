@@ -22,6 +22,10 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
 PRODUCT_NAME := aicp_axon7
+PRODUCT_BRAND := zte
+PRODUCT_DEVICE := axon7
+PRODUCT_MODEL := A2017U
+PRODUCT_MANUFACTURER := zte
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="P996A01_N" \
@@ -30,7 +34,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Faradis (Druboo666) "
+    DEVICE_MAINTAINERS="Jacob Stark (Twilighttony), Faradis (Druboo666)"
+
+PRODUCT_PROPERTY_OVERRIDES +=\
+      ro.product.device=axon7 \
+      ro.product.model=A2017U
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2560
