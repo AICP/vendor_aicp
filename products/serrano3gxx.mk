@@ -41,10 +41,6 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="doc HD (semdoc)"
 
-PRODUCT_PROPERTY_OVERRIDES +=\
-    ro.product.device=serrano3gxx \
-    ro.product.model=GT-I9190
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
