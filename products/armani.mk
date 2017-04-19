@@ -27,10 +27,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="Hemant Sharma"
 
-PRODUCT_PROPERTY_OVERRIDES +=\
-    ro.product.device=armani \
-    ro.product.model=HM 1S
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720

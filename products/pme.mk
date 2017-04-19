@@ -28,13 +28,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
 	DEVICE_MAINTAINERS="Ali B (eyosen)"
 
-PRODUCT_PROPERTY_OVERRIDES +=\
-      ro.product.device=pme \
-      ro.product.model=HTC 10
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-	    PRODUCT_NAME="HTC 10"
-
 # Device was launched with M
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.first_api_level=23

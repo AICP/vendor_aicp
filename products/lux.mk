@@ -34,10 +34,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Nick van Bokhorst (GtrCraft)"
 
-PRODUCT_PROPERTY_OVERRIDES +=\
-    ro.product.device=lux \
-    ro.product.model=Moto X Play
-
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
