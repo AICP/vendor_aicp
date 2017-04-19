@@ -12,10 +12,6 @@ PRODUCT_NAME := aicp_klte
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Alex S (OptX), doc HD (semdoc)"
 
-PRODUCT_PROPERTY_OVERRIDES +=\
-    ro.product.device=kltexx \
-    ro.product.model=SM-G900F
-
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
