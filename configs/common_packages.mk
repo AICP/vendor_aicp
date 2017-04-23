@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     CMFileManager \
     CMSettingsProvider \
     Eleven \
+    Jelly \
     ExactCalculator \
     LiveLockScreenService \
     LockClock \
