@@ -34,7 +34,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Jacob Stark (Twilighttony), Faradis (Druboo666)"
+    DEVICE_MAINTAINERS="Erwan Leboucher (genesixx), Jacob Stark (Twilighttony), Faradis (Druboo666)"
 
 PRODUCT_PROPERTY_OVERRIDES +=\
       ro.product.device=axon7 \
