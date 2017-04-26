@@ -148,6 +148,9 @@ on boot
     # Persistent properties (only created if persist exists)
     mkdir /persist/properties 0770 system system
 
+    # allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
 # sysinit (/system/etc/init.d)
 service sysinit /system/bin/sysinit
     user root
@@ -201,4 +204,3 @@ on property:sys.io.scheduler=bfq
     write /sys/block/sda/queue/iosched/slice_idle 0
     write /sys/block/sde/queue/iosched/slice_idle 0
     write /sys/block/dm-0/queue/iosched/slice_idle 0
-
