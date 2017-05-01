@@ -82,6 +82,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/peach.mk \
     $(LOCAL_DIR)/pme.mk \
     $(LOCAL_DIR)/peregrine.mk \
+    $(LOCAL_DIR)/potter.mk \
     $(LOCAL_DIR)/s2.mk \
     $(LOCAL_DIR)/seed.mk \
     $(LOCAL_DIR)/serranodsdd.mk \
