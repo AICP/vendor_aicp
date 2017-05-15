@@ -99,8 +99,8 @@ include vendor/aicp/configs/cmsdk_common.mk
 endif
 
 # Copy Magisk zip
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
+#PRODUCT_COPY_FILES += \
+#    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
 # Copy latinime for gesture typing
 #PRODUCT_COPY_FILES += \

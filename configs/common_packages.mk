@@ -152,8 +152,8 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.substratum.verified=true
 
 # Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
+#PRODUCT_PACKAGES += \
+#    MagiskManager
 
 #OmniJaws
 PRODUCT_PACKAGES += \
