@@ -9,6 +9,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bacon.mk \
     $(LOCAL_DIR)/bullhead.mk \
     $(LOCAL_DIR)/cancro.mk \
+    $(LOCAL_DIR)/cedric.mk \
     $(LOCAL_DIR)/chagalllte.mk \
     $(LOCAL_DIR)/chagallwifi.mk \
     $(LOCAL_DIR)/clark.mk \
