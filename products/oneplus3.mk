@@ -36,7 +36,7 @@ TARGET_VENDOR := oneplus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Saatvik Shukla , Darragh McGee (DarkExistence)"
+    DEVICE_MAINTAINERS="Darragh McGee (DarkExistence)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
