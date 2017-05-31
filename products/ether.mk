@@ -21,7 +21,7 @@ PRODUCT_DEVICE := ether
 
 # AICP Device Info
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Darragh McGee (DarkExistence)"
+    DEVICE_MAINTAINERS="Devin Sanchez (Prophentes) , Darragh McGee (DarkExistence)"
 
 PRODUCT_BRAND := Nextbit
 PRODUCT_MODEL := Robin
