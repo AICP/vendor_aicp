@@ -45,9 +45,20 @@
     <sensitivePN network="234">
         <item>08082000247</item>
     </sensitivePN>
+    <!--Norway-->
+    <sensitivePN network="242">
+        <item>22424202</item>
+        <item>22444050</item>
+        <item>23227930</item>
+        <item>80057000</item>
+        <item>81003940</item>
+    </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
         <item>08000116016</item>
+        <item>08001110111</item>
+        <item>08001110222</item>
+        <item>116123</item>
     </sensitivePN>
     <!--Portugal-->
     <sensitivePN network="268">
@@ -65,6 +76,12 @@
         <item>18004224453</item>
         <item>18006564673</item>
         <item>18007997233</item>
+    </sensitivePN>
+    <!--India-->
+    <sensitivePN network="404">
+        <item>1090</item>
+        <item>1091</item>
+        <item>1098</item>
     </sensitivePN>
     <!--Bangladesh-->
     <sensitivePN network="470">
