@@ -1,11 +1,13 @@
 # Release name
 PRODUCT_RELEASE_NAME := Nexus7
 
-
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
 
-# Inherit device configuration
+# Inherit telephony stuff
+$(call inherit-product, vendor/aicp/configs/telephony.mk)
+
+# Inherit AOSP device configuration for grouper
 $(call inherit-product, device/asus/grouper/full_grouper.mk)
 
 ## Device identifier. This must come after all inclusions
@@ -21,7 +23,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=nakasi BUILD_FINGERPRINT="google/na
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hector C (zipsnet), doc HD (semdoc)"
+    DEVICE_MAINTAINERS="Rygebin (Kaan Kulahli)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
