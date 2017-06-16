@@ -38,7 +38,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-DEVICE_MAINTAINERS="Hakan (Nyks45), Kaan Külahlı (Rygebin)"
+DEVICE_MAINTAINERS="Kaan Külahlı (Rygebin)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1280
