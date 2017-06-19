@@ -30,7 +30,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-lenovo
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Vedat Ak (Incredible), Kaan Külahlı (Rygebin)"
+    DEVICE_MAINTAINERS="Vedat Ak (Wzedlare), Kaan Külahlı (Rygebin)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
