@@ -1,0 +1,174 @@
+# Feature-List
+
+- 3Minit battery mod
+- Ability to enable/disable Settings Drawer
+- Adjust brightness by sliding statusbar
+- Adjust volume dialog timeout
+- Aicp Extras app for customizations
+- AICP Logo in Stausbar
+- Allow more time steps to 'Do not disturb'
+- Allow to set custom brightness for ambient display and liftToWake
+- AOKP custom system animations for Power menu
+- AOSP Recents Grid Style
+- App Circle Sidebar
+- App Exit Toast
+- App sidebar
+- AppOps
+- Automatic speakerphone by checking Proximity (Dialer)
+- Battery Bar
+- Battery bar with color change & animation on charge
+- Bluetooth battery level display for external devices
+- Blur on Lockscreen
+- Blur UI
+- Brightness Icon and position settings
+- Brightness slider
+- Camera sound (for build-in camera app)
+- Change Carrier Label
+- Change device's hostname
+- Change Heads-Up notifications globally for all apps
+- Charging sounds: Add option to notify on charger connect only
+- Charging sounds: Add option to use default charging sound
+- Circle app bar
+- Color Picker
+- compressed Dashboard menu
+- Current Charging status on Lockscreen
+- Custom Carrier Label
+- Custom Doze options for notifications (Pulsing, inverted notifications,...)
+- Customize Night mode brightness settings
+- Dialer call recording
+- Dialer: Show contacts with phone numbers only
+- Disable QS header tiles for Edit/Expand/Multiuser/Services
+- Disabling FC notifications
+- Disabling immersive mode messages
+- Double tap to sleep on lockscreen
+- DT2S on navbar
+- DT2S on status bar
+- DUI Fling (navbar with gestures)
+- DUI Pulse sound EQ in the statusbar
+- DUI Smartbar (on-screen navbar)
+- Enhanced Changelog in AicpExtras
+- Enhanced DUI Navbar QS tile (On/Off/Switch type)
+- Enhanced QS tile for Hotspot (longpress for Tethering options)
+- Expanded Statusbar Weather
+- File persistence on "hosts" file between flashes
+- Fingerprint authentication vibration
+- Fingerprint on reboot (optional)
+- Fingerprint scrolling
+- Flip to mute call (Dialer)
+- Flip to Mute/Reject Call
+- Force expanded notifications (also via settings!)
+- Header Date+Time position
+- Header image shadow + text shadow
+- Header images (via OmniStyle packages)
+- Headphones icon switch
+- Hide Apps from Recents
+- Hide Dashboard menu
+- Hide Lockscreen clock, date & alarm
+- Hide Magisk Manager / SuperSU from Settings, if it is uninstalled
+- Hide status bar on (secure) lockscreen
+- Increasing Ring Volume
+- Installed Apps: show link to Google Playstore
+- Integrated OTA-Update App in Aicp Extras
+- Keyguard Statusbar Clock toggle
+- Kill switch for status bar notifications
+- Launch music player when headset is connected
+- Less Notifications Sound
+- Lock Apps in Recents (SlimRecents)
+- Lockscreen blur
+- Lockscreen Colors
+- Lockscreen Shortcuts
+- Lockscreen Torch
+- MediaScanner behavior on boot changeable
+- Membar in recents (default and in SlimRecents)
+- Navbar tile: one tap to enable/disable, long tap to choose nav type
+- Navigation disabled notification
+- Network traffic in status bar
+- Notification counter in statusbar
+- Notification Light
+- Notifications transparency
+- OmniJaws (QS weather & weather in statusbar)
+- OmniSwitch
+- OmniSwitch as launcher or for Recents
+- On-the-Go mode
+- One Hand mode (with DUI navbar)
+- Option to hide lockscreen clock, date & alarm text
+- Own battery icon "Tha battery"
+- PA Pie 3.0 control
+- Pixel navigation bar animation
+- Power menu and dialogs transparency
+- Power menu Animations
+- Power menu on lock screen hide
+- Power/reboot dialogs dim amount
+- Pulsing animation of the solid battery
+- QS footer warnings
+- QS header transparency
+- QS shade transparency
+- QS stroke settings
+- QS switchable for location (from LAOS)
+- QS tile for Ambient Display
+- QS tile for battery profiles
+- QS tile for music playback & title display
+- QS tile for Night mode
+- QS tile for own app or action to pin to
+- QS Tile titles visibility
+- QS tile to deactivate/activate Ambient display
+- QS Tiles Columns
+- QS Tiles Rows
+- QS Tiles- AICP Extras, IME, Volume Panel, Ring, Music, Reboot, Fling/Smartbar, Pie, Screen off, Expanded Desktop, Lockscreen, Screenrecord, Screenshot, Caffeine, Weather, etc.
+- Quick Open QS, when no notification is present
+- Quick open running services via QS tile or notification
+- Quick QS for Bluetooth
+- Quick QS for mobile data
+- Quick QS tile for location
+- Quick QS tile for Wifi
+- Quick reboot QS tile
+- Quick settings disable on lockscreen
+- Recents Fullscreen
+- Reset Battery Stats
+- ROM Stats
+- Screen Record
+- Screenshot edit via own buildin (simple) app
+- Screenshot sound toggle
+- Screenshot type (whole or partial screen)
+- Scrolling Cache
+- Scrolling for Quicktoggles
+- Set start/end-colour of Pulse
+- Silent Mode
+- Slim Recents Iconpack Support
+- Slim Recents: allow to adjustment of round corners for cards
+- SlimAction widgets for Restart, etc.
+- SlimRecents with tweaks like App side bar display
+- small QS Tiles (scrollable)
+- Smartbar Button Tint
+- Smartbar: Pixel Button Animatiom
+- SmartBar: show arrows for next/previous track when playing audio
+- Status bar temperature
+- Status bar Ticker
+- Statusbar 4G <-> LTE switch
+- Statusbar AICP logo
+- Statusbar Ticker for notifications and music title
+- Substratum in Settings if installed
+- Superuser indicator on status bar for lineage SU-addon
+- Task Manager (Running services) in status bar
+- Theme and font support, systemless, through OMS7 (Substratum)
+- Three-fingers-swipe to screenshot
+- Tiles animation style & speed
+- Time Contexual Header (via OmniStyle)
+- Toast Icons display toggle
+- Toggle Dashboard layout, descriptions, summaries
+- Toggle Display Music visualization on lockscreen
+- Toggle to make Volume buttons change Music volume, not phone
+- Torch in Powermenu
+- Unlink Notification Volume
+- Vibrator strength (in other sounds) on activated devices
+- Volume dialog stroke settings
+- Volume dialog transparency
+- Volume Key Answer
+- Volume Steps
+- Wake display on plug into charger
+- Weather in statusbar headers with icon support
+- Weather settings for Lockscreen (in Aicp Extras)
+- Yoga time
+- Zen icon in statusbar
+
+...and more
