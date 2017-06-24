@@ -37,6 +37,8 @@ TARGET_VENDOR := Google
 TARGET_VENDOR_PRODUCT_NAME := Seed
 TARGET_VENDOR_DEVICE_NAME := seed
 
+TARGET_OTA_ASSERT_DEVICE := ctih220_sprout,gm4g_sprout,gm4g_s_sprout,imobileiq2_sprout,seed
+
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Vedat Ak (Wzedlare), Kaan Külahlı (Rygebin)"
