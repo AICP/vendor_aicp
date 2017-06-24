@@ -35,6 +35,7 @@
     </sensitivePN>
     <!--France-->
     <sensitivePN network="208">
+        <item>119</item>
         <item>3919</item>
     </sensitivePN>
     <!--Spain-->
@@ -74,6 +75,13 @@
         <item>23227930</item>
         <item>80057000</item>
         <item>81003940</item>
+    </sensitivePN>
+    <!--Ukraine-->
+    <sensitivePN network="255">
+        <item>0800500335</item>
+        <item>386</item>
+        <item>0800500225</item>
+        <item>772</item>
     </sensitivePN>
     <!--Germany-->
     <sensitivePN network="262">
