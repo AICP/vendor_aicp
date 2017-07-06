@@ -5,9 +5,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
      persist.camera.cpp.duplication=false
 
-# Gello
-PRODUCT_PACKAGES += \
-     Gello
+ # Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
 
 # Inherit some common AICP stuff.
 $(call inherit-product, vendor/aicp/configs/common_tablet.mk)
@@ -20,13 +20,9 @@ $(call inherit-product-if-exists, vendor/htc/flounder/device-vendor.mk)
 BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 
 # Inline kernel building
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
-KERNEL_TOOLCHAIN_PREFIX := aarch64-linux-android-
 TARGET_KERNEL_SOURCE := kernel/htc/flounder
 TARGET_KERNEL_CONFIG := lineage_flounder_defconfig
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_CMDLINE := androidboot.selinux=enforcing
-TARGET_PREBUILT_KERNEL := false
 
 # Extra Packages
 PRODUCT_PACKAGES += \
@@ -50,8 +46,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=flounder \
-    BUILD_FINGERPRINT=google/volantis/flounder:7.1.1/N9F27C/3938480:user/release-keys \
-    PRIVATE_BUILD_DESC="volantis-user 7.1.1 N9F27C 3938480 release-keys"
+    BUILD_FINGERPRINT=google/volantis/flounder:7.1.1/N9F27F/4072790:user/release-keys \
+    PRIVATE_BUILD_DESC="volantis-user 7.1.1 N9F27F 4072790 release-keys"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2048
