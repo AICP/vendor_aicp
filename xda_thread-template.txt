@@ -1,0 +1,174 @@
+[CENTER]
+[COLOR="White"].
+.
+.
+.[/COLOR]
+[IMG]http://i.imgur.com/GhQyhHk.png[/IMG]
+
+[SIZE="7"][B]AICP[/B][/SIZE]
+[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
+
+AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD and since then evolved into a mature ROM with the BEST community you can find!!!
+
+Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM when it comes to hardware, drivers and some features.
+With the rebrand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
+
+If there are any bugs, either we will sort them out or LAOS team, if it concerns their code base. This rom isn't LAOS supported, so no need to report errors or bugs to them!!
+[COLOR="White"].
+.
+.
+.
+.[/COLOR]
+
+[CODE]#include <std_disclaimer.h>
+
+/*
+ * Your warranty is now void.
+ *
+ * We are not responsible for bricked devices, dead SD cards,
+ * thermonuclear war or you getting fired because the alarm app failed. Please
+ * do some research if you have any concerns about features included in this ROM
+ * before flashing it! YOU are choosing to make these modifications, and if
+ * you point the finger at us for messing up your device, we will laugh at you. Hard & a lot.
+ *
+ */[/CODE]
+
+[COLOR=DimGray][IMG]http://i.imgur.com/u0fJM9W.png[/IMG]
+
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/FEATURES.md]Feature list (rough Overview)[/URL]
+[/COLOR]
+
+[IMG]http://i.imgur.com/3ueQ7DH.png[/IMG]
+
+[COLOR=DimGray][B]In the beginning we would like to thank:[/B]
+[LIST]
+[*]LineageOS & CM (R.I.P.) team
+[*]maxwen
+[*]DU team
+[*]SlimRoms team
+[*]Resurrection Remix team
+[*]OmniRom team
+[*][B]Community[/B]
+[/LIST]
+
+
+[IMG]http://i.imgur.com/ISn0uXd.png[/IMG]
+
+[LIST]
+[*][B]@LorD ClockaN[/B]
+[*][B]@zipsnet[/B]
+[*][B]@eyosen[/B]
+[*][B]@semdoc[/B]
+[*][B]@Drgravy[/B]
+[*][B]@Hashbang173[/B]
+[*][B]@SpiritCroc[/B]
+[*][B]@wartomato[/B]
+[*][B]@eboye[/B]
+[*][B]plus the rest of the crazy bunch that we call "team"[/B]
+.
+.
+.
+
+[/LIST]
+
+[IMG]http://i.imgur.com/K2p0Hv4.png[/IMG]
+
+We are now paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION [/COLOR]will really be appreciated and be used to cover those expenses. 
+Thank you!!
+
+[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][SIZE="3"][B][COLOR="Red"][IMG]http://i1081.photobucket.com/albums/j343/semdoc/images2_zpsdb09d3c5.jpg[/IMG][/COLOR][/B][/SIZE][/URL]
+
+[IMG]http://i.imgur.com/3U7XWsV.png[/IMG]
+
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]12.1[/SIZE]
+[/SIZE]
+[SIZE=3][COLOR=DimGray][B]Download link: [url]goo.gl/mIgmYG[/url][/B]
+[/COLOR][/SIZE]
+
+[IMG]http://i.imgur.com/VTVKEeK.png[/IMG]
+
+[SIZE=3][COLOR=DimGray][B]Full Changelog link: [url]goo.gl/mIgmYG[/url][/B]
+[/COLOR][/SIZE]
+
+Google Apps:
+[url="https://www.androidfilehost.com/?w=files&flid=171927&sort_by=date&sort_dir=DESC"]Beans gapps[/url]
+Or
+[url="http://opengapps.org"]Open GApps [/url] (ARM or ARM64 7.1 pico or nano, depending on your phone's architecture)
+
+[IMG]http://i.imgur.com/b5b2bXK.png[/IMG]
+
+[LIST]
+[*]You tell... :P
+[/LIST]
+[/COLOR]
+
+[IMG]http://i.imgur.com/kfCXFCX.png[/IMG]
+
+[COLOR=DimGray]The ROM should contain everything you need to enjoy Android Nougat. You don't need to install any Add-Ons, simply download the latest ROM, GApps, flash it, and go!
+If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
+It is STRONGLY recommended to fully wipe your device before flashing, and if possible avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
+If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience strange behavior.
+
+[SIZE=3][COLOR=DimGray]
+How to flash:[/SIZE]
+[LIST]
+[*]Again: Don't do it if you don't know it!
+[*]Download the ROM and GApps and transfer them to your device
+[*]Boot to recovery (TWRP recommended)
+[*]Wipe system, Cache, data and ART/Dalvik cache
+[*]Flash ROM Zipfile
+[*]Flash/Install GApps (optional, needed for e.g. Google Playstore to work)
+[*]Flash/Install the root solution of choice (optional)
+[*]Reboot to system
+[/LIST]
+
+[B]The ROM has GApps persistance in between dirty flashes, so you only have to flash them once!
+The root solution should be flashed together with every OTA update (= ROM Update)![/B]
+[/COLOR]
+
+[SIZE=3][COLOR=DimGray]
+Supported root solutions:[/SIZE][/COLOR]
+
+[COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk v12[/URL](remember that v12 needs the Manager to be installed separately from XDA thread)
+[URL="https://forum.xda-developers.com/apps/magisk/beta-magisk-v13-0-0980cb6-t3618589²]Magisk V13[/URL] (currently in beta state, but it now includes the Magisk Manager)
+
+SuperSU (Use whatever works for you, stable or beta):
+[URL="http://www.supersu.com/download"]SuperSU[/URL] - stable and beta available (Site by CCMT that took over the the marketing from chainfire) 
+[URL="https://download.chainfire.eu/supersu"]SuperSU[/URL] - direct download link for the latest SuperSU directly from the dev (chainfire)
+
+[URL="https://download.lineageos.org/extras"]Lineage SU-addon[/URL] (check your needed version: 14.1 arm or arm64) -> the removal zip is available here too.
+[/COLOR]
+
+[U][B]KERNEL:[/B][/U]
+Kernel in this ROM follows LAOS source with custom additions.
+
+[U][B]PREREQUISITE FOR OTA:[/B][/U]
+To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
+You can still use CWM/LAOS recovery and OTA app, but you will need to download the zip file and flash it manually from within your recovery. Zip gets saved in the "AICP_ota" folder on your internal storage.
+Please be sure that you are on the latest TWRP recovery.
+
+[B]If you want to contribute to the AICP or wanna see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
+
+[IMG]http://i.imgur.com/F6DLgPu.png[/IMG]
+
+[B][SIZE="3"]IceColdJelly [URL="http://goo.gl/DIQPNj"]AICP G+ community[/URL][/B][/SIZE]
+
+Kernel:
+[url][/url]
+
+[B]ROM & Additional links:
+[URL="http://goo.gl/6MoXYN"]Gerrit Code Review[/URL]
+[URL="https://github.com/AICP"]Github[/URL][/B]
+
+[B]ROM OS Version:[/B] 7.x Nougat
+[B]ROM Kernel:[/B] Linux x
+
+[B][U]Version Information[/U][/B]
+[B]Status:[/B] Stable
+[B]Stable Release Date:[/B]
+
+[B]Creation date[/B]
+[B]Last Updated[/B]
+
+You want to see a normal night at the "DEV office", click [URL="http://goo.gl/bh2m3"]here[/URL]!![/COLOR]
+[/CENTER]
