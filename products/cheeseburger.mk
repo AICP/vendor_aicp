@@ -36,7 +36,7 @@ TARGET_VENDOR := oneplus
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Darragh McGee (DarkExistence) , Erwan Leboucher (geneisxx)"
+    DEVICE_MAINTAINERS="Darragh McGee (DarkExistence) , Erwan Leboucher (geneisxx) , SpiritCroc"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/06241119:user/release-keys
