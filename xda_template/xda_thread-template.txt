@@ -3,7 +3,7 @@
 .
 .
 .[/COLOR]
-[IMG]http://i.imgur.com/GhQyhHk.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
 [SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
@@ -33,12 +33,12 @@ If there are any bugs, either we will sort them out or LAOS team, if it concerns
  *
  */[/CODE]
 
-[COLOR=DimGray][IMG]http://i.imgur.com/u0fJM9W.png[/IMG]
+[COLOR=DimGray][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/features.png[/IMG]
 
-[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/FEATURES.md]Feature list (rough Overview)[/URL]
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/FEATURES.md"]Feature list (rough Overview)[/URL]
 [/COLOR]
 
-[IMG]http://i.imgur.com/3ueQ7DH.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/credits.png[/IMG]
 
 [COLOR=DimGray][B]In the beginning we would like to thank:[/B]
 [LIST]
@@ -52,7 +52,7 @@ If there are any bugs, either we will sort them out or LAOS team, if it concerns
 [/LIST]
 
 
-[IMG]http://i.imgur.com/ISn0uXd.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/team.png[/IMG]
 
 [LIST]
 [*][B]@LorD ClockaN[/B]
@@ -71,21 +71,21 @@ If there are any bugs, either we will sort them out or LAOS team, if it concerns
 
 [/LIST]
 
-[IMG]http://i.imgur.com/K2p0Hv4.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/donations.png[/IMG]
 
-We are now paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION [/COLOR]will really be appreciated and be used to cover those expenses. 
+We are now paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION [/COLOR]will really be appreciated and be used to cover those expenses.
 Thank you!!
 
 [URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][SIZE="3"][B][COLOR="Red"][IMG]http://i1081.photobucket.com/albums/j343/semdoc/images2_zpsdb09d3c5.jpg[/IMG][/COLOR][/B][/SIZE][/URL]
 
-[IMG]http://i.imgur.com/3U7XWsV.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/downloads.png[/IMG]
 
 [SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]12.1[/SIZE]
 [/SIZE]
 [SIZE=3][COLOR=DimGray][B]Download link: [url]goo.gl/mIgmYG[/url][/B]
 [/COLOR][/SIZE]
 
-[IMG]http://i.imgur.com/VTVKEeK.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/changelog.png[/IMG]
 
 [SIZE=3][COLOR=DimGray][B]Full Changelog link: [url]goo.gl/mIgmYG[/url][/B]
 [/COLOR][/SIZE]
@@ -95,14 +95,14 @@ Google Apps:
 Or
 [url="http://opengapps.org"]Open GApps [/url] (ARM or ARM64 7.1 pico or nano, depending on your phone's architecture)
 
-[IMG]http://i.imgur.com/b5b2bXK.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/issues.png[/IMG]
 
 [LIST]
 [*]You tell... :P
 [/LIST]
 [/COLOR]
 
-[IMG]http://i.imgur.com/kfCXFCX.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/instructions.png[/IMG]
 
 [COLOR=DimGray]The ROM should contain everything you need to enjoy Android Nougat. You don't need to install any Add-Ons, simply download the latest ROM, GApps, flash it, and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
@@ -133,7 +133,7 @@ Supported root solutions:[/SIZE][/COLOR]
 [URL="https://forum.xda-developers.com/apps/magisk/beta-magisk-v13-0-0980cb6-t3618589²]Magisk V13[/URL] (currently in beta state, but it now includes the Magisk Manager)
 
 SuperSU (Use whatever works for you, stable or beta):
-[URL="http://www.supersu.com/download"]SuperSU[/URL] - stable and beta available (Site by CCMT that took over the the marketing from chainfire) 
+[URL="http://www.supersu.com/download"]SuperSU[/URL] - stable and beta available (Site by CCMT that took over the the marketing from chainfire)
 [URL="https://download.chainfire.eu/supersu"]SuperSU[/URL] - direct download link for the latest SuperSU directly from the dev (chainfire)
 
 [URL="https://download.lineageos.org/extras"]Lineage SU-addon[/URL] (check your needed version: 14.1 arm or arm64) -> the removal zip is available here too.
@@ -149,7 +149,7 @@ Please be sure that you are on the latest TWRP recovery.
 
 [B]If you want to contribute to the AICP or wanna see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
 
-[IMG]http://i.imgur.com/F6DLgPu.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/sources.png[/IMG]
 
 [B][SIZE="3"]IceColdJelly [URL="http://goo.gl/DIQPNj"]AICP G+ community[/URL][/B][/SIZE]
 
@@ -170,5 +170,5 @@ Kernel:
 [B]Creation date[/B]
 [B]Last Updated[/B]
 
-You want to see a normal night at the "DEV office", click [URL="http://goo.gl/bh2m3"]here[/URL]!![/COLOR]
+You want to see a normal night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/dev_office.png"]here[/URL]!![/COLOR]
 [/CENTER]
