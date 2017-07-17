@@ -49,7 +49,7 @@ OmniRom team
 
 [B]@LorD ClockaN[/B]
 [B]@zipsnet[/B]
-B]@eyosen[/B]
+[B]@eyosen[/B]
 [B]@semdoc[/B]
 [B]@Drgravy[/B]
 [B]@Hashbang173[/B]
@@ -65,18 +65,18 @@ B]@eyosen[/B]
 We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
-[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][SIZE="3"][B][COLOR="Red"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/paypal.png[/IMG]
+[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/paypal.png[/IMG][/URL]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/downloads.png[/IMG]
 
 [SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]12.1[/SIZE]
 [/SIZE]
-[SIZE=3][B]Download link: [url]goo.gl/mIgmYG[/url][/B][/SIZE]
+[SIZE=3][B]Download link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/changelog.png[/IMG]
 
-[SIZE=3][B]Full Changelog link: [url]goo.gl/mIgmYG[/url][/B][/SIZE]
+[SIZE=3][B]Full Changelog link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
 Google Apps:
 [url="https://www.androidfilehost.com/?w=files&flid=171927&sort_by=date&sort_dir=DESC"]Beans gapps[/url]
@@ -110,7 +110,6 @@ Reboot to system
 
 [B]The ROM has GApps persistance in between dirty flashes, so you only have to flash them once!
 The root solution should be flashed together with every OTA update (= ROM Update)![/B]
-[/COLOR]
 
 [SIZE=3]
 Supported root solutions:[/SIZE]
@@ -136,12 +135,12 @@ Please be sure that you are on the latest TWRP recovery.
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/sources.png[/IMG]
 
-[B][SIZE="3"]IceColdJelly [URL="http://goo.gl/DIQPNj"]AICP G+ community[/URL][/B][/SIZE]
+[B][SIZE="3"]IceColdJelly [URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
 
 [B]Kernel source:[/B] [url] your github link to your kernel HERE...[/url]
 
 [B]ROM & Additional links:
-[URL="http://goo.gl/6MoXYN"]Gerrit Code Review[/URL]
+[URL="http://gerrit.aicp-rom.com/"]Gerrit Code Review[/URL]
 [URL="https://github.com/AICP"]Github[/URL][/B]
 
 [B]ROM OS Version:[/B] 7.1.x Nougat
@@ -154,5 +153,5 @@ Please be sure that you are on the latest TWRP recovery.
 [B]Creation date:[/B]  xx-xx-2017
 [B]Last Updated:[/B] weekly
 
-You want to see a normal night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/dev_office.png"]here[/URL]!![/COLOR]
+You want to see a normal night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/dev_office.png"]here[/URL]!!
 [/CENTER]
