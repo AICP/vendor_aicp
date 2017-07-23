@@ -27,7 +27,7 @@ BUILD_FINGERPRINT=asus/WW_Z00A/Z00A:6.0.1/MMB29P/4.21.40.134_20160825_4746_user:
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Hakan (Nyks45), Erwan Leboucher (genesixxbf3) "
+    DEVICE_MAINTAINERS="Sayeed Afridi (sayeed99)"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
