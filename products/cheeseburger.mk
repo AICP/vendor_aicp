@@ -25,10 +25,12 @@ $(call inherit-product, vendor/aicp/configs/common.mk)
 # Inherit telephony stuff
 $(call inherit-product, vendor/aicp/configs/telephony.mk)
 
-PRODUCT_NAME := aicp_cheeseburger
-PRODUCT_DEVICE := cheeseburger
-PRODUCT_MANUFACTURER := OnePlus
+BOARD_VENDOR := OnePlus
 PRODUCT_BRAND := OnePlus
+PRODUCT_DEVICE := cheeseburger
+PRODUCT_NAME := aicp_cheeseburger
+PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_MODEL := OnePlus 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
@@ -45,4 +47,3 @@ BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/06241119:user/release-k
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 -include vendor/aicp/configs/bootanimation.mk
-
