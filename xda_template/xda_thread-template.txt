@@ -123,7 +123,7 @@ Supported root solutions:[/SIZE]
 [/COLOR]
 
 [U][B]KERNEL:[/B][/U]
-Kernel in this ROM follows LAOS source with custom additions from AOSP.
+The kernel in this ROM follows LAOS source with custom additions from AOSP.
 
 [U][B]PREREQUISITE FOR OTA:[/B][/U]
 To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
@@ -137,21 +137,26 @@ Please be sure that you are on the latest TWRP recovery.
 
 [B][SIZE="3"]IceColdJelly [URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
 
-[B]Kernel source:[/B] [url] your github link to your kernel HERE...[/url]
+[B]Kernel source:[/B]
+[url] put the github link to your kernel HERE...[/url]
 
 [B]ROM & Additional links:
 [URL="http://gerrit.aicp-rom.com/"]Gerrit Code Review[/URL]
 [URL="https://github.com/AICP"]Github[/URL][/B]
+
+[B][U]Contributors[/U][/B]
+(mention all the devs who have contributed to your device tree, kernel, vendor, etc,
+only mention the main ones though, probably the top four or so, otherwise this list will be a mile long unless if you're a huge kanger xD)
 
 [B]ROM OS Version:[/B] 7.1.x Nougat
 [B]ROM Kernel:[/B] Linux x.xx.xxx
 
 [B][U]Version Information[/U][/B]
 [B]Status:[/B] Stable
-[B]Stable Release Date:[/B] xx-xx-2017
+[B]Stable Release Date:[/B] dd-mm-yyyy
 
-[B]Creation date:[/B]  xx-xx-2017
-[B]Last Updated:[/B] weekly
+[B]Creation date:[/B]  dd-mm-yyyy
+[B]Last Updated:[/B] weekly, or nightly (choose one)
 
 You want to see a normal night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/dev_office.png"]here[/URL]!!
 [/CENTER]
