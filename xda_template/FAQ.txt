@@ -1,0 +1,43 @@
+[CENTER][B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]]
+[B]Before using the ROM:[/B]
+[COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, just look in the OP to see, if your device is build on a nightly or weekly schedule.[/COLOR]
+
+[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels?[/I][/COLOR]
+[COLOR="Blue"]A. No. You can still use them (as long as they are LOS based), but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter using them![/COLOR]
+
+[COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
+[COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
+
+[COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
+[COLOR="Blue"]A.  Xposed is not yet available for nougat (officialy), however there are unofficial versions. You will need to use the version arm64/arm for SDK 25.[/COLOR]
+
+[B]Flashing the ROM:[/B]
+[COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
+[COLOR="Blue"]A. Check the install instructions in the first post...[/COLOR]
+
+[COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, however make a nandroid first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I dirty flash builds?[/I][/COLOR]
+[COLOR="Blue"]A. Wipe System, Cache and ART/Dalvik cache. Flash the ROM, your preferred root solution and reboot. Or you might just use the OTA app to preform that task for you.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
+[COLOR="Blue"]A1. Boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot", then swipe to flash, then go back to the install screen and install your root method again if you don't want to loose root, and then reboot.[/COLOR]
+[COLOR="Blue"]A2. LOS based kernels sometimes come as a flashable ZIP file too. You can flash them together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue, if you don't want to loose root. Now swipe to flash, clear Cache & ART/Dalvik cache and then reboot.[/COLOR]
+
+[B]Using the ROM:[/B]
+[COLOR="Red"]Q. [I]How do I enable software buttons?[/I][/COLOR]
+[COLOR="Blue"]A. Settings -> Navigation -> Enable navigation bar. The bar can be configured separately in its settings.[/COLOR]
+
+[COLOR="Red"]Q[I] I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A  In TWRP, flash the substratum rescue zip in the substratum folder on the internal storage.[/COLOR]
+
+[COLOR="Red"]Q[I] I keep losing root with Magisk, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A  Check [URL="https://plus.google.com/115015009651...ts/Mjw58VACTSH"]this[/URL] out, if that doesn't work for you ask for help in this thread, read or ask in the Magisk thread on XDA or just flash Magisk again![/COLOR]
+
+[COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
+[COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.[/COLOR]
+
+[COLOR="Red"]Q.[I] How do I get a logcat, what type should I get and more questions that can conveniently be answered by my pre-determined answer?[/I][/COLOR]
+[COLOR="Blue"]A. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] [/COLOR][/CENTER]
