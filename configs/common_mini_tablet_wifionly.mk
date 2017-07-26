@@ -102,20 +102,8 @@ endif
 #PRODUCT_COPY_FILES += \
 #    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 
-# Copy latinime for gesture typing
-#PRODUCT_COPY_FILES += \
-#    vendor/aicp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-
 # Include AICP LatinIME dictionaries
 #PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
-
-# Kernel Adiutor App
-# PRODUCT_COPY_FILES += \
-#    vendor/aicp/prebuilt/common/app/KernelAdiutor.apk:system/priv-app/KernelAdiutor/KernelAdiutor.apk
-
-# AdAway App
-# PRODUCT_COPY_FILES += \
-#    vendor/aicp/prebuilt/common/app/AdAway.apk:system/priv-app/AdAway/AdAway.apk
 
 # AICP memo App
 # PRODUCT_COPY_FILES += \
