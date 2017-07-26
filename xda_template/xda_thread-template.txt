@@ -3,17 +3,17 @@
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
-[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
+[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE] [/CENTER]
 
-AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago and since then evolved into a mature ROM with the BEST community you can find!!!
+AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then evolved into a mature ROM with the BEST community you can find!!!
 
 Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM when it comes to hardware, drivers and some features.
 With the rebrand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
 
-If there are any bugs, either we will sort them out or LAOS team, if it concerns their code base. This rom isn't LAOS supported, so no need to report errors or bugs to them!!
+If there are any bugs, either we will sort them out or the LAOS team will if it concerns their code base. This rom isn't LAOS supported, so no need to report errors or bugs to them!!
 
 
-[CODE]#include <std_disclaimer.h>
+[CENTER][CODE]#include <std_disclaimer.h>
 
 /*
  * Your warranty is now void.
@@ -28,7 +28,6 @@ If there are any bugs, either we will sort them out or LAOS team, if it concerns
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/features.png[/IMG]
-
 [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/FEATURES.md"]Feature list (rough Overview)[/URL]
 
 
@@ -37,11 +36,10 @@ If there are any bugs, either we will sort them out or LAOS team, if it concerns
 [B]In the beginning we would like to thank:[/B]
 
 LineageOS & CM (R.I.P.) team
-maxwen
+Maxwen and the rest of the OmniRom team
 DU team
 SlimRoms team
 Resurrection Remix team
-OmniRom team
 [B]Community[/B]
 ...
 
@@ -87,33 +85,79 @@ Or
 
 You tell... :P
 
+[CENTER][B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]][/CENTER]
+[HIDE][CENTER][B]Before using the ROM:[/B]
+[COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, just look in the OP to see, if your device is build on a nightly or weekly schedule.[/COLOR]
+
+[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels?[/I][/COLOR]
+[COLOR="Blue"]A. No. You can still use them (as long as they are LOS based), but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter using them![/COLOR]
+
+[COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
+[COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
+
+[COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
+[COLOR="Blue"]A.  Xposed is not yet available for nougat (officialy), however there are unofficial versions. You will need to use the version arm64/arm for SDK 25.[/COLOR]
+
+[B]Flashing the ROM:[/B]
+[COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
+[COLOR="Blue"]A. Check the install instructions in the first post...[/COLOR]
+
+[COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, however make a nandroid first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I dirty flash builds?[/I][/COLOR]
+[COLOR="Blue"]A. Wipe System, Cache and ART/Dalvik cache. Flash the ROM, your preferred root solution and reboot. Or you might just use the OTA app to preform that task for you.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
+[COLOR="Blue"]A1. Boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot", then swipe to flash, then go back to the install screen and install your root method again if you don't want to loose root, and then reboot.[/COLOR]
+[COLOR="Blue"]A2. LOS based kernels sometimes come as a flashable ZIP file too. You can flash them together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue, if you don't want to loose root. Now swipe to flash, clear Cache & ART/Dalvik cache and then reboot.[/COLOR]
+
+[B]Using the ROM:[/B]
+[COLOR="Red"]Q. [I]How do I enable software buttons?[/I][/COLOR]
+[COLOR="Blue"]A. Settings -> Navigation -> Enable navigation bar. The bar can be configured separately in its settings.[/COLOR]
+
+[COLOR="Red"]Q[I] I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A  In TWRP, flash the substratum rescue zip in the substratum folder on the internal storage.[/COLOR]
+
+[COLOR="Red"]Q[I] I keep losing root with Magisk, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A  Check [URL="https://plus.google.com/115015009651694560786/posts/Mjw58VACTSH"]this[/URL] out, if that doesn't work for you ask for help in this thread, read or ask in the Magisk thread on XDA or just flash Magisk again![/COLOR]
+
+[COLOR="Red"]Q[I] I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A Read [URL="https://plus.google.com/115015009651694560786/posts/Jsd9JjMfuVF"]this[/URL][/COLOR]
+
+[COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
+[COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.[/COLOR]
+
+[COLOR="Red"]Q.[I] How do I get a logcat, what type should I get and more questions that can conveniently be answered by my pre-determined answer?[/I][/COLOR]
+[COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] [/COLOR]
+[COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the root section in the AICP Extras menu.[/COLOR][/CENTER][/HIDE]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/instructions.png[/IMG]
-
+[/CENTER]
 The ROM should contain everything you need to enjoy Android Nougat. You don't need to install any Add-Ons, simply download the latest ROM, GApps, flash it and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
 
 It is STRONGLY recommended to fully wipe your device before flashing, and if possible avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
 If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
-
-[SIZE=3]
-How to flash:[/SIZE]
+[CENTER][SIZE=3]
+How to flash:[/SIZE][/CENTER]
 (Again: Don't do it if you don't know it!)
 
-Download the ROM and GApps and transfer them to your device
-Boot to recovery (TWRP recommended)
-Wipe system, Cache, data and ART/Dalvik cache
-Flash ROM Zipfile
-Flash/Install GApps (optional, needed for e.g. Google Playstore to work)
-Flash/Install the root solution of choice (optional)
-Reboot to system
+1. Download the ROM and GApps and transfer them to your device
+2. Boot to recovery (TWRP recommended)
+3. Wipe system, Cache, data and ART/Dalvik cache
+4. Flash ROM Zipfile
+5. Flash/Install GApps (optional, needed for e.g. Google Playstore to work)
+6. Flash/Install the root solution of choice (optional)
+7. Reboot to system
 
 [B]The ROM has GApps persistance in between dirty flashes, so you only have to flash them once!
 The root solution should be flashed together with every OTA update (= ROM Update)![/B]
 
-[SIZE=3]
+[CENTER][SIZE=3]
 Supported root solutions:[/SIZE]
-
+[/CENTER]
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk v13.x[/URL]
 
 [URL="http://www.supersu.com/download"]SuperSU[/URL] - stable and beta available (Site by CCMT that took over the the marketing from chainfire)
@@ -122,20 +166,17 @@ Supported root solutions:[/SIZE]
 [URL="https://download.lineageos.org/extras"]Lineage SU-addon[/URL] (check your needed version: 14.1 arm or arm64) -> the removal zip is available here too.
 [/COLOR]
 
-[U][B]KERNEL:[/B][/U]
+[CENTER][U][B]KERNEL:[/B][/U]
 The kernel in this ROM follows LAOS source with custom additions from AOSP.
 
 [U][B]PREREQUISITE FOR OTA:[/B][/U]
-To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
+[/CENTER]To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
 You can still use LAOS recovery and OTA app, but you will need to download the zip file and flash it manually from within your recovery. Zip gets saved in the "AICP_ota" folder on your internal storage.
 Please be sure that you are on the latest TWRP recovery.
 
-[B]If you want to contribute to the AICP or wanna see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
-
+[CENTER][B]If you want to contribute to the AICP or wanna see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/n7.1/xda_template/sources.png[/IMG]
-
-[B][SIZE="3"]IceColdJelly [URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
 
 [B]Kernel source:[/B]
 [url] put the github link to your kernel HERE...[/url]
@@ -143,6 +184,8 @@ Please be sure that you are on the latest TWRP recovery.
 [B]ROM & Additional links:
 [URL="http://gerrit.aicp-rom.com/"]Gerrit Code Review[/URL]
 [URL="https://github.com/AICP"]Github[/URL][/B]
+
+[B][SIZE="3"]IceColdJelly [URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
 
 [B][U]Contributors[/U][/B]
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
