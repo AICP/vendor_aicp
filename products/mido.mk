@@ -43,7 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # AICP Device Maintainers
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Abhishek Aggarwal"
+    DEVICE_MAINTAINERS="Arnav Gosain"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
