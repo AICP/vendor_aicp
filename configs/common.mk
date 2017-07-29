@@ -119,6 +119,11 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include vendor/aicp/configs/cmsdk_common.mk
 endif
 
+# TWRP
+ifeq ($(WITH_TWRP),true)
+include vendor/aicp/configs/twrp.mk
+endif
+
 # Copy Magisk zip
 #PRODUCT_COPY_FILES += \
 #    vendor/aicp/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
