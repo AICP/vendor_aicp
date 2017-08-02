@@ -9,6 +9,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bacon.mk \
     $(LOCAL_DIR)/bullhead.mk \
     $(LOCAL_DIR)/cancro.mk \
+    $(LOCAL_DIR)/capricorn.mk \
     $(LOCAL_DIR)/cedric.mk \
     $(LOCAL_DIR)/chagalllte.mk \
     $(LOCAL_DIR)/chagallwifi.mk \
@@ -74,6 +75,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/marlin.mk \
     $(LOCAL_DIR)/mido.mk \
     $(LOCAL_DIR)/n1awifi.mk \
+    $(LOCAL_DIR)/natrium.mk \
     $(LOCAL_DIR)/nicki.mk \
     $(LOCAL_DIR)/oneplus2.mk \
     $(LOCAL_DIR)/oneplus3.mk \
