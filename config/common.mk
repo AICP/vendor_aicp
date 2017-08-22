@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
-    BluetoothExt 
+    BluetoothExt
 #    WolvesDen \
 #    ThemeInterfacer \
 #    Eleven \
@@ -215,9 +215,9 @@ endif
 
 # Versioning System
 # gzosp first version.
-PRODUCT_VERSION_MAJOR = 7.1.2
-PRODUCT_VERSION_MINOR = STABLE
-PRODUCT_VERSION_MAINTENANCE = 15.1
+PRODUCT_VERSION_MAJOR = 8.0
+PRODUCT_VERSION_MINOR = Alpha
+PRODUCT_VERSION_MAINTENANCE = 16.0
 GZOSP_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef GZOSP_BUILD_EXTRA
     GZOSP_POSTFIX := -$(GZOSP_BUILD_EXTRA)
