@@ -92,17 +92,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
-    BluetoothExt \
-    WolvesDen \
-    ThemeInterfacer \
-    Eleven \
-    OmniSwitch \
-    OmniJaws \
-    OmniStyle \
-    Turbo \
-    GZRoms \
-    Nova \
-    NovaGoogleCompanion
+    BluetoothExt 
+#    WolvesDen \
+#    ThemeInterfacer \
+#    Eleven \
+#    OmniSwitch \
+#    OmniJaws \
+#    OmniStyle \
+#    Turbo \
+#    GZRoms \
+#    Nova \
+#    NovaGoogleCompanion
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -110,52 +110,51 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
-    mount.exfat \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
     ntfs-3g
 
 # MusicFX advanced effects
-ifneq ($(TARGET_NO_DSPMANAGER), true)
-PRODUCT_PACKAGES += \
-    libcyanogen-dsp \
-    audio_effects.conf
-endif
+#ifneq ($(TARGET_NO_DSPMANAGER), true)
+#PRODUCT_PACKAGES += \
+#    libcyanogen-dsp \
+#    audio_effects.conf
+#endif
 
 # Custom off-mode charger
-ifneq ($(WITH_CM_CHARGER),false)
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    cm_charger_res_images \
-    font_log.png \
-    libhealthd.cm
-endif
+#ifneq ($(WITH_CM_CHARGER),false)
+#PRODUCT_PACKAGES += \
+#    charger_res_images \
+#    cm_charger_res_images \
+#    font_log.png \
+#    libhealthd.cm
+#endif
 
 # DU Utils library
-PRODUCT_BOOT_JARS += \
-    org.dirtyunicorns.utils
+#PRODUCT_BOOT_JARS += \
+#    org.dirtyunicorns.utils
 
 # DU Utils library
-PRODUCT_PACKAGES += \
-    org.dirtyunicorns.utils
+#PRODUCT_PACKAGES += \
+#    org.dirtyunicorns.utils
 
-ifeq ($(DEFAULT_ROOT_METHOD),magisk)
+#ifeq ($(DEFAULT_ROOT_METHOD),magisk)
 # Magisk Manager
-PRODUCT_PACKAGES += \
-    MagiskManager
+#PRODUCT_PACKAGES += \
+#    MagiskManager
 
 # Magisk
-PRODUCT_COPY_FILES += \
-   vendor/gzosp/prebuilt/common/addon.d/magisk.zip:system/addon.d/magisk.zip
-endif
+#PRODUCT_COPY_FILES += \
+#   vendor/gzosp/prebuilt/common/addon.d/magisk.zip:system/addon.d/magisk.zip
+#endif
 
-ifeq ($(DEFAULT_ROOT_METHOD),supersu)
+#ifeq ($(DEFAULT_ROOT_METHOD),supersu)
 # SuperSU
-PRODUCT_COPY_FILES += \
-   vendor/gzosp/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-   vendor/gzosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-endif
+#PRODUCT_COPY_FILES += \
+#   vendor/gzosp/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
+#   vendor/gzosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
+#endif
 
 # Explict rootless defined, or none of the root methods defined,
 # default rootless : nothing todo
