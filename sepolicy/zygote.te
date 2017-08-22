@@ -1,0 +1,2 @@
+# ps command may do this
+allow untrusted_app zygote:process getsched;
