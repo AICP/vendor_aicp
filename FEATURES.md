@@ -17,6 +17,7 @@
 - Automatic speakerphone by checking Proximity (Dialer)
 - Battery Bar
 - Battery bar with color change & animation on charge
+- Battery save mode custom color
 - Bluetooth battery level display for external devices
 - Blur on Lockscreen
 - Blur UI
@@ -93,7 +94,10 @@
 - One Hand mode (with DUI navbar)
 - Option to hide lockscreen clock, date & alarm text
 - Own battery icon "Tha battery"
+- PA accidental touch
+- PA Color Engine
 - PA Pie 3.0 control
+- PA pocket mode
 - Pixel navigation bar animation
 - Power menu and dialogs transparency
 - Power menu Animations
