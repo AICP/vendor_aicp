@@ -89,6 +89,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/peregrine.mk \
     $(LOCAL_DIR)/potter.mk \
     $(LOCAL_DIR)/s2.mk \
+    $(LOCAL_DIR)/santoni.mk \
     $(LOCAL_DIR)/seed.mk \
     $(LOCAL_DIR)/serranodsdd.mk \
     $(LOCAL_DIR)/shamu.mk \
