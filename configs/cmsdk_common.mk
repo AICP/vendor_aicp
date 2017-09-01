@@ -1,6 +1,5 @@
 # Permissions for cmsdk services
 PRODUCT_COPY_FILES += \
-    vendor/aicp/configs/permissions/org.cyanogenmod.appsuggest.xml:system/etc/permissions/org.cyanogenmod.appsuggest.xml \
     vendor/aicp/configs/permissions/org.cyanogenmod.audio.xml:system/etc/permissions/org.cyanogenmod.audio.xml \
     vendor/aicp/configs/permissions/org.cyanogenmod.livedisplay.xml:system/etc/permissions/org.cyanogenmod.livedisplay.xml \
     vendor/aicp/configs/permissions/org.cyanogenmod.partner.xml:system/etc/permissions/org.cyanogenmod.partner.xml \
