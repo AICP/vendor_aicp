@@ -256,3 +256,9 @@ ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    AICP_OTA
 endif
+
+# Themes
+PRODUCT_PACKAGES += \
+    PixelTheme \
+    Stock
+

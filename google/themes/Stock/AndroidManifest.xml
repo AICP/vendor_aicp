@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.theme.stock"
+    platformBuildVersionCode="26"
+    platformBuildVersionName="8.0.0">
+
+    <overlay android:priority="1" android:targetPackage="android" />
+
+    <application android:hasCode="false"
+                 android:label="Stock" />
+</manifest>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="user_icon_1">#ff00bcd4</color>
+    <color name="user_icon_2">#ff3f51b5</color>
+    <color name="user_icon_3">#ff4285f4</color>
+    <color name="user_icon_4">#ffe91e63</color>
+    <color name="user_icon_5">#ff0f9d58</color>
+    <color name="user_icon_6">#ff8bc34a</color>
+    <color name="user_icon_7">#ffff9800</color>
+    <color name="user_icon_8">#ffff5722</color>
+    <color name="system_error">#ffea4335</color>
+    <color name="primary_device_default_dark">#ff212121</color>
+    <color name="primary_device_default_settings">#ff263238</color>
+    <color name="primary_dark_device_default_dark">#ff000000</color>
+    <color name="primary_dark_device_default_settings">#ff212121</color>
+    <color name="secondary_device_default_settings">#ff37474f</color>
+    <color name="tertiary_device_default_settings">#ff455a64</color>
+    <color name="quaternary_device_default_settings">#ffb0bec5</color>
+    <color name="accent_device_default_700">#ff00796b</color>
+    <color name="accent_device_default_light">#ff009688</color>
+    <color name="accent_device_default_dark">#ff80cbc4</color>
+    <color name="accent_device_default_50">#ffe0f2f1</color>
+</resources>
