@@ -26,7 +26,6 @@ PRODUCT_PACKAGES += \
     Eleven \
     Jelly \
     ExactCalculator \
-    LiveLockScreenService \
     LockClock \
     Trebuchet \
     WallpaperPicker \
