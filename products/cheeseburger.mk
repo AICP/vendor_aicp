@@ -44,11 +44,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DEVICE_MAINTAINERS="Darragh McGee (DarkExistence), Erwan Leboucher (geneisxx), SpiritCroc"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/07311003:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus5-user 7.1.1 NMF26X 28 release-keys"
+    BUILD_FINGERPRINT=OnePlus/OnePlus5/OnePlus5:7.1.1/NMF26X/08141919:user/release-keys \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-        ro.build.oemfingerprint=7.1.1/NMF26X/07311003:user/release-keys
+        ro.build.oemfingerprint=7.1.1/NMF26X/08141919:user/release-keys
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
