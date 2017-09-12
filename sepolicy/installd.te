@@ -1,3 +1,0 @@
-# Allow querying of asec size on SD card
-allow installd sdcard_type:dir { search };
-allow installd sdcard_type:file { getattr };

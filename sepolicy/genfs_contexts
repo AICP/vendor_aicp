@@ -1,1 +1,0 @@
-genfscon fuseblk / u:object_r:fuseblk:s0

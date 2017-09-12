@@ -1,2 +1,0 @@
-allow adbd adbtcp_prop:property_service set;
-set_prop(adbd, adbsecure_prop)
