@@ -111,10 +111,12 @@ def indent(elem, level=0):
             elem.tail = i
 
 def get_default_revision():
-    m = ElementTree.parse(".repo/manifest.xml")
-    d = m.findall('default')[0]
-    r = d.get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+   m = ElementTree.parse(".repo/manifest.xml")
+   for node in m.iter('remote'):
+      d = node.attrib.get('review')
+      if d is not None and "aicp" in d:
+         r = node.attrib.get('revision')
+   return r.replace('refs/heads/', '').replace('refs/tags/', '')
 
 def get_from_manifest(devicename):
     try:
@@ -181,7 +183,7 @@ def add_to_manifest(repositories, fallback_branch = None):
 
         print('Adding dependency: AICP/%s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "AICP/%s" % repo_name })
+            "remote": "github", "name": "AICP/%s" % repo_name, "revision": default_revision})
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
