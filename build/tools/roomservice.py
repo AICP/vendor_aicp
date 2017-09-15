@@ -124,7 +124,7 @@ def get_from_manifest(devicename):
         lm = ElementTree.Element("manifest")
 
     for localpath in lm.findall("project"):
-        if re.search("android_device_.*_%s$" % device, localpath.get("name")):
+        if re.search("device_.*_%s$" % device, localpath.get("name")):
             return localpath.get("path")
 
     return None
@@ -217,7 +217,7 @@ def fetch_dependencies(repo_path, fallback_branch = None):
                 fetch_list.append(dependency)
                 syncable_repos.append(dependency['target_path'])
                 verify_repos.append(dependency['target_path'])
-            elif re.search("android_device_.*_.*$", dependency['repository']):
+            elif re.search("device_.*_.*$", dependency['repository']):
                 verify_repos.append(dependency['target_path'])
 
         dependencies_file.close()
@@ -250,10 +250,10 @@ if depsonly:
 else:
     for repository in repositories:
         repo_name = repository['name']
-        if re.match(r"^android_device_[^_]*_" + device + "$", repo_name):
+        if re.match(r"^device_[^_]*_" + device + "$", repo_name):
             print("Found repository: %s" % repository['name'])
             
-            manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
+            manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
             
             default_revision = get_default_revision()
             print("Default revision: %s" % default_revision)
