@@ -1,5 +1,5 @@
 #
-# Lineage-specific variable clears
+# AICP-specific variable clears
 #
 LOCAL_IGNORE_SUBDIR :=
 
