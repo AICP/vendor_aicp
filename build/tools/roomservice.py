@@ -178,12 +178,12 @@ def add_to_manifest(repositories, fallback_branch = None):
         repo_target = repository['target_path']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('AICP/%s already fetched to %s' % (repo_name, repo_target))
+            print('%s already fetched to %s' % (repo_name, repo_target))
             continue
 
-        print('Adding dependency: AICP/%s -> %s' % (repo_name, repo_target))
+        print('Adding dependency: %s -> %s' % (repo_name, repo_target))
         project = ElementTree.Element("project", attrib = { "path": repo_target,
-            "remote": "github", "name": "AICP/%s" % repo_name, "revision": default_revision})
+            "remote": "aicp", "name": repo_name})
 
         if 'branch' in repository:
             project.set('revision',repository['branch'])
@@ -254,9 +254,7 @@ else:
         repo_name = repository['name']
         if re.match(r"^device_[^_]*_" + device + "$", repo_name):
             print("Found repository: %s" % repository['name'])
-            
             manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
-            
             default_revision = get_default_revision()
             print("Default revision: %s" % default_revision)
             print("Checking branch info")
@@ -269,10 +267,8 @@ else:
                 githubreq = urllib.request.Request(repository['tags_url'].replace('{/tag}', ''))
                 add_auth(githubreq)
                 result.extend (json.loads(urllib.request.urlopen(githubreq).read().decode()))
-            
             repo_path = "device/%s/%s" % (manufacturer, device)
-            adding = {'repository':repo_name,'target_path':repo_path}
-            
+            adding = {'repository': "AICP/%s" % repo_name,'target_path':repo_path, 'branch': default_revision}
             fallback_branch = None
             if not has_branch(result, default_revision):
                 if os.getenv('ROOMSERVICE_BRANCHES'):
