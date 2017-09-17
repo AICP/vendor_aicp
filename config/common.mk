@@ -123,7 +123,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# Custom AICP packages
+# Custom Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
     CMSettingsProvider \
@@ -135,6 +135,10 @@ PRODUCT_PACKAGES += \
     Updater \
     WallpaperPicker \
     WeatherProvider
+
+# Custom AICP packages
+PRODUCT_PACKAGES += \
+    AicpExtras
 
 # Exchange support
 PRODUCT_PACKAGES += \
