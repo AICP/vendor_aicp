@@ -4,6 +4,7 @@ WIDTH="$1"
 HEIGHT="$2"
 HALF_RES="$3"
 OUT="$ANDROID_PRODUCT_OUT/obj/BOOTANIMATION"
+RANDOM_BOOT=$(shuf -i 0-3 -n 1)
 
 if [ -z "$WIDTH" ]; then
     echo "Warning: bootanimation width not specified"
@@ -33,7 +34,7 @@ for part_cnt in 1 2 3
 do
     mkdir -p $ANDROID_PRODUCT_OUT/obj/BOOTANIMATION/bootanimation/part$part_cnt
 done
-tar xfp "vendor/aicp/bootanimation/bootanimation.tar" -C "$OUT/bootanimation/"
+tar xfp "vendor/aicp/bootanimation/bootanimation$RANDOM_BOOT.tar" -C "$OUT/bootanimation/"
 mogrify -resize $RESOLUTION -colors 250 "$OUT/bootanimation/"*"/"*".png"
 
 # Create desc.txt
