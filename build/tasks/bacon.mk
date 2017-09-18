@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # AICP OTA update package
 
-AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/aicp-$(AICP_VERSION).zip
+AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/$(AICP_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
