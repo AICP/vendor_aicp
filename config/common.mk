@@ -180,6 +180,10 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo
+
 # Custom off-mode charger
 ifneq ($(WITH_AICP_CHARGER),false)
 PRODUCT_PACKAGES += \
