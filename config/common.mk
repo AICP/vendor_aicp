@@ -83,14 +83,14 @@ PRODUCT_COPY_FILES += \
 
 # This is AICP!
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+    vendor/aicp/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml
 
 # Include AICP audio files
 include vendor/aicp/config/aicp_audio.mk
 
-ifneq ($(TARGET_DISABLE_CMSDK), true)
-# CMSDK
-include vendor/aicp/config/cmsdk_common.mk
+ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
+# Lineage SDK
+include vendor/aicp/config/lineage_sdk_common.mk
 endif
 
 # TWRP
@@ -106,7 +106,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BluetoothExt \
     CMAudioService \
-    CMParts \
+    LineageParts \
     Development \
     Profiles \
     WeatherManagerService
@@ -126,7 +126,8 @@ PRODUCT_PACKAGES += \
 # Custom Lineage packages
 PRODUCT_PACKAGES += \
     AudioFX \
-    CMSettingsProvider \
+    LineageSettingsProvider \
+    LineageSetupWizard \
     Eleven \
     ExactCalculator \
     Jelly \
