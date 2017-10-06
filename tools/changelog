@@ -3,7 +3,6 @@
 # Exports
 dir=$ANDROID_BUILD_TOP
 out=$dir/out/target/product
-. $dir/vendor/aicp/tools/colors
 
 export Changelog=Changelog.txt
 

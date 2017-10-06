@@ -1,0 +1,5 @@
+[gerrit]
+host=gerrit.aicp-rom.com
+port=29418
+project=AICP/vendor_aicp
+defaultbranch=o8.0
