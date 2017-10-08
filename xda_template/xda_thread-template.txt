@@ -97,7 +97,7 @@ You tell... :P
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  Xposed is not yet available for nougat (officialy), however there are unofficial versions. You will need to use the version arm64/arm for SDK 25.[/COLOR]
+[COLOR="Blue"]A.  You will need to use the version arm64/arm for SDK 25.[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
