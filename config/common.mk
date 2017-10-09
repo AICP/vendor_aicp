@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 # Include AICP audio files
 include vendor/aicp/config/aicp_audio.mk
 
+# Fix Google dialer
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
 ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
 # Lineage SDK
 include vendor/aicp/config/lineage_sdk_common.mk
