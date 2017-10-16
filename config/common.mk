@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
 
+# Lineage-specific broadcast actions whitelist
+PRODUCT_COPY_FILES += \
+    vendor/aicp/config/permissions/lineage-sysconfig.xml:system/etc/sysconfig/lineage-sysconfig.xml
+
 # Signature compatibility validation
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
