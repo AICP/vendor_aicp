@@ -270,3 +270,6 @@ PRODUCT_PACKAGES += \
     PixelTheme \
     Stock
 
+#OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
