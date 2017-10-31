@@ -104,7 +104,10 @@ def load_manifest(manifest):
 
 
 def get_default(manifest=None):
-    m = manifest or load_manifest(default_manifest)
+    if manifest is not None:
+        m = manifest
+    else:
+        m = load_manifest(default_manifest)
     d = m.findall('default')[0]
     return d
 
