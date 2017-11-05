@@ -3,6 +3,7 @@
 #
 
 ALARM_PATH := vendor/aicp/prebuilt/common/media/audio/alarms
+UI_PATH := vendor/aicp/prebuilt/common/media/audio/ui
 NOTIFICATION_PATH := vendor/aicp/prebuilt/common/media/audio/notifications
 RINGTONE_PATH := vendor/aicp/prebuilt/common/media/audio/ringtones
 
@@ -10,6 +11,10 @@ RINGTONE_PATH := vendor/aicp/prebuilt/common/media/audio/ringtones
 PRODUCT_COPY_FILES += \
     $(ALARM_PATH)/CyanAlarm.ogg:system/media/audio/alarms/CyanAlarm.ogg \
     $(ALARM_PATH)/NuclearLaunch.ogg:system/media/audio/alarms/NuclearLaunch.ogg
+
+# UI
+PRODUCT_COPY_FILES += \
+    $(UI_PATH)/BatteryPlugged.ogg:system/media/audio/ui/BatteryPlugged.ogg
 
 # Notifications
 PRODUCT_COPY_FILES += \
