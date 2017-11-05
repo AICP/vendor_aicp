@@ -8,9 +8,9 @@
 AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then evolved into a mature ROM with the BEST community you can find!!!
 
 Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM when it comes to hardware, drivers and some features.
-With the rebrand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
+With the re-brand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
 
-If there are any bugs, either we will sort them out or the LAOS team will if it concerns their code base. This rom isn't LAOS supported, so no need to report errors or bugs to them!!
+If there are any bugs, either we will sort them out or the LAOS team will if it concerns their code base. This rom isn't LAOS supported, so no need to report errors/bugs to them!!
 
 
 [CENTER][CODE]#include <std_disclaimer.h>
@@ -28,7 +28,7 @@ If there are any bugs, either we will sort them out or the LAOS team will if it 
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/features.png[/IMG]
-W. I. P.
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/FEATURES.md"]Feature list (rough Overview)[/URL]
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/credits.png[/IMG]
@@ -95,7 +95,7 @@ You tell... :P
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  Xposed is not yet available for oreo.[/COLOR]
+[COLOR="Blue"]A.  Xposed is not yet available for Oreo.[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
@@ -105,15 +105,15 @@ You tell... :P
 [COLOR="Blue"]A. Yes, however make a nandroid first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I dirty flash builds?[/I][/COLOR]
-[COLOR="Blue"]A. Wipe System, Cache and ART/Dalvik cache. Flash the ROM, your preferred root solution and reboot. Or you might just use the OTA app to preform that task for you.[/COLOR]
+[COLOR="Blue"]A. Wipe the System, Cache and ART/Dalvik cache. Flash the ROM, Gapps (only needed if you wipe the system), your preferred root solution and reboot. Or you might just use the OTA app to preform that task for you.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
-[COLOR="Blue"]A1. Boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot", then swipe to flash, then go back to the install screen and install your root method again if you don't want to loose root, and then reboot.[/COLOR]
-[COLOR="Blue"]A2. LOS based kernels sometimes come as a flashable ZIP file too. You can flash them together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue, if you don't want to loose root. Now swipe to flash, clear Cache & ART/Dalvik cache and then reboot.[/COLOR]
+[COLOR="Blue"]A1. If it's a .img file boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot", then swipe to flash, then go back to the install screen and install your root method again if you don't want to loose root, and then reboot.[/COLOR]
+[COLOR="Blue"]A2. if it's a flashable ZIP You can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to loose root. Now swipe to flash, and then reboot.[/COLOR]
 
 [B]Using the ROM:[/B]
 [COLOR="Red"]Q. [I]How do I enable software buttons?[/I][/COLOR]
-[COLOR="Blue"]A. Settings -> Navigation -> Enable navigation bar. The bar can be configured separately in its settings.[/COLOR]
+[COLOR="Blue"]A. Until the navbar enabler is added add the line qemu.hw.mainkeys=0 to the build.prop and then reboot, set it to 1 to disable it if you want.[/COLOR]
 
 [COLOR="Red"]Q[I] I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
 [COLOR="Blue"]A  In TWRP, flash the substratum rescue zip in the substratum folder on the internal storage.[/COLOR]
@@ -133,7 +133,7 @@ You tell... :P
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/instructions.png[/IMG]
 [/CENTER]
-The ROM should contain everything you need to enjoy Android Oreo. You don't need to install any Add-Ons, simply download the latest ROM, GApps, flash it and go!
+The ROM should contain everything you need to enjoy Android Oreo. You don't need to install any Add-on's, simply download the latest ROM, GApps, flash it and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
 
 It is STRONGLY recommended to fully wipe your device before flashing, and if possible avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
@@ -150,17 +150,17 @@ How to flash:[/SIZE][/CENTER]
 6. Flash/Install the root solution of choice (optional)
 7. Reboot to system
 
-[B]The ROM has GApps persistance in between dirty flashes, so you only have to flash them once!
+[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once!
 The root solution should be flashed together with every OTA update (= ROM Update)![/B]
 
 
-[CENTER][SIZE=3][B]Supported Root Solutions:[/B][/SIZE][/CENTER]
+[CENTER][SIZE=3][B]Supported Root Solutions:[/B][/SIZE]
 
-[CENTER][COLOR="DarkRed"][URL="https://forum.xda-developers.com/attachment.php?attachmentid=4264562&d=1504715861"]Magisk v14.0[/URL][/CENTER]
+[COLOR="DarkRed"][URL="https://forum.xda-developers.com/attachment.php?attachmentid=4264562&d=1504715861"]Magisk v14.0[/URL][/CENTER][/COLOR]
 
 
 [CENTER][U][B]KERNEL:[/B][/U]
-The kernel in this ROM follows LAOS source with custom additions from AOSP.
+The kernel in this ROM follows LAOS source with custom additions
 
 [U][B]PREREQUISITE FOR OTA:[/B][/U]
 [/CENTER]To be able to flash using the buildin OTA app that needs TWRP recovery installed to work.
@@ -172,7 +172,7 @@ Please be sure that you are on the latest TWRP recovery.
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/sources.png[/IMG]
 
 [B]Kernel source:[/B]
-[url] put the github link to your kernel HERE...[/url]
+[B]put the github link to your kernel HERE, not posting the kernel source violates the gpl, and also violates the rules on xda ...[/B]
 
 [B]ROM & Additional links:
 [URL="http://gerrit.aicp-rom.com/"]Gerrit Code Review[/URL]
