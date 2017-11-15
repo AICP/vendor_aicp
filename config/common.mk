@@ -87,7 +87,8 @@ PRODUCT_COPY_FILES += \
 
 # This is AICP!
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml
+    vendor/aicp/config/permissions/org.lineageos.android.xml:system/etc/permissions/org.lineageos.android.xml \
+    vendor/aicp/config/permissions/privapp-permissions-lineage.xml:system/etc/permissions/privapp-permissions-lineage.xml
 
 # Include AICP audio files
 include vendor/aicp/config/aicp_audio.mk
