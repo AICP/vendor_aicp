@@ -2,18 +2,24 @@
 
 - Adjust volume dialog timeout
 - Advanced reboot
-- Aicp Extras app for customizations
+- Aicp Extras app for customizations and beyond
+- Battery bar
+- Bootanimation changer
 - Brightness slider
 - Cpu info overlay
+- Custom carrier label
+- Custom QS headers
+- Custom volume step count
 - Disable lockscreen media art
 - Double tap to sleep on lockscreen
-- DT2S on navbar
+- DUI
 - Enhanced Changelog in AicpExtras
 - File persistence on "hosts" file between flashes
 - Integrated OTA-Update App in Aicp Extras
 - Launch default music player on headset connect
 - Lockscreen charging info
 - Network traffic summary
+- Notification ticker
 - Partial screenshot
 - Power menu and dialogs transparency
 - Power/reboot dialogs dim amount
@@ -27,7 +33,8 @@
 - QS Tiles- AicpExtras, disable music track, sync, caffeine, PIP, nfc, sound, usb, system language, ime selector, usb tether, screenshot, flashlight, compass, reboot, 
 - Quick settings fast pull down
 - Screenshot sound
-- Selinux switches
+- Selinux mode switch
+- Slim recents
 - Small QS Tiles (scrollable)
 - Swap volume buttons
 - System app remover
@@ -35,6 +42,7 @@
 - Volume dialog stroke settings
 - Volume dialog transparency
 - Volume rocker music control
+- VoLte icon
 - Yoga time
 
 ...and more

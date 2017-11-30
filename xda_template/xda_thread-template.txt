@@ -5,10 +5,10 @@
 [SIZE="7"][B]AICP[/B][/SIZE]
 [SIZE="1"][B]Android Ice Cold Project[/B][/SIZE] [/CENTER]
 
-AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then evolved into a mature ROM with the BEST community you can find!!!
+AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then has evolved into a mature ROM with the BEST community that you can find!!!
 
-Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM when it comes to hardware, drivers and some features.
-With the re-brand of CM to LineageOS (LAOS) we are now actually LAOS based with some tweaks from AOSP.
+Until Lollipop, the Rom has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM.
+With the re-brand of CM to LineageOS (LAOS) we are now LAOS based with some tweaks from AOSP.
 
 If there are any bugs, either we will sort them out or the LAOS team will if it concerns their code base. This rom isn't LAOS supported, so no need to report errors/bugs to them!!
 
@@ -77,7 +77,7 @@ We are paying for servers that build nightlies/weeklies and everything that come
 [SIZE=3][B]Full Changelog link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
 Google Apps:
-(link the best one for your device, there are several variants out there right now)
+(link the best one for your device, there are several variants out there right now, pico/nano gapps from opengapps.org is almost always a good choice though)
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/issues.png[/IMG]
 
@@ -86,10 +86,10 @@ You tell... :P
 [CENTER][B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]][/CENTER]
 [HIDE][CENTER][B]Before using the ROM:[/B]
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, just look in the OP to see, if your device is build on a nightly or weekly schedule.[/COLOR]
+[COLOR="Blue"]A. Yes, just look in the OP to see if your device is built on a nightly or weekly schedule.[/COLOR]
 
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels?[/I][/COLOR]
-[COLOR="Blue"]A. No. You can still use them (as long as they are LAOS based), but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter using them![/COLOR]
+[COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
 
 [COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
@@ -102,10 +102,10 @@ You tell... :P
 [COLOR="Blue"]A. Check the install instructions in the first post...[/COLOR]
 
 [COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, however make a nandroid first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
+[COLOR="Blue"]A. Yes, however make a nandroid backup first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I dirty flash builds?[/I][/COLOR]
-[COLOR="Blue"]A. Wipe the System, Cache and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution and reboot. Or you might just use the OTA app to preform that task for you.[/COLOR]
+[COLOR="Blue"]A. Wipe the System, Cache and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution and reboot. Or just use the OTA app to preform that task for you.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
 [COLOR="Blue"]A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot", then swipe to flash, then go back to the install screen and install your root method again, if you don't want to loose root and reboot.[/COLOR]
@@ -113,7 +113,7 @@ You tell... :P
 
 [B]Using the ROM:[/B]
 [COLOR="Red"]Q. [I]How do I enable software buttons?[/I][/COLOR]
-[COLOR="Blue"]A. Until the navbar enabler is added, add the line qemu.hw.mainkeys=0 to the build.prop and then reboot, set it to 1 to disable it if you want. You can use an App like Kernel Audiutor for that.[/COLOR]
+[COLOR="Blue"]A. Go to Aicp Extras/Navigation bar, and enable it.[/COLOR]
 
 [COLOR="Red"]Q. [I]I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
 [COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
@@ -141,12 +141,12 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 [CENTER][SIZE=3]How to flash:[/SIZE][/CENTER]
 (Again: Don't do it if you don't know it!)
 
-1. Download the ROM and GApps and transfer them to your device internal storage.
+1. Download the ROM and GApps and transfer them to your device.
 2. Boot to recovery (TWRP recommended).
-3. Wipe System, Cache, Data and ART/Dalvik cache.
-4. Flash ROM Zipfile.
-5. Flash/Install GApps (optional, needed for e.g. Google Playstore to work).
-6. Flash/Install the root solution of your choice (optional).
+3. Wipe the System, Cache, Data and ART/Dalvik cache.
+4. Flash the ROM Zipfile.
+5. Flash the GApps (optional, needed for e.g. Google Playstore to work).
+6. Flash the root solution of your choice (optional).
 7. Reboot your device.
 [B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once!
 The root solution should be flashed together with every OTA update (= ROM Update) as long as the instructions of your
@@ -162,11 +162,11 @@ root solution do not state something else (="persistence on dirty flashing") ![/
 The kernel in this ROM follows LAOS source with custom additions.
 
 [U][B]PREREQUISITE FOR OTA:[/B][/U]
-To be able to flash using the buildin OTA app, TWRP recovery is needed.
+To be able to flash using the built-in OTA app, TWRP recovery is needed.
 You can still use the LAOS recovery and OTA app, but you will need to download the zip file and flash it manually from within your recovery. The Zipfile gets saved in the "aicp_ota" folder on your internal storage.
-Please be sure that you are on the latest TWRP recovery. Keep im ind that this could also be an unofficial version![/CENTER]
+Please be sure that you are on the latest TWRP recovery. Keep in mind that this could also be an unofficial version![/CENTER]
 
-[CENTER][B]If you want to contribute to the AICP or wannt see what is being worked on/merged, feel free to visit our Gerrit review system. (Link is at the bottom!!!)[/B]
+[CENTER][B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/sources.png[/IMG]
 
@@ -184,7 +184,7 @@ Please be sure that you are on the latest TWRP recovery. Keep im ind that this c
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long unless if you're a huge kanger xD)
 
 [B]ROM OS Version:[/B] 8.x.x Oreo
-[B]ROM Kernel:[/B] Linux x.xx.xxx
+[B]Kernel:[/B] Linux x.x.y (EG: 3.18.y)
 
 [B][U]Version Information:[/U][/B]
 [B]Status:[/B] NIGHTLY/WEEKLY
