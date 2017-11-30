@@ -25,7 +25,7 @@ If there are any bugs, either we will sort them out or the LAOS team will if it 
  * you point the finger at us for messing up your device, we will laugh at you. Hard & a lot.
  *
  */[/CODE]
-
+[/CENTER]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/features.png[/IMG]
 [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/FEATURES.md"]Feature list (rough Overview)[/URL]
