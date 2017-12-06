@@ -91,16 +91,7 @@ PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt
-#    WolvesDen \
-#    ThemeInterfacer \
-#    Eleven \
-#    OmniSwitch \
-#    OmniJaws \
-#    OmniStyle \
-#    Turbo \
-#    GZRoms \
-#    Nova \
-#    NovaGoogleCompanion
+
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -113,13 +104,6 @@ PRODUCT_PACKAGES += \
     ntfsfix \
     ntfs-3g
 
-# MusicFX advanced effects
-#ifneq ($(TARGET_NO_DSPMANAGER), true)
-#PRODUCT_PACKAGES += \
-#    libcyanogen-dsp \
-#    audio_effects.conf
-#endif
-
 # Custom off-mode charger
 #ifneq ($(WITH_CM_CHARGER),false)
 #PRODUCT_PACKAGES += \
@@ -127,36 +111,6 @@ PRODUCT_PACKAGES += \
 #    cm_charger_res_images \
 #    font_log.png \
 #    libhealthd.cm
-#endif
-
-# DU Utils library
-#PRODUCT_BOOT_JARS += \
-#    org.dirtyunicorns.utils
-
-# DU Utils library
-#PRODUCT_PACKAGES += \
-#    org.dirtyunicorns.utils
-
-#ifeq ($(DEFAULT_ROOT_METHOD),magisk)
-# Magisk Manager
-#PRODUCT_PACKAGES += \
-#    MagiskManager
-
-# Magisk
-#PRODUCT_COPY_FILES += \
-#   vendor/gzosp/prebuilt/common/addon.d/magisk.zip:system/addon.d/magisk.zip
-#endif
-
-#ifeq ($(DEFAULT_ROOT_METHOD),supersu)
-# SuperSU
-#PRODUCT_COPY_FILES += \
-#   vendor/gzosp/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-#   vendor/gzosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-#endif
-
-# Explict rootless defined, or none of the root methods defined,
-# default rootless : nothing todo
-#ifeq ($(DEFAULT_ROOT_METHOD),rootless)
 #endif
 
 # Stagefright FFMPEG plugin
@@ -218,7 +172,7 @@ endif
 # Versioning System
 # gzosp first version.
 PRODUCT_VERSION_MAJOR = 8.1
-PRODUCT_VERSION_MINOR = Beta
+PRODUCT_VERSION_MINOR = Alpha
 PRODUCT_VERSION_MAINTENANCE = 1.0
 GZOSP_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef GZOSP_BUILD_EXTRA
