@@ -30,6 +30,12 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     BR_FAMILY := msm8909 msm8916
     UM_FAMILY := msm8937 msm8953 msm8996
 
+    ifeq ($(TARGET_USES_UM_PLATFORM),true)
+        UM_3_18_FAMILY += $(BR_FAMILY)
+        # Empty the BR_FAMILY variable so the platform doesn't match it
+        BR_FAMILY :=
+    endif
+
     BOARD_USES_ADRENO := true
 
     TARGET_USES_QCOM_BSP := true
