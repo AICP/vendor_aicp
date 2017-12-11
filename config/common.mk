@@ -194,5 +194,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(GZOSP_MOD_VERSION) \
     ro.gzosp.buildtype=$(GZOSP_BUILD_TYPE)
 
-EXTENDED_POST_PROCESS_PROPS := vendor/gzosp/tools/gzosp_process_props.py
+# Google sounds
+include vendor/androidx/google/GoogleAudio.mk
 
+EXTENDED_POST_PROCESS_PROPS := vendor/gzosp/tools/gzosp_process_props.py
