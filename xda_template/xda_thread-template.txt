@@ -1,6 +1,6 @@
 [CENTER]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/logo_black.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
 [SIZE="1"][B]Android Ice Cold Project[/B][/SIZE] [/CENTER]
@@ -27,11 +27,11 @@ If there are any bugs, either we will sort them out or the LAOS team will if it 
  */[/CODE]
 [/CENTER]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/features.png[/IMG]
-[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/FEATURES.md"]Feature list (rough Overview)[/URL]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/features.png[/IMG]
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/FEATURES.md"]Feature list (rough Overview)[/URL]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/credits.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/credits.png[/IMG]
 
 [B]In the beginning we would like to thank:[/B]
 
@@ -43,7 +43,7 @@ Resurrection Remix team
 [B]Community[/B]
 ...
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/team.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/team.png[/IMG]
 
 [B]@LorD ClockaN[/B]
 [B]@zipsnet[/B]
@@ -58,28 +58,28 @@ Resurrection Remix team
 ...
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/donations.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/donations.png[/IMG]
 
 We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
-[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/paypal.png[/IMG][/URL]
+[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/paypal.png[/IMG][/URL]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/downloads.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/downloads.png[/IMG]
 
-[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]13.0[/SIZE]
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]13.1[/SIZE]
 [/SIZE]
 [SIZE=3][B]Download link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/changelog.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/changelog.png[/IMG]
 
 [SIZE=3][B]Full Changelog link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
 Google Apps:
 (link the best one for your device, there are several variants out there right now, pico/nano gapps from opengapps.org is almost always a good choice though)
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/issues.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/issues.png[/IMG]
 
 You tell... :P
 
@@ -131,7 +131,7 @@ You tell... :P
 [COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).[/COLOR]
 [COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the root section in the AICP Extras menu.[/COLOR][/CENTER][/HIDE]
 
-[CENTER][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/instructions.png[/IMG]
+[CENTER][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/instructions.png[/IMG]
 [/CENTER]
 The ROM should contain everything you need to enjoy Android Oreo. You don't need to install any Add-on's, simply download the latest ROM, GApps, flash it and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
@@ -168,7 +168,7 @@ Please be sure that you are on the latest TWRP recovery. Keep in mind that this 
 
 [CENTER][B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/sources.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/sources.png[/IMG]
 
 [B]Kernel source:[/B]
 [B]Put the Github link to your kernel HERE (mandatory), not posting the kernel source violates the GPL, and also violates the rules on XDA ...[/B]
@@ -190,5 +190,5 @@ only mention the main ones though, probably the top four or so, otherwise this l
 [B]Status:[/B] NIGHTLY/WEEKLY
 [B]Release Date:[/B] dd-mm-yyyy
 
-You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.0/xda_template/dev_office.png"]here[/URL]!!
+You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/dev_office.png"]here[/URL]!!
 [/CENTER]

@@ -1,7 +1,7 @@
 #!/sbin/sh
 #
 # /system/addon.d/50-aicp.sh
-# During a AICP 13.0 upgrade, this script backs up /system/etc/hosts,
+# During a AICP 13.1 upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #
 
