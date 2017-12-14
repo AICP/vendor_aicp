@@ -55,6 +55,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# Build Manifest
+PRODUCT_PACKAGES += \
+    build-manifest
+
 # Clean cache script
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/clean_cache.sh
