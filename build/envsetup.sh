@@ -330,6 +330,10 @@ function cafremote()
     then
         PROJECT="build"
     fi
+    if [[ $PROJECT =~ "qcom/opensource" ]];
+    then
+        PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
+    fi
     if (echo $PROJECT | grep -qv "^device")
     then
         local PFX="platform/"
