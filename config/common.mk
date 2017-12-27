@@ -114,7 +114,6 @@ PRODUCT_PACKAGES += \
 # Required AICP packages
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    CMAudioService \
     LineageParts \
     Development \
     Profiles \
