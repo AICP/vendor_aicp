@@ -116,8 +116,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     LineageParts \
     Development \
-    Profiles \
-    WeatherManagerService
+    Profiles
 
 # Optional packages
 PRODUCT_PACKAGES += \
