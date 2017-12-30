@@ -43,7 +43,7 @@ except ImportError:
 DEBUG = False
 default_manifest = ".repo/manifests/gzosp_default.xml"
 custom_local_manifest = ".repo/local_manifests/gzosp_manifest.xml"
-custom_default_revision = "8.0"
+custom_default_revision = "8.1"
 custom_dependencies = "gzosp.dependencies"
 org_manifest = "GZOSP-Devices"  # leave empty if org is provided in manifest
 org_display = "GZOSP-Devices"  # needed for displaying
