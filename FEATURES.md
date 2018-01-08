@@ -3,30 +3,43 @@
 - Adjust volume dialog timeout
 - Advanced reboot
 - Aicp Extras app for customizations and beyond
+- AICP Logo in Stausbar
+- Allow more time steps to 'Do not disturb'
 - Battery bar
 - Bootanimation changer
+- Bluetooth battery level display for external devices
 - Brightness slider
+- Charging sounds: Add option to use default charging sound
 - Cpu info overlay
+- Current Charging status on Lockscreen
 - Custom carrier label
 - Custom QS headers
 - Custom volume step count
+- Customize Night mode brightness settings
 - Disable lockscreen media art
 - Double tap to sleep on lockscreen
-- DUI
+- DT2S on navbar (for smartbar)
+- DT2S on status bar
+- DUI Fling (navbar with gestures)
+- DUI Pulse sound EQ in the statusbar
+- DUI Smartbar (on-screen navbar)
+- DUI Stock navbar option
 - Enhanced Changelog in AicpExtras
+- Enhanced QS tile for Hotspot (longpress for Tethering options)
 - File persistence on "hosts" file between flashes
+- Fingerprint scrolling
 - Integrated OTA-Update App in Aicp Extras
 - Launch default music player on headset connect
-- Lockscreen charging info
-- Network traffic summary
-- Notification ticker
+- Lockscreen Shortcuts
+- Membar in recents (default and in SlimRecents)
+- Network traffic in status bar
+- Notification Light
+- OmniJaws (QS weather & weather in statusbar)
 - Partial screenshot
 - Power menu and dialogs transparency
+- Power menu on lock screen hide
 - Power/reboot dialogs dim amount
 - QS footer warnings
-- QS header transparency
-- QS shade transparency
-- QS stroke settings
 - QS Tiles Columns
 - QS Tiles Rows
 - QS Tile titles visibility
@@ -36,13 +49,20 @@
 - Selinux mode switch
 - Slim recents
 - Small QS Tiles (scrollable)
+- Statusbar Ticker for notifications and music title
+- Suspend actions
 - Swap volume buttons
 - System app remover
+- SystemUI theme (qs, power menu, navbar, volume dialog)
+- Unlink Notification Volume
 - Use volume keys to control media
 - Volume dialog stroke settings
 - Volume dialog transparency
 - Volume rocker music control
+- Volume Steps
 - VoLte icon
+- Weather in statusbar headers with icon support
+- Weather settings for Lockscreen (in Aicp Extras)
 - Yoga time
 
 ...and more
