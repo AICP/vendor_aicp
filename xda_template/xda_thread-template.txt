@@ -3,7 +3,7 @@
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
-[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE] [/CENTER]
+[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
 
 AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then has evolved into a mature ROM with the BEST community that you can find!!!
 
@@ -13,7 +13,7 @@ With the re-brand of CM to LineageOS (LAOS) we are now LAOS based with some twea
 If there are any bugs, either we will sort them out or the LAOS team will if it concerns their code base. This rom isn't LAOS supported, so no need to report errors/bugs to them!!
 
 
-[CENTER][CODE]#include <std_disclaimer.h>
+[CODE]#include <std_disclaimer.h>
 
 /*
  * Your warranty is now void.
@@ -24,8 +24,8 @@ If there are any bugs, either we will sort them out or the LAOS team will if it 
  * before flashing it! YOU are choosing to make these modifications, and if
  * you point the finger at us for messing up your device, we will laugh at you. Hard & a lot.
  *
- */[/CODE]
-[/CENTER]
+ */
+[/CODE]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/features.png[/IMG]
 [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/FEATURES.md"]Feature list (rough Overview)[/URL]
@@ -83,8 +83,8 @@ Google Apps:
 
 You tell... :P
 
-[CENTER][B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]][/CENTER]
-[HIDE][CENTER][B]Before using the ROM:[/B]
+[B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
+[HIDE][B]Before using the ROM:[/B]
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
 [COLOR="Blue"]A. Yes, just look in the OP to see if your device is built on a nightly or weekly schedule.[/COLOR]
 
@@ -95,7 +95,7 @@ You tell... :P
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP, custom ROM's modify the framework a lot, so Xposed can cause a ton of issues on custom ROM's. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  Xposed is not yet available for Oreo.[/COLOR]
+[COLOR="Blue"]A.  You will need to use the version arm64/arm/whatever for SDK 27.[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
@@ -129,16 +129,15 @@ You tell... :P
 
 [COLOR="Red"]Q. [I]How do I get a logcat, what type should I get and more questions that can conveniently be answered by my pre-determined answer?[/I][/COLOR]
 [COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).[/COLOR]
-[COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the root section in the AICP Extras menu.[/COLOR][/CENTER][/HIDE]
+[COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section in the AICP Extras main page.[/COLOR][/HIDE]
 
-[CENTER][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/instructions.png[/IMG]
-[/CENTER]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/instructions.png[/IMG]
 The ROM should contain everything you need to enjoy Android Oreo. You don't need to install any Add-on's, simply download the latest ROM, GApps, flash it and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
 
 It is STRONGLY recommended to fully wipe your device before flashing and please avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
 If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
-[CENTER][SIZE=3]How to flash:[/SIZE][/CENTER]
+[SIZE=3]How to flash:[/SIZE]
 (Again: Don't do it if you don't know it!)
 
 1. Download the ROM and GApps and transfer them to your device.
@@ -148,17 +147,17 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 5. Flash the GApps (optional, needed for e.g. Google Playstore to work).
 6. Flash the root solution of your choice (optional).
 7. Reboot your device.
+
 [B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once!
-The root solution should be flashed together with every OTA update (= ROM Update) as long as the instructions of your
-root solution do not state something else (="persistence on dirty flashing") ![/B]
+The root solution should be flashed together with every OTA update (= ROM Update)[/B]
 
 
-[CENTER][SIZE=3][B]Currently Supported Root Solutions:[/B][/SIZE]
+[SIZE=3][B]Currently Supported Root Solutions:[/B][/SIZE]
 
-[COLOR="DarkRed"][URL="https://forum.xda-developers.com/attachment.php?attachmentid=4264562&d=1504715861"]Magisk v14.0[/URL][/CENTER][/COLOR]
+[COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
+Magisk versions higher than 14.0 doesn't require flash on every dirty flash depending on the deivce, some devices need you to flash it every time, unless your maintainer says otherwise it should be fine
 
-
-[CENTER][U][B]KERNEL:[/B][/U]
+[U][B]KERNEL:[/B][/U]
 The kernel in this ROM follows LAOS source with custom additions.
 
 [U][B]PREREQUISITE FOR OTA:[/B][/U]
@@ -166,7 +165,7 @@ To be able to flash using the built-in OTA app, TWRP recovery is needed.
 You can still use the LAOS recovery and OTA app, but you will need to download the zip file and flash it manually from within your recovery. The Zipfile gets saved in the "aicp_ota" folder on your internal storage.
 Please be sure that you are on the latest TWRP recovery. Keep in mind that this could also be an unofficial version![/CENTER]
 
-[CENTER][B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
+[B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/sources.png[/IMG]
 
@@ -183,12 +182,11 @@ Please be sure that you are on the latest TWRP recovery. Keep in mind that this 
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long unless if you're a huge kanger xD)
 
-[B]ROM OS Version:[/B] 8.x.x Oreo
+[B]ROM OS Version:[/B] 8.1.x Oreo
 [B]Kernel:[/B] Linux x.x.y (EG: 3.18.y)
 
 [B][U]Version Information:[/U][/B]
 [B]Status:[/B] NIGHTLY/WEEKLY
-[B]Release Date:[/B] dd-mm-yyyy
+[B]Release Date:[/B] mm-dd-yyyy
 
 You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/dev_office.png"]here[/URL]!!
-[/CENTER]
