@@ -384,6 +384,7 @@ function installboot()
             adb shell chmod 644 /system/lib/modules/*
         fi
         adb shell dd if=/cache/boot.img of=$PARTITION
+        adb shell rm -rf /cache/boot.img
         echo "Installation complete."
     else
         echo "The connected device does not appear to be $AICP_BUILD, run away!"
@@ -424,6 +425,7 @@ function installrecovery()
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
+        adb shell rm -rf /cache/recovery.img
         echo "Installation complete."
     else
         echo "The connected device does not appear to be $AICP_BUILD, run away!"
