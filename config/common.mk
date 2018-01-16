@@ -270,7 +270,8 @@ endif
 # Themes
 PRODUCT_PACKAGES += \
     PixelTheme \
-    Stock
+    Stock \
+    AicpTheme
 
 # Omni Packages
 PRODUCT_PACKAGES += \
