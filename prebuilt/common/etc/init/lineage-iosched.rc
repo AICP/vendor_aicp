@@ -30,6 +30,9 @@ on boot
     chmod 0664 /sys/block/dm-0/queue/scheduler
     restorecon /sys/block/dm-0/queue/scheduler
 
+# allow system to communicate pocket state
+    chown system system /sys/kernel/pocket_judge/inpocket
+
 # Configure IO scheduler
 on property:sys.io.scheduler=*
     write /sys/block/mmcblk0/queue/scheduler ${sys.io.scheduler}
