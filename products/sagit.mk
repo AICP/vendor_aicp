@@ -41,8 +41,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Xiaomi/sagit/sagit:7.1.1/NMF26X/V9.0.6.0.NCACNEI:user/release-keys" \
-    PRIVATE_BUILD_DESC="sagit-user 7.1.1 NMF26X V9.0.6.0.NCACNEI release-keys"
+    BUILD_FINGERPRINT=Xiaomi/sagit/sagit:7.1.1/NMF26X/V9.2.2.0.NCAMIEK:user/release-keys \
+    PRIVATE_BUILD_DESC="sagit-user 7.1.1 NMF26X V9.2.2.0.NCAMIEK release-keys"
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
