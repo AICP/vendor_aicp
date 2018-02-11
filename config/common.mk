@@ -172,7 +172,7 @@ endif
 # Versioning System
 # gzosp first version.
 PRODUCT_VERSION_MAJOR = 8.1
-PRODUCT_VERSION_MINOR = Alpha
+PRODUCT_VERSION_MINOR = Stable
 PRODUCT_VERSION_MAINTENANCE = 1.0
 GZOSP_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
 ifdef GZOSP_BUILD_EXTRA
