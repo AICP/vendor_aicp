@@ -284,12 +284,6 @@ PRODUCT_PACKAGES +=  \
    AICP_OTA
 endif
 
-# Themes
-PRODUCT_PACKAGES += \
-    PixelTheme \
-    Stock \
-    AicpTheme
-
 # Omni Packages
 PRODUCT_PACKAGES += \
     OmniJaws \
