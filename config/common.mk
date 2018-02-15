@@ -155,14 +155,15 @@ PRODUCT_PACKAGES += \
 # Berry styles
 PRODUCT_PACKAGES += \
     LineageDarkTheme \
+    LineageAmberAccent \
     LineageBlackAccent \
-    LineageBlueAccent \
     LineageBrownAccent \
     LineageGreenAccent \
     LineageOrangeAccent \
     LineagePinkAccent \
     LineagePurpleAccent \
     LineageRedAccent \
+    LineageTealAccent \
     LineageYellowAccent
 
 # Extra tools in AICP
