@@ -154,7 +154,6 @@ PRODUCT_PACKAGES += \
 
 # Berry styles
 PRODUCT_PACKAGES += \
-    LineageDarkTheme \
     LineageAmberAccent \
     LineageBlackAccent \
     LineageBrownAccent \
@@ -165,6 +164,13 @@ PRODUCT_PACKAGES += \
     LineageRedAccent \
     LineageTealAccent \
     LineageYellowAccent
+
+# Default dark theme
+PRODUCT_PACKAGES += \
+    DefaultDark-System \
+    DefaultDark-SystemUI \
+    DefaultDark-Settings \
+    DefaultDark-Calculator
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
