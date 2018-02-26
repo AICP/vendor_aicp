@@ -1,0 +1,3 @@
+<resources>
+    <string name="icon_shape_default" translatable="false">"M50,0 C10,0 0,10 0,50 0,90 10,100 50,100 90,100 100,90 100,50 100,10 90,0 50,0 Z"</string>
+</resources>
