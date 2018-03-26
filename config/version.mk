@@ -40,14 +40,12 @@ else
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
 
-
-
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # needed for statistics
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.aicp.branch=$(AICP_BRANCH) \
     ro.romstats.url=http://stats.aicp-rom.com/ \
     ro.romstats.name=AICP \
@@ -58,5 +56,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.ga=UA-48128535-2
 
 # Camera shutter sound property
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.camera-sound=1
