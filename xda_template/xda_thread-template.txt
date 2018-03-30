@@ -71,6 +71,10 @@ We are paying for servers that build nightlies/weeklies and everything that come
 [/SIZE]
 [SIZE=3][B]Download link: [url]http://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
+[B][U][COLOR="Blue"]Official builds will be deleted from our servers every month due to maintenance services.
+We advise everyone to keep at least the latest or best working build on their device as a backup.
+Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
+
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/o8.1/xda_template/changelog.png[/IMG]
 
@@ -155,7 +159,7 @@ The root solution should be flashed together with every OTA update (= ROM Update
 [SIZE=3][B]Currently Supported Root Solutions:[/B][/SIZE]
 
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
-Magisk versions higher than 14.0 doesn't require flash on every dirty flash depending on the deivce, some devices need you to flash it every time, unless your maintainer says otherwise it should be fine
+Magisk versions higher than 14.0 doesn't require flash on every dirty flash depending on the device, some devices need you to flash it every time, unless your maintainer says otherwise it should be fine
 
 [U][B]KERNEL:[/B][/U]
 The kernel in this ROM follows LAOS source with custom additions.
