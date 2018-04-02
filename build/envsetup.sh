@@ -278,11 +278,25 @@ function aicpremote()
         return 1
     fi
     git remote rm aicp 2> /dev/null
-    local GERRIT_REMOTE=$(git config --get remote.github.projectname)
-    if [ -z "$GERRIT_REMOTE" ]
+    local REMOTE=$(git config --get remote.github.projectname)
+    local AICP="true"
+    if [ -z "$REMOTE" ]
     then
-        local GERRIT_REMOTE=$(git config --get remote.aosp.projectname | sed s#platform/#android/#g | sed s#/#_#g)
+        REMOTE=$(git config --get remote.aosp.projectname)
+        AICP="false"
+    fi
+    if [ -z "$REMOTE" ]
+    then
+        REMOTE=$(git config --get remote.caf.projectname)
+        AICP="false"
+    fi
+
+    if [ $AICP = "false" ]
+    then
+        local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
         local PFX="AICP/"
+    else
+        local PROJECT=$REMOTE
     fi
     local AICP_USER=$(git config --get gerrit.aicp-rom.com.username)
     if [ -z "$AICP_USER" ]
