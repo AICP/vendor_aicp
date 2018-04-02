@@ -292,7 +292,8 @@ endif
 # Omni Packages
 PRODUCT_PACKAGES += \
     OmniJaws \
-    OmniStyle
+    OmniStyle \
+    OmniSwitch
 
 # DU Utils Library
 PRODUCT_PACKAGES += \
