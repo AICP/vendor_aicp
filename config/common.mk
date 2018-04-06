@@ -172,7 +172,9 @@ PRODUCT_PACKAGES += \
     DefaultDark-SystemUI \
     DefaultDark-Settings \
     DefaultDark-LineageParts \
-    DefaultDark-Calculator
+    DefaultDark-Calculator \
+    DefaultBlack-System \
+    DefaultBlack-SystemUI
 
 # Extra tools in AICP
 PRODUCT_PACKAGES += \
