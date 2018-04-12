@@ -15,4 +15,7 @@
 $(call inherit-product, build/target/product/aosp_arm64.mk)
 $(call inherit-product, vendor/gzosp/config/common.mk)
 
+# Allow building otatools
+TARGET_FORCE_OTA_PACKAGE := true
+
 PRODUCT_NAME := gzosp_arm64
