@@ -254,7 +254,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
 # Disable rescue party
-PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true
 
 # Media
