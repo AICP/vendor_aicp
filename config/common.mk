@@ -55,8 +55,8 @@ PRODUCT_COPY_FILES += \
     vendor/gzosp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
 # Fix Dialer
-PRODUCT_COPY_FILES +=  \
-    vendor/gzosp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+#PRODUCT_COPY_FILES +=  \
+#    vendor/gzosp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 # Gzosp-specific startup services
 PRODUCT_COPY_FILES += \
