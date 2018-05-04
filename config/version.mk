@@ -44,7 +44,8 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
+    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE) \
+    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
