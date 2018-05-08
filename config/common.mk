@@ -283,7 +283,6 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aicp/config/partner_gms.mk
--include vendor/cyngn/product.mk
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
