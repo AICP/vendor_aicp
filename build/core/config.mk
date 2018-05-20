@@ -21,3 +21,9 @@ FRAMEWORK_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_
 FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/aicp/build/core/apicheck_msg_current.txt
 
 BUILD_RRO_SYSTEM_PACKAGE := $(TOPDIR)vendor/aicp/build/core/system_rro.mk
+
+# Rules for MTK targets
+include $(TOPDIR)vendor/aicp/build/core/mtk_target.mk
+
+# Rules for QCOM targets
+include $(TOPDIR)vendor/aicp/build/core/qcom_target.mk
