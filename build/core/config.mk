@@ -20,6 +20,4 @@ FRAMEWORK_LINEAGE_PLATFORM_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_current.
 FRAMEWORK_LINEAGE_PLATFORM_REMOVED_API_FILE := $(TOPDIR)lineage-sdk/api/lineage_removed.txt
 FRAMEWORK_LINEAGE_API_NEEDS_UPDATE_TEXT := $(TOPDIR)vendor/aicp/build/core/apicheck_msg_current.txt
 
-BUILD_HTTP_PREBUILT := $(TOP)/vendor/aicp/build/core/http_prebuilt.mk
-
 BUILD_RRO_SYSTEM_PACKAGE := $(TOP)/vendor/aicp/build/core/system_rro.mk
