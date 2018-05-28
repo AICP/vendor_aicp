@@ -35,6 +35,8 @@ $(call set-device-specific-path,SENSORS,sensors,hardware/qcom/sensors)
 $(call set-device-specific-path,LOC_API,loc-api,vendor/qcom/opensource/location)
 $(call set-device-specific-path,DATASERVICES,dataservices,vendor/qcom/opensource/dataservices)
 $(call set-device-specific-path,POWER,power,hardware/qcom/power)
+$(call set-device-specific-path,THERMAL,thermal,hardware/qcom/thermal)
+$(call set-device-specific-path,VR,vr,hardware/qcom/vr)
 
 $(call ril-set-path-variant,ril)
 $(call wlan-set-path-variant,wlan-caf)
