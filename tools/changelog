@@ -17,7 +17,7 @@ touch $Changelog
 echo ${bldppl}"Generating changelog..."${txtrst}
 
 # Use 'export USER_BUILD_NO_CHANGELOG=1' before build/envsetup.sh to skip changelog
-if [ "$USER_BUILD_NO_CHANGELOG" -eq 1 ]; then
+if [[ "$USER_BUILD_NO_CHANGELOG" -eq 1 ]] ; then
   echo "Skipped because variable 'USER_BUILD_NO_CHANGELOG' was set to 1" | tee $Changelog;
 else
   for i in $(seq 10);
