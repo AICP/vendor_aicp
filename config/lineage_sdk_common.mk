@@ -4,6 +4,7 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/org.lineageos.livedisplay.xml:system/etc/permissions/org.lineageos.livedisplay.xml \
     vendor/aicp/config/permissions/org.lineageos.performance.xml:system/etc/permissions/org.lineageos.performance.xml \
     vendor/aicp/config/permissions/org.lineageos.profiles.xml:system/etc/permissions/org.lineageos.profiles.xml \
+    vendor/aicp/config/permissions/org.lineageos.settings.xml:system/etc/permissions/org.lineageos.settings.xml \
     vendor/aicp/config/permissions/org.lineageos.style.xml:system/etc/permissions/org.lineageos.style.xml \
     vendor/aicp/config/permissions/org.lineageos.trust.xml:system/etc/permissions/org.lineageos.trust.xml \
     vendor/aicp/config/permissions/org.lineageos.weather.xml:system/etc/permissions/org.lineageos.weather.xml
