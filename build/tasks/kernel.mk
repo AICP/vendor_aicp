@@ -385,10 +385,10 @@ $(KERNEL_HEADERS_INSTALL_DEPS):
 INSTALLED_KERNEL_HEADERS: $(KERNEL_HEADERS_INSTALL_DEPS)
 
 # Dependencies on $(KERNEL_OUT)/usr are deprecated
-$(KERNEL_HEADERS_INSTALL_DIR): $(KERNEL_HEADERS_INSTALL_DEPS)
-	@echo "Depending on $(KERNEL_HEADERS_INSTALL_DIR) is deprecated." 1>&2
-	@echo "Use INSTALLED_KERNEL_HEADERS instead." 1>&2
-	@exit 1
+#$(KERNEL_HEADERS_INSTALL_DIR): $(KERNEL_HEADERS_INSTALL_DEPS)
+#	@echo "Depending on $(KERNEL_HEADERS_INSTALL_DIR) is deprecated." 1>&2
+#	@echo "Use INSTALLED_KERNEL_HEADERS instead." 1>&2
+#	@exit 1
 
 .PHONY: kerneltags
 kerneltags: $(KERNEL_CONFIG)
