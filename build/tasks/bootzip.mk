@@ -25,7 +25,7 @@ KERNEL_PATH := $(TARGET_KERNEL_SOURCE)/arch/arm/configs/$(TARGET_KERNEL_CONFIG)
 bootzip: bootimage
 	$(BOOT_ZIP_FROM_IMAGE_SCRIPT) \
 	   $(recovery_fstab) \
-	   $(OUT) \
+	   $(OUT_DIR) \
 	   $(TARGET_DEVICE)
 
 endif    # recovery_fstab is defined
