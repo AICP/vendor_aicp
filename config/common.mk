@@ -79,6 +79,11 @@ PRODUCT_PACKAGES += \
     LockClock \
     su
 
+# Turbo
+PRODUCT_PACKAGES += \
+    Turbo \
+    turbo.xml
+
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
