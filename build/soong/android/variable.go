@@ -17,6 +17,9 @@ type Product_variables struct {
 	Device_support_legacy_hwfde struct {
 		Cflags []string
 	}
+	Device_support_wait_for_qsee struct {
+		Cflags []string
+	}
 	Has_legacy_camera_hal1 struct {
 		Cflags []string
 	}
@@ -52,6 +55,7 @@ type ProductVariables struct {
 	Device_support_hwfde  *bool `json:",omitempty"`
 	Device_support_hwfde_perf  *bool `json:",omitempty"`
 	Device_support_legacy_hwfde  *bool `json:",omitempty"`
+	Device_support_wait_for_qsee  *bool `json:",omitempty"`
 	Has_legacy_camera_hal1  *bool `json:",omitempty"`
 	Uses_media_extensions   *bool `json:",omitempty"`
 	Needs_text_relocations  *bool `json:",omitempty"`
