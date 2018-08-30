@@ -61,6 +61,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/mkshrc:system/etc/mkshrc \
     vendor/aicp/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf
 
+# Hidden API whitelist
+PRODUCT_COPY_FILES += \
+    vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:system/etc/permissions/lineage-hiddenapi-package-whitelist.xml
+
 # Fix Dialer
 #PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
