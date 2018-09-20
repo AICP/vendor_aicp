@@ -1,0 +1,38 @@
+[Android Ice Cold Project](https://aicp-rom.com)
+====================================
+
+
+Download the Source
+===================
+
+Please read the [AOSP building instructions](https://source.android.com/source/index.html) before proceeding.
+
+Initializing Repository
+-----------------------
+
+Repository initialization:
+
+    $ repo init -u https://github.com/AICP/platform_manifest.git -b p9.0
+
+
+Repository syncing:
+
+    $ repo sync
+
+***
+
+Building
+--------
+
+After the sync is finished, please read the [instructions from the Android site](https://source.android.com/source/building.html) on how to build.
+
+    . build/envsetup.sh
+    brunch
+
+
+You can also build (and see how long it took) for specific devices like this:
+
+    . build/envsetup.sh
+    time brunch taimen
+
+Remember to `make clobber` every now and then!

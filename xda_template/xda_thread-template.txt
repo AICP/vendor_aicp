@@ -1,0 +1,200 @@
+[CENTER]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/logo_black.png[/IMG]
+
+[SIZE="7"][B]AICP[/B][/SIZE]
+[SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
+
+AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then has evolved into a mature ROM with the BEST community that you can find!!!
+
+Until Android Lollipop, the ROM has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM.
+With the re-brand of CM to LineageOS (LOS) we became LineageOS based with some tweaks from AOSP and we are now based on the "Ground Zero Open Source Project" (GZOSP) for Android Pie.
+
+If there are any bugs, either we will sort them out or the GZOSP team, if it concerns their code base. This ROM isn't GZOSP supported, so there is no need to report errors/bugs to them!!
+
+
+[CODE]#include <std_disclaimer.h>
+
+/*
+ * Your warranty is now void.
+ *
+ * We are not responsible for bricked devices, dead SD cards,
+ * thermonuclear war or you getting fired because the alarm app failed. Please
+ * do some research if you have any concerns about features included in this ROM
+ * before flashing it! YOU are choosing to make these modifications and if
+ * you point the finger at us for messing up your device, we will laugh at you. Hard & a lot.
+ *
+ */
+[/CODE]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/features.png[/IMG]
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/FEATURES.md"]Feature list (rough overview)[/URL]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/credits.png[/IMG]
+
+[B]In the beginning we would like to thank:[/B]
+
+GZOSP team
+LineageOS & CM (R.I.P.) team
+@Maxwen and the rest of the OmniRom team
+DU team
+SlimRoms team
+Resurrection Remix team
+[B]Community[/B]
+...
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/team.png[/IMG]
+
+[B]@LorD ClockaN[/B]
+[B]@zipsnet[/B]
+[B]@eyosen[/B]
+[B]@semdoc[/B]
+[B]@Drgravy[/B]
+[B]@Hashbang173[/B]
+[B]@SpiritCroc[/B]
+[B]@wartomato[/B]
+[B]@eboye[/B]
+[B]plus the rest of the crazy bunch that we call "team"[/B]
+...
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/donations.png[/IMG]
+
+We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
+[B]Thank you!![/B]
+
+[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/paypal.png[/IMG][/URL]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/downloads.png[/IMG]
+
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]14.0[/SIZE]
+[/SIZE]
+[SIZE=3][B]Download link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
+
+[B][U][COLOR="Blue"]Please note that official builds will be deleted from our servers every month due to maintenance services.
+We advise everyone to keep at least the latest or best working build on their device as a backup.
+Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
+
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/changelog.png[/IMG]
+
+[SIZE=3][B]Full Changelog link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
+
+Google Apps:
+(link the best one for your device, there are several variants out there right now, pico/nano GApps from opengapps.org is almost always a good choice though)
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/issues.png[/IMG]
+
+You tell... :P
+
+[B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
+[HIDE][B]Before using the ROM:[/B]
+[COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, just look in the OP to see if your device is built on a nightly or weekly schedule.[/COLOR]
+
+[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels?[/I][/COLOR]
+[COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
+
+[COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
+[COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP. Custom ROMs modify the framework a lot, so Xposed can cause a ton of issues on custom ROMs. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
+
+[COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
+[COLOR="Blue"]A.  You will need to use the version arm64/arm/whatever for SDK 27.[/COLOR]
+
+[B]Flashing the ROM:[/B]
+[COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
+[COLOR="Blue"]A. Check the install instructions in the first post...[/COLOR]
+
+[COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
+[COLOR="Blue"]A. Yes, however make a nandroid backup first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I 'dirty flash' builds?[/I][/COLOR]
+[COLOR="Blue"]A. Wipe the System, Cache and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution and reboot. Or just use the OTA app to preform that task for you.[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
+[COLOR="Blue"]A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot" as the destination, then swipe to flash, then go back to the install screen and install your root method again, if you don't want to loose root and reboot.[/COLOR]
+[COLOR="Blue"]A2. If it's a flashable ZIP, you can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to loose root. Now swipe to flash and reboot afterwards.[/COLOR]
+
+[B]Using the ROM:[/B]
+
+[COLOR="Red"]Q. [I]I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
+
+[COLOR="Red"]Q. [I]I keep losing root with Magisk, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A. Check [URL="https://plus.google.com/115015009651694560786/posts/Mjw58VACTSH"]this[/URL] out. If that doesn't work for you, ask for help in this thread, read or ask in the Magisk thread on XDA or just re-flash Magisk![/COLOR]
+
+[COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
+[COLOR="Blue"]A. Read [URL="https://plus.google.com/115015009651694560786/posts/Jsd9JjMfuVF"]this[/URL][/COLOR]
+
+[COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
+[COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.)[/COLOR]
+
+[COLOR="Red"]Q. [I]How do I get a logcat, what type should I get and more questions that can conveniently be answered by my pre-determined answer?[/I][/COLOR]
+[COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).[/COLOR]
+[COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section in the AICP Extras main page.[/COLOR][/HIDE]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/instructions.png[/IMG]
+
+The ROM should contain everything you need to enjoy Android Pie. You don't need to install any Add-on's, simply download the latest ROM, GApps, flash it and go!
+If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
+
+It is STRONGLY recommended to fully wipe your device before flashing and please avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
+If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
+
+[SIZE=3]How to flash for the first time:[/SIZE]
+(Again: Don't do it if you don't know it!)
+
+1. Download the ROM and GApps and transfer them to your device.
+2. Boot to recovery (TWRP recommended).
+3. Wipe the System, Cache, Data and ART/Dalvik cache.
+4. Flash the ROM Zipfile.
+5. Flash the GApps (optional, needed for e.g. Google Playstore to work).
+6. Reboot and set up your device, enable developer settings and in them OEM unlock/Advanced reboot/USB tethering.
+7. Reboot back into TWRP recovery.
+8. Flash the root solution of your choice (optional).
+9. Reboot your device.
+[B][I]The procedure might vary from device to device and is a bit different on system updates![/I][/B]
+
+
+[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once!
+The root solution should be flashed together with every OTA update (= ROM Update)[/B]
+
+
+[SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
+
+[COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
+Magisk versions higher than 17.2 doesn't usually require to be flashed on every dirty flash. Depending on the device, you may need to flash it every time. Unless your maintainer says otherwise it should be fine.
+
+
+[U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
+To be able to flash using the built-in OTA app, TWRP recovery is needed.
+Please be sure that you are on the latest TWRP recovery. Keep in mind that this could also be an unofficial version!
+
+[B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
+
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/sources.png[/IMG]
+
+[B]Kernel source:[/B]
+[B]Put the Github link to your kernel HERE (mandatory), not posting the kernel source violates the GPL, and also violates the rules on XDA ...[/B]
+
+[B]ROM & Additional links:
+[URL="https://gerrit.aicp-rom.com/"]AICP Gerrit Code Review[/URL]
+[URL="https://github.com/AICP"]AICP on Github[/URL][/B]
+
+[B][SIZE="3"][URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
+
+[B][U]Contributors:[/U][/B]
+(mention all the devs who have contributed to your device tree, kernel, vendor, etc,
+only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
+
+The following informations are ONLY needed, when you are not opening up a devdb thread on XDA!
+[B]ROM OS Version:[/B] 9.0.x Pie
+[B]Kernel:[/B] Linux x.x.y (EG: 3.18.84)
+
+[B][U]Version Information:[/U][/B]
+[B]Status:[/B] NIGHTLY/WEEKLY
+[B]Release Date:[/B] mm-dd-yyyy
+
+You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/dev_office.png"]here[/URL]!!
+[/CENTER]
