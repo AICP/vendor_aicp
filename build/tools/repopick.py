@@ -279,7 +279,7 @@ if __name__ == '__main__':
 
         mergables.append({
             'subject': review['subject'],
-            'project': review['project'].split('/')[1],
+            'project': review['project'],
             'branch': review['branch'],
             'change_id': review['change_id'],
             'change_number': review['number'],
