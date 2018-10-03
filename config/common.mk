@@ -101,6 +101,10 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Launcher3Dark
 
+# AICP packages
+PRODUCT_PACKAGES += \
+    AicpExtras
+
 
 # Extra tools
 PRODUCT_PACKAGES += \
