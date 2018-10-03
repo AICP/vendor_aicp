@@ -17,7 +17,7 @@ ifeq ($(filter generic%,$(TARGET_DEVICE)),)
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(recovery_fstab),)
 
-BOOT_ZIP_FROM_IMAGE_SCRIPT := ./vendor/gzosp/build/tools/releasetools/boot_flash_from_image
+BOOT_ZIP_FROM_IMAGE_SCRIPT := ./vendor/aicp/build/tools/releasetools/boot_flash_from_image
 KERNEL_PATH := $(TARGET_KERNEL_SOURCE)/arch/arm/configs/$(TARGET_KERNEL_CONFIG)
 
 .PHONY: bootzip

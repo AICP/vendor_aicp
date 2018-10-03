@@ -1,5 +1,5 @@
 # Bring in Qualcomm helper macros
-include vendor/gzosp/build/core/qcom_utils.mk
+include vendor/aicp/build/core/qcom_utils.mk
 
 # Populate the qcom hardware variants in the project pathmap.
 define ril-set-path-variant

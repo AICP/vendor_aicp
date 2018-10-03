@@ -13,7 +13,7 @@
 # limitations under the License.
 
 $(call inherit-product, build/target/product/aosp_x86.mk)
-$(call inherit-product, vendor/gzosp/config/common.mk)
+$(call inherit-product, vendor/aicp/config/common.mk)
 
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true

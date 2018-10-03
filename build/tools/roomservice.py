@@ -2,6 +2,7 @@
 # Copyright (C) 2012-2013, The CyanogenMod Project
 # Copyright (C) 2012-2015, SlimRoms Project
 # Copyright (C) 2017, GZOSP
+# Copyright (C) 2018, AICP
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -41,12 +42,12 @@ except ImportError:
     urllib.request = urllib2
 
 DEBUG = False
-default_manifest = ".repo/manifests/gzosp_default.xml"
-custom_local_manifest = ".repo/local_manifests/gzosp_manifest.xml"
+default_manifest = ".repo/manifests/aicp_default.xml"
+custom_local_manifest = ".repo/local_manifests/aicp_manifest.xml"
 custom_default_revision = "8.1"
-custom_dependencies = "gzosp.dependencies"
-org_manifest = "GZOSP-Devices"  # leave empty if org is provided in manifest
-org_display = "GZOSP-Devices"  # needed for displaying
+custom_dependencies = "aicp.dependencies"
+org_manifest = "AICP"  # leave empty if org is provided in manifest
+org_display = "AICP"  # needed for displaying
 
 github_auth = None
 
@@ -103,24 +104,24 @@ def load_manifest(manifest):
     return man
 
 
-def get_default(manifest=None):
+
+
+def get_default_revision(manifest=None):
     if manifest is not None:
         m = manifest
     else:
         m = load_manifest(default_manifest)
-    d = m.findall('default')[0]
-    return d
-
-
-def get_default_revision(manifest=None):
-    r = get_default(manifest=manifest).get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+    for node in m.iter('remote'):
+        d = node.attrib.get('review')
+        if d is not None and "aicp" in d:
+            r = node.attrib.get('revision')
+            return r.replace('refs/heads/', '').replace('refs/tags/', '')
 
 
 def get_remote(manifest=None, remote_name=None):
     m = manifest or load_manifest(default_manifest)
     if not remote_name:
-        remote_name = get_default(manifest=m).get('remote')
+        remote_name = "aicp"
     remotes = m.findall('remote')
     for remote in remotes:
         if remote_name == remote.get('name'):
@@ -183,7 +184,7 @@ def add_to_manifest(repos, fallback_branch=None):
         project = ElementTree.Element(
             "project",
             attrib={"path": repo_target,
-                    "remote": "github",
+                    "remote": "aicp",
                     "name": "%s" % repo_name}
         )
 
@@ -361,7 +362,8 @@ def main():
         fallback_branch = detect_revision(repository)
         manufacturer = repo_name[7:-(len(device)+1)]
         repo_path = "device/%s/%s" % (manufacturer, device)
-        adding = [{'repository': repo_name, 'target_path': repo_path}]
+        default_revision = get_default_revision()
+        adding = [{'repository': repo_name, 'target_path': repo_path, 'branch' : default_revision}]
 
         if not is_in_manifest(repo_path):
             add_to_manifest(adding, fallback_branch)

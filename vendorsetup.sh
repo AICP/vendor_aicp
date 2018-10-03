@@ -1,3 +1,3 @@
-. "$(gettop)/vendor/gzosp/build/envsetup.sh"
+. "$(gettop)/vendor/aicp/build/envsetup.sh"
 
-gzosp_device_combos
+aicp_device_combos

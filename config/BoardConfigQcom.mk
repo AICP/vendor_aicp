@@ -1,5 +1,5 @@
 # Bring in Qualcomm helper macros
-include vendor/gzosp/build/core/qcom_utils.mk
+include vendor/aicp/build/core/qcom_utils.mk
 
 B_FAMILY := msm8226 msm8610 msm8974
 B64_FAMILY := msm8992 msm8994

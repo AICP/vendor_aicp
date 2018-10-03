@@ -1,11 +1,19 @@
-# gzosp functions that extend build/envsetup.sh
+# gzosp/aicp functions that extend build/envsetup.sh
+
+function aicp_device_combos()
+{
+    for combo in $(curl -s https://raw.githubusercontent.com/AICP/vendor_jenkins/p9.0/aicp-build-targets   | sed -e 's/#.*$//' | grep p9.0 | awk {'print $2'})
+    do
+        add_lunch_combo $combo
+    done
+}
 
 function gzosp_device_combos()
 {
     local T list_file variant device
 
     T="$(gettop)"
-    list_file="${T}/vendor/gzosp/gzosp.devices"
+    list_file="${T}/vendor/aicp/gzosp.devices"
     variant1="userdebug"
     variant2="user"
 
@@ -28,14 +36,14 @@ function gzosp_device_combos()
     if [[ ! -f "${list_file}" ]]
     then
         echo "unable to find device list: ${list_file}"
-        list_file="${T}/vendor/gzosp/gzosp.devices"
+        list_file="${T}/vendor/aicp/gzosp.devices"
         echo "defaulting device list file to: ${list_file}"
     fi
 
     while IFS= read -r device
     do
-        add_lunch_combo "gzosp_${device}-${variant1}"
-        add_lunch_combo "gzosp_${device}-${variant2}"
+        add_lunch_combo "aicp_${device}-${variant1}"
+        add_lunch_combo "aicp_${device}-${variant2}"
     done < "${list_file}"
 }
 
@@ -181,8 +189,8 @@ function hmm() #hidden
     original_gzosp_hmm
     echo
 
-    echo "vendor/gzosp extended functions. The complete list is:"
-    for i in $(grep -P '^function .*$' "$T/vendor/gzosp/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
+    echo "vendor/aicp extended functions. The complete list is:"
+    for i in $(grep -P '^function .*$' "$T/vendor/aicp/build/envsetup.sh" | grep -v "#hidden" | sed 's/function \([a-z_]*\).*/\1/' | sort | uniq); do
         echo "$i"
     done |column
 }

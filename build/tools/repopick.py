@@ -121,8 +121,8 @@ def fetch_query(remote_url, query):
         raise Exception('Gerrit URL should be in the form http[s]://hostname/ or ssh://[user@]host[:port]')
 
 if __name__ == '__main__':
-    # Default to GZOSP Gerrit
-    default_gerrit = 'https://review.gzospgzr.com'
+    # Default to AICP Gerrit
+    default_gerrit = 'http://gerrit.aicp-rom.com'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
@@ -364,9 +364,9 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit gzosp', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit aicp', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch gzosp', item['fetch'][method]['ref']]
+                cmd = ['git fetch aicp', item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
@@ -376,7 +376,7 @@ if __name__ == '__main__':
                 sys.exit(result)
         # Check if it worked
         if args.gerrit != default_gerrit or os.stat(FETCH_HEAD).st_size == 0:
-            # If not using the default gerrit or gzosp failed, fetch from gerrit.
+            # If not using the default gerrit or AICP failed, fetch from gerrit.
             if args.verbose:
                 if args.gerrit == default_gerrit:
                     print('Fetching from GitHub didn\'t work, trying to fetch the change from Gerrit')
