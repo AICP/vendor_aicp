@@ -84,5 +84,8 @@
     <string-array name="config_ephemeralResolverPackage">
         <item>com.google.android.gms</item>
     </string-array>
+
+    <!-- Flag indicating whether we should enable smart battery. -->
+    <bool name="config_smart_battery_available">true</bool>
 </resources>
 
