@@ -98,7 +98,7 @@ function gzospremote()
     echo "Remote 'gzosp' created"
 }
 
-function cmremote()
+function losremote()
 {
     local proj pfx project
 
@@ -107,13 +107,13 @@ function cmremote()
         echo "Not in a git directory. Please run this from an Android repository you wish to set up."
         return
     fi
-    git remote rm cm 2> /dev/null
+    git remote rm los 2> /dev/null
 
     proj="$(pwd -P | sed "s#$ANDROID_BUILD_TOP/##g")"
     pfx="android_"
     project="${proj//\//_}"
-    git remote add cm "git@github.com:CyanogenMod/$pfx$project"
-    echo "Remote 'cm' created"
+    git remote add los "git@github.com:LineageOS/$pfx$project"
+    echo "Remote 'los' created"
 }
 
 function aospremote()
@@ -158,7 +158,7 @@ function cafremote()
 function gzosp_push()
 {
     local branch ssh_name path_opt proj
-    branch="lp5.1"
+    branch="9.0"
     ssh_name="gzosp_review"
     path_opt=
 
