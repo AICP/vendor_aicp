@@ -47,11 +47,11 @@ if path.exists(defconfig):
     prekernel_version = search('CONFIG_LOCALVERSION=.*\n', open(defconfig, 'r').read())
     if prekernel_version:
         kernel_version = sub(r'(CONFIG_LOCALVERSION=)|\"|\n|-', "", prekernel_version.group(0))
-        kernel_version = "%s-%s-kernel" % (kernel_version or "gzosp", device)
+        kernel_version = "%s-%s-kernel" % (kernel_version or "aicp", device)
     else:
-        kernel_version = "gzosp-%s-kernel" % device
+        kernel_version = "aicp-%s-kernel" % device
 else:
-    kernel_version = "gzosp-%s-kernel" % device
+    kernel_version = "aicp-%s-kernel" % device
 
 updater = "%s/obj/EXECUTABLES/updater_intermediates/updater" % out
 signer = "%s/framework/signapk.jar" % environ['ANDROID_HOST_OUT']
@@ -90,7 +90,7 @@ copy2(updater, "%s/update-binary" % updater_dir)
 updater_script = "%s/updater-script" % updater_dir
 
 # create the contents
-contents = "ui_print(\"installing Gzosp Kernel...\");\n"
+contents = "ui_print(\"installing Kernel...\");\n"
 if boot_partition_type == "mtd":
     contents += "package_extract_file(\"boot.img\", \"/tmp/boot.img\");\n"
     contents += "write_raw_image(\"/tmp/boot.img\", \"%s\");\n" % boot_partition
@@ -104,7 +104,7 @@ contents += "mount(\"%s\", \"EMMC\", \"%s\", \"system\");\n" % (system_partition
 contents += "package_extract_dir(\"system\", \"/system\");\n"
 contents += "unmount(\"/system\");\n"
 contents += "ui_print(\" \");\n"
-contents += "ui_print(\"Gzosp custom kernel flashed!\");"
+contents += "ui_print(\"Custom kernel flashed!\");"
 with open(updater_script, "w") as f:
     f.write(contents)
 
