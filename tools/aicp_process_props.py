@@ -34,7 +34,7 @@ def mangle_lcd_prop(prop):
         new_lcd = lcd_changer.get(lcd, lcd)
     if new_lcd != '':
         prop.put('persist.sys.lcd_density', new_lcd)
-        prop.put('ro.gzosp.lcd_density', new_lcd)
+        prop.put('ro.sf.lcd_density', new_lcd)
 
 
 def mangle_build_prop(prop):
