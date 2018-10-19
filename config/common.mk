@@ -22,7 +22,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/aicp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aicp/prebuilt/common/bin/50-gzosp.sh:system/addon.d/50-gzosp.sh \
+    vendor/aicp/prebuilt/common/bin/50-aicp.sh:system/addon.d/50-aicp.sh \
     vendor/aicp/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
 
 ifeq ($(AB_OTA_UPDATER),true)
@@ -40,9 +40,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/otasigcheck.sh:install/bin/otasigcheck.sh
 
-# Gzosp-specific init file
+# AICP-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.gzosp.rc
+    vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.aicp.rc
 
 # Copy LatinIME for gesture typing
 PRODUCT_COPY_FILES += \
@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
-# Gzosp-specific startup services
+# AICP-specific startup services
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/aicp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
@@ -159,29 +159,29 @@ PRODUCT_PACKAGES += \
     bootanimation.zip
 
 # Versioning System
-# gzosp first version.
-PRODUCT_VERSION_MAJOR = 9
-PRODUCT_VERSION_MINOR = Alpha
-PRODUCT_VERSION_MAINTENANCE = 1.0
-GZOSP_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
-ifdef GZOSP_BUILD_EXTRA
-    GZOSP_POSTFIX := -$(GZOSP_BUILD_EXTRA)
+# AICP first version.
+PRODUCT_VERSION_MAJOR = 14
+PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MAINTENANCE = 0
+AICP_POSTFIX := -$(shell date +"%Y%m%d-%H%M")
+ifdef AICP_BUILD_EXTRA
+    AICP_POSTFIX := -$(AICP_BUILD_EXTRA)
 endif
 
-ifndef GZOSP_BUILD_TYPE
-    GZOSP_BUILD_TYPE := UNOFFICIAL
+ifndef AICP_BUILDTYPE
+    AICP_BUILDTYPE := UNOFFICIAL
 endif
 
 # Set all versions
-GZOSP_VERSION := Gzosp-$(GZOSP_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(GZOSP_BUILD_TYPE)$(GZOSP_POSTFIX)
-GZOSP_MOD_VERSION := Gzosp-$(GZOSP_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(GZOSP_BUILD_TYPE)$(GZOSP_POSTFIX)
+AICP_VERSION :=AICP-$(AICP_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(AICP_BUILDTYPE)$(AICP_POSTFIX)
+AICP_MOD_VERSION := AICP-$(AICP_BUILD)-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)-$(AICP_BUILDTYPE)$(AICP_POSTFIX)
 
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
-    gzosp.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
-    ro.gzosp.version=$(GZOSP_VERSION) \
-    ro.modversion=$(GZOSP_MOD_VERSION) \
-    ro.gzosp.buildtype=$(GZOSP_BUILD_TYPE)
+    aicp.ota.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE) \
+    ro.aicp.version=$(AICP_VERSION) \
+    ro.modversion=$(AICP_MOD_VERSION) \
+    ro.aicp.buildtype=$(AICP_BUILDTYPE)
 
 include vendor/aicp/config/aicp_version.mk
 
@@ -194,4 +194,4 @@ endif
 # Google sounds
 include vendor/aicp/google/GoogleAudio.mk
 
-EXTENDED_POST_PROCESS_PROPS := vendor/aicp/tools/gzosp_process_props.py
+EXTENDED_POST_PROCESS_PROPS := vendor/aicp/tools/aicp_process_props.py
