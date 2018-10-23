@@ -2,6 +2,6 @@
 #
 # Print startup info
 #
-L="log -p i -t gzosp"
+L="log -p i -t aicp"
 
-$L "Welcome to Android `getprop ro.build.version.release` / Gzosp `getprop ro.gzosp.version`";
+$L "Welcome to Android `getprop ro.build.version.release` / AICP `getprop ro.aicp.version`";

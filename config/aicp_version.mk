@@ -6,7 +6,7 @@ AICP_BRANCH=p
 # AICP RELEASE VERSION
 AICP_VERSION_MAJOR = 14
 AICP_VERSION_MINOR = 0
-AICP_VERSION_MAINTENANCE =0
+AICP_VERSION_MAINTENANCE = 0
 
 VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)
 
@@ -20,11 +20,11 @@ ifndef AICP_BUILDTYPE
 endif
 
 ifdef AICP_BUILDTYPE
-    ifeq ($(AICP_BUILDTYPE), RELEASE)
-       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-RELEASE-$(shell date -u +%Y%m%d)
-    endif
     ifeq ($(AICP_BUILDTYPE), NIGHTLY)
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-NIGHTLY-$(shell date -u +%Y%m%d)
+    endif
+    ifeq ($(AICP_BUILDTYPE), WEEKLY)
+       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-WEEKLY-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILDTYPE), EXPERIMENTAL)
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-EXPERIMENTAL-$(shell date -u +%Y%m%d)
@@ -49,7 +49,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.branch=$(AICP_BRANCH) \
-    ro.romstats.url=http://stats.aicp-rom.com/ \
+    ro.romstats.url=https://stats.aicp-rom.com/ \
     ro.romstats.name=AICP \
     ro.romstats.buildtype=$(AICP_BUILDTYPE) \
     ro.romstats.version=$(VERSION) \

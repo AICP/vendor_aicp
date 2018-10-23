@@ -2,7 +2,7 @@
 # 
 # ADDOND_VERSION=2
 #
-# /system/addon.d/50-gzosp.sh
+# /system/addon.d/50-aicp.sh
 # During a Slim upgrade, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #
