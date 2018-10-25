@@ -14,14 +14,10 @@
 
 LOCAL_IS_RUNTIME_RESOURCE_OVERLAY := true
 
-ifneq ($(LOCAL_SRC_FILES),)
-  $(error runtime resource overlay package should not contain sources)
-endif
-
 ifeq ($(LOCAL_RRO_THEME),)
   $(error runtime resource overlay package must define \'LOCAL_RRO_THEME\')
 else
-  LOCAL_MODULE_PATH := $(TARGET_OUT)/app/$(LOCAL_RRO_THEME)
+  LOCAL_MODULE_PATH := $(TARGET_OUT)/overlay/$(LOCAL_RRO_THEME)
 endif
 
 include $(BUILD_SYSTEM)/package.mk
