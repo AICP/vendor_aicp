@@ -111,6 +111,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AicpExtras
 
+include packages/overlays/AICP/product_packages.mk
+
 
 # Extra tools
 PRODUCT_PACKAGES += \
