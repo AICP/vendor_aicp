@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     AudioFX
 
+# Phonograph
+PRODUCT_PACKAGES += \
+    Phonograph
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
