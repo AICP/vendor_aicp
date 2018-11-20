@@ -135,7 +135,10 @@ PRODUCT_PACKAGES += \
     fsck.exfat \
     mkfs.exfat \
     ntfsfix \
-    ntfs-3g
+    ntfs-3g \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
 
 
 PRODUCT_PACKAGES += \
