@@ -100,9 +100,9 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
-# AudioFX
+# MusicFX
 PRODUCT_PACKAGES += \
-    AudioFX
+    MusicFX
 
 # Phonograph
 PRODUCT_PACKAGES += \
