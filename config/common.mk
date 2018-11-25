@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# JamesDSP
+PRODUCT_PACKAGES += \
+   libjamesdsp
+
 # MusicFX
 PRODUCT_PACKAGES += \
     MusicFX
