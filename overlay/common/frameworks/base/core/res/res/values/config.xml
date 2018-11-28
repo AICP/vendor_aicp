@@ -87,5 +87,12 @@
 
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
+
+    <!-- Component name of the default wallpaper. This will be ImageWallpaper if not
+         specified -->
+    <string name="default_wallpaper_component" translatable="false">com.aicp.livewallpaper/pit.livewallpaper.ColloredWallpaperService</string>
+
+    <!-- Should the pinner service pin the Home application? -->
+    <bool name="config_pinnerHomeApp">true</bool>
 </resources>
 
