@@ -69,6 +69,9 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES +=  \
 #    vendor/aicp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml
+
 # AICP-specific startup services
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
