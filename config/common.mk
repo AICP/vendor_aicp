@@ -65,10 +65,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:system/etc/permissions/lineage-hiddenapi-package-whitelist.xml
 
-# Fix Dialer
-#PRODUCT_COPY_FILES +=  \
-#    vendor/aicp/prebuilt/common/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+# Turbo
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
 
+# Omnijaws
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml
 
@@ -88,9 +90,7 @@ PRODUCT_PACKAGES += \
 
 # Turbo
 PRODUCT_PACKAGES += \
-    Turbo \
-    turbo.xml \
-    privapp-permissions-turbo.xml
+    Turbo
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -119,13 +119,16 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Jelly
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
     LatinIME \
     BluetoothExt \
-    Launcher3Dark \
-    OmniJaws
+    Launcher3Dark
 
 # AICP packages
 PRODUCT_PACKAGES += \
@@ -133,7 +136,6 @@ PRODUCT_PACKAGES += \
     TilesWallpaper
 
 include packages/overlays/AICP/product_packages.mk
-
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -148,7 +150,6 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     mkfs.ntfs \
     mount.ntfs
-
 
 PRODUCT_PACKAGES += \
     charger_res_images
