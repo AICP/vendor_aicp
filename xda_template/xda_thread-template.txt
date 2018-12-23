@@ -122,10 +122,10 @@ You tell... :P
 [COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
 
 [COLOR="Red"]Q. [I]I keep losing root with Magisk, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Check [URL="https://plus.google.com/115015009651694560786/posts/Mjw58VACTSH"]this[/URL] out. If that doesn't work for you, ask for help in this thread, read or ask in the Magisk thread on XDA or just re-flash Magisk![/COLOR]
+[COLOR="Blue"]A. Check [URL="https://github.com/AICP/vendor_aicp/blob/p9.0/xda_template/magisk.md"]this[/URL] out. If that doesn't work for you, ask for help in this thread, read or ask in the Magisk thread on XDA or just re-flash Magisk![/COLOR]
 
 [COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Read [URL="https://plus.google.com/115015009651694560786/posts/Jsd9JjMfuVF"]this[/URL][/COLOR]
+[COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/p9.0/xda_template/whatsapp.md"]this[/URL][/COLOR]
 
 [COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
 [COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.)[/COLOR]
@@ -182,7 +182,7 @@ Please be sure that you are on the latest TWRP recovery. Keep in mind that this 
 [URL="https://gerrit.aicp-rom.com/"]AICP Gerrit Code Review[/URL]
 [URL="https://github.com/AICP"]AICP on Github[/URL][/B]
 
-[B][SIZE="3"][URL="https://plus.google.com/communities/101008638920580274588"]AICP G+ community[/URL][/B][/SIZE]
+[B][SIZE="3"][URL="https://discord.gg/nMQUVRD"]AICP Discord server[/URL][/B][/SIZE]
 
 [B][U]Contributors:[/U][/B]
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
