@@ -1,11 +1,100 @@
-# Feature-List
+#Feature list
 
-- Aicp Extras app for customizations and beyond
-- Bootanimation changer
+_apart from the default AOSP settings..._
+
+- Ability to change the device host-name for WiFi connections
+- Ability to force the screen & vibrate to turn on or stay off on connection to a charger
+- Access to the built-in AOSP SystemUI tuner
+- ADB over network option including custom Quick-settings tile
+- Adjust number of notifications on Lock-screen
+- Adjust volume dialog timeout
+- Adjustable actions for hardware buttons (including "kill app")
+- Adjustable Clear all recents button
+- Advanced call log in AOSP dialer app
+- Advanced power menu with more options (recovery/bootloader/SystemUI, etc.)
+- Advanced reboot
+- Aicp Extras app for customizations
+- Allow more time steps to 'Do not disturb'
+- Always-on display (if amoled) with advanced features (show music title or weather)
+- App circlebar for configuring app shortcuts & quick access
+- App Ops (verify/change App permissions)
+- Automatic speakerphone by checking Proximity (Dialer)
+- Battery bar with color change & animation on charge
+- Battery LED settings including custom colour setup
+- Bluetooth battery level display for external devices
+- Boot-animation changer
+- Brightness Icon and position settings
+- Brightness slider
+- Built-in themes (light/dark/black/transparent) with different accent colours
+- Charging sound and/or vibration
+- CPU info overlay
+- Current Charging status on lock-screen
+- Custom App opening/closing animations
+- Custom Carrier Label
+- Custom volume step count
+- Device wake up via volume buttons toggle
+- Double tap to sleep on lock-screen
+- Double tap to sleep on navbar (for smartbar)
+- Double tap to sleep on status bar
+- Downloadable AICP bootanimations and Wallpapers
+- Enable/Disable lock-screen media art globally
+- Enhanced Changelog in AicpExtras
+- Enhanced Launcher3 (Quickstep) with various tweaks & customizations
 - File persistence on "hosts" file between flashes
-- Integrated OTA-Update App in Aicp Extras
-- ROM Stats
-- Selinux mode switch
+- Fingerprint authentication vibration
+- Fingerprint scrolling (left/right to dismiss notifications)
+- Fling navbar (customizable gestures)
+- Flip to Mute/Reject Call
+- HeadsUp notification timeout toggle
+- Installed Apps: show link to Google Playstore
+- Integrated OTA-Update App
+- Launch music player when headset is connected
+- Link/unlink notification & call volume
+- Membar in recents (default and SlimRecents)
+- Network traffic in statusbar
+- Notification log
+- OmniJaws (Quick-settings weather & weather in statusbar & on lock-screen)
+- On-the-go mode (transparent display)
+- One-Hand-Mode
+- OnePlus-Like navigation gestures
+- Online viewable ROM Statistics per device and provider
+- Option to scramble the PIN layout on lock-screen
+- Partial screenshot (long press to activate)
+- Power menu hide-able on lock-screen
+- Pulse sound EQ on the on Smartbar/AOSP navbar
+- Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
+- Quick-settings disable on lock-screen
+- Quick-settings fast pull down
+- Quick-settings footer warnings switchable
+- Quick-settings tile animations
+- Quick-settings tile for Ambient Display
+- Quick-settings tile for Immersive mode (hiding statusbar- and/or navbar)
+- Quick-settings tile for music playback & title display
+- Quick-settings tile for Night mode
+- Quick-settings tile for recovery/reboot
+- Quick-settings tile titles visibility toggle
+- Quick-settings tiles columns adjustable
+- Quick-settings tiles modded for more option on tap for e.g. WiFi, location, etc.
+- Quick-settings tiles rows adjustable
+- Quick-settings tiles shape adjustable
+- Screen-record via Quick-settings tile or shortcut on power menu
+- Screenshot sound toggle
+- Scrolling cache adjustments
+- SELinux mode switch
+- SIM data status display switchable & adjustable to show 4G/LTE
+- SIM Roaming icon switchable
+- SlimRecents for better recents handling with many tweaks & integrated app sidebar
+- Smartbar (on-screen customizable navbar)
+- SmartBar feature to show arrows for next/previous track when playing audio
+- Statusbar Ticker for notifications and music title
+- Suspend actions for battery saving
+- Swap volume buttons
+- Swipe with 3 fingers to take a screenshot
 - System app remover
+- Toggle to enable/disable screenshot sound
+- Toggle to show/hide app icons on toast messages
+- Torch Quick-settings tile and options for longpress on power button to enable it
+- VoLTE icon switchable
+- Volume buttons additional toggle to switch music tracks/cursor control on keyboard
 
-...and more
+_...and more_
