@@ -27,10 +27,12 @@ _apart from the default AOSP settings..._
 - Brightness slider
 - Built-in themes (light/dark/black/transparent) with different accent colours
 - Charging sound and/or vibration
+- Chooser Activity (Share) app blacklists
 - CPU info overlay
 - Current Charging status on lock-screen
 - Custom App opening/closing animations
 - Custom Carrier Label
+- Custom system & screen off animations
 - Custom volume step count
 - Device wake up via volume buttons toggle
 - Double tap to sleep on lock-screen
@@ -46,26 +48,29 @@ _apart from the default AOSP settings..._
 - Fling navbar (customizable gestures)
 - Flip to Mute/Reject Call
 - HeadsUp notification timeout toggle
+- HeadsUp notifications snooze timer
 - Installed Apps: show link to Google Playstore
 - Integrated OTA-Update App
 - Launch music player when headset is connected
 - Link/unlink notification & call volume
+- Lockscreen Media Cover art
+- Lockscreen Visualizer
 - Membar in recents (default and SlimRecents)
+- Navigation Gestures
 - Network traffic in statusbar
 - Notification log
-- OmniJaws (Quick-settings weather & weather in statusbar & on lock-screen)
+- OmniJaws (Quick-settings weather & on lock-screen)
 - On-the-go mode (transparent display)
-- One-Hand-Mode
 - OnePlus-Like navigation gestures
 - Online viewable ROM Statistics per device and provider
 - Option to scramble the PIN layout on lock-screen
-- Partial screenshot (long press to activate)
 - Power menu hide-able on lock-screen
 - Pulse sound EQ on the on Smartbar/AOSP navbar
-- Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
+- Quick unlock
 - Quick-settings disable on lock-screen
 - Quick-settings fast pull down
 - Quick-settings footer warnings switchable
+- Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
 - Quick-settings tile animations
 - Quick-settings tile for Ambient Display
 - Quick-settings tile for Immersive mode (hiding statusbar- and/or navbar)
@@ -84,9 +89,12 @@ _apart from the default AOSP settings..._
 - SIM data status display switchable & adjustable to show 4G/LTE
 - SIM Roaming icon switchable
 - SlimRecents for better recents handling with many tweaks & integrated app sidebar
+- Smart Pixels
 - Smartbar (on-screen customizable navbar)
 - SmartBar feature to show arrows for next/previous track when playing audio
+- Statusbar clock customizations
 - Statusbar Ticker for notifications and music title
+- Suspend Actions
 - Suspend actions for battery saving
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
@@ -95,6 +103,7 @@ _apart from the default AOSP settings..._
 - Toggle to show/hide app icons on toast messages
 - Torch Quick-settings tile and options for longpress on power button to enable it
 - VoLTE icon switchable
+- Volume button playback control when screen off
 - Volume buttons additional toggle to switch music tracks/cursor control on keyboard
 
 _...and more_
