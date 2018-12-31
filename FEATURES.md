@@ -12,7 +12,6 @@ _apart from the default AOSP settings..._
 - Adjustable Clear all recents button
 - Advanced call log in AOSP dialer app
 - Advanced power menu with more options (recovery/bootloader/SystemUI, etc.)
-- Advanced reboot
 - Aicp Extras app for customizations
 - Allow more time steps to 'Do not disturb'
 - Always-on display (if amoled) with advanced features (show music title or weather)
@@ -95,7 +94,6 @@ _apart from the default AOSP settings..._
 - Statusbar clock customizations
 - Statusbar Ticker for notifications and music title
 - Suspend Actions
-- Suspend actions for battery saving
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
 - System app remover
