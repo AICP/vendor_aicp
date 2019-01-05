@@ -80,6 +80,14 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/aicp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Do not include art debug targets
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
+
+# Strip the local variable table and the local variable type table to reduce
+# the size of the system image. This has no bearing on stack traces, but will
+# leave less information available via JDWP.
+PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
+
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
