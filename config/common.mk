@@ -70,6 +70,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml \
     vendor/aicp/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
 
+# Power whitelist
+PRODUCT_COPY_FILES += \
+    vendor/aicp/config/permissions/aicp-power-whitelist.xml:system/etc/sysconfig/aicp-power-whitelist.xml
+
 # Omnijaws
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml
