@@ -50,8 +50,6 @@ Resurrection Remix team
 [B]@zipsnet[/B]
 [B]@eyosen[/B]
 [B]@semdoc[/B]
-[B]@Drgravy[/B]
-[B]@Hashbang173[/B]
 [B]@SpiritCroc[/B]
 [B]@wartomato[/B]
 [B]@eboye[/B]
@@ -80,6 +78,7 @@ Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/changelog.png[/IMG]
 
 [SIZE=3][B]Full Changelog link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
+(Just click the changelog button next to the download link in the list of builds available for your device)
 
 Google Apps:
 (link the best one for your device, there are several variants out there right now, pico/nano GApps from opengapps.org is almost always a good choice though)
@@ -93,14 +92,14 @@ You tell... :P
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
 [COLOR="Blue"]A. Yes, just look in the OP to see if your device is built on a nightly or weekly schedule.[/COLOR]
 
-[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels?[/I][/COLOR]
+[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
 
 [COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP. Custom ROMs modify the framework a lot, so Xposed can cause a ton of issues on custom ROMs. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  You will need to use the version arm64/arm/whatever for SDK 27.[/COLOR]
+[COLOR="Blue"]A.  You will need to use the version arm64/arm/whatever for SDK 28.[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
@@ -120,9 +119,6 @@ You tell... :P
 
 [COLOR="Red"]Q. [I]I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
 [COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
-
-[COLOR="Red"]Q. [I]I keep losing root with Magisk, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Check [URL="https://github.com/AICP/vendor_aicp/blob/p9.0/xda_template/magisk.md"]this[/URL] out. If that doesn't work for you, ask for help in this thread, read or ask in the Magisk thread on XDA or just re-flash Magisk![/COLOR]
 
 [COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
 [COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/p9.0/xda_template/whatsapp.md"]this[/URL][/COLOR]
@@ -147,7 +143,7 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 
 1. Download the ROM and GApps and transfer them to your device.
 2. Boot to recovery (TWRP recommended).
-3. Wipe the System, Cache, Data and ART/Dalvik cache.
+3. Wipe the System, Cache, and Data (you might need to format the data partition!).
 4. Flash the ROM Zipfile.
 5. Flash the GApps (optional, needed for e.g. Google Playstore to work).
 6. Reboot and set up your device, enable developer settings and in them OEM unlock/Advanced reboot/USB tethering.
@@ -157,19 +153,22 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 [B][I]The procedure might vary from device to device and is a bit different on system updates![/I][/B]
 
 
-[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once!
-The root solution should be flashed together with every OTA update (= ROM Update)[/B]
+[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once! This might differ on AvB Devices.
+The root solution can be flashed together with every OTA update (= ROM Update).[/B]
 
 
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
 
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
-Magisk versions higher than 17.2 doesn't usually require to be flashed on every dirty flash. Depending on the device, you may need to flash it every time. Unless your maintainer says otherwise it should be fine.
+Magisk versions >= 17.2 don't usually require to be flashed on every dirty flash.
+Depending on the device, you may need to flash it every time.
+Unless your maintainer says otherwise, you should be fine.
 
 
 [U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
 To be able to flash using the built-in OTA app, TWRP recovery is needed.
 Please be sure that you are on the latest TWRP recovery. Keep in mind that this could also be an unofficial version!
+On encrypted devices you will have to enter your PIN/password in TWRP before the process starts.
 
 [B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
@@ -177,12 +176,17 @@ Please be sure that you are on the latest TWRP recovery. Keep in mind that this 
 
 [B]Kernel source:[/B]
 [B]Put the Github link to your kernel HERE (mandatory), not posting the kernel source violates the GPL, and also violates the rules on XDA ...[/B]
+[B]Device tree source:[/B]
+[B]Put the Github link to your device tree HERE. This is not mandatory, but might help users. ;)[/B]
+[B]Vendor source:[/B]
+[B]Put the Github link to your used vendor HERE. This is also not mandatory, but might help users. ;)[/B]
 
 [B]ROM & Additional links:
+[URL="https://www.aicp-rom.com/"]AICP's Homepage[/URL]
 [URL="https://gerrit.aicp-rom.com/"]AICP Gerrit Code Review[/URL]
-[URL="https://github.com/AICP"]AICP on Github[/URL][/B]
-
-[B][SIZE="3"][URL="https://discord.gg/nMQUVRD"]AICP Discord server[/URL][/B][/SIZE]
+[URL="https://github.com/AICP"]AICP sources on Github[/URL]
+[URL="https://dwnld.aicp-rom.com/"]AICP Download page for official builds and media content[/URL]
+[URL="https://discord.gg/nMQUVRD"]AICP Discord Community[/URL][/B]
 
 [B][U]Contributors:[/U][/B]
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
@@ -190,7 +194,7 @@ only mention the main ones though, probably the top four or so, otherwise this l
 
 The following informations are ONLY needed, when you are not opening up a devdb thread on XDA!
 [B]ROM OS Version:[/B] 9.0.x Pie
-[B]Kernel:[/B] Linux x.x.y (EG: 3.18.84)
+[B]Kernel:[/B] Linux x.z.y (for example: 3.18.y)
 
 [B][U]Version Information:[/U][/B]
 [B]Status:[/B] NIGHTLY/WEEKLY
