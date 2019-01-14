@@ -326,8 +326,14 @@ def main():
         if repo_path:
             fetch_dependencies(repo_path)
         else:
-            print("Trying dependencies-only mode on a "
-                  "non-existing device tree?")
+            # Try again without removing underscores
+            device = product
+            repo_path = get_from_manifest(device)
+            if repo_path:
+                fetch_dependencies(repo_path)
+            else:
+                print("Trying dependencies-only mode on a "
+                      "non-existing device tree?")
         sys.exit()
 
     print("Device {0} not found. Attempting to retrieve device repository from "
