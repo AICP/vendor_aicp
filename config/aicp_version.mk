@@ -43,15 +43,14 @@ endif
 
 # AICP System Version
 PRODUCT_PROPERTY_OVERRIDES += \
-    BUILD_DISPLAY_ID=$(BUILD_ID) \
-    aicp.ota.version=$(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR).$(AICP_VERSION_MAINTENANCE) \
-    ro.modversion=$(VERSION)-$(AICP_BUILDTYPE) \
-    ro.aicp.releasetype=$(AICP_BUILDTYPE) \
-    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE) \
-    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
-    ro.aicp.build.version=$(VERSION) \
     ro.aicp.display.version=$(AICP_VERSION) \
-    ro.aicp.buildtype=$(AICP_BUILDTYPE)
+    ro.aicp.buildtype=$(AICP_BUILDTYPE) \
+    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION)
+
+# AICP System Version needed for jenny
+    PRODUCT_PROPERTY_OVERRIDES += \
+    ro.modversion=$(AICP_VERSION) \
+    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
