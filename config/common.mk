@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniJaws
 
+# Fonts packages
+PRODUCT_PACKAGES += \
+    invictrix-fonts
+
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
