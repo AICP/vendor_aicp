@@ -8,6 +8,10 @@ AICP_VERSION_MAJOR = 14
 AICP_VERSION_MINOR = 0
 AICP_VERSION_MAINTENANCE = 0
 
+PRODUCT_VERSION_MAJOR := $(AICP_VERSION_MAJOR)
+PRODUCT_VERSION_MINOR := $(AICP_VERSION_MINOR)
+PRODUCT_VERSION_MAINTENANCE := $(AICP_VERSION_MAINTENANCE)
+
 VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)
 
 ifndef AICP_BUILDTYPE
@@ -39,12 +43,15 @@ endif
 
 # AICP System Version
 PRODUCT_PROPERTY_OVERRIDES += \
+    BUILD_DISPLAY_ID=$(BUILD_ID) \
+    aicp.ota.version=$(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR).$(AICP_VERSION_MAINTENANCE) \
     ro.modversion=$(VERSION)-$(AICP_BUILDTYPE) \
     ro.aicp.releasetype=$(AICP_BUILDTYPE) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE) \
     ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
     ro.aicp.build.version=$(VERSION) \
-    ro.aicp.display.version=$(AICP_VERSION)
+    ro.aicp.display.version=$(AICP_VERSION) \
+    ro.aicp.buildtype=$(AICP_BUILDTYPE)
 
 # needed for statistics
 PRODUCT_PROPERTY_OVERRIDES += \
