@@ -60,5 +60,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.romstats.buildtype=$(AICP_BUILDTYPE) \
     ro.romstats.version=$(VERSION) \
     ro.romstats.tframe=1 \
-    ro.romstats.askfirst=1 \
-    ro.romstats.ga=UA-48128535-2
+    ro.romstats.askfirst=1
