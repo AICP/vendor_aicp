@@ -184,6 +184,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.disable_rescue=true
 
+# codeaurora telephony-ext
+PRODUCT_PACKAGES += \
+   telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
