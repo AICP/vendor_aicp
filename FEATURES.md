@@ -41,6 +41,7 @@ _apart from the default AOSP settings..._
 - Enable/Disable lock-screen media art globally
 - Enhanced Changelog in AicpExtras
 - Enhanced Launcher3 (Quickstep) with various tweaks & customizations
+- Expanded audio panel (if enabled)
 - File persistence on "hosts" file between flashes
 - Fingerprint authentication vibration
 - Fingerprint scrolling (left/right to dismiss notifications)
@@ -63,7 +64,9 @@ _apart from the default AOSP settings..._
 - OnePlus-Like navigation gestures
 - Online viewable ROM Statistics per device and provider
 - Option to scramble the PIN layout on lock-screen
+- Pie control
 - Power menu hide-able on lock-screen
+- Power menu transparency
 - Pulse sound EQ on the on Smartbar/AOSP navbar
 - Quick unlock
 - Quick-settings disable on lock-screen
@@ -76,16 +79,19 @@ _apart from the default AOSP settings..._
 - Quick-settings tile for music playback & title display
 - Quick-settings tile for Night mode
 - Quick-settings tile for recovery/reboot
+- Quick-settings tile for Account Sync
 - Quick-settings tile titles visibility toggle
 - Quick-settings tiles columns adjustable
 - Quick-settings tiles modded for more option on tap for e.g. WiFi, location, etc.
 - Quick-settings tiles rows adjustable
 - Quick-settings tiles shape adjustable
+- Quick-settings transparency
 - Screen-record via Quick-settings tile or shortcut on power menu
 - Screenshot sound toggle
 - Scrolling cache adjustments
 - SELinux mode switch
 - SIM data status display switchable & adjustable to show 4G/LTE
+- SIM data icon enable/disable
 - SIM Roaming icon switchable
 - SlimRecents for better recents handling with many tweaks & integrated app sidebar
 - Smart Pixels
@@ -96,6 +102,7 @@ _apart from the default AOSP settings..._
 - Suspend Actions
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
+- Switch between pie/oreo/grid/go recents
 - System app remover
 - Toggle to enable/disable screenshot sound
 - Toggle to show/hide app icons on toast messages
