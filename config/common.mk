@@ -44,10 +44,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.local.rc:root/init.aicp.rc
 
-# Copy LatinIME for gesture typing
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
-
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
@@ -64,11 +60,6 @@ PRODUCT_COPY_FILES += \
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:system/etc/permissions/lineage-hiddenapi-package-whitelist.xml
-
-# Turbo
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-turbo.xml:system/etc/permissions/privapp-permissions-turbo.xml \
-    vendor/aicp/prebuilt/common/etc/sysconfig/turbo.xml:system/etc/sysconfig/turbo.xml
 
 # Power whitelist
 PRODUCT_COPY_FILES += \
@@ -99,10 +90,6 @@ PRODUCT_PACKAGES += \
     SpareParts \
     LockClock \
     su
-
-# Turbo
-PRODUCT_PACKAGES += \
-    Turbo
 
 # Optional packages
 PRODUCT_PACKAGES += \

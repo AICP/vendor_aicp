@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<config>
-    <!-- The feature identifying devices which are able to use the Turbo app -->
-    <feature name="com.google.android.feature.TURBO_PRELOAD" />
-
-    <!-- Turbo must not have App Standby restrictions in order to push new
-         App Standby buckets to the platform periodically -->
-    <allow-in-power-save-except-idle package="com.google.android.apps.turbo" />
-</config>
