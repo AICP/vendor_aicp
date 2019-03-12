@@ -81,7 +81,7 @@ Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
 (Just click the changelog button next to the download link in the list of builds available for your device)
 
 Google Apps:
-(link the best one for your device, there are several variants out there right now, pico/nano GApps from opengapps.org is almost always a good choice though)
+(link the best one for your device, there are several variants out there right now, nano/micro GApps from opengapps.org is almost always a good choice though)
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/issues.png[/IMG]
 
