@@ -209,7 +209,7 @@ include vendor/aicp/config/aicp_version.mk
 # AICP OTA
 ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
-   AICP_OTA_Updater
+   Updater
 endif
 
 # Google sounds
