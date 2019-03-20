@@ -10,7 +10,7 @@
 * An application should include links to the device, vendor and kernel trees on GitHub, plus the email address of the applicant. Please be patient once you have sent your application. It takes some time to review your source code. If changes are deemed necessary, you will receive notice for improvement and be able to re-apply after improving.
 * Applicants should show some respect towards the reviewer regardless of the decision. Privacy is respected by us, so the applicant is supposed to do this too.
 * Applicants **must** use some common sense, mature behavior and politeness, as the team considers that too. Reviewers are not "Bro's" as they are not your family and thus the application will be rejected immediately.
-* Applicants should keep in mind **not to bother** any reviewer nor the team for the final results of the application. Reviewers try to judge objective on every application.
+* Applicants should keep in mind **not to bother** any reviewer nor the team for the final results of the application. Reviewers try to judge objectively on every application.
 * Accepted applicants **must** be active and reachable on our team chat, unless they have given a reason as of why they can't.
 * Accepted applicants should also keep in mind that spreading/sharing parts of team internal conversations to anyone for whatever purpose, will result in a ban from the team.
 
@@ -35,14 +35,14 @@
 * The device **must** be buildable by using open sourced dependencies that have a valid commit history. Preferably using GZOSP dependencies (incl. vendor) when possible.
 * The device **must** have an official or at least trustable recovery (TWRP preferably) working and publicly available.
 * The device **must** enforce SELinux before going official. If not possible at the moment of adding, it will stay in beta stage until SELinux can be enforced.
-* The kernel **should** be upstreamed, https://github.com/android-linux-stable is a great resource (depending on the kernel version), this is not required though. Kernel feature additions **must** be allowed and approved by the team before adding. *For example: Overclocking/undervolting apart from the manufacturer's default is not tolerated.*
+* The kernel **should** be upstreamed, https://github.com/android-linux-stable is a great resource (depending on the kernel version), this is not required though. Kernel feature additions **must** be allowed and approved by the team before adding. *For example: Overclocking/undervolting apart from the manufacturer's default is not tolerated.* It is **preferred** that the kernel can be compiled with clang.
 * The device's storage capabilities (internal and/or external) **must** be fully working.
 * The device **must** have working audio for phone calls(!) on at least handset, speaker, headset (phone jack) and Bluetooth.
 * The device **must** be able to make a data connections via SIM and/or Wifi. If the device has more than one SIM slot, both slots must be working.
 * The device **must** have other features for data transfers/communication working, like Bluetooth / NFC / Wifi Hotspot or USB tethering. This is of course dependent on the device's hardware.
 * The device **must** have a working camera. This includes front and rear cameras, if applicable. This means that **all** Camera supported features for Photo and Video should be supported and working.
 * The device's sensors, including fingerprint / proximity / acceleration / etc., **must** be working.
-* The device tree **must** not include any unused overlays, but **must** include the basic overlays to work with AICP features like key configs, DUI, pocketmode, doze etc.
+* The device tree **must** not include any unused overlays, but **must** include the basic overlays to work with AICP features like key configs, SmartNav, pocketmode, doze etc.
 * The device tree **can** include device specific overlays and packages, but not any obsolete packages or unnecessary properties (system.prop, vendor.prop, etc.).
 
 
