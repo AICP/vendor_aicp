@@ -18,18 +18,22 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.debug.alloc=0
 
-# Backup tool
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aicp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aicp/prebuilt/common/bin/50-aicp.sh:system/addon.d/50-aicp.sh \
-    vendor/aicp/prebuilt/common/bin/clean_cache.sh:system/bin/clean_cache.sh
+    vendor/aicp/prebuilt/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+# Backup Tool
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/aicp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/aicp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
+    vendor/aicp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh \
+    vendor/aicp/prebuilt/addon.d/69-gapps.sh:system/addon.d/69-gapps.sh
+else
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/aicp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aicp/prebuilt/bin/50-aicp.sh:system/addon.d/50-aicp.sh \
+    vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
 endif
 
 # Backup services whitelist

@@ -18,6 +18,7 @@ preserve_addon_d() {
   if [ -d /system/addon.d/ ]; then
     mkdir -p /postinstall/tmp/addon.d/
     cp -a /system/addon.d/* /postinstall/tmp/addon.d/
+    rm -f /postinstall/tmp/addon.d/70-gapps.sh
 
     # Discard any scripts that aren't at least our version level
     for f in /postinstall/tmp/addon.d/*sh; do
@@ -29,7 +30,6 @@ preserve_addon_d() {
         rm $f
       fi
     done
-
     chmod 755 /postinstall/tmp/addon.d/*.sh
   fi
 }

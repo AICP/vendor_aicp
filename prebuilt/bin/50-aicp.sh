@@ -1,5 +1,5 @@
 #!/sbin/sh
-# 
+#
 # ADDOND_VERSION=2
 #
 # /system/addon.d/50-aicp.sh
