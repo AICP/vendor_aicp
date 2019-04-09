@@ -30,8 +30,8 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/addon.d/69-gapps.sh:system/addon.d/69-gapps.sh
 else
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/aicp/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/aicp/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aicp/prebuilt/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aicp/prebuilt/bin/50-aicp.sh:system/addon.d/50-aicp.sh \
     vendor/aicp/prebuilt/bin/blacklist:system/addon.d/blacklist
 endif
