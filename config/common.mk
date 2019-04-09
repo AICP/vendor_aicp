@@ -26,8 +26,7 @@ ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool_ab.sh:system/bin/backuptool_ab.sh \
     vendor/aicp/prebuilt/common/bin/backuptool_ab.functions:system/bin/backuptool_ab.functions \
-    vendor/aicp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh \
-    vendor/aicp/prebuilt/addon.d/69-gapps.sh:system/addon.d/69-gapps.sh
+    vendor/aicp/prebuilt/common/bin/backuptool_postinstall.sh:system/bin/backuptool_postinstall.sh
 else
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bin/backuptool.sh:install/bin/backuptool.sh \
