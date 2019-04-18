@@ -94,14 +94,19 @@ PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
     Development \
     SpareParts \
-    LockClock \
-    su
+    LockClock
 
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
     LiveWallpapersPicker \
     PhaseBeam
+
+# su
+ifneq ($(WITH_SU), false)
+PRODUCT_PACKAGES += \
+    su
+endif
 
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
