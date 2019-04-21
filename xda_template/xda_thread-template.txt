@@ -62,7 +62,7 @@ Resurrection Remix team
 We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
-[URL="https://www.google.com/url?q=https%3A%2F%2Fwww.paypal.com%2Fcgi-bin%2Fwebscr%3Fcmd%3D_s-xclick%26hosted_button_id%3DHPLUC7KGVT9AE&sa=D&sntz=1&usg=AFQjCNEhDXr0bwFuGIR1HSfWV2H-q1oPYA"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/paypal.png[/IMG][/URL]
+[URL="https://paypal.me/AICPRom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/paypal.png[/IMG][/URL]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/downloads.png[/IMG]
 
