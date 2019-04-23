@@ -166,7 +166,9 @@ PRODUCT_PACKAGES += \
     libffmpeg_omx \
     media_codecs_ffmpeg.xml
 
+# Extra tools
 PRODUCT_PACKAGES += \
+    curl \
     vim
 
 PRODUCT_PROPERTY_OVERRIDES += \
