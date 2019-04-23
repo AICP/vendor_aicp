@@ -17,6 +17,7 @@ _apart from the default AOSP settings..._
 - Always-on display (if amoled) with advanced features (show music title or weather)
 - App circlebar for configuring app shortcuts & quick access
 - App Ops (verify/change App permissions)
+- Aspect ratio hack (legacy apps) configurable per app for supported devices
 - Automatic speakerphone by checking Proximity (Dialer)
 - Battery bar with color change & animation on charge
 - Battery LED settings including custom colour setup
@@ -24,9 +25,10 @@ _apart from the default AOSP settings..._
 - Boot-animation changer
 - Brightness Icon and position settings
 - Brightness slider
-- Built-in themes (light/dark/black/transparent) with different accent colours
+- Built-in System themes (light/dark/black/transparent) with different accent colours
 - Charging sound and/or vibration
 - Chooser Activity (Share) app blacklists
+- Configurable icon shapes (system wide)
 - CPU info overlay
 - Current Charging status on lock-screen
 - Custom App opening/closing animations
@@ -53,6 +55,7 @@ _apart from the default AOSP settings..._
 - Integrated OTA-Update App
 - Launch music player when headset is connected
 - Link/unlink notification & call volume
+- Lockscreen clock customizations
 - Lockscreen Media Cover art
 - Lockscreen Visualizer
 - Membar in recents (default and SlimRecents)
@@ -61,6 +64,7 @@ _apart from the default AOSP settings..._
 - Notification log
 - OmniJaws (Quick-settings weather & on lock-screen)
 - On-the-go mode (transparent display)
+- One handed mode
 - OnePlus-Like navigation gestures
 - Online viewable ROM Statistics per device and provider
 - Option to scramble the PIN layout on lock-screen
@@ -70,7 +74,7 @@ _apart from the default AOSP settings..._
 - Pulse sound EQ on the on Smartbar/AOSP navbar
 - Quick unlock
 - Quick-settings disable on lock-screen
-- Quick-settings fast pull down
+- Quick-settings fast pull down from right/left
 - Quick-settings footer warnings switchable
 - Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
 - Quick-settings tile animations
@@ -98,6 +102,8 @@ _apart from the default AOSP settings..._
 - Smartbar (on-screen customizable navbar)
 - SmartBar feature to show arrows for next/previous track when playing audio
 - Statusbar clock customizations
+- Statusbar location icon can be hidden
+- Statusbar logo
 - Statusbar Ticker for notifications and music title
 - Suspend Actions
 - Swap volume buttons
@@ -110,5 +116,8 @@ _apart from the default AOSP settings..._
 - VoLTE icon switchable
 - Volume button playback control when screen off
 - Volume buttons additional toggle to switch music tracks/cursor control on keyboard
+- Volume panel extensions
+- Volume panel right/left on supported devices
+- Yoga!!
 
 _...and more_
