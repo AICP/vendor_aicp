@@ -68,6 +68,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/aicp-power-whitelist.xml:system/etc/sysconfig/aicp-power-whitelist.xml
 
+# Include AOSP audio files
+include vendor/aicp/config/aosp_audio.mk
+
 # Omnijaws
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-omnijaws.xml:system/etc/permissions/privapp-permissions-omnijaws.xml
