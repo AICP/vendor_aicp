@@ -90,7 +90,7 @@ You tell... :P
 [B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
 [HIDE][B]Before using the ROM:[/B]
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, just look in the OP to see if your device is built on a nightly or weekly schedule.[/COLOR]
+[COLOR="Blue"]. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/p9.0/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
 
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
@@ -99,11 +99,11 @@ You tell... :P
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP. Custom ROMs modify the framework a lot, so Xposed can cause a ton of issues on custom ROMs. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  You will need to use the version arm64/arm/whatever for SDK 28.[/COLOR]
+[COLOR="Blue"]A.  Xposed is not yet released for Pie, however you can try to use [url="https://www.xda-developers.com/xposed-framework-unofficial-port-android-pie"]edxposed[/url] .[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
-[COLOR="Blue"]A. Check the install instructions in the first post...[/COLOR]
+[COLOR="Blue"]A. Check the flashing instructions...[/COLOR]
 
 [COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
 [COLOR="Blue"]A. Yes, however make a nandroid backup first as there is a chance of getting a bootloop or encountering bugs. Also bugs may only be reported on a clean flash.[/COLOR]
@@ -132,14 +132,14 @@ You tell... :P
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/instructions.png[/IMG]
 
-The ROM should contain everything you need to enjoy Android Pie. You don't need to install any Add-on's, simply download the latest ROM, GApps, flash it and go!
+The ROM should contain everything you need to enjoy Android Pie. You don't need to install any Add-ons, simply download the latest ROM and GApps, then follow the flashing instructions and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
 
-It is STRONGLY recommended to fully wipe your device before flashing and please avoid restoring system apps and system data with Titanium Backup as this can cause stability issues that are very hard to debug.
+It is STRONGLY recommended to fully wipe your device before flashing and please avoid restoring system apps and system data with Titanium Backup (or with any backup/restore app) as this can cause stability issues that are very hard to debug, restoring regular apps is fine though.
 If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
 
 [SIZE=3]How to flash for the first time:[/SIZE]
-(Again: Don't do it if you don't know it!)
+(Again: Don't do it if you don't know!)
 
 1. Download the ROM and GApps and transfer them to your device.
 2. Boot to recovery (TWRP recommended).
@@ -150,27 +150,24 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 7. Reboot back into TWRP recovery.
 8. Flash the root solution of your choice (optional).
 9. Reboot your device.
-[B][I]The procedure might vary from device to device and is a bit different on system updates![/I][/B]
+[B][I]The procedure may vary from device to device and is a bit different on system updates![/I][/B]
 
 
-[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once! This might differ on AvB Devices.
-The root solution can be flashed together with every OTA update (= ROM Update).[/B]
+[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once! This might differ on AvB Devices.[/B]
 
 
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
 
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
-Magisk versions >= 17.2 don't usually require to be flashed on every dirty flash.
-Depending on the device, you may need to flash it every time.
-Unless your maintainer says otherwise, you should be fine.
-
+Magisk versions >= 17.2 don't usually need to be flashed on every dirty flash.
+Depending on the device, you may need to flash it every time, unless your maintainer says otherwise, you should be fine.
 
 [U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
-To be able to flash using the built-in OTA app, TWRP recovery is needed.
-Please be sure that you are on the latest TWRP recovery. Keep in mind that this could also be an unofficial version!
+TWRP recovery is needed to be able to flash using the built-in OTA app.
+Please make sure that you are on the latest TWRP recovery, keep in mind that this could also be an unofficial version!
 On encrypted devices you will have to enter your PIN/password in TWRP before the process starts.
 
-[B]If you want to contribute to the AICP or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
+[B]If you want to contribute to AICP, or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/sources.png[/IMG]
 
@@ -192,12 +189,12 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
-The following informations are ONLY needed, when you are not opening up a devdb thread on XDA!
+The following information is ONLY needed if you are not opening up a devdb thread on XDA!
 [B]ROM OS Version:[/B] 9.0.x Pie
 [B]Kernel:[/B] Linux x.z.y (for example: 3.18.y)
 
 [B][U]Version Information:[/U][/B]
-[B]Status:[/B] NIGHTLY/WEEKLY
+[B]Status:[/B] WEEKLY
 [B]Release Date:[/B] mm-dd-yyyy
 
 You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/dev_office.png"]here[/URL]!!
