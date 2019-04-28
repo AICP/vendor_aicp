@@ -90,7 +90,7 @@ You tell... :P
 [B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
 [HIDE][B]Before using the ROM:[/B]
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
-[COLOR="Blue"]. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/p9.0/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
+[COLOR="Blue"]A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/p9.0/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
 
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
