@@ -219,4 +219,12 @@ endif
 # Google sounds
 include vendor/aicp/google/GoogleAudio.mk
 
+# TWRP
+ifeq ($(BUILD_TWRP),true)
+RECOVERY_TYPE := twrp
+else
+RECOVERY_TYPE := aosp
+endif
+
+
 EXTENDED_POST_PROCESS_PROPS := vendor/aicp/tools/aicp_process_props.py
