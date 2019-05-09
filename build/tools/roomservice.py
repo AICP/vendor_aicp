@@ -201,8 +201,10 @@ def add_to_manifest(repositories):
     f.write(raw_xml)
     f.close()
 
-def fetch_dependencies(repo_path):
+def fetch_dependencies(repo_path,first_dependency=False):
     print('Looking for dependencies in %s' % repo_path)
+    if first_dependency:
+        os.system('vendor/aicp/build/tools/roomcleaner.py %s' % repo_path)
     dependencies_path = repo_path + '/aicp.dependencies'
     syncable_repos = []
     verify_repos = []
@@ -242,7 +244,7 @@ def fetch_dependencies(repo_path):
             os.system('repo sync --force-sync %s' % ' '.join(syncable_repos))
 
     for deprepo in verify_repos:
-        fetch_dependencies(deprepo)
+        fetch_dependencies(deprepo,True)
 
 def get_default_or_fallback_revision(repo_name):
     default_revision = get_default_revision()
@@ -279,7 +281,7 @@ def get_default_or_fallback_revision(repo_name):
 if depsonly:
     repo_path = get_from_manifest(device)
     if repo_path:
-        fetch_dependencies(repo_path)
+        fetch_dependencies(repo_path,True)
     else:
         print("Trying dependencies-only mode on a non-existing device tree?")
 
@@ -307,7 +309,7 @@ else:
             os.system('repo sync --force-sync %s' % repo_path)
             print("Repository synced!")
 
-            fetch_dependencies(repo_path)
+            fetch_dependencies(repo_path,True)
             print("Done")
             sys.exit()
 
