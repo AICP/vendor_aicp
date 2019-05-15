@@ -113,6 +113,7 @@ _apart from the default AOSP settings..._
 - Toggle to enable/disable screenshot sound
 - Toggle to show/hide app icons on toast messages
 - Torch Quick-settings tile and options for longpress on power button to enable it
+- Upload crash log to aicp haste
 - VoLTE icon switchable
 - Volume button playback control when screen off
 - Volume buttons additional toggle to switch music tracks/cursor control on keyboard
