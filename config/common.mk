@@ -103,7 +103,7 @@ PRODUCT_PACKAGES += \
     PhaseBeam
 
 # su
-ifneq ($(WITH_SU), false)
+ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
 endif
