@@ -45,10 +45,7 @@ endif
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aicp.display.version=$(AICP_VERSION) \
     ro.aicp.buildtype=$(AICP_BUILDTYPE) \
-    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION)
-
-# AICP System Version needed for jenny
-    PRODUCT_PROPERTY_OVERRIDES += \
+    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
