@@ -1,9 +1,11 @@
 #!/bin/bash
 
-WIDTH="$1"
-HEIGHT="$2"
-HALF_RES="$3"
-OUT="$ANDROID_PRODUCT_OUT/obj/BOOTANIMATION"
+PRODUCT_OUT="$1"
+WIDTH="$2"
+HEIGHT="$3"
+HALF_RES="$4"
+
+OUT="$PRODUCT_OUT/obj/BOOTANIMATION"
 RANDOM_BOOT=$(shuf -i 0-3 -n 1)
 
 if [ -z "$WIDTH" ]; then
@@ -32,7 +34,7 @@ RESOLUTION=""$IMAGESIZE"x"$IMAGESIZE""
 
 for part_cnt in 1 2 3
 do
-    mkdir -p $ANDROID_PRODUCT_OUT/obj/BOOTANIMATION/bootanimation/part$part_cnt
+    mkdir -p "$OUT/bootanimation/part$part_cnt"
 done
 tar xfp "vendor/aicp/bootanimation/bootanimation$RANDOM_BOOT.tar" --to-command="convert - -resize '$RESOLUTION' -colors 250 \"png8:$OUT/bootanimation/\$TAR_FILENAME\""
 
