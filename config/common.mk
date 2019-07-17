@@ -21,6 +21,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/bin/clean_cache.sh:system/bin/clean_cache.sh
 
+# AICP
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-aicp.xml:system/etc/permissions/privapp-permissions-aicp.xml
+
 # Backup Tool
 ifeq ($(AB_OTA_UPDATER),true)
 PRODUCT_COPY_FILES += \
