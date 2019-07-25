@@ -3,8 +3,8 @@
 ## Application procedure
 
 * Applicants with history of "conflicts" won't be accepted in any way. You should be aware of this before applying.
-* Applicants should drop a message to **one** team member only. The member will forward the message to the reviewers and give you the appropriate contact information for your reviewer. "Spamming" more than one team member will result in an immediate rejection.
-* Applicants contacting the reviewers on any other communication platform but **Google Hangouts** will be rejected as they clearly didn't read this!
+* Applicants should drop a message on our discord server (https://discord.gg/nMQUVRD). The team will then notify the reviewers and give you the appropriate contact information for your reviewer. "Spamming" the discord (and/or team members) will result in an immediate rejection.
+* Applicants contacting the team to apply on any other communication platform but **Discord** will be rejected as they clearly didn't read this!
 * Applicants **must** be aware of the fact that the team's language for communicating is ENGLISH.
 * **Continued support** will be needed, so ask yourself: *"Can/Do I want to provide continuous support?"*. AICP is not a "submit & forget" home for buildbots. We don't want people who build numerous custom ROMs. This is not the purpose of maintaining from our point of view. You need to be willing to continue maintaining the device by fixing bugs, applying AOSP security updates and eventually improving performance.
 * An application should include links to the device, vendor and kernel trees on GitHub, plus the email address of the applicant. Please be patient once you have sent your application. It takes some time to review your source code. If changes are deemed necessary, you will receive notice for improvement and be able to re-apply after improving.
