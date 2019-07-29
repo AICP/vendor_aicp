@@ -82,6 +82,33 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/aicp/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Google extra permissions and features
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/permissions/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/com.google.android.dialer.support.xml:system/etc/permissions/com.google.android.dialer.support.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/com.google.android.feature.ANDROID_ONE_EXPERIENCE.xml:system/etc/permissions/com.google.android.feature.ANDROID_ONE_EXPERIENCE.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-wellbeing.xml:system/etc/permissions/privapp-permissions-wellbeing.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/hiddenapi-package-whitelist.xml:system/etc/sysconfig/hiddenapi-package-whitelist.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/nexus.xml:system/etc/sysconfig/nexus.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:system/etc/sysconfig/pixel_2016_exclusive.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_2017_exclusive.xml:system/etc/sysconfig/pixel_2017_exclusive.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_2018_exclusive.xml:system/etc/sysconfig/pixel_2018_exclusive.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_2019_midyear_exclusive.xml:system/etc/sysconfig/pixel_2019_midyear_exclusive.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_experience_2017.xml:system/etc/sysconfig/pixel_experience_2017.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_experience_2018.xml:system/etc/sysconfig/pixel_experience_2018.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/pixel_experience_2019_midyear.xml:system/etc/sysconfig/pixel_experience_2019_midyear.xml \
+    vendor/aicp/prebuilt/common/etc/sysconfig/wellbeing-hiddenapi-package-whitelist.xml:system/etc/sysconfig/wellbeing-hiddenapi-package-whitelist.xml
+
+# Google extra libraries (sketch/swipe)
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/lib/libsketchology_native.so:system/lib/libsketchology_native.so \
+    vendor/aicp/prebuilt/common/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
