@@ -33,10 +33,4 @@
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.ACCESS_FONT_MANAGER" />
     </privapp-permissions>
-
-    <privapp-permissions package="org.lineageos.snap">
-        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-        <permission name="android.permission.PREVENT_POWER_KEY" />
-        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
-    </privapp-permissions>
 </permissions>

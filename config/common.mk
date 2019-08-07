@@ -24,6 +24,7 @@ PRODUCT_COPY_FILES += \
 # AICP
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-aicp.xml:system/etc/permissions/privapp-permissions-aicp.xml
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-snap.xml:system/etc/permissions/privapp-permissions-snap.xml
 
 # Backup Tool
 ifeq ($(AB_OTA_UPDATER),true)
