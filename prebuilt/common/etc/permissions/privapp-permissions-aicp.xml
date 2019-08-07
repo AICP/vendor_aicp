@@ -6,13 +6,6 @@
         <permission name="android.permission.RECOVERY" />
     </privapp-permissions>
 
-    <privapp-permissions package="com.aicp.updater3">
-        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
-        <permission name="android.permission.REBOOT"/>
-        <permission name="android.permission.RECOVERY"/>
-        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.dialer">
         <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
         <permission name="android.permission.INTERACT_ACROSS_USERS" />
