@@ -24,7 +24,8 @@ PRODUCT_COPY_FILES += \
 # AICP
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-aicp.xml:system/etc/permissions/privapp-permissions-aicp.xml \
-    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-snap.xml:system/etc/permissions/privapp-permissions-snap.xml
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-snap.xml:system/etc/permissions/privapp-permissions-snap.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-updater.xml:system/etc/permissions/privapp-permissions-updater.xml
 
 # Backup Tool
 ifeq ($(AB_OTA_UPDATER),true)
@@ -254,8 +255,6 @@ include vendor/aicp/config/aicp_version.mk
 ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    Updater
-PRODUCT_COPY_FILES += \
-   vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-updater.xml:system/etc/permissions/privapp-permissions-updater.xml
 endif
 
 # Google sounds
