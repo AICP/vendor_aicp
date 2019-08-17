@@ -174,9 +174,9 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 [B]Kernel source:[/B]
 [B]Put the Github link to your kernel HERE (mandatory), not posting the kernel source violates the GPL, and also violates the rules on XDA ...[/B]
 [B]Device tree source:[/B]
-[B]Put the Github link to your device tree HERE. This is not mandatory, but might help users. ;)[/B]
+[B]Put the Github link to your device tree HERE.[/B]
 [B]Vendor source:[/B]
-[B]Put the Github link to your used vendor HERE. This is also not mandatory, but might help users. ;)[/B]
+[B]Put the Github link to your used vendor HERE.[/B]
 
 [B]ROM & Additional links:
 [URL="https://www.aicp-rom.com/"]AICP's Homepage[/URL]
@@ -184,6 +184,7 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 [URL="https://github.com/AICP"]AICP sources on Github[/URL]
 [URL="https://dwnld.aicp-rom.com/"]AICP Download page for official builds and media content[/URL]
 [URL="https://discord.gg/nMQUVRD"]AICP Discord Community[/URL][/B]
+[URL="https://t.me/aicprom"]AICP Telegram channel for server notifications on official builds[/URL][/B]
 
 [B][U]Contributors:[/U][/B]
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
