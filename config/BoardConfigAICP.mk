@@ -7,6 +7,10 @@ ifneq ($(TARGET_IS_AB_DEVICE),true)
      TARGET_USE_JAMESDSP := true
 endif
 
+ifeq ($(TARGET_USE_MUSICFX),false)
+     TARGET_USE_NO_MUSICFX := true
+endif
+
 include vendor/aicp/config/BoardConfigKernel.mk
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
