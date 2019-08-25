@@ -2,6 +2,12 @@
 #ifneq ($(WITH_CM_CHARGER),false)
 #    BOARD_HAL_STATIC_LIBRARIES := libhealthd.cm
 #endif
+
+# things to be set on AB devices
+ifeq ($(TARGET_IS_AB_DEVICE),true)
+    AB_OTA_UPDATER := true
+endif
+
 # things to be set on devices, which build vendor
 ifneq ($(TARGET_BUILD_WITHOUT_VENDOR),true)
     TARGET_USE_JAMESDSP := true
