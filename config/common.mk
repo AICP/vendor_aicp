@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
     librsjni
 
+# Long screenshot
+PRODUCT_PACKAGES += \
+    Longshot
+
 # JamesDSP
 PRODUCT_PACKAGES += \
    libjamesdsp
