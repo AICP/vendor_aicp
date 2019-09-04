@@ -33,6 +33,5 @@
         <item>com.google.android.apps.messaging</item> <!-- Google messaging to enable text messaging -->
         <item>com.android.messaging</item> <!-- AOSP messaging -->
         <item>com.google.android.setupwizard</item> <!-- Google SetupWizard -->
-        <item>org.lineageos.setupwizard</item> <!-- LineageOS SetupWizard -->
     </string-array>
 </resources>

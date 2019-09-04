@@ -1,14 +1,11 @@
-# Inherit common stuff
-$(call inherit-product, vendor/aicp/config/common.mk)
-$(call inherit-product, vendor/aicp/config/common_apn.mk)
+# Inherit full common AICP stuff
+$(call inherit-product, vendor/aicp/config/common_full.mk)
 
-# Telephony
+# Required packages
 PRODUCT_PACKAGES += \
-    Stk
+    LatinIME
 
-# SMS
-PRODUCT_PACKAGES += \
-    messaging
-
-# Include Lineage LatinIME dictionaries
+# Include AICP LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
+
+$(call inherit-product, vendor/aicp/config/telephony.mk)

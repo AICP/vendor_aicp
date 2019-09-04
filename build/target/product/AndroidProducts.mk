@@ -17,4 +17,5 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aicp_arm.mk \
     $(LOCAL_DIR)/aicp_arm64.mk \
-    $(LOCAL_DIR)/aicp_x86.mk
+    $(LOCAL_DIR)/aicp_x86.mk \
+    $(LOCAL_DIR)/aicp_x86_64.mk

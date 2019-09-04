@@ -1,5 +1,7 @@
 # Platform names
-include vendor/aicp/build/core/vendor/qcom_boards.mk
+MSMNILE := msmnile #SM8150
+MSMSTEPPE := sm6150
+TRINKET := trinket #SM6125
 
 B_FAMILY := msm8226 msm8610 msm8974
 B64_FAMILY := msm8992 msm8994

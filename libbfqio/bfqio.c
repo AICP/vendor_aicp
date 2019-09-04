@@ -19,7 +19,7 @@
 #include <errno.h>
 #include <fcntl.h>
 #include <cutils/iosched_policy.h>
-#include <cutils/log.h>
+#include <log/log.h>
 #include <pthread.h>
 #include <string.h>
 #include <sys/stat.h>

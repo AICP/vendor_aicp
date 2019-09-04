@@ -4,4 +4,4 @@
 #
 L="log -p i -t aicp"
 
-$L "Welcome to Android `getprop ro.build.version.release` / AICP `getprop ro.aicp.version`";
+$L "Welcome to Android `getprop ro.build.version.release` / AICP-`getprop ro.aicp.version.update`";

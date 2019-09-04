@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
-# Copyright (C) 2013-2015 The CyanogenMod Project
-#           (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2013-15 The CyanogenMod Project
+#           (C) 2017    The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -154,11 +154,11 @@ def fetch_query(remote_url, query):
 
 if __name__ == '__main__':
     # Default to AICP Gerrit
-    default_gerrit = 'http://gerrit.aicp-rom.com'
+    default_gerrit = 'https://gerrit.aicp-rom.com'
 
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter, description=textwrap.dedent('''\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from CyanogenMod's Gerrit instance (or any gerrit instance of your choosing)
+        patches from AICP's Gerrit instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
@@ -182,8 +182,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', help='use the specified path for the change')
-    parser.add_argument('-t', '--topic', nargs='*', help='pick all commits from the specified topics')
-    parser.add_argument('-H', '--hashtag', help='pick all commits from a specified hastag')
+    parser.add_argument('-t', '--topic', help='pick all commits from a specified topic')
     parser.add_argument('-Q', '--query', help='pick all commits using the specified query')
     parser.add_argument('-g', '--gerrit', default=default_gerrit, help='Gerrit Instance to use. Form proto://[user@]host[:port]')
     parser.add_argument('-e', '--exclude', nargs=1, help='exclude a list of commit numbers separated by a ,')
@@ -199,8 +198,8 @@ if __name__ == '__main__':
     if args.quiet and args.verbose:
         parser.error('--quiet and --verbose cannot be specified together')
 
-    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.hashtag) << bool(args.query)) != 2:
-        parser.error('One (and only one) of change_number, topic, hashtag, and query are allowed')
+    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.query)) != 2:
+        parser.error('One (and only one) of change_number, topic, and query are allowed')
 
     # Change current directory to the top of the tree
     if 'ANDROID_BUILD_TOP' in os.environ:
@@ -253,8 +252,6 @@ if __name__ == '__main__':
     for project in projects:
         name = project.get('name')
         path = project.get('path')
-        if path is None:
-            path=name
         revision = project.get('revision')
         if revision is None:
             for remote in remotes:
@@ -285,15 +282,7 @@ if __name__ == '__main__':
             return cmp(review_a['number'], review_b['number'])
 
     if args.topic:
-        for t in args.topic:
-            # Store current topic to process for change_numbers
-            topic = fetch_query(args.gerrit, 'status:open+topic:{0}'.format(t))
-            # Append topic to reviews, for later reference
-            reviews += topic
-            # Cycle through the current topic to get the change numbers
-            change_numbers += sorted([str(r['number']) for r in topic], key=int)
-    if args.hashtag:
-        reviews = fetch_query(args.gerrit, 'hashtag:{0}'.format(args.hashtag))
+        reviews = fetch_query(args.gerrit, 'topic:{0}'.format(args.topic))
         change_numbers = [str(r['number']) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))]
     if args.query:
         reviews = fetch_query(args.gerrit, args.query)
@@ -310,10 +299,7 @@ if __name__ == '__main__':
                     change_numbers.append(str(i))
             else:
                 change_numbers.append(c)
-        try:
-            reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
-        except urllib2.HTTPError:
-            reviews = fetch_query(args.gerrit[0:-1], ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
+        reviews = fetch_query(args.gerrit, ' OR '.join('change:{0}'.format(x.split('/')[0]) for x in change_numbers))
 
     # make list of things to actually merge
     mergables = []
@@ -376,10 +362,10 @@ if __name__ == '__main__':
         #   - check that the project path exists
         project_path = None
 
-        if args.path:
-            project_path = args.path
-        elif item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
+        if item['project'] in project_name_to_data and item['branch'] in project_name_to_data[item['project']]:
             project_path = project_name_to_data[item['project']][item['branch']]
+        elif args.path:
+            project_path = args.path
         elif args.ignore_missing:
             print('WARNING: Skipping {0} since there is no project directory for: {1}\n'.format(item['id'], item['project']))
             continue
@@ -433,11 +419,13 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit aicp', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit github', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch aicp', item['fetch'][method]['ref']]
+                cmd = ['git fetch github', item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
+            else:
+                print(cmd)
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             FETCH_HEAD = '{0}/.git/FETCH_HEAD'.format(project_path)
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
@@ -445,7 +433,7 @@ if __name__ == '__main__':
                 sys.exit(result)
         # Check if it worked
         if args.gerrit != default_gerrit or os.stat(FETCH_HEAD).st_size == 0:
-            # If not using the default gerrit or AICP failed, fetch from gerrit.
+            # If not using the default gerrit or github failed, fetch from gerrit.
             if args.verbose:
                 if args.gerrit == default_gerrit:
                     print('Fetching from GitHub didn\'t work, trying to fetch the change from Gerrit')
@@ -458,11 +446,12 @@ if __name__ == '__main__':
                 cmd = ['git fetch', item['fetch'][method]['url'], item['fetch'][method]['ref']]
             if args.quiet:
                 cmd.append('--quiet')
+            else:
+                print(cmd)
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             if result != 0:
                 print('ERROR: git command failed')
                 sys.exit(result)
-
         # Perform the cherry-pick
         if not args.pull:
             cmd = ['git cherry-pick --ff FETCH_HEAD']
