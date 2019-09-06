@@ -1,6 +1,6 @@
 [CENTER]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/logo_black.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
 [SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
@@ -8,9 +8,7 @@
 AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD years ago (2012) and since then has evolved into a mature ROM with the BEST community that you can find!!!
 
 Until Android Lollipop, the ROM has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM.
-With the re-brand of CM to LineageOS (LOS) we became LineageOS based with some tweaks from AOSP and we are now based on the "Ground Zero Open Source Project" (GZOSP) for Android Pie.
-
-If there are any bugs, either we will sort them out or the GZOSP team, if it concerns their code base. This ROM isn't GZOSP supported, so there is no need to report errors/bugs to them!!
+With the re-brand of CM to LineageOS (LOS) we became LineageOS based with some tweaks from AOSP, for Android Pie we based on the "Ground Zero Open Source Project" (GZOSP), and now for Android 10 we are fully based on AOSP
 
 
 [CODE]#include <std_disclaimer.h>
@@ -27,11 +25,11 @@ If there are any bugs, either we will sort them out or the GZOSP team, if it con
  */
 [/CODE]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/features.png[/IMG]
-[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/FEATURES.md"]Feature list (rough overview)[/URL]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/features.png[/IMG]
+[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/features.md"]Feature list (rough overview)[/URL]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/credits.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/credits.png[/IMG]
 
 [B]In the beginning we would like to thank:[/B]
 
@@ -44,7 +42,7 @@ Resurrection Remix team
 [B]Community[/B]
 ...
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/team.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/team.png[/IMG]
 
 [B]@LorD ClockaN[/B]
 [B]@zipsnet[/B]
@@ -57,14 +55,14 @@ Resurrection Remix team
 ...
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/donations.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/donations.png[/IMG]
 
 We are paying for servers that build nightlies/weeklies and everything that comes with it, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
-[URL="https://paypal.me/AICPRom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/paypal.png[/IMG][/URL]
+[URL="https://paypal.me/AICPRom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/paypal.png[/IMG][/URL]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/downloads.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/downloads.png[/IMG]
 
 [SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]14.0[/SIZE]
 [/SIZE]
@@ -75,7 +73,7 @@ We advise everyone to keep at least the latest or best working build on their de
 Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/changelog.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/changelog.png[/IMG]
 
 [SIZE=3][B]Full Changelog link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 (Just click the changelog button next to the download link in the list of builds available for your device)
@@ -83,14 +81,14 @@ Maybe copy it to a cloud service or USB too.[/COLOR][/U][/B]
 Google Apps:
 (link the best one for your device, there are several variants out there right now, nano/micro GApps from opengapps.org is almost always a good choice though)
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/issues.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/issues.png[/IMG]
 
 You tell... :P
 
 [B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
 [HIDE][B]Before using the ROM:[/B]
 [COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/p9.0/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
+[COLOR="Blue"]A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/q10.0/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
 
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
@@ -99,7 +97,7 @@ You tell... :P
 [COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP. Custom ROMs modify the framework a lot, so Xposed can cause a ton of issues on custom ROMs. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
 
 [COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A.  Xposed is not yet released for Pie, however you can try to use [url="https://www.xda-developers.com/xposed-framework-unofficial-port-android-pie"]edxposed[/url] .[/COLOR]
+[COLOR="Blue"]A.  Xposed is not yet released for android 10.[/COLOR]
 
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
@@ -121,7 +119,7 @@ You tell... :P
 [COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
 
 [COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/p9.0/xda_template/whatsapp.md"]this[/URL][/COLOR]
+[COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/q10.0/docs/xda_template/whatsapp.md"]this[/URL][/COLOR]
 
 [COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
 [COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.)[/COLOR]
@@ -130,9 +128,9 @@ You tell... :P
 [COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).[/COLOR]
 [COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section in the AICP Extras main page.[/COLOR][/HIDE]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/instructions.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/instructions.png[/IMG]
 
-The ROM should contain everything you need to enjoy Android Pie. You don't need to install any Add-ons, simply download the latest ROM and GApps, then follow the flashing instructions and go!
+The ROM should contain everything you need to enjoy Android 10. You don't need to install any Add-ons, simply download the latest ROM and GApps, then follow the flashing instructions and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM Zipfile.
 
 It is STRONGLY recommended to fully wipe your device before flashing and please avoid restoring system apps and system data with Titanium Backup (or with any backup/restore app) as this can cause stability issues that are very hard to debug, restoring regular apps is fine though.
@@ -169,7 +167,7 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 
 [B]If you want to contribute to AICP, or want see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/sources.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/sources.png[/IMG]
 
 [B]Kernel source:[/B]
 [B]Put the Github link to your kernel HERE (mandatory), not posting the kernel source violates the GPL, and also violates the rules on XDA ...[/B]
@@ -191,12 +189,12 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
 The following information is ONLY needed if you are not opening up a devdb thread on XDA!
-[B]ROM OS Version:[/B] 9.0.x Pie
+[B]ROM OS Version:[/B] 10.x
 [B]Kernel:[/B] Linux x.z.y (for example: 3.18.y)
 
 [B][U]Version Information:[/U][/B]
 [B]Status:[/B] WEEKLY
 [B]Release Date:[/B] mm-dd-yyyy
 
-You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/p9.0/xda_template/dev_office.png"]here[/URL]!!
+You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/dev_office.png"]here[/URL]!!
 [/CENTER]
