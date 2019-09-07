@@ -1,27 +1,25 @@
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    Development \
     SpareParts \
-    LockClock 
+#    LockClock
 
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    LiveWallpapersPicker \
-    PhaseBeam 
+    PhaseBeam
 
 # su
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
+#ifeq ($(WITH_SU),true)
+#PRODUCT_PACKAGES += \
+#    su
+#endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     Calculator \
     BluetoothExt \
-    Launcher3Dark
+#    Launcher3Dark
 
 # MusicFX
 PRODUCT_PACKAGES += \
@@ -31,8 +29,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniRecord
 # Phonograph
-PRODUCT_PACKAGES += \
-    Phonograph
+#PRODUCT_PACKAGES += \
+#    Phonograph
 
 # Jelly
 PRODUCT_PACKAGES += \
@@ -43,8 +41,8 @@ PRODUCT_PACKAGES += \
     OmniJaws
 
 # Fonts packages
-PRODUCT_PACKAGES += \
-    invictrix-fonts
+#PRODUCT_PACKAGES += \
+#    invictrix-fonts
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -92,13 +90,13 @@ PRODUCT_PACKAGES += \
     wget \
     zip
 
-PRODUCT_PACKAGES += \
-    AndroidDarkThemeOverlay \
-    SettingsDarkThemeOverlay
+#PRODUCT_PACKAGES += \
+#    AndroidDarkThemeOverlay \
+#    SettingsDarkThemeOverlay
 
 # Bootanimation include
 PRODUCT_PACKAGES += \
-    bootanimation.zip 
+    bootanimation.zip
 
 # AICP OTA
 ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
@@ -113,4 +111,4 @@ PRODUCT_PACKAGES += \
     FontOpenSansOverlay
 #    TilesWallpaper
 
-include packages/overlays/AICP/product_packages.mk
+-include packages/overlays/AICP/product_packages.mk
