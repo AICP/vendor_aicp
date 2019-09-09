@@ -69,7 +69,7 @@ PRODUCT_COPY_FILES += \
 # AICP permissions
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/privapp-permissions-aicp.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aicp.xml \
-    vendor/aicp/config/permissions/com.aicp.extras.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.aicp.extras.xml \
+    vendor/aicp/config/permissions/com.aicp.extras.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.aicp.extras.xml \
     vendor/aicp/config/permissions/org.lineage.snap.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineage.snap.xml \
     vendor/aicp/config/permissions/com.aicp.updater3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.aicp.updater3.xml \
 
