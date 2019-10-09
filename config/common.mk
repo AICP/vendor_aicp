@@ -43,11 +43,6 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/clean_cache.sh
 
-# init.d support
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/init.d/00banner:$(TARGET_COPY_OUT_SYSTEM)/etc/init.d/00banner \
-    vendor/aicp/prebuilt/common/bin/sysinit:$(TARGET_COPY_OUT_SYSTEM)/bin/sysinit
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
