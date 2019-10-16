@@ -29,7 +29,6 @@ preserve_addon_d() {
         rm $f
       fi
     done
-
     chmod 755 /postinstall/tmp/addon.d/*.sh
   fi
 }
