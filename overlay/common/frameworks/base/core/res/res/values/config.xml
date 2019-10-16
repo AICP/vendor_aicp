@@ -204,4 +204,8 @@
 
     <!-- Flag indicating which package name can access DeviceConfig table -->
     <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
+
+    <!-- The app which will handle routine based automatic battery saver, if empty the UI for
+         routine based battery saver will be hidden -->
+    <string name="config_batterySaverScheduleProvider">com.google.android.apps.turbo</string>
 </resources>
