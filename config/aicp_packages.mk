@@ -23,10 +23,6 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Launcher3Dark
 
-# JamesDSP
-PRODUCT_PACKAGES += \
-   libjamesdsp
-
 # MusicFX
 PRODUCT_PACKAGES += \
     MusicFX
