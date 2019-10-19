@@ -43,5 +43,6 @@
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
         <permission name="android.permission.INTERACT_ACROSS_USERS" />
         <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.DEVICE_POWER" />
     </privapp-permissions>
 </permissions>
