@@ -77,11 +77,24 @@ endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
-    wget \
+    7z \
+    awk \
+    bash \
+    bzip2 \
     curl \
     getcap \
+    htop \
+    lib7z \
+    libsepol \
+    nano \
+    pigz \
+    powertop \
     setcap \
-    vim
+    unrar \
+    unzip \
+    vim \
+    wget \
+    zip
 
 PRODUCT_PACKAGES += \
     AndroidDarkThemeOverlay \
