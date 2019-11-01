@@ -7,7 +7,8 @@ PRODUCT_PACKAGES += \
 # Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    PhaseBeam
+    PhaseBeam \
+    ThemePicker
 
 # su
 PRODUCT_PACKAGES += \
