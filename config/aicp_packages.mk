@@ -115,6 +115,7 @@ endif
 # AICP packages
 PRODUCT_PACKAGES += \
     AicpExtras \
+    AicpThemesStub \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
     FontComfortaaOverlay \
