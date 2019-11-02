@@ -10,6 +10,8 @@ PRODUCT_PACKAGES += \
     PhaseBeam
 
 # su
+PRODUCT_PACKAGES += \
+    adb_root
 #ifeq ($(WITH_SU),true)
 #PRODUCT_PACKAGES += \
 #    su
