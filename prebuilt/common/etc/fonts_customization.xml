@@ -1,0 +1,11 @@
+<fonts-modification version="1">
+    <family customizationType="new-named-family" name="ubuntu">
+        <font weight="400" style="normal">Ubuntu-Regular.ttf</font>
+        <font weight="400" style="italic">Ubuntu-Italic.ttf</font>
+        <font weight="500" style="normal">Ubuntu-Medium.ttf</font>
+        <font weight="500" style="italic">Ubuntu-MediumItalic.ttf</font>
+        <font weight="700" style="normal">Ubuntu-Bold.ttf</font>
+        <font weight="700" style="italic">Ubuntu-BoldItalic.ttf</font>
+    </family>
+    <alias name="ubuntu-medium" to="ubuntu" weight="500" />
+</fonts-modification>

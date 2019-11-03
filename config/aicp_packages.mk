@@ -109,6 +109,7 @@ endif
 # AICP packages
 PRODUCT_PACKAGES += \
     AicpExtras \
-    TilesWallpaper
+    FontUbuntuOverlay
+#    TilesWallpaper
 
 include packages/overlays/AICP/product_packages.mk
