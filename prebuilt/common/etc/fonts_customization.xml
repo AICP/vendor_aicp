@@ -8,4 +8,14 @@
         <font weight="700" style="italic">Ubuntu-BoldItalic.ttf</font>
     </family>
     <alias name="ubuntu-medium" to="ubuntu" weight="500" />
+
+    <family customizationType="new-named-family" name="opensans">
+        <font weight="400" style="normal">OpenSans-Regular.ttf</font>
+        <font weight="400" style="italic">OpenSans-Italic.ttf</font>
+        <font weight="500" style="normal">OpenSans-Medium.ttf</font>
+        <font weight="500" style="italic">OpenSans-MediumItalic.ttf</font>
+        <font weight="700" style="normal">OpenSans-Bold.ttf</font>
+        <font weight="700" style="italic">OpenSans-BoldItalic.ttf</font>
+    </family>
+    <alias name="opensans-medium" to="opensans" weight="500" />
 </fonts-modification>
