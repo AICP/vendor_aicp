@@ -20,8 +20,8 @@ ifeq ($(TARGET_SCREEN_WIDTH),)
     TARGET_SCREEN_WIDTH := 1080
 endif
 ifeq ($(TARGET_SCREEN_HEIGHT),)
-    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1920)
-    TARGET_SCREEN_HEIGHT := 1920
+    $(warning TARGET_SCREEN_HEIGHT is not set, using default value: 1080)
+    TARGET_SCREEN_HEIGHT := 1080
 endif
 
 TARGET_GENERATED_BOOTANIMATION := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION/bootanimation.zip
@@ -32,22 +32,21 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	@mkdir -p $(dir $@)
 	$(hide) tar xfp vendor/aicp/bootanimation/bootanimation.tar -C $(INTERMEDIATES)
 	$(hide) if [ $(TARGET_SCREEN_HEIGHT) -lt $(TARGET_SCREEN_WIDTH) ]; then \
-	    IMAGEWIDTH=$(TARGET_SCREEN_HEIGHT); \
+	    SIZE=$(TARGET_SCREEN_HEIGHT); \
 	else \
-	    IMAGEWIDTH=$(TARGET_SCREEN_WIDTH); \
+	    SIZE=$(TARGET_SCREEN_WIDTH); \
 	fi; \
-	IMAGESCALEWIDTH=$$IMAGEWIDTH; \
-	IMAGESCALEHEIGHT=$$(expr $$IMAGESCALEWIDTH / 3); \
 	if [ "$(TARGET_BOOTANIMATION_HALF_RES)" = "true" ]; then \
-	    IMAGEWIDTH="$$(expr "$$IMAGEWIDTH" / 2)"; \
+	    IMAGESIZE="$$(expr "$$SIZE" / 2)"; \
+	else \
+	    IMAGESIZE=$$SIZE; \
 	fi; \
-	IMAGEHEIGHT=$$(expr $$IMAGEWIDTH / 3); \
-	RESOLUTION="$$IMAGEWIDTH"x"$$IMAGEHEIGHT"; \
+	RESOLUTION="$$IMAGESIZE"x"$$IMAGESIZE"; \
 	for part_cnt in 1 2 3; do \
 	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
 	done; \
-	prebuilts/tools-aicp/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.png; \
-	echo "$$IMAGESCALEWIDTH $$IMAGESCALEHEIGHT 30" > $(INTERMEDIATES)/desc.txt; \
+	prebuilts/tools-aicp/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.jpg; \
+	echo "$$SIZE $$SIZE 30" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/aicp/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
 	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
 
