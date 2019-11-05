@@ -8,7 +8,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     PhaseBeam \
-    ThemePicker
+    ThemePicker \
+    WallpaperPicker2
 
 # su
 PRODUCT_PACKAGES += \
