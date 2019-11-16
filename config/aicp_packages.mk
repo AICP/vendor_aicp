@@ -33,8 +33,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniRecord
 # Phonograph
-#PRODUCT_PACKAGES += \
-#    Phonograph
+PRODUCT_PACKAGES += \
+    Phonograph
 
 # Jelly
 PRODUCT_PACKAGES += \
