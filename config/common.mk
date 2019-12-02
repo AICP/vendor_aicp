@@ -64,6 +64,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    SystemUI
+
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml
