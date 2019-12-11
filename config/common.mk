@@ -96,6 +96,7 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform.xml \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-wellbeing.xml:system/etc/permissions/privapp-permissions-wellbeing.xml \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-google.xml:system/etc/permissions/privapp-permissions-google.xml \
+    vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-google-product.xml:system/etc/permissions/privapp-permissions-google-product.xml \
     vendor/aicp/prebuilt/common/etc/permissions/privapp-permissions-hotword.xml:system/etc/permissions/privapp-permissions-hotword.xml \
     vendor/aicp/prebuilt/common/etc/sysconfig/google_build.xml:system/etc/sysconfig/google_build.xml \
     vendor/aicp/prebuilt/common/etc/sysconfig/google-hiddenapi-package-whitelist.xml:system/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
