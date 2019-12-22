@@ -24,41 +24,42 @@
     </privapp-permissions>
 
     <privapp-permissions package="com.android.systemui">
-        <permission name="android.permission.ACCESS_SURFACE_FLINGER" />
-        <permission name="android.permission.CAMERA" />
-        <permission name="android.permission.CHANGE_CONFIGURATION" />
-        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.ACCESS_SURFACE_FLINGER"/>
+        <permission name="android.permission.CAMERA"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
-        <permission name="android.permission.NAVIGATION_EDITOR" />
-        <permission name="android.permission.PACKAGE_USAGE_STATS" />
-        <permission name="android.permission.READ_SYNC_SETTINGS" />
-        <permission name="android.permission.REBOOT" />
-        <permission name="android.permission.RECOVERY" />
-        <permission name="android.permission.WRITE_SYNC_SETTINGS" />
-        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
-        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+        <permission name="android.permission.NAVIGATION_EDITOR"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_SYNC_SETTINGS"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.RECOVERY"/>
+        <permission name="android.permission.WRITE_SYNC_SETTINGS"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
 
     </privapp-permissions>
 
     <privapp-permissions package="com.android.settings">
-        <permission name="android.permission.ACCESS_FONT_MANAGER" />
-        <permission name="android.permission.RESET_BATTERY_STATS" />
-        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS" />
-        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY" />
+        <permission name="android.permission.ACCESS_FONT_MANAGER"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
+        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.aicp.extras">
-        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
-        <permission name="android.permission.REBOOT" />
-        <permission name="android.permission.RECOVERY" />
-        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.RECOVERY"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
     <privapp-permissions package="org.lineageos.snap">
-        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
         <permission name="android.permission.PREVENT_POWER_KEY" />
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
-        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.aicp.updater3">
@@ -66,8 +67,8 @@
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>
         <permission name="android.permission.READ_EXTERNAL_STORAGE" />
-        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
-        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
 </permissions>
