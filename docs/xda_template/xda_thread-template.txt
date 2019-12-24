@@ -157,7 +157,7 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
 
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
-Magisk versions >= 17.2 don't usually need to be flashed on every dirty flash.
+Magisk versions >= 20.1 don't usually need to be flashed on every dirty flash.
 Depending on the device, you may need to flash it every time, unless your maintainer says otherwise, you should be fine.
 
 [U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
@@ -181,7 +181,7 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 [URL="https://gerrit.aicp-rom.com/"]AICP Gerrit Code Review[/URL]
 [URL="https://github.com/AICP"]AICP sources on Github[/URL]
 [URL="https://dwnld.aicp-rom.com/"]AICP Download page for official builds and media content[/URL]
-[URL="https://discord.gg/nMQUVRD"]AICP Discord Community[/URL][/B]
+[URL="https://discord.gg/nMQUVRD"]AICP Discord Community[/URL]
 [URL="https://t.me/aicprom"]AICP Telegram channel for server notifications on official builds[/URL][/B]
 
 [B][U]Contributors:[/U][/B]
