@@ -26,5 +26,7 @@
     <!-- Smart replies in notifications: Whether we disable the feature unless the app targets P -->
     <bool name="config_smart_replies_in_notifications_requires_targeting_p">false</bool>
 
+    <!-- Whether safe headphone volume warning dialog is disabled on Vol+ (operator specific). -->
+    <bool name="config_safe_media_disable_on_volume_up">true</bool>
 </resources>
 
