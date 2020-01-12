@@ -163,4 +163,7 @@
          See android.view.textclassifier.TextClassificationManager. -->
     <string name="config_defaultTextClassifierPackage">com.google.android.as</string>
 
+    <!-- Allow default notification listener access for Launcher -->
+    <string name="config_defaultListenerAccessPackages">com.android.launcher3:com.google.android.as</string>
+
 </resources>
