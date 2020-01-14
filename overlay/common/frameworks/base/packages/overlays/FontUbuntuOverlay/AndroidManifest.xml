@@ -26,6 +26,6 @@
     <application android:label="@string/font_ubuntu_overlay" android:hasCode="false">
         <meta-data
             android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
-            android:value="ubuntu,ubuntu-medium" />
+            android:value="ubuntu,ubuntu-medium,ubuntu-semi-bold,ubuntu-bold" />
     </application>
 </manifest>

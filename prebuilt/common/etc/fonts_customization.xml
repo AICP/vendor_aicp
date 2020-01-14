@@ -8,6 +8,16 @@
         <font weight="700" style="italic">Ubuntu-BoldItalic.ttf</font>
     </family>
     <alias name="ubuntu-medium" to="ubuntu" weight="500" />
+    <alias name="ubuntu-semi-bold" to="ubuntu" weight="600" />
+    <alias name="ubuntu-bold" to="ubuntu" weight="700" />
+    <alias name="times" to="ubuntu" />
+    <alias name="times new roman" to="ubuntu" />
+    <alias name="palatino" to="ubuntu" />
+    <alias name="georgia" to="ubuntu" />
+    <alias name="baskerville" to="ubuntu" />
+    <alias name="goudy" to="ubuntu" />
+    <alias name="fantasy" to="ubuntu" />
+    <alias name="ITC Stone Serif" to="ubuntu" />
 
     <family customizationType="new-named-family" name="opensans">
         <font weight="400" style="normal">OpenSans-Regular.ttf</font>
@@ -18,4 +28,14 @@
         <font weight="700" style="italic">OpenSans-BoldItalic.ttf</font>
     </family>
     <alias name="opensans-medium" to="opensans" weight="500" />
+    <alias name="opensans-semi-bold" to="opensans" weight="600" />
+    <alias name="opensans-bold" to="opensans" weight="700" />
+    <alias name="times" to="opensans" />
+    <alias name="times new roman" to="opensans" />
+    <alias name="palatino" to="opensans" />
+    <alias name="georgia" to="opensans" />
+    <alias name="baskerville" to="opensans" />
+    <alias name="goudy" to="opensans" />
+    <alias name="fantasy" to="opensans" />
+    <alias name="ITC Stone Serif" to="opensans" />
 </fonts-modification>
