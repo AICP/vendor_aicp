@@ -8,7 +8,8 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := pa-overlays
 LOCAL_REQUIRED_MODULES := \
     FontUbuntuOverlay \
-    FontOpenSansOverlay
+    FontOpenSansOverlay \
+    FontComfortaaOverlay
 
 include $(BUILD_PHONY_PACKAGE)
 include $(call first-makefiles-under,$(LOCAL_PATH))
