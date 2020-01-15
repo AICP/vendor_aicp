@@ -112,7 +112,8 @@ endif
 PRODUCT_PACKAGES += \
     AicpExtras \
     FontUbuntuOverlay \
-    FontOpenSansOverlay
+    FontOpenSansOverlay \
+    FontComfortaaOverlay
 #    TilesWallpaper
 
 -include packages/overlays/AICP/product_packages.mk
