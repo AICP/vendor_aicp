@@ -126,7 +126,7 @@ case "$1" in
     mount_system
     mkdir -p $C
     if check_prereq; then
-        if check_whitelist system; then
+        if check_whitelist $S; then
             unmount_system
             exit 127
         fi
