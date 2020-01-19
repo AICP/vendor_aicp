@@ -6754,8 +6754,6 @@
       mmsproxy="82.113.100.5"
       mmsport="8080"
       type="default,supl,mms"
-      mvno_match_data="2620739"
-      mvno_type="imsi"
   />
 
   <apn carrier="O2 DE IMS"
