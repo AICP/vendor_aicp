@@ -64,8 +64,8 @@
         <font weight="700" style="normal">CaviarDreams-Bold.ttf</font>
         <font weight="700" style="italic">CaviarDreams-BoldItalic.ttf</font>
     </family>
-    <alias name="caviardreams-medium" to="caviardreams" weight="500" />
-    <alias name="caviardreams-semi-bold" to="caviardreams" weight="600" />
+    <alias name="caviardreams-medium" to="caviardreams" weight="600" />
+    <alias name="caviardreams-semi-bold" to="caviardreams" weight="650" />
     <alias name="caviardreams-bold" to="caviardreams" weight="700" />
     <alias name="times" to="caviardreams" />
     <alias name="times new roman" to="caviardreams" />
