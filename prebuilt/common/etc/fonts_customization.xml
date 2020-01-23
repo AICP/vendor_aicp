@@ -109,4 +109,20 @@
     <alias name="goudy" to="sniglet" />
     <alias name="fantasy" to="sniglet" />
     <alias name="ITC Stone Serif" to="sniglet" />
+
+    <family customizationType="new-named-family" name="signika">
+        <font weight="400" style="normal">Signika-Regular.ttf</font>
+        <font weight="600" style="normal">Signika-SemiBold.ttf</font>
+        <font weight="700" style="normal">Signika-Bold.ttf</font>
+    </family>
+    <alias name="signika-semi-bold" to="signika" weight="600" />
+    <alias name="signika-bold" to="signika" weight="700" />
+    <alias name="times" to="signika" />
+    <alias name="times new roman" to="signika" />
+    <alias name="palatino" to="signika" />
+    <alias name="georgia" to="signika" />
+    <alias name="baskerville" to="signika" />
+    <alias name="goudy" to="signika" />
+    <alias name="fantasy" to="signika" />
+    <alias name="ITC Stone Serif" to="signika" />
 </fonts-modification>
