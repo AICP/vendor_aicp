@@ -115,7 +115,8 @@ PRODUCT_PACKAGES += \
     FontOpenSansOverlay \
     FontComfortaaOverlay \
     FontCaviarDreamsOverlay \
-    FontExotwoOverlay
+    FontExotwoOverlay \
+    FontSnigletOverlay
 #    TilesWallpaper
 
 -include packages/overlays/AICP/product_packages.mk

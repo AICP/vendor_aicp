@@ -95,4 +95,18 @@
     <alias name="goudy" to="exotwo" />
     <alias name="fantasy" to="exotwo" />
     <alias name="ITC Stone Serif" to="exotwo" />
+
+    <family customizationType="new-named-family" name="sniglet">
+        <font weight="400" style="normal">Sniglet-Regular.ttf</font>
+    </family>
+    <alias name="sniglet-semi-bold" to="sniglet" weight="600" />
+    <alias name="sniglet-bold" to="sniglet" weight="700" />
+    <alias name="times" to="sniglet" />
+    <alias name="times new roman" to="sniglet" />
+    <alias name="palatino" to="sniglet" />
+    <alias name="georgia" to="sniglet" />
+    <alias name="baskerville" to="sniglet" />
+    <alias name="goudy" to="sniglet" />
+    <alias name="fantasy" to="sniglet" />
+    <alias name="ITC Stone Serif" to="sniglet" />
 </fonts-modification>
