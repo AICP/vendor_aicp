@@ -10,7 +10,8 @@ LOCAL_REQUIRED_MODULES := \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
     FontComfortaaOverlay \
-    FontCaviarDreamsOverlay
+    FontCaviarDreamsOverlay \
+    FontExotwoOverlay
 
 include $(BUILD_PHONY_PACKAGE)
 include $(call first-makefiles-under,$(LOCAL_PATH))

@@ -114,7 +114,8 @@ PRODUCT_PACKAGES += \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
     FontComfortaaOverlay \
-    FontCaviarDreamsOverlay
+    FontCaviarDreamsOverlay \
+    FontExotwoOverlay
 #    TilesWallpaper
 
 -include packages/overlays/AICP/product_packages.mk

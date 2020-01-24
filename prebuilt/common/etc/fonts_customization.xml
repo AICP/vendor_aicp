@@ -75,4 +75,24 @@
     <alias name="goudy" to="caviardreams" />
     <alias name="fantasy" to="caviardreams" />
     <alias name="ITC Stone Serif" to="caviardreams" />
+
+    <family customizationType="new-named-family" name="exotwo">
+        <font weight="400" style="normal">Exo2-Regular.ttf</font>
+        <font weight="400" style="italic">Exo2-Italic.ttf</font>
+        <font weight="500" style="normal">Exo2-Medium.ttf</font>
+        <font weight="500" style="italic">Exo2-MediumItalic.ttf</font>
+        <font weight="700" style="normal">Exo2-Bold.ttf</font>
+        <font weight="700" style="italic">Exo2-BoldItalic.ttf</font>
+    </family>
+    <alias name="exotwo-medium" to="exotwo" weight="500" />
+    <alias name="exotwo-semi-bold" to="exotwo" weight="600" />
+    <alias name="exotwo-bold" to="exotwo" weight="700" />
+    <alias name="times" to="exotwo" />
+    <alias name="times new roman" to="exotwo" />
+    <alias name="palatino" to="exotwo" />
+    <alias name="georgia" to="exotwo" />
+    <alias name="baskerville" to="exotwo" />
+    <alias name="goudy" to="exotwo" />
+    <alias name="fantasy" to="exotwo" />
+    <alias name="ITC Stone Serif" to="exotwo" />
 </fonts-modification>
