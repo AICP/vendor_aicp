@@ -55,4 +55,24 @@
     <alias name="goudy" to="comfortaa" />
     <alias name="fantasy" to="comfortaa" />
     <alias name="ITC Stone Serif" to="comfortaa" />
+
+    <family customizationType="new-named-family" name="caviardreams">
+        <font weight="400" style="normal">CaviarDreams-Regular.ttf</font>
+        <font weight="400" style="italic">CaviarDreams-Italic.ttf</font>
+        <font weight="500" style="normal">CaviarDreams-Medium.ttf</font>
+        <font weight="500" style="italic">CaviarDreams-MediumItalic.ttf</font>
+        <font weight="700" style="normal">CaviarDreams-Bold.ttf</font>
+        <font weight="700" style="italic">CaviarDreams-BoldItalic.ttf</font>
+    </family>
+    <alias name="caviardreams-medium" to="caviardreams" weight="500" />
+    <alias name="caviardreams-semi-bold" to="caviardreams" weight="600" />
+    <alias name="caviardreams-bold" to="caviardreams" weight="700" />
+    <alias name="times" to="caviardreams" />
+    <alias name="times new roman" to="caviardreams" />
+    <alias name="palatino" to="caviardreams" />
+    <alias name="georgia" to="caviardreams" />
+    <alias name="baskerville" to="caviardreams" />
+    <alias name="goudy" to="caviardreams" />
+    <alias name="fantasy" to="caviardreams" />
+    <alias name="ITC Stone Serif" to="caviardreams" />
 </fonts-modification>
