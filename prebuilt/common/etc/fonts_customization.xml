@@ -125,4 +125,27 @@
     <alias name="goudy" to="signika" />
     <alias name="fantasy" to="signika" />
     <alias name="ITC Stone Serif" to="signika" />
+
+    <family customizationType="new-named-family" name="oxanium">
+        <font weight="100" style="normal">Oxanium-Thin.ttf</font>
+        <font weight="300" style="normal">Oxanium-Light.ttf</font>
+        <font weight="400" style="normal">Oxanium-Regular.ttf</font>
+        <font weight="500" style="normal">Oxanium-Medium.ttf</font>
+        <font weight="600" style="italic">Oxanium-SemiBold.ttf</font>
+        <font weight="700" style="normal">Oxanium-Bold.ttf</font>
+    </family>
+    <alias name="oxanium-thin" to="oxanium" weight="100" />
+    <alias name="oxanium-light" to="oxanium" weight="300" />
+    <alias name="oxanium-regular" to="oxanium" weight="400" />
+    <alias name="oxanium-medium" to="oxanium" weight="500" />
+    <alias name="oxanium-semi-bold" to="oxanium" weight="600" />
+    <alias name="oxanium-bold" to="oxanium" weight="700" />
+    <alias name="times" to="oxanium" />
+    <alias name="times new roman" to="oxanium" />
+    <alias name="palatino" to="oxanium" />
+    <alias name="georgia" to="oxanium" />
+    <alias name="baskerville" to="oxanium" />
+    <alias name="goudy" to="oxanium" />
+    <alias name="fantasy" to="oxanium" />
+    <alias name="ITC Stone Serif" to="oxanium" />
 </fonts-modification>

@@ -117,7 +117,8 @@ PRODUCT_PACKAGES += \
     FontCaviarDreamsOverlay \
     FontExotwoOverlay \
     FontSnigletOverlay \
-    FontSignikaOverlay
+    FontSignikaOverlay \
+    FontOxaniumOverlay
 #    TilesWallpaper
 
 -include packages/overlays/AICP/product_packages.mk
