@@ -19,6 +19,7 @@
     <privapp-permissions package="com.android.settings">
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.RESET_BATTERY_STATS"/>
+        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
     </privapp-permissions>
 
     <!-- Additional permissions on top of privapp-permissions-platform.xml -->
