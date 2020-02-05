@@ -1,6 +1,3 @@
-# Version information used on all builds
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_UTC_DATE=$(shell date +"%s")
-
 AICP_BRANCH=q
 
 # AICP RELEASE VERSION
@@ -40,21 +37,3 @@ else
 #We reset back to UNOFFICIAL
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
-
-# AICP System Version
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.aicp.display.version=$(AICP_VERSION) \
-    ro.aicp.buildtype=$(AICP_BUILDTYPE) \
-    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
-    ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
-
-# needed for statistics
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.aicp.branch=$(AICP_BRANCH) \
-    ro.romstats.url=https://stats.aicp-rom.com/ \
-    ro.romstats.name=AICP \
-    ro.romstats.buildtype=$(AICP_BUILDTYPE) \
-    ro.romstats.version=$(VERSION) \
-    ro.romstats.tframe=1 \
-    ro.romstats.askfirst=1
