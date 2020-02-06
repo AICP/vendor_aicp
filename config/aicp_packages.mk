@@ -29,9 +29,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     MusicFX
 
-# Omni-Record
-PRODUCT_PACKAGES += \
-    OmniRecord
 # Phonograph
 PRODUCT_PACKAGES += \
     Phonograph
