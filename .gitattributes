@@ -1,0 +1,3 @@
+# force .mk files for unix lf
+*.mk text eol=lf
+
