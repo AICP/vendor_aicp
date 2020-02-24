@@ -5,9 +5,28 @@ To enable the swipe up gesture:
 <bool name="config_swipe_up_gesture_setting_available">true</bool>
 ```
 
+Add if the device has a high aspect ratio (mostly 18:9 or 19:9):
+```
+<bool name="config_haveHigherAspectRatioScreen">true</bool>
+```
+
 To enable double tap to wake (if your device supports it):
 ```
 <bool name="config_supportDoubleTapWake">true</bool>
+```
+
+To adjust the cpu temp path for the cpu info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
+```
+<string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone7/temp</string>
+```
+
+To enable call recording (add to: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml):
+```
+<bool name="call_recording_enabled">true</bool>
+```
+Most devices also need this for call recording to work properly (add to: same file as the above overlay XML):
+```
+<integer name="call_recording_audio_source">4</integer>
 ```
 
 To enable AOD (Always On Display) - Please think twice before doing so:
@@ -89,3 +108,77 @@ Useful if you want to improve signal reception:
 ```
 <bool name="config_ignoreRssnrSignalLevel">true</bool>
 ```
+
+Optional AICP packages to add (in device.mk)
+-------------------------------
+
+To build our fork of the Lineage Snap camera:
+```
+PRODUCT_PACKAGES += \
+    Snap
+```
+
+To include JamesDSP instead of MusicFX:
+
+Note:
+
+>This will not work on devices that use the stock vendor image
+
+>You will also have to add the audio effect
+
+>Pick this if you have audio_effects.xml: https://gerrit.aicp-rom.com/c/AICP/device_htc_hima-common/+/79367
+
+>Pick this if you have audio_effects.conf: https://gerrit.aicp-rom.com/c/AICP/device_oneplus_msm8998-common/+/79640
+```
+PRODUCT_PACKAGES += \
+    JamesDSPManager
+```
+
+Optional AICP packages to remove (in BoardConfig.mk)
+-------------------------------
+
+To remove MusicFX (and ship without any included equalizer app):
+```
+TARGET_USE_MUSICFX := false
+```
+
+Add if you have an A/B device:
+```
+TARGET_IS_AB_DEVICE := true
+```
+
+Add if your device has a vendor partiton, but does not build the vendor image with the ROM zip:
+```
+BUILD_WITHOUT_VENDOR := true
+```
+
+
+For prebuilt twrp on a/b devices:
+-------------------------------
+
+Replicate https://github.com/AICP/device_twrp
+
+Get twrp.img for your device
+```
+
+abootimg -x twrp.img
+```
+
+mv initrd.img initrd.gz
+```
+
+gunzip initrd.gz
+```
+
+mkdir tmp
+```
+
+cd tmp
+```
+
+cpio -m -i <../initrd
+```
+
+zip -ry ../ramdisk-recovery.zip *
+```
+If your twrp ramdisk includes unusual file names it may break the build, such as [ and [[ from busybox, if your twrp includes them, then they need to be deleted before zipping the ramdisk, create the symlinks in init.recovery.rc if they're important

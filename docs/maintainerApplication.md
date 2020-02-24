@@ -2,7 +2,7 @@
 
 ## Application procedure
 
-* Applicants with history of "conflicts" won't be accepted in any way. You should be aware of this before applying.
+* Applicants with history of "conflicts" won't be accepted in any way. There's no need to apply for "build-bots" either. You should be aware of this before applying!
 * Applicants should drop a message on our discord server (https://discord.gg/nMQUVRD). The team will then notify the reviewers and give you the appropriate contact information for your reviewer. "Spamming" the discord (and/or team members) will result in an immediate rejection.
 * Applicants contacting the team to apply on any other communication platform but **Discord** will be rejected as they clearly didn't read this!
 * Applicants **must** be aware of the fact that the team's language for communicating is ENGLISH.
@@ -21,7 +21,7 @@
 
 ## Maintainer
 
-* Maintainers **must** have an account on Github and Gerrit.
+* Maintainers **must** have an GMail-account on Github and Gerrit.
 * Maintainers **must** know how to use Gerrit correctly, including the abilities to push / rebase / review / cherrypick commits, the usage of proper topics for related commits or assigning reviewers.
 * Maintainers **must** know how to handle Git correctly, including rebasing / merging / pulling or amending to commits as well as cloning and working with repositories.
 * Maintainers **must** retain proper authorship on commits or changes including the commit history, when using "picked" commits from other sources. Authorship hereby means the **original** author should be named (commit history!). As authorship is important for us in the open source community, it is mandatory for pushing to Github or Gerrit.
@@ -35,14 +35,14 @@
 * The device **must** be buildable by using open sourced dependencies that have a valid commit history.
 * The device **must** have an official or at least trustable recovery (TWRP preferably) working and publicly available.
 * The device **must** enforce SELinux before going official. If not possible at the moment of adding, it will stay in beta stage until SELinux can be enforced.
-* The kernel **should** be upstreamed, https://github.com/android-linux-stable is a great resource (depending on the kernel version), this is not required though. Kernel feature additions **must** be allowed and approved by the team before adding. *For example: Overclocking/undervolting apart from the manufacturer's default is not tolerated.* The kernel **must** not intentionally block any apps and/or magisk modules from being used unless if there is a specific case where it's needed (the team will determine this), this does not mean that you have to make sure that every app and/or module is working, it just means that you can't block them without a good reason. It is **preferred** that the kernel can be compiled with clang.
+* The kernel **should** be upstreamed. https://github.com/android-linux-stable is a great resource (depending on the kernel version) for this, but is not required though. Kernel feature additions **must** be allowed and approved by the team before adding. *For example: Overclocking/undervolting apart from the manufacturer's default is not tolerated.* The kernel **must** not intentionally block any apps and/or magisk modules from being used unless if there is a specific case where it's needed (the team will determine this), this does not mean that you have to make sure that every app and/or module is working, it just means that you can't block them without a good reason. It is **preferred** that the kernel can be compiled with clang.
 * The device's storage capabilities (internal and/or external) **must** be fully working.
 * The device **must** have working audio for phone calls(!) on at least handset, speaker, headset (phone jack) and Bluetooth.
 * The device **must** be able to make a data connections via SIM and/or Wifi. If the device has more than one SIM slot, both slots must be working.
 * The device **must** have other features for data transfers/communication working, like Bluetooth / NFC / Wifi Hotspot or USB tethering. This is of course dependent on the device's hardware.
 * The device **must** have a working camera. This includes front and rear cameras, if applicable. This means that **all** Camera supported features for Photo and Video should be supported and working.
 * The device's sensors, including fingerprint / proximity / acceleration / etc., **must** be working.
-* The device tree **must** not include any unused overlays, but **must** include the basic overlays to work with AICP features like key configs, SmartNav, pocketmode, doze etc.
+* The device tree **must** not include any unused overlays, but **must** include the basic overlays to work with AICP features like e.g. key configs, pocketmode, doze etc.
 * The device tree **can** include device specific overlays and packages, but not any obsolete packages or unnecessary properties (system.prop, vendor.prop, etc.).
 
 
@@ -50,4 +50,4 @@
 
 
 
-## Do you think you still have the guts to tame the beast?
+## Do you think you still have the guts to tame the beast? - Well, then hook us up on https://discord.gg/nMQUVRD
