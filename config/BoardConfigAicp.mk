@@ -1,3 +1,8 @@
+# APEX
+ifneq ($(filter NIGHTLY WEEKLY EXPERIMENTAL,$(AICP_BUILDTYPE)),)
+    TARGET_FLATTEN_APEX := true
+endif
+
 # Charger
 ifeq ($(WITH_AICP_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.aicp
