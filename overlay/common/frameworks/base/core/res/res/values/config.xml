@@ -166,4 +166,7 @@
     <!-- Allow default notification listener access for Launcher -->
     <string name="config_defaultListenerAccessPackages">com.android.launcher3:com.google.android.as</string>
 
+    <!-- Whether or not swipe up gesture's opt-in setting is available on this device -->
+    <bool name="config_swipe_up_gesture_setting_available">true</bool>
+
 </resources>
