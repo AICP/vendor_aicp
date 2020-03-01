@@ -145,7 +145,7 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 2. Boot to recovery (TWRP recommended).
 3. Wipe the System, Cache, and Data (you might need to format the data partition!).
 4. Flash the ROM Zipfile.
-5. Flash the GApps (optional, needed for e.g. Google Playstore to work), GApps are already included for a/b devices.
+5. Flash the GApps (optional, needed for e.g. Google Playstore to work), GApps are already included for some a/b devices.
 6. Reboot and set up your device, enable developer settings and in them OEM unlock/Advanced reboot/USB tethering.
 7. Reboot back into TWRP recovery.
 8. Flash the root solution of your choice (optional).
