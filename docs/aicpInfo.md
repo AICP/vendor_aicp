@@ -1,10 +1,5 @@
 Optional AICP (and general) overlays to add
 -------------------------------
-To enable the swipe up gesture:
-```
-<bool name="config_swipe_up_gesture_setting_available">true</bool>
-```
-
 Add if the device has a high aspect ratio (mostly 18:9 or 19:9):
 ```
 <bool name="config_haveHigherAspectRatioScreen">true</bool>
