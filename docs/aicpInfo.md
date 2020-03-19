@@ -1,27 +1,16 @@
 Optional AICP (and general) overlays to add
 -------------------------------
-Add if the device has a high aspect ratio (mostly 18:9 or 19:9):
+Framework Overlays (add to: overlay/frameworks/base/core/res/res/values/config.xml)
+
+Add if the device has a high aspect ratio (mostly 18:9 or 19:9) and you can specify the ratio also:
 ```
 <bool name="config_haveHigherAspectRatioScreen">true</bool>
+<item name="config_screenAspectRatio" format="float" type="dimen">2.1</item>
 ```
 
 To enable double tap to wake (if your device supports it):
 ```
 <bool name="config_supportDoubleTapWake">true</bool>
-```
-
-To adjust the cpu temp path for the cpu info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
-```
-<string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone7/temp</string>
-```
-
-To enable call recording (add to: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml):
-```
-<bool name="call_recording_enabled">true</bool>
-```
-Most devices also need this for call recording to work properly (add to: same file as the above overlay XML):
-```
-<integer name="call_recording_audio_source">4</integer>
 ```
 
 To enable AOD (Always On Display) - Please think twice before doing so:
@@ -49,11 +38,6 @@ To boost the brightness on a triple press of the power button:
 <integer name="config_triplePressOnPowerBehavior">2</integer>
 ```
 
-To enable statusbar burn-in protection (Amoled only):
-```
-<bool name="config_enableBurnInProtection">true</bool>
-```
-
 To enable smart pixels (Amoled only):
 ```
 <bool name="config_enableSmartPixels">true</bool>
@@ -72,11 +56,6 @@ Enable this if you want to give wellbeing trust permissions:
 You might want to use this if your device isn't friendly with EGL rendering, useful for legacy devices:
 ```
 <bool name="config_animateScreenLights">false</bool>
-```
-
-If your device has high aspect ratio then you know what to do:
-```
-<bool name="config_haveHigherAspectRatioScreen">true</bool>
 ```
 
 If you run qcacld-3.0 wifi driver, you might as well use this for wifi random mac generation, useful when logging in public networks:
@@ -103,6 +82,68 @@ Useful if you want to improve signal reception:
 ```
 <bool name="config_ignoreRssnrSignalLevel">true</bool>
 ```
+
+In the case your device has volume rockers on left side and would like audio panel location to appear on the left side:
+```
+<bool name="config_audioPanelOnLeftSide">false</bool>
+```
+
+The System Info feature requires the following overlays to be non-empty to be functional, as some legacy devices do not have the necessary kernel sysfs to display particular sys info.
+```
+<string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
+<string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
+<string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
+<string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
+```
+
+Support for doze triggers are provided using some overlays, which will have to be enabled depending on the device:
+```
+<bool name="config_dozePulseTilt">false</bool>
+<bool name="config_dozePulseProximity">false</bool>
+```
+
+AICP also allows full customisation to the notification LED function, some overlays have to be enabled depending on the feature supported by the notification LED on device:
+```
+<bool name="config_intrusiveBatteryLed">true</bool>
+<bool name="config_multiColorBatteryLed">true</bool>
+<bool name="config_FastChargingLedSupported">false</bool>
+```
+
+
+SystemUI Overlays (Controls SystemUI behavior) (add to: overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
+
+To adjust the cpu temp path for the cpu info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
+```
+<string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone7/temp</string>
+```
+
+You might also need the following overlay to make the temperature value user-readable
+```
+<integer name="config_cpuTempDivider" translatable="false">1</integer>
+```
+
+The maximum number of notification on the statusbar is currently limited, you can tweak the number of icons using the two overlays:
+```
+<integer name="config_maxVisibleNotificationIcons">5</integer>
+<integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
+```
+
+To enable statusbar burn-in protection (Amoled only):
+```
+<bool name="config_enableBurnInProtection">true</bool>
+```
+
+
+Dialer Overlays (add to: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
+To enable call recording:
+```
+<bool name="call_recording_enabled">true</bool>
+```
+Most devices also need this for call recording to work properly (add to: same file as the above overlay XML):
+```
+<integer name="call_recording_audio_source">4</integer>
+```
+
 
 Optional AICP packages to add (in device.mk)
 -------------------------------
@@ -177,3 +218,28 @@ cpio -m -i <../initrd
 zip -ry ../ramdisk-recovery.zip *
 ```
 If your twrp ramdisk includes unusual file names it may break the build, such as [ and [[ from busybox, if your twrp includes them, then they need to be deleted before zipping the ramdisk, create the symlinks in init.recovery.rc if they're important
+
+
+Integrate device doze packages into Settings
+--------------------------------------------
+You can integrate device-specific doze packages into Settings app using _intent-filter_ element in AndroidManifest.xml of the package:
+```
+<intent-filter>
+    <action android:name="com.aicp.settings.device.DOZE_SETTINGS" />
+    <category android:name="android.intent.category.DEFAULT" />
+</intent-filter>
+```
+as [here](https://github.com/AICP/device_oneplus_sdm845-common/blob/16f5876fdaf72be3a66e2b84ac4c6fff185c572e/doze/AndroidManifest.xml#L52-L55)
+
+
+Compile Kernel against a custom AOSP clang version
+-----------------------------------------------
+to compile your kernel against a custom Clang version, add these to your BoardConfig.mk file
+```
+TARGET_KERNEL_CLANG_CUSTOM := true
+TARGET_KERNEL_CLANG_VERSION := latest
+```
+which will use the latest Clang version available, a specific version can be used using:
+```
+TARGET_KERNEL_CLANG_VERSION := r377782b
+```
