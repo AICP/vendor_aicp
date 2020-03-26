@@ -2,6 +2,11 @@ Optional AICP (and general) overlays to add
 -------------------------------
 Framework Overlays (add to: overlay/frameworks/base/core/res/res/values/config.xml)
 
+Add to enable LiveDisplay:
+```
+<bool name="config_liveDisplayAvailable">true</bool>
+```
+
 Add if the device has a high aspect ratio (mostly 18:9 or 19:9) and you can specify the ratio also:
 ```
 <bool name="config_haveHigherAspectRatioScreen">true</bool>
