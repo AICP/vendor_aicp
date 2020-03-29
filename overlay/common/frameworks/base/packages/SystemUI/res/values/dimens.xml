@@ -22,4 +22,8 @@
     <!-- extra height to add on qs status bar heigth if header enabled -->
     <dimen name="qs_header_image_offset">12dp</dimen>
 
+    <!-- Slice header -->
+    <!-- 12dp -->
+    <dimen name="header_subtitle_padding">8dp</dimen>
+
 </resources>
