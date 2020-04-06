@@ -29,7 +29,7 @@ If there are any bugs, either we will sort them out, if it concerns our code bas
 [/CODE]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/features.png[/IMG]
-[URL="https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/features.md"]Feature list (rough overview)[/URL]
+[URL="https://github.com/AICP/vendor_aicp/blob/q10.0/docs/features.md"]Feature list (rough overview)[/URL]
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/q10.0/docs/xda_template/credits.png[/IMG]
