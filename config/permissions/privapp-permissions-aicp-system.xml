@@ -57,9 +57,9 @@
 
     <privapp-permissions package="org.lineageos.snap">
         <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
-        <permission name="android.permission.PREVENT_POWER_KEY" />
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
         <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="aicp.permission.PREVENT_POWER_KEY"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.aicp.updater3">
