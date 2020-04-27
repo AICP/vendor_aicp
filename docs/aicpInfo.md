@@ -7,6 +7,40 @@ Add to enable LiveDisplay:
 <bool name="config_liveDisplayAvailable">true</bool>
 ```
 
+To fully utilise the hardware keys (Wake up device with keys, enable/disable keys, swap keys, etc. ), the following overlays must be enabled:
+
+```
+    <!-- Hardware keys present on the device, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+             1 - Home
+             2 - Back
+             4 - Menu
+             8 - Assistant (search)
+            16 - App switch
+            32 - Camera
+            64 - Volume rocker
+         For example, a device with Home, Back and Menu keys would set this
+         config to 7. -->
+    <integer name="config_deviceHardwareKeys">64</integer>
+```
+
+```
+    <!-- Hardware keys present on the device with the ability to wake, stored as a bit field.
+         This integer should equal the sum of the corresponding value for each
+         of the following keys present:
+             1 - Home
+             2 - Back
+             4 - Menu
+             8 - Assistant (search)
+            16 - App switch
+            32 - Camera
+            64 - Volume rocker
+         For example, a device with Home, Back and Menu keys would set this
+         config to 7. -->
+    <integer name="config_deviceHardwareWakeKeys">64</integer>
+```
+
 Add if the device has a high aspect ratio (mostly 18:9 or 19:9) and you can specify the ratio also:
 ```
 <bool name="config_haveHigherAspectRatioScreen">true</bool>
@@ -200,28 +234,35 @@ For prebuilt twrp on a/b devices:
 Replicate https://github.com/AICP/device_twrp
 
 Get twrp.img for your device
-```
 
+```
 abootimg -x twrp.img
 ```
 
+```
 mv initrd.img initrd.gz
 ```
 
+```
 gunzip initrd.gz
 ```
 
+```
 mkdir tmp
 ```
 
+```
 cd tmp
 ```
 
+```
 cpio -m -i <../initrd
 ```
 
+```
 zip -ry ../ramdisk-recovery.zip *
 ```
+
 If your twrp ramdisk includes unusual file names it may break the build, such as [ and [[ from busybox, if your twrp includes them, then they need to be deleted before zipping the ramdisk, create the symlinks in init.recovery.rc if they're important
 
 
