@@ -3,6 +3,7 @@
 _apart from the default AOSP settings..._
 
 - Ability to change the device host-name for WiFi connections
+- Ability to change the hosts file to block ads
 - Ability to force the screen & vibrate to turn on or stay off on connection to a charger
 - Access to the built-in AOSP SystemUI tuner features
 - ADB over network option including custom Quick-settings tile
@@ -24,6 +25,7 @@ _apart from the default AOSP settings..._
 - Brightness slider
 - Built-in System themes (light/dark/black/transparent) with different accent colours
 - Charging sound and/or vibration
+- Configurable button lights settings
 - Configurable icon shapes (system wide)
 - CPU info overlay
 - Current Charging status on lock-screen
@@ -36,7 +38,9 @@ _apart from the default AOSP settings..._
 - Double tap to sleep on status bar
 - Downloadable AICP bootanimations and Wallpapers
 - Edge notifications with colour options
+- Enable/Disable hardware keys
 - Enable/Disable lock-screen media art globally
+- Enable/Disable the nabvar
 - Enhanced Changelog in AicpExtras
 - Enhanced Launcher3 (Quickstep) with various tweaks & customizations
 - Expanded audio panel (if enabled)
@@ -48,6 +52,7 @@ _apart from the default AOSP settings..._
 - Integrated OTA-Updater App
 - Launch music player when headset is connected
 - Link/unlink notification & call volume
+- Live display
 - Lockscreen clock customizations
 - Lockscreen Media Cover art
 - Lockscreen Visualizer
@@ -55,9 +60,7 @@ _apart from the default AOSP settings..._
 - Navigation Gestures
 - Network traffic in statusbar
 - On-the-go mode (transparent display)
-- One handed mode
 - Online viewable ROM Statistics per device and provider
-- Pie control
 - Power menu hideable on lock-screen
 - Power menu transparency
 - Quick-settings disable on lock-screen
@@ -74,10 +77,11 @@ _apart from the default AOSP settings..._
 - Quick-settings tile for Account Sync
 - Quick-settings tile titles visibility toggle
 - Quick-settings tiles columns adjustable
-- Quick-settings tiles modded for more option on tap for e.g. WiFi, location, etc.
+- Quick-settings tiles modded for more option on tap for e.g. WiFi, etc.
 - Quick-settings tiles rows adjustable
 - Quick-settings tiles shape adjustable
 - Quick-settings transparency
+- R style notification headers
 - Screen-record via Quick-settings tile or shortcut on power menu
 - Screenshot sound toggle
 - SELinux mode switch
@@ -88,6 +92,7 @@ _apart from the default AOSP settings..._
 - Statusbar logo
 - Statusbar Ticker for notifications and music title
 - Suspend Actions
+- Swap back and recents keys
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
 - System app remover
