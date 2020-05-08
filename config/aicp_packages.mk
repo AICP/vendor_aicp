@@ -122,4 +122,8 @@ PRODUCT_PACKAGES += \
     FontOxaniumOverlay \
     TilesWallpaper
 
+# AICP Ad-block
+PRODUCT_PACKAGES += \
+    hosts.aicp_adblock
+
 -include packages/overlays/AICP/product_packages.mk

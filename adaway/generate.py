@@ -19,10 +19,9 @@ BLACKLIST = [
     "0.0.0.0",
 ]
 
-def write_header(f, sources):
+def write_header(f, source_revision):
     f.write("# This hosts file has been generated on:\n# {}\n# This file is generated from the following sources:\n".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
-    for s in sources:
-        f.write("# {}\n".format(s))
+    f.write("# {}\n".format(source_revision))
     f.write("\n127.0.0.1 localhost\n::1 localhost\n\n")
 
 def read_redirect(line):
@@ -41,18 +40,12 @@ def read_redirect(line):
     return None
 
 if __name__ == "__main__":
-    source_dir = sys.argv[1]
+    source_revision = sys.argv[1]
     outfile = sys.argv[2]
     sources = sys.argv[3:]
     redirects = []
-    source_urls = []
-    with open("{}/sources.txt".format(source_dir), "r") as fin:
-        for line in fin:
-            line = line.split("\n")[0]
-            if len(line) > 0:
-                source_urls.append(line)
     with open(outfile, 'w') as fout:
-        write_header(fout, source_urls)
+        write_header(fout, source_revision)
         # Read hosts sources
         for infile in sources:
             with open(infile, 'r') as fin:

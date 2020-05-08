@@ -1,24 +1,18 @@
 #!/bin/bash
 
+set -e
+
 mydir="$(dirname "$(realpath "$0")")"
 
-hosts_dir="$mydir/.hosts/"
-hosts_out="$mydir/../prebuilt/common/etc/hosts.aicp_adblock"
+hosts_out="$1"
 
-download_hosts() {
-    url="$1"
-    outfile="$2"
-    wget "$url" -O "$outfile"
-}
+hosts_in_repo="$mydir/../../../external/hosts"
+hosts_in="$hosts_in_repo/hosts"
 
+pushd "$hosts_in_repo" > /dev/null
 
-rm "$hosts_dir"/*
+hosts_revision=`(git config --get remote.github.url ; git rev-parse HEAD) | xargs`
 
-i=0
+popd > /dev/null
 
-while read l; do
-    ((i++))
-    download_hosts "$l" "$hosts_dir/hosts$i.txt"
-done < "$mydir/sources.txt"
-
-python3 "$mydir/generate.py" "$mydir" "$hosts_out" "$hosts_dir"/*
+python3 "$mydir/generate.py" "$hosts_revision" "$hosts_out" "$hosts_in"
