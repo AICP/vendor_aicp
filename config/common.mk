@@ -91,10 +91,6 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/aicp/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
     vendor/aicp/prebuilt/common/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
 
-# Power whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/aicp-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/aicp-power-whitelist.xml
-
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
@@ -106,10 +102,6 @@ PRODUCT_COPY_FILES += \
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_SYSTEM)/lib/content-types.properties
-
-# Omnijaws
-PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/org.omnirom.omnijaws.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.omnirom.omnijaws.xml
 
 # Google extra permissions and features
 PRODUCT_COPY_FILES += \

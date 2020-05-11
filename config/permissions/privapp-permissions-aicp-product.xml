@@ -33,30 +33,13 @@
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.aicp.extras">
-        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.camera2">
         <permission name="android.permission.BIND_WALLPAPER"/>
         <permission name="aicp.permission.PREVENT_POWER_KEY"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.dialer">
-        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.gallery3d">
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
-    </privapp-permissions>
-
-    <privapp-permissions package="com.android.launcher3">
-        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
-        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
-        <permission name="android.permission.MANAGE_USERS"/>
-        <permission name="android.permission.DEVICE_POWER"/>
-        <permission name="android.permission.STATUS_BAR"/>
     </privapp-permissions>
 
     <privapp-permissions package="com.android.wallpaper">
