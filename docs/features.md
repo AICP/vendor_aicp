@@ -10,20 +10,21 @@ _apart from the default AOSP settings..._
 - Adjust number of notifications on Lock-screen
 - Adjust volume dialog timeout
 - Adjustable actions for hardware buttons (including "kill app")
-- Adjustable Clear all recents button
 - Advanced call log in AOSP dialer app
 - Advanced power menu with more options (recovery/bootloader/SystemUI, etc.)
-- Aicp Extras app for customizations
+- Aicp Extras app for customizations (searchable from Settings app)
 - Allow more time steps to 'Do not disturb'
-- Always-on display with advanced features (show music title or weather)
+- Always-on display with advanced features (show music title and weather)
 - Aspect ratio hack (legacy apps) configurable per app for supported devices
 - Automatic speakerphone by checking proximity (Dialer)
 - Battery bar with color change & animation on charge
 - Battery LED settings including custom colour setup
+- Blink flashlight for incoming call, call waiting
 - Bluetooth battery level display for external devices
 - Brightness Icon and position settings
 - Brightness slider
 - Built-in System themes (light/dark/black/transparent) with different accent colours
+- Blocking access to certain sensors for some apps to save battery
 - Charging sound and/or vibration
 - Configurable button lights settings
 - Configurable icon shapes (system wide)
@@ -31,7 +32,11 @@ _apart from the default AOSP settings..._
 - Current Charging status on lock-screen
 - Custom App opening/closing animations
 - Custom Carrier Label
+- Custom In-Display fingerprint icons
+- Custom In-Display fingerprint recognising animations
 - Custom system & screen off animations
+- Custom QuickSetting headers
+- Custom QuickSetting footer text
 - Custom volume step count
 - Device wake up via volume buttons toggle
 - Double tap to sleep on lock-screen
@@ -46,6 +51,7 @@ _apart from the default AOSP settings..._
 - Expanded audio panel (if enabled)
 - Fingerprint authentication vibration
 - Flip to Mute/Reject Call
+- FPS info overlay
 - HeadsUp notification timeout toggle
 - HeadsUp notifications snooze timer
 - Installed Apps: show link to Google Playstore
@@ -54,13 +60,15 @@ _apart from the default AOSP settings..._
 - Link/unlink notification & call volume
 - Live display
 - Lockscreen clock customizations
-- Lockscreen Media Cover art
 - Lockscreen Visualizer
-- Membar in recents (default and SlimRecents)
+- Membar in recents (SlimRecents)
 - Navigation Gestures
 - Network traffic in statusbar
+- Notification vibration toggle
 - On-the-go mode (transparent display)
 - Online viewable ROM Statistics per device and provider
+- Partial Screenshot
+- PocketMode
 - Power menu hideable on lock-screen
 - Power menu transparency
 - Quick-settings disable on lock-screen
@@ -82,6 +90,7 @@ _apart from the default AOSP settings..._
 - Quick-settings tiles shape adjustable
 - Quick-settings transparency
 - R style notification headers
+- Rotation suggestions toggle
 - Screen-record via Quick-settings tile or shortcut on power menu
 - Screenshot sound toggle
 - SELinux mode switch
@@ -96,13 +105,14 @@ _apart from the default AOSP settings..._
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
 - System app remover
+- System info on QS panel
 - Toggle to show/hide app icons on toast messages
 - Torch Quick-settings tile and options for longpress on power button to enable it
 - Upload crash logs to aicp haste
 - VoLTE icon switchable
 - Volume button playback control when screen off
 - Volume buttons additional toggle to switch music tracks/cursor control on keyboard
-- Volume panel right/left on supported devices
+- Volume panel right/left
 - Yoga!!
 
 _...and more_
