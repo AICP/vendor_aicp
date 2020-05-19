@@ -172,6 +172,13 @@ To enable statusbar burn-in protection (Amoled only):
 <bool name="config_enableBurnInProtection">true</bool>
 ```
 
+Settings Overlays (add to: overlay/packages/apps/Settings/res/values/config.xml)
+
+To enable display touch sensitivity switch:
+```
+<bool name="config_show_touch_sensitivity">true</bool>
+```
+
 
 Dialer Overlays (add to: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
 To enable call recording:
