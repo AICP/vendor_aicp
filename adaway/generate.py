@@ -17,6 +17,8 @@ BLACKLIST = [
     "ip6-allrouters",
     "ip6-allhosts",
     "0.0.0.0",
+    "ad.doubleclick.net",
+    "www.googleadservices.com",
 ]
 
 def write_header(f, source_revision):
