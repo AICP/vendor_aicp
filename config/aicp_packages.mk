@@ -22,6 +22,7 @@ PRODUCT_PACKAGES += \
 # Extra Optional packages
 PRODUCT_PACKAGES += \
     ExactCalculator \
+    Etar \
     BluetoothExt \
 #    Launcher3Dark
 
