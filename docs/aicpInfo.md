@@ -117,6 +117,34 @@ Normally you don't have to do this, but I've had weird issues running on a 5Ghz 
 <bool translatable="false" name="config_wifi_dual_band_support">true</bool>
 ```
 
+Useful if you have qcacld-3.0 and wifi is always on. This capability can provide power savings when wifi needs to be always kept on.
+```
+<bool translatable="false" name="config_wifi_background_scan_support">true</bool>
+```
+
+If you have a sm8150 device, why not enable WiFi display? Only prerequisite is you must have a rule for the "r_submix" in audio_policy.conf file.
+```
+<bool name="config_enableWifiDisplay">true</bool>
+```
+
+If you plan to use the above overlay,Use this as well.
+```
+<bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
+```
+
+Use this to enable haptic effect when the text insertion/selection handle is moved manually.
+```
+<bool name="config_enableHapticTextHandle">true</bool>
+```
+
+Control the behavior when the user long presses the home button.
+0 = nothing.
+1 = Recent apps view in SystemUI.
+2 =Launch assist intent.
+```
+<integer name="config_longPressOnHomeBehavior">X</integer>
+```
+
 Useful if you want to improve signal reception:
 ```
 <bool name="config_ignoreRssnrSignalLevel">true</bool>
@@ -147,7 +175,6 @@ AICP also allows full customisation to the notification LED function, some overl
 <bool name="config_multiColorBatteryLed">true</bool>
 <bool name="config_FastChargingLedSupported">false</bool>
 ```
-
 
 SystemUI Overlays (Controls SystemUI behavior) (add to: overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
