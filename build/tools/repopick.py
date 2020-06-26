@@ -355,13 +355,15 @@ if __name__ == '__main__':
                 args.quiet or print('ERROR: The patch set {0}/{1} could not be found, using CURRENT_REVISION instead.'.format(change, patchset))
 
     for item in mergables:
-        args.quiet or print('Applying change number {0}...'.format(item['id']))
+        if args.verbose:
+            print('Found change number {0}...'.format(item['id']))
         # Check if change is open and exit if it's not, unless -f is specified
         if (item['status'] != 'OPEN' and item['status'] != 'NEW' and item['status'] != 'DRAFT') and not args.query:
             if args.force:
                 print('!! Force-picking a closed change !!\n')
             else:
-                print('Change status is ' + item['status'] + '. Skipping the cherry pick.\nUse -f to force this pick.')
+                if args.verbose:
+                    print('Change status is ' + item['status'] + '. Skipping the cherry pick.\nUse -f to force this pick.')
                 continue
 
         # Convert the project name to a project path
@@ -415,10 +417,10 @@ if __name__ == '__main__':
                     break
         if found_change:
             continue
-
+        print('Applying change number {0} - {1} - (PatchSet {2}) ...'.format(item['id'],item['subject'].encode('utf-8'),item['patchset']))
         # Print out some useful info
-        if not args.quiet:
-            print(u'--> Subject:       "{0}"'.format(item['subject']))
+        if args.verbose:
+            print(u'--> Subject:       "{0}"'.format(item['subject']).encode('utf-8'))
             print('--> Project path:  {0}'.format(project_path))
             print('--> Change number: {0} (Patch Set {1})'.format(item['id'], item['patchset']))
 
@@ -433,17 +435,17 @@ if __name__ == '__main__':
                 print('Trying to fetch the change from GitHub')
 
             if args.pull:
-                cmd = ['git pull --no-edit github', item['fetch'][method]['ref']]
+                cmd = ['git pull --no-edit aicp', item['fetch'][method]['ref']]
             else:
-                cmd = ['git fetch github', item['fetch'][method]['ref']]
-            if args.quiet:
+                cmd = ['git fetch aicp', item['fetch'][method]['ref']]
+            if not args.verbose:
                 cmd.append('--quiet')
-            else:
+            if args.verbose:
                 print(cmd)
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             FETCH_HEAD = '{0}/.git/FETCH_HEAD'.format(project_path)
             if result != 0 and os.stat(FETCH_HEAD).st_size != 0:
-                print('ERROR: git command failed')
+                print('ERROR: git command failed: {0}'.format(cmd))
                 sys.exit(result)
         # Check if it worked
         if args.gerrit != default_gerrit or os.stat(FETCH_HEAD).st_size == 0:
@@ -458,18 +460,18 @@ if __name__ == '__main__':
                 cmd = ['git pull --no-edit', item['fetch'][method]['url'], item['fetch'][method]['ref']]
             else:
                 cmd = ['git fetch', item['fetch'][method]['url'], item['fetch'][method]['ref']]
-            if args.quiet:
+            if not args.verbose:
                 cmd.append('--quiet')
-            else:
+            if args.verbose:
                 print(cmd)
             result = subprocess.call([' '.join(cmd)], cwd=project_path, shell=True)
             if result != 0:
-                print('ERROR: git command failed')
+                print('ERROR: git command failed: {0}'.format(cmd))
                 sys.exit(result)
         # Perform the cherry-pick
         if not args.pull:
             cmd = ['git cherry-pick --ff FETCH_HEAD']
-            if args.quiet:
+            if not args.verbose:
                 cmd_out = open(os.devnull, 'wb')
             else:
                 cmd_out = None
@@ -489,5 +491,5 @@ if __name__ == '__main__':
                 else:
                     print('ERROR: git command failed')
                     sys.exit(result)
-        if not args.quiet:
-            print('')
+            else:
+                print('Applying change number {0} - successfully completed\n'.format(item['id']))
