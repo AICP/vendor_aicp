@@ -22,6 +22,30 @@
       "revId": "61374b3fa06b8b466bf420f03c380fbc82056088",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a7207944_e22f16a0",
+        "filename": "build/tools/repopick.py",
+        "patchSetId": 8
+      },
+      "lineNbr": 440,
+      "author": {
+        "id": 1601
+      },
+      "writtenOn": "2020-06-30T11:29:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "862cc529_7662c194",
+      "range": {
+        "startLine": 440,
+        "startChar": 36,
+        "endLine": 440,
+        "endChar": 51
+      },
+      "revId": "61374b3fa06b8b466bf420f03c380fbc82056088",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
     }
   ]
 }
