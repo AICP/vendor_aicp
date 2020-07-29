@@ -148,4 +148,7 @@
     <alias name="goudy" to="oxanium" />
     <alias name="fantasy" to="oxanium" />
     <alias name="ITC Stone Serif" to="oxanium" />
+
+     <!-- fallback fonts -->
+
 </fonts-modification>
