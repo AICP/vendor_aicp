@@ -100,9 +100,12 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
 
 # Fonts
+PRODUCT_PACKAGES += \
+    fonts_customization.xml
+
+# Font files
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/aicp/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts) \
-    vendor/aicp/prebuilt/common/etc/fonts_customization.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/fonts_customization.xml
+    $(call find-copy-subdir-files,*,vendor/aicp/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
