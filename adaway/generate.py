@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+from os.path import dirname
+from subprocess import check_output, CalledProcessError
 from datetime import datetime
 import sys
 
@@ -21,6 +23,17 @@ BLACKLIST = [
     "www.googleadservices.com",
 ]
 
+def get_revision_string(directory):
+    try:
+        repo_url = check_output(
+                ["git", "config", "--get", "remote.github.url"], cwd=directory, universal_newlines=True)
+        head_id = check_output(
+                ["git", "rev-parse", "HEAD"], cwd=directory, universal_newlines=True)
+        return f"{repo_url}# {head_id}"
+    # If the file is not in a git repo
+    except CalledProcessError:
+        return "File not versioned"
+
 def write_header(f, source_revision):
     f.write("# This hosts file has been generated on:\n# {}\n# This file is generated from the following sources:\n".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     f.write("# {}\n".format(source_revision))
@@ -41,21 +54,21 @@ def read_redirect(line):
                 return (source, target)
     return None
 
+
 if __name__ == "__main__":
-    source_revision = sys.argv[1]
-    outfile = sys.argv[2]
-    sources = sys.argv[3:]
+    outfile = sys.argv[1]
+    sources = sys.argv[2]
     redirects = []
+    source_revision = get_revision_string(dirname(sources))
     with open(outfile, 'w') as fout:
         write_header(fout, source_revision)
         # Read hosts sources
-        for infile in sources:
-            with open(infile, 'r') as fin:
-                for line in fin:
-                    line = line.split('\n')[0]
-                    redirect = read_redirect(line)
-                    if redirect != None:
-                        redirects.append(redirect)
+        with open(sources, 'r') as fin:
+            for line in fin:
+                line = line.split('\n')[0]
+                redirect = read_redirect(line)
+                if redirect != None:
+                    redirects.append(redirect)
         # Remove duplicates and sort it
         redirects = sorted(list(set(redirects)))
         # Write it
