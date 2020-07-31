@@ -16,6 +16,24 @@
       "revId": "09c8b18b4cc8909c0614e13f5504e5cc8172e6f7",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f3e90c70_db5f6a14",
+        "filename": "adaway/generate.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2020-07-31T11:37:56Z",
+      "side": 0,
+      "message": "Steven black\u0027s script can be easily modified to include new sources, so the multiple sources can be handled there",
+      "parentUuid": "350cf78f_bd4d284b",
+      "revId": "09c8b18b4cc8909c0614e13f5504e5cc8172e6f7",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
     }
   ]
 }
