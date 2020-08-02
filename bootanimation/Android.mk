@@ -30,7 +30,7 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	@echo "Building bootanimation.zip"
 	@rm -rf $(dir $@)
 	@mkdir -p $(dir $@)
-	$(hide) tar xfp vendor/aicp/bootanimation/bootanimation.tar -C $(INTERMEDIATES)
+	$(hide) tar xfp vendor/aicp/bootanimation/bootanimation$(shell shuf -i 0-3 -n 1).tar -C $(INTERMEDIATES)
 	$(hide) if [ $(TARGET_SCREEN_HEIGHT) -lt $(TARGET_SCREEN_WIDTH) ]; then \
 	    SIZE=$(TARGET_SCREEN_HEIGHT); \
 	else \
