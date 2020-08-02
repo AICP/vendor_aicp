@@ -24,13 +24,14 @@ ifeq ($(TARGET_SCREEN_HEIGHT),)
     TARGET_SCREEN_HEIGHT := 1080
 endif
 
+INPUT_ARCHIVE=vendor/aicp/bootanimation/bootanimation$(shell shuf -i 0-3 -n 1).tar
 TARGET_GENERATED_BOOTANIMATION := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION/bootanimation.zip
 $(TARGET_GENERATED_BOOTANIMATION): INTERMEDIATES := $(TARGET_OUT_INTERMEDIATES)/BOOTANIMATION
-$(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
+$(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP) $(INPUT_ARCHIVE)
 	@echo "Building bootanimation.zip"
 	@rm -rf $(dir $@)
 	@mkdir -p $(dir $@)
-	$(hide) tar xfp vendor/aicp/bootanimation/bootanimation.tar -C $(INTERMEDIATES)
+	$(hide) tar xfp $(INPUT_ARCHIVE) -C $(INTERMEDIATES)
 	$(hide) if [ $(TARGET_SCREEN_HEIGHT) -lt $(TARGET_SCREEN_WIDTH) ]; then \
 	    SIZE=$(TARGET_SCREEN_HEIGHT); \
 	else \
