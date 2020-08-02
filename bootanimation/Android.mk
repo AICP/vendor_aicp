@@ -45,13 +45,23 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	for part_cnt in 1 2 3; do \
 	    mkdir -p $(INTERMEDIATES)/part$$part_cnt; \
 	done; \
-	prebuilts/tools-aicp/${HOST_OS}-x86/bin/mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.jpg; \
+	mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.jpg; \
 	echo "$$SIZE $$SIZE 30" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/aicp/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
 	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
+    ifeq ($(shell command -v mogrify),)
+        $(info **********************************************)
+        $(info The boot animation could not be generated as)
+        $(info ImageMagick is not installed in your system.)
+        $(info $(space))
+        $(info Please install ImageMagick from this website:)
+        $(info https://imagemagick.org/script/binary-releases.php)
+        $(info **********************************************)
+        $(error stop)
+    endif
 endif
 
 include $(CLEAR_VARS)
