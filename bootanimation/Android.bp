@@ -26,7 +26,7 @@ genrule {
             "$(location gen-bootanimation.sh)" +
             " $(out)" +
             " $(genDir)" +
-            " $(location bootanimation.tar)" +
+            " $(location bootanimation$(shell shuf -i 0-3 -n 1).tar)" +
             " $(location desc.txt)" +
             " $(location mogrify)" +
             " $(location soong_zip)" +
@@ -37,7 +37,7 @@ genrule {
             "$(location gen-bootanimation.sh)" +
             " $(out)" +
             " $(genDir)" +
-            " $(location bootanimation.tar)" +
+            " $(location bootanimation$(shell shuf -i 0-3 -n 1).tar)" +
             " $(location desc.txt)" +
             " $(location mogrify)" +
             " $(location soong_zip)" +
