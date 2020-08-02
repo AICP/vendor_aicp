@@ -48,7 +48,8 @@ $(TARGET_GENERATED_BOOTANIMATION): $(SOONG_ZIP)
 	mogrify -resize $$RESOLUTION -colors 250 $(INTERMEDIATES)/*/*.jpg; \
 	echo "$$SIZE $$SIZE 30" > $(INTERMEDIATES)/desc.txt; \
 	cat vendor/aicp/bootanimation/desc.txt >> $(INTERMEDIATES)/desc.txt
-	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -D $(INTERMEDIATES)
+	$(hide) find $(INTERMEDIATES)/ -type f \( -name "*.jpg" -or -name "*.txt" \) | sort >$@.list
+	$(hide) $(SOONG_ZIP) -L 0 -o $(TARGET_GENERATED_BOOTANIMATION) -C $(INTERMEDIATES) -l $@.list
 
 ifeq ($(TARGET_BOOTANIMATION),)
     TARGET_BOOTANIMATION := $(TARGET_GENERATED_BOOTANIMATION)
