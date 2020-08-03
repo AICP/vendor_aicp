@@ -34,6 +34,24 @@
       "revId": "09c8b18b4cc8909c0614e13f5504e5cc8172e6f7",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3387ecaf_e7447d38",
+        "filename": "adaway/generate.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 47,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2020-08-03T14:00:03Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "f3e90c70_db5f6a14",
+      "revId": "09c8b18b4cc8909c0614e13f5504e5cc8172e6f7",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": false
     }
   ]
 }
