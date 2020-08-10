@@ -12,6 +12,12 @@ include vendor/aicp/config/aicp_packages.mk
 # Include AICP version
 include vendor/aicp/config/aicp_props.mk
 
+# AOSP recovery flashing
+ifeq ($(TARGET_USES_AOSP_RECOVERY),true)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.sys.recovery_update=true
+endif
+
 # Include AOSP audio files
 include vendor/aicp/config/aosp_audio.mk
 
