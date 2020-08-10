@@ -188,7 +188,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--force', action='store_true', help='force cherry pick even if change is closed')
     parser.add_argument('-p', '--pull', action='store_true', help='execute pull instead of cherry-pick')
     parser.add_argument('-P', '--path', metavar='', help='use the specified path for the change')
-    parser.add_argument('-t', '--topic', metavar='', help='pick all commits from a specified topic')
+    parser.add_argument('-t', '--topic', metavar='', nargs='*', help='pick all commits from the specified topics')
     parser.add_argument('-Q', '--query', metavar='', help='pick all commits using the specified query')
     parser.add_argument('-g', '--gerrit', default=default_gerrit,
                         metavar='', help='Gerrit Instance to use. Form proto://[user@]host[:port]')
