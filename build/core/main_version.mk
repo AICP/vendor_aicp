@@ -8,9 +8,9 @@ endif
 ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.aicp.display.version=$(AICP_VERSION) \
     ro.aicp.buildtype=$(AICP_BUILDTYPE) \
-    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
+    ro.aicp.version.update=$(AICP_BRANCH)$(VERSION) \
     ro.modversion=$(AICP_VERSION) \
-    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
+    ro.aicp.version=$(AICP_BRANCH)$(VERSION)
 
 # additions for LOS-recovery
 ADDITIONAL_SYSTEM_PROPERTIES += \
