@@ -21,9 +21,11 @@ PRODUCT_PACKAGES += \
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    ExactCalculator \
-    Etar \
     BluetoothExt \
+    Email \
+    Etar \
+    ExactCalculator \
+    Exchange2
 #    Launcher3Dark
 
 # MusicFX
