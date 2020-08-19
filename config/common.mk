@@ -18,6 +18,7 @@ include vendor/aicp/config/aosp_audio.mk
 # Google sounds
 include vendor/aicp/google/GoogleAudio.mk
 
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aicp/overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/common
 
 # TWRP
