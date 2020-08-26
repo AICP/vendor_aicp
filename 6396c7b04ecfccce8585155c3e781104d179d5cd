@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "27a44687_e8a5d8d9",
+        "filename": "config/aicp_packages.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 125,
+      "author": {
+        "id": 1446
+      },
+      "writtenOn": "2020-08-26T12:22:18Z",
+      "side": 1,
+      "message": "Remove \"\\\" for last item",
+      "revId": "6396c7b04ecfccce8585155c3e781104d179d5cd",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
