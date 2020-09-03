@@ -57,6 +57,11 @@ type Product_variables struct {
 		Cflags []string
 		Whole_static_libs []string
 	}
+	Uses_legacy_wfd struct {
+		Cflags []string
+		Shared_libs []string
+		Srcs []string
+	}
 	Uses_generic_camera_parameter_library struct {
 		Srcs []string
 	}
@@ -91,6 +96,7 @@ type ProductVariables struct {
 	Target_shim_libs  *string `json:",omitempty"`
 	Target_camera_needs_client_info  *bool `json:",omitempty"`
 	Target_surfaceflinger_fod_lib  *string `json:",omitempty"`
+	Uses_legacy_wfd  *bool `json:",omitempty"`
 	Uses_generic_camera_parameter_library  *bool `json:",omitempty"`
 	Uses_nvidia_enhancements  *bool `json:",omitempty"`
 	Uses_qcom_bsp_legacy  *bool `json:",omitempty"`
