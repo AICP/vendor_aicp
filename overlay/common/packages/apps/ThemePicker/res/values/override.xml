@@ -16,9 +16,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="themes_stub_package">com.google.android.apps.customization.pixel</string>
-    <!-- Authority of a provider in System UI that will provide preview info for available clockfaces. -->
-    <string name="clocks_provider_authority" translatable="false">com.android.keyguard.clock</string>
+    <string name="themes_stub_package" translatable="false">com.android.customization</string>
+    <string name="clocks_stub_package" translatable="false">com.android.customization</string>
 
     <!--Name of metadata in the main launcher Activity which values contains the authority
         corresponding to a ContentProvider in launcher to provide available grids and
