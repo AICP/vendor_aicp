@@ -1,14 +1,14 @@
 bootstrap_go_package {
-    name: "soong-aicp",
-    pkgPath: "aicp/soong/android",
+    name: "soong-lineage",
+    pkgPath: "lineage/soong/android",
     srcs: [
         "android/variable.go",
     ],
 }
 
 bootstrap_go_package {
-    name: "soong-aicp-generator",
-    pkgPath: "aicp/soong/generator",
+    name: "soong-lineage-generator",
+    pkgPath: "lineage/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
@@ -23,7 +23,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-aicp_generator {
+lineage_generator  {
     name: "generated_kernel_includes",
 
     // The headers make command
