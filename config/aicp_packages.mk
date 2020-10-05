@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     MusicFX
 
 # Phonograph
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     Phonograph
 
 # Jelly
@@ -41,11 +41,11 @@ PRODUCT_PACKAGES += \
     Jelly
 
 # OmniJaws
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     OmniStyle
 
 # Fonts packages
@@ -114,7 +114,7 @@ endif
 
 # AICP packages
 PRODUCT_PACKAGES += \
-    AicpExtras \
+#    AicpExtras \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
     FontComfortaaOverlay \
@@ -124,10 +124,10 @@ PRODUCT_PACKAGES += \
     FontSignikaOverlay \
     FontOxaniumOverlay \
     FontInterOverlay \
-    TilesWallpaper
+#    TilesWallpaper
 
 # AICP Ad-block
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
--include packages/overlays/AICP/product_packages.mk
+#-include packages/overlays/AICP/product_packages.mk
