@@ -41,11 +41,11 @@ PRODUCT_PACKAGES += \
     Jelly
 
 # OmniJaws
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     OmniStyle
 
 # Fonts packages
@@ -113,7 +113,7 @@ PRODUCT_PACKAGES +=  \
 endif
 
 # AICP packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AicpExtras \
     FontUbuntuOverlay \
     FontOpenSansOverlay \
@@ -127,7 +127,7 @@ PRODUCT_PACKAGES += \
     TilesWallpaper
 
 # AICP Ad-block
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
--include packages/overlays/AICP/product_packages.mk
+#-include packages/overlays/AICP/product_packages.mk
