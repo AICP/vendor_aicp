@@ -98,7 +98,6 @@ function breakfast()
             lunch aicp_$target-$variant
         fi
     fi
-    execaicpscripts
     return $?
 }
 
