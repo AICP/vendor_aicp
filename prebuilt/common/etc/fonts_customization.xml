@@ -161,4 +161,6 @@
     </family>
     <alias name="inter-medium" to="inter" weight="500" />
 
+    <!-- additional fonts -->
+
 </fonts-modification>
