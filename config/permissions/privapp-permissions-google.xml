@@ -541,4 +541,8 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.projection.gearhead">
+        <permission name="android.permission.MANAGE_USB"/>
+    </privapp-permissions>
+
 </permissions>
