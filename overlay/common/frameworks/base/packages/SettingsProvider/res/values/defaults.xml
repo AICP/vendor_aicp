@@ -23,4 +23,7 @@
 
     <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
+    <!-- Enable auto - brightness by default -->
+    <bool name="def_screen_brightness_automatic_mode">true</bool>
+
 </resources> 
