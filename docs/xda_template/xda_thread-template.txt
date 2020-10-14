@@ -66,7 +66,7 @@ We are paying for servers that build weeklies and everything that comes with thi
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/downloads.png[/IMG]
 
-[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]16.1[/SIZE]
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]11.0[/SIZE]
 [/SIZE]
 [SIZE=3][B]Download link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
