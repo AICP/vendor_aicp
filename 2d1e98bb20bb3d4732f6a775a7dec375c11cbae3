@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "60b63bad_35e94832",
+        "filename": "config/BoardConfigKernel.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2020-10-14T08:35:11Z",
+      "side": 1,
+      "message": "is this referring to our custom-clang  mechanism?",
+      "range": {
+        "startLine": 56,
+        "startChar": 41,
+        "endLine": 56,
+        "endChar": 47
+      },
+      "revId": "2d1e98bb20bb3d4732f6a775a7dec375c11cbae3",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
