@@ -1,7 +1,7 @@
 AICP_BRANCH=r
 
 # AICP RELEASE VERSION
-AICP_VERSION_MAJOR = 16
+AICP_VERSION_MAJOR = 11
 AICP_VERSION_MINOR = 0
 AICP_VERSION_MAINTENANCE = 0
 
@@ -22,18 +22,18 @@ endif
 
 ifdef AICP_BUILDTYPE
     ifeq ($(AICP_BUILDTYPE), NIGHTLY)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-NIGHTLY-$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)$(VERSION)-NIGHTLY-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILDTYPE), WEEKLY)
-       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-WEEKLY-$(shell date -u +%Y%m%d)
+       AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)$(VERSION)-WEEKLY-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILDTYPE), EXPERIMENTAL)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-EXPERIMENTAL-$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)$(VERSION)-EXPERIMENTAL-$(shell date -u +%Y%m%d)
     endif
     ifeq ($(AICP_BUILDTYPE), UNOFFICIAL)
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
     endif
 else
 #We reset back to UNOFFICIAL
-        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
+        AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
