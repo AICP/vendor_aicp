@@ -66,7 +66,7 @@ We are paying for servers that build weeklies and everything that comes with thi
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/downloads.png[/IMG]
 
-[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]16.1[/SIZE]
+[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]16.1 (Android 11)[/SIZE]
 [/SIZE]
 [SIZE=3][B]Download link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
@@ -109,19 +109,13 @@ You tell... :P
 [COLOR="Blue"]A. Yes, this is the usual behaviour on flashing a new official build by (or using) the build-in updater service.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I 'dirty flash' builds?[/I][/COLOR]
-[COLOR="Blue"]A. Wipe the System, Cache and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution and reboot. Or just use the OTA app to preform that task for you.[/COLOR]
+[COLOR="Blue"]A. Just use the OTA app to preform that task for you or wipe the System, Cache and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution and reboot.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
 [COLOR="Blue"]A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot" as the destination, then swipe to flash, then go back to the install screen and install your root method again, if you don't want to loose root and reboot.[/COLOR]
 [COLOR="Blue"]A2. If it's a flashable ZIP, you can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to loose root. Now swipe to flash and reboot afterwards.[/COLOR]
 
-[B]Using the ROM:[/B]
-
-[COLOR="Red"]Q. [I]I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
-
-[COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/r11.1/docs/xda_template/whatsapp.md"]this[/URL][/COLOR]
+[B]Reporting a bug in the ROM:[/B]
 
 [COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
 [COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat AND the model name. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.)[/COLOR]
@@ -139,17 +133,18 @@ It is STRONGLY recommended to fully wipe your device before flashing and please 
 If you believe you know what you're doing - then fine, go ahead, but please don't complain if you experience any strange behavior.
 
 [SIZE=3]How to flash for the first time:[/SIZE]
-(Again: Don't do it if you don't know!)
+(Again: Don't do it, if you're unsure!)
 
-1. Download the ROM and GApps and transfer them to your device.
-2. Boot to recovery (TWRP recommended).
-3. Wipe the System, Cache, and Data (you might need to format the data partition!).
-4. Flash the ROM Zipfile.
-5. Flash the GApps (optional, needed for e.g. Google Playstore to work), GApps are already included for some a/b devices.
-6. Reboot and set up your device, enable developer settings and in them OEM unlock/Advanced reboot/USB tethering.
-7. Reboot back into TWRP recovery.
-8. Flash the root solution of your choice (optional).
-9. Reboot your device.
+1.  Download the ROM and GApps.
+2.  Boot to recovery (TWRP recommended).
+3.  Wipe the System, Cache, and Data (you need to format the data partition!).
+4.  Transfer the ROM and GApps to the device via PC or OTG.
+5.  Flash the ROM Zipfile.
+6.  Flash the GApps (optional, needed for e.g. Google Playstore to work), GApps are already included for some A/B devices.
+7.  Reboot and set up your device, enable developer settings and in them enable OEM unlock/Advanced reboot/USB tethering.
+8.  Reboot back into TWRP recovery.
+9.  Flash the root solution of your choice (optional).
+10. Reboot your device.
 [B][I]The procedure may vary from device to device and is a bit different on system updates![/I][/B]
 
 
@@ -159,11 +154,11 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
 
 [COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
-Magisk versions >= 20.3 don't usually need to be flashed on every dirty flash.
+Magisk versions >= 21.x don't usually need to be flashed on every dirty flash.
 Depending on the device, you may need to flash it every time, unless your maintainer says otherwise, you should be fine.
 
-[U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
-TWRP recovery is needed to be able to flash using the built-in OTA app.
+[U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates) ON NON-A/B-DEVICES:[/B][/U]
+TWRP recovery is needed to be able to flash using the built-in OTA app on some devices.
 Please make sure that you are on the latest TWRP recovery, keep in mind that this could also be an unofficial version!
 On encrypted devices you will have to enter your PIN/password in TWRP before the process starts.
 
