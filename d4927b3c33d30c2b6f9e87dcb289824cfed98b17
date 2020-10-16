@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6372b2f7_52e5b7c0",
+        "filename": "config/aicp_version.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2020-10-16T10:09:06Z",
+      "side": 1,
+      "message": "Can this be simplified using \u0027filter-out\u0027?",
+      "range": {
+        "startLine": 24,
+        "startChar": 5,
+        "endLine": 24,
+        "endChar": 37
+      },
+      "revId": "d4927b3c33d30c2b6f9e87dcb289824cfed98b17",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
