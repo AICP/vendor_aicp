@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d3d729dc_68fc481d",
+        "filename": "config/aicp_version.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2020-10-21T13:02:15Z",
+      "side": 1,
+      "message": "11? not 16? is this not too confusing?",
+      "revId": "4cce1f2efc389704d123ed18fc8e734133f92cc1",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
