@@ -12,6 +12,10 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
+# additions for LOS-recovery
+ADDITIONAL_BUILD_PROPERTIES += \
+    ro.lineage.build.version=$(VERSION)
+
 # AICP Stats
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.aicp.branch=$(AICP_BRANCH) \
