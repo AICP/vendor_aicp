@@ -1,18 +1,29 @@
 #!/bin/sh
 
+export PATH=/bin:$BIN:$PATH
 set -e
+
+usage() {
+  cat <<EOM
+  Usage: $(basename $0) <Path to output directory, typically \$OUT variable>
+EOM
+  exit 1
+}
+
+[ $# -ne 1 ] && usage
+# set path to output directory, typical $OUT variable
+OUT="$1"
+
+if [ ! -d "$OUT" ];then
+  echo "specified OUT-directory: $OUT does not exist!"
+  exit 1
+fi
 
 # Store the main manifest and changelog in $OUT.
 # Copy the main manifest to the target system/etc.
 manifest="$OUT/manifest.xml"
 changelog="$OUT/Changelog.txt"
 system_changelog="$OUT/system/etc/Changelog.txt"
-
-# Use 'export USER_BUILD_NO_CHANGELOG=1' before build/envsetup.sh to skip changelog
-if [ "$USER_BUILD_NO_CHANGELOG" = "1" ]; then
-  echo "Skipped because variable 'USER_BUILD_NO_CHANGELOG' was set to 1" | tee "$changelog"
-  exit 0
-fi
 
 repo manifest -r > "$manifest.tmp"
 if [ -f "$manifest" -a ! "$manifest" -nt "$changelog" ]; then
