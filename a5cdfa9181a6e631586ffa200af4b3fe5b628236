@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dd4c875b_f79f1c73",
+        "filename": "tools/changelog",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2020-11-02T21:49:15Z",
+      "side": 1,
+      "message": "You don\u0027t need the braces or semicolon here.\nAlso I would quote the variable reference.\nAlso you may consider checking \"$#\" instead.",
+      "revId": "a5cdfa9181a6e631586ffa200af4b3fe5b628236",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "96c8a8a3_46265e7f",
+        "filename": "tools/changelog",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2020-11-02T21:49:15Z",
+      "side": 1,
+      "message": "Quote variable reference.",
+      "revId": "a5cdfa9181a6e631586ffa200af4b3fe5b628236",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "04b8e746_adaf2bd3",
+        "filename": "tools/changelog",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2020-11-02T21:49:15Z",
+      "side": 1,
+      "message": "Quote variable reference.",
+      "revId": "a5cdfa9181a6e631586ffa200af4b3fe5b628236",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fae7399b_8f90a001",
+        "filename": "tools/changelog",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2020-11-02T21:49:15Z",
+      "side": 1,
+      "message": "don\u0027t -\u003e does not",
+      "revId": "a5cdfa9181a6e631586ffa200af4b3fe5b628236",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
+      "unresolved": true
+    }
+  ]
+}
