@@ -23,5 +23,43 @@
         <!-- Enable privacy indicators -->
         <item>privacy/permissions_hub_2_enabled=true</item>
         <item>privacy/permissions_hub_enabled=true</item>
+
+        <!--
+            Device Personalization Services (AiAi)
+        -->
+
+        <!-- Live Captions (Pixel 2017 + OEM) -->
+        <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
+        <item>device_personalization_services/Captions__model_version_v1=20190613</item>
+        <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
+        <item>device_personalization_services/Captions__speech_threshold=0.2</item>
+        <item>device_personalization_services/Captions__surface_sound_events=true</item>
+        <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
+        <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
+
+        <!-- Now Playing (Pixel 2017) -->
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=159:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20201207-000000/manifest.json</item>
+
+        <!-- Adaptive Sound (Pixel 2020) -->
+        <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
+        <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
+
+        <!-- Screen attention (Pixel 2019) -->
+        <item>device_personalization_services/Attention__accel_sensor_enabled=false</item>
+        <item>device_personalization_services/Attention__accel_sensor_threshold_mss=0.2</item>
+        <item>device_personalization_services/Attention__enabled=true</item>
+        <item>device_personalization_services/Attention__margin_horizontal_px=1000</item>
+        <item>device_personalization_services/Attention__margin_vertical_px=1000</item>
+        <item>device_personalization_services/Attention__proximity_sensor_enabled=false</item>
+
+        <!-- Disable unused AiAi features -->
+        <item>device_personalization_services/Autofill__enable=false</item>
+        <item>device_personalization_services/Autofill__enable_fa=false</item>
+        <item>device_personalization_services/Fedex__enable_fedex=false</item>
+        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
+        <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
+        <item>device_personalization_services/Overview__enable_overview=false</item>
+        <item>device_personalization_services/VisualCortex__enable=false</item>
     </string-array>
+
 </resources>
