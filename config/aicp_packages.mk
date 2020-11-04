@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
+
 # Fonts packages
 #PRODUCT_PACKAGES += \
 #    invictrix-fonts
