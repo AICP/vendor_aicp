@@ -23,14 +23,6 @@
         <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
     </privapp-permissions>
 
-    <privapp-permissions package="com.android.settings">
-        <permission name="android.permission.ACCESS_FONT_MANAGER"/>
-        <permission name="lineageos.permission.HARDWARE_ABSTRACTION_ACCESS"/>
-        <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
-        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
-        <permission name="android.permission.RESET_BATTERY_STATS"/>
-    </privapp-permissions>
-
     <privapp-permissions package="com.android.email">
         <permission name="android.permission.READ_CONTACTS"/>
         <permission name="android.permission.WRITE_CONTACTS"/>
