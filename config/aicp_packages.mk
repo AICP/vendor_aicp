@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniStyle
 
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Fonts packages
 #PRODUCT_PACKAGES += \
 #    invictrix-fonts
