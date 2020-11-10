@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
     Jelly
 
 # OmniJaws
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
