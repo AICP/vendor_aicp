@@ -41,11 +41,11 @@ PRODUCT_PACKAGES += \
     Jelly
 
 # OmniJaws
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     OmniStyle
 
 # Fonts packages
