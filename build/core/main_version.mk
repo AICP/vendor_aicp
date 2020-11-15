@@ -14,7 +14,7 @@ ADDITIONAL_BUILD_PROPERTIES += \
 
 # additions for LOS-recovery
 ADDITIONAL_BUILD_PROPERTIES += \
-    ro.lineage.build.version=$(VERSION)
+    ro.lineage.build.version=$(VERSION)_$(shell date -u +%H%M%S)
 
 # AICP Stats
 ADDITIONAL_BUILD_PROPERTIES += \
