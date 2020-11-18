@@ -115,10 +115,8 @@ PRODUCT_PACKAGES += \
     bootanimation.zip
 
 # AICP OTA
-ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    Updater
-endif
 
 # AICP packages
 PRODUCT_PACKAGES += \
