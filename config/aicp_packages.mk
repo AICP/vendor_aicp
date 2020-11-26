@@ -36,6 +36,10 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
     Phonograph
 
+# QuickAccessWallet
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
 # Jelly
 PRODUCT_PACKAGES += \
     Jelly
