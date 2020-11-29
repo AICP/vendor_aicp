@@ -132,7 +132,7 @@ PRODUCT_PACKAGES += \
     TilesWallpaper
 
 # AICP Ad-block
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
 -include packages/overlays/AICP/product_packages.mk
