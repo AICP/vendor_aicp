@@ -124,7 +124,7 @@ def get_manifest_path():
         return ".repo/manifests/{}".format(m.find("include").get("name"))
 
 def get_default_revision():
-    m = ElementTree.parse(".repo/manifests/aicp-default.xml")
+    m = ElementTree.parse(".repo/manifests/aicp.xml")
     d = m.findall('remote')
     for n in d:
         if n.get('name') == 'aicp':
