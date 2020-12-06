@@ -2,11 +2,6 @@ Optional AICP (and general) overlays to add
 -------------------------------
 Framework Overlays (add to: overlay/frameworks/base/core/res/res/values/config.xml)
 
-Add to enable LiveDisplay:
-```
-<bool name="config_liveDisplayAvailable">true</bool>
-```
-
 To fully utilise the hardware keys (Wake up device with keys, enable/disable keys, swap keys, etc. ), the following overlays must be enabled:
 
 ```
@@ -132,11 +127,6 @@ If you plan to use the above overlay,Use this as well.
 <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 ```
 
-Use this to enable haptic effect when the text insertion/selection handle is moved manually.
-```
-<bool name="config_enableHapticTextHandle">true</bool>
-```
-
 Control the behavior when the user long presses the home button.
 0 = nothing.
 1 = Recent apps view in SystemUI.
@@ -174,6 +164,13 @@ AICP also allows full customisation to the notification LED function, some overl
 <bool name="config_intrusiveBatteryLed">true</bool>
 <bool name="config_multiColorBatteryLed">true</bool>
 <bool name="config_FastChargingLedSupported">false</bool>
+```
+
+If you have a FOD device, it's advised to enable the following overlays:
+```
+<bool name="config_needCustomFODView">true</bool>
+<bool name="config_supportsInDisplayFingerprint">true</bool>
+<integer name="config_fingerprintSensorLocation">1</integer>
 ```
 
 SystemUI Overlays (Controls SystemUI behavior) (add to: overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
