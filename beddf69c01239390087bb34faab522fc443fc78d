@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c066cd8_6720d44c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2020-12-06T22:05:28Z",
+      "side": 1,
+      "message": "Hold till merge happens",
+      "revId": "beddf69c01239390087bb34faab522fc443fc78d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
