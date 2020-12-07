@@ -16,6 +16,23 @@
       "message": "\u003e Patch Set 2: Code-Review-1\n\u003e \n\u003e Can this be dropped and values defined in fwb itself ?\n\u003e Makes it impossible to override the value on a per device or with a custom vendor\n\u003e \n\u003e on q10, it was implemented with https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/101076\n\nGeorge, I dont remember how that commit was different but for the time being, I am merging this. We can revisit later.",
       "revId": "56cb85270a94d9c5851751a63bd18d0c2b6cefa1",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bb52afe_a134f1df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-07T09:51:36Z",
+      "side": 1,
+      "message": "Comment removed by: Ali B; Reason: duplicate",
+      "revId": "56cb85270a94d9c5851751a63bd18d0c2b6cefa1",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
