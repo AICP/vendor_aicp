@@ -33,6 +33,23 @@
       "message": "Comment removed by: Ali B; Reason: duplicate",
       "revId": "56cb85270a94d9c5851751a63bd18d0c2b6cefa1",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "43ec2c1e_6ca87d48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-07T09:54:10Z",
+      "side": 1,
+      "message": "I will wait till this is sorted",
+      "revId": "56cb85270a94d9c5851751a63bd18d0c2b6cefa1",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
