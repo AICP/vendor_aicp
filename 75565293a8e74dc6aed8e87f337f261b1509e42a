@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "51a98ceb_80472058",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-13T15:14:30Z",
+      "side": 1,
+      "message": "this is how lineage does it and it makes the version more uniform https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/295790",
+      "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
