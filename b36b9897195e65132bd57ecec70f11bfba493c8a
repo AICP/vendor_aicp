@@ -33,6 +33,24 @@
       "message": "I\u0027m OK with this. ",
       "revId": "b36b9897195e65132bd57ecec70f11bfba493c8a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad23d5f2_e5b47e3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-13T15:10:51Z",
+      "side": 1,
+      "message": "looking through xda and it seems like edxposed still is going on",
+      "parentUuid": "cdca0b17_79123fb2",
+      "revId": "b36b9897195e65132bd57ecec70f11bfba493c8a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
