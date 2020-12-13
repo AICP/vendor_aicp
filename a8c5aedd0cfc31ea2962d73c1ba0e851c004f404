@@ -16,6 +16,23 @@
       "message": "if we do this should we make it 11.1?",
       "revId": "a8c5aedd0cfc31ea2962d73c1ba0e851c004f404",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1ca4a717_89902fc1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 28
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-13T20:21:08Z",
+      "side": 1,
+      "message": "I still think we should keep our \"aicp\" version number 16 and only change the branch names to r11.1.\naicp version for me is the actual number of years we have been at this and it should be a whole number.",
+      "revId": "a8c5aedd0cfc31ea2962d73c1ba0e851c004f404",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
