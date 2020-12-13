@@ -33,6 +33,24 @@
       "message": "not sure ... backuptool worked on r11.0 ...",
       "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f2f5c2b6_1c2c0858",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-13T15:28:49Z",
+      "side": 1,
+      "message": "https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/106519/2/config/aicp_version.mk",
+      "parentUuid": "dc5ec3ed_a3320dba",
+      "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
