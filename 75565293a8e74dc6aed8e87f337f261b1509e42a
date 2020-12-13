@@ -51,6 +51,23 @@
       "parentUuid": "dc5ec3ed_a3320dba",
       "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a29dda14_ff0cb3ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2020-12-13T15:30:40Z",
+      "side": 1,
+      "message": "los is checking ro.lineage.version, see:\nhttps://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/295790/6/prebuilt/common/bin/backuptool.sh#b9\nwe check:\nro.build.version.release\nsee:\nhttps://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/106549/1/prebuilt/common/bin/backuptool.sh#b39\n\nso this is currently wrong!",
+      "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
