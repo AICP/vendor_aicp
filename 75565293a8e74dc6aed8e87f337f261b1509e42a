@@ -16,6 +16,23 @@
       "message": "this is how lineage does it and it makes the version more uniform https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/295790",
       "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dc5ec3ed_a3320dba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2020-12-13T15:26:18Z",
+      "side": 1,
+      "message": "not sure ... backuptool worked on r11.0 ...",
+      "revId": "75565293a8e74dc6aed8e87f337f261b1509e42a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
