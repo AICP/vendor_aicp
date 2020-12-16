@@ -43,7 +43,6 @@ DU team
 Resurrection Remix team
 AOSiP team
 [B]Community[/B]
-...
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/team.png[/IMG]
 
@@ -54,7 +53,6 @@ AOSiP team
 [B]@wartomato[/B]
 [B]@Miccia[/B]
 [B]plus the rest of the crazy bunch that we call "team"[/B]
-...
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/donations.png[/IMG]
@@ -95,12 +93,6 @@ You tell... :P
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
 
-[COLOR="Red"]Q. [I]Why doesn't this ROM support Xposed?[/I][/COLOR]
-[COLOR="Blue"]A. Xposed is a hack that is geared towards AOSP. Custom ROMs modify the framework a lot, so Xposed can cause a ton of issues on custom ROMs. Now it might work for you, however it is not to be discussed in this thread, and you should refrain from posting bug reports. [/COLOR]
-
-[COLOR="Red"]Q. [I]Alright, but I still want to flash Xposed, so which version do I need to install?[/I][/COLOR]
-[COLOR="Blue"]A. Information about Xposed, EdXposed or Riru Core can be obtained from the [url="https://forum.xda-developers.com/xposed"]XPosed General forums[/url] .[/COLOR]
-
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
 [COLOR="Blue"]A. Check the flashing instructions...[/COLOR]
@@ -116,12 +108,6 @@ You tell... :P
 [COLOR="Blue"]A2. If it's a flashable ZIP, you can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to loose root. Now swipe to flash and reboot afterwards.[/COLOR]
 
 [B]Using the ROM:[/B]
-
-[COLOR="Red"]Q. [I]I installed a bad theme and now I'm getting a bootloop, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. In TWRP, flash the substratum rescue zip that's in the substratum folder on the internal storage.[/COLOR]
-
-[COLOR="Red"]Q. [I]I'm having issues with WhatsApp, how do I fix it?[/I][/COLOR]
-[COLOR="Blue"]A. Read [URL="https://github.com/AICP/vendor_aicp/blob/r11.1/docs/xda_template/whatsapp.md"]this[/URL][/COLOR]
 
 [COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
 [COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat AND the model name. (Note: Please just link the logcat from your GDrive, Dropbox, etc. and do not post the content here. Thanks.)[/COLOR]
@@ -190,12 +176,11 @@ On encrypted devices you will have to enter your PIN/password in TWRP before the
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
-The following information is ONLY needed if you are not opening up a devdb thread on XDA!
-[B]ROM OS Version:[/B] 11.0.x
+[B][U]Information:[/U[[/B]
+[B]ROM OS Version:[/B] 11.x
 [B]Kernel:[/B] Linux x.z.y (for example: 4.14.y)
-
-[B][U]Version Information:[/U][/B]
-[B]Status:[/B] WEEKLY
+[B]ROM {Firmware|Vendor} Required:[/B]
+[B]Status:[/B] {ALPHA|BETA|STABLE}
 [B]Release Date:[/B] mm-dd-yyyy
 
 You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/dev_office.png"]here[/URL]!!
