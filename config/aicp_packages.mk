@@ -25,7 +25,8 @@ PRODUCT_PACKAGES += \
     Email \
     Etar \
     ExactCalculator \
-    Exchange2
+    Exchange2 \
+    Gallery2 \
 #    Launcher3Dark
 
 # MusicFX
