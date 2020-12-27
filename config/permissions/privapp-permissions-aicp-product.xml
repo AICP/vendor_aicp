@@ -26,6 +26,8 @@
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+        <permission name="android.permission.MAINLINE_NETWORK_STACK"/>
+        <permission name="android.permission.NETWORK_STACK"/>
         <permission name="android.permission.REBOOT"/>
         <permission name="android.permission.RECOVERY"/>
         <permission name="android.permission.SHUTDOWN"/>
