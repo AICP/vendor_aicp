@@ -22,7 +22,9 @@
         <permission name="android.permission.CHANGE_CONFIGURATION"/>
         <permission name="android.permission.FORCE_STOP_PACKAGES"/>
         <permission name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+        <permission name="android.permission.MAINLINE_NETWORK_STACK"/>
         <permission name="android.permission.NAVIGATION_EDITOR"/>
+        <permission name="android.permission.NETWORK_STACK"/>
         <permission name="android.permission.PACKAGE_USAGE_STATS"/>
         <permission name="android.permission.READ_SYNC_SETTINGS"/>
         <permission name="android.permission.REBOOT"/>
