@@ -1,8 +1,8 @@
 Optional AICP (and general) overlays to add
 -------------------------------
-Framework Overlays (add to: overlay/frameworks/base/core/res/res/values/config.xml)
+Framework Overlays (add to overlay/frameworks/base/core/res/res/values/config.xml)
 
-To fully utilise the hardware keys (Wake up device with keys, enable/disable keys, swap keys, etc. ), the following overlays must be enabled:
+To fully utilize the hardware keys (Wake up the device with keys, enable/disable keys, swap keys, etc. ), the following overlays must be enabled:
 
 ```
     <!-- Hardware keys present on the device, stored as a bit field.
@@ -117,12 +117,12 @@ Useful if you have qcacld-3.0 and wifi is always on. This capability can provide
 <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 ```
 
-If you have a sm8150 device, why not enable WiFi display? Only prerequisite is you must have a rule for the "r_submix" in audio_policy.conf file.
+If you have an sm8150 device, why not enable WiFi display? The only prerequisite is you must have a rule for the "r_submix" in the audio_policy.conf file.
 ```
 <bool name="config_enableWifiDisplay">true</bool>
 ```
 
-If you plan to use the above overlay,Use this as well.
+If you plan to use the above overlay use this as well.
 ```
 <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 ```
@@ -173,9 +173,9 @@ If you have a FOD device, it's advised to enable the following overlays:
 <integer name="config_fingerprintSensorLocation">1</integer>
 ```
 
-SystemUI Overlays (Controls SystemUI behavior) (add to: overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
+SystemUI Overlays (Controls SystemUI behavior) (add to overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
-To adjust the cpu temp path for the cpu info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
+To adjust the CPU temp path for the CPU info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
 ```
 <string name="config_cpuTempSensor">/sys/class/thermal/thermal_zone7/temp</string>
 ```
@@ -196,7 +196,7 @@ To enable statusbar burn-in protection (Amoled only):
 <bool name="config_enableBurnInProtection">true</bool>
 ```
 
-Settings Overlays (add to: overlay/packages/apps/Settings/res/values/config.xml)
+Settings Overlays (add to overlay/packages/apps/Settings/res/values/config.xml)
 
 To enable display touch sensitivity switch:
 ```
@@ -204,7 +204,7 @@ To enable display touch sensitivity switch:
 ```
 
 
-Dialer Overlays (add to: overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
+Dialer Overlays (add to overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
 To enable call recording:
 ```
 <bool name="call_recording_enabled">true</bool>
@@ -253,7 +253,7 @@ Add if you have an A/B device:
 TARGET_IS_AB_DEVICE := true
 ```
 
-Add if your device has a vendor partiton, but does not build the vendor image with the ROM zip:
+Add if your device has a vendor partition, but does not build the vendor image with the ROM zip:
 ```
 BUILD_WITHOUT_VENDOR := true
 ```
