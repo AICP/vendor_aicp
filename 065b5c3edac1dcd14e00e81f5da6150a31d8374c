@@ -33,6 +33,176 @@
       "message": "damn the lazy greek...hihi",
       "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c1193a5_cb6b05f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "a few suggestions...",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5bd3c8ac_d242da27",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "or \"Applicants contacting the team to apply via communication platforms other than **Discord** will be rejected as they clearly didn\u0027t read this!\"",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d2111a17_ecdba9da",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "**Continuous support** maybe instead? also, \"the device performing well\" should read \"the device is performing well\"",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a441ae7a_006552dc",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "An applicant must include their email address alongside links to the device, vendor, and kernel trees on Github within their application. Once an application has been submitted, please be patient as it takes time to review the suggested trees. If changes are deemed necessary, the applicant will be notified. An application may be re-submitted once appropriate changes are made.",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5cd9d2c9_4aae06cb",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "Applicants should be respectful of the reviewer, reviewer\u0027s privacy, and the reviewing process. The reviewer also will uphold these values.",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "634734d7_9a6c5299",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "Applicants **must** use common sense, acting maturely and politely. When making a final decision, our team considers the person as well as the work. Reviewers are not your \"bro\" and should not be treated as family or friends.",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc838c07_6b8b00cf",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "\"Google account\" or \"GMail address\", but I am not sure I agree with \"Gmail-account\".",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b0197b31_2054d2c6",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "Maintainers **must** be familiar with Gerrit etiquette. Maintainers should be able to push, rebase, review, and cherrypick; they should be able to assign topics to commits and reviewers to commits and topics.",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7ae276df_0a9e9b93",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "I think having \"allowed and approved\" here is confusing because it almost reads \"**must** be allowed\" ... can we use just \"**must** be approved\" instead?",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e8026df8_f5bd00e7",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-30T11:23:30Z",
+      "side": 1,
+      "message": "but may not include any obsolete",
+      "revId": "065b5c3edac1dcd14e00e81f5da6150a31d8374c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
