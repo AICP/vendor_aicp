@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3975739c_7eb1f432",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2020-12-30T11:43:42Z",
+      "side": 1,
+      "message": "PS2 is PS10 from https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/299059/10",
+      "revId": "e9f62f9598414b9b9f727a2e88771155e02709ef",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
