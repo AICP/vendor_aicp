@@ -36,6 +36,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f925f26c_f0b0a2cb",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:27:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cd0ae9a9_3cacc2fc",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "445f0a55_2bba764c",
@@ -49,6 +67,30 @@
       "writtenOn": "2020-12-31T09:38:40Z",
       "side": 1,
       "message": "The device **must\"\" have an official or at least a working and publicly available recovery (TWRP preferred).",
+      "range": {
+        "startLine": 36,
+        "startChar": 51,
+        "endLine": 36,
+        "endChar": 62
+      },
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84981baf_a2c0da88",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:27:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "445f0a55_2bba764c",
       "range": {
         "startLine": 36,
         "startChar": 51,
@@ -94,6 +136,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "57c4feb8_c5496e38",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:27:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e95db628_521d2799",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "096a10a0_8dc7a67b",
@@ -107,6 +167,24 @@
       "writtenOn": "2020-12-31T09:38:40Z",
       "side": 1,
       "message": "packages, but should not include any obsolete packages or unnecessary properties. Under no circumstances should the device tree include vendor copyrighted and DRM violating items in it",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "27327d65_00751ee5",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:27:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "096a10a0_8dc7a67b",
       "revId": "c05919958b6a0686a95f0388216df79622ccea30",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
