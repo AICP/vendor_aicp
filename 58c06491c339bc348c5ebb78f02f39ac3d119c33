@@ -41,6 +41,30 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "000bcc78_3a3d0347",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "62265ce8_2a6cb291",
+      "range": {
+        "startLine": 38,
+        "startChar": 313,
+        "endLine": 38,
+        "endChar": 345
+      },
+      "revId": "58c06491c339bc348c5ebb78f02f39ac3d119c33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "df4ac229_166de5b6",
@@ -54,6 +78,24 @@
       "writtenOn": "2020-12-31T15:31:56Z",
       "side": 1,
       "message": "where there are only 2 items here, Ali was correct to not include a comma before the \"and\". \"copyrighted and DRM violating\"",
+      "revId": "58c06491c339bc348c5ebb78f02f39ac3d119c33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6337f84b_4d45619b",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T15:36:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "df4ac229_166de5b6",
       "revId": "58c06491c339bc348c5ebb78f02f39ac3d119c33",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
