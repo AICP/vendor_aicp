@@ -16,6 +16,81 @@
       "message": "Can we use stability instead of performance?",
       "revId": "c05919958b6a0686a95f0388216df79622ccea30",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd0ae9a9_3cacc2fc",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-31T09:38:40Z",
+      "side": 1,
+      "message": "\"ensuring adequate device stability\" doesn\u0027t sound right to me.\nhow does \"ensuring an acceptable user experience\"  sound?",
+      "parentUuid": "a44d07e9_7b9b8f62",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "445f0a55_2bba764c",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-31T09:38:40Z",
+      "side": 1,
+      "message": "The device **must\"\" have an official or at least a working and publicly available recovery (TWRP preferred).",
+      "range": {
+        "startLine": 36,
+        "startChar": 51,
+        "endLine": 36,
+        "endChar": 62
+      },
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d8b9e75d_34a79f40",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-31T09:38:40Z",
+      "side": 1,
+      "message": "Overclocking/undervolting apart from the manufacturer\u0027s defaults will not be tolerated.",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "096a10a0_8dc7a67b",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2020-12-31T09:38:40Z",
+      "side": 1,
+      "message": "packages, but should not include any obsolete packages or unnecessary properties. Under no circumstances should the device tree include vendor copyrighted and DRM violating items in it",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
