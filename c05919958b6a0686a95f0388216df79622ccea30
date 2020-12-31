@@ -78,6 +78,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "e95db628_521d2799",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-31T10:05:52Z",
+      "side": 1,
+      "message": "Could we use \"outside of\" instead of \"apart from\"?",
+      "parentUuid": "d8b9e75d_34a79f40",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "096a10a0_8dc7a67b",
         "filename": "docs/maintainerApplication.md",
         "patchSetId": 2
