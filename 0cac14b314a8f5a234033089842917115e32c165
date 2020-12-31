@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4628cedd_6eef1fe7",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-31T00:48:44Z",
+      "side": 1,
+      "message": "The tense here is still throwing me. If we are going to use present participles for \"willing\", \"maintaining\", and \"applying\" then do we want to use something more like \"and ensuring adequate device performance\" to be uniform?",
+      "revId": "0cac14b314a8f5a234033089842917115e32c165",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "05fa1b58_91d84913",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-31T00:48:44Z",
+      "side": 1,
+      "message": "trustable is not the same as trustworthy. Maybe we should use the latter?",
+      "revId": "0cac14b314a8f5a234033089842917115e32c165",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
