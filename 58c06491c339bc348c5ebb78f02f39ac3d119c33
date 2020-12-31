@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "62265ce8_2a6cb291",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-31T15:31:56Z",
+      "side": 1,
+      "message": "\"as we see fit\" or \"as required\" or \"as needed\" or even \"when deemed best case for that device\"",
+      "range": {
+        "startLine": 38,
+        "startChar": 313,
+        "endLine": 38,
+        "endChar": 345
+      },
+      "revId": "58c06491c339bc348c5ebb78f02f39ac3d119c33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "df4ac229_166de5b6",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 3
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 1393
+      },
+      "writtenOn": "2020-12-31T15:31:56Z",
+      "side": 1,
+      "message": "where there are only 2 items here, Ali was correct to not include a comma before the \"and\". \"copyrighted and DRM violating\"",
+      "revId": "58c06491c339bc348c5ebb78f02f39ac3d119c33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
