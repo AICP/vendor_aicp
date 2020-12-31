@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a44d07e9_7b9b8f62",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2020-12-31T08:05:58Z",
+      "side": 1,
+      "message": "Can we use stability instead of performance?",
+      "revId": "c05919958b6a0686a95f0388216df79622ccea30",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
