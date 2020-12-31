@@ -18,6 +18,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8ee2433_b6e6ac14",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T02:00:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4628cedd_6eef1fe7",
+      "revId": "0cac14b314a8f5a234033089842917115e32c165",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "05fa1b58_91d84913",
@@ -31,6 +49,24 @@
       "writtenOn": "2020-12-31T00:48:44Z",
       "side": 1,
       "message": "trustable is not the same as trustworthy. Maybe we should use the latter?",
+      "revId": "0cac14b314a8f5a234033089842917115e32c165",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93fc9300_1c95934d",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2020-12-31T02:00:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "05fa1b58_91d84913",
       "revId": "0cac14b314a8f5a234033089842917115e32c165",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
