@@ -37,7 +37,7 @@ def get_revision_string(directory):
 def write_header(f, source_revision):
     f.write("# This hosts file has been generated on:\n# {}\n# This file is generated from the following sources:\n".format(datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
     f.write("{}\n".format(source_revision))
-    f.write("\n127.0.0.1 localhost\n::1 localhost\n\n")
+    f.write("\n127.0.0.1       localhost\n::1             ip6-localhost\n\n")
 
 def read_redirect(line):
     source = None
