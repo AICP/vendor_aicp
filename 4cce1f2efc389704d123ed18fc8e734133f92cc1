@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": true,
       "key": {
         "uuid": "d3d729dc_68fc481d",
         "filename": "config/aicp_version.mk",
@@ -14,8 +15,25 @@
       "side": 1,
       "message": "11? not 16? is this not too confusing?",
       "revId": "4cce1f2efc389704d123ed18fc8e734133f92cc1",
-      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b",
-      "unresolved": true
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "041f375c_14d3f18e",
+        "filename": "config/aicp_version.mk",
+        "patchSetId": 9
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-01-01T13:50:44Z",
+      "side": 1,
+      "message": "That why it says \"refactor to AOSP version\", which is Android 11. But I agree with you.",
+      "parentUuid": "d3d729dc_68fc481d",
+      "revId": "4cce1f2efc389704d123ed18fc8e734133f92cc1",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
