@@ -1,7 +1,5 @@
 # Use 'export INPUT_ADBLOCK_FILE=<custom host file location>' before build/envsetup.sh to build custom adblock
-ifeq ($(INPUT_ADBLOCK_FILE),)
-    INPUT_ADBLOCK_FILE := external/hosts/hosts
-endif
+INPUT_ADBLOCK_FILE ?= external/hosts/hosts
 
 ADBLOCK_SCRIPT := vendor/aicp/adaway/generate.py
 
