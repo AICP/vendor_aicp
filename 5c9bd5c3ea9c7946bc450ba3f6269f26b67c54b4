@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64b17011_ed51a97c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 32
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-01-01T15:05:16Z",
+      "side": 1,
+      "message": "Can we just abandon that commit now, please?",
+      "revId": "5c9bd5c3ea9c7946bc450ba3f6269f26b67c54b4",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
