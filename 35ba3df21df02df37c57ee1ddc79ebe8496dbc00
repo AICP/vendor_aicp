@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b33cff47_af018403",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2021-01-02T19:33:11Z",
+      "side": 1,
+      "message": "PS4 is PS17 from LoS Gerrit.",
+      "revId": "35ba3df21df02df37c57ee1ddc79ebe8496dbc00",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
