@@ -190,6 +190,8 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     ifneq ($(TARGET_KERNEL_CLANG_VERSION),)
         ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
             KERNEL_CLANG_VERSION := clang-$(CLANG_CUSTOM_VERSION_LATEST)
+        else ifeq ($(TARGET_KERNEL_CLANG_VERSION),proton)
+            KERNEL_CLANG_VERSION := clang-proton
         else
             KERNEL_CLANG_VERSION := clang-$(TARGET_KERNEL_CLANG_VERSION)
         endif
@@ -215,6 +217,8 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
     endif
     ifeq ($(TARGET_KERNEL_CLANG_CUSTOM),true)
         TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)_custom/$(KERNEL_CLANG_VERSION)
+    else ifeq ($(TARGET_KERNEL_CLANG_PROTON),true)
+        TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)_proton/clang-proton
     else
         TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
     endif
