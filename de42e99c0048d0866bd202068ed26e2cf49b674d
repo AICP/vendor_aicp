@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "014b5124_5738b986",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-01-03T15:07:27Z",
+      "side": 1,
+      "message": "manifest has already been merged, maintainers need to update their trees",
+      "revId": "de42e99c0048d0866bd202068ed26e2cf49b674d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
