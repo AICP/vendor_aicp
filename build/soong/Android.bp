@@ -52,6 +52,23 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
+    name: "camera_needs_client_info",
+    module_type: "cc_defaults",
+    config_namespace: "customGlobalVars",
+    bool_variables: ["camera_needs_client_info"],
+    properties: ["cppflags"],
+}
+
+camera_needs_client_info {
+    name: "camera_needs_client_info_defaults",
+    soong_config_variables: {
+        camera_needs_client_info: {
+            cppflags: ["-DCAMERA_NEEDS_CLIENT_INFO"],
+        },
+    },
+}
+
+soong_config_module_type {
     name: "disable_postrender_cleanup",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
