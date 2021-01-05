@@ -29,8 +29,10 @@ PRODUCT_PACKAGES += \
 #    Launcher3Dark
 
 # MusicFX
+ifneq ($(TARGET_EXCLUDES_MUSICFX),true)
 PRODUCT_PACKAGES += \
     MusicFX
+endif
 
 # Phonograph
 #PRODUCT_PACKAGES += \
