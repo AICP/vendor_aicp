@@ -33,7 +33,7 @@ PRODUCT_PACKAGES += \
     MusicFX
 
 # Phonograph
-#PRODUCT_PACKAGES += \
+PRODUCT_PACKAGES += \
     Phonograph
 
 # Jelly
