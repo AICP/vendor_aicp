@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7610f735_1effe832",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2021-01-18T10:13:44Z",
+      "side": 1,
+      "message": "Needed for us. Won\u0027t hurt other CLANG version builders.",
+      "revId": "ec179ddf90b5bc799f721fd42f2ad3028a24015f",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
