@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c52d055_b3d07d62",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-18T12:06:25Z",
+      "side": 1,
+      "message": "so you gona add a new repo for this?",
+      "revId": "c3b1357857d92ce1fddcdded3b007def92944779",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
