@@ -207,6 +207,10 @@ def add_to_manifest(repositories, fallback_branch = None):
         else:
             print("Using default branch for %s" % repo_name)
 
+        if 'clone-depth' in repository:
+            print("Setting clone-depth to %s for %s" % (repository['clone-depth'], repo_name))
+            project.set('clone-depth', repository['clone-depth'])
+
         lm.append(project)
 
     indent(lm, 0)
