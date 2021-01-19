@@ -92,6 +92,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "5ba1f2c1_2d5e2d61",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1849
+      },
+      "writtenOn": "2021-01-19T09:49:01Z",
+      "side": 1,
+      "message": "the use of TARGET_KERNEL_CLANG_VERSION when logic is configured to take the clang-xxxx folder name as the variable is sufficient. Any custom clang versions can be pulled in to the normal prebuilts folder as clang-proton or clang-custom or whatever. Albiet aside from truly custom versions, prebuilts/clang/host/linux_x86 could just track AOSP master which as of current would import clang 12.0.1 and satisfy 99% of needs. No extra logic or repos necessary then",
+      "parentUuid": "7e12b280_87b30fbc",
+      "revId": "c3b1357857d92ce1fddcdded3b007def92944779",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5c52d055_b3d07d62",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 5
