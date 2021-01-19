@@ -56,6 +56,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7e12b280_87b30fbc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-01-19T08:28:19Z",
+      "side": 1,
+      "message": "My point was just that maybe the kernel.mk should get the possibility to set either clang AOSP (as it is only an upstreamed CLang) and a separate variant for building with another clang like \"Proton\", which would be the custom variant for me.\nThis way making it more \"generic\" to use another CLang and toolchain without mentioning something like \"Proton\".\nSo, the way George thought about the implementation is one way to do it. Your current commit is just targetting Proton and nothing else. 😕",
+      "parentUuid": "d73cc98b_1f66dfc5",
+      "revId": "c3b1357857d92ce1fddcdded3b007def92944779",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "5c52d055_b3d07d62",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 5
@@ -85,6 +103,24 @@
       "side": 1,
       "message": "Actually I wanted to pick this clang repo via dependencies instead of adding to main manifest.",
       "parentUuid": "5c52d055_b3d07d62",
+      "revId": "c3b1357857d92ce1fddcdded3b007def92944779",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "01f82fa5_e0b94434",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 221,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-01-19T08:28:19Z",
+      "side": 1,
+      "message": "\u003e Actually I wanted to pick this clang repo via dependencies instead of adding to main manifest.\n\nThen adding the roomservice \"clone-depth\" is a good way to do it (at least for clang).",
+      "parentUuid": "cc7d29f6_8295c188",
       "revId": "c3b1357857d92ce1fddcdded3b007def92944779",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
