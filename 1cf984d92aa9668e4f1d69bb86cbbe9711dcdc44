@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "03efc820_49ba9946",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-01-20T07:21:03Z",
+      "side": 1,
+      "message": "Can I excuse myself due to the fact that I dont use the AICP custom clang",
+      "revId": "1cf984d92aa9668e4f1d69bb86cbbe9711dcdc44",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
