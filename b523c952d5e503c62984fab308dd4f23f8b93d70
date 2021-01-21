@@ -16,6 +16,24 @@
       "message": "ignore my last comment - I didn\u0027t saw the complete topic.\nThe only question is, why we should allow any clang-version",
       "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "78db72bb_b16bc240",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1849
+      },
+      "writtenOn": "2021-01-21T11:28:39Z",
+      "side": 1,
+      "message": "sometimes u want the global set clang by rom, sometimes u want to try latest tracked aosp, sometimes u want to import an external via aicp.dependencies to build your device with that. Dont be silly",
+      "parentUuid": "35560873_126fe78a",
+      "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
