@@ -33,6 +33,23 @@
       "message": "this is the way",
       "revId": "1cf984d92aa9668e4f1d69bb86cbbe9711dcdc44",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e8f080df_0e75ada9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-21T10:51:53Z",
+      "side": 1,
+      "message": "why the hell and JEBUS name are you kicking our custom clang out??",
+      "revId": "1cf984d92aa9668e4f1d69bb86cbbe9711dcdc44",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
