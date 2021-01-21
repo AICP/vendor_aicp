@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "35560873_126fe78a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-21T11:08:58Z",
+      "side": 1,
+      "message": "ignore my last comment - I didn\u0027t saw the complete topic.\nThe only question is, why we should allow any clang-version",
+      "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
