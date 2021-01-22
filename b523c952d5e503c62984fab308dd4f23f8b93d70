@@ -34,6 +34,23 @@
       "parentUuid": "35560873_126fe78a",
       "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1686191_ccb2f6cb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-22T09:31:31Z",
+      "side": 1,
+      "message": "I\u0027m not sure, if this should be allowed in our ROM, but the concept and the idea is very nice!",
+      "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
