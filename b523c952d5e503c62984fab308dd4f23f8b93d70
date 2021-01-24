@@ -85,6 +85,24 @@
       "message": "it is something else here...",
       "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c40438ec_115a04d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-01-24T12:40:06Z",
+      "side": 1,
+      "message": "https://github.com/kdrag0n/proton-clang#cannot-use-config_cc_stackprotector_strong--fstack-protector-strong-not-supported-by-compiler\n\n🤔",
+      "parentUuid": "129fa768_237e5b82",
+      "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
