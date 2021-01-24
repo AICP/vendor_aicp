@@ -68,6 +68,23 @@
       "message": "hold getting this ... but maybe it is on my side ...\n\u0027/intern1/julian/android/aicp/16.1/out/target/product/enchilada/obj/KERNEL_OBJ\u0027\nccache: error: Could not find compiler \"clang\" in PATH\nccache: error: Could not find compiler \"clang\" in PATH\n  GEN     ./Makefile\nscripts/kconfig/conf  --silentoldconfig Kconfig\nccache: error: Could not find compiler \"clang\" in PATH\nccache: error: Could not find compiler \"clang\" in PATH\nccache: error: Could not find compiler \"clang\" in PATH\n  CHK     include/config/kernel.release\nccache: error: Could not find compiler \"clang\" in PATH\nCannot use CONFIG_CC_STACKPROTECTOR_STRONG: -fstack-protector-strong not supported by compiler\nmake[1]: *** [/intern1/julian/android/aicp/16.1/kernel/oneplus/sdm845/Makefile:1193: prepare-compiler-check] Error 1\nmake[1]: *** Waiting for unfinished jobs....\n",
       "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "928d8f95_302c32ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-24T12:37:30Z",
+      "side": 1,
+      "message": "it is something else here...",
+      "revId": "b523c952d5e503c62984fab308dd4f23f8b93d70",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
