@@ -16,6 +16,23 @@
       "message": "latest PS fixes custom-clang latest. Issue was, BUILD_TOP is set in config/BoardConfigKernel.mk, but clang_custom.mk was called before, so it don\u0027t know the variable and sets /prebuilt/clang/....",
       "revId": "417816daeeedcdeeafc4667c7b4c919cae76bd38",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf29432f_33868200",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-01-31T08:39:01Z",
+      "side": 1,
+      "message": "merge?",
+      "revId": "417816daeeedcdeeafc4667c7b4c919cae76bd38",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
