@@ -4,9 +4,7 @@ _apart from the default AOSP settings..._
 
 - Ability to change the device host-name for WiFi connections
 - Ability to change the hosts file to block ads
-- Ability to force the screen & vibrate to turn on or stay off on connection to a charger
 - Access to the built-in AOSP SystemUI tuner features
-- ADB over network option including custom Quick-settings tile
 - Adjust number of notifications on Lock-screen
 - Adjust volume dialog timeout
 - Adjustable actions for hardware buttons (including "kill app")
@@ -32,8 +30,6 @@ _apart from the default AOSP settings..._
 - Current Charging status on lock-screen
 - Custom App opening/closing animations
 - Custom Carrier Label
-- Custom In-Display fingerprint icons
-- Custom In-Display fingerprint recognising animations
 - Custom system & screen off animations
 - Custom QuickSetting headers
 - Custom QuickSetting footer text
@@ -48,7 +44,6 @@ _apart from the default AOSP settings..._
 - Enable/Disable the nabvar
 - Enhanced Changelog in AicpExtras
 - Enhanced Launcher3 (Quickstep) with various tweaks & customizations
-- Expanded audio panel (if enabled)
 - Fingerprint authentication vibration
 - Flip to Mute/Reject Call
 - FPS info overlay
@@ -58,7 +53,7 @@ _apart from the default AOSP settings..._
 - Integrated OTA-Updater App
 - Launch music player when headset is connected
 - Link/unlink notification & call volume
-- Live display
+- Live display (if enabled by the maintainer)
 - Lockscreen clock customizations
 - Lockscreen Visualizer
 - Membar in recents (SlimRecents)
@@ -70,14 +65,12 @@ _apart from the default AOSP settings..._
 - Partial Screenshot
 - PocketMode
 - Power menu hideable on lock-screen
-- Power menu transparency
 - Quick-settings disable on lock-screen
-- Quick-settings fast pull down from right/left
+- Quick-settings fast pull down from right/left/always
 - Quick-settings footer warnings switchable
 - Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
 - Quick-settings tile animations
 - Quick-settings tile for Ambient Display
-- Quick-settings tile for Immersive mode (hiding statusbar- and/or navbar)
 - Quick-settings tile for Gaming mode
 - Quick-settings tile for music playback & title display
 - Quick-settings tile for Night mode
@@ -85,7 +78,6 @@ _apart from the default AOSP settings..._
 - Quick-settings tile for Account Sync
 - Quick-settings tile titles visibility toggle
 - Quick-settings tiles columns adjustable
-- Quick-settings tiles modded for more option on tap for e.g. WiFi, etc.
 - Quick-settings tiles rows adjustable
 - Quick-settings tiles shape adjustable
 - Quick-settings transparency
@@ -100,7 +92,6 @@ _apart from the default AOSP settings..._
 - Statusbar clock customizations
 - Statusbar logo
 - Statusbar Ticker for notifications and music title
-- Suspend Actions
 - Swap back and recents keys
 - Swap volume buttons
 - Swipe with 3 fingers to take a screenshot
@@ -113,6 +104,7 @@ _apart from the default AOSP settings..._
 - Volume button playback control when screen off
 - Volume buttons additional toggle to switch music tracks/cursor control on keyboard
 - Volume panel right/left
+- VoWiFi icon switchable
 - Yoga!!
 
 _...and more_
