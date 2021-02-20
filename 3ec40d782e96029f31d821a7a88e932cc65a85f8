@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b54e3d33_b65ffb5e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-02-20T12:48:47Z",
+      "side": 1,
+      "message": "Not ready for reasons:\n    - Need to overlay config_defaultAppPredictionService, currenty set to a service included in gapps\n    - The priv-app permissions files are absent\n    - Really required ?",
+      "revId": "3ec40d782e96029f31d821a7a88e932cc65a85f8",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
