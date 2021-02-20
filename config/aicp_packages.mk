@@ -40,6 +40,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Jelly
 
+# OnDeviceAppPrediction
+PRODUCT_PACKAGES += \
+    AppPredictionService
+
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
