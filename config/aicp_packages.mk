@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
     libhealthd.aicp
 endif
 
+# OnDeviceAppPrediction
+PRODUCT_PACKAGES += \
+    AppPredictionService
+
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
