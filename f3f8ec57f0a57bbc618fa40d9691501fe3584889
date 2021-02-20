@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "670db62e_dac2e929",
+        "filename": "docs/features.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2021-02-20T13:03:53Z",
+      "side": 1,
+      "message": "Both adb over network and related qs tile are now AOSP implementations with tile available in Development, Quicksettings tiles",
+      "revId": "f3f8ec57f0a57bbc618fa40d9691501fe3584889",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
