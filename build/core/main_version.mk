@@ -4,6 +4,10 @@ ADDITIONAL_BUILD_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
+ifeq ($(AICP_BUILDTYPE), WEEKLY)
+    BUILD_KEYS := release-keys
+endif
+
 # AICP System Version
 ADDITIONAL_BUILD_PROPERTIES += \
     ro.aicp.display.version=$(AICP_VERSION) \
