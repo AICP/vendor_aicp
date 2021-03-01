@@ -27,4 +27,8 @@
         <permission name="android.permission.READ_CONTACTS"/>
         <permission name="android.permission.WRITE_CONTACTS"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.apppredictionservice">
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+    </privapp-permissions>
 </permissions>
