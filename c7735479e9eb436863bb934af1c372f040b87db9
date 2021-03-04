@@ -22,6 +22,30 @@
       },
       "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "53f7828d_3e072532",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-03-04T14:57:38Z",
+      "side": 1,
+      "message": "I like the idea, if this is our way",
+      "parentUuid": "ee2a9235_9705a049",
+      "range": {
+        "startLine": 90,
+        "startChar": 35,
+        "endLine": 90,
+        "endChar": 74
+      },
+      "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
