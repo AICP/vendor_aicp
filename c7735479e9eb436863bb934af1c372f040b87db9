@@ -18,6 +18,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d73a3b5e_7dfa6e7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-03-04T17:45:36Z",
+      "side": 1,
+      "message": "also possible. But we have for many apps permission defs- in vendor. Not sure what the best solution is",
+      "parentUuid": "9efb3893_32ba143a",
+      "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee2a9235_9705a049",
