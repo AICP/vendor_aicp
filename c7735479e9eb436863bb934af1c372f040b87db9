@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9efb3893_32ba143a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2021-03-04T17:18:28Z",
+      "side": 1,
+      "message": "Better to keep vendor_aicp clean as possible.\nhttps://gerrit.aicp-rom.com/c/AICP/packages_apps_Launcher3/+/108083 would be better approach imho.",
+      "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee2a9235_9705a049",
