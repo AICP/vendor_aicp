@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee2a9235_9705a049",
+        "filename": "config/common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 90,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-04T14:35:24Z",
+      "side": 1,
+      "message": "or can be appended to this if everything needs to be kept together",
+      "range": {
+        "startLine": 90,
+        "startChar": 35,
+        "endLine": 90,
+        "endChar": 74
+      },
+      "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
