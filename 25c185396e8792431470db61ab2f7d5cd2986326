@@ -16,6 +16,23 @@
       "message": "without this hotdog don\u0027t boot.",
       "revId": "25c185396e8792431470db61ab2f7d5cd2986326",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c4e4e43_12e017c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-03-04T11:54:47Z",
+      "side": 1,
+      "message": "error is:\n03-04 07:08:03.933  3104  3104 V UserDataPreparer: Found /data/misc_ce/0 with serial number 0\n03-04 07:08:03.933  3104  3104 E System  : ******************************************\n03-04 07:08:03.934  3104  3104 E System  : ************ Failure starting system services\n03-04 07:08:03.934  3104  3104 E System  : java.lang.IllegalStateException: Signature|privileged permissions not in privapp-permissions whitelist: {com.android.launcher3 (/system/system_ext/priv-app/Launcher3QuickStep): android.permission.MANAGE_USERS, com.android.launcher3 (/system/system_ext/priv-app/Launcher3QuickStep): android.permission.PACKAGE_USAGE_STATS, com.android.launcher3 (/system/system_ext/priv-app/Launcher3QuickStep): android.permission.MEDIA_CONTENT_CONTROL, com.android.launcher3 (/system/system_ext/priv-app/Launcher3QuickStep): android.permission.STATUS_BAR, com.android.launcher3 (/system/system_ext/priv-app/Launcher3QuickStep): android.permission.FORCE_STOP_PACKAGES}",
+      "revId": "25c185396e8792431470db61ab2f7d5cd2986326",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
