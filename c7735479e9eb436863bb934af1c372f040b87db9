@@ -36,6 +36,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "46e1c7f9_9391a857",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2021-03-05T08:12:59Z",
+      "side": 1,
+      "message": "We moved on par with Lineage all permission files to individual app trees. I removed the launcher permissions thinking they were not needed anymore but if hotdog needs them, we can simply revert my revert in Launcher3 repo as doc did. That would be the best solution",
+      "parentUuid": "d73a3b5e_7dfa6e7f",
+      "revId": "c7735479e9eb436863bb934af1c372f040b87db9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee2a9235_9705a049",
