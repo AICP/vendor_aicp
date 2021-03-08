@@ -16,6 +16,23 @@
       "message": "Added recovery requirements in the maintainer application, and fixed up the camera part of the FAQ",
       "revId": "03958d5561462da403cea5615bd145179c2698db",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "165dee42_01696ee7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-08T19:58:05Z",
+      "side": 1,
+      "message": "I also removed an extra space in the maintainer application to keep the formatting the same",
+      "revId": "03958d5561462da403cea5615bd145179c2698db",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
