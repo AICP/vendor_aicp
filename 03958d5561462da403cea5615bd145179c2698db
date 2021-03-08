@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a893807_3f93768a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-08T19:57:09Z",
+      "side": 1,
+      "message": "Added recovery requirements in the maintainer application, and fixed up the camera part of the FAQ",
+      "revId": "03958d5561462da403cea5615bd145179c2698db",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
