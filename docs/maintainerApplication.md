@@ -27,7 +27,6 @@
 * Maintainers **must** retain proper authorship on commits or changes including the commit history when using "picked" commits from other sources. Authorship hereby means the **original** author must be named as the author on commits in the commit history. As authorship is important for us in the open-source community, it is mandatory to have proper authorship for pushing to Github or Gerrit.
 * Maintainers **must** have some basic knowledge about fixing bugs and pulling logs (on the device and/or via ADB).
 
-
 ---
 
 ## Device
@@ -47,6 +46,15 @@
 
 *Note: Once you and your device have been successfully accepted, you will be given access to our team chat and limited access to our servers for your needed device repositories. Of course, you will receive help on maintaining your device and have to coordinate your device with the development of AICP.*
 
+---
+
+## Recovery
+
+* Maintainers **must** provide instructions on which custom recovery to use, and also provide a link for the recovery (ex: TWRP, or the Lineage Recovery).
+* Maintainers **must** provide clear install instructions for the ROM for both clean installs and for regular updates (for OTA and manual installation).
+* Maintainers **must** provide clear install instructions for gapps and any essential add-ons (updated firmware, a specific vendor image, etc).
+
+*Note: Our XDA thread template provides general instructions that are sufficient for some devices, however, it may not be correct for your device, so make sure you change it to provide the proper instructions.*
 
 
 ## Do you think you still have the guts to tame the beast? - Well, then hook us up on https://discord.gg/nMQUVRD
