@@ -92,6 +92,18 @@ You tell... :P
 [COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
 [COLOR="Blue"]A. No. You can still use them, but the discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
 
+[COLOR="Red"]Q. [I] Does this ROM use the camera or gallery app from stock?[/I][/COLOR]
+[COLOR="Blue"]A. It depends on the device. In some cases, these apps include proprietary libs and cannot be included in the device trees on github or we risk having the rom banned from github. In this case, we might try to make them installable (separate from the rom zip), or we might provide a version of these apps with the rom that doesn't include any proprietary libs. It's also sometimes the case that these apps are simply not included because we didn't feel the need to do so for the device in question[/COLOR]
+
+[COLOR="Red"]Q. [I] Does this ROM have Extended/Scrolling screenshot?[/I][/COLOR]
+[COLOR="Blue"]A. No, Extended screenshot was an app taken from oneplus and is proprietary too. It led to the closing of many ROM's sources on GitHub.[/COLOR]
+
+[COLOR="Red"]Q. [I] Does this ROM have face unlock?[/I][/COLOR]
+[COLOR="Blue"]A. No, face unlock was "extracted" from Motorola. It is not even supported by Google because of security reasons and did the same to ROM sources as described above.[/COLOR]
+
+[COLOR="Red"]Q. [I] Can you add (insert favorite weather provider)?[/I][/COLOR]
+[COLOR="Blue"]A. No, we cannot add more weather providers as the implementations change and we (the ROM) now have to pay for most services, and that is not cheap, so we decided to use the best free service that we could find, the only way to add your own is for users to apply for their own API keys to use their service.[/COLOR]
+
 [B]Flashing the ROM:[/B]
 [COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
 [COLOR="Blue"]A. Check the flashing instructions...[/COLOR]
