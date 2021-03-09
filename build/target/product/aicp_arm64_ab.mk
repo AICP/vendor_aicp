@@ -12,11 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, build/target/product/aosp_arm64.mk)
-$(call inherit-product, build/target/product/gsi_release.mk)
+$(call inherit-product, build/target/product/aosp_arm64_ab.mk)
 
 include vendor/aicp/build/target/product/aicp_generic_target.mk
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := aicp_arm64
+PRODUCT_NAME := aicp_arm64_ab
