@@ -18,5 +18,4 @@ include vendor/aicp/build/target/product/aicp_generic_target.mk
 
 PRODUCT_NAME := aicp_x86_64_ab
 
-PRODUCT_SDK_ADDON_NAME := lineage
 PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
