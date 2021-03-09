@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6bbff56_064b933f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T05:22:38Z",
+      "side": 1,
+      "message": "I would prefer a clarification on why AICP won\u0027t do private official builds and include proprietary stuff in those builds",
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6260ef2a_5d7d147b",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T05:22:38Z",
+      "side": 1,
+      "message": "Majority of the devices will require device specific instructions, so replace current lines with some placeholder text, so as the users can identify low effort posts too?",
+      "range": {
+        "startLine": 57,
+        "startChar": 70,
+        "endLine": 57,
+        "endChar": 97
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b2e0376_3a1f2b9e",
+        "filename": "docs/xda_template/xda_thread-template.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T05:22:38Z",
+      "side": 1,
+      "message": "Change to \"Extended screenshot was implemented using an app extracted from OnePlus firmware/system images\"?\nI think something from Asus exists too.",
+      "range": {
+        "startLine": 99,
+        "startChar": 21,
+        "endLine": 99,
+        "endChar": 51
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cf9374b0_5948aed1",
+        "filename": "docs/xda_template/xda_thread-template.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T05:22:38Z",
+      "side": 1,
+      "message": "I think this needs to written as \"AICP doesn\u0027t support such a implementation currently, and to ensure the weather features works flawlessly, users will need to add their personal key for the available provider\"",
+      "range": {
+        "startLine": 105,
+        "startChar": 17,
+        "endLine": 105,
+        "endChar": 321
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
