@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "999ec745_c0989554",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T20:35:18Z",
+      "side": 1,
+      "message": "just some minor grammatical fixes and removed a part from the install instructions that suggested that we sometimes include gapps ",
+      "revId": "03355459051556a70c1cfac8b5e80702a573d87c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
