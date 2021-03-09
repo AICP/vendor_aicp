@@ -68,6 +68,24 @@
       "parentUuid": "dee1c721_922f8675",
       "revId": "03355459051556a70c1cfac8b5e80702a573d87c",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "05451524_d543baa2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T20:40:02Z",
+      "side": 1,
+      "message": "true, let\u0027s merge 😄",
+      "parentUuid": "c87eb078_d1d00202",
+      "revId": "03355459051556a70c1cfac8b5e80702a573d87c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
