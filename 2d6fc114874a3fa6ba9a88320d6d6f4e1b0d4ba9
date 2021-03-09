@@ -83,6 +83,30 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff2330c0_822a4727",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T15:32:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "a4ffa563_b98def33",
+      "range": {
+        "startLine": 57,
+        "startChar": 70,
+        "endLine": 57,
+        "endChar": 97
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6b2e0376_3a1f2b9e",
@@ -167,6 +191,30 @@
       "side": 1,
       "message": "that wouldn\u0027t give the message that we can\u0027t support it because we\u0027re not going to pay for additional providers though, so users would still ask why we\u0027re not supporting it",
       "parentUuid": "cf9374b0_5948aed1",
+      "range": {
+        "startLine": 105,
+        "startChar": 17,
+        "endLine": 105,
+        "endChar": 321
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c841723_6a42ce7e",
+        "filename": "docs/xda_template/xda_thread-template.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-03-09T15:32:05Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "50076207_eea1168e",
       "range": {
         "startLine": 105,
         "startChar": 17,
