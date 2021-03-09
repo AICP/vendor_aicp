@@ -18,6 +18,24 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "88e204f0_9188e65d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T15:18:28Z",
+      "side": 1,
+      "message": "added to the FAQ",
+      "parentUuid": "a6bbff56_064b933f",
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6260ef2a_5d7d147b",
@@ -31,6 +49,30 @@
       "writtenOn": "2021-03-09T05:22:38Z",
       "side": 1,
       "message": "Majority of the devices will require device specific instructions, so replace current lines with some placeholder text, so as the users can identify low effort posts too?",
+      "range": {
+        "startLine": 57,
+        "startChar": 70,
+        "endLine": 57,
+        "endChar": 97
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a4ffa563_b98def33",
+        "filename": "docs/maintainerApplication.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T15:18:28Z",
+      "side": 1,
+      "message": "maintainers are required to read and follow the maintainer application, if they\u0027re not we can easily find out by checking their thread, swapping the install instructions with placeholder text would just confuse and annoy unofficial builders and official maintainers who don\u0027t have a template to follow for it, and the template is meant to be just that, a template",
+      "parentUuid": "6260ef2a_5d7d147b",
       "range": {
         "startLine": 57,
         "startChar": 70,
@@ -64,6 +106,30 @@
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6c76b4b_d580fdfd",
+        "filename": "docs/xda_template/xda_thread-template.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T15:18:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b2e0376_3a1f2b9e",
+      "range": {
+        "startLine": 99,
+        "startChar": 21,
+        "endLine": 99,
+        "endChar": 51
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cf9374b0_5948aed1",
@@ -77,6 +143,30 @@
       "writtenOn": "2021-03-09T05:22:38Z",
       "side": 1,
       "message": "I think this needs to written as \"AICP doesn\u0027t support such a implementation currently, and to ensure the weather features works flawlessly, users will need to add their personal key for the available provider\"",
+      "range": {
+        "startLine": 105,
+        "startChar": 17,
+        "endLine": 105,
+        "endChar": 321
+      },
+      "revId": "2d6fc114874a3fa6ba9a88320d6d6f4e1b0d4ba9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "50076207_eea1168e",
+        "filename": "docs/xda_template/xda_thread-template.txt",
+        "patchSetId": 4
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-09T15:18:28Z",
+      "side": 1,
+      "message": "that wouldn\u0027t give the message that we can\u0027t support it because we\u0027re not going to pay for additional providers though, so users would still ask why we\u0027re not supporting it",
+      "parentUuid": "cf9374b0_5948aed1",
       "range": {
         "startLine": 105,
         "startChar": 17,
