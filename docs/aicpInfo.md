@@ -263,6 +263,10 @@ Add if your device has a vendor partition, but does not build the vendor image w
 BUILD_WITHOUT_VENDOR := true
 ```
 
+Add if you want to exclude the aicp live wallpaper from your build because the device is too old to handle it well
+```
+EXCLUDE_LIVE_WALLPAPER := true
+```
 
 For prebuilt twrp on a/b devices:
 -------------------------------
