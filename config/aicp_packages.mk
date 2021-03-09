@@ -136,8 +136,12 @@ PRODUCT_PACKAGES += \
     FontSnigletOverlay \
     FontSignikaOverlay \
     FontOxaniumOverlay \
-    FontInterOverlay \
+    FontInterOverlay
+
+ifneq ($(EXCLUDE_LIVE_WALLPAPER),true)
+PRODUCT_PACKAGES += \
     TilesWallpaper
+endif
 
 # AICP Ad-block
 PRODUCT_PACKAGES += \
