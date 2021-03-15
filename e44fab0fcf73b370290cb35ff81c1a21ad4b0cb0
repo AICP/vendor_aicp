@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2583572_763ddd0d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-03-15T06:52:35Z",
+      "side": 1,
+      "message": "able to fetch repos from gitlab in my testing",
+      "revId": "e44fab0fcf73b370290cb35ff81c1a21ad4b0cb0",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
