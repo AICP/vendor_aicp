@@ -14,10 +14,11 @@ PRODUCT_PACKAGES += \
 # su
 PRODUCT_PACKAGES += \
     adb_root
-#ifeq ($(WITH_SU),true)
-#PRODUCT_PACKAGES += \
-#    su
-#endif
+
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
+    su
+endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
