@@ -137,7 +137,7 @@ Control the behavior when the user long presses the home button.
 1 = Recent apps view in SystemUI.
 2 =Launch assist intent.
 ```
-<integer name="config_longPressOnHomeBehavior">X</integer>
+<integer name="config_longPressOnHomeBehavior">2</integer>
 ```
 
 Useful if you want to improve signal reception:
@@ -147,7 +147,7 @@ Useful if you want to improve signal reception:
 
 In the case your device has volume rockers on left side and would like audio panel location to appear on the left side:
 ```
-<bool name="config_audioPanelOnLeftSide">false</bool>
+<bool name="config_audioPanelOnLeftSide">true</bool>
 ```
 
 The System Info feature requires the following overlays to be non-empty to be functional, as some legacy devices do not have the necessary kernel sysfs to display particular sys info.
@@ -160,15 +160,15 @@ The System Info feature requires the following overlays to be non-empty to be fu
 
 Support for doze triggers are provided using some overlays, which will have to be enabled depending on the device:
 ```
-<bool name="config_dozePulseTilt">false</bool>
-<bool name="config_dozePulseProximity">false</bool>
+<bool name="config_dozePulseTilt">true</bool>
+<bool name="config_dozePulseProximity">true</bool>
 ```
 
 AICP also allows full customisation to the notification LED function, some overlays have to be enabled depending on the feature supported by the notification LED on device:
 ```
 <bool name="config_intrusiveBatteryLed">true</bool>
 <bool name="config_multiColorBatteryLed">true</bool>
-<bool name="config_FastChargingLedSupported">false</bool>
+<bool name="config_FastChargingLedSupported">true</bool>
 ```
 
 If you have a FOD device, it's advised to enable the following overlays:
