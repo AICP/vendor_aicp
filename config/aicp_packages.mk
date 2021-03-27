@@ -22,6 +22,7 @@ endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    AicpSetupWizard \
     BluetoothExt \
     Email \
     Etar \
