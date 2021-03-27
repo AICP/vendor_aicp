@@ -22,11 +22,13 @@ endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
+    AicpSetupWizard \
     BluetoothExt \
     Email \
     Etar \
     ExactCalculator \
-    Exchange2
+    Exchange2 \
+    Seedvault
 #    Launcher3Dark
 
 # MusicFX
