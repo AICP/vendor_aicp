@@ -29,6 +29,12 @@ PRODUCT_PACKAGES += \
     Exchange2
 #    Launcher3Dark
 
+#AicpSetupWizard
+ifneq ($(WITH_GMS),true)
+PRODUCT_PACKAGES += \
+    AicpSetupWizard
+endif
+
 # MusicFX
 PRODUCT_PACKAGES += \
     MusicFX
