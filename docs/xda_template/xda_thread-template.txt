@@ -78,7 +78,7 @@ Starting with AICP 15 we will be storing a copy of the most recent release here:
 (Just click the changelog button next to the download link in the list of builds available for your device)
 
 Google Apps:
-(link the best one for your device, there are several variants out there right now, nano/micro GApps from opengapps.org is almost always a good choice though)
+Use MindTheGapps: https://androidfilehost.com/?w=files&flid=322935
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/issues.png[/IMG]
 
