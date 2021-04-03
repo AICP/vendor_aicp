@@ -26,6 +26,7 @@
         <item>privacy/permissions_hub_2_enabled=true</item>
         <item>privacy/permissions_hub_enabled=true</item>
 
+        <item>runtime_native_boot/iorap_perfetto_enable=true</item>
         <!--
             Device Personalization Services (AiAi)
         -->
