@@ -78,7 +78,10 @@ Starting with AICP 15 we will be storing a copy of the most recent release here:
 (Just click the changelog button next to the download link in the list of builds available for your device)
 
 Google Apps:
-Use MindTheGapps: https://androidfilehost.com/?w=files&flid=322935
+We recommend MindTheGapps as it has been thoroughly tested and it works well with the ROM, some other minimal GApps packages still have issues, however feel free to try other GApps if you want to, just try MindTheGapps if you have any GApps related issues
+
+MindTheGapps: https://androidfilehost.com/?w=files&flid=322935
+Mirror: http://downloads.codefi.re/jdcteam/javelinanddart/gapps
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/issues.png[/IMG]
 
