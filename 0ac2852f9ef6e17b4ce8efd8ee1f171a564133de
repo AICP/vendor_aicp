@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "504b9868_77f66fcb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-04-09T09:18:51Z",
+      "side": 1,
+      "message": "Why not for all? https://gerrit.aicp-rom.com/c/AICP/build/+/90137",
+      "revId": "0ac2852f9ef6e17b4ce8efd8ee1f171a564133de",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
