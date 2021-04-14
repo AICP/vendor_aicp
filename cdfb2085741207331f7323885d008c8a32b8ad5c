@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c7651a5_54e53e50",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-04-14T17:39:14Z",
+      "side": 1,
+      "message": "why are we just doing this for weekly build though? Test builds might be using the experimental version name or even nightly",
+      "revId": "cdfb2085741207331f7323885d008c8a32b8ad5c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
