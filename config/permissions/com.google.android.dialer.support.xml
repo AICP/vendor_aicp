@@ -3,7 +3,7 @@
          Play Store. This will be deprecated once Google Dialer play store
          updates stop supporting pre-O devices. -->
     <library name="com.google.android.dialer.support"
-      file="/system/framework/com.google.android.dialer.support.jar" />
+      file="/product/framework/com.google.android.dialer.support.jar" />
 
     <!-- Starting from Android O and above, this system feature is required for
          getting Google Dialer play store updates. -->
