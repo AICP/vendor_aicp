@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d0733f7b_9b768a0b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-04-15T16:09:23Z",
+      "side": 1,
+      "message": "Reference: latest Pixel 5 factory image version redfin-user-11-RQ2A.210405.005-7181113-release-keys\n\nTODO:\n- Add any missing configs\n- Update config file contents\n- Leverage soong build system to copy swipe libraries, should save 2.5 MB on arm targets",
+      "revId": "0759ace7bd231295661ca424121f7f0249c3cb60",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
