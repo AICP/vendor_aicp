@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a96e2e6_ba36db48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-04-15T21:14:28Z",
+      "side": 1,
+      "message": "copy google_build.xml as aicp_google_build.xml",
+      "revId": "ad48cd71157220b46752d7e2bbadf6dc2faed7cb",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
