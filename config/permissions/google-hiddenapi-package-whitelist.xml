@@ -22,6 +22,7 @@ This XML file declares which platform apps that need to access internal APIs.
   <hidden-api-whitelisted-app package="android.car.cluster.maserati" />
   <hidden-api-whitelisted-app package="com.android.apps.tag" />
   <hidden-api-whitelisted-app package="com.android.auto.embedded.cts.verifier" />
+  <hidden-api-whitelisted-app package="com.android.car.bugreport" />
   <hidden-api-whitelisted-app package="com.android.car.carlauncher" />
   <hidden-api-whitelisted-app package="com.android.car.home" />
   <hidden-api-whitelisted-app package="com.android.car.retaildemo" />
@@ -50,6 +51,7 @@ This XML file declares which platform apps that need to access internal APIs.
   <hidden-api-whitelisted-app package="com.android.tv.provision" />
   <hidden-api-whitelisted-app package="com.google.SSRestartDetector" />
   <hidden-api-whitelisted-app package="com.google.android.apps.nexuslauncher" />
+  <hidden-api-whitelisted-app package="com.google.android.apps.wallpaper" />
   <hidden-api-whitelisted-app package="com.google.android.asdiv" />
   <hidden-api-whitelisted-app package="com.google.android.athome.globalkeyinterceptor" />
   <hidden-api-whitelisted-app package="com.google.android.car.bugreport" />
@@ -75,8 +77,10 @@ This XML file declares which platform apps that need to access internal APIs.
   <hidden-api-whitelisted-app package="com.google.android.hiddenmenu" />
   <hidden-api-whitelisted-app package="com.google.android.onetimeinitializer" />
   <hidden-api-whitelisted-app package="com.google.android.packageinstaller" />
+  <hidden-api-whitelisted-app package="com.google.android.permissioncontroller" />
   <hidden-api-whitelisted-app package="com.google.android.partner.provisioning" />
   <hidden-api-whitelisted-app package="com.google.android.partnersetup" />
+  <hidden-api-whitelisted-app package="com.google.android.pixel.setupwizard" />
   <hidden-api-whitelisted-app package="com.google.android.preloaded_drawable_viewer" />
   <hidden-api-whitelisted-app package="com.google.android.printservice.recommendation" />
   <hidden-api-whitelisted-app package="com.google.android.sampledeviceowner" />
@@ -108,4 +112,5 @@ This XML file declares which platform apps that need to access internal APIs.
   <hidden-api-whitelisted-app package="org.chromium.arc.home" />
   <hidden-api-whitelisted-app package="org.chromium.arc.intent_helper" />
   <hidden-api-whitelisted-app package="org.chromium.arc.tts" />
+  <hidden-api-whitelisted-app package="com.ustwo.lwp" />
 </config>
