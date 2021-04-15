@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc1c1340_aefa2151",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-04-15T16:12:50Z",
+      "side": 1,
+      "message": "Test:\n- Compiles\n- Open Settings \u003e Battery \u003e Battery saver \u003e Set a schedule, observe \"Based on routine\" preference\n- Observe the above preference isn\u0027t selected by default\n",
+      "revId": "3fb7a894a40e7e25c0ae9db5b30475d34ee9b247",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
