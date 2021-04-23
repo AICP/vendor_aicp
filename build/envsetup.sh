@@ -450,7 +450,7 @@ function makerecipe() {
 }
 
 function aicpgerrit() {
-    if [ "$(__detect_shell)" = "zsh" ]; then
+    if [ "$(basename $SHELL)" = "zsh" ]; then
         # zsh does not define FUNCNAME, derive from funcstack
         local FUNCNAME=$funcstack[1]
     fi
