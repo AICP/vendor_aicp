@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf26d4b8_092c2424",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-04-29T13:12:04Z",
+      "side": 1,
+      "message": "Test:\n- Compiles\n- The hosts file is generated with lines \n        127.0.0.1       localhost\n        ::1             ip6-localhost\n    same as the AOSP hosts file\n- The script accepts a custom input hosts file",
+      "revId": "ed9c2d4db7926b8f7765a5d6cc26e54c5f97e45c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
