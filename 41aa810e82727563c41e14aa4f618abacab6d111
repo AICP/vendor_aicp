@@ -16,6 +16,23 @@
       "message": "For using it on the builds hash? - Does it need that secure?",
       "revId": "41aa810e82727563c41e14aa4f618abacab6d111",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "925be1c3_1647649c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1649
+      },
+      "writtenOn": "2021-05-01T12:20:48Z",
+      "side": 1,
+      "message": "MD5 is still good for use as an integrity check.\n\nI\u0027d agree with adding sha256 additionally though, as being more resistant to collisions and for having an alternative in case maybe one checksum is bad.\n\nHowever sha512 seems a bit overkill in my opinion.",
+      "revId": "41aa810e82727563c41e14aa4f618abacab6d111",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
