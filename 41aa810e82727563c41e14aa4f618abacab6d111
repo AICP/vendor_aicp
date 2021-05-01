@@ -50,6 +50,23 @@
       "message": "I agree - 512 is a bit overkill ;-)",
       "revId": "41aa810e82727563c41e14aa4f618abacab6d111",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bd426051_033c4c6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1782
+      },
+      "writtenOn": "2021-05-01T16:00:02Z",
+      "side": 1,
+      "message": "Doesn\u0027t matter too much to me, but since I was tagged...\n\nThe past month, I\u0027ve been involved in OS packaging at work and security reviews for integrity of images.  The current industry standard is sha256.  CentOS and Ubuntu both use it.  And if you want to  \nensure the integrity of the hash file, you can sign it with GPG.  Note CentOS and Ubuntu both do this, but they do it slightly differently.\n\nIf it was up to me, I would not generate multiple hash files.  I would probably either pick a single hash (sha256) or put all the hashes in a single file.\n",
+      "revId": "41aa810e82727563c41e14aa4f618abacab6d111",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
