@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7372b968_2be5653f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-05-01T12:07:16Z",
+      "side": 1,
+      "message": "For using it on the builds hash? - Does it need that secure?",
+      "revId": "41aa810e82727563c41e14aa4f618abacab6d111",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
