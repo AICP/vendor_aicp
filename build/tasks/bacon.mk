@@ -18,10 +18,10 @@
 
 AICP_TARGET_PACKAGE  := $(PRODUCT_OUT)/$(AICP_VERSION).zip
 
-MD5 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/md5sum
+SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AICP_TARGET_PACKAGE)
-	$(hide) $(MD5) $(AICP_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AICP_TARGET_PACKAGE).md5sum
+	$(hide) $(SHA256) $(AICP_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AICP_TARGET_PACKAGE).sha256sum
 	@echo "Package Complete: $(AICP_TARGET_PACKAGE)" >&2
