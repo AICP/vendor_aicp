@@ -16,6 +16,23 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/309048",
       "revId": "db243cf28335168070cff8c6b95217ed83060354",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e0bcda7_1eac310b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-05-02T10:20:38Z",
+      "side": 1,
+      "message": "oh, oh, fast... Bruno wants it too ... lol. I go with Joels opinion, tbh.\nstill saying that it is not necessary though, but 🤷",
+      "revId": "db243cf28335168070cff8c6b95217ed83060354",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
