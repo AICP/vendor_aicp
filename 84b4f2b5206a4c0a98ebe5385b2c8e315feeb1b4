@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b325a1f2_a105dafc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2021-05-03T11:44:15Z",
+      "side": 1,
+      "message": "so, you wanna keep md5,yes? and both in one file like Tom suggested?\nOr just wait for LOS and see, what they are doing and adapt?",
+      "revId": "84b4f2b5206a4c0a98ebe5385b2c8e315feeb1b4",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
