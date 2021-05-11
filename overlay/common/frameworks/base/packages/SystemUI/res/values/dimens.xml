@@ -23,4 +23,6 @@
     <!-- 12dp -->
     <dimen name="header_subtitle_padding">8dp</dimen>
 
+    <!--  Blur radius on status bar window and power menu  -->
+    <dimen name="max_window_blur_radius">50dp</dimen>
 </resources>
