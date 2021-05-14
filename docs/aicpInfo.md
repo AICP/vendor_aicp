@@ -229,29 +229,8 @@ PRODUCT_PACKAGES += \
     Snap
 ```
 
-To include JamesDSP instead of MusicFX:
-
-Note:
-
->This will not work on devices that use the stock vendor image
-
->You will also have to add the audio effect
-
->Pick this if you have audio_effects.xml: https://gerrit.aicp-rom.com/c/AICP/device_htc_hima-common/+/79367
-
->Pick this if you have audio_effects.conf: https://gerrit.aicp-rom.com/c/AICP/device_oneplus_msm8998-common/+/79640
-```
-PRODUCT_PACKAGES += \
-    JamesDSPManager
-```
-
-Optional AICP packages to remove (in BoardConfig.mk)
+Optional AICP (and other) flags to add (in BoardConfig.mk)
 -------------------------------
-
-To remove MusicFX (and ship without any included equalizer app):
-```
-TARGET_USE_MUSICFX := false
-```
 
 Add if you have an A/B device:
 ```

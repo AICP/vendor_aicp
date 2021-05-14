@@ -8,10 +8,6 @@ ifeq ($(TARGET_IS_AB_DEVICE),true)
     AB_OTA_UPDATER := true
 endif
 
-ifeq ($(TARGET_USE_MUSICFX),false)
-    TARGET_USE_NO_MUSICFX := true
-endif
-
 include vendor/aicp/config/BoardConfigKernel.mk
 ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
 include prebuilts/clang/host/linux-x86_custom/clang_custom.mk
