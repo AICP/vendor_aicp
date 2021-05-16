@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f6c3d84_1adafe38",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1841
+      },
+      "writtenOn": "2021-05-16T16:07:40Z",
+      "side": 1,
+      "message": "Works fine with the necassary flag",
+      "revId": "7c5d4ecad04bb7a49827f6b85e8be8981f180a73",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
