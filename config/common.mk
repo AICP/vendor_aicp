@@ -18,6 +18,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.sys.recovery_update=true
 endif
 
+# Disable extra StrictMode features on all non-engineering builds
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += persist.sys.strictmode.disable=true
+
 # Include AOSP audio files
 include vendor/aicp/config/aosp_audio.mk
 
