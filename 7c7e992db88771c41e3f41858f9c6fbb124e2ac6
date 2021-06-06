@@ -16,6 +16,23 @@
       "message": "any cons ?",
       "revId": "7c7e992db88771c41e3f41858f9c6fbb124e2ac6",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34a408e1_1b8ee685",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-06-06T14:17:23Z",
+      "side": 1,
+      "message": "Is based on\n1. https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/311506 and\n2. https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/311021\n\nWill disable StrictMode (StrictMode is a developer tool which detects things you might be doing by accident and brings them to your attention so you can fix them.)(https://github.com/AICP/frameworks_base/blob/r11.1/core/java/android/os/StrictMode.java)\n\nThe warnings observed are predominantly from gms.dynamite (Googal\u0027s, whose else\u0027s)\n\nI\u0027m still observing warnings so think this is not enough \n",
+      "revId": "7c7e992db88771c41e3f41858f9c6fbb124e2ac6",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
