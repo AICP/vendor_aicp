@@ -51,6 +51,41 @@
       "parentUuid": "34a408e1_1b8ee685",
       "revId": "7c7e992db88771c41e3f41858f9c6fbb124e2ac6",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e5ee4428_874e63ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-06-09T14:24:13Z",
+      "side": 1,
+      "message": "Anyway, will try some thing to silence the spam, later",
+      "revId": "7c7e992db88771c41e3f41858f9c6fbb124e2ac6",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "109272c9_ca82d68b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-06-09T14:24:13Z",
+      "side": 1,
+      "message": "But docs does say otherwise, \"Boolean system property to disable strict mode checks outright.\"",
+      "parentUuid": "edf127bd_5e9d3dad",
+      "revId": "7c7e992db88771c41e3f41858f9c6fbb124e2ac6",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
