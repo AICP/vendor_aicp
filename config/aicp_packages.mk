@@ -97,9 +97,7 @@ endif
 # Extra tools
 PRODUCT_PACKAGES += \
     7z \
-    awk \
     bash \
-    bzip2 \
     curl \
     getcap \
     htop \
