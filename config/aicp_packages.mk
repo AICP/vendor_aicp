@@ -77,8 +77,6 @@ PRODUCT_PACKAGES += \
     e2fsck \
     mke2fs \
     tune2fs \
-    fsck.exfat \
-    mkfs.exfat \
     ntfsfix \
     ntfs-3g \
     fsck.ntfs \
