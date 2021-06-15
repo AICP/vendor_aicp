@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "47d996ed_5212a4ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2021-06-15T19:58:54Z",
+      "side": 1,
+      "message": "part of https://review.lineageos.org/q/topic:%22LA.UM.9.12.r1-11500-SMxx50.0%22+(status:open%20OR%20status:merged) topic.",
+      "revId": "8c87cefb12c89738bf23333c03fcef4bab2ea504",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
