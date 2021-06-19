@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3ba81e88_d9e0b6af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 8
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-06-19T08:43:03Z",
+      "side": 1,
+      "message": "Change is just placebo, the keys are defined here (https://github.com/AICP/build/blob/79dd345ed7777345b82a7d948e6e5f15e00d8ec8/core/Makefile#L322). So there is no point trying to define in vendor\n",
+      "revId": "0bb8d96cb01f96228fc08571825622ecbcc0f267",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
