@@ -1,4 +1,4 @@
-#Feature list
+# Feature list
 
 _apart from the default AOSP settings..._
 
@@ -41,7 +41,7 @@ _apart from the default AOSP settings..._
 - Edge notifications with colour options
 - Enable/Disable hardware keys
 - Enable/Disable lock-screen media art globally
-- Enable/Disable the nabvar
+- Enable/Disable the navbar
 - Enhanced Changelog in AicpExtras
 - Enhanced Launcher3 (Quickstep) with various tweaks & customizations
 - Fingerprint authentication vibration
