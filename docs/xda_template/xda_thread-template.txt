@@ -182,7 +182,7 @@ On encrypted devices, you will have to enter your PIN/password in TWRP before th
 [B]Device tree source:[/B]
 [B]Put the Github link to your device tree HERE.[/B]
 [B]Vendor source:[/B]
-Follow this guide if you want to extract the vendor blobs: https://wiki.lineageos.org/extracting_blobs_from_zips.html
+Follow [URL="https://wiki.lineageos.org/extracting_blobs_from_zips.html"]this guide[/URL] if you want to extract the vendor blobs
 
 [B]ROM & Additional links:
 [URL="https://www.aicp-rom.com/"]AICP's Homepage[/URL]
@@ -196,7 +196,7 @@ Follow this guide if you want to extract the vendor blobs: https://wiki.lineageo
 (mention all the devs who have contributed to your device tree, kernel, vendor, etc,
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
-[B][U]Information:[/U[[/B]
+[B][U]Information:[/U][/B]
 [B]ROM OS Version:[/B] 11.x
 [B]Kernel:[/B] Linux x.z.y (for example: 4.14.y)
 [B]ROM {Firmware|Vendor} required:[/B]
