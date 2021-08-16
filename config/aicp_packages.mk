@@ -146,4 +146,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
+# Terminal
+PRODUCT_PACKAGES += \
+    Terminal
+
 -include packages/overlays/AICP/product_packages.mk
