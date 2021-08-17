@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c751b5fa_c38c2585",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-08-17T06:03:13Z",
+      "side": 1,
+      "message": "Just a heads-up, https://review.lineageos.org/q/topic:%22eleven-kill-terminal%22+(status:open%20OR%20status:merged)",
+      "revId": "fab32ccdffa9babd82cd83fb41346af40c5d7157",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
