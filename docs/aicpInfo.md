@@ -99,7 +99,7 @@ You might want to use this if your device isn't friendly with EGL rendering, use
 
 If you run qcacld-3.0 wifi driver, you might as well use this for wifi random mac generation, useful when logging in public networks:
 ```
-<bool name="config_wifi_support_connected_mac_randomization_supported">true</bool>
+<bool name="config_wifi_connected_mac_randomization_supported">true</bool>
 ```
 
 If your device is somewhat decent, like a sm8150 one, you can use this to enable 802.11r support (Fast BSS Transition):
