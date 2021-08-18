@@ -176,6 +176,12 @@ AICP also allows full customisation to the notification LED function, some overl
 <bool name="config_FastChargingLedSupported">false</bool>
 ```
 
+To enable statusbar burn-in protection (Amoled only):
+```
+<bool name="config_enableBurnInProtection">true</bool>
+```
+
+
 SystemUI Overlays (Controls SystemUI behavior) (add to: overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
 To adjust the cpu temp path for the cpu info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
@@ -192,11 +198,6 @@ The maximum number of notification on the statusbar is currently limited, you ca
 ```
 <integer name="config_maxVisibleNotificationIcons">5</integer>
 <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
-```
-
-To enable statusbar burn-in protection (Amoled only):
-```
-<bool name="config_enableBurnInProtection">true</bool>
 ```
 
 Settings Overlays (add to: overlay/packages/apps/Settings/res/values/config.xml)
