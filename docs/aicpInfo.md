@@ -1,6 +1,6 @@
 Optional AICP (and general) overlays to add
 -------------------------------
-Framework Overlays (add to overlay/frameworks/base/core/res/res/values/config.xml)
+Frameworks_base_core Overlays (add to overlay/frameworks/base/core/res/res/values/config.xml)
 
 To fully utilize the hardware keys (Wake up the device with keys, enable/disable keys, swap keys, etc. ), the following overlays must be enabled:
 
@@ -97,31 +97,6 @@ You might want to use this if your device isn't friendly with EGL rendering, use
 <bool name="config_animateScreenLights">false</bool>
 ```
 
-If you run qcacld-3.0 wifi driver, you might as well use this for wifi random mac generation, useful when logging in public networks:
-```
-<bool name="config_wifi_support_connected_mac_randomization_supported">true</bool>
-```
-
-If your device is somewhat decent, like a sm8150 one, you can use this to enable 802.11r support (Fast BSS Transition):
-```
-<bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
-```
-
-Useful if you have qcacld-3.0 on a decent platform:
-```
-<bool translatable="false" name="config_wifi_batched_scan_supported">true</bool>
-```
-
-Normally you don't have to do this, but I've had weird issues running on a 5Ghz network, indicate that you support both of the two bands(2,4Ghz and 5Ghz):
-```
-<bool translatable="false" name="config_wifi_dual_band_support">true</bool>
-```
-
-Useful if you have qcacld-3.0 and wifi is always on. This capability can provide power savings when wifi needs to be always kept on.
-```
-<bool translatable="false" name="config_wifi_background_scan_support">true</bool>
-```
-
 If you have an sm8150 device, why not enable WiFi display? The only prerequisite is you must have a rule for the "r_submix" in the audio_policy.conf file.
 ```
 <bool name="config_enableWifiDisplay">true</bool>
@@ -178,6 +153,12 @@ If you have a FOD device, it's advised to enable the following overlays:
 <integer name="config_fingerprintSensorLocation">1</integer>
 ```
 
+To enable statusbar burn-in protection (Amoled only):
+```
+<bool name="config_enableBurnInProtection">true</bool>
+```
+
+
 SystemUI Overlays (Controls SystemUI behavior) (add to overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
 To adjust the CPU temp path for the CPU info option in aicp extras (note: This should only be added if it doesn't show the temp by default and you will have to find the right path for your device):
@@ -196,9 +177,28 @@ The maximum number of notification on the statusbar is currently limited, you ca
 <integer name="config_maxVisibleNotificationIconsOnLock">6</integer>
 ```
 
-To enable statusbar burn-in protection (Amoled only):
+
+Frameworks_opt_net_wifi Overlays (add to rro_overlays/WifiOverlay/res/values/config.xml)
+
+If you run qcacld-3.0 wifi driver, you might as well use this for wifi random mac generation, useful when logging in public networks:
 ```
-<bool name="config_enableBurnInProtection">true</bool>
+<bool name="config_wifi_connected_mac_randomization_supported">true</bool>
+```
+
+If your device is somewhat decent, like a sm8150 one, you can use this to enable 802.11r support (Fast BSS Transition):
+```
+<bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+```
+
+Normally you don't have to do this, but I've had weird issues running on a 5Ghz network, indicate that you support both of the two bands(2,4Ghz and 5Ghz):
+```
+<bool translatable="false" name="config_wifi_dual_band_support">true</bool>
+```
+
+
+Useful if you have qcacld-3.0 and wifi is always on. This capability can provide power savings when wifi needs to be always kept on.
+```
+<bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 ```
 
 Settings Overlays (add to overlay/packages/apps/Settings/res/values/config.xml)
