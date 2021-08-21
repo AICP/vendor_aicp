@@ -133,6 +133,14 @@ The System Info feature requires the following overlays to be non-empty to be fu
 <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 ```
 
+You might also need the following overlay(s) to make the temperature value(s) user-readable
+```
+<integer name="config_sysCPUTempMultiplier">1</integer>
+<integer name="config_sysBatteryTempMultiplier">1</integer>
+```
+
+*Note: If the values are not displayed even after configuring these overlays, you might want to check for SELinux denials, associated with these sysfs. These can be resolved with rules as in [here](https://github.com/AICP/device_oneplus_msm8998-common/commit/21641629a256ae42c2ffafdd95c98a781af852ae)*
+
 Support for doze triggers are provided using some overlays, which will have to be enabled depending on the device:
 ```
 <bool name="config_dozePulseTilt">true</bool>
@@ -158,6 +166,11 @@ To enable statusbar burn-in protection (Amoled only):
 <bool name="config_enableBurnInProtection">true</bool>
 ```
 
+In case the device supports an OEM fast-charging solution(Dash, Warp, Turbo, etc), you may add the OEM fast charger status path to
+```
+<string-array name="config_oemFastChargerStatusPaths" translatable="false">
+</string-array>
+```
 
 SystemUI Overlays (Controls SystemUI behavior) (add to overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
@@ -208,6 +221,18 @@ To enable display touch sensitivity switch:
 <bool name="config_show_touch_sensitivity">true</bool>
 ```
 
+To enable Battery Health section on the battery info page, the following overlays will need to be filled with device-specific sysfs,
+```
+<string name="config_batCurCap"></string>
+<string name="config_batDesCap"></string>
+<string name="config_batChargeCycle"></string>
+<string name="config_batHealth"></string>
+<string name="config_batType"></string>
+```
+and
+```
+<bool name="config_supportBatteryHealth">true</bool>
+```
 
 Dialer Overlays (add to overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
 To enable call recording:
