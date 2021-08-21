@@ -97,12 +97,12 @@ You might want to use this if your device isn't friendly with EGL rendering, use
 <bool name="config_animateScreenLights">false</bool>
 ```
 
-If you have an sm8150 device, why not enable WiFi display? The only prerequisite is you must have a rule for the "r_submix" in the audio_policy.conf file.
+If you have an sm8150 device, why not enable WiFi display? The only prerequisite is you must have a rule for the "r_submix" in the audio_policy.conf file:
 ```
 <bool name="config_enableWifiDisplay">true</bool>
 ```
 
-If you plan to use the above overlay use this as well.
+If you plan to use the above overlay use this as well:
 ```
 <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 ```
@@ -125,13 +125,21 @@ In the case your device has volume rockers on left side and would like audio pan
 <bool name="config_audioPanelOnLeftSide">true</bool>
 ```
 
-The System Info feature requires the following overlays to be non-empty to be functional, as some legacy devices do not have the necessary kernel sysfs to display particular sys info.
+The System Info feature requires the following overlays to be non-empty to be functional, as some legacy devices do not have the necessary kernel sysfs to display particular sys info:
 ```
 <string name="config_sysCPUTemp">/sys/class/thermal/thermal_zone0/temp</string>
 <string name="config_sysBatteryTemp">/sys/class/power_supply/battery/temp</string>
 <string name="config_sysGPUFreq">/sys/kernel/gpu/gpu_clock</string>
 <string name="config_sysGPULoad">/sys/kernel/gpu/gpu_busy</string>
 ```
+
+You might also need the following overlay(s) to make the temperature value(s) user-readable:
+```
+<integer name="config_sysCPUTempMultiplier">1</integer>
+<integer name="config_sysBatteryTempMultiplier">1</integer>
+```
+
+*Note: If the values are not displayed even after configuring these overlays, you might want to check for SELinux denials, associated with these sysfs. These can be resolved with rules as in [here](https://github.com/AICP/device_oneplus_msm8998-common/commit/21641629a256ae42c2ffafdd95c98a781af852ae)*
 
 Support for doze triggers are provided using some overlays, which will have to be enabled depending on the device:
 ```
@@ -158,10 +166,18 @@ To enable statusbar burn-in protection (Amoled only):
 <bool name="config_enableBurnInProtection">true</bool>
 ```
 
-To enable the option to hide the black fill-in for the display cutout
+To enable the option to hide the black fill-in for the display cutout:
 ```
 <!-- Whether to show settings for hiding notch fill -->
 <bool name="config_showHideNotchSettings">true</bool>
+```
+
+To enable an OEM fast-charging solution(Dash, Warp, Turbo, etc), make sure the path is correct for your device:
+```
+<!-- Paths to fast charging status file to detect whether an oem fast charger is active -->
+<string-array name="config_oemFastChargerStatusPaths" translatable="false">
+/sys/class/power_supply/battery/fastchg_status
+</string-array>
 ```
 
 
@@ -202,7 +218,7 @@ Normally you don't have to do this, but I've had weird issues running on a 5Ghz 
 ```
 
 
-Useful if you have qcacld-3.0 and wifi is always on. This capability can provide power savings when wifi needs to be always kept on.
+Useful if you have qcacld-3.0 and wifi is always on. This capability can provide power savings when wifi needs to be always kept on:
 ```
 <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
 ```
@@ -214,6 +230,18 @@ To enable display touch sensitivity switch:
 <bool name="config_show_touch_sensitivity">true</bool>
 ```
 
+To enable Battery Health section on the battery info page, the following overlays will need to be filled with device-specific sysfs paths:
+```
+<string name="config_batCurCap"></string>
+<string name="config_batDesCap"></string>
+<string name="config_batChargeCycle"></string>
+<string name="config_batHealth"></string>
+<string name="config_batType"></string>
+```
+and:
+```
+<bool name="config_supportBatteryHealth">true</bool>
+```
 
 Dialer Overlays (add to overlay/packages/apps/Dialer/java/com/android/dialer/callrecord/res/values/config.xml)
 To enable call recording:
@@ -248,7 +276,7 @@ Add if your device has a vendor partition, but does not build the vendor image w
 BUILD_WITHOUT_VENDOR := true
 ```
 
-Add if you want to exclude the aicp live wallpaper from your build because the device is too old to handle it well
+Add if you want to exclude the aicp live wallpaper from your build because the device is too old to handle it well:
 ```
 EXCLUDE_LIVE_WALLPAPER := true
 ```
@@ -305,7 +333,7 @@ as [here](https://github.com/AICP/device_oneplus_sdm845-common/blob/16f5876fdaf7
 
 Compile Kernel against a custom AOSP clang version
 -----------------------------------------------
-to compile your kernel against a custom Clang version, add these to your BoardConfig.mk file
+to compile your kernel against a custom Clang version, add these to your BoardConfig.mk file:
 ```
 TARGET_KERNEL_CLANG_CUSTOM := true
 TARGET_KERNEL_CLANG_VERSION := latest
