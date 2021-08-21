@@ -16,6 +16,23 @@
       "message": "TODO\n- Add commits as reference",
       "revId": "596e8e4dbb550d6d7287983c03f470e9391a0327",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3fd3101c_e8d27481",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-08-21T06:29:46Z",
+      "side": 1,
+      "message": "I am a bit \"unhappy\" with the last part for fast charging and enabling. the mention of the strings... I think you borked it there. 😉",
+      "revId": "596e8e4dbb550d6d7287983c03f470e9391a0327",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
