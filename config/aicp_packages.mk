@@ -131,15 +131,6 @@ endif
 PRODUCT_PACKAGES += \
     AicpExtras \
     AicpThemesStub \
-    FontUbuntuOverlay \
-    FontOpenSansOverlay \
-    FontComfortaaOverlay \
-    FontCaviarDreamsOverlay \
-    FontExotwoOverlay \
-    FontSnigletOverlay \
-    FontSignikaOverlay \
-    FontOxaniumOverlay \
-    FontInterOverlay \
     TilesWallpaper
 
 # AICP Ad-block
