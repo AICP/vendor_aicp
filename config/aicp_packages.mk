@@ -147,3 +147,6 @@ PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
 -include packages/overlays/AICP/product_packages.mk
+
+# Plugins
+include packages/plugins/VolumePlugins/plugins.mk

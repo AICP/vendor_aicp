@@ -33,6 +33,10 @@
     <string-array name="config_pluginWhitelist" translatable="false">
         <item>com.android.systemui</item>
         <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>co.potatoproject.plugin.volume.tiled</item>
+        <item>co.potatoproject.plugin.volume.oreo</item>
+        <item>co.potatoproject.plugin.volume.compact</item>
+        <item>co.potatoproject.plugin.volume.aosp</item>
     </string-array>
 
 </resources>
