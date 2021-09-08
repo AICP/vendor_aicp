@@ -33,7 +33,14 @@
     <string-array name="config_pluginWhitelist" translatable="false">
         <item>com.android.systemui</item>
         <item>com.android.systemui.plugin.globalactions.wallet</item>
+        <item>com.android.plugin.volume.aosp</item>
+        <item>com.android.plugin.volume.compact</item>
+        <item>com.android.plugin.volume.miui</item>
+        <item>com.android.plugin.volume.oos</item>
+        <item>com.android.plugin.volume.oreo</item>
+        <item>com.android.plugin.volume.p404</item>
+        <item>com.android.plugin.volume.ssos</item>
+        <item>com.android.plugin.volume.tiled</item>
     </string-array>
-
 </resources>
 
