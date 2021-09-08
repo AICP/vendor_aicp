@@ -158,6 +158,12 @@ To enable statusbar burn-in protection (Amoled only):
 <bool name="config_enableBurnInProtection">true</bool>
 ```
 
+To enable the option to hide the black fill-in for the display cutout
+```
+<!-- Whether to show settings for hiding notch fill -->
+<bool name="config_showHideNotchSettings">true</bool>
+```
+
 
 SystemUI Overlays (Controls SystemUI behavior) (add to overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
