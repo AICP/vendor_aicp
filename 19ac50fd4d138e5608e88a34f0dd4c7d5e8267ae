@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d63dad7d_92a2420c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-10-03T04:48:17Z",
+      "side": 1,
+      "message": "On vendor-less builds, without this patch the vendor props prevails which points to mostly, non-existent media files\n\nWith this patch, the vendor props are overridden and defaults are set to files shipped by AICP.\n\nOriginal commit: https://github.com/LineageOS/android_vendor_lineage/commit/87467210f3a4508f6bf9ed81fe37476f0c03ad3a",
+      "revId": "19ac50fd4d138e5608e88a34f0dd4c7d5e8267ae",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
