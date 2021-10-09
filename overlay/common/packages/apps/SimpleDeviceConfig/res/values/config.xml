@@ -68,6 +68,9 @@
         <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
         <item>device_personalization_services/Overview__enable_overview=false</item>
         <item>device_personalization_services/VisualCortex__enable=false</item>
+
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
     </string-array>
 
 </resources>
