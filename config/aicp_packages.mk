@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OmniStyle
 
+# SoftAPManager
+PRODUCT_PACKAGES += \
+    SoftAPManager
+
 # SystemUI plugins
 PRODUCT_PACKAGES += \
     QuickAccessWallet
