@@ -226,7 +226,6 @@ ifeq ($(TARGET_KERNEL_CLANG_COMPILE),true)
         KERNEL_NM := NM=llvm-nm
         KERNEL_STRIP := STRIP=llvm-strip
     else
-        KERNEL_LD :=
         KERNEL_AR :=
         KERNEL_OBJCOPY :=
         KERNEL_OBJDUMP :=
