@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fafd930a_a154a4ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-10-14T14:55:44Z",
+      "side": 1,
+      "message": "This is to fix an case where defining KERNEL_LD doesn\u0027t give expected result when KERNEL_SUPPORTS_LLVM_TOOLS is set to false\n\nThis is explicitly handled in #L246-248\n\n\n\n",
+      "revId": "71c7158448fe4d44a23fd35c211bd491dca5b49b",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
