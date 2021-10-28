@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4ad34b4b_4203af09",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-10-28T05:00:34Z",
+      "side": 1,
+      "message": "Needs more commits",
+      "revId": "115c01d0a73f3b2edc8baa622e50da3f15ca2549",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de9776b7_12b3f4e8",
+        "filename": "overlay/common/packages/apps/Launcher3/quickstep/recents_ui_overrides/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-10-28T05:00:34Z",
+      "side": 1,
+      "message": "This needs a commit in Launcher3 (https://github.com/search?q\u003dChange+blur+radius+to+dimension+resource\u0026type\u003dcommits)",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 52
+      },
+      "revId": "115c01d0a73f3b2edc8baa622e50da3f15ca2549",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
