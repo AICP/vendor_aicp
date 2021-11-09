@@ -118,10 +118,12 @@ You tell... :P
 [COLOR="Blue"]A. Check the flashing instructions...[/COLOR]
 
 [COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, this is the usual behavior on flashing a new official build by (or using) the build-in updater service.[/COLOR]
+[COLOR="Blue"]A. Yes, this is how users can/should install updates most of the time, this can be done with the built-in updater service or with a custom recovery.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I 'dirty flash' builds?[/I][/COLOR]
-[COLOR="Blue"]A. Wipe the System, Cache, and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.[/COLOR]
+[COLOR="Blue"]A 1. [B]For "A only" devices:[/B] Wipe the System, Cache, and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.[/COLOR]
+
+[COLOR="Blue"]A 2. [B]For "A/B" devices":[/B] Wipe the ART/Dalvik cache. Flash the ROM, reboot to the recovery, flash GApps, your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.[/COLOR]
 
 [COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
 [COLOR="Blue"]A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot" as the destination, then swipe to flash, then go back to the install screen and install your root method again, if you don't want to lose root and reboot.[/COLOR]
@@ -148,12 +150,12 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 (Again: Don't do it if you don't know!)
 
 1. Download the ROM and GApps and transfer them to your device.
-2. Boot to recovery (TWRP recommended).
+2. Boot to recovery (TWRP is recommended, the lineage recovery is a great alternative however it will not decrypt the internal storage so you will have to flash the rom with adb sideload or usb OTG or with an external sdcard).
 3. Wipe the System, Cache, and Data (you might need to format the data partition!).
-4. Flash the ROM zip file.
+4. Flash the ROM zip file (reboot to recovery before flashing anything else if you have an "A/B" device).
 5. Flash the GApps (optional, needed for e.g. Google Playstore to work)
 6. Reboot and set up your device, enable developer settings and in them, OEM unlock/Advanced reboot/USB tethering.
-7. Reboot back into TWRP recovery.
+7. Reboot back into the recovery.
 8. Flash the root solution of your choice (optional).
 9. Reboot your device.
 [B][I]The procedure may vary from device to device and is a bit different on system updates![/I][/B]
@@ -168,10 +170,14 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 Magisk versions >= 20.4 don't usually need to be flashed on every dirty flash.
 Depending on the device, you may need to flash it every time, unless your maintainer says otherwise, you should be fine.
 
-[U][B]PREREQUISITE FOR OTA ("Over-The-Air" Updates):[/B][/U]
+[U][B]Instructions for OTA ("Over-The-Air" Updates) on "A only" devices (not A/B):[/B][/U]
 TWRP recovery is needed to be able to flash using the built-in OTA app.
 Please make sure that you are on the latest TWRP recovery, keep in mind that this could also be an unofficial version!
 On encrypted devices, you will have to enter your PIN/password in TWRP before the process starts.
+Open the updater app, download the update, then press install, press reboot when prompted, you will be taken to TWRP, there isn't any need to flash gapps separately
+
+[U][B]Instructions for OTA ("Over-The-Air" Updates) on "A/B" devices:[/B][/U]
+Open the updater app, download the update, then press install and wait for the process to finish (feel free to let it run in the background), then press reboot when prompted, there isn't any need to flash gapps separately
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/sources.png[/IMG]
 

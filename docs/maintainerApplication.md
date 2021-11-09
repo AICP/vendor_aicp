@@ -54,7 +54,7 @@
 * Maintainers **must** provide clear install instructions for the ROM for both clean installs and for regular updates (for OTA and manual installation).
 * Maintainers **must** provide clear install instructions for GApps and any essential add-ons (updated firmware, a specific vendor image, etc).
 
-*Note: Our XDA thread template provides general instructions that are sufficient for some devices, however, it may not be correct for your device, so make sure you change it to provide the proper instructions.*
+*Note: Our XDA thread template provides general instructions that are sufficient for most devices, however, it may not be correct for your device, so make sure you change it as needed to provide the proper instructions.*
 
 
 ## Do you think you still have the guts to tame the beast? - Well, then hook us up on https://discord.gg/nMQUVRD
