@@ -16,6 +16,23 @@
       "message": "I\u0027m going to miss those unreadable colors",
       "revId": "cf0fc047caac955c57196d45ef80d252226263fd",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3aff197_60c9c5ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2021-11-10T14:50:15Z",
+      "side": 1,
+      "message": "looks better.",
+      "revId": "cf0fc047caac955c57196d45ef80d252226263fd",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
