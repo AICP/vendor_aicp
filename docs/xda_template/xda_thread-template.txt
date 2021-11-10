@@ -57,19 +57,19 @@ AOSiP team
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/donations.png[/IMG]
 
-We are paying for servers that build weeklies and everything that comes with this, so [COLOR="DarkRed"]EVERY DONATION[/COLOR] will really be appreciated and be used to cover those expenses.
+We are paying for servers that build weeklies and everything that comes with this, so EVERY DONATION will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
 [URL="https://paypal.me/aicpromcom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/paypal.png[/IMG][/URL]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/downloads.png[/IMG]
 
-[SIZE=3][B][COLOR="RoyalBlue"]Latest Stable Release [/B][/COLOR][SIZE=2][B]Version [/B]16.1[/SIZE]
+[SIZE=3][B]Latest Stable Release [/B][SIZE=2][B]Version [/B]16.1[/SIZE]
 [/SIZE]
 [SIZE=3][B]Download link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
-[B][U][COLOR="Blue"]Please note that official builds will be deleted from our servers every month due to maintenance services.
-Starting with AICP 15 we will be storing a copy of the most recent release here: [url]https://media.aicp-rom.com/vault/[/url].[/COLOR][/U][/B]
+[B][U]Please note that official builds will be deleted from our servers every month due to maintenance services.
+Starting with AICP 15 we will be storing a copy of the most recent release here: [url]https://media.aicp-rom.com/vault/[/url].[/U][/B]
 
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/changelog.png[/IMG]
@@ -87,56 +87,56 @@ Mirror: http://downloads.codefi.re/jdcteam/javelinanddart/gapps
 
 You tell... :P
 
-[B][U][COLOR="Blue"]FAQ:[/COLOR][/U][/B]
+[B][U]FAQ:[/U][/B]
 [HIDE][B]Before using the ROM:[/B]
-[COLOR="Red"]Q. [I]Can I have an ETA for the next build?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/r11.1/aicp-build-targets"]here[/url] to see what day your device is built on.[/COLOR]
+Q. [I][B][U]Can I have an ETA for the next build?[/I][/B][/U]
+A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/r11.1/aicp-build-targets"]here[/url] to see what day your device is built on.
 
-[COLOR="Red"]Q. [I] Does this ROM [B]support[/B] custom kernels officially?[/I][/COLOR]
-[COLOR="Blue"]A. No. You can still use them, but the discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them![/COLOR]
+Q. [I][B][U] Does this ROM [B]support[/B] custom kernels officially?[/I][/B][/U]
+A. No. You can still use them, but the discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them!
 
-[COLOR="Red"]Q. [I] Does this ROM include GApps or do I have to flash them separately?[/I][/COLOR]
-[COLOR="Blue"]A. No, we do not include prebuilt GApps, because of possible licensing issues with Google Software and because some users do not want GApps preinstalled as they want to use alternative services like MicroG or just prefer flashing a GApps "flavor" of their liking.[/COLOR]
+Q. [I][B][U] Does this ROM include GApps or do I have to flash them separately?[/I][/B][/U]
+A. No, we do not include prebuilt GApps, because of possible licensing issues with Google Software and because some users do not want GApps preinstalled as they want to use alternative services like MicroG or just prefer flashing a GApps "flavor" of their liking.
 
-[COLOR="Red"]Q. [I] Does this ROM use the camera or gallery app from stock?[/I][/COLOR]
-[COLOR="Blue"]A. It depends on the device. In most cases these apps include proprietary libs/code and cannot be included in the device trees on Github or we risk having the ROM banned from Github. In this case, we might try to make them installable (separate from the ROM zip), or we might provide a version of these apps with the ROM that doesn't include any proprietary libs. It's also sometimes the case that these apps are simply not included because we didn't feel the need to do so for the device in question.[/COLOR]
+Q. [I][B][U] Does this ROM use the camera or gallery app from stock?[/I][/B][/U]
+A. It depends on the device. In most cases these apps include proprietary libs/code and cannot be included in the device trees on Github or we risk having the ROM banned from Github. In this case, we might try to make them installable (separate from the ROM zip), or we might provide a version of these apps with the ROM that doesn't include any proprietary libs. It's also sometimes the case that these apps are simply not included because we didn't feel the need to do so for the device in question.
 
-[COLOR="Red"]Q. [I] Does this ROM have Extended/Scrolling screenshot?[/I][/COLOR]
-[COLOR="Blue"]A. No, extended screenshot was implemented using an app extracted and modified from manufacturer firmware/system images and is proprietary as well. It led to the closing of many ROM's sources on GitHub.[/COLOR]
+Q. [I][B][U] Does this ROM have Extended/Scrolling screenshot?[/I][/B][/U]
+A. No, extended screenshot was implemented using an app extracted and modified from manufacturer firmware/system images and is proprietary as well. It led to the closing of many ROM's sources on GitHub.
 
-[COLOR="Red"]Q. [I] Does this ROM have FaceUnlock?[/I][/COLOR]
-[COLOR="Blue"]A. No, FaceUnlock was also an app extracted and modified from some manufacturers. Even Google removed the Trusted Face (FaceUnlock) feature for security reasons on Android 9.0/10.x. Adding the modified feature did the same to ROM sources as described above.[/COLOR]
+Q. [I][B][U] Does this ROM have FaceUnlock?[/I][/B][/U]
+A. No, FaceUnlock was also an app extracted and modified from some manufacturers. Even Google removed the Trusted Face (FaceUnlock) feature for security reasons on Android 9.0/10.x. Adding the modified feature did the same to ROM sources as described above.
 
-[COLOR="Red"]Q. [I] Can you add (insert favorite weather provider)?[/I][/COLOR]
-[COLOR="Blue"]A. No, we cannot add more weather providers as the implementations change and we (the ROM) now have to pay for most services, and that is not cheap, so we decided to use the best free service that we could find, the only way to add your own is for users to apply for their own API key to use their preferred service.[/COLOR]
+Q. [I][B][U] Can you add (insert favorite weather provider)?[/I][/B][/U]
+A. No, we cannot add more weather providers as the implementations change and we (the ROM) now have to pay for most services, and that is not cheap, so we decided to use the best free service that we could find, the only way to add your own is for users to apply for their own API key to use their preferred service.
 
-[COLOR="Red"]Q. [I] Does this ROM have private official builds with the above proprietary libs included?[/I][/COLOR]
-[COLOR="Blue"]A. No, we believe in open source software, this way users know what's in the build and can replicate it themselves, all official builds are built on our build servers using the public sources from github and no one can (or would) add their own private sources to the build.[/COLOR]
+Q. [I][B][U] Does this ROM have private official builds with the above proprietary libs included?[/I][/B][/U]
+A. No, we believe in open source software, this way users know what's in the build and can replicate it themselves, all official builds are built on our build servers using the public sources from github and no one can (or would) add their own private sources to the build.
 
 [B]Flashing the ROM:[/B]
-[COLOR="Red"]Q. [I]What do I need to know before flashing?[/I][/COLOR]
-[COLOR="Blue"]A. Check the flashing instructions...[/COLOR]
+Q. [I][B][U]What do I need to know before flashing?[/I][/B][/U]
+A. Check the flashing instructions...
 
-[COLOR="Red"]Q. [I]Can the builds be dirty flashed over each other?[/I][/COLOR]
-[COLOR="Blue"]A. Yes, this is how users can/should install updates most of the time, this can be done with the built-in updater service or with a custom recovery.[/COLOR]
+Q. [I][B][U]Can the builds be dirty flashed over each other?[/I][/B][/U]
+A. Yes, this is how users can/should install updates most of the time, this can be done with the built-in updater service or with a custom recovery.
 
-[COLOR="Red"]Q. [I]How do I 'dirty flash' builds?[/I][/COLOR]
-[COLOR="Blue"]A 1. [B]For "A only" devices:[/B] Wipe the System, Cache, and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.[/COLOR]
+Q. [I][B][U]How do I 'dirty flash' builds?[/I][/B][/U]
+A 1. [B]For "A only" devices:[/B] Wipe the System, Cache, and ART/Dalvik cache. Flash the ROM, GApps (only needed if you wipe the system), your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.
 
-[COLOR="Blue"]A 2. [B]For "A/B" devices":[/B] Wipe the ART/Dalvik cache. Flash the ROM, reboot to the recovery, flash GApps, your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.[/COLOR]
+A 2. [B]For "A/B" devices":[/B] Wipe the ART/Dalvik cache. Flash the ROM, reboot to the recovery, flash GApps, your preferred root solution, and reboot. Or just use the OTA app to perform that task for you.
 
-[COLOR="Red"]Q. [I]How do I flash kernel builds?[/I][/COLOR]
-[COLOR="Blue"]A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot" as the destination, then swipe to flash, then go back to the install screen and install your root method again, if you don't want to lose root and reboot.[/COLOR]
-[COLOR="Blue"]A2. If it's a flashable ZIP, you can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to lose root. Now swipe to flash and reboot afterward.[/COLOR]
+Q. [I][B][U]How do I flash kernel builds?[/I][/B][/U]
+A1. If it's a .img file, boot into TWRP and go to the install page in TWRP, in the bottom right corner select "install image", select the desired kernel, then select "boot" as the destination, then swipe to flash, then go back to the install screen and install your root method again, if you don't want to lose root and reboot.
+A2. If it's a flashable ZIP, you can flash it together with a ROM update or separately. Go to the install page in TWRP, choose the kernel zip (or add it to the flash queue right after the ROM zip). Then add your root method to the queue if you don't want to lose root. Now swipe to flash and reboot afterward.
 
 [B]Using the ROM:[/B]
 
-[COLOR="Red"]Q. [I]Do I need to provide a logcat if I'm reporting a bug?[/I][/COLOR]
-[COLOR="Blue"]A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat AND the model name. (Note: Please just link the logcat from your GDrive, Dropbox, etc. Do not post the content here. Thanks.)[/COLOR]
+Q. [I][B][U]Do I need to provide a logcat if I'm reporting a bug?[/I][/B][/U]
+A. If you want it to be fixed faster (or at all) then yes, you should definitely provide a logcat AND the model name. (Note: Please just link the logcat from your GDrive, Dropbox, etc. Do not post the content here. Thanks.)
 
-[COLOR="Red"]Q. [I]How do I get a logcat, what type should I get, and more questions that can conveniently be answered by my pre-determined answer?[/I][/COLOR]
-[COLOR="Blue"]A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).[/COLOR]
-[COLOR="Blue"]A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section on the AICP Extras main page.[/COLOR][/HIDE]
+Q. [I][B][U]How do I get a logcat, what type should I get, and more questions that can conveniently be answered by my pre-determined answer?[/I][/B][/U]
+A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).
+A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section on the AICP Extras main page.[/HIDE]
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/r11.1/docs/xda_template/instructions.png[/IMG]
 
@@ -158,7 +158,7 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 7. Reboot back into the recovery.
 8. Flash the root solution of your choice (optional).
 9. Reboot your device.
-[B][I]The procedure may vary from device to device and is a bit different on system updates![/I][/B]
+[I][B][U]The procedure may vary from device to device and is a bit different on system updates![/I][/U][/B]
 
 
 [B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once! This might differ on AvB Devices.[/B]
@@ -166,7 +166,7 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
 
-[COLOR="DarkRed"][URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL][/COLOR]
+[URL="https://forum.xda-developers.com/apps/magisk/official-magisk-v7-universal-systemless-t3473445"]Magisk stable[/URL]
 Magisk versions >= 20.4 don't usually need to be flashed on every dirty flash.
 Depending on the device, you may need to flash it every time, unless your maintainer says otherwise, you should be fine.
 
