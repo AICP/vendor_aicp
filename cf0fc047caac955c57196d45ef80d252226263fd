@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15ffd8f6_f95fbd5d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2021-11-10T03:20:57Z",
+      "side": 1,
+      "message": "I\u0027m going to miss those unreadable colors",
+      "revId": "cf0fc047caac955c57196d45ef80d252226263fd",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
