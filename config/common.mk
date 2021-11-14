@@ -84,7 +84,6 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/backup.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/backup.xml \
     vendor/aicp/config/permissions/privapp-permissions-livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-livedisplay.xml
 
 # AICP permissions
