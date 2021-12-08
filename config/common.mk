@@ -135,6 +135,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/pixel_experience_2018.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2018.xml \
     vendor/aicp/config/permissions/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/pixel_experience_2019_midyear.xml
 
+# Permissions for Google product apps
+PRODUCT_COPY_FILES += \
+    vendor/aicp/config/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
+
 # Google extra libraries (sketch/swipe)
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/lib/libsketchology_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsketchology_native.so \
