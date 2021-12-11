@@ -39,6 +39,30 @@
       },
       "revId": "115c01d0a73f3b2edc8baa622e50da3f15ca2549",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a1aa5d32_015a5bf4",
+        "filename": "overlay/common/packages/apps/Launcher3/quickstep/recents_ui_overrides/res/values/config.xml",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-12-11T17:00:49Z",
+      "side": 1,
+      "message": "Dependent change pushed as https://gerrit.aicp-rom.com/c/AICP/packages_apps_Launcher3/+/112262",
+      "parentUuid": "de9776b7_12b3f4e8",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 52
+      },
+      "revId": "115c01d0a73f3b2edc8baa622e50da3f15ca2549",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
