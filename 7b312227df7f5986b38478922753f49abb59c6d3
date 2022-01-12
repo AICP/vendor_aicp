@@ -33,6 +33,23 @@
       "message": "but maybe we need to change then all the device trees because of MAINTAINERS-Info",
       "revId": "7b312227df7f5986b38478922753f49abb59c6d3",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7ed0a14_7e9b80c7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2022-01-12T14:52:22Z",
+      "side": 1,
+      "message": "prob. also relevant here:\nhttps://github.com/AICP/vendor_aicp/blob/s12.0/build/core/main_version.mk",
+      "revId": "7b312227df7f5986b38478922753f49abb59c6d3",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
