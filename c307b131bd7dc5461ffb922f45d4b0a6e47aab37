@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f17ea2c6_bc57a52b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2022-01-25T17:26:04Z",
+      "side": 1,
+      "message": "you can also just revert https://github.com/AICP/vendor_aicp/commit/228d8843c4d01c60fe0902ec536766cc70e25032",
+      "revId": "c307b131bd7dc5461ffb922f45d4b0a6e47aab37",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
