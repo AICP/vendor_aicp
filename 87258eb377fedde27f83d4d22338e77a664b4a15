@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "84db9307_33b48969",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-02-01T08:23:05Z",
+      "side": 1,
+      "message": "About monet: https://curioussteve.com/tech/news/android-12-news-monet-unlocked-new-feature/",
+      "revId": "87258eb377fedde27f83d4d22338e77a664b4a15",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
