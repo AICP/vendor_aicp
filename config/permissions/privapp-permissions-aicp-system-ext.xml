@@ -41,6 +41,7 @@
         <permission name="lineageos.permission.MANAGE_LIVEDISPLAY"/>
         <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
         <permission name="android.permission.RESET_BATTERY_STATS"/>
+        <permission name="android.permission.MANAGE_APP_LOCK" />
     </privapp-permissions>
 
 </permissions>
