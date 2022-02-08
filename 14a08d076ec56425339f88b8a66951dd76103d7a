@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd62fb4c_a2f8c7ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-02-08T08:43:58Z",
+      "side": 1,
+      "message": "Test\n- Compiles\n- Option for One-handed mode is avaialble in Settings app",
+      "revId": "14a08d076ec56425339f88b8a66951dd76103d7a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
