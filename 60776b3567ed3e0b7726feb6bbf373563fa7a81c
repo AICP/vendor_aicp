@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "712fcda0_c74f2e8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-02-12T06:20:25Z",
+      "side": 1,
+      "message": "We need to push our s12.0 branch for Launcher3.",
+      "revId": "60776b3567ed3e0b7726feb6bbf373563fa7a81c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
