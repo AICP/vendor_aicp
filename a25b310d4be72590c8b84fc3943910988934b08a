@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c822d565_86319389",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-02-25T20:11:44Z",
+      "side": 1,
+      "message": "We may need override of release keys for SafetyNet thingie...\n1. https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/113884\n2. https://gerrit.aicp-rom.com/c/AICP/build/+/113885",
+      "revId": "a25b310d4be72590c8b84fc3943910988934b08a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
