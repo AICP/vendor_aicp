@@ -16,6 +16,24 @@
       "message": "We may need override of release keys for SafetyNet thingie...\n1. https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/113884\n2. https://gerrit.aicp-rom.com/c/AICP/build/+/113885",
       "revId": "a25b310d4be72590c8b84fc3943910988934b08a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba6a6cae_b2c880f4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-02-25T20:48:00Z",
+      "side": 1,
+      "message": "No. we don\u0027t need it for SafetyNet it seems: https://github.com/ProtonAOSP/android_vendor_proton/commit/e040cd1524a803b7050985dc85d61b8f4612aa80\n\nBut still some apps like RootBeer and some banking apps are looking for release keys.. And also Starbucks app - it\u0027s fixed now. See comments here: https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/113884",
+      "parentUuid": "c822d565_86319389",
+      "revId": "a25b310d4be72590c8b84fc3943910988934b08a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
