@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf0f9fd7_6af0208b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-03-01T09:57:40Z",
+      "side": 1,
+      "message": "Noy sure if this is the reason, but power + volume down lowers the volume, and not Screenshot.",
+      "revId": "efba36defb7a101393a33bba84855608d0f4d70d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
