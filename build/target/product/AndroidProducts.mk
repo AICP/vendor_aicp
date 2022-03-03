@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aicp_arm.mk \
-    $(LOCAL_DIR)/aicp_arm64.mk \
-    $(LOCAL_DIR)/aicp_x86.mk \
-    $(LOCAL_DIR)/aicp_x86_64.mk \
+    $(LOCAL_DIR)/aicp_gsi_arm.mk \
+    $(LOCAL_DIR)/aicp_gsi_arm64.mk \
+    $(LOCAL_DIR)/aicp_gsi_x86.mk \
+    $(LOCAL_DIR)/aicp_gsi_x86_64.mk \
     $(LOCAL_DIR)/aicp_arm_ab.mk \
     $(LOCAL_DIR)/aicp_arm64_ab.mk \
     $(LOCAL_DIR)/aicp_x86_ab.mk \
@@ -29,10 +29,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aicp_tv_x86_64.mk
 
 COMMON_LUNCH_CHOICES := \
-    aicp_arm-userdebug \
-    aicp_arm64-userdebug \
-    aicp_x86-userdebug \
-    aicp_x86_64-userdebug \
+    aicp_gsi_arm-userdebug \
+    aicp_gsi_arm64-userdebug \
+    aicp_gsi_x86-userdebug \
+    aicp_gsi_x86_64-userdebug \
     aicp_arm_ab-userdebug \
     aicp_arm64_ab-userdebug \
     aicp_x86_ab-userdebug \
