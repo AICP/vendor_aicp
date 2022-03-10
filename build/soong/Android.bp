@@ -52,18 +52,22 @@ cc_library_headers {
 
 // Target platform agnostic config modules
 soong_config_module_type {
-    name: "camera_needs_client_info",
+    name: "camera_needs_client_info_lib",
     module_type: "cc_defaults",
-    config_namespace: "customGlobalVars",
-    bool_variables: ["camera_needs_client_info"],
-    properties: ["cppflags"],
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["camera_needs_client_info_lib"],
+    properties: [
+        "cppflags",
+        "shared_libs",
+    ],
 }
 
-camera_needs_client_info {
-    name: "camera_needs_client_info_defaults",
+camera_needs_client_info_lib {
+    name: "camera_needs_client_info_lib_defaults",
     soong_config_variables: {
-        camera_needs_client_info: {
-            cppflags: ["-DCAMERA_NEEDS_CLIENT_INFO"],
+        camera_needs_client_info_lib: {
+            cppflags: ["-DCAMERA_NEEDS_CLIENT_INFO_LIB"],
+            shared_libs: ["//device/oneplus/common:vendor.oneplus.hardware.camera@1.0"],
         },
     },
 }
