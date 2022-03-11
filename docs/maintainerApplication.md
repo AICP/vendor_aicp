@@ -15,7 +15,7 @@
 * Accepted applicants should also keep in mind that spreading/sharing parts of the team's internal conversations to anyone for whatever purpose will result in a ban from the team.
 
 
-*Note: Successfully passing the application for the team also gives you the possibility of opening an "official" DevDB thread on XDA for your device using our [XDA template](https://raw.githubusercontent.com/AICP/vendor_aicp/s12.0/docs/xda_template/xda_thread-template.txt).*
+*Note: Successfully passing the application for the team also gives you the possibility of opening an "official" DevDB thread on XDA for your device using our [XDA template](https://raw.githubusercontent.com/AICP/vendor_aicp/s12.1/docs/xda_template/xda_thread-template.txt).*
 
 ---
 
