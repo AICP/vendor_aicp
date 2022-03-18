@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56cefcad_2f0fa68a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-03-18T16:54:55Z",
+      "side": 1,
+      "message": "Maybe abandoned, as defaults to true on 12.1\n\nRef: https://github.com/AICP/frameworks_base/blob/b25aa778cf70d63b8f858d89cecb8d5616b6f0ab/packages/SystemUI/res/values/flags.xml#L21",
+      "revId": "667e6c205463583f361a1ee94f1b95abfc3e9315",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
