@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     Email \
     Etar \
     ExactCalculator \
-    Exchange2
+    Exchange2 \
+    GmsCompat
 #    Launcher3Dark
 
 #AicpSetupWizard
