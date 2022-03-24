@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b05bff46_3ca7b218",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-03-24T16:35:51Z",
+      "side": 1,
+      "message": "Be\u0027coz of this build error: \nerror: hardware/lineage/interfaces/trust/Android.bp:15:1: \"trust_defaults\" depen\nds on undefined module \"trust_usb_control_defaults\"\n19:07:25 soong bootstrap failed with: exit status 1\n",
+      "revId": "5c59f3f55f15347c2f51f47f0bd9fa19ee7b68b5",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
