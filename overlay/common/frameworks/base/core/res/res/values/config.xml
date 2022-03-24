@@ -229,4 +229,7 @@
     <bool name="config_supportsMicToggle">true</bool>
     <!-- Whether this device is supporting the camera toggle -->
     <bool name="config_supportsCamToggle">true</bool>
+
+    <!-- Android Auto role -->
+    <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
 </resources>
