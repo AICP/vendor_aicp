@@ -19,11 +19,4 @@
     <exception package="com.google.android.as">
         <permission name="android.permission.READ_PHONE_STATE" fixed="false" />
     </exception>
-
-    <!-- Android Auto: Nearby Devices -->
-    <exception package="com.google.android.projection.gearhead">
-        <permission name="android.permission.BLUETOOTH_ADVERTISE" fixed="false" />
-        <permission name="android.permission.BLUETOOTH_CONNECT" fixed="false" />
-        <permission name="android.permission.BLUETOOTH_SCAN" fixed="false" />
-    </exception>
 </exceptions>
