@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb309e06_5bcc396d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-04-29T08:13:46Z",
+      "side": 1,
+      "message": "we have merged the rest of this topic: https://review.lineageos.org/q/topic:permission-history\n",
+      "revId": "61febdfdcb84fc84293c6031b0b9f77fd8acd0f7",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
