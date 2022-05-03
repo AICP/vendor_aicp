@@ -9,7 +9,7 @@ AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD 
 
 Until Android Lollipop, the ROM has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM.
 With the re-brand of CM to LineageOS (LOS), we became LineageOS based with some tweaks from AOSP and then changed to be based on the "Ground Zero Open Source Project" (GZOSP) for Android Pie.
-We changed again for Android Q-R with a base of AOSP repositories and some additions from LineageOS for device-specific repositories.
+We changed again for Android Q-S with a base of AOSP repositories and some additions from LineageOS for device-specific repositories.
 
 If there are any bugs we will sort them out if it concerns our codebase. This ROM isn't LineageOS supported, so there is no need to report errors/bugs to them!!
 
