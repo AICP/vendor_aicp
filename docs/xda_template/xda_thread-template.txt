@@ -9,7 +9,7 @@ AICP is known by everyone as the "Ice Cold Project" that started on a Desire HD 
 
 Until Android Lollipop, the ROM has always been based on AOKP. Unfortunately, since AOKP stopped development (but made a comeback later), we changed our base to CM.
 With the re-brand of CM to LineageOS (LOS), we became LineageOS based with some tweaks from AOSP and then changed to be based on the "Ground Zero Open Source Project" (GZOSP) for Android Pie.
-We changed again for Android Q-R with a base of AOSP repositories and some additions from LineageOS for device-specific repositories.
+We changed again for Android Q-S with a base of AOSP repositories and some additions from LineageOS for device-specific repositories.
 
 If there are any bugs we will sort them out if it concerns our codebase. This ROM isn't LineageOS supported, so there is no need to report errors/bugs to them!!
 
@@ -201,8 +201,8 @@ Follow [URL="https://wiki.lineageos.org/extracting_blobs_from_zips.html"]this gu
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
 [B][U]Information:[/U][/B]
-[B]ROM OS Version:[/B] 11.x
-[B]Kernel:[/B] Linux x.z.y (for example: 4.14.y)
+[B]ROM OS Version:[/B] 12.1
+[B]Kernel:[/B] Linux x.z.y (for example: 5.4.y)
 [B]ROM {Firmware|Vendor} required:[/B]
 [B]Status:[/B] {ALPHA|BETA|STABLE}
 [B]Release Date:[/B] mm-dd-yyyy
