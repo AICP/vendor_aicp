@@ -16,6 +16,23 @@
       "message": "I probably missed something",
       "revId": "b930812e36aebedfe4163da3216ac6540474143b",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3673ebeb_8766c57c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-05-04T05:46:13Z",
+      "side": 1,
+      "message": "So 5.4 is the new NEW, let\u0027s go with it",
+      "revId": "b930812e36aebedfe4163da3216ac6540474143b",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
