@@ -78,10 +78,13 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
 
-# Dex preopt
+# SystemUI
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
     Launcher3QuickStep
+
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.systemuicompilerfilter=speed
 
 # Backup Services whitelist
 PRODUCT_COPY_FILES += \
