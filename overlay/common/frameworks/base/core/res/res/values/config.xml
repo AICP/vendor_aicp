@@ -232,4 +232,10 @@
 
     <!-- Android Auto role -->
     <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
+
+    <!-- Exempt location packages from location indicators -->
+    <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- TeleService -->
+        <item>com.android.phone</item>
+    </string-array>
 </resources>
