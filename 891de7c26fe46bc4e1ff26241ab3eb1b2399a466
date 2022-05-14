@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1b99d878_1feb5e3e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-05-14T16:26:19Z",
+      "side": 1,
+      "message": "MOved, but we have that I guess: https://github.com/AICP/vendor_aicp/blob/s12.1/overlay/common/frameworks/base/core/res/res/values/config.xml#L213",
+      "revId": "891de7c26fe46bc4e1ff26241ab3eb1b2399a466",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
