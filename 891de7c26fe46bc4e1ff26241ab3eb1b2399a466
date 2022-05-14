@@ -16,6 +16,23 @@
       "message": "MOved, but we have that I guess: https://github.com/AICP/vendor_aicp/blob/s12.1/overlay/common/frameworks/base/core/res/res/values/config.xml#L213",
       "revId": "891de7c26fe46bc4e1ff26241ab3eb1b2399a466",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4efb692f_51e463ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-05-14T16:27:07Z",
+      "side": 1,
+      "message": "https://github.com/AICP/vendor_aicp/commit/ca7ba1ec60a743cc63b6f34a7c977e6aff8363ca\n\nAbandoning this commit.",
+      "revId": "891de7c26fe46bc4e1ff26241ab3eb1b2399a466",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
