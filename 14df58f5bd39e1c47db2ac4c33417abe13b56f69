@@ -16,6 +16,24 @@
       "message": "https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/331507 here\n\nAfter this commit we will not need https://gerrit.aicp-rom.com/q/topic:twelve-qcom-cam\n\n** Keep build vendor.qti.hardware.camera.device@1.0.vendor as it\u0027s still needed for Camera HALL and some IMS libs, as its\u0027s done below:\n\nhttps://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8250-common/+/331504",
       "revId": "14df58f5bd39e1c47db2ac4c33417abe13b56f69",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7a87b12_87ca8873",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-05-20T06:57:13Z",
+      "side": 1,
+      "message": "and, therefore, respective topic on our Gerrit: https://gerrit.aicp-rom.com/q/topic:twelve-qcom-cam will be unnecessary.",
+      "parentUuid": "9ba51013_cf85579f",
+      "revId": "14df58f5bd39e1c47db2ac4c33417abe13b56f69",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
