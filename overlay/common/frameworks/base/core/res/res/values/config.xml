@@ -235,6 +235,8 @@
 
     <!-- Exempt location packages from location indicators -->
     <string-array name="config_locationExtraPackageNames" translatable="false">
+        <!-- Bluetooth -->
+        <item>com.android.bluetooth</item>
         <!-- TeleService -->
         <item>com.android.phone</item>
     </string-array>
