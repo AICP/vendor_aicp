@@ -244,5 +244,7 @@
         <item>com.android.phone</item>
         <!-- CneApp -->
         <item>com.qualcomm.qti.cne</item>
+        <!-- ImsService -->
+        <item>com.shannon.imsservice</item>
     </string-array>
 </resources>
