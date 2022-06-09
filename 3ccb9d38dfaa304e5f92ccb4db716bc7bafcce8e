@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cbb4dbb5_94ed0bda",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-06-09T21:58:14Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/c/LineageOS/android_tools_extract-utils/+/332243 merged.",
+      "revId": "3ccb9d38dfaa304e5f92ccb4db716bc7bafcce8e",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
