@@ -18,6 +18,7 @@ Additional AICP functions:
 - repolastsync:    Prints date and time of last repo sync.
 - reposync:        Parallel repo sync using ionice and SCHED_BATCH.
 - repopick:        Utility to fetch changes from Gerrit.
+- sort-blobs-list: Sort proprietary-files.txt sections with LC_ALL=C.
 - installboot:     Installs a boot.img to the connected device.
 - installrecovery: Installs a recovery.img to the connected device.
 EOF
@@ -934,6 +935,11 @@ alias cmkap='dopush cmka'
 function repopick() {
     T=$(gettop)
     $T/vendor/aicp/build/tools/repopick.py $@
+}
+
+function sort-blobs-list() {
+    T=$(gettop)
+    $T/tools/extract-utils/sort-blobs-list.py $@
 }
 
 function fixup_common_out_dir() {
