@@ -270,8 +270,6 @@ define make-kernel-config
 			echo $(KERNEL_CONFIG_OVERRIDE) >> $(1)/.config; \
 			$(call make-kernel-target,oldconfig); \
 		fi
-	# Create defconfig build artifact
-	$(call internal-make-kernel-target,$(1),savedefconfig)
 endef
 
 # Make a kernel target
@@ -393,6 +391,7 @@ kerneltags: $(KERNEL_CONFIG)
 
 kernelsavedefconfig: $(KERNEL_OUT)
 	$(call make-kernel-config,$(KERNEL_OUT),$(BASE_KERNEL_DEFCONFIG))
+	$(call make-kernel-target,savedefconfig)
 	cp $(KERNEL_OUT)/defconfig $(BASE_KERNEL_DEFCONFIG_SRC)
 
 alldefconfig: $(KERNEL_OUT)
