@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
     Copyright (C) 2020 The Proton AOSP Project
+                  2022 The LineageOS Project
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
@@ -99,6 +100,9 @@
 
         <!-- Keep up to 7 days of permission usage history -->
         <item>privacy/discrete_history_cutoff_millis=604800000</item>
+
+        <!-- Disable always screen on -->
+        <item>attention_manager_service/keep_screen_on_enabled=false</item>
     </string-array>
 
     <string-array name="configs_base_soft">
