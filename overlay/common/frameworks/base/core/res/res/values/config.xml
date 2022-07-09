@@ -233,8 +233,11 @@
     <!-- Android Auto role -->
     <string name="config_systemAutomotiveProjection" translatable="false">com.google.android.projection.gearhead</string>
 
-    <!-- Exempt location packages from location indicators -->
-    <string-array name="config_locationExtraPackageNames" translatable="false">
+    <!-- List of system components which are allowed to receive ServiceState entries in an
+         un-sanitized form, even if the location toggle is off. This is intended ONLY for system
+         components, such as the telephony stack, which require access to the full ServiceState for
+         tasks such as network registration. -->
+    <string-array name="config_serviceStateLocationAllowedPackages">
         <!-- Bluetooth -->
         <item>com.android.bluetooth</item>
         <!-- TeleService -->
