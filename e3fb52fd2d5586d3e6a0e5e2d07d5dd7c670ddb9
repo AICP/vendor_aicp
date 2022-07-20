@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "563b2fc8_e219343d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-20T16:42:44Z",
+      "side": 1,
+      "message": "I think it\u0027s good to have that globally rather as a device overlay thing. You can restore that if you want to through Google Assistant\u0027s Settings.",
+      "revId": "e3fb52fd2d5586d3e6a0e5e2d07d5dd7c670ddb9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
