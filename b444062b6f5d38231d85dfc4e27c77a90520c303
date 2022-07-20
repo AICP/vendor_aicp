@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56b409fc_0dec4f16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-07-20T11:17:01Z",
+      "side": 1,
+      "message": "Abandoned on LoS Gerrit: https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/334062",
+      "revId": "b444062b6f5d38231d85dfc4e27c77a90520c303",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
