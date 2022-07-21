@@ -16,6 +16,23 @@
       "message": "I think it\u0027s good to have that globally rather as a device overlay thing. You can restore that if you want to through Google Assistant\u0027s Settings.",
       "revId": "e3fb52fd2d5586d3e6a0e5e2d07d5dd7c670ddb9",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "492a996d_3afeeb16",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-07-21T09:31:03Z",
+      "side": 1,
+      "message": "https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/113733 ?",
+      "revId": "e3fb52fd2d5586d3e6a0e5e2d07d5dd7c670ddb9",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
