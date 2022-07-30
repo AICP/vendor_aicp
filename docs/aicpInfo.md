@@ -180,6 +180,24 @@ To enable an OEM fast-charging solution(Dash, Warp, Turbo, etc), make sure the p
 </string-array>
 ```
 
+To configure the refresh rate
+```
+    <!-- The default refresh rate for a given device. Change this value to set a higher default
+         refresh rate. If the hardware composer on the device supports display modes with a higher
+         refresh rate than the default value specified here, the framework may use those higher
+         refresh rate modes if an app chooses one by setting preferredDisplayModeId or calling
+         setFrameRate().
+         If a non-zero value is set for config_defaultPeakRefreshRate, then
+         config_defaultRefreshRate may be set to 0, in which case the value set for
+         config_defaultPeakRefreshRate will act as the default frame rate. -->
+    <integer name="config_defaultRefreshRate">0</integer>
+
+    <!-- The default peak refresh rate for a given device. Change this value if you want to prevent
+         the framework from using higher refresh rates, even if display modes with higher refresh
+         rates are available from hardware composer. Only has an effect if the value is
+         non-zero. -->
+    <integer name="config_defaultPeakRefreshRate">120</integer>
+```
 
 SystemUI Overlays (Controls SystemUI behavior) (add to overlay/frameworks/base/packages/SystemUI/res/values/config.xml)
 
@@ -224,6 +242,12 @@ Useful if you have qcacld-3.0 and wifi is always on. This capability can provide
 ```
 
 Settings Overlays (add to overlay/packages/apps/Settings/res/values/config.xml)
+
+
+To enable smooth display for high refresh rates
+```
+<bool name="config_show_smooth_display">true</bool>
+```
 
 To enable display touch sensitivity switch:
 ```
