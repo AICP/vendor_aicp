@@ -39,7 +39,7 @@ endif
 
 # Copy all AICP specific init rc files
 $(foreach f,$(wildcard vendor/aicp/prebuilt/common/etc/init/*.rc),\
-    $(eval PRODUCT_COPY_FILES += $(f):system/etc/init/$(notdir $f)))
+    $(eval PRODUCT_COPY_FILES += $(f):system_ext/etc/init/$(notdir $f)))
 
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
