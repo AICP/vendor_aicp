@@ -127,7 +127,8 @@ PRODUCT_PACKAGES += \
 # AICP OTA
 ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
-   Updater
+   Updater \
+   init.aicp-updates.rc
 endif
 
 # AICP packages
