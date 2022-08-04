@@ -128,6 +128,9 @@ PRODUCT_PACKAGES += \
 ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
 PRODUCT_PACKAGES +=  \
    Updater
+
+PRODUCT_COPY_FILES += \
+   vendor/aicp/prebuilt/common/etc/init/aicp-updates.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/aicp-updates.rc
 endif
 
 # AICP packages
