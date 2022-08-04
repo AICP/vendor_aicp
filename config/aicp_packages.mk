@@ -120,6 +120,13 @@ PRODUCT_PACKAGES += \
 #    AndroidDarkThemeOverlay \
 #    SettingsDarkThemeOverlay
 
+# A/B OTA Optimization
+ifneq ($(AB_OTA_PARTITIONS),)
+PRODUCT_PACKAGES += \
+    checkpoint_gc \
+    otapreopt_script
+endif
+
 # Bootanimation include
 PRODUCT_PACKAGES += \
     bootanimation.zip
