@@ -16,6 +16,24 @@
       "message": "Looks like just a filename change",
       "revId": "22bd83a67e8220a8f94f874e0de9f7335db6f4bb",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b027750f_cd8178ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-08-04T13:48:41Z",
+      "side": 1,
+      "message": "we didn\u0027t init this thing it seems. which ends with missing dir for OTA\u0027s.",
+      "parentUuid": "e83682d7_e29469ac",
+      "revId": "22bd83a67e8220a8f94f874e0de9f7335db6f4bb",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
