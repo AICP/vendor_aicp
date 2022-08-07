@@ -7,5 +7,6 @@ PRODUCT_PACKAGES += \
 
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aicp/overlay/dictionaries
 
 $(call inherit-product, vendor/aicp/config/telephony.mk)
