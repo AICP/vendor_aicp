@@ -16,6 +16,23 @@
       "message": "Required for some personal modifications",
       "revId": "751cb13dac9b25242bc85fb60d8ff2001a947121",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b02bfe37_d0d8b3bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-08-12T11:00:46Z",
+      "side": 1,
+      "message": "Care to share ?",
+      "revId": "751cb13dac9b25242bc85fb60d8ff2001a947121",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
