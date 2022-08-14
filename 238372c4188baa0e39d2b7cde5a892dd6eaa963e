@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46d7da11_4c0bc8b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2022-08-14T06:54:44Z",
+      "side": 1,
+      "message": "Moshe, why are stating 0 for base as it implies that default base is the peak rate?\nisn\u0027t better to set it to 60, as text above already explains \"0\". just saying...\n",
+      "revId": "238372c4188baa0e39d2b7cde5a892dd6eaa963e",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
