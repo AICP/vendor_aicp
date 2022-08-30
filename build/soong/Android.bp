@@ -73,23 +73,6 @@ camera_needs_client_info_lib {
 }
 
 soong_config_module_type {
-    name: "disable_postrender_cleanup",
-    module_type: "cc_defaults",
-    config_namespace: "lineageGlobalVars",
-    bool_variables: ["disable_postrender_cleanup"],
-    properties: ["cppflags"],
-}
-
-disable_postrender_cleanup {
-    name: "disable_postrender_cleanup_defaults",
-    soong_config_variables: {
-        disable_postrender_cleanup: {
-            cppflags: ["-DDISABLE_POSTRENDER_CLEANUP"],
-        },
-    },
-}
-
-soong_config_module_type {
     name: "gralloc_10_usage_bits",
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
