@@ -1,13 +1,9 @@
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    SpareParts \
-#    LockClock
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \
-    PhaseBeam \
     ThemePicker \
     WallpaperPicker2
 
@@ -22,32 +18,28 @@ endif
 
 # Extra Optional packages
 PRODUCT_PACKAGES += \
-    BluetoothExt \
-    Email \
     Etar \
-    ExactCalculator \
-    Exchange2
-#    Launcher3Dark
+    ExactCalculator
 
-#AicpSetupWizard
-ifneq ($(WITH_GMS),true)
-PRODUCT_PACKAGES += \
-    AicpSetupWizard
-endif
+# AicpSetupWizard
+#ifneq ($(WITH_GMS),true)
+#PRODUCT_PACKAGES += \
+#    AicpSetupWizard
+#endif
 
 # MusicFX
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     MusicFX
 
 # Phonograph
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     Phonograph
 
 # Jelly
 PRODUCT_PACKAGES += \
     Jelly
 
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     GameSpace
 
 # OnDeviceAppPrediction
@@ -59,7 +51,7 @@ PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     OmniStyle
 
 # SystemUI plugins
@@ -83,10 +75,6 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/%/libfuse-lite.so \
     system/%/libntfs-3g.so
 
-# Fonts packages
-#PRODUCT_PACKAGES += \
-#    invictrix-fonts
-
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
@@ -107,26 +95,22 @@ endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
-    7z \
+#    7z \
     bash \
     curl \
     getcap \
     htop \
-    lib7z \
+#    lib7z \
     libsepol \
     nano \
-    pigz \
+#    pigz \
     powertop \
     setcap \
-    unrar \
+#    unrar \
     unzip \
     vim \
     wget \
     zip
-
-#PRODUCT_PACKAGES += \
-#    AndroidDarkThemeOverlay \
-#    SettingsDarkThemeOverlay
 
 # A/B OTA Optimization
 ifneq ($(AB_OTA_PARTITIONS),)
