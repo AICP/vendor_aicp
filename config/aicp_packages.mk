@@ -1,13 +1,9 @@
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    SpareParts \
-#    LockClock
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \
-    PhaseBeam \
     ThemePicker \
     WallpaperPicker2
 
@@ -27,7 +23,6 @@ PRODUCT_PACKAGES += \
     Etar \
     ExactCalculator \
     Exchange2
-#    Launcher3Dark
 
 #AicpSetupWizard
 ifneq ($(WITH_GMS),true)
@@ -35,19 +30,15 @@ PRODUCT_PACKAGES += \
     AicpSetupWizard
 endif
 
-# MusicFX
-PRODUCT_PACKAGES += \
-    MusicFX
-
 # Phonograph
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     Phonograph
 
 # Jelly
 PRODUCT_PACKAGES += \
     Jelly
 
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     GameSpace
 
 # OnDeviceAppPrediction
@@ -55,11 +46,11 @@ PRODUCT_PACKAGES += \
     AppPredictionService
 
 # OmniJaws
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     OmniStyle
 
 # SystemUI plugins
@@ -69,10 +60,6 @@ PRODUCT_PACKAGES += \
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
-
-# Fonts packages
-#PRODUCT_PACKAGES += \
-#    invictrix-fonts
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -132,22 +119,22 @@ PRODUCT_PACKAGES += \
     bootanimation.zip
 
 # AICP OTA
-ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
-PRODUCT_PACKAGES +=  \
-   Updater
-
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/init/init.aicp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.aicp-updater.rc
-endif
+#ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+#PRODUCT_PACKAGES +=  \
+#   Updater
+#
+#PRODUCT_COPY_FILES += \
+#    vendor/aicp/prebuilt/common/etc/init/init.aicp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.aicp-updater.rc
+#endif
 
 # AICP packages
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     AicpExtras \
     AicpThemesStub \
     TilesWallpaper
 
 # AICP Ad-block
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
--include packages/overlays/AICP/product_packages.mk
+#-include packages/overlays/AICP/product_packages.mk
