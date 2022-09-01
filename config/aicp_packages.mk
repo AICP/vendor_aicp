@@ -1,13 +1,9 @@
 # Required packages
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver \
-    SpareParts \
-#    LockClock
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Basic \
-    PhaseBeam \
     ThemePicker \
     WallpaperPicker2
 
@@ -27,7 +23,6 @@ PRODUCT_PACKAGES += \
     Etar \
     ExactCalculator \
     Exchange2
-#    Launcher3Dark
 
 #AicpSetupWizard
 ifneq ($(WITH_GMS),true)
@@ -35,19 +30,15 @@ PRODUCT_PACKAGES += \
     AicpSetupWizard
 endif
 
-# MusicFX
-PRODUCT_PACKAGES += \
-    MusicFX
-
 # Phonograph
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     Phonograph
 
 # Jelly
 PRODUCT_PACKAGES += \
     Jelly
 
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     GameSpace
 
 # OnDeviceAppPrediction
@@ -59,7 +50,7 @@ PRODUCT_PACKAGES += \
     OmniJaws
 
 # OmniStyle
-PRODUCT_PACKAGES += \
+# PRODUCT_PACKAGES += \
     OmniStyle
 
 # SystemUI plugins
@@ -69,10 +60,6 @@ PRODUCT_PACKAGES += \
 # Config
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
-
-# Fonts packages
-#PRODUCT_PACKAGES += \
-#    invictrix-fonts
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -115,10 +102,6 @@ PRODUCT_PACKAGES += \
     vim \
     wget \
     zip
-
-#PRODUCT_PACKAGES += \
-#    AndroidDarkThemeOverlay \
-#    SettingsDarkThemeOverlay
 
 # A/B OTA Optimization
 ifneq ($(AB_OTA_PARTITIONS),)
