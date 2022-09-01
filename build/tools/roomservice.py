@@ -42,7 +42,7 @@ except ImportError:
 DEBUG = False
 
 custom_local_manifest = ".repo/local_manifests/roomservice.xml"
-custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 's12.1')
+custom_default_revision =  os.getenv('ROOMSERVICE_DEFAULT_BRANCH', 't13.0')
 custom_dependencies = "aicp.dependencies"
 org_manifest = "aicp"  # leave empty if org is provided in manifest
 org_display = "AICP"  # needed for displaying
