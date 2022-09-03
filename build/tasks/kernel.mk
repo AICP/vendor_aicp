@@ -35,8 +35,6 @@
 #
 #   TARGET_KERNEL_CLANG_PATH           = Clang prebuilts path, optional
 #
-#   KERNEL_SUPPORTS_LLVM_TOOLS         = If set, switches ar, nm, objcopy, objdump to llvm tools instead of using GNU Binutils, optional
-#
 #   BOARD_KERNEL_IMAGE_NAME            = Built image name
 #                                          for ARM use: zImage
 #                                          for ARM64 use: Image.gz
@@ -60,12 +58,17 @@
 #                                                      aarch64-linux-gnu- for arm64
 #                                                      x86_64-linux-gnu- for x86
 #
+#   KERNEL_LTO                         = Optional, force LTO to none / thin / full
+#
 #   NEED_KERNEL_MODULE_ROOT            = Optional, if true, install kernel
 #                                          modules in root instead of vendor
 #   NEED_KERNEL_MODULE_SYSTEM          = Optional, if true, install kernel
 #                                          modules in system instead of vendor
 #   NEED_KERNEL_MODULE_VENDOR_OVERLAY  = Optional, if true, install kernel
 #                                          modules in vendor_overlay instead of vendor
+#
+#   TARGET_FORCE_PREBUILT_KERNEL       = Optional, use TARGET_PREBUILT_KERNEL even if
+#                                          kernel sources are present
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -159,8 +162,27 @@ else
         $(warning **********************************************************)
         $(error "NO KERNEL CONFIG")
     else
-        FULL_KERNEL_BUILD := true
-        KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
+        ifneq ($(TARGET_FORCE_PREBUILT_KERNEL),)
+            ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
+                $(error "PREBUILT KERNEL IS NOT ALLOWED ON OFFICIAL BUILDS!")
+            else
+                $(warning **********************************************************)
+                $(warning * Kernel source found and configuration was defined,     *)
+                $(warning * but prebuilt kernel is being forced.                   *)
+                $(warning * While this is likely intentional,                      *)
+                $(warning * it is NOT SUPPORTED WHATSOEVER.                        *)
+                $(warning * Generated kernel headers may not align with            *)
+                $(warning * the ABI of kernel you're including.                    *)
+                $(warning * Please unset TARGET_FORCE_PREBUILT_KERNEL              *)
+                $(warning * to build the kernel from source.                       *)
+                $(warning **********************************************************)
+                FULL_KERNEL_BUILD := false
+                KERNEL_BIN := $(TARGET_PREBUILT_KERNEL)
+            endif
+        else
+            FULL_KERNEL_BUILD := true
+            KERNEL_BIN := $(TARGET_PREBUILT_INT_KERNEL)
+        endif
     endif
 endif
 
@@ -212,23 +234,7 @@ ifneq ($(TARGET_KERNEL_CLANG_COMPILE),false)
         # Use the default version of clang if TARGET_KERNEL_CLANG_VERSION hasn't been set by the device config
         KERNEL_CLANG_VERSION := $(LLVM_PREBUILTS_VERSION)
     endif
-    # Use the AOSP clang path if TARGET_KERNEL_CLANG_PATH hasn't been set by the device config
     TARGET_KERNEL_CLANG_PATH ?= $(BUILD_TOP)/prebuilts/clang/host/$(HOST_PREBUILT_TAG)/$(KERNEL_CLANG_VERSION)
-    # Set LLVM tools if supported
-    ifeq ($(KERNEL_SUPPORTS_LLVM_TOOLS),true)
-        KERNEL_LD := LD=ld.lld
-        KERNEL_AR := AR=llvm-ar
-        KERNEL_OBJCOPY := OBJCOPY=llvm-objcopy
-        KERNEL_OBJDUMP := OBJDUMP=llvm-objdump
-        KERNEL_NM := NM=llvm-nm
-        KERNEL_STRIP := STRIP=llvm-strip
-    else
-        KERNEL_AR :=
-        KERNEL_OBJCOPY :=
-        KERNEL_OBJDUMP :=
-        KERNEL_NM :=
-        KERNEL_STRIP :=
-    endif
     ifeq ($(KERNEL_ARCH),arm64)
         KERNEL_CLANG_TRIPLE ?= CLANG_TRIPLE=aarch64-linux-gnu-
     else ifeq ($(KERNEL_ARCH),arm)
@@ -249,7 +255,7 @@ ifneq ($(TARGET_KERNEL_MODULES),)
     $(error TARGET_KERNEL_MODULES is no longer supported!)
 endif
 
-PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc)/bin:$$PATH
+PATH_OVERRIDE += PATH=$(KERNEL_TOOLCHAIN_PATH_gcc):$$PATH
 
 # System tools are no longer allowed on 10+
 PATH_OVERRIDE += $(TOOLS_PATH_OVERRIDE)
@@ -266,7 +272,7 @@ endif
 # $(1): output path (The value passed to O=)
 # $(2): target to build (eg. defconfig, modules, dtbo.img)
 define internal-make-kernel-target
-$(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(1) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_LD) $(KERNEL_AR) $(KERNEL_NM) $(KERNEL_OBJCOPY) $(KERNEL_OBJDUMP) $(KERNEL_STRIP) $(2)
+$(PATH_OVERRIDE) $(KERNEL_MAKE_CMD) $(KERNEL_MAKE_FLAGS) -C $(KERNEL_SRC) O=$(KERNEL_BUILD_OUT_PREFIX)$(1) ARCH=$(KERNEL_ARCH) $(KERNEL_CROSS_COMPILE) $(KERNEL_CLANG_TRIPLE) $(KERNEL_CC) $(KERNEL_LD) $(2)
 endef
 
 # Make an external module target
@@ -282,6 +288,31 @@ endef
 # $(2): The defconfig to process (just the filename, no need for full path to file)
 define make-kernel-config
 	$(call internal-make-kernel-target,$(1),VARIANT_DEFCONFIG=$(VARIANT_DEFCONFIG) SELINUX_DEFCONFIG=$(SELINUX_DEFCONFIG) $(2))
+	$(hide) if [ "$(KERNEL_LTO)" = "none" ]; then \
+			$(KERNEL_SRC)/scripts/config --file $(1)/.config \
+			-d LTO_CLANG \
+			-e LTO_NONE \
+			-d LTO_CLANG_THIN \
+			-d LTO_CLANG_FULL \
+			-d THINLTO; \
+			$(call make-kernel-target,olddefconfig); \
+		elif [ "$(KERNEL_LTO)" = "thin" ]; then \
+			$(KERNEL_SRC)/scripts/config --file $(1)/.config \
+			-e LTO_CLANG \
+			-d LTO_NONE \
+			-e LTO_CLANG_THIN \
+			-d LTO_CLANG_FULL \
+			-e THINLTO; \
+			$(call make-kernel-target,olddefconfig); \
+		elif [ "$(KERNEL_LTO)" = "full" ]; then \
+			$(KERNEL_SRC)/scripts/config --file $(1)/.config \
+			-e LTO_CLANG \
+			-d LTO_NONE \
+			-d LTO_CLANG_THIN \
+			-e LTO_CLANG_FULL \
+			-d THINLTO; \
+			$(call make-kernel-target,olddefconfig); \
+		fi
 	$(hide) if [ ! -z "$(KERNEL_CONFIG_OVERRIDE)" ]; then \
 			echo "Overriding kernel config with '$(KERNEL_CONFIG_OVERRIDE)'"; \
 			echo $(KERNEL_CONFIG_OVERRIDE) >> $(1)/.config; \
@@ -353,6 +384,11 @@ KERNEL_MODULES_OUT := $(TARGET_OUT_PRODUCT)/vendor_overlay/$(PRODUCT_TARGET_VNDK
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_product)
 KERNEL_MODULE_MOUNTPOINT := vendor
 $(INSTALLED_PRODUCTIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
+else ifeq ($(BOARD_USES_VENDOR_DLKMIMAGE),true)
+KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR_DLKM)
+KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor)
+KERNEL_MODULE_MOUNTPOINT := vendor_dlkm
+$(INSTALLED_VENDOR_DLKMIMAGE_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 else
 KERNEL_MODULES_OUT := $(TARGET_OUT_VENDOR)
 KERNEL_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_vendor)
