@@ -57,7 +57,6 @@ endif
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 
 ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
-    TARGET_USES_QCOM_BSP_LEGACY := true
     # Enable legacy audio functions
     ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
         USE_CUSTOM_AUDIO_POLICY := 1
@@ -164,10 +163,3 @@ endif
 ifneq ($(USE_DEVICE_SPECIFIC_DATASERVICES),true)
     PRODUCT_SOONG_NAMESPACES += vendor/qcom/opensource/dataservices
 endif
-
-ifeq ($(TARGET_USE_QTI_BT_STACK),true)
-PRODUCT_SOONG_NAMESPACES += \
-    vendor/qcom/opensource/commonsys/packages/apps/Bluetooth \
-    vendor/qcom/opensource/commonsys/system/bt/conf \
-    vendor/qcom/opensource/commonsys/system/bt/main
-endif #TARGET_USE_QTI_BT_STACK
