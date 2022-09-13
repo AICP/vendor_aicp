@@ -8,7 +8,10 @@ ifeq ($(TARGET_IS_AB_DEVICE),true)
     AB_OTA_UPDATER := true
 endif
 
+ifneq ($(TARGET_USES_KERNEL_PLATFORM),true)
 include vendor/aicp/config/BoardConfigKernel.mk
+endif
+
 ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
 include prebuilts/clang/host/linux-x86_custom/clang_custom.mk
 endif
