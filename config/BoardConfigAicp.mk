@@ -11,7 +11,10 @@ ifeq ($(TARGET_IS_AB_DEVICE),true)
     AB_OTA_UPDATER := true
 endif
 
+ifneq ($(TARGET_USES_KERNEL_PLATFORM),true)
 include vendor/aicp/config/BoardConfigKernel.mk
+endif
+
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     include vendor/aicp/config/BoardConfigQcom.mk
 endif
