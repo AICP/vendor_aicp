@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "abcaf46b_42dba480",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-09-19T13:06:48Z",
+      "side": 1,
+      "message": "Merged on LoS: https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/338457/10",
+      "revId": "a5ce915db9a6ea5e4d88f618c32a3b81b0d10a83",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
