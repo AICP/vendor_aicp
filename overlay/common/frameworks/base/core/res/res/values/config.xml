@@ -254,4 +254,7 @@
             5 - Go to assistant (Settings.Secure.ASSISTANT)
     -->
     <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Fingerprint from a certified device -->
+    <string name="config_certifiedFingerprint" translatable="false">google/raven/raven:13/TP1A.220905.004/8927612:user/release-keys</string>
 </resources>
