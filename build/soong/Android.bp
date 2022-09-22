@@ -145,7 +145,11 @@ soong_config_module_type {
     module_type: "cc_defaults",
     config_namespace: "lineageGlobalVars",
     value_variables: ["target_init_vendor_lib"],
-    properties: ["whole_static_libs"],
+    bool_variables: ["target_create_device_symlinks"],
+    properties: [
+        "cflags",
+        "whole_static_libs",
+    ],
 }
 
 vendor_init {
@@ -153,6 +157,9 @@ vendor_init {
     soong_config_variables: {
         target_init_vendor_lib: {
             whole_static_libs: ["%s"],
+        },
+        target_create_device_symlinks: {
+            cflags: ["-DTARGET_CREATE_DEVICE_SYMLINKS"],
         },
     },
 }
