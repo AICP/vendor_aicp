@@ -62,17 +62,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Filesystems tools
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs \
-    ntfsfix \
-    ntfs-3g \
-    fsck.ntfs \
-    mkfs.ntfs \
-    mount.ntfs
+    tune2fs
 
 PRODUCT_PACKAGES += \
     charger_res_images
