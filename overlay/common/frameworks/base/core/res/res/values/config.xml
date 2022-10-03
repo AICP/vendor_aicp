@@ -254,4 +254,7 @@
             5 - Go to assistant (Settings.Secure.ASSISTANT)
     -->
     <integer name="config_longPressOnPowerBehavior">1</integer>
+
+    <!-- Default component for QR code scanner -->
+    <string name="config_defaultQrCodeComponent">org.lineageos.aperture/.QrScannerActivity</string>
 </resources>
