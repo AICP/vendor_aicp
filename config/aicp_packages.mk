@@ -6,6 +6,7 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
+    Aperture \
     Basic \
     PhaseBeam \
     ThemePicker \
