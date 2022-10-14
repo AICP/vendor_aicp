@@ -16,6 +16,24 @@
       "message": "Medium is too bold for me on some fonts",
       "revId": "7624593884b56f211c2469b4a36a9ec3d43b63ad",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb517b75_11296f99",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-10-14T16:13:42Z",
+      "side": 1,
+      "message": "-1 from me too... Don\u0027t like the look. Agreed - too bold.",
+      "parentUuid": "b3101536_19c96e1d",
+      "revId": "7624593884b56f211c2469b4a36a9ec3d43b63ad",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
