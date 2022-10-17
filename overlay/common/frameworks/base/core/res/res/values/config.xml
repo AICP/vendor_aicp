@@ -53,6 +53,8 @@
         <item>com.shannon.imsservice</item>
         <!-- MediaTek ImsService -->
         <item>com.mediatek.ims</item>
+        <!-- OmniJaws -->
+        <item>org.omnirom.omnijaws</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
