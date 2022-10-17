@@ -48,6 +48,8 @@
 #
 #   BOARD_DTBO_CFG                     = Path to a mkdtboimg.py config file
 #
+#   BOARD_CUSTOM_DTBIMG_MK             = Path to a custom dtbimage makefile
+#
 #   BOARD_CUSTOM_DTBOIMG_MK            = Path to a custom dtboimage makefile
 #
 #   KERNEL_CC                          = The C Compiler used. This is automatically set based
@@ -460,6 +462,9 @@ endif # BOARD_CUSTOM_DTBOIMG_MK
 endif # TARGET_NEEDS_DTBOIMAGE/BOARD_KERNEL_SEPARATED_DTBO
 
 ifeq ($(BOARD_INCLUDE_DTB_IN_BOOTIMG),true)
+ifneq ($(BOARD_CUSTOM_DTBIMG_MK),)
+include $(BOARD_CUSTOM_DTBIMG_MK)
+else
 ifeq ($(BOARD_PREBUILT_DTBIMAGE_DIR),)
 $(DTB_OUT):
 	mkdir -p $(DTB_OUT)
@@ -472,6 +477,7 @@ $(INSTALLED_DTBIMAGE_TARGET): $(DTC) $(DTB_OUT)
 	cat $(shell find $(DTB_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtb" | sort) > $@
 	$(hide) touch -c $(DTB_OUT)
 endif # !BOARD_PREBUILT_DTBIMAGE_DIR
+endif # BOARD_CUSTOM_DTBIMG_MK
 endif # BOARD_INCLUDE_DTB_IN_BOOTIMG
 
 endif # FULL_KERNEL_BUILD
