@@ -16,6 +16,23 @@
       "message": "for reference: https://review.lineageos.org/c/LineageOS/android_vendor_lineage/+/337194",
       "revId": "dffda594502a0f2bbcbf1b5edc3cc93134d0b0ab",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58ec1c8b_975c5212",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-10-23T06:09:38Z",
+      "side": 1,
+      "message": "Excluded the following commit: https://gerrit.aicp-rom.com/c/AICP/frameworks_av/+/117432\nfrom frameworks_av pick list.",
+      "revId": "dffda594502a0f2bbcbf1b5edc3cc93134d0b0ab",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
