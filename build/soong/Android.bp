@@ -223,6 +223,40 @@ nvidia_enhancements {
     },
 }
 
+soong_config_module_type {
+    name: "disable_bluetooth_le_read_buffer_size_v2",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["disable_bluetooth_le_read_buffer_size_v2"],
+    properties: ["cppflags"],
+}
+
+disable_bluetooth_le_read_buffer_size_v2 {
+    name: "disable_bluetooth_le_read_buffer_size_v2_defaults",
+    soong_config_variables: {
+        disable_bluetooth_le_read_buffer_size_v2: {
+            cppflags: ["-DDISABLE_LE_READ_BUFFER_SIZE_V2"],
+        },
+    },
+}
+
+soong_config_module_type {
+    name: "disable_bluetooth_le_set_host_feature",
+    module_type: "cc_defaults",
+    config_namespace: "lineageGlobalVars",
+    bool_variables: ["disable_bluetooth_le_set_host_feature"],
+    properties: ["cppflags"],
+}
+
+disable_bluetooth_le_set_host_feature {
+    name: "disable_bluetooth_le_set_host_feature_defaults",
+    soong_config_variables: {
+        disable_bluetooth_le_set_host_feature: {
+            cppflags: ["-DDISABLE_LE_SET_HOST_FEATURE"],
+        },
+    },
+}
+
 // QCOM specific config modules
 soong_config_module_type {
     name: "librmnetctl_pre_uplink",
