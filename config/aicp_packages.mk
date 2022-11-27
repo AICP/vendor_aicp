@@ -35,6 +35,9 @@ endif
 PRODUCT_PACKAGES += \
     WallpaperPicker2
 
+PRODUCT_PACKAGES += \
+    GameSpace
+
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
