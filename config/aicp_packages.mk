@@ -84,8 +84,8 @@ endif
 # PRODUCT_PACKAGES += \
 #    Phonograph
 
-# PRODUCT_PACKAGES += \
-#    GameSpace
+PRODUCT_PACKAGES += \
+    GameSpace
 
 # OmniStyle
 # PRODUCT_PACKAGES += \
