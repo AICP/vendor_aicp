@@ -35,4 +35,4 @@ You can also build (and see how long it took) for specific devices like this:
     . build/envsetup.sh
     time brunch taimen
 
-Remember to `make clobber` every now and then!
+Remember to `make clobber` every now and then!!!
