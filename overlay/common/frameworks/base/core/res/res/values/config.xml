@@ -259,5 +259,5 @@
     <string name="config_defaultQrCodeComponent" translatable="false">org.lineageos.aperture/.QrScannerActivity</string>
 
     <!-- Name of the font family to use in the default lockscreen clock -->
-    <string name="config_clockFontFamily" translatable="false" />
+    <string name="config_clockFontFamily" translatable="false">@string/config_bodyFontFamily</string>
 </resources>
