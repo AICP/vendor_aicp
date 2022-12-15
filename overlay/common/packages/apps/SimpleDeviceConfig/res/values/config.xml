@@ -23,6 +23,10 @@
         <item>systemui/nav_bar_handle_show_over_lockscreen=false</item>
 
         <item>runtime_native_boot/iorap_perfetto_enable=true</item>
+
+        <!-- Globally enable the new photo picker -->
+        <item>storage_native_boot/take_over_get_content=true</item>
+
         <!--
             Device Personalization Services (AiAi)
         -->
