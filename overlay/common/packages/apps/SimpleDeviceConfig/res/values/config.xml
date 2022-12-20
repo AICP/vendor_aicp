@@ -76,6 +76,9 @@
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
 
+        <!-- Enable smart actions in the clipboard overlay -->
+        <item>systemui/clipboard_overlay_show_actions=true</item>
+
         <!--
             Keep track of more app ops for privacy dashboard display.
 
