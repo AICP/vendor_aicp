@@ -15,5 +15,10 @@
 -->
 
 <resources>
+    <!-- Flags setup as productivity oriented in which case Downloads app will be presented
+             as Files app. Including showing of the Documents and "advanced" roots. -->
     <bool name="show_documents_root">true</bool>
+
+    <!-- Indicates if internal storage is shown as default or not. -->
+    <bool name="config_default_show_device_root">true</bool>
 </resources>
