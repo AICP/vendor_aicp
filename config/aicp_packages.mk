@@ -24,6 +24,10 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # AicpSetupWizard
 #ifneq ($(WITH_GMS),true)
 #PRODUCT_PACKAGES += \
