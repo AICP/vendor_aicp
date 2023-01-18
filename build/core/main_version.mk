@@ -13,9 +13,9 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # additions for LOS-recovery
-ADDITIONAL_SYSTEM_PROPERTIES += \
-    ro.lineage.build.version=$(VERSION) \
-    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
+#ADDITIONAL_SYSTEM_PROPERTIES += \
+#    ro.lineage.build.version=$(VERSION) \
+#    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
 
 # AICP Stats
 ADDITIONAL_SYSTEM_PROPERTIES += \
