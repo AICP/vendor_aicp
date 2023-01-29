@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "beeed2c6_9ece35df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2023-01-29T06:31:30Z",
+      "side": 1,
+      "message": "Build for op8Pro fails with: http://haste.aicp-rom.com/ejijadolor.coffeescript",
+      "revId": "a29620ccc42ea0e704ba0eab0c554267ed99c9ef",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
