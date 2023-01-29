@@ -16,6 +16,23 @@
       "message": "Build for op8Pro fails with: http://haste.aicp-rom.com/ejijadolor.coffeescript",
       "revId": "a29620ccc42ea0e704ba0eab0c554267ed99c9ef",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13827c0d_5c7621bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 209
+      },
+      "writtenOn": "2023-01-29T08:34:58Z",
+      "side": 1,
+      "message": "Makes sense. In case I\u0027ll end up needing this once my device bringup is done, I guess we better pick this one from omni instead, together with https://gerrit.omnirom.org/q/topic:rework_generated_kernel_headers, to keep the soong definitions.",
+      "revId": "a29620ccc42ea0e704ba0eab0c554267ed99c9ef",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
