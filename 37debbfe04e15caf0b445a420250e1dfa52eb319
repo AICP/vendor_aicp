@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ed314f13_dbc1480f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2023-02-10T21:04:44Z",
+      "side": 1,
+      "message": "Doesn\u0027t hurt my devices.",
+      "revId": "37debbfe04e15caf0b445a420250e1dfa52eb319",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
