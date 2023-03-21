@@ -1,7 +1,6 @@
 # AICP packages
 PRODUCT_PACKAGES += \
     AicpExtras \
-    AicpThemesStub \
     TilesWallpaper
 
 # AICP Ad-block
@@ -58,6 +57,7 @@ PRODUCT_PACKAGES += \
     Glimpse \
     Jelly \
     ThemePicker \
+    ThemesStub \
     WallpaperPicker2
 
 # Required packages
