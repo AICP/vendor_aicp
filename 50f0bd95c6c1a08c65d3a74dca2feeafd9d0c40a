@@ -16,6 +16,23 @@
       "message": "No one is testing. Or reviewing.",
       "revId": "50f0bd95c6c1a08c65d3a74dca2feeafd9d0c40a",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fbf94722_f94ae4af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 10
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2023-04-06T03:50:06Z",
+      "side": 1,
+      "message": "No reference found on cs.android.com, so I guess goolag stuff which doesnt seem to apply to us",
+      "revId": "50f0bd95c6c1a08c65d3a74dca2feeafd9d0c40a",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
