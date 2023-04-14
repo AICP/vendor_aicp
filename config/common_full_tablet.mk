@@ -1,3 +1,5 @@
+$(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
+
 # Inherit full common AICP stuff
 $(call inherit-product, vendor/aicp/config/common_full.mk)
 
