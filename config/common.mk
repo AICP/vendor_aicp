@@ -102,6 +102,7 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/privapp-permissions-aicp-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aicp.xml
 
 PRODUCT_PACKAGES += \
+    DocumentsUIOverlay \
     NetworkStackOverlay
 
 # Hidden API whitelist
