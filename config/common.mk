@@ -103,6 +103,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
+    Launcher3Overlay \
     NetworkStackOverlay
 
 # Hidden API whitelist
