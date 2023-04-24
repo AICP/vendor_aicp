@@ -127,6 +127,7 @@ PRODUCT_PACKAGES += \
     nano \
 #    pigz \
     powertop \
+    rsync \
     setcap \
 #    unrar \
     unzip \
