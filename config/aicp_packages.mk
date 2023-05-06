@@ -95,6 +95,10 @@ endif
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Extra cmdline tools
+PRODUCT_PACKAGES += \
+    zstd
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
