@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7474aaf_c1e5e3ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2023-05-13T23:09:09Z",
+      "side": 1,
+      "message": "https://review.lineageos.org/q/topic:thirteen-cmdline-tools topic.",
+      "revId": "0cf3b4cc1f5ddc3c13065c2bec30f5420b37e4d5",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
