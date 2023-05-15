@@ -95,10 +95,6 @@ endif
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
-# Extra cmdline tools
-PRODUCT_PACKAGES += \
-    zstd
-
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
@@ -133,11 +129,12 @@ PRODUCT_PACKAGES += \
     powertop \
     rsync \
     setcap \
-#    unrar \
+    unrar \
     unzip \
     vim \
     wget \
-    zip
+    zip \
+    zstd
 
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
