@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b7ea776e_cd197d37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2023-07-01T09:50:03Z",
+      "side": 1,
+      "message": "Fixes build of Aperture after Lineage\u0027s merge of this to their vendor.",
+      "revId": "9006fff12e245b445bc7fb4e59f99eaa3040682e",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
