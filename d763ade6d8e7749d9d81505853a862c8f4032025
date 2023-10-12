@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07be5794_b7a0f4e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1646
+      },
+      "writtenOn": "2023-10-12T12:52:54Z",
+      "side": 1,
+      "message": "we need this after https://github.com/LineageOS/android_hardware_interfaces/commit/f8b6738624801cedc6d7546ba16d1adc00e0faf4\n\nerror: hardware/interfaces/camera/device/3.3/default/Android.bp:10:1: \"camera.device@3.3-impl\" depends on undefined module \"camera_override_format_from_reserved_defaults\"",
+      "revId": "d763ade6d8e7749d9d81505853a862c8f4032025",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
