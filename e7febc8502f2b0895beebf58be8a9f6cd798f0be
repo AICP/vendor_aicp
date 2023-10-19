@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36e5e89b_164e26e8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2023-10-19T04:44:04Z",
+      "side": 1,
+      "message": "Needed for the separate notification /ring volumes",
+      "revId": "e7febc8502f2b0895beebf58be8a9f6cd798f0be",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
