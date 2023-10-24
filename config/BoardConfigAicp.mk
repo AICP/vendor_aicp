@@ -12,8 +12,9 @@ ifeq ($(TARGET_IS_AB_DEVICE),true)
 endif
 
 include vendor/aicp/config/BoardConfigKernel.mk
+
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-    include vendor/aicp/config/BoardConfigQcom.mk
+    include hardware/qcom-caf/common/BoardConfigQcom.mk
 endif
 
 include vendor/aicp/config/BoardConfigSoong.mk

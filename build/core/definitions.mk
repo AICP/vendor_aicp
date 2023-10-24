@@ -7,6 +7,3 @@ endef
 
 # Include board/platform macros
 include vendor/aicp/build/core/utils.mk
-
-# Include vendor platform definitions
-include vendor/aicp/build/core/vendor/*.mk
