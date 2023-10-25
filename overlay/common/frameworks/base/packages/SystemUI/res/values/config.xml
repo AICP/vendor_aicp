@@ -43,5 +43,7 @@
     <string-array name="config_keyguard_statusbar_icon_blocklist" translatable="false">
     </string-array>
 
+    <!-- Whether or not lockscreen shortcuts can be customized -->
+    <bool name="custom_lockscreen_shortcuts_enabled" translatable="false">true</bool>
 </resources>
 
