@@ -17,4 +17,7 @@
 <resources>
     <!-- Package name for the call-based number verification app -->
     <string name="platform_number_verification_package" translatable="false">com.google.android.gms</string>
+
+    <!-- Fingerprint -->
+    <dimen name="udfps_lottie_translate_y">-500dp</dimen>
 </resources>
