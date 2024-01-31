@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
     AppPredictionService \
     Etar \
     ExactCalculator \
+    Glimpse \
     Jelly \
     ThemePicker \
     WallpaperPicker2
