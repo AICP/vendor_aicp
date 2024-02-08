@@ -547,7 +547,7 @@ def main():
         mergables[project_path].append(item)
 
     # round 1: start branch and drop picked changes
-    for project_path, per_path_mergables in mergables.items():
+    for project_path in mergables:
         # If --start-branch is given, create the branch (more than once per path is okay; repo ignores gracefully)
         if args.start_branch:
             subprocess.run(["repo", "start", args.start_branch[0], project_path])
@@ -586,7 +586,7 @@ def main():
                         picked_change_ids.append(head_change_id.strip())
                         break
 
-        for item in per_path_mergables:
+        def filter_picked(item):
             # Check if change is already picked to HEAD...HEAD~check_picked_count
             if item["change_id"] in picked_change_ids:
                 print(
@@ -594,7 +594,10 @@ def main():
                         item["id"], project_path
                     )
                 )
-                per_path_mergables.remove(item)
+                return False
+            return True
+
+        mergables[project_path] = list(filter(filter_picked, mergables[project_path]))
 
     # round 2: fetch changes in parallel if not pull
     if not args.pull:
