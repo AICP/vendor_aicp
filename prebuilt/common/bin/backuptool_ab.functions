@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=13
+export V=14
 export backuptool_ab=true
 
 copy_file() {

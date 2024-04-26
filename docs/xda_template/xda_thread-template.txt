@@ -1,6 +1,6 @@
 [CENTER]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/logo_black.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/logo_black.png[/IMG]
 
 [SIZE="7"][B]AICP[/B][/SIZE]
 [SIZE="1"][B]Android Ice Cold Project[/B][/SIZE]
@@ -28,11 +28,11 @@ If there are any bugs we will sort them out if it concerns our codebase. This RO
  */
 [/CODE]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/features.png[/IMG]
-[URL="https://github.com/AICP/vendor_aicp/blob/t13.0/docs/features.md"]Feature list (rough overview)[/URL]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/features.png[/IMG]
+[URL="https://github.com/AICP/vendor_aicp/blob/u14.0/docs/features.md"]Feature list (rough overview)[/URL]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/credits.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/credits.png[/IMG]
 
 [B]In the beginning, we would like to thank:[/B]
 
@@ -44,7 +44,7 @@ Resurrection Remix team
 AOSiP team
 [B]Community[/B]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/team.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/team.png[/IMG]
 
 [B]@LorD ClockaN[/B]
 [B]@eyosen[/B]
@@ -55,14 +55,14 @@ AOSiP team
 [B]plus the rest of the crazy bunch that we call "team"[/B]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/donations.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/donations.png[/IMG]
 
 We are paying for servers that build weeklies and everything that comes with this, so EVERY DONATION will really be appreciated and be used to cover those expenses.
 [B]Thank you!![/B]
 
-[URL="https://paypal.me/aicpromcom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/paypal.png[/IMG][/URL]
+[URL="https://paypal.me/aicpromcom"][IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/paypal.png[/IMG][/URL]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/downloads.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/downloads.png[/IMG]
 
 [SIZE=3][B]Latest Stable Release [/B][SIZE=2][B]Version [/B]17.1[/SIZE]
 [/SIZE]
@@ -72,7 +72,7 @@ We are paying for servers that build weeklies and everything that comes with thi
 Starting with AICP 15 we will be storing a copy of the most recent release here: [url]https://media.aicp-rom.com/vault/[/url].[/U][/B]
 
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/changelog.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/changelog.png[/IMG]
 
 [SIZE=3][B]Full Changelog link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 (Just click the changelog button next to the download link in the list of builds available for your device)
@@ -83,14 +83,14 @@ We recommend MindTheGapps as it has been thoroughly tested and it works well wit
 MindTheGapps: https://androidfilehost.com/?w=files&flid=322935
 Mirror: http://downloads.codefi.re/jdcteam/javelinanddart/gapps
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/issues.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/issues.png[/IMG]
 
 You tell... :P
 
 [B][U]FAQ:[/U][/B]
 [HIDE][B]Before using the ROM:[/B]
 Q. [I][B][U]Can I have an ETA for the next build?[/I][/B][/U]
-A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/t13.0/aicp-build-targets"]here[/url] to see what day your device is built on.
+A. Yes, just look [url="https://github.com/AICP/vendor_jenkins/blob/u14.0/aicp-build-targets"]here[/url] to see what day your device is built on.
 
 Q. [I][B][U] Does this ROM [B]support[/B] custom kernels officially?[/I][/B][/U]
 A. No. You can still use them, but the discussion should go in the thread of the respective kernel. We don't offer support for bugs you might encounter while using them!
@@ -138,7 +138,7 @@ Q. [I][B][U]How do I get a logcat, what type should I get, and more questions th
 A1. Read [URL="https://docs.google.com/document/d/1Hj289Mv_13uHyW7ZSp0nId37Up3NBBrrScKRMqUaCII/edit"]this[/URL] thoroughly. Also, here's a good app for getting logs: [url]https://play.google.com/store/apps/details?id=com.tortel.syslog[/url] (Root needed).
 A2. If you are already rooted, you can use the built-in feature to make a logcat and provide that. Just look into the others section on the AICP Extras main page.[/HIDE]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/instructions.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/instructions.png[/IMG]
 
 The ROM should contain everything you need to enjoy Android S. You don't need to install any Add-ons, simply download the latest ROM and GApps, then follow the flashing instructions and go!
 If you want the device to run the ROM "rooted", you can flash a root solution of your choice after the ROM zip file.
@@ -177,7 +177,7 @@ Open the updater app, download the update, then press install, press reboot when
 [U][B]Instructions for OTA ("Over-The-Air" Updates) on "A/B" devices:[/B][/U]
 Open the updater app, download the update, then press install and wait for the process to finish (feel free to let it run in the background), then press reboot when prompted, there isn't any need to flash GApps separately
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/sources.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/sources.png[/IMG]
 
 [B]If you want to contribute to AICP, or if you want to see what is being worked on/merged, feel free to visit our Gerrit code review system. (Link is at the bottom!!!)[/B]
 
@@ -207,5 +207,5 @@ only mention the main ones though, probably the top four or so, otherwise this l
 [B]Status:[/B] {ALPHA|BETA|STABLE}
 [B]Release Date:[/B] mm-dd-yyyy
 
-You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/t13.0/docs/xda_template/dev_office.png"]here[/URL]!!
+You want to see a "normal" night at the "DEV office", click [URL="https://raw.githubusercontent.com/AICP/vendor_aicp/u14.0/docs/xda_template/dev_office.png"]here[/URL]!!
 [/CENTER]
