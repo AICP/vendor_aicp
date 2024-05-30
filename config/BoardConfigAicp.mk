@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2017-2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
 # Charger
 ifeq ($(WITH_AICP_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.aicp
@@ -10,10 +13,10 @@ endif
 
 include vendor/aicp/config/BoardConfigKernel.mk
 ifeq ($(TARGET_KERNEL_CLANG_VERSION),latest)
-include prebuilts/clang/host/linux-x86_custom/clang_custom.mk
+    include prebuilts/clang/host/linux-x86_custom/clang_custom.mk
 endif
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include vendor/aicp/config/BoardConfigQcom.mk
+    include vendor/aicp/config/BoardConfigQcom.mk
 endif
 
 include vendor/aicp/config/BoardConfigSoong.mk
