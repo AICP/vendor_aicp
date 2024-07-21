@@ -8,3 +8,6 @@ PRODUCT_PACKAGES += \
     LatinIME
 
 $(call inherit-product, vendor/aicp/config/telephony.mk)
+
+# Inherit tablet common AICP stuff
+$(call inherit-product, vendor/aicp/tablet.mk)

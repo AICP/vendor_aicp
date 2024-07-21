@@ -1,9 +1,8 @@
 # Inherit full common AICP stuff
 $(call inherit-product, vendor/aicp/config/common_full.mk)
 
-
-# Inherit full tablet common AICP stuff
-$(call inherit-product, vendor/aicp/config/full_tablet.mk)
+# Inherit tablet common AICP stuff
+$(call inherit-product, vendor/aicp/config/tablet.mk)
 
 # Required packages
 PRODUCT_PACKAGES += \
