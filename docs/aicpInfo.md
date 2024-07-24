@@ -353,16 +353,4 @@ You can integrate device-specific doze packages into Settings app using _intent-
 </intent-filter>
 ```
 as [here](https://github.com/AICP/device_oneplus_sdm845-common/blob/16f5876fdaf72be3a66e2b84ac4c6fff185c572e/doze/AndroidManifest.xml#L52-L55)
-
-
-Compile Kernel against a custom AOSP clang version
------------------------------------------------
-to compile your kernel against a custom Clang version, add these to your BoardConfig.mk file:
-```
-TARGET_KERNEL_CLANG_CUSTOM := true
-TARGET_KERNEL_CLANG_VERSION := latest
-```
-which will use the latest Clang version available, a specific version can be used using:
-```
-TARGET_KERNEL_CLANG_VERSION := r377782b
 ```
