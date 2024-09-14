@@ -16,6 +16,23 @@
       "message": "AOSP keyboard can have gesture typing if these are included, will looking into making these compatible\n\nCould you relax the rule with https://github.com/AICP/build/blob/u14.0/Changes.md#elf-prebuilts-in-product_copy_files-build_broken_elf_prebuilt_product_copy_files",
       "revId": "00ab5183edff5ff9af5a2531acd33bd20c000a33",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86972714_03fa7df7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 209
+      },
+      "writtenOn": "2024-09-14T19:37:49Z",
+      "side": 1,
+      "message": "Ah I see, thanks!\n\nI personally don\u0027t care about the AOSP keyboard / gesture typing right now, so I don\u0027t mind picking this patch for now",
+      "revId": "00ab5183edff5ff9af5a2531acd33bd20c000a33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
