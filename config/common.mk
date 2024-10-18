@@ -1,8 +1,6 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-
 # Include AICP version
 include vendor/aicp/config/aicp_version.mk
 
