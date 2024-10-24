@@ -15,6 +15,11 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/aicp_cf_car_arm64.mk \
+    $(LOCAL_DIR)/aicp_cf_car_x86_64.mk \
+    $(LOCAL_DIR)/aicp_cf_phone_arm64.mk \
+    $(LOCAL_DIR)/aicp_cf_phone_x86_64.mk \
+    $(LOCAL_DIR)/aicp_cf_tv_x86_64.mk \
     $(LOCAL_DIR)/aicp_gsi_arm.mk \
     $(LOCAL_DIR)/aicp_gsi_arm64.mk \
     $(LOCAL_DIR)/aicp_gsi_x86.mk \
