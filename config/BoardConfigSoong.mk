@@ -24,8 +24,7 @@ SOONG_CONFIG_lineageGlobalVars += \
     camera_needs_client_info_lib \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
-    gralloc_handle_has_ubwcp_format \
-    target_ld_shim_libs
+    gralloc_handle_has_ubwcp_format
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
