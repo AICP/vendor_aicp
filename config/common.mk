@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/etc/init/init.aicp-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.aicp-system_ext.rc \
     vendor/aicp/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
+# Component overrides
+PRODUCT_PACKAGES += \
+    lineage-component-overrides.xml
+
 # Do not include art debug targets
 PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 
