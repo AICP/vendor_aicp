@@ -1,0 +1,6 @@
+kotlin_plugin {
+    name: "androidx.compose.compiler_compiler-hosted-plugin",
+    static_libs: [
+        "androidx.compose.compiler_compiler-hosted",
+    ],
+}
