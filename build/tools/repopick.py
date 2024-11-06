@@ -128,7 +128,7 @@ def build_query_url(remote_url, query, auth):
         },
         doseq=True,
     )
-    return urllib.parse.urlunparse(urllib.parse.ParseResult(**p))
+    return urllib.parse.unquote(urllib.parse.urlunparse(urllib.parse.ParseResult(**p)))
 
 
 def fetch_query_via_http(remote_url, query, auth=True):
