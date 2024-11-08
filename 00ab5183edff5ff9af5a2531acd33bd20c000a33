@@ -33,6 +33,23 @@
       "message": "Ah I see, thanks!\n\nI personally don\u0027t care about the AOSP keyboard / gesture typing right now, so I don\u0027t mind picking this patch for now",
       "revId": "00ab5183edff5ff9af5a2531acd33bd20c000a33",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "228c1325_31dc1466",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2024-11-08T13:43:41Z",
+      "side": 1,
+      "message": "[ 74% 27607/37075 1h38m44s remaining] Check non-ELF: vendor/aicp/prebuilt/common/lib64/libsketchology_native.so\nFAILED: out/target/product/hotdog/obj/FAKE/check-non-elf-file-timestamps_intermediates/out/target/product/hotdog/system/lib64/libsketchology_native.so.timestamp\n/bin/bash -c \"(mkdir -p \\\"out/target/product/hotdog/obj/FAKE/check-non-elf-file-timestamps_intermediates/out/target/product/hotdog/system/lib64/\\\" ) \u0026\u0026 (rm -f \\\"out/target/product/hotdog/obj/FAKE/check-non-elf-file-timestamps_intermediates/out/target/product/hotdog/system/lib64/libsketchology_native.so.timestamp\\\" ) \u0026\u0026 (if prebuilts/clang/host/linux-x86/clang-r510928/bin/llvm-readobj -h \\\"vendor/aicp/prebuilt/common/lib64/libsketchology_native.so\\\" \u003e/dev/null 2\u003e\u00261; then echo -e \\\"\\\\033[1mout/target/product/hotdog/system/lib64/libsketchology_native.so: \\\\033[31merror:\\\\033[0m\\\\033[1m\\\" \u0027found ELF prebuilt in PRODUCT_COPY_FILES, use cc_prebuilt_binary / cc_prebuilt_library_shared instead.\u0027  \\\"\\\\033[0m\\\" \u003e\u00262; echo -e \\\"\\\\033[1mout/target/product/hotdog/system/lib64/libsketchology_native.so: \\\\033[31merror:\\\\033[0m\\\\033[1m\\\" \u0027found ELF file: vendor/aicp/prebuilt/common/lib64/libsketchology_native.so\u0027  \\\"\\\\033[0m\\\" \u003e\u00262; false; fi ) \u0026\u0026 (touch \\\"out/target/product/hotdog/obj/FAKE/check-non-elf-file-timestamps_intermediates/out/target/product/hotdog/system/lib64/libsketchology_native.so.timestamp\\\" )\"\nout/target/product/hotdog/system/lib64/libsketchology_native.so: error: found ELF prebuilt in PRODUCT_COPY_FILES, use cc_prebuilt_binary / cc_prebuilt_library_shared instead. \nout/target/product/hotdog/system/lib64/libsketchology_native.so: error: found ELF file: vendor/aicp/prebuilt/common/lib64/libsketchology_native.so",
+      "revId": "00ab5183edff5ff9af5a2531acd33bd20c000a33",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
