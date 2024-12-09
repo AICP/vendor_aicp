@@ -256,10 +256,11 @@ def main():
         action="store_true",
         help='shortcut to "--start-branch auto --abandon-first --ignore-missing"',
     )
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
         "-q", "--quiet", action="store_true", help="print as little as possible"
     )
-    parser.add_argument(
+    group.add_argument(
         "-v",
         "--verbose",
         action="store_true",
@@ -277,13 +278,14 @@ def main():
     parser.add_argument(
         "-P", "--path", metavar="", help="use the specified path for the change"
     )
-    parser.add_argument(
+    group = parser.add_mutually_exclusive_group()
+    group.add_argument(
         "-t", "--topic", metavar="", help="pick all commits from a specified topic"
     )
-    parser.add_argument(
+    group.add_argument(
         "-H", "--hashtag", metavar="", help="pick all commits from a specified hashtag"
     )
-    parser.add_argument(
+    group.add_argument(
         "-Q", "--query", metavar="", help="pick all commits using the specified query"
     )
     parser.add_argument(
@@ -326,13 +328,6 @@ def main():
         args.ignore_missing = True
         if not args.start_branch:
             args.start_branch = ["auto"]
-    if args.quiet and args.verbose:
-        parser.error("--quiet and --verbose cannot be specified together")
-
-    if (1 << bool(args.change_number) << bool(args.topic) << bool(args.hashtag) << bool(args.query)) != 2:
-        parser.error(
-            "One (and only one) of change_number, topic, hashtag and query are allowed"
-        )
 
     # Change current directory to the top of the tree
     if "ANDROID_BUILD_TOP" in os.environ:
