@@ -162,5 +162,44 @@
     <alias name="inter-medium" to="inter" weight="500" />
 
     <!-- additional fonts -->
+    <family customizationType="new-named-family" name="harmonysans">
+    <font weight="100" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="100" />
+    </font>
+    <font weight="100" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="100" />
+    </font>
+    <font weight="300" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="247" />
+    </font>
+    <font weight="300" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="247" />
+    </font>
+    <font weight="400" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="400" />
+    </font>
+    <font weight="400" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="400" />
+    </font>
+    <font weight="500" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="500" />
+    </font>
+    <font weight="500" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="500" />
+    </font>
+    <font weight="700" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="706" />
+    </font>
+    <font weight="700" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="706" />
+    </font>
+    <font weight="900" style="normal">HarmonyOS-Sans.ttf
+        <axis tag="wght" stylevalue="844" />
+    </font>
+    <font weight="900" style="italic">HarmonyOS-Sans-Italic.ttf
+        <axis tag="wght" stylevalue="844" />
+    </font>
+  </family>
+  <alias name="harmonysans-medium" to="harmonysans" weight="500"/>
 
 </fonts-modification>
