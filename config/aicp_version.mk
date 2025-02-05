@@ -37,3 +37,14 @@ else
 #We reset back to UNOFFICIAL
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
+
+# Signing
+ifeq (user,$(TARGET_BUILD_VARIANT))
+ifneq (,$(wildcard vendor/aicp/signing/keys/releasekey.pk8))
+PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aicp/signing/keys/releasekey
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.oem_unlock_supported=1
+endif
+ifneq (,$(wildcard vendor/aicp/signing/keys/otakey.x509.pem))
+PRODUCT_OTA_PUBLIC_KEYS := vendor/aicp/signing/keys/otakey.x509.pem
+endif
+endif
