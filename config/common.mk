@@ -117,7 +117,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     Launcher3Overlay \
-    NetworkStackOverlay
+    NetworkStackOverlay \
+    PermissionControllerOverlay
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
