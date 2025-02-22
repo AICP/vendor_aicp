@@ -67,6 +67,10 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/clean_cache.sh
 
+# FRP
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/bin/wipe-frp.sh:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/wipe-frp
+
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
