@@ -6,7 +6,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 # Tablet-specific overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/tablet
-
-# Freeform window management
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.freeform_window_management.xml
