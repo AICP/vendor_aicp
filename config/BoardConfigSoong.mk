@@ -21,22 +21,13 @@ $(foreach v,$(EXPORT_TO_SOONG),$(eval $(call add_soong_config_var,lineageVarsPlu
 SOONG_CONFIG_NAMESPACES += lineageGlobalVars
 SOONG_CONFIG_lineageGlobalVars += \
     additional_gralloc_10_usage_bits \
-    camera_needs_client_info_lib \
-    gralloc_handle_has_custom_content_md_reserved_size \
-    gralloc_handle_has_reserved_size \
-    gralloc_handle_has_ubwcp_format
+    camera_needs_client_info_lib
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
-SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_custom_content_md_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE)
-SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_reserved_size := $(TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE)
-SOONG_CONFIG_lineageGlobalVars_gralloc_handle_has_ubwcp_format := $(TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
-TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
-TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
-TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
 
 # Soong value variables
 SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
