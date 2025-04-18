@@ -84,6 +84,8 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+include vendor/aicp/config/lineage_sdk_common.mk
+
 # system mount
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
