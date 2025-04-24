@@ -29,12 +29,6 @@ SOONG_CONFIG_lineageGlobalVars += \
     gralloc_handle_has_custom_content_md_reserved_size \
     gralloc_handle_has_reserved_size \
     gralloc_handle_has_ubwcp_format \
-    target_health_charging_control_charging_enabled \
-    target_health_charging_control_charging_disabled \
-    target_health_charging_control_deadline_path \
-    target_health_charging_control_supports_bypass \
-    target_health_charging_control_supports_deadline \
-    target_health_charging_control_supports_toggle \
     target_ld_shim_libs \
     target_power_libperfmgr_mode_extension_lib \
     target_powershare_path \
@@ -44,11 +38,6 @@ SOONG_CONFIG_lineageGlobalVars += \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
     spoof_first_api_level_32
-
-ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
-SOONG_CONFIG_lineageGlobalVars += \
-    target_health_charging_control_charging_path
-endif
 
 # Soong bool variables
 SOONG_CONFIG_lineageGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
@@ -64,11 +53,6 @@ TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
 TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED ?= 1
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED ?= 0
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS ?= true
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE ?= false
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE ?= true
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB ?= libperfmgr-ext
 TARGET_POWERSHARE_ENABLED ?= 1
 TARGET_POWERSHARE_DISABLED ?= 0
@@ -81,16 +65,6 @@ SOONG_CONFIG_lineageGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDI
 SOONG_CONFIG_lineageGlobalVars_disable_bluetooth_le_read_buffer_size_v2 := $(TARGET_DISABLE_BLUETOOTH_LE_READ_BUFFER_SIZE_V2)
 SOONG_CONFIG_lineageGlobalVars_disable_bluetooth_le_set_host_feature := $(TARGET_DISABLE_BLUETOOTH_LE_SET_HOST_FEATURE)
 SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
-ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_path := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH)
-endif
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_enabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_charging_disabled := $(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_deadline_path := $(TARGET_HEALTH_CHARGING_CONTROL_DEADLINE_PATH)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_bypass := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_deadline := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE)
-SOONG_CONFIG_lineageGlobalVars_target_health_charging_control_supports_toggle := $(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE)
-SOONG_CONFIG_lineageGlobalVars_target_ld_shim_libs := $(subst $(space),:,$(TARGET_LD_SHIM_LIBS))
 SOONG_CONFIG_lineageGlobalVars_target_power_libperfmgr_mode_extension_lib := $(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB)
 SOONG_CONFIG_lineageGlobalVars_target_powershare_path := $(TARGET_POWERSHARE_PATH)
 SOONG_CONFIG_lineageGlobalVars_target_powershare_enabled := $(TARGET_POWERSHARE_ENABLED)
@@ -99,6 +73,32 @@ SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_U
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
 SOONG_CONFIG_lineageGlobalVars_spoof_first_api_level_32 := $(SPOOF_FIRST_API_LEVEL_32)
+
+# Lineage Health HAL
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
+    $(call soong_config_set,lineage_health,charging_control_charging_path,$(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_DEADLINE_PATH),)
+    $(call soong_config_set,lineage_health,charging_control_deadline_path,$(TARGET_HEALTH_CHARGING_CONTROL_DEADLINE_PATH))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED),)
+    $(call soong_config_set,lineage_health,charging_control_charging_enabled,$(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED),)
+    $(call soong_config_set,lineage_health,charging_control_charging_disabled,$(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS),)
+    $(call soong_config_set,lineage_health,charging_control_supports_bypass,$(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE),)
+    $(call soong_config_set,lineage_health,charging_control_supports_deadline,$(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT),)
+    $(call soong_config_set,lineage_health,charging_control_supports_limit,$(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT))
+endif
+ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE),)
+    $(call soong_config_set,lineage_health,charging_control_supports_toggle,$(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE))
+endif
 
 # Surfaceflinger
 ifneq ($(TARGET_SURFACEFLINGER_UDFPS_LIB),)
