@@ -31,9 +31,6 @@ SOONG_CONFIG_lineageGlobalVars += \
     gralloc_handle_has_ubwcp_format \
     target_ld_shim_libs \
     target_power_libperfmgr_mode_extension_lib \
-    target_powershare_path \
-    target_powershare_enabled \
-    target_powershare_disabled \
     target_trust_usb_control_path \
     target_trust_usb_control_enable \
     target_trust_usb_control_disable \
@@ -54,8 +51,6 @@ TARGET_GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE ?= false
 TARGET_GRALLOC_HANDLE_HAS_UBWCP_FORMAT ?= false
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB ?= libperfmgr-ext
-TARGET_POWERSHARE_ENABLED ?= 1
-TARGET_POWERSHARE_DISABLED ?= 0
 TARGET_TRUST_USB_CONTROL_PATH ?= /proc/sys/kernel/deny_new_usb
 TARGET_TRUST_USB_CONTROL_ENABLE ?= 1
 TARGET_TRUST_USB_CONTROL_DISABLE ?= 0
@@ -66,9 +61,6 @@ SOONG_CONFIG_lineageGlobalVars_disable_bluetooth_le_read_buffer_size_v2 := $(TAR
 SOONG_CONFIG_lineageGlobalVars_disable_bluetooth_le_set_host_feature := $(TARGET_DISABLE_BLUETOOTH_LE_SET_HOST_FEATURE)
 SOONG_CONFIG_lineageGlobalVars_bootloader_message_offset := $(BOOTLOADER_MESSAGE_OFFSET)
 SOONG_CONFIG_lineageGlobalVars_target_power_libperfmgr_mode_extension_lib := $(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB)
-SOONG_CONFIG_lineageGlobalVars_target_powershare_path := $(TARGET_POWERSHARE_PATH)
-SOONG_CONFIG_lineageGlobalVars_target_powershare_enabled := $(TARGET_POWERSHARE_ENABLED)
-SOONG_CONFIG_lineageGlobalVars_target_powershare_disabled := $(TARGET_POWERSHARE_DISABLED)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_path := $(TARGET_TRUST_USB_CONTROL_PATH)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_enable := $(TARGET_TRUST_USB_CONTROL_ENABLE)
 SOONG_CONFIG_lineageGlobalVars_target_trust_usb_control_disable := $(TARGET_TRUST_USB_CONTROL_DISABLE)
@@ -98,6 +90,17 @@ ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_LIMIT),)
 endif
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE),)
     $(call soong_config_set,lineage_health,charging_control_supports_toggle,$(TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE))
+endif
+
+# Lineage PowerShare HAL
+ifneq ($(TARGET_POWERSHARE_PATH),)
+    $(call soong_config_set,lineage_powershare,powershare_path,$(TARGET_POWERSHARE_PATH))
+endif
+ifneq ($(TARGET_POWERSHARE_ENABLED),)
+    $(call soong_config_set,lineage_powershare,powershare_enabled,$(TARGET_POWERSHARE_ENABLED))
+endif
+ifneq ($(TARGET_POWERSHARE_DISABLED),)
+    $(call soong_config_set,lineage_powershare,powershare_disabled,$(TARGET_POWERSHARE_DISABLED))
 endif
 
 # Surfaceflinger
