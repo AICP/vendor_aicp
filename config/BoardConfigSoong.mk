@@ -65,11 +65,6 @@ ifneq ($(TARGET_POWERSHARE_DISABLED),)
     $(call soong_config_set,lineage_powershare,powershare_disabled,$(TARGET_POWERSHARE_DISABLED))
 endif
 
-# Power HAL
-ifneq ($(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB),)
-    $(call soong_config_set,power_libperfmgr,mode_extension_lib,$(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB))
-endif
-
 # Recovery
 ifneq ($(BOOTLOADER_MESSAGE_OFFSET),)
     $(call soong_config_set,lineage_recovery,bootloader_message_offset,$(BOOTLOADER_MESSAGE_OFFSET))
