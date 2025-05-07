@@ -65,17 +65,6 @@ ifneq ($(TARGET_POWERSHARE_DISABLED),)
     $(call soong_config_set,lineage_powershare,powershare_disabled,$(TARGET_POWERSHARE_DISABLED))
 endif
 
-# Lineage USB HAL
-ifneq ($(TARGET_TRUST_USB_CONTROL_PATH),)
-    $(call soong_config_set,lineage_usb,usb_control_path,$(TARGET_TRUST_USB_CONTROL_PATH))
-endif
-ifneq ($(TARGET_TRUST_USB_CONTROL_ENABLE),)
-    $(call soong_config_set,lineage_usb,usb_control_enabled,$(TARGET_TRUST_USB_CONTROL_ENABLE))
-endif
-ifneq ($(TARGET_TRUST_USB_CONTROL_DISABLE),)
-    $(call soong_config_set,lineage_usb,usb_control_disabled,$(TARGET_TRUST_USB_CONTROL_DISABLE))
-endif
-
 # Power HAL
 ifneq ($(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB),)
     $(call soong_config_set,power_libperfmgr,mode_extension_lib,$(TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB))
