@@ -53,9 +53,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # additions for LOS-recovery
-#PRODUCT_SYSTEM_PROPERTIES += \
-#    ro.lineage.build.version=$(VERSION) \
-#    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lineage.build.version=$(VERSION) \
+    ro.lineage.display.version=$(AICP_VERSION) \
+    ro.lineage.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # AICP Stats
 PRODUCT_SYSTEM_PROPERTIES += \
