@@ -67,3 +67,11 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.romstats.version=$(VERSION) \
     ro.romstats.tframe=1 \
     ro.romstats.askfirst=1
+
+ifeq ($(DEVICE_MAINTAINERS),)
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.aicp.maintainer=$(DEVICE_MAINTAINERS)
+else
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.aicp.maintainer=XXX
+endif
