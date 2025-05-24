@@ -58,6 +58,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     ThemePicker \
     ThemesStub \
+    Twelve \
     WallpaperPicker2
 
 # Required packages
