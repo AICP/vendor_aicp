@@ -52,11 +52,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Aperture \
     AppPredictionService \
+    AudioFX \
     Camelot \
     Etar \
     ExactCalculator \
     Glimpse \
     Jelly \
+    Recorder \
     ThemePicker \
     ThemesStub \
     Twelve \
