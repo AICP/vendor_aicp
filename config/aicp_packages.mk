@@ -52,6 +52,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Aperture \
     AppPredictionService \
+    Camelot \
     Etar \
     ExactCalculator \
     Glimpse \
