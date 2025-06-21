@@ -122,6 +122,9 @@ PRODUCT_PACKAGES += \
     NetworkStackOverlay \
     PermissionControllerOverlay
 
+# Audio files
+$(call inherit-product, vendor/aicp/audio/audio.mk)
+
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
