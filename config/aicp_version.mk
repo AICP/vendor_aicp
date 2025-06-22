@@ -10,7 +10,7 @@ PRODUCT_VERSION_MINOR := $(AICP_VERSION_MINOR)
 PRODUCT_VERSION_MAINTENANCE := $(AICP_VERSION_MAINTENANCE)
 
 VERSION := $(AICP_VERSION_MAJOR).$(AICP_VERSION_MINOR)
-
+DEVICE_NAME := $(shell echo $(TARGET_PRODUCT) | sed -e 's|^aicp_||g')
 ifndef AICP_BUILDTYPE
     ifdef RELEASE_TYPE
         RELEASE_TYPE := $(shell echo $(RELEASE_TYPE) | sed -e 's|^AICP_||g')
@@ -55,8 +55,8 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # additions for LOS-recovery
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.lineage.build.version=$(VERSION) \
-    ro.lineage.display.version=$(AICP_VERSION) \
-    ro.lineage.version=$(VERSION)-$(AICP_BUILDTYPE)
+    ro.lineage.display.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME) \
+    ro.lineage.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
 
 # AICP Stats
 PRODUCT_SYSTEM_PROPERTIES += \
