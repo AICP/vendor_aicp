@@ -56,7 +56,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.lineage.build.version=$(VERSION) \
     ro.lineage.display.version=$(AICP_VERSION) \
-    ro.lineage.version=$(VERSION)-$(AICP_BUILDTYPE)
+    ro.lineage.version=$(AICP_VERSION)
 
 # AICP Stats
 PRODUCT_SYSTEM_PROPERTIES += \
