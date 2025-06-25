@@ -998,7 +998,7 @@ function fixup_common_out_dir() {
 }
 
 function sync_all_kernels() {
-    source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/kernel_platform
+    source ${ANDROID_BUILD_TOP}/vendor/aicp/vars/kernel_platform
 
     for kver in "${!kernel_branches[@]}"; do
         BRANCH="${kernel_branches[$kver]}"
