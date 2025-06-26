@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "500e4dcc_ca3612a0",
+        "filename": "build/target/product/aicp_cf_phone_x86_64.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2025-06-26T14:27:47Z",
+      "side": 1,
+      "message": "I think, this also needs to be changed. but maybe we should do this and my PS2 in a separste commit",
+      "revId": "be0d816cf23dd5a74cd86d972b6201e0c3db1518",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
