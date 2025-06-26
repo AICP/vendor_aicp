@@ -304,7 +304,7 @@ def main():
         fallback_branch = detect_revision(repository)
         manufacturer = repo_name[7:-(len(device)+1)]
         repo_path = "device/%s/%s" % (manufacturer, device)
-        adding = [{'repository': "AICP/%s" % repo_name, 'target_path': repo_path}]
+        adding = [{'repository': "%s" % repo_name, 'target_path': repo_path}]
 
         add_to_manifest(adding, fallback_branch)
 
