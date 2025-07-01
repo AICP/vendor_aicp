@@ -750,4 +750,5 @@ def apply_change(args, item):
 
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        main()
