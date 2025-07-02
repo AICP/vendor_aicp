@@ -33,6 +33,23 @@
       "message": "pick all changes and run repopick. this https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/122429 is breaking it.",
       "revId": "a37d8141ac001979407c4ca62ed2fddb21ff6682",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c96f752_813afdbf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 209
+      },
+      "writtenOn": "2025-07-02T06:12:04Z",
+      "side": 1,
+      "message": "Let me suggest https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/122434 as proper fix",
+      "revId": "a37d8141ac001979407c4ca62ed2fddb21ff6682",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
