@@ -232,7 +232,7 @@ def main():
     )
     parser.add_argument(
         "change_number",
-        nargs="+",
+        nargs="*",
         help="change number to cherry pick. Use {change number}/{patchset number} to get a specific revision.",
     )
     parser.add_argument(
@@ -440,7 +440,7 @@ def main():
         change_numbers = [
             str(r["number"]) for r in sorted(reviews, key=cmp_to_key(cmp_reviews))
         ]
-    else:
+    elif args.change_number:
         change_url_re = re.compile(r"https?://.+?/([0-9]+(?:/[0-9]+)?)/?")
         change_numbers = []
         for c in args.change_number:
@@ -457,6 +457,9 @@ def main():
             args.gerrit,
             " OR ".join("change:{0}".format(x.split("/")[0]) for x in change_numbers),
         )
+    else:
+        parser.print_help()
+        sys.exit(1)
 
     # make list of things to actually merge
     mergables = defaultdict(list)
