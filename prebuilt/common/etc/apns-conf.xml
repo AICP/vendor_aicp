@@ -1062,6 +1062,8 @@
   <apn carrier="netzclub" mcc="262" mnc="07" apn="pinternet.interkom.de" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.6" mmsport="8080" type="default,supl,mms" />
   <apn carrier="Tchibo Internet" mcc="262" mnc="07" apn="webmobil1" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.8" mmsport="8080" type="default,supl,mms" mvno_match_data="26207500" mvno_type="imsi" />
   <apn carrier="O2 DE IMS" mcc="262" mnc="08" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_match_data="2620739" mvno_type="imsi" />
+  <apn carrier="sim.de Internet" carrier_id="1456" mcc="262" mnc="23" apn="internet" mmsc="http://10.81.0.7:8002" mmsproxy="82.113.100.5" mmsport="8080" type="default,supl,mms" />
+  <apn carrier="sim.de IMS" carrier_id="1456" mcc="262" mnc="23" apn="ims" type="ims" protocol="IPV4V6" roaming_protocol="IPV4V6" mvno_type="imsi" user_visible="false" />
   <apn carrier="Truphone" mcc="262" mnc="42" apn="truphone.com" type="default,dun" />
   <apn carrier="Lycamobile DE" mcc="262" mnc="43" apn="data.lycamobile.de" proxy="" port="" user="lmde" password="plus" mmsc="" mvno_type="spn" mvno_match_data="Lycamobile" type="default,supl" />
   <apn carrier="Vodafone Net2" mcc="268" mnc="01" apn="net2.vodafone.pt" proxy="iproxy.vodafone.pt" port="80" mmsproxy="iproxy.vodafone.pt" mmsport="80" mmsc="http://mms.vodafone.pt/servlets/mms" user="vodafone" password="vodafone" authtype="3" type="default,mms" />
@@ -3952,5 +3954,7 @@
   <apn carrier="Claro MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" proxy="" port="" mmsc="http://mms.ctimovil.com.uy" user="" password="" type="mms" />
   <apn carrier="Claro UY" mcc="748" mnc="10" apn="gprs.claro.com.uy" user="ctigpr" password="ctigpr999" type="default,supl" />
   <apn carrier="Claro UY MMS" mcc="748" mnc="10" apn="mms.ctimovil.com.uy" user="ctimms" password="ctimms999" mmsc="http://mms.ctimovil.com.uy" mmsproxy="170.051.255.240" mmsport="9201" type="mms" />
+
+
 </apns>
 
