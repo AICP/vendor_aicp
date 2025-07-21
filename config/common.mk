@@ -4,6 +4,9 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Include AICP version
 include vendor/aicp/config/aicp_version.mk
 
+# Allow vendor prebuilt repos to exclude themselves from bp scanning
+-include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
+
 # Include AICP packages
 include vendor/aicp/config/aicp_packages.mk
 
