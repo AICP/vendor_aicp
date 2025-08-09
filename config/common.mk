@@ -171,4 +171,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aicp/config/device_framework_matrix.xml
+
 -include vendor/aicp/config/partner_gms.mk
