@@ -43,4 +43,8 @@
         <permission name="android.permission.RESET_BATTERY_STATS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.FORCE_STOP_PACKAGES"/>
+    </privapp-permissions>
+
 </permissions>
