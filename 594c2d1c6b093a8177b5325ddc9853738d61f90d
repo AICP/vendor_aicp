@@ -33,6 +33,24 @@
       "message": "Hm, I added the permission in some patch set of https://gerrit.aicp-rom.com/c/AICP/packages_apps_Launcher3/+/122553 as well, did that not work? But actually seems more elegant to do here 👍",
       "revId": "594c2d1c6b093a8177b5325ddc9853738d61f90d",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46ff9eb0_bb79a20a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1646
+      },
+      "writtenOn": "2025-08-11T14:49:49Z",
+      "side": 1,
+      "message": "Yes, I picked it. Didn\u0027t work somehow. Its fine now after setting the privapp perms.",
+      "parentUuid": "89badc99_66120f7a",
+      "revId": "594c2d1c6b093a8177b5325ddc9853738d61f90d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
