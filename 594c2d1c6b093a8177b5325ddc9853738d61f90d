@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7b6c4f9_745baadb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1646
+      },
+      "writtenOn": "2025-08-11T13:30:50Z",
+      "side": 1,
+      "message": "add missing FORCE_STOP_PACKAGES permission",
+      "revId": "594c2d1c6b093a8177b5325ddc9853738d61f90d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
