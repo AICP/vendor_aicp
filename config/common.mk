@@ -62,7 +62,7 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Build Manifest
 PRODUCT_PACKAGES += \
-    build-manifest
+    build-manifest.xml
 
 # Clean cache script
 PRODUCT_COPY_FILES += \
