@@ -56,6 +56,9 @@ function mk_timer()
 CLANG_VERSION=$(build/soong/scripts/get_clang_version.py)
 export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 
+RUST_VERSION=$(grep 'RustDefaultVersion =' build/soong/rust/config/global.go | awk '{print $3}' | awk -F '"' '{print $2}')
+export RUST_AOSP_PREBUILTS_VERSION="${RUST_VERSION}"
+
 # check to see if the supplied product is one we can build
 function check_product()
 {
