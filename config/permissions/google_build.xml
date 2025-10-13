@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2017-2018 The LineageOS Project
+<!-- Copyright (C) 2014 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,12 +14,11 @@
      limitations under the License.
 -->
 
+<!-- These are configurations that should exist on Google's own Nexus and GPe devices. -->
 <config>
-
-    <!-- Broadcast actions that are currently exempted from O+ background
-         delivery restrictions. -->
-    <allow-implicit-broadcast action="android.intent.action.CAMERA_BUTTON" />
-    <allow-implicit-broadcast action="lineageos.intent.action.INITIALIZE_LINEAGE_HARDWARE" />
-    <allow-implicit-broadcast action="lineageos.intent.action.LID_STATE_CHANGED" />
-
+    <feature name="com.google.android.feature.GOOGLE_BUILD" />
+    <!-- This should be added to all Nexus and GPe devices -->
+    <feature name="com.google.android.feature.GOOGLE_EXPERIENCE" />
+    <!-- This should declare the version of Exchange that ships -->
+    <feature name="com.google.android.feature.EXCHANGE_6_2" />
 </config>
