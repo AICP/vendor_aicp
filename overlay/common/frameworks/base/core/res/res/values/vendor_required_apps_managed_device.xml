@@ -2,7 +2,7 @@
 <!--
 /**
  * Copyright (C) 2017 The Android Open Source Project
- *               2019 The LineageOS Project
+ *               2019 The AicpOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,6 @@
         <item>com.google.android.apps.messaging</item> <!-- Google messaging to enable text messaging -->
         <item>com.android.messaging</item> <!-- AOSP messaging -->
         <item>com.google.android.setupwizard</item> <!-- Google SetupWizard -->
-        <item>org.lineageos.setupwizard</item> <!-- LineageOS SetupWizard -->
+        <item>org.lineageos.setupwizard</item> <!-- AicpOS SetupWizard -->
     </string-array>
 </resources>

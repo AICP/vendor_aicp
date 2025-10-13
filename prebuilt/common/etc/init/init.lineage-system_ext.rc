@@ -1,4 +1,4 @@
-# LineageOS core functionality
+# AicpOS core functionality
 on init
     export TERMINFO /system_ext/etc/terminfo
 

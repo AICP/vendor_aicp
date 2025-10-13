@@ -1,4 +1,4 @@
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2021-2024 The AicpOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/car/gsi_car_arm64.mk)
+# 2.0G + 8M
+BOARD_SUPER_PARTITION_SIZE := 2155872256
+BOARD_EMULATOR_DYNAMIC_PARTITIONS_SIZE := 2147483648
 
-include vendor/lineage/build/target/product/lineage_generic_car_target.mk
-
-PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
-
-TARGET_NO_KERNEL_OVERRIDE := true
-
-# Enable mainline checking
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/app/Home/Home.apk
-
-PRODUCT_NAME := lineage_gsi_car_arm64
+PRODUCT_SDK_ADDON_COPY_FILES += \
+    device/generic/goldfish/data/etc/advancedFeatures.ini.arm:images/arm64-v8a/advancedFeatures.ini \
+    device/generic/goldfish/data/etc/encryptionkey.img:images/arm64-v8a/encryptionkey.img \
+    $(EMULATOR_KERNEL_FILE):images/arm64-v8a/kernel-ranchu

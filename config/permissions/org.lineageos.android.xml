@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<!-- This feature shows that this is LineageOS -->
+<!-- This feature shows that this is AicpOS -->
 <permissions>
     <feature name="org.lineageos.android" />
 </permissions>

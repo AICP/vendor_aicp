@@ -1,6 +1,6 @@
 function __print_lineage_functions_help() {
 cat <<EOF
-Additional LineageOS functions:
+Additional AicpOS functions:
 - brunch:          Runs "breakfast" and "mka bacon" for the provided device target.
 - breakfast:       Wrapper for "lunch".
 - eat:             Reboots to recovery and installs the compiled OTA package.
@@ -9,12 +9,12 @@ Additional LineageOS functions:
 - mmp:             Builds all of the modules in the current directory and pushes them to the device.
 - mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
 - mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
-- lineagegerrit:   A Git wrapper that fetches/pushes patch from/to LineageOS Gerrit Review.
+- lineagegerrit:   A Git wrapper that fetches/pushes patch from/to AicpOS Gerrit Review.
 - lineagerebase:   Rebase a Gerrit change and push it again.
-- lineageremote:   Add git remote for LineageOS Gerrit Review.
+- lineageremote:   Add git remote for AicpOS Gerrit Review.
 - aospremote:      Add git remote for matching AOSP repository.
 - cloremote:       Add git remote for matching CodeLinaro repository.
-- githubremote:    Add git remote for LineageOS Github.
+- githubremote:    Add git remote for AicpOS Github.
 - privateremote:   Add git remote for Github with ssh access.
 - mka:             Alias to "m".
 - mkap:            Builds the module(s) using mka and pushes them to the device.

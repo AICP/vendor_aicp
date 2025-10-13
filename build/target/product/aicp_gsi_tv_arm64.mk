@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2018-2020 The AicpOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/google/atv/products/atv_base.mk)
-$(call inherit-product, vendor/lineage/config/common_full_tv.mk)
+$(call inherit-product, build/target/product/gsi_release.mk)
+$(call inherit-product, device/google/atv/products/aosp_tv_arm64.mk)
 
-# Allow building otatools
-TARGET_FORCE_OTA_PACKAGE := true
+include vendor/aicp/build/target/product/lineage_generic_tv_target.mk
 
-# Disable soong defined system image for now
-USE_SOONG_DEFINED_SYSTEM_IMAGE := false
+TARGET_NO_KERNEL_OVERRIDE := true
+
+PRODUCT_NAME := aicp_gsi_tv_arm64
+
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
