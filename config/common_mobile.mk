@@ -37,16 +37,6 @@ endif
 PRODUCT_PACKAGES += \
     Launcher3Overlay
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-ifneq ($(WITH_AICP_CHARGER),false)
-PRODUCT_PACKAGES += \
-    lineage_charger_animation \
-    lineage_charger_animation_vendor
-endif
-
 # Customizations
 PRODUCT_PACKAGES += \
     IconPackCircularAndroidOverlay \
@@ -72,14 +62,7 @@ PRODUCT_PACKAGES += \
     IconPackVictorAndroidOverlay \
     IconPackVictorLauncherOverlay \
     IconPackVictorSettingsOverlay \
-    IconPackVictorSystemUIOverlay \
-    IconShapePebbleOverlay \
-    IconShapeRoundedRectOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay
+    IconPackVictorSystemUIOverlay
 
 # Legal
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -108,6 +91,5 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
 
 # Themes
 PRODUCT_PACKAGES += \
-    LineageBlackTheme \
     ThemePicker \
     ThemesStub
