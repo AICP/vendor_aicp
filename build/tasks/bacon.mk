@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(AICP_VERSION).zip
+AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/aicp-$(AICP_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
