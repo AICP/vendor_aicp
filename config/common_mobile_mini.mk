@@ -1,4 +1,4 @@
-# Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+# Inherit mini common Aicp stuff
+$(call inherit-product, vendor/aicp/config/common_mobile.mk)
 
 PRODUCT_SIZE := mini

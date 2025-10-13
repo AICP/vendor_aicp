@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,13 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/lineage/config/common_car.mk)
+$(call inherit-product, device/generic/common/gsi_arm64.mk)
 
-EMULATOR_VENDOR_NO_SENSORS := true
-EMULATOR_VENDOR_NO_SOUND := true
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Allow building otatools
-TARGET_FORCE_OTA_PACKAGE := true
+include vendor/aicp/build/target/product/lineage_generic_target.mk
 
-# Disable soong defined system image for now
-USE_SOONG_DEFINED_SYSTEM_IMAGE := false
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
+
+TARGET_NO_KERNEL_OVERRIDE := true
+
+PRODUCT_NAME := aicp_gsi_arm64
+PRODUCT_DEVICE := generic_arm64
+
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=

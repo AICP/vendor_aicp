@@ -32,16 +32,16 @@ $(api_xml_description) : $(api_text_description) $(APICHECK)
 
 lineage-sdk-test-coverage-report := $(coverage_out)/lineage-sdk-test-coverage.html
 
-lineage_sdk_tests_apk := $(call intermediates-dir-for,APPS,LineagePlatformTests)/package.apk
-lineagesettingsprovider_tests_apk := $(call intermediates-dir-for,APPS,LineageSettingsProviderTests)/package.apk
+lineage_sdk_tests_apk := $(call intermediates-dir-for,APPS,AicpPlatformTests)/package.apk
+lineagesettingsprovider_tests_apk := $(call intermediates-dir-for,APPS,AicpSettingsProviderTests)/package.apk
 lineage_sdk_api_coverage_dependencies := $(lineage_sdk_api_coverage_exe) $(dexdeps_exe) $(api_xml_description)
 
 $(lineage-sdk-test-coverage-report): PRIVATE_TEST_CASES := $(lineage_sdk_tests_apk) $(lineagesettingsprovider_tests_apk)
-$(lineage-sdk-test-coverage-report): PRIVATE_LINEAGE_SDK_API_COVERAGE_EXE := $(lineage_sdk_api_coverage_exe)
+$(lineage-sdk-test-coverage-report): PRIVATE_AICP_SDK_API_COVERAGE_EXE := $(lineage_sdk_api_coverage_exe)
 $(lineage-sdk-test-coverage-report): PRIVATE_DEXDEPS_EXE := $(dexdeps_exe)
 $(lineage-sdk-test-coverage-report): PRIVATE_API_XML_DESC := $(api_xml_description)
 $(lineage-sdk-test-coverage-report): $(lineage_sdk_tests_apk) $(lineagesettingsprovider_tests_apk) $(lineage_sdk_api_coverage_dependencies) | $(ACP)
-	$(call generate-lineage-coverage-report,"LINEAGE-SDK API Coverage Report",\
+	$(call generate-lineage-coverage-report,"AICP-SDK API Coverage Report",\
 			$(PRIVATE_TEST_CASES),html)
 
 .PHONY: lineage-sdk-test-coverage
@@ -58,7 +58,7 @@ endif
 #  3 - Format of the report
 define generate-lineage-coverage-report
 	$(hide) mkdir -p $(dir $@)
-	$(hide) $(PRIVATE_LINEAGE_SDK_API_COVERAGE_EXE) -d $(PRIVATE_DEXDEPS_EXE) -a $(PRIVATE_API_XML_DESC) -f $(3) -o $@ $(2) -cm
+	$(hide) $(PRIVATE_AICP_SDK_API_COVERAGE_EXE) -d $(PRIVATE_DEXDEPS_EXE) -a $(PRIVATE_API_XML_DESC) -f $(3) -o $@ $(2) -cm
 	@ echo $(1): file://$@
 endef
 
