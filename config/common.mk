@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Allow vendor prebuilt repos to exclude themselves from bp scanning
 -include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
 
-PRODUCT_BRAND ?= LineageOS
+PRODUCT_BRAND ?= AICP
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -44,10 +44,10 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/aicp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aicp/prebuilt/common/bin/50-lineage.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-lineage.sh
+    vendor/aicp/prebuilt/common/bin/50-aicp.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-aicp.sh
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/addon.d/50-lineage.sh
+    system/addon.d/50-aicp.sh
 
 ifneq ($(strip $(AB_OTA_PARTITIONS) $(AB_OTA_POSTINSTALL_CONFIG)),)
 PRODUCT_COPY_FILES += \
@@ -140,11 +140,11 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    LineageSettingsProvider \
-    Updater
+    LineageSettingsProvider
+#    Updater
 
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
+#PRODUCT_COPY_FILES += \
+#    vendor/aicp/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
 
 # Config
 PRODUCT_PACKAGES += \
@@ -275,9 +275,16 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/aicp/config/device_framewor
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aicp/build/target/product/security/lineage
 
-include vendor/aicp/config/version.mk
-
 -include vendor/aicp-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aicp/config/partner_gms.mk
+
+# Include AICP packages
+include vendor/aicp/config/aicp_packages.mk
+
+# Include AICP props
+include vendor/aicp/config/aicp_props.mk
+
+# Include AICP version
+include vendor/aicp/config/aicp_version.mk
