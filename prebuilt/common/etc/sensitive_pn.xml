@@ -224,109 +224,52 @@
     <!--Netherlands-->
     <sensitivePN network="204">
         <item>
-            <number>113</number>
-            <name>National Suicide Prevention Hotline</name>
-            <categories>suicide</categories>
-            <organization>Stichting 113 Zelfmoordpreventie</organization>
-            <website>https://www.113.nl/</website>
-        </item>
-        <item>
-            <number>116000</number>
-            <name>European Hotline for Missing Children</name>
-            <categories>children</categories>
-            <organization>Centrum IKO</organization>
-            <website>http://www.116000.nl/</website>
-        </item>
-        <item>
             <number>116006</number>
             <name>European Victims of Crime Helpline</name>
             <categories>crime victims</categories>
-            <organization>Slachtoffer Hulp Nederland</organization>
-            <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
-            <categories>adolescents|children|teenagers</categories>
-            <organization>De Kindertelefoon</organization>
-            <website>https://www.kindertelefoon.nl/</website>
+            <categories>children|adolescents</categories>
         </item>
         <item>
-            <number>0203113888</number>
-            <name>Suicide Prevention for Friends and Family</name>
-            <categories>suicide</categories>
-            <organization>Stichting 113 ZelfmoordPreventie</organization>
-            <website>https://www.113.nl/maak-je-je-zorgen-om-iemand</website>
-        </item>
-        <item>
-            <number>08000113</number>
-            <name>National Suicide Prevention Hotline</name>
-            <categories>suicide</categories>
-            <organization>Stichting 113 Zelfmoordpreventie</organization>
-            <website>https://www.113.nl/</website>
-        </item>
-        <item>
-            <number>08000118</number>
-            <name>Center for Sexual Violence Helpline</name>
-            <categories>sexual abuse|sexual assault</categories>
-            <organization>Landelijk Centrum Seksueel Geweld</organization>
-            <website>https://centrumseksueelgeweld.nl/</website>
+            <number>116123</number>
+            <name>European Emotional Support</name>
+            <categories>emotional support</categories>
         </item>
         <item>
             <number>08000432</number>
             <name>National Helpline for Children and Teenagers</name>
             <categories>emotional support|children|teenagers</categories>
-            <organization>De Kindertelefoon</organization>
-            <website>https://www.kindertelefoon.nl/</website>
         </item>
         <item>
             <number>08002000</number>
             <name>National Domestic Violence Helpline</name>
             <categories>domestic violence</categories>
-            <organization>Veilig Thuis</organization>
-            <website>https://veiligthuis.nl/</website>
-        </item>
-        <item>
-            <number>08000432</number>
-            <name>Child Helpline</name>
-            <categories>adolescents|children|teenagers</categories>
-            <organization>De Kindertelefoon</organization>
-            <website>https://www.kindertelefoon.nl/</website>
-        </item>
-        <item>
-            <number>08000450</number>
-            <name>Everything Okay? Helpline</name>
-            <categories>abuse|addiction|sexuality|emotional support</categories>
-            <organization>De Kindertelefoon</organization>
-            <website>https://www.allesoke.nl/</website>
         </item>
         <item>
             <number>08007000</number>
-            <name>National Anonymous Crime Reporting Hotline</name>
+            <name>National Hotline to Report Crime Anonymously</name>
             <categories>crime</categories>
-            <organization>Meld Misdaad Anoniem</organization>
-            <website>https://www.meldmisdaadanoniem.nl/</website>
         </item>
         <item>
             <number>09000101</number>
-            <name>Victim Support Helpline</name>
-            <categories>human trafficking|crime victims</categories>
-            <organization>Slachtoffer Hulp Nederland</organization>
+            <name>Victim Support</name>
+            <categories>human trafficking</categories>
+            <organization>Victim Support Netherlands</organization>
             <website>https://www.slachtofferhulp.nl/</website>
         </item>
         <item>
-            <number>09001450</number>
-            <name>MIND Korrelatie Helpline</name>
-            <categories>psychological</categories>
-            <organization>MIND Korrelatie</organization>
-            <website>https://mindkorrelatie.nl/</website>
+            <number>09000113</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
         </item>
         <item>
-            <number>0880767000</number>
-            <name>The Listening Line Helpline</name>
-            <categories>abuse|addiction|emotional support</categories>
-            <organization>Stichting Sensoor de landelijke Luisterlijn</organization>
-            <website>https://www.deluisterlijn.nl/</website>
+            <number>09001450</number>
+            <name>Psychological Support</name>
+            <categories>psychological</categories>
+            <organization>MIND Korrelatie</organization>
         </item>
         <item>
             <number>0882342450</number>
@@ -336,53 +279,14 @@
             <website>https://www.blijfgroep.nl/</website>
         </item>
         <item>
-            <number>0882080000</number>
-            <name>Fier Helpline</name>
-            <categories>domestic violence|emotional support|sexual abuse</categories>
-            <organization>Fier</organization>
-            <website>https://www.fier.nl/</website>
-        </item>
-        <item>
-            <number>0883744744</number>
-            <name>Domestic Abuse Helpline</name>
-            <categories>abuse|birth|domestic violence|pregnancy</categories>
-            <organization>Stichting Moviera</organization>
-            <website>https://www.moviera.nl/</website>
-        </item>
-        <item>
-            <number>0885054334</number>
-            <name>Depression Helpline</name>
-            <categories>psychological support</categories>
-            <organization>Depressie Vereniging</organization>
-            <website>https://depressievereniging.nl/</website>
-        </item>
-        <item>
-            <number>0202615275</number>
-            <name>Online Sexual Abuse Helpline</name>
-            <categories>sexual abuse</categories>
-            <organization>Help Wanted NL</organization>
-            <website>https://www.helpwanted.nl/</website>
-        </item>
-        <item>
-            <number>0343753009</number>
-            <name>Emotional Support Helpline</name>
-            <categories>emotional support|psychological support</categories>
-            <organization>ADF Stichting</organization>
-            <website>https://adfstichting.nl/</website>
-        </item>
-        <item>
-            <number>09002546674</number>
-            <name>Family Helpline</name>
-            <categories>emotional support|family</categories>
-            <organization>Naasten Centraal</organization>
-            <website>https://www.naastencentraal.nl/</website>
+            <number>09001130113</number>
+            <name>National Suicide Prevention</name>
+            <categories>suicide</categories>
         </item>
         <item>
             <number>09009999001</number>
             <name>National Sexual Abuse Helpline</name>
             <categories>sexual abuse</categories>
-            <organization>Slachtofferhulp Nederland</organization>
-            <website>https://www.verbreekdestilte.nl/</website>
         </item>
     </sensitivePN>
     <!--Belgium-->
@@ -965,40 +869,10 @@
     <!--Bosnia and Herzegovina-->
     <sensitivePN network="218">
         <item>
-            <number>1265</number>
-            <name>National Domestic Abuse Helpline</name>
-            <categories>domestic violence|psychological</categories>
-            <organization>Fondacija lokalne demokratije</organization>
-            <website>https://fld.ba/</website>
-        </item>
-        <item>
-            <number>033222000</number>
-            <name>Sarajevo Domestic Abuse Helpline</name>
-            <categories>domestic violence|psychological</categories>
-            <organization>Fondacija lokalne demokratije</organization>
-            <website>https://fld.ba/</website>
-        </item>
-        <item>
-            <number>033570560</number>
-            <name>Women's Center Abuse Helpline</name>
-            <categories>abuse|legal aid|psychological</categories>
-            <organization>Fondacija lokalne demokratije</organization>
-            <website>https://fld.ba/</website>
-        </item>
-        <item>
-            <number>033570561</number>
-            <name>Women's Center Abuse Helpline</name>
-            <categories>abuse|legal aid|psychological</categories>
-            <organization>Fondacija lokalne demokratije</organization>
-            <website>https://fld.ba/</website>
-        </item>
-        <item>
             <number>080050305</number>
             <name>Child Helpline International</name>
-            <categories>adolescents|children</categories>
-            <organization>Udruženja Nova generacija</organization>
-            <website>https://www.plavitelefon.ba/</website>
-       </item>
+            <categories>children</categories>
+        </item>
     </sensitivePN>
     <!--Croatia-->
     <sensitivePN network="219">
@@ -1006,99 +880,135 @@
             <number>116000</number>
             <name>European Hotline for Missing Children</name>
             <categories>missing children</categories>
-            <organization>Centar za nestalu i zlostavljani djecu</organization>
-            <website>https://cnzd.org/</website>
         </item>
         <item>
             <number>116006</number>
             <name>European Victims of Crime Helpline</name>
             <categories>crime victims</categories>
-            <organization>Budi aktivna. Budi emancipiran.</organization>
-            <website>https://stop-nasilju.com/</website>
         </item>
         <item>
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
-            <organization>Hrabri telefon</organization>
-            <website>https://hrabritelefon.hr/</website>
+        </item>
+        <item>
+            <number>08000304</number>
+            <name>Civil Servant Unethical Conduct Hotline</name>
+            <organization>Ministry of Administration</organization>
         </item>
         <item>
             <number>08000800</number>
-            <name>National Parents Helpline</name>
-            <categories>adults|parents</categories>
-            <organization>Hrabri telefon</organization>
-            <website>https://hrabritelefon.hr/</website>
+            <name>Parental Support</name>
+            <categories>parents</categories>
+            <organization>Hrabri Telefon</organization>
         </item>
         <item>
-            <number>014591874</number>
-            <name>National Corruption Helpline</name>
+            <number>08005092</number>
+            <name>Corruption Helpline</name>
             <categories>corruption</categories>
-            <organization>Ministarstvo unutarnjih poslova</organization>
-            <website>https://gov.hr/hr/prijava-korupcije/1138</website>
+            <organization>Ministry of Internal Affairs</organization>
         </item>
         <item>
-            <number>116016</number>
-            <name>Women's Counseling Centre Helpline</name>
-            <categories>abuse|domestic violence|women</categories>
+            <number>08005544</number>
+            <name>Women's Emotional Support</name>
+            <categories>women|emotional support</categories>
             <organization>AŽKZ</organization>
-            <website>https://azkz.hr/</website>
         </item>
         <item>
-            <number>08007799</number>
-            <name>Women War Victims Helpline</name>
-            <categories>abuse|violence|war|women</categories>
-            <organization>Centar za žene žrtve rata - ROSA</organization>
-            <website>https://czzzr.hr/</website>
+            <number>016119174</number>
+            <name>Women's Room Center for Sexual Rights</name>
+            <categories>women|sexuality</categories>
+            <organization>Ženska Soba</organization>
         </item>
         <item>
-            <number>014811356</number>
-            <name>Legal Aid Helpline</name>
+            <number>016119444</number>
+            <name>Center for Victims of Sexual Assault</name>
+            <categories>sexual assault</categories>
+            <organization>Ženska Soba</organization>
+        </item>
+        <item>
+            <number>012376335</number>
+            <name>Crisis and Suicide Prevention Center</name>
+            <categories>suicide|crisis</categories>
+            <organization>KBC Zagreb</organization>
+        </item>
+        <item>
+            <number>012376470</number>
+            <name>Crisis and Suicide Prevention Center</name>
+            <categories>suicide|crisis</categories>
+            <organization>KBC Zagreb</organization>
+        </item>
+        <item>
+            <number>014551128</number>
+            <name>Center for Women Victims of War</name>
+            <categories>women|war</categories>
+            <organization>Rosa</organization>
+        </item>
+        <item>
+            <number>014551142</number>
+            <name>Center for Women Victims of War</name>
+            <categories>women|war</categories>
+            <organization>Rosa</organization>
+        </item>
+        <item>
+            <number>014611351</number>
+            <name>Legal Aid</name>
             <categories>legal aid</categories>
-            <organization>Pravna Klinika</organization>
-            <website>https://klinika.pravo.hr/</website>
+            <organization>BaBe</organization>
+        </item>
+        <item>
+            <number>014655222</number>
+            <name>Legal and Emotional Support</name>
+            <categories>legal aid|emotional support</categories>
+            <organization>Ženska pomoć sada</organization>
+        </item>
+        <item>
+            <number>014663666</number>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
+            <organization>BaBe</organization>
+        </item>
+        <item>
+            <number>014811320</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>University of Zagreb</organization>
+        </item>
+        <item>
+            <number>014811324</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>University of Zagreb</organization>
         </item>
         <item>
             <number>014828888</number>
-            <name>Psychological Support Helpline</name>
-            <categories>psychological</categories>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
             <organization>Psihološki centar TESA</organization>
-            <website>https://www.tesa.hr/</website>
         </item>
         <item>
             <number>014833888</number>
-            <name>Children and Adult Helpline</name>
-            <categories>adults|children|emotional support</categories>
+            <name>Emotional Support</name>
+            <categories>emotional support</categories>
             <organization>Plavi Telefon</organization>
-            <website>https://www.plavi-telefon.hr/</website>
         </item>
         <item>
-            <number>14663666</number>
-            <name>Abuse Victim Helpline</name>
-            <categories>abuse|legal aid|psychological</categories>
-            <organization>Budi aktivna. Budi emancipiran.</organization>
-            <website>https://babe.hr/</website>
+            <number>0800200144</number>
+            <name>Legal Aid</name>
+            <categories>legal aid</categories>
+            <organization>BaBe</organization>
         </item>
         <item>
             <number>0800655222</number>
             <name>Victims of Violence and Abuse Hotline</name>
-            <categories>abuse|domestic violence|children|women</categories>
+            <categories>violence|abuse</categories>
             <organization>Ženska pomoć sada</organization>
-            <website>http://zenskapomocsada.hr/</website>
         </item>
         <item>
-            <number>16119444</number>
-            <name>Sexual Abuse Victims Center</name>
-            <categories>sexual abuse|sexual assault|women</categories>
+            <number>0911505225</number>
+            <name>Women's Room Center for Sexual Rights</name>
+            <categories>women|sexual rights</categories>
             <organization>Ženska Soba</organization>
-            <website>https://zenskasoba.hr/</website>
-        </item>
-        <item>
-            <number>0912444666</number>
-            <name>Istorak LGBT Center</name>
-            <categories>aids|hiv|lgbt|legal aid|psychological</categories>
-            <organization>Istorak</organization>
-            <website>https://www.iskorak.hr</website>
         </item>
     </sensitivePN>
     <!--Serbia-->
@@ -1107,34 +1017,33 @@
             <number>116111</number>
             <name>European Helpline for Children and Adolescents</name>
             <categories>children|adolescents</categories>
-            <website>https://www.116111.rs/</website>
         </item>
         <item>
-            <number>0800100007</number>
-            <name>Female SOS Helpline</name>
-            <categories>domestic violence|legal aid</categories>
-            <organization>Autonomni ženski centar</organization>
-            <website>https://www.womenngo.org.rs/konsultacije-za-zene/sos-telefon</website>
+            <number>2645328</number>
+        </item>
+        <item>
+            <number>3192782</number>
+        </item>
+        <item>
+            <number>3626006</number>
+        </item>
+        <item>
+            <number>0216623393</number>
+            <name>Emotional Support and Suicide Prevention</name>
+            <categories>emotional support|suicide</categories>
+            <organization>Centar Srce</organization>
         </item>
         <item>
             <number>0800100600</number>
-            <name>Domestic Violence Report Helpline</name>
-            <categories>domestic violence</categories>
-            <organization>Ministarstvo unutrašnjih poslova</organization>
+        </item>
+        <item>
+            <number>0800123456</number>
         </item>
         <item>
             <number>0800300303</number>
-            <name>Emotional Support and Suicide Prevention Helpline</name>
+            <name>Emotional Support and Suicide Prevention</name>
             <categories>emotional support|suicide</categories>
             <organization>Centar Srce</organization>
-            <website>https://www.centarsrce.org/</website>
-        </item>
-        <item>
-            <number>0800309309</number>
-            <name>National Suicide Prevention Hotline</name>
-            <categories>suicide</categories>
-            <organization>Ministarstvo zdravlja</organization>
-            <website>https://www.sos.lazalazarevic.rs/</website>
         </item>
     </sensitivePN>
     <!--Kosovo-->
@@ -1152,22 +1061,6 @@
             <number>19696</number>
             <name>Child Helpline International</name>
             <categories>children</categories>
-        </item>
-        <item>
-            <number>116000</number>
-            <name>European Hotline for Missing Children</name>
-            <categories>missing children</categories>
-            <languages>italian|english</languages>
-            <organization>Ministry of Interior</organization>
-            <website>http://116-000.it/</website>
-        </item>
-        <item>
-            <number>0223272327</number>
-            <name>Emotional Support and Suicide Prevention</name>
-            <categories>emotional support|suicide</categories>
-            <languages>italian</languages>
-            <organization>Telefono Amico Italia</organization>
-            <website>https://www.telefonoamico.it</website>
         </item>
         <item>
             <number>0677208977</number>
@@ -1199,7 +1092,6 @@
             <number>147</number>
             <name>Child Helpline International</name>
             <categories>children</categories>
-            <website>https://www.147.ch/</website>
         </item>
         <item>
             <number>116000</number>
@@ -1565,57 +1457,10 @@
     <!--Russia-->
     <sensitivePN network="250">
         <item>
-            <number>84959895050</number>
-            <name>Служба психологической помощи</name>
-            <categories>emotional support|psychological|suicide prevention</categories>
-            <languages>russian</languages>
-            <organization>Интернет-служба Экстренной психологической помощи МЧС России</organization>
-            <website>https://psi.mchs.gov.ru/</website>
-        </item>
-        <item>
-            <number>84999010201</number>
-            <name>Телефон доверия для переживших сексуальное насилие</name>
-            <categories>abuse|sexual abuse|sexual assault</categories>
-            <languages>russian</languages>
-            <organization>Центр Сёстры</organization>
-            <website>https://sisters-help.ru/</website>
-        </item>
-        <item>
             <number>88002000122</number>
-            <name>Телефон доверия</name>
-            <categories>children|adolescents|adults|mental health|emotional support|psychological|suicide prevention</categories>
-            <languages>russian</languages>
-            <website>https://telefon-doveria.ru/</website>
         </item>
         <item>
-            <number>88002340707</number>
-            <name>Помощь для мигрантов и беженцев</name>
-            <languages>russian</languages>
-            <organization>Российский Красный Крест</organization>
-            <website>https://www.redcross.ru/</website>
-        </item>
-        <item>
-            <number>88007000600</number>
-            <name>Всероссийский телефон доверия для женщин, пострадавших от домашнего насилия</name>
-            <categories>women|abuse|sexual abuse|sexual assault</categories>
-            <languages>russian</languages>
-            <organization>Центр АННА</organization>
-        </item>
-        <item>
-            <number>88314228447</number>
-            <name>Остановим коррупцию</name>
-            <categories>corruption</categories>
-            <languages>russian</languages>
-            <organization>Центральное межрегиональное следственное управление на транспорте Следственного комитета Российской Федерации</organization>
-            <website>https://psut.sledcom.ru/</website>
-        </item>
-        <item>
-            <number>88314228462</number>
-            <name>Ребенок в опасности</name>
-            <categories>children|adolescents</categories>
-            <languages>russian</languages>
-            <organization>Центр АННА</organization>
-            <website>https://psut.sledcom.ru/</website>
+            <number>88002500015</number>
         </item>
     </sensitivePN>
     <!--Ukraine-->
@@ -2675,29 +2520,7 @@
     <!--USA-->
     <sensitivePN network="310,311,312,313,316">
         <item>
-            <number>18772570012</number>
-            <name>National Abortion Federation Hotline</name>
-            <categories>reproductive care</categories>
-        </item>
-        <item>
-            <number>18884930092</number>
-            <name>All Options pregnancy counseling hotline</name>
-            <categories>reproductive care</categories>
-            <organization>All-Options</organization>
-        </item>
-        <item>
-            <number>18332462632</number>
-            <name>Miscarriage + Abortion Hotline</name>
-            <categories>reproductive care</categories>
-        </item>
-        <item>
-            <number>18448682812</number>
-            <name>Repro Legal Helpline</name>
-            <categories>reproductive care</categories>
-            <website>https://www.reprolegalhelpline.org/</website>
-        </item>
-        <item>
-            <number>18002738255</number>
+            <number>8002738255</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>english</languages>
@@ -2705,71 +2528,52 @@
         </item>
         <item>
             <number>18004224453</number>
-            <name>Childhelp National Child Abuse Hotline</name>
-            <categories>children|abuse</categories>
         </item>
         <item>
             <number>18006214673</number>
-            <name>Domestic violence hotline</name>
-            <categories>abuse</categories>
-            <organization>Safe Horizon</organization>
-        </item>
-        <item>
-            <number>18007862929</number>
-            <name>National Runaway Safeline</name>
-            <categories>homeless|youth</categories>
         </item>
         <item>
             <number>18006564673</number>
-            <name>National Sexual Assault Hotline</name>
-            <categories>abuse|sexual assault</categories>
-            <organization>Rape Abuse Incest National Network</organization>
         </item>
         <item>
-            <number>18007994889</number>
+            <number>8007994889</number>
             <name>National Suicide Prevention (Deaf/Hard of hearing)</name>
             <categories>suicide</categories>
             <organization>Lifeline</organization>
+            <website>https://suicidepreventionlifeline.org/help-yourself/for-deaf-hard-of-hearing/</website>
         </item>
         <item>
             <number>18007997233</number>
-            <name>National Domestic Violence Hotline</name>
         </item>
         <item>
-            <number>18558388255</number>
+            <number>8558388255</number>
             <name>Helpline for Veterans, Family and Caregivers</name>
             <categories>veterans</categories>
             <organization>Vets4Warriors</organization>
         </item>
         <item>
             <number>18662231111</number>
-            <name>Minnesota Emergency Shelter and Crisis Hotline</name>
-            <organization>MN Day One® Crisis Line</organization>
         </item>
         <item>
             <number>18663852699</number>
-            <name>Minnesota General Crime Victims Hotline</name>
         </item>
         <item>
-            <number>18664887386</number>
+            <number>8664887386</number>
             <name>Psychological Aid and Emotional Support</name>
             <categories>emotional support|psychological|lgbtq</categories>
             <organization>TrevorLifeLine</organization>
         </item>
         <item>
             <number>18666894357</number>
-            <name>Crime Victims Hotline</name>
-            <categories>crime victims|emotional support</categories>
-            <organization>Safe Horizon</organization>
         </item>
         <item>
-            <number>18775658860</number>
+            <number>8775658860</number>
             <name>Suicide Prevention</name>
             <categories>suicide|trans</categories>
             <organization>Trans Lifeline</organization>
         </item>
         <item>
-            <number>18886289454</number>
+            <number>8886289454</number>
             <name>National Suicide Prevention</name>
             <categories>suicide</categories>
             <languages>spanish</languages>
@@ -2848,7 +2652,6 @@
             <categories>suicide</categories>
             <languages>english|hindi</languages>
             <organization>AASRA</organization>
-            <website>http://www.aasra.info/</website>
         </item>
     </sensitivePN>
     <!--Pakistan-->
@@ -2930,139 +2733,6 @@
             <number>123</number>
             <name>National Social Emergency Hotline</name>
             <categories>abuse|suicide</categories>
-        </item>
-    </sensitivePN>
-    <!--Hong Kong, China-->
-    <sensitivePN network="454">
-        <item>
-            <number>18111</number>
-            <name>18111 Mental Health Support Hotline</name>
-            <categories>emotional support</categories>
-            <languages>chinese|english</languages>
-            <organization>Advisory Committee on Mental Health</organization>
-            <website>https://www.shallwetalk.hk/</website>
-        </item>
-        <item>
-            <number>18288</number>
-            <name>24-hour Crisis Hotline</name>
-            <categories>domestic violence</categories>
-            <languages>chinese|english</languages>
-            <organization>Caritas Family Crisis Support Centre</organization>
-            <website>https://fcsc.caritas.org.hk/</website>
-        </item>
-        <item>
-            <number>22951386</number>
-            <name>MAN Hotline</name>
-            <categories>emotional support|men</categories>
-            <languages>chinese|english</languages>
-            <organization>Harmony House</organization>
-            <website>https://www.harmonyhousehk.org/</website>
-        </item>
-        <item>
-            <number>23755322</number>
-            <name>RainLily Hotline</name>
-            <categories>women|sexual assault</categories>
-            <languages>chinese|english</languages>
-            <organization>RainLily</organization>
-            <website>https://rainlily.org.hk/</website>
-        </item>
-        <item>
-            <number>23820000</number>
-            <name>24-hour suicide prevention hotline</name>
-            <categories>suicide</categories>
-            <languages>chinese|english</languages>
-            <organization>Suicide Prevention Services</organization>
-            <website>https://www.sps.org.hk/</website>
-        </item>
-        <item>
-            <number>23820777</number>
-            <name>Youth Link</name>
-            <categories>suicide|adolscents</categories>
-            <languages>chinese|english</languages>
-            <organization>Suicide Prevention Services</organization>
-            <website>https://www.sps.org.hk/</website>
-        </item>
-        <item>
-            <number>23820881</number>
-            <name>Live Life! Hotline for Elderly</name>
-            <categories>suicide|elderly</categories>
-            <languages>chinese|english</languages>
-            <organization>Suicide Prevention Services</organization>
-            <website>https://www.sps.org.hk/</website>
-        </item>
-        <item>
-            <number>23822007</number>
-            <name>Suicide Prevention Service for the Elderly</name>
-            <categories>suicide|elderly</categories>
-            <languages>chinese|english</languages>
-            <organization>Suicide Prevention Services</organization>
-            <website>https://www.sps.org.hk/</website>
-        </item>
-        <item>
-            <number>23822737</number>
-            <name>Services for Survivors of Suicide Loss</name>
-            <categories>suicide|emotional support</categories>
-            <languages>chinese|english</languages>
-            <organization>Suicide Prevention Services</organization>
-            <website>https://www.sps.org.hk/</website>
-        </item>
-        <item>
-            <number>23866256</number>
-            <name>Women's Helpline</name>
-            <categories>women|sexual assault|domestic violence|emotional support</categories>
-            <languages>chinese|english</languages>
-            <organization>Hong Kong Federation of Women's Centres</organization>
-            <website>https://womencentre.org.hk/</website>
-        </item>
-        <item>
-            <number>23892222</number>
-            <name>24-Hour Emotional Support Hotline</name>
-            <categories>suicide|emotional support</categories>
-            <languages>chinese</languages>
-            <organization>The Samaritans Befrienders Hong Kong</organization>
-            <website>https://sbhk.org.hk/</website>
-        </item>
-        <item>
-            <number>23892223</number>
-            <name>24-Hour Emotional Support Hotline</name>
-            <categories>suicide|emotional support</categories>
-            <languages>english</languages>
-            <organization>The Samaritans Befrienders Hong Kong</organization>
-            <website>https://sbhk.org.hk/</website>
-        </item>
-        <item>
-            <number>25220434</number>
-            <name>24 Hours Woman Hotline</name>
-            <categories>women|emotional support|domestic violence|reproductive care</categories>
-            <languages>chinese|english</languages>
-            <organization>Harmony House</organization>
-            <website>https://www.harmonyhousehk.org/</website>
-        </item>
-        <item>
-            <number>25256265</number>
-            <name>Caritas Specialised Treatment and Prevention Project Against Sexual Violence</name>
-            <categories>sexual assault|domestic violence|emotional support</categories>
-            <languages>chinese|english</languages>
-            <organization>Caritas</organization>
-            <website>https://family.caritas.org.hk/</website>
-        </item>
-        <item>
-            <number>31610000</number>
-            <name>Children counselling hotline</name>
-            <categories>domestic violence|emotional support|children</categories>
-            <languages>chinese|english</languages>
-            <organization>Caritas Family Crisis Support Centre</organization>
-            <website>http://kids.caritas.org.hk/</website>
-        </item>
-    </sensitivePN>
-    <!--China-->
-    <sensitivePN network="460,461">
-        <item>
-            <number>12355</number>
-            <name>青少年心理咨询和法律援助热线电话</name>
-            <categories>domestic violence|emotional support|children</categories>
-            <languages>chinese</languages>
-            <organization>The Communist Youth League of China</organization>
         </item>
     </sensitivePN>
     <!--Taiwan-->
@@ -3311,44 +2981,6 @@
             <name>Corruption Helpline</name>
             <categories>corruption</categories>
             <organization>Prosecutor's Office</organization>
-        </item>
-    </sensitivePN>
-    <!--Argentina-->
-    <sensitivePN network="722">
-        <item>
-            <number>102</number>
-            <name>Children and Adolescents' Helpline</name>
-            <categories>adolescents|children</categories>
-            <organization>Ministerio de Desarrollo Social</organization>
-            <website>https://www.argentina.gob.ar/desarrollosocial/ninezyadolescencia</website>
-        </item>
-        <item>
-            <number>144</number>
-            <name>National Domestic Abuse Helpline</name>
-            <categories>lgtb|women</categories>
-            <organization>Ministerio de las Mujeres</organization>
-            <website>https://www.argentina.gob.ar/aplicaciones/linea-144-atencion-mujeres-y-LGBTI</website>
-        </item>
-        <item>
-            <number>08009990091</number>
-            <name>National Mental Health Helpline</name>
-            <categories>mental health|psychologycal</categories>
-            <organization>Ministerio de Salud</organization>
-            <website>https://www.argentina.gob.ar/salud/hospitalbonaparte/hospital-en-red/dispositivo-0800</website>
-        </item>
-        <item>
-            <number>01152638621</number>
-            <name>Alcoholics Anonymous</name>
-            <categories>addiction|alcohol</categories>
-            <organization>Alcohólicos Anónimos de Argentina</organization>
-            <website>https://aa.org.ar/</website>
-        </item>
-        <item>
-            <number>01132525204</number>
-            <name>Addiction Center Helpline</name>
-            <categories>addiction|alcohol|drugs</categories>
-            <organization>Centro 90 Días PM</organization>
-            <website>https://www.internacionadicciones.com.ar/</website>
         </item>
     </sensitivePN>
     <!--Brazil-->
