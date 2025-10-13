@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/car/gsi_car_x86_64.mk)
+$(call inherit-product, device/generic/car/gsi_car_arm64.mk)
 
 include vendor/aicp/build/target/product/lineage_generic_car_target.mk
 
@@ -26,4 +26,4 @@ PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/app/Home/Home.apk
 
-PRODUCT_NAME := aicp_gsi_car_x86_64
+PRODUCT_NAME := lineage_gsi_car_arm64

@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2018-2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,9 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/common/gsi_arm.mk)
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, device/generic/common/gsi_x86_64.mk)
 
 include vendor/aicp/build/target/product/lineage_generic_target.mk
 
@@ -22,6 +20,4 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := aicp_gsi_arm
-
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
+PRODUCT_NAME := lineage_gsi_x86_64

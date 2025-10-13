@@ -1,4 +1,4 @@
-# Copyright (C) 2018-2020 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,15 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
+$(call inherit-product, device/generic/car/gsi_car_x86_64.mk)
 
-include vendor/aicp/build/target/product/lineage_generic_tv_target.mk
+include vendor/aicp/build/target/product/lineage_generic_car_target.mk
 
-TARGET_SUPPORTS_64_BIT_APPS := true
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
-PRODUCT_NAME := aicp_gsi_tv_x86_64
+TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
 
-PRODUCT_SDK_ADDON_NAME := lineage
-PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/Home/Home.apk
+
+PRODUCT_NAME := lineage_gsi_car_x86_64
