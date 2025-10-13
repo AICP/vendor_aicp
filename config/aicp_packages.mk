@@ -23,12 +23,6 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
-# AicpSetupWizard
-#ifneq ($(WITH_GMS),true)
-#PRODUCT_PACKAGES += \
-#    AicpSetupWizard
-#endif
-
 # Bootanimation include
 PRODUCT_PACKAGES += \
     bootanimation.zip
@@ -50,68 +44,8 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    Aperture \
     AppPredictionService \
-    AudioFX \
-    Camelot \
-    Etar \
-    ExactCalculator \
-    Glimpse \
-    Jelly \
-    Recorder \
-    ThemePicker \
-    ThemesStub \
-    Twelve \
     WallpaperPicker2
-
-# Required packages
-PRODUCT_PACKAGES += \
-    CellBroadcastReceiver \
-
-# SystemUI plugins
-PRODUCT_PACKAGES += \
-    QuickAccessWallet
-
-# TextClassifier
-PRODUCT_PACKAGES += \
-    libtextclassifier_annotator_en_model \
-    libtextclassifier_annotator_universal_model \
-    libtextclassifier_actions_suggestions_universal_model \
-    libtextclassifier_lang_id_model
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/textclassifier/actions_suggestions.universal.model \
-    system/etc/textclassifier/lang_id.model \
-    system/etc/textclassifier/textclassifier.en.model \
-    system/etc/textclassifier/textclassifier.universal.model
-
-# su
-PRODUCT_PACKAGES += \
-    adb_root
-
-ifeq ($(WITH_SU),true)
-PRODUCT_PACKAGES += \
-    su
-endif
-
-# MusicFX
-# PRODUCT_PACKAGES += \
-#    MusicFX
-
-# Phonograph
-# PRODUCT_PACKAGES += \
-#    Phonograph
-
-# PRODUCT_PACKAGES += \
-#    GameSpace
-
-# OmniStyle
-# PRODUCT_PACKAGES += \
-#    OmniStyle
-
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
 
 # Extra tools
 PRODUCT_PACKAGES += \
@@ -120,39 +54,13 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs
 
-# Filesystems tools
-PRODUCT_PACKAGES += \
-    fsck.ntfs \
-    mkfs.ntfs \
-    mount.ntfs
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/bin/fsck.ntfs \
-    system/bin/mkfs.ntfs \
-    system/bin/mount.ntfs \
-    system/%/libfuse-lite.so \
-    system/%/libntfs-3g.so
-
 # Extra tools
 PRODUCT_PACKAGES += \
-#    7z \
-    bash \
-    curl \
-    getcap \
-    htop \
-#    lib7z \
     libsepol \
-    nano \
-#    pigz \
     powertop \
-    rsync \
-    setcap \
-    unrar \
     unzip \
-    vim \
     wget \
-    zip \
-    zstd
+    zip
 
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
