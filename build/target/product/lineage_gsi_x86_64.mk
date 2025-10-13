@@ -14,10 +14,10 @@
 
 $(call inherit-product, device/generic/common/gsi_x86_64.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_target.mk
+include vendor/aicp/build/target/product/lineage_generic_target.mk
 
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
 TARGET_NO_KERNEL_OVERRIDE := true
 
-PRODUCT_NAME := lineage_gsi_x86_64
+PRODUCT_NAME := aicp_gsi_x86_64

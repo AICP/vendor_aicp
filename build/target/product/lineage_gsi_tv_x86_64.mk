@@ -14,11 +14,11 @@
 
 $(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_tv_target.mk
+include vendor/aicp/build/target/product/lineage_generic_tv_target.mk
 
 TARGET_SUPPORTS_64_BIT_APPS := true
 
-PRODUCT_NAME := lineage_gsi_tv_x86_64
+PRODUCT_NAME := aicp_gsi_tv_x86_64
 
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
 
