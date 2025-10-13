@@ -41,7 +41,7 @@ $(lineage-sdk-test-coverage-report): PRIVATE_LINEAGE_SDK_API_COVERAGE_EXE := $(l
 $(lineage-sdk-test-coverage-report): PRIVATE_DEXDEPS_EXE := $(dexdeps_exe)
 $(lineage-sdk-test-coverage-report): PRIVATE_API_XML_DESC := $(api_xml_description)
 $(lineage-sdk-test-coverage-report): $(lineage_sdk_tests_apk) $(lineagesettingsprovider_tests_apk) $(lineage_sdk_api_coverage_dependencies) | $(ACP)
-	$(call generate-lineage-coverage-report,"LINEAGE-SDK API Coverage Report",\
+	$(call generate-lineage-coverage-report,"AICP-SDK API Coverage Report",\
 			$(PRIVATE_TEST_CASES),html)
 
 .PHONY: lineage-sdk-test-coverage
