@@ -1,12 +1,12 @@
 # Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/lineage/config/common.mk)
+$(call inherit-product, vendor/aicp/config/common.mk)
 
 # Include AOSP audio files
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
-include vendor/lineage/config/aosp_audio.mk
+include vendor/aicp/config/aosp_audio.mk
 
 # Include Lineage audio files
-include vendor/lineage/config/lineage_audio.mk
+include vendor/aicp/config/lineage_audio.mk
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -41,7 +41,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifneq ($(WITH_LINEAGE_CHARGER),false)
+ifneq ($(WITH_AICP_CHARGER),false)
 PRODUCT_PACKAGES += \
     lineage_charger_animation \
     lineage_charger_animation_vendor
@@ -83,7 +83,7 @@ PRODUCT_PACKAGES += \
 
 # Legal
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.lineagelegal.url=https://lineageos.org/legal
+    ro.aicplegal.url=https://lineageos.org/legal
 
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
