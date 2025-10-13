@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.android.hotwordenrollment.okgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.hotwordenrollment.tgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.hotwordenrollment.xgoogle">
+        <permission name="android.permission.MANAGE_VOICE_KEYPHRASES"/>
+    </privapp-permissions>
+
+    <!-- privapp-permissions package="com.google.modemservice">
+        <permission name="android.permission.MANAGE_USB"/>
+    </privapp-permissions> -->
+
+    <privapp-permissions package="com.qti.qualcomm.datastatusnotification">
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
+    </privapp-permissions>
+</permissions>
