@@ -14,16 +14,14 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# AICP OTA update package
 
-AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/lineage-$(AICP_VERSION).zip
+AICP_TARGET_PACKAGE  := $(PRODUCT_OUT)/$(AICP_VERSION).zip
 
 SHA256 := prebuilts/build-tools/path/$(HOST_PREBUILT_TAG)/sha256sum
 
-$(AICP_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
+.PHONY: bacon
+bacon: $(DEFAULT_GOAL) $(INTERNAL_OTA_PACKAGE_TARGET)
 	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(AICP_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(AICP_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(AICP_TARGET_PACKAGE).sha256sum
 	@echo "Package Complete: $(AICP_TARGET_PACKAGE)" >&2
-
-.PHONY: bacon
-bacon: $(AICP_TARGET_PACKAGE) $(DEFAULT_GOAL)
