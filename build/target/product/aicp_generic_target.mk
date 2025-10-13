@@ -1,4 +1,4 @@
-# Copyright (C) 2019-2020 The LineageOS Project
+# Copyright (C) 2019 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,8 +14,8 @@
 
 $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
+PRODUCT_COPY_FILES += \
+    device/generic/goldfish/data/etc/permissions/privapp-permissions-goldfish.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-goldfish.xml \
+
 # Allow building otatools
 TARGET_FORCE_OTA_PACKAGE := true
-
-# Disable soong defined system image for now
-USE_SOONG_DEFINED_SYSTEM_IMAGE := false

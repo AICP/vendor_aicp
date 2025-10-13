@@ -4,16 +4,32 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="2.0" type="framework">
-    <!-- Radio Config (backend) -->
+    <!-- Camera -->
     <hal format="hidl" optional="true">
-        <name>lineage.hardware.radio.config</name>
-        <version>1.0-1</version>
+        <name>vendor.lineage.camera.motor</name>
+        <version>1.0</version>
         <interface>
-            <name>IRadioConfig</name>
+            <name>ICameraMotor</name>
             <instance>default</instance>
         </interface>
     </hal>
     <!-- Charging -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.fastcharge</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.chgctrl</name>
+        <version>1.0</version>
+        <interface>
+            <name>IChargeControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="aidl" optional="true">
         <name>vendor.lineage.health</name>
         <version>1-2</version>
@@ -79,6 +95,47 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <version>2.0</version>
+        <version>2.1</version>
+        <interface>
+            <name>IAdaptiveBacklight</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAutoContrast</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IColorBalance</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayColorCalibration</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IReadingEnhancement</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Touch -->
     <hal format="aidl" optional="true">
         <name>vendor.lineage.touch</name>
@@ -105,6 +162,15 @@
         </interface>
         <interface>
             <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Trust -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.trust</name>
+        <version>1.0</version>
+        <interface>
+            <name>IUsbRestrict</name>
             <instance>default</instance>
         </interface>
     </hal>
