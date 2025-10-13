@@ -12,16 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, device/generic/common/gsi_arm.mk)
+$(call inherit-product, device/google/atv/products/aosp_tv_x86_64.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+include vendor/aicp/build/target/product/lineage_generic_tv_target.mk
 
-include vendor/lineage/build/target/product/lineage_generic_target.mk
+TARGET_SUPPORTS_64_BIT_APPS := true
 
-PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
-
-TARGET_NO_KERNEL_OVERRIDE := true
-
-PRODUCT_NAME := lineage_gsi_arm
+PRODUCT_NAME := aicp_gsi_tv_x86_64
 
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS :=
+
+PRODUCT_SDK_ADDON_NAME := lineage
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := $(LOCAL_PATH)/source.properties
