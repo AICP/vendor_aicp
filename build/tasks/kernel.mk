@@ -210,7 +210,7 @@ else
         $(error "NO KERNEL CONFIG")
     else
         ifneq ($(TARGET_FORCE_PREBUILT_KERNEL),)
-            ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(AICP_BUILDTYPE)),)
+            ifneq ($(filter RELEASE NIGHTLY SNAPSHOT EXPERIMENTAL,$(LINEAGE_BUILDTYPE)),)
                 $(error "PREBUILT KERNEL IS NOT ALLOWED ON OFFICIAL BUILDS!")
             else
                 $(warning **********************************************************)

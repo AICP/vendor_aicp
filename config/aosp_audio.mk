@@ -31,14 +31,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/ogg/Osmium.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Osmium-old.ogg \
     $(LOCAL_PATH)/alarms/ogg/Oxygen.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Oxygen-old.ogg \
     $(LOCAL_PATH)/alarms/ogg/Platinum.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Platinum-old.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Scandium.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Scandium.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Argon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Argon-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Carbon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Carbon-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Krypton-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Krypton-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Neon-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Neon-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Osmium-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Osmium-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Oxygen-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Oxygen-old.ogg \
-    vendor/aicp/prebuilt/common/media/audio/alarms/Platinum-old.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Platinum-old.ogg
+    $(LOCAL_PATH)/alarms/ogg/Scandium.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Scandium.ogg
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/F1_New_SMS.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/F1_New_SMS.ogg \
@@ -206,5 +199,4 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/effects/ogg/ChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/ChargingStarted.ogg \
-    $(LOCAL_PATH)/effects/ogg/Effect_Tick_48k.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ui/Effect_Tick.ogg \
     $(LOCAL_PATH)/effects/material/ogg/WirelessChargingStarted.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/notifications/WirelessChargingStarted.ogg
