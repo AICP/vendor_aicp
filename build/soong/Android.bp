@@ -17,7 +17,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-lineage_generator {
+lineage_generator  {
     name: "generated_kernel_includes",
 
     // The headers make command
