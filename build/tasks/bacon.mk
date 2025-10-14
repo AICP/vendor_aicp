@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # -----------------------------------------------------------------
-# Lineage OTA update package
+# Aicp OTA update package
 
 AICP_TARGET_PACKAGE := $(PRODUCT_OUT)/aicp-$(AICP_VERSION).zip
 
