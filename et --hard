@@ -1,0 +1,1373 @@
+[33m95b795508[m[33m ([m[1;36mHEAD[m[33m)[m overlay: Create NCM USB tethering overlay package
+[33mc1e208ab7[m release: Update SVN from BP2A.250705.008
+[33m0aa3bf6ff[m config: tablet: Include tablet-specific overlay
+[33m1e3b4d92d[m config: tablet: Enable freeform and large screen support for all targets
+[33m5effe10f0[m config: tablet: Enable freeform windows by default
+[33m9e3b13c77[m config: tablet: Deduplicate full tablet configuration
+[33mf027100b1[m overlay: tablet: Enable communal service
+[33m8d69435a2[m[33m ([m[1;31mm/w16.0[m[33m, [m[1;31maicp/w16.0[m[33m)[m kernel: Set scmversion for kernel platform
+[33m54f62513a[m kernel: Fix building kernel platform with in-tree out
+[33m3af738686[m aicp_generic_*target: Disable soong defined system image for now
+[33m8bdab75d5[m audio: Add Plasma Mobile alarms & notifications
+[33m74cc5c2e7[m kernel: Support building from kernel platform
+[33m1e3ce7fe2[m config: Remove LiveDisplay HIDL from FCM
+[33m22381322d[m config: Remove fastcharge HIDL from FCM
+[33mcc877fcda[m Reapply "lineage: Add framework compatibility matrix for Lineage HALs"
+[33m45771b00c[m build: Drop VARIANT_DEFCONFIG/SELINUX_DEFCONFIG support
+[33m4a7a0b067[m build: Drop separate recovery kernel support
+[33m07decfe0c[m Revert "soong: Make mkdir install dir optional"
+[33m43c492287[m kernel: Fix building x86 kernel with GCC
+[33m4a3a2c336[m kernel: Sign kernel modules only if CONFIG_MODULE_SIG_FORMAT=y
+[33m9f23e47ae[m kernel: Fix build when device does not set BOARD_SYSTEM_KERNEL_MODULES_LOAD
+[33m88de98de3[m kernel: Support installing kernel modules to system
+[33me32c8d1ee[m kernel: Add support for external kernel configs (v2)
+[33m4ffc3dde2[m kernel: Enhancements to searching DTBs during non-QCOM DTB image generation
+[33m9cbaf1a92[m common: Allow vendors to exclude bp paths
+[33md461d2ffc[m build: Update rust toolchain dynamically
+[33md8d465e1a[m aicp_version: update to 16
+[33m41cb613c5[m release: Remove no longer used Pixel flags
+[33m8c55a4211[m build: Move qti_kernel_headers to hardware/qcom-caf/common
+[33m80e917214[m config: Error out when using deprecated BoardConfig flags
+[33m5f3f24c83[m config: Remove touch HIDL from FCM
+[33m262e6ae49[m release: Set RELEASE_GOOGLE_TEGU_16K_DEVELOPER_OPTION
+[33m088316fc3[m release: Set RELEASE_SVN_TEGU
+[33m7ef816b04[m lineage: Bump aconfig flags extension to BP2A
+[33mc8fbac39d[m w16.0
+[33me734b3e28[m[33m ([m[1;31maicp/v15.0[m[33m)[m merge_dtbs: Use DeviceTreeInfo's hash in get_name()
+[33m5d16cb303[m apns: Add BICS
+[33mfd0b43306[m apns: cleanup Android.mk for apns-conf.xml
+[33meb25c62e3[m Ignore prebuilt/generated directory
+[33mcccc31234[m lineage: Move build-manifest.xml build rule into `build/tasks`
+[33ma86271e97[m lineage: Restore Android.mk based build-manifest.xml build rule
+[33m02c15d6da[m github: Run `apt update`
+[33m5c9d7ad67[m apns: Add a XML schema and check apns-conf.xml against it
+[33mf2200d6e5[m github: Add CI for verifying sensitive_pn.xml
+[33m938b2bc11[m lineage: Move build-manifest.xml generation to a separate script
+[33maa2907c21[m fixup! lineage: Convert build-manifest.xml to Android.bp
+[33ma196b4801[m config: Add vendor.lineage.health V2
+[33m646e5fe6a[m config: Add vendor.lineage.livedisplay V1
+[33m024f37c7e[m config: common: Correct build-manifest package name
+[33m9953aa4f9[m APNs: Add Inwi (Morocco)
+[33m78491d0a4[m lineage: Convert build-manifest.xml to Android.bp
+[33m3ea571298[m kernel: Introduce macros for comparing versions and make use of them
+[33m3255747c2[m Update APN settings for Odido/T-Mobile NL
+[33m1f3377488[m apns: Update US Mobile APNs
+[33m594c2d1c6[m config: add privapp permission for SlimRecents
+[33m9f189cbac[m apns: Add AT&T 5G NSA & SA APNs (310|410) from att5g[sa]_us-64000000006
+[33m989f11418[m apns-conf: Update carriers from the Philippines
+[33m0e528fcbc[m apns: Update Verizon (311|480) from verizon_us-64000000022
+[33m526e1b5be[m apns: Update Xfinity Mobile MVNO (311|480) from xfinity_us-64000000012
+[33m4b307f180[m Add mvno_match_data to StraightTalk Verizon
+[33mbc1a9aac7[m Revert "apn: add sim.de apn config"
+[33m1a2999df4[m common: Allow vendors to exclude bp paths
+[33mfc26e8566[m apn: add sim.de apn config
+[33me2ce705b0[m apns-conf: Remove deprecated Cosmote Romania entries
+[33m72b9c7600[m merge_dtbs: allow one overlay to depend on multiple others
+[33m3c7aad61e[m kernel: Automatically adapt path suffix for GKI modules
+[33m7ba8a8dd8[m repopick: Fix showing help when no arguments given the correct way
+[33m9c6e16d08[m repopick: Fix showing help when no arguments given
+[33me83eadd4f[m apn: bring in line with Lineage
+[33m2fe7fd5b5[m aicp: Fix vendor_aicp path used in building kernel
+[33mfd289bf5e[m repopick: Paginate queries properly
+[33mf243a9dc4[m repopick: unquote URL
+[33m7bec70589[m repopick: Use add_mutually_exclusive_group() where possible
+[33m005da9347[m repopick: Add support for hashtags
+[33m79cdb3ffe[m repopick: Require python3
+[33m58650ef48[m repopick: Use `number` instead of `id` for error msgs
+[33mcc3434f0b[m repopick: Skip commit_exists() check when using -p
+[33mfda089cf2[m repopick: Fix logic for skipping already merged changes
+[33med257150e[m repopick: Use hostname of the URL to determine lineage gerrit
+[33m711e0fe98[m repopick: Clear Pyright warnings
+[33m5602cd246[m repopick: Check fetch result based on the actual commit
+[33md8612ab33[m repopick: Apply change in parallel
+[33m90025a228[m repopick: Avoid repeatedly performing the same check
+[33mcf00f6fac[m repopick: Use the builtin urllib to handle HTTP basic authentication
+[33ma482edd35[m repopick: Clean up subprocess calls
+[33m80e2c2e5e[m repopick: Organize imports and format with black
+[33m086b58254[m repopick: Remove python2 support
+[33m249c08764[m repopick: Fix regex related SyntaxWarning on Python 3.12
+[33m872ffb169[m envsetup.sh: Export LLVM_AOSP_PREBUILTS_VERSION with the current clang version from soong
+[33mecfd8ac00[m aicp: adopt needed ro.lineage variables
+[33m8a7655606[m config: Migrate PowerShare to AIDL
+[33m8ecf7ee6a[m merge_dtbs: Add qcom,oem-id to EXTRA_KEYS
+[33md29c5f616[m merge_dtbs: ignore not matching DTBOs when finding symbols for a fixup
+[33m7cfda6a31[m aicp: products: Add Cuttlefish products
+[33m213b212de[m init.aicp-system_ext.rc: Rename `bugreport` service
+[33me18eec10e[m merge_dtbs: Sort DTBOs based on needed symbols
+[33mc8653dca8[m kernel: Report all modules not found at once
+[33m6493eae05[m Add AIDL touch HAL
+[33mdffe7fa65[m soong: Support prebuilt_kernel_headers
+[33m357cbf4f9[m vars: Add kernel platform branches
+[33m52b3f09d8[m kernel.mk: bring in line with LOS
+[33m0fb2c930a[m kernel: sign GKI modules
+[33m87f330b5e[m kernel: reduce the use of find when copying modules
+[33m7a32c4668[m kernel: Error on duplicate modules
+[33m123391754[m kernel: use DTBS_OUT variable
+[33mf8f9a6e04[m android: merge_dtbs: Respect oem specific extra ids
+[33m3ff47c6e6[m merge_dtbs: Craft unique name for final saved merged trees
+[33mc9eeb5d67[m merge_dtbs: Use logging and argparse
+[33m73ceb03db[m merge_dtbs.py: Print only basenames of dtb* files
+[33ma777f249f[m kernel: Include OEM DTBs in build
+[33me3d835598[m kernel: Replace BOARD_SYSTEM_KERNEL_MODULES with SYSTEM_KERNEL_MODULES
+[33mfc26b3119[m fixup! kernel: Support copying modules to boot ramdisk
+[33m50ad72ae3[m kernel: Deduplicate file paths in file_list.txt
+[33mf3256d4a3[m kernel: Ensure that module load lists are properly formed
+[33mb75a6b486[m kernel: break the build when depmod finds missing symbols
+[33me16c76060[m kernel: Add `{recovery}kernelconfig`
+[33m87ec3c41d[m kernel: Support copying modules to boot ramdisk
+[33m8f4db9adc[m kernel: Use correct variable name for vendor_kernel_boot modules
+[33m29aab7df5[m kernel: use systemimage_intermediates on devices with no vendor
+[33m5ec695abc[m kernel: consider gki modules when running depmod for vendor modules
+[33m94e23201e[m kernel: Add kernel modules to partition file list
+[33m00b6dea74[m kernel: Support kernel modules via kbuild
+[33m191a4dd72[m kernel: Handle GKI modules
+[33m307183a66[m kernel: Use correct recovery modules.load variable
+[33m686c1d785[m kernel.mk: Allow building external kernel modules
+[33ma3aa108f4[m kernel: Make INTERNAL_VENDOR_RAMDISK_TARGET depend on kernel
+[33mdc22cf2ad[m kernel: Stop warnings for prebuilt kernel platform
+[33mcf3d3f102[m kernel: Allow to limit the used .dtb files for the final DTB image
+[33m689135bba[m kernel: Support Qualcomm merge_dtbs script
+[33m4c7a8909e[m kernel: Nuke --cuda-path/--hip-path
+[33mdc4f4dc78[m kernel: Better x86 support
+[33mc085ffb98[m kernel: Add support to append DTBs to kernel image
+[33m1751993a0[m kernel: Use pahole from Google prebuilts
+[33mc78d5d60a[m kernel: Add rust prebuilts to path
+[33m51f54e3c8[m config: BoardConfigReservedSize: Disable via WITHOUT_RESERVED_SIZE=true
+[33m3a648d993[m Revert "Add product_launched_with_j{,_mr1,mr2}.mk"
+[33mddf6d3501[m aicp: build LOS AudioFX + Recorder
+[33mf31b8f614[m aicp: build Camelot
+[33mcad8b6842[m config: Mark remaining BoardConfig flags as deprecated
+[33me0200f079[m config: Deprecate BOOTLOADER_MESSAGE_OFFSET
+[33maa2db3b9b[m config: Deprecate TARGET_POWERSHARE_* flags
+[33mf07e7b825[m config: Deprecate TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB
+[33m0b85b31e2[m config: Deprecate TARGET_TRUST_USB_CONTROL_* flags
+[33mdf4fe2bef[m config: Move additional gralloc 10 usage bits to select()
+[33m8b64471c1[m Revert "vendor: soong: Add camera_needs_client_info"
+[33m918ed3bc0[m soong: Move QTI gralloc configs to select()
+[33m9ba887167[m soong: Remove LD_SHIM_LIBS support
+[33mcdd3159eb[m Revert "vendor: soong: Optionally disable Bluetooth LE"
+[33m4b3e4908b[m Revert "soong: Conditionally spoof ro.product.first_api_level to 32 [1/2]"
+[33m6bc95dbf2[m config: Move camera override format from reserved to select()
+[33m29a17bf23[m config: Move bootloader message offset to select()
+[33mb58f1c8dc[m config: Move USB restrictions to select()
+[33mbcd97fd92[m config: Move libperfmgr mode extension lib to select()
+[33mc9345b77f[m config: Move Lineage PowerShare HAL to select()
+[33m15a8cfc2c[m config: Move Lineage Health HAL to select()
+[33m15b59f0c0[m config: Use add_soong_config_namespace/add_soong_config_var macros
+[33m032330bf8[m Merge "config: Move vendor_init lib to select()" into v15.0
+[33m6669c5f40[m config: Move vendor_init lib to select()
+[33mf6de9dba4[m packages: build Twelve
+[33m295f0ee81[m aicp: config: re-activate LOS properties
+[33m3b7bfb8ea[m cm: Enable long-press on power in suspend by default
+[33m52fb14218[m config: Move surfaceflinger UDFPS lib to select()
+[33m212943982[m V are still kicking
+[33mb54cbf87e[m config: aicp_version: FIx props not ending up in build.prop
+[33m4f38e982a[m release: Sync flag_values with BP1A.250505.005
+[33mc1c7e5e04[m release: Sync flag_values with BP1A.250405.007
+[33mc6a0cb663[m common: Remove date UTC prop override key
+[33m64e3e8f0e[m build: Move version & legal properties to PRODUCT_SYSTEM_PROPERTIES
+[33mdfda4686f[m config: Add lineage support
+[33me7d5f4e4e[m soong: generator: Update for 15
+[33m5933d16d0[m lineage: Move all QCOM board configs to hardware/qcom-caf/common
+[33mcf871094c[m fixup! Hookup GRALLOC_HANDLE_HAS_UBWCP_FORMAT
+[33md871735ed[m soong: Unset custom charging path var if it is not defined
+[33m6e704027f[m soong: move nvidia enhancements config to select
+[33m0df23a798[m soong: move EGL display array config to select
+[33m2b87bb7c1[m vars: March 2025 Security update and Quarterly Platform Release
+[33md33a9192b[m spn: Move from sdk
+[33m722bcba04[m soong: move QTI surfaceflinger config to select
+[33m4f18128b0[m soong: drop librmnetctl config
+[33m9b3ab1039[m soong: move extended compress format config to select
+[33meb404d510[m soong: move vibrator effect stream config to select
+[33m5c44a336f[m Revert "config: Changes for libfmjni bp conversion"
+[33mea01032e1[m kernel: Update default clang version to clang-r536225
+[33mf9a1441d5[m Add version to AIDL health HAL
+[33m218f5f7ec[m aconfig: Enable minimize button and running apps for desktop windowing mode
+[33mefbdf69f6[m kernel: Use libc sysroot from host for 6.11+
+[33m6cb253dc1[m release: Enable screen_off_unlock_udfps
+[33m3a2a60447[m Revert "Add `androidx.compose.compiler_compiler-hosted-plugin` define"
+[33mf8f3b585a[m release: Bump aconfig flags extension to BP1A
+[33m7dbf2eee0[m tablet: Enable desktop windowing mode
+[33m8b1717a33[m Pixel 6-9: Sync SVN manually for Jan ASB
+[33md0e450ac4[m soong: generator: Update for BP1A
+[33mfc744cbeb[m overlay: Set PermissionController help URLs
+[33m037462503[m soong: Make mkdir install dir optional
+[33m963ea86e5[m soong: Add mkdir module
+[33m89a2069a5[m kernel: Block HIP detection through HIP_PATH=none
+[33m9e6f5275d[m common: Disable continuous transaction tracing on userdebug builds
+[33mf29396ed0[m flag_values: Enable AVF Custom VM support
+[33mdbd09b633[m kernel: Update default clang version to clang-r530567
+[33me8795a6ec[m kernel: Update default clang version to r522817
+[33mb40c7df4b[m release: Bump aconfig flags extension to AP4A
+[33me2be5f19e[m aconfig: Add release and buildconfig textproto
+[33m7bf9593b4[m release: Sync Pixel 9 SVN/kernel manually for Nov ASB
+[33m58db885dd[m release: Sync Pixel 6-8a SVN manually for Nov ASB
+[33m213ba1685[m release: Set Pixel values
+[33m38a8a9580[m release: Declare missing Pixel flags
+[33ma2881b495[m soong: generator: Update for AP4A
+[33m6bbb80a4a[m Zap aapt_version_code_defaults
+[33m44bf8c173[m Revert "kernel: Use CPATH for including host headers"
+[33mcd9c2b09a[m aconfig: Enable polite notifications
+[33m94d61bab8[m aconfig: Enable revamped settings
+[33m02518f80e[m aconfig: Drop use_media_router2_for_info_media_manager
+[33m44285cc8a[m lineage: Bump aconfig flags extension to AP3A
+[33mda4340d49[m config: Add text classifier files to allowed product artifacts
+[33m1ad34d45e[m Migrate to component-override for force enabled/disabled components
+[33mea34cd51f[m config: Build the textclassifier models
+[33m44f4f8d45[m Add `androidx.compose.compiler_compiler-hosted-plugin` define
+[33m3990308a2[m build: Switch to _get_build_var_cached
+[33m7a3b5241e[m build: Import check_product from lineage-21.0 build/make
+[33mbe1a397f0[m[33m ([m[1;31maicp/u14.0[m[33m)[m envsetup: dopush: Update regex to match remaining build time
+[33me85438a91[m Remove libsketchology prebuilts
+[33md46c0cd24[m config: Changes for libfmjni bp conversion
+[33m742dc2910[m Revert "prebuilts: sdk: Add latest preference-ktx library"
+[33ma57872d11[m soong: Conditionally spoof ro.product.first_api_level to 32 [1/2]
+[33mf14e49a29[m soong: add powershare configs
+[33m791bc084c[m config: Switch to AOSP themes stub package
+[33mb314f4fb0[m aicp: Bump aconfig flags extension to AP2A
+[33m9f43bd943[m SystemUI: Enable lockscreen shortcuts (quick affordances)
+[33m99103337d[m build: Add macro for sha1 checked add-radio-file
+[33ma67180ad2[m aicp: docs: remove custom clang info
+[33m2679a14a4[m Revert "vendor_aicp: improve TARGET_KERNEL_CLANG_CUSTOM Boardflag"
+[33mb4e7e3166[m config: Indent BoardConfig makefiles
+[33m1ba9ac30e[m config: BoardConfigReservedSize: Add ATV reserved sizes
+[33mcef730c91[m Revert "config: BoardConfigReservedSize: Prevent overlayfs on remount"
+[33me90eb3011[m config: BoardConfigReservedSize: Prevent overlayfs on remount
+[33m9a2e7319d[m config: Allow forcing minimal/full reserved size
+[33ma336f64e0[m config: Introduce common dynamic partition reserved sizes
+[33m0207a3489[m kernel.mk: add back RECOVERY_KERNEL_MODULES target
+[33m7c3c73405[m aicp: Add custom udfps_lottie_translate_y dimen
+[33m4e42e409a[m vars: June 2024 Quarterly Platform Release and Security update
+[33m616b77682[m config: Build Glimpse
+[33me5c490232[m bacon: Depend on $(DEFAULT_GOAL)
+[33mfa0f4db59[m soong: Add power libperfmgr extension config
+[33mde3255373[m kernel: Add clean headers script to workaround conflicts with bionic
+[33m4dda2cd00[m kernel: Rename mkdtboimg.py
+[33m8bbb0b5e0[m qcom: Add qcom-caf wlan to soong namespaces
+[33ma2b3c5d3e[m lineage: Add aconfig flags extension for AP1A
+[33m2cf39cf39[m Hookup GRALLOC_HANDLE_HAS_UBWCP_FORMAT
+[33m6155e61a5[m soong: Follow the correct JSON syntax
+[33m91b2a4630[m build: Provide qti_kernel_headers module
+[33me7ecc19f0[m config: Update clang version to clang-r487747c
+[33m9d07d8527[m kernel: Default to no gcc on kernel 6.x
+[33mca0e0434f[m kernel: Use lz4 from Google prebuilts
+[33m80ad487a3[m envsetup: Fix breakfast
+[33mfca645cb5[m vendor_aicp: Prepare for UpsideDownCake
+[33md7d45175e[m config: add LOS health HAL to device FCM
+[33mb7ca685d8[m Merge changes If28bf063,I1e247192 into t13.0
+[33m7db651814[m soong: Add qti vibrator effect stream config
+[33me7febc850[m device_config: Enable separate notification volume control
+[33mf3e601586[m device_config: Disable always screen on
+[33md763ade6d[m vendor/aicp: Hookup TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED
+[33m9b5cb8dfa[m kernel: Don't try to do math on empty kernel version
+[33ma07a84a7a[m qcom: Prepare for non-legacy dataservices
+[33m7dcd5a431[m qcom: Use full QTI gralloc struct for GKI 2.0 targets
+[33m2676395bd[m qcom: Add support for kalama platform
+[33mabc505c37[m Hookup GRALLOC_HANDLE_HAS_CUSTOM_CONTENT_MD_RESERVED_SIZE
+[33m9006fff12[m soong: Add `aapt_version_code` default
+[33mabb5cdf3d[m config: add vendor.lineage.chgctrl to FCM
+[33md20eaef78[m soong: Add TARGET_HEALTH_CHARGING_CONTROL related configs
+[33m49284c1c1[m repopick: Don't ignore change status for query mode (-Q)
+[33m195b5a6ae[m kernel: Restore TARGET_KERNEL_VERSION
+[33m9d7c7c346[m kernel: Go full LLVM build on 5.10+ kernels
+[33mce6490f6b[m Include build manifest on target
+[33m4a95e982b[m config: unrar undead
+[33m1dbd0bcf8[m config: common-full: Build zstd cmdline tools
+[33mfaf810328[m envsetup: aospremote: Take .gitupstream into account
+[33mea9fa6292[m prebuilts: sdk: Add latest preference-ktx library
+[33m0a002910f[m overlay: Move Launcher3 overlay to seperate RRO package.
+[33m97cebac9d[m vendor_aicp: config: Re-enable rsync
+[33m0f683ca20[m overlay: Convert DocumentsUI RRO to standalone package
+[33ma0dbe2bd1[m overlay: Move default status bar height to no-rro
+[33m966324f48[m overlay: Relocate config_displayLightSensorType to no-rro
+[33m928e57541[m vendor_aicp: config: Inherit window_extensions.mk
+[33m8257bdb48[m overlay: Disable immersive mode confirmation
+[33m5b700fe50[m soong: Bring bootloader_message_offset back
+[33mba8a43d5f[m device_config: Enable smart actions in the clipboard overlay
+[33m114e02151[m overlay: Set config_displayLightSensorType to android.sensor.light
+[33md731ed3e8[m kernel: Check HIP support of clang before disabling it
+[33m6fa0075ae[m kernel: Force disable LLVM HIP
+[33mbb06ebdd6[m Merge "vendor: soong: Optionally disable Bluetooth LE" into t13.0
+[33m94df8ddac[m qcom: set TARGET_USES_QCOM_AUDIO_AR for the UM 5.10 family
+[33mb0a2667a8[m qcom: Include vendor/qcom/opensource/display namespace only for <5.10 platforms
+[33md1ef01e0c[m qcom: Add taro platform
+[33m37debbfe0[m vendor: soong: Optionally disable Bluetooth LE
+[33m7b1c1aa61[m overlay: Set calendar component name
+[33m869b6b673[m overlay: Set clock component name
+[33ma3fa793fe[m Merge "Helplines: Improve Bulgarian helplines" into t13.0
+[33mf8461ec54[m Use a RegEx to get carrier instead of XML parsing
+[33m05b5f8bb7[m Include `carrier=` in carrier match string
+[33mee2cc8369[m Fix custom_apns script
+[33mf642d7b83[m Helplines: Improve Bulgarian helplines
+[33mce4caf34c[m kernel: Force disable LLVM CUDA
+[33m1eb8a3a5d[m config: Split sdm660 from UM_4_4_FAMILY
+[33m299da6dd9[m Split msm8937 from UM_3_18_FAMILY and fix it
+[33m057bc1848[m qcom: Add holi platform
+[33mf39fe3431[m vendor_aicp: drop LoS recovery additions
+[33m35102e2f5[m backuptool: Unmount v3 partitions during backup
+[33m9f021fe1f[m overlay: Set default status bar height to 28dp
+[33md78abe36d[m vendor_aicp: overlay: cleanup and get inline with Lineage
+[33m09db04051[m vendor_aicp: overlay: Exclude ThemePicker from RRO
+[33mdfb7510d0[m vendor_aicp: config: Exclude SystemUI tests
+[33m0938ff89f[m overlay: Make config_defaultQrCodeComponent untranslatable
+[33mb327b3454[m overlay: Set config_clockFontFamily to empty string
+[33m51a22791f[m overlay: Update ThemePicker for android13-qpr1
+[33m161a98d77[m Revert "Test push"
+[33m756e815b6[m Test push
+[33m8e291d61c[m overlay: Update Dialer VVM config
+[33mfab913c89[m kernel: Allow devices to opt-in for full LLVM build
+[33m820535d1a[m kernel: Support copying modules to vendor_kernel_boot
+[33m95a7d2eca[m kernel: Remove TARGET_KERNEL_MODULES error
+[33m670ee5cb7[m kernel: Only add GCC to PATH when using GNU binutils
+[33m0c02537a9[m kernel: Remove darwin support
+[33m7150e0e1a[m kernel: Override LD_LIBRARY_PATH only on <5.10
+[33mb1ed39e71[m kernel: Fix clang version override
+[33m6542220c3[m lineage: kernel: Use getconf instead of nproc
+[33m86681b7e3[m kernel: Support building dtbimage with mkdtboimg.py config
+[33me08e3a1f5[m kernel: Changes for 5.10 build without GCC
+[33m08adf7967[m kernel: Slightly reorder config
+[33m57d807a62[m kernel: Use consistent spacing
+[33m60e887a82[m vendor_aicp: cleanup for Tiramisu
+[33mf5a532a7e[m config: Remove TARGET_CAMERA_BOOTTIME_TIMESTAMP
+[33mebbbbabc4[m Merge "QCOM: RIP pre-UM families" into t13.0
+[33m548a74e4b[m kernel: Add support for custom dtbimage generation rules
+[33mf6bac5fe5[m QCOM: RIP pre-UM families
+[33mb73ded288[m overlay: SettingsLib: SettingsTheme: Override headline font family
+[33mce9ee6e76[m overlay: Set config_defaultQrCodeComponent
+[33m2a730c64b[m config: Build Aperture camera app
+[33m690a9f54c[m lineage: common: Exclude ntfs-3g from artifact path requirement
+[33mc4f0963bd[m config: Bring back ntfs tools
+[33mfdc98ed6d[m QCOM: msm8953: Use legacy-um ipacm
+[33mbeeec66bc[m fixup! Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE
+[33m0a073e82c[m Hookup GRALLOC_HANDLE_HAS_RESERVED_SIZE
+[33m914cbf419[m kernel: Allow passing empty DTB to mkbootimg via board-flag
+[33m86ddd3dfe[m kernel: Use LLVM binutils by default
+[33m67f7d9171[m QCOM: Use legacy-um ipacm for all legacy UM platforms
+[33m767f67f93[m kernel: Drop -fuse-ld=lld from CFLAGS
+[33m24e3c0d03[m kernel: Changes for LLVM binutils
+[33m372470238[m vendor_aicp: clang things: get inline with LoS
+[33me0cb69a37[m common: Add a system property for System UI compiler filter.
+[33m7d2818ef3[m Merge changes Ie3d798a0,I3024e503,Ib1bca251,I2946fdb0,I2aff9bb7, ... into t13.0
+[33m48738f9d2[m soong: generator: Replace android.SourceDepTag usage with IsSourceDepTagWithOutputTag
+[33m64c12cad3[m config: Remove BOOTLOADER_MESSAGE_OFFSET
+[33mbad5e1f40[m config: Remove TARGET_PROCESS_SDK_VERSION_OVERRIDE
+[33m29361ff3f[m config: Remove TARGET_DISABLE_POSTRENDER_CLEANUP
+[33ma6fe071cf[m config: Remove TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE
+[33m0beaf0b98[m config: Remove TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE
+[33mb54cebd19[m config: Remove TARGET_HAS_MEMFD_BACKPORT
+[33mded099a2f[m config: Remove TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY
+[33m5faa46226[m config: Remove TARGET_HAS_LEGACY_CAMERA_HAL1
+[33mbf220fd96[m config: Remove TARGET_USES_QCOM_BSP_LEGACY
+[33mc676a3540[m config: Remove QCOM HW FDE setup
+[33m67ea112fc[m config: RIP QTI BT stack
+[33m02ccf377c[m vendor_aicp: prepare for Tiramisu
+[33mcac4418aa[m Merge "aicp: docs: aicpinfo: add refresh rate configs" into s12.1
+[33ma274fa352[m kernel: Always build dtb targets before dtbo.img
+[33m419eeecb6[m kernel: Add support for vendor_boot image header version 4
+[33m5e6c722e0[m kernel.mk: Allow building external kernel modules
+[33mb8fbc2d0d[m kernel: Allow overriding dtb target
+[33mb759a8cbc[m kernel: Allow setting dtbo target path prefix
+[33m85dacea05[m kernel: Allow overriding dtbo target name
+[33m87c129e62[m config: Use LLVM binutils for 5.10 as well
+[33m751cb13da[m config: common: Create a module for adding fonts_customization.xml
+[33maffe270ce[m vendor_aicp: Reorganize init scripts
+[33m92f988c46[m vendor_aicp: build checkpoint_gc and otapreopt_scripts for A/B
+[33m2f9686d0d[m config: Exclude LatinIME dictionaries from RRO overlays
+[33m6e2011012[m vendor_aicp: overlay: Show adaptive connectivity in Settings
+[33m238372c41[m aicp: docs: aicpinfo: add refresh rate configs
+[33mddb14edf5[m overlay: core: Add Bromite WebView Signature
+[33mb6c4f79bd[m Merge "overlay: Point to global actions menu when pressing power button" into s12.1
+[33me3fb52fd2[m overlay: Point to global actions menu when pressing power button
+[33m20a35add2[m vendor_aicp: framework_manifest: declare support for IHighTouchPollingRate
+[33mdc271c9a8[m overlay: Convert NetworkStack overlay to an RRO package
+[33m83f30912f[m lineage: config: Use $(abspath .) instead of $(shell pwd)
+[33m04321834a[m Merge "config: Inherit from within AICP itself" into s12.1
+[33m878cf7be1[m config: Inherit from within AICP itself
+[33ma84eab862[m build: repopick: pick only open changes in a topic
+[33m69148ed92[m overlay: Exclude ImsService from location indicators
+[33m92bb713b4[m kernel: Don't print grep error messages when checking version
+[33mb4de1932f[m kernel: Move TARGET_KERNEL_ADDITIONAL_FLAGS to kernel task
+[33mdbb3f0907[m kernel: Switch to AOSP DTC instead of using scripts/dtc
+[33mcb6188c85[m lineage: config: Don't pass CFLAGS_MODULE="-fno-pic" if using LLVM
+[33me756871bc[m kernel: Use LLVM's substitutes for GNU binutils if possible
+[33meb770f8d4[m Merge "Revert "Remove libbfqio"" into s12.1
+[33m20afbfb83[m Revert "config: Disable remote keyguard animation until it's fixed"
+[33mf32e2b745[m Merge "aicp: Switch to GameSpace" into s12.1
+[33m4d83c13ee[m Revert "kernel: Remove unneeded MKDTIMG dependency"
+[33md5014b836[m aicp: Switch to GameSpace
+[33m91d8b81fc[m kernel: Remove unneeded MKDTIMG dependency
+[33m328822696[m kernel: Ensure dtb(o) always get rebuilt
+[33m5f3c9121f[m kernel: Avoid unnecessary savedefconfig
+[33m481306ef2[m kernel: Clean up kernel copy recipes
+[33m6bea9eb37[m repopick: Limit commit counting
+[33md6c87b2b2[m soong: Add TARGET_USES_EGL_DISPLAY_ARRAY conditional
+[33m3f7ad5496[m Fix nvidia enhancements soong conversion
+[33m99301e0f3[m Merge "vendor_aicp: overlay: show all icons in collapsed statusbar" into s12.1
+[33m3ccb9d38d[m envsetup: Add sort-blobs-list
+[33m782ddff88[m vendor_aicp: overlay: show all icons in collapsed statusbar
+[33mf41f5c531[m fixup! vendor_aicp: Rework for Android10
+[33m0b76d014f[m vendor_aicp: overlay: Also exempt CneApp from location indicators
+[33mcb1e0431a[m lineage: build: Wipe DTB/O OBJs before build
+[33m11a419cc7[m overlay: Exempt Bluetooth from location indicators
+[33m037ad6307[m Merge "soong: Drop TARGET_USES_QTI_CAMERA_DEVICE" into s12.1
+[33m611846935[m aicp: overlay: Set biometrics colors to accent.
+[33m14df58f5b[m soong: Drop TARGET_USES_QTI_CAMERA_DEVICE
+[33m7d94fad8d[m overlay: Exempt TeleService from location indicators
+[33m54b75dad9[m Revert "Remove libbfqio"
+[33m4ee5c9ea5[m Merge "aicp: docs: update xda thread template" into s12.1
+[33m3626679a6[m aicp: use s12.1 for roomservice
+[33mb930812e3[m aicp: docs: update xda thread template
+[33m80b30e6ad[m msm8953: Split msm8953 from UM_3_18_FAMILY [2/2]
+[33m9cf461d6d[m device_config: Keep up to 7 days of permission usage history
+[33m61febdfdc[m device_config: Save discrete app op history for more permissions
+[33m04f19c9d7[m config: Disable remote keyguard animation until it's fixed
+[33m5d63c0bbd[m Remove libbfqio
+[33meaf29e529[m qcom: Drop unused media flags for UM 5.4 family
+[33m62eb24c02[m kernel: Document TARGET_KERNEL_RECOVERY_CONFIG usage
+[33mf67745447[m kernel: Fix building recovery images
+[33mb3668c558[m kernel: Fix kernel rebuilding
+[33m411f4394f[m Merge "vendor_aicp: overlay: core: Assign automotive projection role to Android Auto" into s12.1
+[33m1aade509d[m build: tasks: kernel: Rework kernel fragments handling
+[33m0466381ca[m vendor_aicp: overlay: core: Assign automotive projection role to Android Auto
+[33m1fc926fd8[m vendor_aicp: overlay: Assign default role to GoogleQuicksearchBox
+[33m02b8ee938[m vendor_aicp: overlay: update and add full support for Google apps
+[33mca7ee29c2[m overlay: Allow toggling camera and microphone
+[33m75b05c560[m device_config: Convert location indicators to soft config
+[33mdb3a68d1d[m device_config: Show setting to disable location indicators
+[33m634fef395[m overlay: SettingsProvider: Enable auto brightness by default
+[33m5c59f3f55[m soong: Add TARGET_TRUST_USB_CONTROL_{PATH,ENABLE,DISABLE}
+[33m6adea803b[m Merge "aicp: move to 17.1" into s12.1
+[33m8c70ea296[m lineage: config: Set default values for UDFPS in display HAL
+[33mf3ecd269c[m aicp: move to 17.1
+[33m875617d3f[m vendor_aicp: Fix GSI targets
+[33m627ef4c89[m build: Fix kernelsavedefconfig target
+[33m894cd10d9[m vendor: soong: switch to camera_needs_client_info_lib
+[33m92cdd395d[m config: Create makefiles for tablets with telephony support
+[33me47e0cd52[m lineage: config: Make LLVM kernel compile the default
+[33m3360b7727[m config: device_framework_matrix: Remove inscreen and power HAL entries
+[33m1059ec203[m config: Remove backup services whitelist
+[33m353adaa71[m device_config: Use new privacy indicators for location
+[33mcf62ddfd9[m overlay: Remove obsolete Android 11 permission hub overlays
+[33m261a0de67[m overlay: ThemePicker: Remove obsolete icon shape preview packages
+[33mb01dbe5de[m overlay: core: Define wallpaper cropper package
+[33mb546d26b0[m overlay: Launcher3: Specify the wallpaper picker package
+[33m958fa6c8a[m overlay: core: Exempt Android System Intelligence from privacy indicators
+[33m088ef2679[m device_config: Update Live Caption configs for Pixel 6
+[33mca7ba1ec6[m overlay: core: Suppress System UI ANRs
+[33md3b2865bc[m prebuilt: Reactivate sensitive_pn.xml
+[33m928eec609[m overlay: SystemUI: Enable production-ready feature flags
+[33m4f071d9c3[m vendor_aicp: main.mk: Remove build flavor override
+[33m5c0d6a1ae[m config: Toggle-able adblock hosts file [2/3]
+[33m976e7a530[m kernel: INSTALLED_RECOVERY_KERNEL -> INSTALLED_RECOVERY_KERNEL_TARGET
+[33ma68471d72[m envsetup: Fix long time broken path to sh
+[33m07c6341f2[m envsetup: dopush: Correct paths
+[33m27324ca56[m apps: Grant necessary default permissions to Google apps
+[33m95b2744b7[m config: Enable support of one-handed mode for phone targets
+[33m84cfb4cc4[m lineage: Add vendor/qcom/opensource/commonsys/display to soong ns
+[33m49ebedbea[m Revert "vendor: Add vendor.lineage.biometrics.fingerprint.inscreen permission"
+[33m058b7fc57[m soong: Rename fod to udfps
+[33ma9772238c[m lineage: Add vendor/qcom/opensource/commonsys/system/bt/main to soong ns
+[33m7b312227d[m aicp: oops! we missed one again
+[33m6f148aab1[m aicp: backuptool: make ready for 12
+[33m0b98de691[m aicp_version: s not r
+[33m7ed9e9ec2[m soong: Update camera_in_mediaserver_defaults
+[33m3d5d67194[m build: Define QC_OPEN_PATH
+[33mcdab28d84[m qcom: Add new vendor display repository to soong namespaces for qssi supported platforms
+[33m0f4ae5cea[m Move bootanimation to product
+[33me895a66b1[m kernel: Add 32-bit GCC to PATH for vdso32
+[33m654a33918[m config: Update clang version to clang-r416183b1
+[33m40021e39b[m Revert "aicp: fix CLANG_PREBUILTS path"
+[33m0b650e0d6[m Rework rule building in lineage_generator
+[33m22ea25954[m aicp: fix CLANG_PREBUILTS path
+[33mb5bb3a1f4[m aicp: s/-ADDITIONAL_BUILD_PROPERTIES/ADDITIONAL_SYSTEM_PROPERTIES
+[33m7a0a209ec[m [DNM] aicp: remove hosts.aicp_adblock from PRODUCT_PACKAGES
+[33m228d8843c[m [DNM] aicp: deactivate sensitive_pn.xml for now
+[33mb9ebcca7d[m aicp: AICP S12.0
+[33m1364505ea[m[33m ([m[1;31maicp/r11.1[m[33m)[m Merge "overlay: Define blur radius in device-independent pixels" into r11.1
+[33mcf0fc047c[m aicp: docs: make the xda thread template more readable
+[33mbe140305b[m aicp: docs: Improve the recovery and install instructions
+[33m71c715844[m vendor_aicp: Excuse KERNEL_LD when not using KERNEL_SUPPORTS_LLVM_TOOLS
+[33mcd4b8887c[m overlay: follow system accent in setupdesign
+[33m115c01d0a[m overlay: Define blur radius in device-independent pixels
+[33m19ac50fd4[m vendor_aicp: config: Move default alarm/notification/ringtone sound props to /product
+[33m79e2ed3b9[m vendor: Add GamingMode support [2/3]
+[33me49b78fbe[m config: Cleanup additional gralloc bits
+[33m349473a74[m Merge "docs: aicpInfo: Update for missed features and misc" into r11.1
+[33mb4334bc5e[m Merge "Add support for separate kernels for boot and recovery [1/2]" into r11.1
+[33md7d4366a3[m backuptool: Support tab-delimited fstab
+[33mc92c8c1ff[m docs: aicpInfo: Update for missed features and misc
+[33m3e97f8df5[m aicp: docs: add info for config_showHideNotchSettings
+[33m5e2a9f204[m Add support for separate kernels for boot and recovery [1/2]
+[33me8435fc70[m aicp: move fonts to new home
+[33m5bd903961[m vendor_aicp: overlay: Remove MMS user agent URL
+[33m30dc75541[m Merge "kernel: Fix vdso32 building for 4.19+ kernels" into r11.1
+[33ma10d5dfad[m docs: update aicpinfo
+[33m842b59752[m kernel: Fix vdso32 building for 4.19+ kernels
+[33m6fa93e54a[m vendor: soong: Add camera_needs_client_info
+[33m5097a00b4[m lineage: Don't enforce inclusion of common compatibility matrix
+[33m921530ac7[m vendor_aicp: Add framework compatibility matrix for Lineage HALs.
+[33mca83fb634[m Merge "Add double quote in custom APN name check" into r11.1
+[33m2d3e90873[m aicp: docs: hyperlink the lineage wiki vendor page
+[33mbc97d8d7c[m Add double quote in custom APN name check
+[33m2174f1f53[m vendor_aicp: move sensitive_pn.xml to product partition
+[33mfc7799779[m soong: Add TARGET_CAMERA_BOOTTIME_TIMESTAMP conditional
+[33md69a1a9a4[m aicp: docs: update vendor information
+[33mf49368046[m Merge "Revert "soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags"" into r11.1
+[33m3fa1bce7d[m Merge "adaway: Whitelist a Youtube subdomain" into r11.1
+[33m8c87cefb1[m Revert "soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags"
+[33m249bdfc3d[m kernel: Pass absolute path for KCONFIG_ALLCONFIG
+[33mbd8504ebb[m vendor_aicp: qcom: Allow a device to manually override which HALs it wants to use
+[33mef8f7bcb1[m common: Remove extra tools already shipped by default
+[33m7773e51d7[m config: Remove exfat tools
+[33m7c7e992db[m Disable extra StrictMode features on all builds
+[33mdf27c04b9[m adaway: Whitelist a Youtube subdomain
+[33m4673da929[m qcom: add lahaina platform
+[33md506d8a61[m Revert "Revert "bacon: switch to sha256 checksum""
+[33me566103b0[m Revert "bacon: switch to sha256 checksum"
+[33m8abd8adad[m bacon: switch to sha256 checksum
+[33mefa44713a[m generated_kernel_headers: Also add usr/include/audio to include path
+[33m3ad8677d5[m aicp: remove old musicfx flag, and jamesdsp info
+[33ma29604d74[m backuptool: use correct BLK_PATH on a-only dynamic partitions devices
+[33md94f0abdb[m Only use stock build fingerprint for Google Play Services
+[33md9b0e314f[m vendor: More prop overrides for Google Play Services and SafetyNet
+[33m7ad29ff8d[m envsetup: Make dopush() /system_ext aware
+[33m8472b1e31[m envsetup: replace  __detect_shell with basename $SHELL
+[33m47b39fee0[m envsetup: fix lineagegerrit push for zsh
+[33m380492325[m prebuilt: Remove aicp-radio.rc
+[33ma16d90608[m overlay: core: Make Turbo available as Battery schedule provider
+[33m602738163[m adaway: Minor improvements
+[33m1726f8b4b[m Merge "vendor_aicp: Build conditionally AicpSetupWizard" into r11.1
+[33m7cc347386[m vendor_aicp: Handle build type suffixes properly
+[33m86a078b7b[m vendor_aicp: Build conditionally AicpSetupWizard
+[33med33fca3f[m sensitive_pn: Convert to new format
+[33ma4723d68d[m sensitive_pn: Comment, add and change numbers for multiple countries.
+[33m08f009159[m sensitive_pn: Run XML lint against the schema
+[33m582c50cf5[m wifi: Increase 5 GHz network signal tolerance
+[33me1ace8ee3[m ThemePicker: show our apps in icon previews
+[33mbbbde029a[m overlay: Override config for platform number verification
+[33m9d009807c[m aicp: overlay: Disable AmbientMusic
+[33m80751496d[m Settings: Show memory usage in app info
+[33m2f45d7a97[m vendor_aicp: SimpleDeviceConfig: Enable iorap
+[33m5d87b87c5[m soong: Add TARGET_QTI_USB_SUPPORTS_{AUDIO,DEBUG}_ACCESSORY flags
+[33mc2a0c4131[m backuptool: Ensure dedicated partitions are not unused before mounting
+[33mf2871aab2[m aicp: docs: Clarify our recommendation for GApps
+[33m9a014def2[m aicp: docs: use MindTheGapps
+[33me4eff8e44[m backuptool: Do not set ADDOND_VERSION=2 for a-only
+[33m71c54d691[m backuptool: Ensure to cleanup the environment on failure
+[33mb15a18c3f[m aicp: docs: Update default values for aicpinfo
+[33m1d29954b3[m aicp: bring back WITH_SU
+[33m0635980c4[m aicp: docs: add info on the live wallpaper opt-out flag
+[33md0d836cf5[m roomservice: update from PixelExperience
+[33m5097b6b44[m lineage: targets: x86{,_64}_ab: Don't explicitly include SDK addon
+[33m471a16aaf[m lineage: targets: Add support for Legacy GSIs
+[33m033554590[m aicp: docs: Update FAQ with info on proprietary apps and services
+[33mbf60fb62e[m vendor_aicp: Remove duplicarted lines
+[33m40ad5f4b8[m device_config: Update Now Playing database URL
+[33m23666039a[m Merge "config: Build OnDeviceAppPrediction" into r11.1
+[33m3d4065df5[m Merge "aicp: docs: update features list" into r11.1
+[33m1efe0c879[m Merge "aicp docs: Add back live display info" into r11.1
+[33mf9c80879e[m soong: Add TARGET_LEGACY_HW_DISK_ENCRYPTION conditional
+[33m40326481c[m aicp: docs: update features list
+[33mec3031279[m config: Build OnDeviceAppPrediction
+[33mbcaa1ce68[m aicp docs: Add back live display info
+[33m02688e763[m backuptool: Correct supported partitions for addon.d v3
+[33m649b3530b[m kernel: Support pixel style vendor_boot modules
+[33me0ade35fe[m backuptool: Support seamless backup and restore to extra partitions
+[33m43a41418c[m backuptool_ab: Make tmp actually tmpfs
+[33m7abb0c1c9[m fixup! Dialer: Add visual voicemail configs from Google Dialer
+[33m548e502a3[m Dialer: Add visual voicemail configs from Google Dialer
+[33m01d9adf95[m Merge changes from topics "custom-clang-proton", "r-hardcoded-clang" into r11.1
+[33m65fdff0d2[m qcom: Add bengal platform
+[33mef12bdc3b[m kernel: Add KERNEL_SUPPORTS_LLVM_TOOLS to permit building with LLVM Build Tools
+[33m5cd9c5d1e[m kernel: Cleanup some of the clang logic
+[33mfff0dcec7[m init: Make encryption action an argument to mkdir
+[33mcdf46b8c8[m roomservice: add in support for setting a custom clone-depth for any dependency
+[33m74cb0f577[m fixup! Add needed for VPN Tile permissions
+[33m8dd8e1642[m aicp: add back Phonograph to PRODUCT_PACKAGES
+[33mdae54548a[m vendor_aicp: More checks for copying AB backuptool scripts
+[33md7d61dde4[m lineage: Commonize display_intf_headers for QSSI supported platforms
+[33m27491fcfb[m aicp: docs: open up the vault
+[33m7adb70d73[m Merge "aicp: track extract utils from the new lineage repos" into r11.1
+[33m15ad4d9a9[m overlay: SimpleDeviceConfig: Hide handle on lockscreen
+[33mabd99c306[m aicp: track extract utils from the new lineage repos
+[33md91fa6006[m config: Add dataservices to PRODUCT_SOONG_NAMESPACES if needed
+[33m98e9e17df[m aicp: docs: more improvements for the maintainer application
+[33m9458718d9[m overlay: Add config keys for SimpleDeviceConfig to provision
+[33m065b5c3ed[m aicp: docs: refractor the maintainer application
+[33m8c5e8e29f[m docs: Update XDA thread template
+[33ma62d0ad65[m aicp: docs: make the grammar more better
+[33mfd4dabe16[m config: Setup soong namespaces for TARGET_USE_QTI_BT_STACK
+[33m92fd2c8b0[m overlay: Enable privacy indicators
+[33me91aa2641[m overlay: Delegate DeviceConfig permissions to custom provisioning service
+[33me88159768[m config: Build simple DeviceConfig provisioning service
+[33m6bc1ba17a[m fixup! extract_utils: implement patchelf
+[33m95a2fdd8d[m extract_utils: generate_prop_list: Ignore vdex/odex files too
+[33m3a4ef769f[m backuptool_ab: update to 11
+[33mb03b6cdf5[m Merge "soong: add TARGET_HAS_MEMFD_BACKPORT conditional" into r11.1
+[33m3f547b9e8[m aicp: Update to aicp 16.1
+[33mf78d72a08[m docs: Update overlays
+[33m7ecd42e12[m vendor_aicp: apps: Build & whitelist QuickAccessWallet plugin for SystemUI
+[33mcb0fa5a57[m Themes: extend stub package with custom clocks
+[33m35813b356[m vendor_aicp: Add and build Aicp stub apk for themes
+[33m3c62f1b32[m[33m ([m[1;31maicp/r11.0[m[33m)[m aicp: build aicp adblock
+[33medec38f5d[m vendor_aicp: Build OmniJaws & OmniStyle
+[33ma31e4766f[m docs: Update paypal png
+[33m4077b3d0a[m soong: add TARGET_HAS_MEMFD_BACKPORT conditional
+[33m83e0ae831[m soong: Add flag for disabling postrender cleanup
+[33m6d0ccccda[m Fix AICP manifest file name
+[33m09672a424[m extract_utils: implement patchelf
+[33mac18c2bdf[m repopick: Use project revision if available
+[33m925403f32[m kernel: Make system/vendor images depend on modules
+[33md19d051bc[m build: Remove hardware/qcom-caf/thermal pathmap
+[33m839ac5f6e[m aicp: add propery for Lineage-recovery - second part
+[33mc8e644821[m Remove build/core/clear_vars.mk
+[33mb26547f1a[m aicp: add propery for Lineage-recovery
+[33mb202456b9[m config: Allow more legacy apps to use conversation notifications
+[33mb5f796879[m aicp: adapt Changelog handling in Makefile [2/2]
+[33m023ddf133[m vendor_aicp: move AICP Specific Settings permissions to system_ext
+[33m28afcfd73[m vendor_aicp: Disable some AICP specific packages
+[33m564d8a64c[m vendor_aicp: Add permissions for DataSwitchTile
+[33m2b9e199dd[m vendor_aicp: Fix Camera2 permissions
+[33mdfc7c49a4[m lineage: Add data-ipa-cfg-mgr to soong namespace in BoardConfigQcom
+[33m3ff79d060[m prebuilt: Remove lineage-livedisplay.rc
+[33m4b58e9975[m lineage: Don't enforce specifying image name on prebuilt kernel
+[33m73217925f[m Declare vendor/qcom/opensource/data-ipa-cfg-mgr as soong namespace
+[33m2119564f3[m config: Add conversation notification allowlist for older apps
+[33me81175c42[m permissions: Move AICP specific SystemUI permissions to SYSTEM_EXT
+[33m850ab844a[m fixup! soong: Add lineage soong config variables
+[33m826d290a1[m soong: Export bootloader_message_offset to dependencies
+[33m3b6cb5e2e[m soong: Set a default for TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS
+[33m621a70387[m soong: Add lineage soong config variables
+[33m55f2e2c5e[m Revert lineage soong product variables changes
+[33m9b8acef64[m aicp: docs: update donate link
+[33mf5a00805b[m Revert "lineage: Add flag for skipping EV_REL input in recovery"
+[33m97d71f840[m Revert "soong_config: Add flag for msm8974 1440p EGL workaround"
+[33me137d698d[m soong: Run bpfix
+[33mc6df78f9d[m vendor_aicp: prebuilt: Remove aicp-adb.rc
+[33mba5757745[m backuptool.sh Update for R
+[33m53ea8329b[m soong: Add SOONG_CONFIG_DATASERVICES_USES_PRE_UPLINK_FEATURES_NETMGRD
+[33m71c2eeb8b[m vendor_aicp: remove execaicpscripts for now.
+[33md0e739365[m aicp: Disable inline kernel building for generic {arm,arm64} targets
+[33mcd218f0e9[m aicp: Manually include gsi_release.mk for generic aicp targets
+[33m12d0498df[m vendor: rename soong var
+[33m81a292822[m kernel: Import function to install kernel modules from Q
+[33m0b62b194f[m kernel: Add prebuilt m4 to build environment
+[33m6cb9f3f24[m kernel: Use Clang as HOST_{CC,CXX}
+[33mcdaff165e[m kernel: Use nproc from prebuilts
+[33ma424d62a7[m lineage: Use $(HOST_PREBUILT_TAG) where possible
+[33mc0c3003fd[m extract_utils: Disable ELF check for shared library
+[33med99afa39[m bacon: switch to toybox md5sum
+[33m1c5b6f78c[m config: Don't append extra $ to TOOLS_PATH_OVERRIDE
+[33mc4633f467[m vendor: BuildOsVariant > BuildOSTarget
+[33m232947ced[m vendor_aicp: Aicp R11.0
+[33mfdda15ebd[m backuptool_ab: Use mv instead of cp for restore step
+[33m8ff333c46[m backuptool_ab: Make copy_file preserve file/directory attrs
+[33m911ccb784[m extract_utils: Fix system_ext framework blueprint generation.
+[33m510a7206e[m aicp: Update apns list for India carriers
+[33m26451f39a[m vendor: Add TARGET_USES_AOSP_RECOVERY flag
+[33me59f6b79d[m aicp: Update APN list from Google master branch
+[33me9d65426a[m Merge "vendor_aicp: Give TilesWallpaper its own RRO package [2/2]" into q10.0
+[33m356aa5c95[m extract_utils: Add support for system_ext
+[33ma7412da04[m vendor_aicp: Give TilesWallpaper its own RRO package [2/2]
+[33m289667e5b[m vendor_aicp: Build Email and Exchange2 packages
+[33m958e7ca09[m Revert "kernel: prevent additional config from being always rebuilt"
+[33m7cd3e0a95[m kernel: Use CPATH for including host headers
+[33m95bebaf70[m kernel: prevent additional config from being always rebuilt
+[33mb9a0a1e3e[m Add Inter font
+[33meaa574482[m vendor: kernel: Add back support for custom dtboimg makefile
+[33mc3d2e8372[m Revert "kernel: Set full path to DTC"
+[33m3464db242[m kernel: Add support for mkdtimg cfg_create
+[33mbf67c613b[m kernel: Switch to mkdtboimg.py
+[33m1f614354c[m kernel: Rework how DTB/DTBO are built
+[33ma54dd5399[m Merge "aicp: Exclude all aicp overlays from RRO" into q10.0
+[33m74451c1a0[m Merge "aicp: overlay: Enable LatinIME gesture typing" into q10.0
+[33md3dc9c3f0[m aicp: Exclude all aicp overlays from RRO
+[33m0485c72b1[m aicp: overlay: Enable LatinIME gesture typing
+[33m389f82c56[m aicp: changelog: Only rebuild changelog when needed, and cleanup
+[33m6ae764301[m kernel: Set full path to DTC
+[33md138b0423[m kernel: Make dtb.img depend on dtc and dtbo.img on mkdtimg
+[33m89850238e[m vendor_aicp: Fix missing default alarm tone
+[33m6a095344a[m repopick: Fix repopick after c240b4a5d7c4dfdfbf8bca72a1bcd094fcf2dee8
+[33mc819641cb[m vendor_aicp: add random bootanimation
+[33mc5970bbda[m vendor_aicp: Fix zipping up bootanimation
+[33m4a740fc22[m Revert "aicp: Use prebuilt ImageMagick for bootanim"
+[33m8790697c6[m aicp: adblock: Allow overriding the input hosts file
+[33m09463662b[m repopick: Address PEP8 warnings regarding indentations and variable naming
+[33mc240b4a5d[m repopick: Use empty metavar parameter to fix help's indentation
+[33m0ee94c5bd[m kernel: Bail-out if kernel config isn't set
+[33m0050eb038[m kernel: Add support for module aliases
+[33m3093b6245[m kernel: Allow installing modules on vendor_overlay
+[33m09c8b18b4[m repopick: Use upstream instead of revision to determine branch
+[33mdf04b99d7[m Remove deprecated backup overlay
+[33m155bf9bd3[m lineage: update GMS updater component disable list
+[33m36af2d31a[m Export CAF msm-4.14 audio headers
+[33m80e3e082c[m config: Use tether automatic upstream selection
+[33m0a54155bd[m repopick: Fallback to name when project path is empty
+[33m549db6a15[m qcom: Add UM 4.19 platforms
+[33mb45522234[m qcom: Add atoll platform
+[33m68454687f[m Merge "aicp: docs: Add some overlays" into q10.0
+[33m066c9930a[m Merge "roomservice: support new manifest formats." into q10.0
+[33m2dc9a29d5[m aicp: docs: Add some overlays
+[33mf202bfe86[m aicp: Update India carrier APN's
+[33m615917fba[m aicp: Update apn list from google
+[33mdd0ffc375[m vendor: whitelist some google adservices
+[33m59ba8fbe2[m Merge "soong: Add flag for fod extension" into q10.0
+[33mb2a8e860e[m Merge "Revert "vendor_aicp: Enable qti-telephony-common aosp_usr_pref_sel"" into q10.0
+[33m34f6cf01a[m Revert "vendor_aicp: Enable qti-telephony-common aosp_usr_pref_sel"
+[33mcfc34d897[m Merge "kernel: Add bison and flex to build environment" into q10.0
+[33m67256a5b8[m vendor_aicp: Enable qti-telephony-common aosp_usr_pref_sel
+[33m9d7914039[m kernel: Add bison and flex to build environment
+[33m208fc0d68[m soong: Add flag for fod extension
+[33m515f08d68[m extract-utils: Fix usage for ETC files which need sub_dir
+[33m924c36bc8[m Export qcom UM hal root to soong
+[33mb440d7ea8[m vendor_aicp: Sort soong variables alphabetically
+[33maba287fcc[m vendor_aicp: Build Etar (replaces Calendar)
+[33mce5fbd57f[m extract_utils: Fix vendor Android.bp creation with subdirectory
+[33m518237b08[m Merge "aicp: add touch sensitivity overlay" into q10.0
+[33m4b88de956[m BoardConfigQcom: Allow a device to opt-out hardset of PRODUCT_SOONG_NAMESPACES
+[33m81b6d7643[m Merge "aicp: docs: update features again" into q10.0
+[33m7cf6c5d42[m aicp: docs: update features again
+[33m5c7657ec1[m config: Move permission xml to apps
+[33md7b4db378[m [2/2] overlay: header image tweaks
+[33m3d86e0511[m hosts.aicp_adblock: sync from git, update on build [2/2]
+[33md020e72ad[m lineage: Add flag for skipping EV_REL input in recovery
+[33m67e42478c[m vendor: Add StevenBlack source
+[33md7b9ac61d[m vendor: Add partsbin permission
+[33m72b895572[m Merge "Add multiple topics support to repopick" into q10.0
+[33mf201c57bd[m Merge "aicp: docs: update features list" into q10.0
+[33ma1d520ecc[m aicp: docs: update features list
+[33m0e1da08eb[m Merge "privapp-permissions: Update PREVENT_POWER_KEY permission for Camera" into q10.0
+[33mebbf0c0ea[m Merge "vendor/aicp: Toggle-able adblock hosts file [2/3]" into q10.0
+[33m5e3f00981[m privapp-permissions: Update PREVENT_POWER_KEY permission for Camera
+[33m49a528585[m Add multiple topics support to repopick
+[33m64aff69a8[m aicp: docs: Add back hw keys info
+[33m6d21b28b3[m aicp docs: Add back live display info
+[33mf45efd019[m Merge changes from topic "live-display" into q10.0
+[33md0343de40[m Add product_launched_with_j{,_mr1,mr2}.mk
+[33m9867edd3f[m vendor/aicp: Toggle-able adblock hosts file [2/3]
+[33m8161296ea[m aicp: bring snap permissions inline with CTS change
+[33mab708ebec[m vendor: Add back livedisplay permissions
+[33m6da2817f3[m vendor: Import LiveDisplay init file
+[33mf6e7583f6[m extract_utils: Handle Brotli compressed block image
+[33m28fee2143[m extract_utils: Support odm/product/vendor partition for zip extract
+[33mce2aa8925[m tasks: kernel: Clarify prebuilt kernel deprecation notice
+[33mc6679a3cd[m aicp: add touch sensitivity overlay
+[33m568789662[m kernel: Allow specifying a custom linker binary
+[33m64ecb378d[m Improve info on available overlays
+[33m85fae7319[m vendor_aicp: Fix changelog with broken repo forall -p
+[33m67f6ff880[m vendor_aicp: improve TARGET_KERNEL_CLANG_CUSTOM Boardflag
+[33mbb54ed9d6[m Merge "aicp: update features list link" into q10.0
+[33m6e96a8b07[m extract_utils: Generate deodexed apk/jar with consistent checksum
+[33m42877d8f4[m extract_utils: Fix doubled path separator
+[33ma9094a2c9[m aicp: update features list link
+[33m8ce5077bc[m vendor_aicp: add TARGET_CAMERA_NEEDS_CLIENT_INFO flag
+[33m13da7c1e8[m [2/2] overlay: change layout of keyguard status slice view
+[33m044431a65[m vendor_aicp: Allow A/B OTA downgrades on debuggable builds
+[33m083be3b49[m soong_config: Add TARGET_IGNORES_FTP_PPTP_CONNTRACK_FAILURE
+[33m1df2f44f3[m Merge "[4/4] overlay: qs status bar header image" into q10.0
+[33mc69b70912[m Export techpack/audio uapi headers of msm 4.14 kernel
+[33macb2d7a47[m [4/4] overlay: qs status bar header image
+[33m57a1afb10[m Revert "vendor_aicp: configs: Flatten APEX(s) on official builds"
+[33m971672b15[m extract_utils: Fix up 4a2b65fb60af23b6beccd8c405fc7cea90b9474d
+[33m53aab4c7c[m extract_utils: rebrand to AICP
+[33mc1e3853e5[m extract_utils: Fix bad substitution for zsh
+[33m6dbc1aa46[m vendor_aicp: envsetup: modernize functions
+[33m7f41803ec[m backuptool: Fix backup/restore functionality
+[33m78c0e4ced[m vendor_aicp: configs: Flatten APEX(s) on official builds
+[33m4d6f40a81[m backuptool: Properly unmount system partition
+[33meb221a0fe[m backuptool: Remove backup blacklist/whitelist
+[33mc47dd8964[m Merge "vendor_aicp: introduce TARGET_KERNEL_CLANG_CUSTOM Boardflag" into q10.0
+[33m8910e099b[m vendor_aicp: introduce TARGET_KERNEL_CLANG_CUSTOM Boardflag
+[33mbabe1aca2[m Merge "aicp: Enable gesture navigation for all" into q10.0
+[33mffc3f006a[m aicp: we include gapps on some a/b devices
+[33mfd08ebabb[m aicp: Enable gesture navigation for all
+[33m1de1c520b[m roomservice: support new manifest formats.
+[33mb99ad2dc7[m dtbo: Sort the files we found
+[33madd1b8f85[m vendor_aicp: add missing SystemUI permissions
+[33m9d9c2867e[m vendor_aicp: Update docs
+[33mcd72bffe6[m vendor: build AICP Live Wallpaper (TilesWallpaper)
+[33m30e8eab8a[m vendor_aicp: force unix lf and convert aicp_packages.mk
+[33md698879da[m repopick: fix --check-picked on Python 3
+[33mc010b925a[m tasks: dtbo: Add support for custom dtbo generation rules
+[33m1b37db301[m config: Add Launcher3 to PRODUCT_DEXPREOPT_SPEED_APPS
+[33med0307d7b[m config: Dexpreopt speed compile SystemUI instead of SystemUIGoogle
+[33mfb6111547[m prebuilt: backuptool: Drop addond version check on A-only
+[33m9f43592e2[m vendor_aicp: drop OmniRecord
+[33mb7835c0d7[m Merge "vendor: Fix props" into q10.0
+[33m31a47519e[m vendor_aicp: add HARDWARE_ABSTRACTION_ACCESS perms
+[33m0b712ac3b[m backuptool: Execute check_blacklist from the current directory
+[33mfc8ab6cda[m backuptool: Run check_{black, white}list with proper system path
+[33mf4995719f[m backuptool: Fix addon.d version check for A-only
+[33m15294eb6c[m vendor: Fix props
+[33m8ae8f0ca9[m prebuilt: [Part 2] backuptool: Implement dynamic system mount for A-only
+[33me16a12bcc[m CaviarDreams: make default medium font a little bit bold
+[33md1ee8d954[m vendor_aicp: Add Oxanium font
+[33meed0633d9[m vendor_aicp: Add proper licenses for FONTS
+[33m3567696ff[m vendor_aicp: Add Signika font
+[33md9e830a68[m vendor_aicp: Add Sniglet font
+[33m16bb9aac3[m vendor_aicp: Add Exo 2 font
+[33m956feb964[m vendor_aicp: Build CaviarDreams font
+[33mbff0bfead[m vendor_aicp: Build Comfortaa Font package
+[33m96c6394ec[m vendor_aicp: Add Comfortaa font
+[33med0876002[m fonts: adopt for AOSP Font Engine
+[33mb1529bc6e[m overlay: Allow default notification listener access for Launcher
+[33mc8ce8dee8[m overlay: Add more default packages from Google
+[33mcac668a05[m overlay: Show avatar in settings homepage
+[33me7b034f99[m Merge "vendor: apn: remove imsi-matching from  O2 Germany" into q10.0
+[33m7119e1bb3[m Merge "vendor_aicp: update apns-conf.xml file from google" into q10.0
+[33mbe3c23277[m vendor: apn: remove imsi-matching from  O2 Germany
+[33mf30ec591e[m vendor_aicp: update apns-conf.xml file from google
+[33m2222225c6[m extract_utils: Drop string after semicolon when parsing destination
+[33me944333b2[m vendor: Add vendor.lineage.biometrics.fingerprint.inscreen permission
+[33m5f3611ec1[m vendor_aicp: grant android.permission.WRITE_APN_SETTINGS to SystemUI
+[33m133503917[m Merge "Aicp: Overlay: Disable volume warning dialog" into q10.0
+[33md10249487[m Maintainer Application: Add a rule that the kernel cannot block apps and/or magisk modules
+[33m3ce515c69[m Aicp: Overlay: Disable volume warning dialog
+[33m8f01f7599[m overlay: Tint biometric icon with Pixel colors
+[33m67cca7a17[m vendor_aicp: Update priv app permissions
+[33m6e72302d8[m prebuilt: init: havoc-system: hide Magisk better
+[33mc58da66ce[m Aicp: Update docs
+[33mc9476c1a7[m Merge "Revert "adb insecure by default"" into q10.0
+[33mb09d012b0[m Revert "adb insecure by default"
+[33mc88b2bcab[m vendir_aicp: add pre_scripts.txt mechanism [1/2]
+[33m2ba2f5a85[m Merge "adb insecure by default" into q10.0
+[33m6398e4236[m vendor: make dopush recognize files on more partitions
+[33mfa0770c11[m Use adaptive icon squircle mask
+[33m288370a9b[m adb insecure by default
+[33m7ef8c6f1b[m aicp: overlay: Set delay for screenshot chord to 0
+[33m57922de28[m aicp: update apns file from google
+[33m3f2c81854[m soong: Add AUDIO_FEATURE_ENABLED_EXTENDED_COMPRESS_FORMAT
+[33mf943cf724[m prebuilt: Remove aicp-governor.rc
+[33me3557d104[m config: Mark more gralloc bits as valid
+[33ma15535e12[m Merge "overlay: Use ntp.ntsc.ac.cn NTP server for Chinese users" into q10.0
+[33m7c140d91c[m vendor_aicp: build ExactCalculator instead of Calculator
+[33m6eb53f4de[m overlay: Use ntp.ntsc.ac.cn NTP server for Chinese users
+[33ma29c0b03f[m soong_config: add TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE
+[33m0657671d4[m overlay: Update webview providers
+[33m2a2d2156b[m Revert "lineage: add BUILD_RRO_SYSTEM_PACKAGE target"
+[33m493230eed[m Merge "vendor_aicp: update apns-conf.xml file from google" into q10.0
+[33meb7487c98[m kernel: Only build dtb.img if prebuilt DTB directory is not set
+[33m6b80ce687[m vendor_aicp: update apns-conf.xml file from google
+[33mb74f2ca72[m vendor_aicp: Build Phonograph
+[33m7de88db99[m vendor: Use PixelThemes style
+[33m77f4ae49f[m vendor_aicp: Build WallpaperPicker2
+[33m9c27d1bb8[m prebuilt: Add a script to simplify A-only recovery system mount
+[33me63dd557b[m Add overlay to specify our custom theme provider
+[33m1e80e2f77[m vendor_aicp: Build ThemePicker
+[33ma8e358be7[m lineage: GMS updater components disable list bringup
+[33m4f7f3211f[m vendor: Rename config_disabledComponents
+[33mf2f4d6e93[m privapp-permissions: Grant START_ACTIVITIES_FROM_BACKGROUND perm to Snap
+[33m48c744e53[m Build adb_root
+[33m57f31c305[m Revert "vendor: Add qcom platform type to soongs vars"
+[33m98d06adc8[m aicp: update Google permissions
+[33m4ee5beed0[m vendor: Build Jelly, Updater, MusicFX and OmniJaws packages
+[33me9f74bd83[m vendor_aicp: Add Open Sans as font overlay
+[33m3f951f1f1[m vendor_aicp: Add Ubuntu font overlay
+[33m12b5beff5[m vendor_aicp: Add permissions for ThemePicker
+[33m03c04108a[m aicp: add missing systemui permission
+[33m369d5bec5[m disable vendor restrictions
+[33m356808821[m backuptool.sh: Update for Q
+[33m893021885[m vendor: fix bootanimation
+[33m60773141e[m soong_config: Reverse wait for qsee flag
+[33m19a92c1a6[m Revert "soong_config: Add flag for legacy HW FDE"
+[33m1708e28f1[m overlay: Remove Keyguard config
+[33mc68c52dd1[m overlay: Remove config_show4GForLTE
+[33m5108a0173[m repopick: Support project paths detection on different branches
+[33m7544623ed[m vendor: Add messaging app to power whitelist
+[33ma901ff6e2[m Merge "vendor/aicp: Fix dopush" into q10.0
+[33m6cb18bf1c[m common: Bring back Android Beam
+[33mf854fddf7[m lineage: use AB_OTA_PARTITIONS flag for including backuptool_ab
+[33m46ee487a0[m extract_utils: Added Suffix uses COMMON_SUFFIX
+[33m5d25bc123[m extract_files: Implement blueprint file generation
+[33md000882f4[m extract_files: Add initial blueprint creation
+[33m4e8c2e5f8[m extract_files: Match non-treble path prefixes
+[33m6d3cceecf[m extract_files: Support system/ prefixes
+[33ma353751a1[m extract_files: Add ODM partition blob support
+[33m2d0f89f4e[m vendor/aicp: Fix dopush
+[33m6839a8363[m build: dt_image: use prebuilt lz4 binary for compressing
+[33m6a47c8d0a[m vendor_aicp: Set google autofill service as default
+[33m285ad1c4a[m privapp-permissions: Allow Gallery2 to use android.permission.MODIFY_AUDIO_ROUTING
+[33m030069e8e[m vendor_aicp: Kill sysinit
+[33mc056bc135[m Merge "roomservice: Use default branch from aicp remote" into q10.0
+[33mcda8fbfc5[m vendor_aicp: Split and re-organize priv app permissions
+[33mabe608d08[m vendor_aicp: update permissions for aicp updater
+[33m23c468dab[m aicp: copy ae perms to the right place
+[33m34f53cff5[m aicp: add needed launcher3 permissions
+[33mfafabae63[m roomservice: Use default branch from aicp remote
+[33m8d514beef[m Merge "vendor: deprecate TARGET_USE_JAMESDSP 2/2" into q10.0
+[33m918633c7b[m vendor_aicp: Update backuptool_ab.functions from omni
+[33m84570acad[m vendor_aicp: Update backuptool for AB OTA's
+[33m93c3d58fc[m vendor_aicp: build cmdline-tools
+[33m188c0f5f2[m vendor: deprecate TARGET_USE_JAMESDSP 2/2
+[33m312eab822[m kernel: Define DTBS_OUT path for dtb.img building
+[33mb3ee9e1d9[m [2/2] Add a whitelist for location providers outside of /system
+[33md0d5c0b44[m vendor_aicp: build libjamesdsp
+[33mcf5469242[m vendor_aicp: build omnirecord
+[33m6c75d7918[m kernel: Move our dtb.img logic here
+[33m893cb67c6[m kernel: Build dtb.img from compiled dtbs
+[33m54b3c776a[m kernel: Don't re-define dtbo.img names
+[33m8cc88fcf4[m build: Remove qcom power HAL pathmap
+[33m3fd5f2fec[m kernel: Switch back to host openssl entirely
+[33m121798c2c[m kernel: Make kernel depend on depmod
+[33ma3f7710ef[m Revert "soong_config: Add flag for devices use metadata as FDE key"
+[33m991e1cfb7[m lineage: allow Has_legacy_camera_hal1 to configure Shared_libs and Overrides
+[33m1f95fa225[m vendor_aicp: Fix the maintainer application
+[33m2a4242942[m extract_utils: Fix typo
+[33mbff5a3919[m extract_utils: Source the prebuilts from the new repo
+[33ma503017f0[m build/tools: Move prebuilts to the new repository
+[33m7272883e0[m vendor_aicp: misc updates for q10.0
+[33m8c5246234[m kernel: Add OpenSSL libs to LD_LIBRARY_PATH
+[33m467973bd2[m vendor: env: fixup recovery fstab path
+[33m09c5a495f[m common: Copy APN list to $(TARGET_COPY_OUT_PRODUCT)/etc
+[33m984bf8814[m vendor: Disable vendor restrictions
+[33m83faa2c89[m build: Remove TARGET_CRYPTFS_HW_PATH
+[33ma2ae6c5fd[m build: Don't set pathmap for repositories that do not exist
+[33m555cbaa07[m build: Don't set pathmap for AOSP qcom hardware repositories
+[33mf9887ab7b[m build: Move to new qcom HAL directory layout
+[33m0882486a1[m build: Move hardware/qcom/audio back to its original path
+[33m94b9318c4[m build: Remove ability to set WLAN/BT_VENDOR variant
+[33mf8c83cd43[m vendor_aicp: Define default Wellbeing Package
+[33m9f2d3ecc7[m Move AE privapp permission whitelist to /product
+[33m4c91a066b[m repopick: Print change subject as unicode
+[33m1e9e0ce8c[m BoardConfigQcom: Fix setting UM4.9 and UM4.14 specific flags
+[33mbdeb27be9[m kernel: Fix specifying custom clang compiler version
+[33m957002e29[m Add generic aicp targets to lunch choices
+[33m2de061123[m soong_config: Add new flag for vendor_init
+[33ma8e705f52[m vendor: soong: replace space with colon on TARGET_LD_SHIM_LIBS
+[33m93622c8c5[m vendor: Replace 'system' with ''
+[33m2a7c13d09[m aicp: move google audio to product
+[33mb218d2854[m vendor: Move audio files to product
+[33m70bc9fb0a[m kernel: Fix module installation and clean up
+[33m94b3350f7[m kernel: Set kernel build outdir prefix for depmod too
+[33ma2c6e1f9a[m kernel: Add GCC toolchains to the path
+[33m88544df35[m lineage: Move openssl to generic 1.1.1 directory and correct darwin path
+[33me8d8b99a7[m vendor_aicp: Add command brunchopen to envsetup
+[33mb78ea0e93[m aicp: Use prebuilt ImageMagick for bootanim
+[33m02c91dca3[m aicp: Rework bootanimation generation
+[33mcd2c4f4b3[m vendor: Trash the last bits of SDClang support
+[33m82d4a5794[m envsetup: Remove call to deprecated function
+[33mf5d75b4d7[m envsetup: Kill Jack args export
+[33mc502196c6[m vendor Support relative OUT_DIR in fixup_common_out_dir
+[33mc10cb1aa3[m extract_utils: Support extracting from product partition
+[33mff2f9e407[m lineage: Mark generated_kernel_includes as recovery_available
+[33m69c9aacd3[m kernel: Fix nproc number
+[33m47b37823a[m kernel: Use absolute path for kernel O= argument
+[33me3b732d69[m Fix real file depends on PHONY target
+[33mce55f2b33[m kernel: Set kernel toolchain roots for aarch64, arm, and x86
+[33mb972e29bc[m kernel: Use linux-android- toolchains to build kernel on aarch64 and x86
+[33ma9b7a2515[m kernel: Use prebuilt binaries
+[33mf9f21165f[m kernel: Link against prebuilt openssl
+[33m5dfc2870d[m kernel: Use full user defined path to ccache
+[33m70b5f5647[m kernel: Use full path to the gcc/g++ commands
+[33mb1edb65c2[m kernel: Use full path to the make command
+[33mac872b7a2[m vendor: soong: _contents -> _json_contents
+[33m06f2e9a31[m vendor: Depend on existing definition of empty
+[33m948f02de7[m aicp: Remove deprecated vendorsetup.sh
+[33m04fce9300[m aicp: Add goldfish privapp whitelist and move to common aicp makefile
+[33m47fc02266[m vendor_aicp: Rework for Android10
+[33mba0a97182[m Merge "Revert "vendor: Build Longshot app"" into p9.0
+[33mdaa2c3dc3[m Revert "vendor: Build Longshot app"
+[33me550c9dba[m Merge "vendor: Build Longshot app" into p9.0
+[33m8477150c4[m Merge "vendor_aicp: re-add TARGET_IS_AB_DEVICE flag" into p9.0
+[33ma9686aa49[m Merge "vendor: introduce TARGET_BUILD_WITHOUT_VENDOR and let it guard JamesDSP" into p9.0
+[33m5859ce43b[m Revert "vendor_aicp: Don't use https for stats 2/2"
+[33m5ca9511d6[m vendor_aicp: Add a helpful guide for optional configs that maintainers can add
+[33m148bb7e2d[m vendor_aicp: re-add TARGET_IS_AB_DEVICE flag
+[33m92a494c03[m vendor: introduce TARGET_BUILD_WITHOUT_VENDOR and let it guard JamesDSP
+[33m079930098[m vendor: Build Longshot app
+[33m4a4b87b31[m vendor_aicp: introduce Buildflag TARGET_USE_MUSICFX
+[33m85cdbbbf9[m Merge "template: Add a link to our telegram channel for build server notifications" into p9.0
+[33m5eca49541[m Merge "LatinIME: Add en_GB, en_US, lt, lv, ro, sl, sr, tr dictionaries" into p9.0
+[33m6c7db56ef[m Merge "vendor_aicp: LatinIME: bring dictionaries in line with Lineage" into p9.0
+[33m6fb6166fd[m Merge "vendor_aicp: create common_mini_phone.mk" into p9.0
+[33mc386bae4e[m Merge "vendor_aicp: build JamesDSP only on non-AB devices" into p9.0
+[33m1a1a8873b[m Merge "charger: add 400dpi symlink" into p9.0
+[33m28ba2405c[m charger: add 400dpi symlink
+[33m762ef3553[m template: Add a link to our telegram channel for build server notifications
+[33m951f0d63e[m vendor: Add missing priv-app permissions
+[33m71ce418e9[m LatinIME: Add en_GB, en_US, lt, lv, ro, sl, sr, tr dictionaries
+[33m4b090e7a7[m vendor_aicp: LatinIME: bring dictionaries in line with Lineage
+[33m3951d4004[m vendor_aicp: create common_mini_phone.mk
+[33mec85d6b45[m vendor_aicp: build JamesDSP only on non-AB devices
+[33mf3fec536c[m vendor: fix a lot of shit going on
+[33mdeaf7618e[m Revert "vendor: aicp: build DSPManager by replacing MusicFX"
+[33m651d89dfa[m aicp: separately handle aicp ota updater
+[33m19f39f3ae[m aicp: handle snap permissions separately
+[33m55c8b35af[m aicp: update our priv-app permissions whitelist
+[33m81fe85941[m vendor: Add qcom platform type to soongs vars
+[33mdfa106126[m qcom: Include board list in BoardConfigQcom
+[33m80e62e908[m Merge "vendor: Add gugol permissions" into p9.0
+[33md3b9e2dee[m Update the maintainer application
+[33m903b7ec5b[m qcom: Add UM 4.14 platforms
+[33m7d40d59f7[m kernel: Consider depmod version when handling kernel modules
+[33m5db067f9e[m vendor: Add gugol permissions
+[33meb3bc193f[m extract_utils: Support multidex
+[33m2cfd77741[m common: Add getcap/setcap to PRODUCT_PACKAGES
+[33m3e1cf93b8[m build: Support SDM710 platform
+[33m501e29b33[m build: Separate platform macros from QCOM platform definition
+[33m636987ead[m build: Reorganize inclusion of QCOM macros
+[33m7d7719204[m build: Use ifeq/else ifeq/else construction in board config
+[33m6a3f4f93e[m build: Set mode for makefiles
+[33m585f79f03[m extract_utils: Add functions to extract vendor blobs from vendor.img
+[33me1c4f23df[m apns: Update IRAN APNs
+[33m6f685975f[m Merge "repopick: cmp() is not available in Python 3, define it manually" into p9.0
+[33mee0869935[m vendor: This is not true
+[33maa1365cc6[m repopick: cmp() is not available in Python 3, define it manually
+[33mbbc7b673f[m soong_config: Add flag for devices use metadata as FDE key
+[33m904a8a1b9[m kernel: Set correct kernel compiler prefixes for aarch64 clang
+[33m7e24f9d7d[m apn: Update German carriers
+[33md06580fb6[m lineage: Rework DTBO image generation
+[33me0e1d7e75[m apns: Update Singapore's APNs
+[33mf79c40530[m vendor: add upload crash to haste to features
+[33m201e6b74c[m vendor: Whitelist LiveDisplay permissions
+[33me3bdcbf45[m vendor: Import LiveDisplay init file
+[33me08de5b0a[m vendor_aicp: Make su opt-in
+[33mcb58f00dc[m vendor_aicp: Make aosp su optional
+[33mc9920ccfb[m extract_utils: introduce support for executing blob fixups
+[33m80f0dd542[m roomservice: allow adding remove-project
+[33m256fa4028[m vendor: set recovery type info
+[33m3ab4378df[m kernel: Fix modules path generated in modules.dep
+[33m700a208c8[m fix faq
+[33m8a779e3f7[m apns : Update the KT IMS apn
+[33m27c40f096[m Update the xda thread template
+[33mef930f4c8[m Update the features list
+[33mb5df56cf3[m Merge "vendor_aicp: Update paypal link" into p9.0
+[33m88686c633[m Merge "config: Include old AOSP alarms/notifications/ringtones" into p9.0
+[33m30d1773e7[m vendor: add curl to Extra tools
+[33m720fd8db7[m vendor_aicp: Update paypal link
+[33m7dcb4f5dd[m config: Include old AOSP alarms/notifications/ringtones
+[33m7bcb3afe5[m vendor: enable multi-user across all devices
+[33m89b494c34[m backuptool_ab: Use GAPPS's own addon.d script for safety
+[33me8c2d71b9[m aicp: add required permissions for updater
+[33mdc29f7c47[m vendor_aicp: Use Updater as OTA provider
+[33m1c5c7081d[m backuptool: Roll back to our own backuptool scripts for non AvB devices
+[33m67a71581d[m aicp: Use ro.build.version.release prop to check backuptool compatibility
+[33m8faec1d7b[m vendor_aicp: Bring backuptools inline with omni's android-9.0
+[33me3bf45a00[m verity_tool: Implement status getter
+[33md4a235c31[m verity: Implement verity tool
+[33m5084b434f[m Merge "Revert "vendor: Update bootanimation"" into p9.0
+[33me90090c72[m Revert "vendor: Update bootanimation"
+[33m81cc6513f[m Merge "vendor: Update bootanimation" into p9.0
+[33mdb14dec32[m vendor: Update bootanimation
+[33m692666399[m Add multiple topics support to repopick
+[33m1245d66ce[m aicp: add CarrierConfig overlays from omni
+[33ma8583aeec[m Merge "qcom_target: Move RIL path mapping to core/config.mk" into p9.0
+[33m41acfa758[m Update the maintainer application
+[33md041eae0d[m qcom_target: Move RIL path mapping to core/config.mk
+[33m36708b413[m Add APN ION Mobile & APN for Roaming
+[33m820c7aa58[m overlay: Move managed profiles overlay to frameworks/base
+[33m679cbf213[m vendor_aicp: Update the xda thread template
+[33m22ee62d03[m kernel: Use build-image-kernel-modules instead of copying it
+[33m1e801e880[m kernel: Use a macro for kernel build targets
+[33m7003bb020[m kernel: Detect kernel module usage better
+[33mca363c506[m kernel: Move kernel module dir cleanup/creation to module install target
+[33mf153e6433[m kernel: Move full kernel build guard flag below all targets
+[33me899110d3[m kernel: Add more threads to kernel build process
+[33m3950655e0[m Remove prebuilts that come with gapps
+[33m6f6539977[m vendor_aicp: Add build templates from lineage
+[33m1fee04dd6[m extract_utils: make --section match words anywhere in the line
+[33mfa62cfc6d[m extract_utils: introduce -k (kang mode) option
+[33m2a3e68f2e[m extract_utils: cleanup variable names and arguments passed to extract() function
+[33mb5cfebda9[m extract_utils: be compatible with system-as-root layouts
+[33m0c9a41ec2[m extract_utils: drop the "/system/" prefix from prints of blob names
+[33mf7694dba1[m Merge "Never allow neverallows" into p9.0
+[33mfa20f06b8[m Update features list
+[33m243ce3e55[m Add APN for XFINITY Mobile
+[33m38a092a37[m apns: Add new Virgin Mobile apn
+[33md5ec1b5e9[m apn: Update the Ultra Mobile apn
+[33m65fccdb8f[m aicp: Add vim to the package
+[33md9887b350[m Never allow neverallows
+[33m93034f44f[m aicp: fix adb tcp check value
+[33m9e96e663c[m config: Add Deskclock to power whitelist
+[33me02c14b10[m backuptool: Support system-as-root A-only backuptool
+[33m7e483e334[m vendor_aicp: Add telephony-ext
+[33me4f118737[m vendor: aicp: add Titilliumweb font
+[33mabef965fd[m aicp: remove a headache
+[33mba35109ed[m Merge "aicp: remove GoogleAnalytics param from romstats" into p9.0
+[33md3d1597d6[m Merge changes from topic "FontService" into p9.0
+[33m5101d4291[m vendor: fix props for jenny and cleanup
+[33m839178dd4[m Added new fonts to the statix fonts pack
+[33mf9dd23f6a[m Add invictrix font package
+[33m6062860a3[m vendor: fix aicp versioning
+[33m3084686d0[m aicp: remove GoogleAnalytics param from romstats
+[33m577741be3[m Merge "lineage: qcom: Set thermal & vr HAL pathmaps" into p9.0
+[33mf401052b1[m vendor_aicp: Don't use https for stats 2/2
+[33md643543db[m lineage: qcom: Set thermal & vr HAL pathmaps
+[33mc22414246[m vendor_aicp: Update build tools from lineage
+[33mf49c4e1e2[m lineage: qcom: Set proper CAF data-ipa-cfg-mgr pathmap
+[33ma1a88bc8e[m lineage: qcom: Set data-ipa-cfg-mgr pathmap
+[33m827d60cd4[m roomservice: support devices with underscore in deps only mode
+[33macaa466cb[m qcom: Mark some gralloc bits as valid
+[33m0e0e3c757[m vendor: bring inline with LineageOS
+[33m033cf7d52[m soong_config: Add flag for crypto waiting on QSEE to start
+[33m5a153f7b4[m soong_config: Add flag for legacy HW FDE
+[33me742e79de[m soong_config: Add new flags for HW FDE
+[33mf4a6e624e[m Disable art debug and enable minimize debug info
+[33m9038f6f39[m vendor_aicp: soong: Add missing variables for qcom_bsp_legacy flag
+[33mb0f6ee2b4[m update the xda thread template
+[33m466005d78[m soong_config: Add flag for msm8974 1440p EGL workaround
+[33m290d88977[m vendor_aicp: Welcome Discord, rip google plus :(
+[33m5882cb011[m vendor: cleanup
+[33mcc809463f[m vendor_aicp: features: Remove duplicates
+[33m2fc6c29fb[m vendor: featurelist update
+[33m483ee24c7[m vendor_aicp: Update features list
+[33m0b4c360ec[m aicp: add omnijaws permissions
+[33m7e5af8e6b[m vendor_aicp: Build OmniJaws
+[33m5f5634141[m vendor: aicp: build DSPManager by replacing MusicFX
+[33mc4ba03a08[m Update apns-conf.xml
+[33med6d0e851[m overlay: Define Google Assistant as default
+[33m90da27565[m repopick: add hashtag support
+[33m5546fdedd[m repopick: Update SSH queries result to match HTTP queries
+[33ma3148406d[m repopick: Allow to pick changes by URL
+[33mfd3629805[m repopick: Actually print the patchset number
+[33m7ff9f8ab8[m repopick: Ignore the trailing slash in change numbers
+[33m304ee1960[m repopick: Try to keep the changes sorted
+[33m18e9c9c61[m tools: repopick: Correctly order changeset
+[33m7259bbe13[m Revert "repopick: add hashtag support"
+[33mfcfac1a5e[m repopick: Avoid failing on commits lookup
+[33ma26109875[m lineage: Add techpack/audio to include path also
+[33m3d3362e8f[m sepolicy: ignore neverallows
+[33m35e572b4e[m Merge changes from topic "aicp-wallpaper" into p9.0
+[33m20237b8ca[m  vendor: aicp: build JamesDSP
+[33m61c568c19[m vendor_aicp: Pin HOME application
+[33mc5c575b68[m vendor: aicp: build MusicFX instead of nonexistent AudioFX
+[33m72d72b6aa[m Build and use AICP live wallpaper
+[33m33ddf43b5[m Merge changes from topic "custom-hwui" into p9.0
+[33m1bace7f3e[m Add targets to support NTFS
+[33m6bbab3d07[m vendor: gzosp: Add phone-xhdpi-2048-dalvik-heap
+[33mac0e3402d[m vendor: gzosp: Add phone-xxhdpi-4096-dalvik-heap
+[33mab3d5831e[m vendor: gzosp: Add phone-xxhdpi-2048-dalvik-heap
+[33m0a73dab0e[m vendor: gzosp: Revert back to previous configuration for xxxhdpi-3072-dalvik-heap
+[33m4eb020b0c[m vendor: gzosp: Rework 3 and 4-GB dalvik heap configurations
+[33md56155a54[m vendor: gzosp: Update HWUI config for xxhdpi/2GB devices
+[33m5c8199c94[m vendor: gzosp: Update configuration for 2GB/1080p devices
+[33m54e442d7a[m vendor: gzosp: Provide overrides for hwui memory limits for xxhdpi phones
+[33mcb863eeba[m vendor: gzosp: Use 3gb dalvik heap and hwui
+[33m0f808b17c[m vendor: gzosp: Add HWUI overrides for xxxhdpi phone
+[33m5b9c5237c[m vendor: gzosp: Add dalvik heap override for xxxhdpi phone
+[33m924d6f7b9[m Remove rounded_corner_content_padding overlays
+[33m241568a48[m Merge "Statusbar padding: assume non-rounded screen again" into p9.0
+[33mabcb378d7[m Statusbar padding: assume non-rounded screen again
+[33mbfb49f5f4[m lineage: Consider techpack/audio when generating kernel headers
+[33m2ef67b178[m Add rules for non platform apps that use hidden APIs
+[33mc5470c4a0[m vendor_aicp: Build Jelly
+[33m714253253[m vendor_aicp: Build Phonograph
+[33m322deceb3[m repopick: support auth'ing to gerrit and picking drafts
+[33m5230ab6b7[m repopick: Support overriding the default commits count to check
+[33mcf0d8e44a[m repopick: don't bail on drafts
+[33md79abdce0[m repopick: Don't convert patchset to int if it's None
+[33m32c15c640[m repopick: Warn about empty commits instead of failing
+[33m1cf64680f[m repopick: Add 'reset' option
+[33m6f6d43e34[m repopick: Fix cherry picking specific patchsets
+[33me39835868[m repopick: be able to kang yourself
+[33m9aa253d5f[m repopick: Try to fast-forward first
+[33m0c8d1e69a[m repopick: add hashtag support
+[33mdc62458a4[m Include AICP theming packages
+[33m317ef8138[m vendor: ship rro packages in system overlay/ instead of app/
+[33mffadda9dd[m kernel.mk: Support kernels that use LTO
+[33m89849c7eb[m vendor_aicp: AICP'ify boot flash from image
+[33me313bac6d[m vendor_aicp: AICP'ify extract utilities script
+[33mc02e25b34[m vendor_aicp: AICP'ify build targets
+[33ma0e3c208c[m Merge changes from topics "pie-kernel-headers", "aicpify" into p9.0
+[33m3f4ab264a[m aicp: Move some kernel definitions to BoardConfigKernel
+[33m12cb0dedb[m vendor/aicp: Remove kernel.mk headers generation
+[33m78dd8ec53[m aicp: Dynamically generate kernel headers using aicp generator
+[33m7f5066ba0[m vendor/aicp: Add soong generator module type
+[33m6ca007117[m vendor_aicp: AICP'ify more
+[33mafe725436[m vendor_aicp: change LCD density custom prop
+[33m9d0a4a974[m vendor_aicp: create "los" not "cm" remote
+[33m592c131c8[m build: Use TOPDIR, not TOP
+[33m61d646595[m lineage: add BUILD_RRO_SYSTEM_PACKAGE target
+[33m8605c4775[m vendor_aicp: disable rescue party
+[33m0ef411bf0[m vendor: Add turbo privapp-permissions whitelist
+[33m7f370b302[m prebuilt: Update Turbo and add correct sysconfig
+[33m9707fb313[m overlay: Allow all apps to use smart replies
+[33m5df20af38[m overlay: Enable Smart Battery
+[33m7c9f5e93c[m overlay: Fix status bar padding for all devices
+[33m4db508fd1[m Merge "soong_config: Allow process-specific override of target SDK version" into p9.0
+[33m60c35e939[m soong_config: Allow process-specific override of target SDK version
+[33mabf045c87[m vendor_aicp: fix typo in Uses_generic_camera_parameter_library
+[33mf163698fd[m vendor_aicp: Fix soong build variables
+[33mb632cf933[m vendor_aicp: Rebrand CM -> Lineage
+[33m633c7a615[m vendor_aicp: Add back the maintainer application, and xda thread template
+[33m7dae62238[m vendor: bring back OTA
+[33m085912ec0[m Add missing ro.aicp.version.update prop
+[33mf08123a10[m vendor_aicp: build changelog [2/2]
+[33m636e70389[m Fix repopick path detection from AICP gerrit
+[33m4ce88a4fd[m vendor/aicp: Build AicpExtras
+[33m46a1f6e5c[m vendor_aicp: add random bootanimation
+[33m8b764981a[m Don't change default wallpaper
+[33m3e86bfbda[m vendor/aicp: AICPfy
+[33m71e95c248[m backuptool: update for 9
+[33m346d3bb54[m build: Add dtbo task
+[33m0fecdd22d[m qcom: Declare PRODUCT_SOONG_NAMESPACES for HALs
+[33m909184bb0[m gzosp: Move QC board variables earlier
+[33mbfe988441[m qcom_target: Add wlan-caf to CFI paths
+[33m31bf08117[m soong_config: Allow extension of valid gralloc 1.0 buffer usage bits
+[33m6014312ba[m soong_config: Add add_json_str_omitempty function
+[33m513449d8f[m soong_config: Remove extra spacing
+[33m26bcf208a[m vendor: Add OnePlus 6
+[33m52651e2fd[m devices: clean up some
+[33m520b72e24[m New Boot Animation and Walls for Pie by Pete Best
+[33m219d1fee8[m vendor: Fix bootanimation zip evaluation
+[33m5a480dd71[m gzosp: Make sure to consider our product makefiles
+[33mad59f641e[m gzosp: enable building otatools with generic targets
+[33m6bb2105e0[m gzosp: add generic gzosp targets
+[33m240335b95[m Don't enable ANDROID_BINDER_IPC_32BIT for mixed userspace/kernel
+[33m207514dc5[m kernel: Allow installing modules on system
+[33m0bd33efb3[m build: dt_image: support prebuilt DT images
+[33m66b3ea7cf[m cm: build: tasks: Remove BUILD_TINY_ANDROID check
+[33m2cd6323ae[m tasks: dt: add flag to optionally compress dt with lz4
+[33ma3e8cca18[m common: Start with 9.0 Alpha
+[33md87ae4719[m build: Nuke the kernel headers deprecation error
+[33mc80f7db99[m bootimage: Use OUT_DIR since OUT is deprecated
+[33me3a361f20[m soong: rework soong_config for Pie
+[33mc4c470b22[m bfqio: Include headers we use
+[33ma0db4d252[m kernel: Set CROSS_COMPILE_ARM32 if using aarch64
+[33m08536dadb[m kernel: Remove ANDROID_BUILD_TOP
+[33m1ca908cd9[m repopick: Fix : fatal: 'github' does not appear to be a git repository
+[33m5f6a17ea7[m backuptool: introduce addon.d script versioning
+[33m8d72e0089[m vendor: add custom backuptools and postinstall script for A/B OTAs
+[33m1019f854e[m build: Add support for sdm845 platform
+[33m611dac95f[m Add Mata to the list
+[33m61bed6371[m Been Longtime, Up the release with July Security patches!
+[33mb0db1e83d[m vendor: qcom_target/qcom_utils: add missing sdm660 platform
+[33m67701d13d[m gzosp: repopick: fix pick in the case of same name/path
+[33m8c79e2831[m devices: add berkeley
+[33m884a544bf[m kernel.mk: Get rid of URLs in Clang version string
+[33m19806152a[m build: kernel: Use LLVM_PREBUILTS_VERSION if no version is specified
+[33m638b82441[m kernel: fix ccache variable sanitation for clang builds
+[33m01091c0d3[m vendor_gzosp: common.mk: disable dialer_experience.xml
+[33m3e70edb19[m gzosp: add overlay for dark Launcher3
+[33m158d647e6[m soong: Add TARGET_USES_QTI_CAMERA_DEVICE
+[33m917a27fed[m devices : add ham
+[33m32dc0d4e9[m envsetup: include user variants
+[33m7f2c9b198[m GZOSP: Add tissot to build menu
+[33m827d25981[m gzosp: Sort soong variables and configurations
+[33m8d39092e6[m gzosp: soong: replace space with colon on TARGET_LD_SHIM_LIBS
+[33m16eb91fc9[m gzosp: soong: Add var for linker shim libs
+[33m91d5b807c[m backuptool: fix for 8.1.0
+[33m92619e347[m Revert "repopick: fetch only from gerrit, not from github"
+[33m98efc5c1c[m version: let's call it stable
+[33mb6b6f0317[m init: fix bfqio dirs
+[33m41f969d7a[m bfqio: Add missing include header
+[33m92107a785[m Fix kernel build failure on some devices and build hosts
+[33m2bceb4465[m roomservice: fix the missing space, my ocd got triggered
+[33m264dbd71e[m config: build aosp charger images
+[33mbed9495f9[m vendor: Disable statusbar padding by default
+[33m49a5cc553[m qcom_utils: allow overriding get-vendor-board-platforms
+[33mec53b47d8[m kernel: Rework kernel header logic
+[33m69380234c[m kernel: Allow building dtbo.img
+[33m007b6f5c3[m kernel: don't build for TARGET_NO_KERNEL targets
+[33ma3eb73e59[m tasks: kernel: Add support for Clang kernel builds
+[33m0a0a2b423[m [2/2] omni: add OTA script do delete package cache
+[33mb1bab2c6b[m validus: qcom: Set power HAL pathmap
+[33m77f352d6d[m validus: Add support for BFQIO cgroups
+[33m4c5cb2705[m build: Merge UM platforms into common HALs and disable BSP
+[33mf114a9bb8[m build: qcom: Add TARGET_USES_UM_PLATFORM to force UM build
+[33m3e4ec9fde[m qcom_target: Commonize UM target HALs
+[33m47a01e59f[m gzosp_devices: add a dumpling to the menu
+[33m18e1ca27f[m roomservice: default to 8.1 branch
+[33m95860c433[m kernel: Handle kernel modules correctly
+[33m0524c41f2[m gzosp: Add TARGET_SPECIFIC_CAMERA_PARAMETER_LIBRARY variable handling
+[33m492a1948c[m Add Pixel Sounds
+[33m38e264731[m Build new overlays And a few link adjustments Change-Id: I23ff4fa0ccfe64940357fd9e0c2c9d0c3e747c00
+[33m2fdc8c75a[m Add all Pixel sounds
+[33ma06f7e139[m vendor_gzosp: 8.1
+[33md2b349e40[m version: Lets Ground 8.1
+[33mbee53b8de[m extract_utils: gzosp
+[33mebde9418d[m extract_utils: gzosp
+[33mad70a1ae0[m extract_utils: Fix pinning when not cleaning vendor dir
+[33mfa7a28713[m extract_utils: Allow to interrupt the extraction
+[33m5518e19ab[m extract_files: Mark vendor etc files as proprietary
+[33mb4659e3d0[m extract_utils: cover vendor/frameworks
+[33meca8894b2[m extract_files: Add support for treble compatible makefiles
+[33m54568390e[m extract_files: Adjust deodex path and tmpdir
+[33mfefc9ba40[m extract_utils: implement LOCAL_MODULE_RELATIVE_PATH
+[33m7e288ce81[m extract_utils: Add VDEX deodex capabilities for oreo
+[33m403ef2220[m Fix extract_utils when not using blob sections
+[33m14b404267[m extract_files: Add support for paths without system/
+[33ma54658530[m extract_files: Add support for specifying blob sections
+[33md7584406e[m extract_utils: Fix cleanup variables assigment
+[33m477d5f019[m extract_utils: fix extracting XML files containing binary characters
+[33mbe64ff7c0[m extract_utils: support extracting directly from an ota zip
+[33ma4d379198[m extract_utils: Fix locale issue with sort
+[33m96ec88fd7[m extract-utils: Fix handling of pulling src:dest pairs from dumps
+[33mbfb26ef1c[m extract_utils: Detect output existence before moving it for backup
+[33m652141815[m extract_utils: Introduce variable INITIAL_COPYRIGHT_YEAR
+[33m381ca9eda[m extract_utils: Update backsmali command
+[33m34ceb4d0e[m extract_utils: Use shasum on macOS
+[33m976605287[m extract_utils: Add option to define the certificate for jars
+[33mf582a350c[m extract_utils: Update to smali/baksmali v2.2b3
+[33m789504eb9[m extract_utils: Do not change app SRC if there are arguments
+[33mf5a0ca079[m extract_utils: Add ability to set custom device guard
+[33m033c7c86d[m extract_utils: Add ability to set custom vendor.mk name
+[33m4bab7835b[m gzosp: build: kernel: Rework kernel module logic
+[33m19448eef3[m devices: Bring in the LG G3 #LGPlz
+[33m8369f80d4[m devices: alphabetize plz
+[33m7bc49c760[m devices: add athene to the mix
+[33m00b1de52c[m Remove tab pngs. Now vectors in base
+[33m007edaa93[m build: Fix soong flags
+[33m30ebfe109[m repopick: Work around HTTPError due to extra slashes
+[33mea6f69f8b[m repopick : Don't print the git command to be exec'd
+[33m5f35eb759[m roomservice: Silence warning about deprecated macros
+[33m18087fee6[m +sanders: Add official support for Moto G5S Plus
+[33md87fe7109[m Add Surnia
+[33m0fa798cb7[m repopick: fetch only from gerrit, not from github
+[33m946065a74[m repopick: adapt for GZOSP's setup
+[33m7c3353b43[m repopick: update for 2017
+[33m463fd2bda[m repopick: default to gzosp gerrit
+[33mf5e51350e[m Merge pull request #4 from MRTHAKER/patch-1
+[33m1f101d964[m add zuk z2 plus
+[33m8d0ffd149[m take it to Beta
+[33mbe26d049e[m Merge pull request #3 from scoobyjenkins/8.0
+[33ma92499aa2[m Tweak the boot animation
+[33m1d89488b7[m Tweak the boot animation
+[33m33d943cd0[m overlay: update nightmode bool for O  * thanks for pointing out @ezio84 ;-)
+[33m37cfbf154[m Update initial attach for Tmo US
+[33m465261259[m Merge pull request #2 from scoobyjenkins/8.0
+[33ma34b4b28a[m New Boot Animation
+[33m33193269c[m Put roomservice in the correct folder
+[33m21612f10a[m Make roomservice executable
+[33m761bb2444[m Add roomservice
+[33mf5c4ec305[m Add in dialer_experience.xml to fix google phone bitching at us
+[33m0f1131dd4[m Materialize NFC Tags Icon
+[33m4d6530e8f[m Enable root in DocumentsUI
+[33md0347c367[m Disable app verification and enable non market apps installation
+[33m387f09d25[m default dnd acess packages
+[33m054613aed[m Empheral resolver packages
+[33m8c0181aef[m Add non blockable notification packages
+[33m3009520cb[m set google services defaults
+[33m826c715e9[m enable gesture settings/storage manager *also theme storage manager pixel blue
+[33mb49c587d1[m overlay: add contact provider and managed provision fixs
+[33m5f75c6e65[m webview_packages: fix incorrect signatures
+[33mfbd56b682[m webview_packages: prefer the more powerful webview packages
+[33m11227c5e1[m config: add some force enabled/disabled packages
+[33m81614876d[m Charger: Remove old alarm interface and update timerfd interface
+[33mea851a8d3[m kill sepolicy
+[33m6d74a6fb2[m Merge pull request #1 from scoobyjenkins/8.0
+[33md2d2f2bf4[m Tweak default walls
+[33ma5d1ffd24[m build: add getb64key.py
+[33mc6f9ae3c9[m add gzosp walls by @scoobyjenkins
+[33m1c0d82f5c[m Revert "hax: Force CAF qcom bt/wlan pathmap to AOSP"
+[33m8217e1f7f[m Revert "qcom_target: remove cflags"
+[33me9e06c431[m libhealthd: Add android-base and minui include paths
+[33mc64b10c2e[m minor cleanup
+[33md1dab90bf[m soong_config: Add TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS
+[33m2d9ad0135[m soong_config: Add TARGET_USES_MEDIA_EXTENSIONS variable
+[33m0649e5dbc[m soong_config: Add TARGET_HAS_LEGACY_CAMERA_HAL1 variable
+[33m125b2ae16[m it's gzosp v1.0
+[33m1fb115542[m hax: Force CAF qcom bt/wlan pathmap to AOSP
+[33m83361ab84[m Add gzosp boot animations
+[33m8dfe8f5f6[m libhealthd: Add libbase and libminui static libraries
+[33m81fcf308b[m Revert "Knock-off offline charger and healthd for now"
+[33mcd24d1850[m vendor: Add project pathmap defs
+[33mcc82820b7[m gzosp: add soong bits for boardflags
+[33m36b798766[m overlay: delete disabled/forceEnabledComponents
+[33m6af31d156[m overlay: disable retro drawables
+[33ma4ec3ff12[m devices: cleanup a bit
+[33m2a816fd1e[m Knock-off offline charger and healthd for now
+[33mb673c2ac3[m update version and backuptool for 8.0
+[33maab96aa71[m qcom_target: remove cflags
+[33m65c0d01ac[m Cleanup Just removing a few articles from build
+[33m8fa96782b[m Start Gzosp vendor
