@@ -1,7 +1,13 @@
-# Inherit mobile full common Lineage stuff
-$(call inherit-product, vendor/aicp/config/common_mobile_full.mk)
+# Inherit full common AICP stuff
+$(call inherit-product, vendor/aicp/config/common_full.mk)
 
-# Inherit tablet common Lineage stuff
+# Inherit tablet common AICP stuff
 $(call inherit-product, vendor/aicp/config/tablet.mk)
 
-$(call inherit-product, vendor/aicp/config/wifionly.mk)
+# Required packages
+PRODUCT_PACKAGES += \
+    LatinIME
+
+# Include AICP LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/aicp/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aicp/overlay/dictionaries

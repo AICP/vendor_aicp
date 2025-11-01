@@ -72,7 +72,9 @@ function check_product()
     else
         AICP_BUILD=
     fi
+    # LINEAGE_BUILD = AICP_BUILD
     export AICP_BUILD
+    # export LINEAGE_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
@@ -121,7 +123,7 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
-            # This is probably just the Aicp model name
+            # This is probably just the AICP model name
             if [ -z "$variant" ]; then
                 variant="userdebug"
             fi
@@ -137,13 +139,13 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/aicp-*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/aicp_*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
         fi
         echo "Waiting for device..."
-        adb wait-for-device-recovery
+        adb wait-for-online
         echo "Found device"
         if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD"); then
             echo "Rebooting to sideload for install"
@@ -292,7 +294,7 @@ function aicpremote()
     fi
     if [ -z "$REMOTE" ]
     then
-        REMOTE=$(git config --get remote.clo.projectname)
+        REMOTE=$(git config --get remote.caf.projectname)
         AICP="false"
     fi
 
@@ -304,28 +306,27 @@ function aicpremote()
         local PROJECT=$REMOTE
     fi
 
-    local AICP_USER=$(git config --get review.gerrit.aicp-rom.com.username)
+    local AICP_USER=$(git config --get review.gerrit.aicp-rom.username)
     if [ -z "$AICP_USER" ]
     then
-        git remote add aicp ssh://gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add aicp ssh://gerrit.aicp-rom:29418/$PFX$PROJECT
     else
-        git remote add aicp ssh://$AICP_USER@gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add aicp ssh://$AICP_USER@gerrit.aicp-rom:29418/$PFX$PROJECT
     fi
     echo "Remote 'aicp' created"
 }
 
 function aospremote()
 {
-    local T=`git rev-parse --show-toplevel 2> /dev/null`
-    if [ -z "$T" ]
+    if ! git rev-parse --git-dir &> /dev/null
     then
-        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
+        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
     git remote rm aosp 2> /dev/null
 
-    if [ -f "$T/.gitupstream" ]; then
-        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
+    if [ -f ".gitupstream" ]; then
+        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
         git remote add aosp ${REMOTE}
     else
         local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
@@ -343,37 +344,30 @@ function aospremote()
     echo "Remote 'aosp' created"
 }
 
-function cloremote()
+function cafremote()
 {
-    local T=`git rev-parse --show-toplevel 2> /dev/null`
-    if [ -z "$T" ]
+    if ! git rev-parse --git-dir &> /dev/null
     then
-        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
+        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
-    git remote rm clo 2> /dev/null
-
-    if [ -f "$T/.gitupstream" ]; then
-        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
-        git remote add clo ${REMOTE}
-    else
-        local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
-        # Google moved the repo location in Oreo
-        if [ $PROJECT = "build/make" ]
-        then
-            PROJECT="build_repo"
-        fi
-        if [[ $PROJECT =~ "qcom/opensource" ]];
-        then
-            PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
-        fi
-        if (echo $PROJECT | grep -qv "^device")
-        then
-            local PFX="platform/"
-        fi
-        git remote add clo https://git.codelinaro.org/clo/la/$PFX$PROJECT
+    git remote rm caf 2> /dev/null
+    local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+     # Google moved the repo location in Oreo
+    if [ $PROJECT = "build/make" ]
+    then
+        PROJECT="build"
     fi
-    echo "Remote 'clo' created"
+    if [[ $PROJECT =~ "qcom/opensource" ]];
+    then
+        PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
+    fi
+    if (echo $PROJECT | grep -qv "^device")
+    then
+        local PFX="platform/"
+    fi
+    git remote add caf https://source.codeaurora.org/quic/la/$PFX$PROJECT
+    echo "Remote 'caf' created"
 }
 
 function githubremote()
@@ -388,41 +382,13 @@ function githubremote()
 
     if [ -z "$REMOTE" ]
     then
-        REMOTE=$(git config --get remote.clo.projectname)
+        REMOTE=$(git config --get remote.caf.projectname)
     fi
 
     local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
     git remote add github https://github.com/AICP/$PROJECT
     echo "Remote 'github' created"
-}
-
-function privateremote()
-{
-    if ! git rev-parse --git-dir &> /dev/null
-    then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
-        return 1
-    fi
-    git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
-
-    git remote add private git@github.com:$PROJECT.git
-    echo "Remote 'private' created"
-}
-
-function privateremote()
-{
-    if ! git rev-parse --git-dir &> /dev/null
-    then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
-        return 1
-    fi
-    git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
-
-    git remote add private git@github.com:$PROJECT.git
-    echo "Remote 'private' created"
 }
 
 function installboot()
@@ -449,9 +415,9 @@ function installboot()
             return 1
         fi
     fi
-    adb wait-for-device-recovery
+    adb wait-for-online
     adb root
-    adb wait-for-device-recovery
+    adb wait-for-online
     if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/boot.img /cache/
@@ -487,9 +453,9 @@ function installrecovery()
             return 1
         fi
     fi
-    adb wait-for-device-recovery
+    adb wait-for-online
     adb root
-    adb wait-for-device-recovery
+    adb wait-for-online
     if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/recovery.img /cache/
@@ -499,6 +465,28 @@ function installrecovery()
     else
         echo "The connected device does not appear to be $AICP_BUILD, run away!"
     fi
+}
+
+function makerecipe() {
+    if [ -z "$1" ]
+    then
+        echo "No branch name provided."
+        return 1
+    fi
+    cd android
+    sed -i s/'default revision=.*'/'default revision="refs\/heads\/'$1'"'/ default.xml
+    git commit -a -m "$1"
+    cd ..
+
+    repo forall -c '
+
+    if [ "$REPO_REMOTE" = "github" ]
+    then
+        pwd
+        aicpremote
+        git push aicp HEAD:refs/heads/'$1'
+    fi
+    '
 }
 
 function aicpgerrit() {
@@ -781,7 +769,7 @@ function aicprebase() {
 }
 
 function mka() {
-    m "$@"
+    m -j "$@"
 }
 
 function cmka() {
@@ -867,6 +855,7 @@ function dopush()
         adb connect "$TCPIPPORT"
     fi
     adb wait-for-device &> /dev/null
+    sleep 0.3
     adb remount &> /dev/null
 
     mkdir -p $OUT
