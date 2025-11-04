@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-FRP_BLOCK=$(getprop ro.frp.pst)
+FRP_BLOCK=${1:-$(getprop ro.frp.pst)}
 
 if [[ -z "${FRP_BLOCK}" ]]; then
     echo "FRP prop not set"
