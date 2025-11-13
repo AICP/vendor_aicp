@@ -53,7 +53,7 @@ function mk_timer()
     return $ret
 }
 
-CLANG_VERSION=$(build/soong/scripts/get_clang_version.py)
+CLANG_VERSION=$(${ANDROID_BUILD_TOP}/build/soong/scripts/get_clang_version.py)
 export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 
 # check to see if the supplied product is one we can build
