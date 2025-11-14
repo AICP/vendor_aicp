@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7192783f_23b3f207",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 209
+      },
+      "writtenOn": "2025-11-14T07:16:14Z",
+      "side": 1,
+      "message": "Fixes breakfast trying to sync kernel sources from lineage-21 instead of lineage-23 on caiman. There\u0027s only lineage-23 for https://github.com/LineageOS/android_kernel_google_gs-6.1_manifest .",
+      "revId": "d6ddb13d3f9b35ba2f8727968db50abcd2436249",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
