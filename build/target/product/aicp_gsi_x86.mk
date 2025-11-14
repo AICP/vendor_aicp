@@ -21,3 +21,11 @@ PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 TARGET_NO_KERNEL_OVERRIDE := true
 
 PRODUCT_NAME := aicp_gsi_x86
+
+# Enable mainline checking
+PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := relaxed
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/app/Home/Home.apk \
+    system/etc/permissions/android.software.credentials.xml
+
