@@ -26,7 +26,10 @@
         <item>com.google.android.contacts</item> <!--­ Google Contacts­ -->
         <item>com.android.contacts</item> <!-- AOSP Contacts -->
         <item>com.google.android.googlequicksearchbox</item> <!--­ Google Launcher -->
+        <item>com.google.android.apps.wellbeing</item>
+        <item>com.google.android.GoogleCamera</item> <!--­ Google Camera­ -->
         <item>com.google.android.launcher</item> <!--­ Google Launcher -->
+        <item>com.google.android.apps.nexuslauncher</item> <!--­ Google Pixel Launcher -->
         <item>com.android.launcher3</item> <!-- AOSP Launcher -->
         <item>com.google.android.dialer</item> <!--­ Google dialer to enable making phone calls -->
         <item>com.android.dialer</item> <!-- AOSP dialer -->
@@ -34,5 +37,10 @@
         <item>com.android.messaging</item> <!-- AOSP messaging -->
         <item>com.google.android.setupwizard</item> <!-- Google SetupWizard -->
         <item>org.lineageos.setupwizard</item> <!-- LineageOS SetupWizard -->
+        <item>com.google.android.settings.intelligence</item>
+        <item>com.android.settings.intelligence</item>
+        <item>com.google.android.documentsui</item>
+        <item>com.google.android.apps.nbu.files</item>
+        <item>com.google.android.apps.tips</item>
     </string-array>
 </resources>
