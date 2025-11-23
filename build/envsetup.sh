@@ -13,11 +13,11 @@ function check_product()
         return
     fi
     if (echo -n $1 | grep -q -e "^lineage_") ; then
-        LINEAGE_BUILD=$(echo -n $1 | sed -e 's/^lineage_//g')
+        AICP_BUILD=$(echo -n $1 | sed -e 's/^lineage_//g')
     else
-        LINEAGE_BUILD=
+        AICP_BUILD=
     fi
-    export LINEAGE_BUILD
+    export AICP_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
@@ -78,13 +78,13 @@ function eat()
         echo "Waiting for device..."
         adb wait-for-device-recovery
         echo "Found device"
-        if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
+        if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD"); then
             echo "Rebooting to sideload for install"
             adb reboot sideload-auto-reboot
             adb wait-for-sideload
             adb sideload $ZIPPATH
         else
-            echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+            echo "The connected device does not appear to be $AICP_BUILD, run away!"
         fi
         return $?
     else
@@ -217,19 +217,19 @@ function lineageremote()
     fi
     git remote rm lineage 2> /dev/null
     local REMOTE=$(git config --get remote.github.projectname)
-    local LINEAGE="true"
+    local AICP="true"
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.aosp.projectname)
-        LINEAGE="false"
+        AICP="false"
     fi
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.clo.projectname)
-        LINEAGE="false"
+        AICP="false"
     fi
 
-    if [ $LINEAGE = "false" ]
+    if [ $AICP = "false" ]
     then
         local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
         local PFX="LineageOS/"
@@ -237,12 +237,12 @@ function lineageremote()
         local PROJECT=$REMOTE
     fi
 
-    local LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
-    if [ -z "$LINEAGE_USER" ]
+    local AICP_USER=$(git config --get review.gerrit.aicp-rom.com.username)
+    if [ -z "$AICP_USER" ]
     then
-        git remote add lineage ssh://review.lineageos.org:29418/$PFX$PROJECT
+        git remote add lineage ssh://gerrit.aicp-rom.com:29418/$PFX$PROJECT
     else
-        git remote add lineage ssh://$LINEAGE_USER@review.lineageos.org:29418/$PFX$PROJECT
+        git remote add lineage ssh://$AICP_USER@gerrit.aicp-rom.com:29418/$PFX$PROJECT
     fi
     echo "Remote 'lineage' created"
 }
@@ -371,14 +371,14 @@ function installboot()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
+    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/boot.img /cache/
         adb shell dd if=/cache/boot.img of=$PARTITION
         adb shell rm -rf /cache/boot.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $AICP_BUILD, run away!"
     fi
 }
 
@@ -409,14 +409,14 @@ function installrecovery()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
+    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
         adb shell rm -rf /cache/recovery.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $AICP_BUILD, run away!"
     fi
 }
 
@@ -430,7 +430,7 @@ function lineagegerrit() {
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.review.lineageos.org.username`
+    local user=`git config --get review.gerrit.aicp-rom.com.username`
     local review=`git config --get remote.github.review`
     local project=`git config --get remote.github.projectname`
     local command=$1
@@ -687,7 +687,7 @@ function lineagerebase() {
     echo "Bringing it up to date..."
     repo sync .
     echo "Fetching change..."
-    git fetch "http://review.lineageos.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
+    git fetch "http://gerrit.aicp-rom.com/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
     if [ "$?" != "0" ]; then
         echo "Error cherry-picking. Not uploading!"
         return
@@ -771,7 +771,7 @@ function dopush()
         echo "Device Found."
     fi
 
-    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD") || [ "$FORCE_PUSH" = "true" ];
+    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD") || [ "$FORCE_PUSH" = "true" ];
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
@@ -890,7 +890,7 @@ EOF
     rm -f $OUT/.log
     return 0
     else
-        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
+        echo "The connected device does not appear to be $AICP_BUILD, run away!"
     fi
 }
 
@@ -915,7 +915,7 @@ function fixup_common_out_dir() {
     common_out_dir=$(_get_build_var_cached OUT_DIR)/target/common
     target_device=$(_get_build_var_cached TARGET_DEVICE)
     common_target_out=common-${target_device}
-    if [ ! -z $LINEAGE_FIXUP_COMMON_OUT ]; then
+    if [ ! -z $AICP_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
             mv ${common_out_dir} ${common_out_dir}-${target_device}
             ln -s ${common_target_out} ${common_out_dir}
@@ -973,8 +973,8 @@ function build_kernel() {
         echo "Syncing ${KERNEL_BUILD_TOP}"
         local target_kernel_manifest=$(echo android_kernel_${target_kernel_source}_manifest | tr / _)
         local repo_init_args=("-b" "${lineage_version}")
-        if [ -n "${LINEAGE_MIRROR}" ]; then
-            repo_init_args+=("--reference" "${LINEAGE_MIRROR}")
+        if [ -n "${AICP_MIRROR}" ]; then
+            repo_init_args+=("--reference" "${AICP_MIRROR}")
         fi
         if [ -n "${REPO_VERSION}" ]; then
             repo_init_args+=("--repo-rev" "${REPO_VERSION}")
