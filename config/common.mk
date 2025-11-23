@@ -101,7 +101,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.control_privapp_permissions=enforce
 
-ifneq ($(TARGET_DISABLE_LINEAGE_SDK), true)
+ifneq ($(TARGET_DISABLE_AICP_SDK), true)
 # Lineage SDK
 include vendor/aicp/config/lineage_sdk_common.mk
 endif
