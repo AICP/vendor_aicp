@@ -14,7 +14,7 @@
 
 $(call inherit-product, device/generic/car/gsi_car_x86_64.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_car_target.mk
+include vendor/aicp/build/target/product/lineage_generic_car_target.mk
 
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
