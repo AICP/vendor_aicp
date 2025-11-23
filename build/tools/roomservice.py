@@ -45,12 +45,12 @@ except:
     device = product
 
 if not depsonly:
-    print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS)." % device)
+    print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/AICP)." % device)
 
 repositories = []
 
 if not depsonly:
-    githubreq = urllib.request.Request("https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml")
+    githubreq = urllib.request.Request("https://raw.githubusercontent.com/AICP/mirror/main/default.xml")
     try:
         result = ElementTree.fromstring(urllib.request.urlopen(githubreq, timeout=10).read().decode())
     except urllib.error.URLError:
@@ -251,7 +251,7 @@ def get_default_or_fallback_revision(repo_name):
 
     try:
         stdout = subprocess.run(
-            ["git", "ls-remote", "-h", "https://:@github.com/LineageOS/" + repo_name],
+            ["git", "ls-remote", "-h", "https://:@github.com/AICP/" + repo_name],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
         ).stdout.decode()
