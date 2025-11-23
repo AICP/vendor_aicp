@@ -19,7 +19,7 @@
 <resources>
     <bool name="def_wifi_on">true</bool>
 
-    <string name="def_backup_transport">com.stevesoltys.seedvault.transport.ConfigurableBackupTransport</string>
+    <string name="def_backup_transport">com.google.android.gms/.backup.BackupTransportService</string>
 
     <!-- Initial value for the Settings.Secure.IMMERSIVE_MODE_CONFIRMATIONS setting,
          which is a comma separated list of packages that no longer need confirmation

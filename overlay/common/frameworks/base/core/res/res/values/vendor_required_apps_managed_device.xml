@@ -34,5 +34,13 @@
         <item>com.android.messaging</item> <!-- AOSP messaging -->
         <item>com.google.android.setupwizard</item> <!-- Google SetupWizard -->
         <item>org.lineageos.setupwizard</item> <!-- LineageOS SetupWizard -->
+        <item>com.google.android.apps.wellbeing</item>
+        <item>com.google.android.GoogleCamera</item> <!--­ Google Camera­ -->    
+        <item>com.google.android.apps.nexuslauncher</item> <!--­ Google Pixel Launcher -->
+        <item>com.google.android.settings.intelligence</item>
+        <item>com.android.settings.intelligence</item>
+        <item>com.google.android.documentsui</item>
+        <item>com.google.android.apps.nbu.files</item>
+        <item>com.google.android.apps.tips</item>
     </string-array>
 </resources>
