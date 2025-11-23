@@ -16,7 +16,7 @@ $(call inherit-product, device/generic/common/gsi_arm64.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_target.mk
+include vendor/aicp/build/target/product/lineage_generic_target.mk
 
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
 
