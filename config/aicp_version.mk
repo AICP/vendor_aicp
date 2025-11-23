@@ -70,4 +70,4 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.romstats.buildtype=$(AICP_BUILDTYPE) \
     ro.romstats.version=$(VERSION) \
     ro.romstats.tframe=1 \
-    ro.romstats.askfirst=1
+    ro.romstats.askfirst=0
