@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "487fd768_c0eaa5cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2025-11-23T19:44:14Z",
+      "side": 1,
+      "message": "not sure. for me it\u0027s OK to enable it by default, but I would keep asking the user.",
+      "revId": "76e17f722939b4c23e00e926ff1ad3b594cbbd79",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
