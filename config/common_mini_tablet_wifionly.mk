@@ -1,7 +1,11 @@
-# Inherit mobile mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile_mini.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
-# Inherit tablet common Lineage stuff
-$(call inherit-product, vendor/lineage/config/tablet.mk)
+# Inherit mini common AICP stuff
+$(call inherit-product, vendor/aicp/config/common_mini.mk)
 
-$(call inherit-product, vendor/lineage/config/wifionly.mk)
+# Inherit tablet common AICP stuff
+$(call inherit-product, vendor/aicp/config/tablet.mk)
+
+# Required packages
+PRODUCT_PACKAGES += \
+    LatinIME

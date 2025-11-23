@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2019 The Android Open Source Project
+     Copyright (C) 2016 The Pure Nexus Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,26 +14,19 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <!-- Whether to enable the app battery usage list page feature. -->
-    <bool name="config_app_battery_usage_list_enabled">true</bool>
-
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- When true enable gesture setting. -->
     <bool name="config_gesture_settings_enabled">true</bool>
 
     <!-- If the Storage Manager settings are enabled. -->
     <bool name="config_storage_manager_settings_enabled">true</bool>
 
-    <!-- Whether to show a preference item for mobile plan -->
-    <bool name="config_show_mobile_plan">false</bool>
+    <!-- Whether or not homepage should display user's account avatar -->
+    <bool name="config_show_avatar_in_homepage">true</bool>
 
-    <!-- Whether wallpaper attribution should be shown or not. -->
-    <bool name="config_show_wallpaper_attribution">false</bool>
+    <!-- Whether memory from app_info_settings is available or not. -->
+    <bool name="config_show_app_info_settings_memory">true</bool>
 
-    <!-- Package name and fully-qualified class name for the wallpaper picker activity. -->
-    <string name="config_wallpaper_picker_package" translatable="false">com.android.wallpaper</string>
-    <!-- Fully-qualified class name for the styles & wallpaper picker activity. -->
-    <string name="config_styles_and_wallpaper_picker_class" translatable="false">com.android.customization.picker.CustomizationPickerActivity</string>
-    <!-- Action name for the styles & wallpaper picker activity. -->
-    <string name="config_styles_and_wallpaper_picker_action" translatable="false">android.intent.action.SET_WALLPAPER</string>
+    <!-- Whether to show the Preference for Adaptive connectivity -->
+    <bool name="config_show_adaptive_connectivity">true</bool>
 </resources>

@@ -1,4 +1,8 @@
-# Inherit mobile mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile_mini.mk)
+# Inherit mini common AICP stuff
+$(call inherit-product, vendor/aicp/config/common_mini.mk)
 
-$(call inherit-product, vendor/lineage/config/telephony.mk)
+# Required packages
+PRODUCT_PACKAGES += \
+    LatinIME
+
+$(call inherit-product, vendor/aicp/config/telephony.mk)

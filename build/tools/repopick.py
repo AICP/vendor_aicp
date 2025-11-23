@@ -34,7 +34,6 @@ from concurrent.futures import ThreadPoolExecutor
 from functools import cmp_to_key, partial
 from xml.etree import ElementTree
 
-
 # cmp() is not available in Python 3, define it manually
 # See https://docs.python.org/3.0/whatsnew/3.0.html#ordering-comparisons
 def cmp(a, b):
@@ -196,7 +195,7 @@ def is_closed(status):
 
 def is_lineage_gerrit(remote_url):
     p = urllib.parse.urlparse(remote_url)
-    return p.hostname == "review.lineageos.org"
+    return p.hostname == "gerrit.aicp-rom.com"
 
 
 def commit_exists(project_path, revision):
@@ -216,7 +215,7 @@ def main():
         description=textwrap.dedent(
             """\
         repopick.py is a utility to simplify the process of cherry picking
-        patches from LineageOS's Gerrit instance (or any gerrit instance of your choosing)
+        patches from AICP's Gerrit instance (or any gerrit instance of your choosing)
 
         Given a list of change numbers, repopick will cd into the project path
         and cherry pick the latest patch available.
@@ -302,7 +301,7 @@ def main():
     parser.add_argument(
         "-g",
         "--gerrit",
-        default="https://review.lineageos.org",
+        default="https://gerrit.aicp-rom.com",
         metavar="",
         help="Gerrit Instance to use. Form proto://[user@]host[:port]",
     )
@@ -378,7 +377,7 @@ def main():
             if not args.quiet:
                 print("")
 
-    # Get the main manifest from repo
+    # Get the master manifest from repo
     #   - convert project name and revision to a path
     project_name_to_data = {}
     manifest = subprocess.check_output(["repo", "manifest"], text=True)
