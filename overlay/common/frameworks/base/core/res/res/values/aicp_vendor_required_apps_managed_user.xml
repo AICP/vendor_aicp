@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- A list of apps to be retained on the managed user by a particular vendor.
+            Takes precedence over the disallowed apps lists. -->
+    <string-array translatable="false" name="vendor_required_apps_managed_user">
+        <item>com.google.android.apps.wellbeing</item>
+        <item>com.google.android.documentsui</item>
+        <item>com.google.android.apps.nbu.files</item>
+    </string-array>
+</resources>
