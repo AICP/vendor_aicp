@@ -1,0 +1,110 @@
+#Feature list
+
+_apart from the default AOSP settings..._
+
+- Ability to change the device host-name for WiFi connections
+- Ability to change the hosts file to block ads
+- Access to the built-in AOSP SystemUI tuner features
+- Adjust number of notifications on Lock-screen
+- Adjust volume dialog timeout
+- Adjustable actions for hardware buttons (including "kill app")
+- Advanced call log in AOSP dialer app
+- Advanced power menu with more options (recovery/bootloader/SystemUI, etc.)
+- Aicp Extras app for customizations (searchable from Settings app)
+- Allow more time steps to 'Do not disturb'
+- Always-on display with advanced features (show music title and weather)
+- Aspect ratio hack (legacy apps) configurable per app for supported devices
+- Automatic speakerphone by checking proximity (Dialer)
+- Battery bar with color change & animation on charge
+- Battery LED settings including custom colour setup
+- Blink flashlight for incoming call, call waiting
+- Bluetooth battery level display for external devices
+- Brightness Icon and position settings
+- Brightness slider
+- Built-in System themes (light/dark/black/transparent) with different accent colours
+- Blocking access to certain sensors for some apps to save battery
+- Charging sound and/or vibration
+- Configurable button lights settings
+- Configurable icon shapes (system wide)
+- CPU info overlay
+- Current Charging status on lock-screen
+- Custom App opening/closing animations
+- Custom Carrier Label
+- Custom system & screen off animations
+- Custom QuickSetting headers
+- Custom QuickSetting footer text
+- Custom volume step count
+- Device wake up via volume buttons toggle
+- Double tap to sleep on lock-screen
+- Double tap to sleep on status bar
+- Downloadable AICP bootanimations and Wallpapers
+- Edge notifications with colour options
+- Enable/Disable hardware keys
+- Enable/Disable lock-screen media art globally
+- Enable/Disable the nabvar
+- Enhanced Changelog in AicpExtras
+- Enhanced Launcher3 (Quickstep) with various tweaks & customizations
+- Fingerprint authentication vibration
+- Flip to Mute/Reject Call
+- FPS info overlay
+- HeadsUp notification timeout toggle
+- HeadsUp notifications snooze timer
+- Installed Apps: show link to Google Playstore
+- Integrated OTA-Updater App
+- Launch music player when headset is connected
+- Link/unlink notification & call volume
+- Live display (if enabled by the maintainer)
+- Lockscreen clock customizations
+- Lockscreen Visualizer
+- Membar in recents (SlimRecents)
+- Navigation Gestures
+- Network traffic in statusbar
+- Notification vibration toggle
+- On-the-go mode (transparent display)
+- Online viewable ROM Statistics per device and provider
+- Partial Screenshot
+- PocketMode
+- Power menu hideable on lock-screen
+- Quick-settings disable on lock-screen
+- Quick-settings fast pull down from right/left/always
+- Quick-settings footer warnings switchable
+- Quick-settings tile & options for Silent Mode (notifications stop/blacklist per app)
+- Quick-settings tile animations
+- Quick-settings tile for Ambient Display
+- Quick-settings tile for Gaming mode
+- Quick-settings tile for music playback & title display
+- Quick-settings tile for Night mode
+- Quick-settings tile for recovery/reboot
+- Quick-settings tile for Account Sync
+- Quick-settings tile titles visibility toggle
+- Quick-settings tiles columns adjustable
+- Quick-settings tiles rows adjustable
+- Quick-settings tiles shape adjustable
+- Quick-settings transparency
+- R style notification headers
+- Rotation suggestions toggle
+- Screen-record via Quick-settings tile or shortcut on power menu
+- Screenshot sound toggle
+- SELinux mode switch
+- SIM data icon enable/disable
+- SlimRecents for better recents handling with many tweaks & integrated app sidebar
+- Smart Pixels
+- Statusbar clock customizations
+- Statusbar logo
+- Statusbar Ticker for notifications and music title
+- Swap back and recents keys
+- Swap volume buttons
+- Swipe with 3 fingers to take a screenshot
+- System app remover
+- System info on QS panel
+- Toggle to show/hide app icons on toast messages
+- Torch Quick-settings tile and options for longpress on power button to enable it
+- Upload crash logs to aicp haste
+- VoLTE icon switchable
+- Volume button playback control when screen off
+- Volume buttons additional toggle to switch music tracks/cursor control on keyboard
+- Volume panel right/left
+- VoWiFi icon switchable
+- Yoga!!
+
+_...and more_
