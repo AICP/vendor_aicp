@@ -13,9 +13,9 @@
 # limitations under the License.
 
 $(call inherit-product, device/generic/goldfish/64bitonly/product/sdk_phone64_arm64.mk)
-$(call inherit-product, vendor/lineage/build/target/product/lineage_sdk_phone_arm64_board.mk)
+$(call inherit-product, vendor/aicp/build/target/product/lineage_sdk_phone_arm64_board.mk)
 
-include vendor/lineage/build/target/product/lineage_generic_target.mk
+include vendor/aicp/build/target/product/lineage_generic_target.mk
 
 # Always build modules from source
 PRODUCT_MODULE_BUILD_FROM_SOURCE := true
@@ -28,4 +28,4 @@ PRODUCT_NAME := lineage_sdk_phone_arm64
 PRODUCT_MODEL := LineageOS Android SDK built for arm64
 
 PRODUCT_SDK_ADDON_NAME := lineage
-PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := vendor/lineage/build/target/product/source.properties
+PRODUCT_SDK_ADDON_SYS_IMG_SOURCE_PROP := vendor/aicp/build/target/product/source.properties
