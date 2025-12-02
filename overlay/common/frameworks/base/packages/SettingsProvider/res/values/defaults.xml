@@ -18,9 +18,6 @@
 -->
 <resources>
     <bool name="def_wifi_on">true</bool>
-
-    <string name="def_backup_transport">com.stevesoltys.seedvault.transport.ConfigurableBackupTransport</string>
-
     <bool name="def_install_non_market_apps">true</bool>
     <bool name="def_package_verifier_enable">false</bool>
 
@@ -34,7 +31,4 @@
          for immersive mode.
          Override to disable immersive mode confirmation for certain packages. -->
     <string name="def_immersive_mode_confirmations" translatable="false">confirmed</string>
-
-    <!-- This is disabled by default, but turned on in SetupWizard -->
-    <bool name="assisted_gps_enabled">false</bool>
 </resources>
