@@ -45,7 +45,7 @@ except:
     device = product
 
 if not depsonly:
-    print("Device %s not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/AICP)." % device)
+    print("Device %s not found. Attempting to retrieve device repository from AICP Github (http://github.com/AICP)." % device)
 
 repositories = []
 
@@ -115,7 +115,7 @@ def get_from_manifest(devicename):
             lm = ElementTree.Element("manifest")
 
         for localpath in lm.findall("project"):
-            if re.search("android_device_.*_%s$" % device, localpath.get("name")):
+            if re.search("device_.*_%s$" % device, localpath.get("name")):
                 return localpath.get("path")
 
     return None
@@ -172,13 +172,13 @@ def add_to_manifest(repositories):
         repo_revision = repository['branch']
         print('Checking if %s is fetched from %s' % (repo_target, repo_name))
         if is_in_manifest(repo_target):
-            print('LineageOS/%s already fetched to %s' % (repo_name, repo_target))
+            print('AICP/%s already fetched to %s' % (repo_name, repo_target))
             continue
 
         project = ElementTree.Element("project", attrib = {
             "path": repo_target,
             "remote": "github",
-            "name": "LineageOS/%s" % repo_name,
+            "name": "AICP/%s" % repo_name,
             "revision": repo_revision })
         if repo_remote := repository.get("remote", None):
             # aosp- remotes are only used for kernel prebuilts, thus they
@@ -203,7 +203,7 @@ def add_to_manifest(repositories):
 
 def fetch_dependencies(repo_path):
     print('Looking for dependencies in %s' % repo_path)
-    dependencies_path = repo_path + '/lineage.dependencies'
+    dependencies_path = repo_path + '/aicp.dependencies'
     syncable_repos = []
     verify_repos = []
 
@@ -287,10 +287,10 @@ if depsonly:
 
 else:
     for repo_name in repositories:
-        if re.match(r"^android_device_[^_]*_" + device + "$", repo_name):
+        if re.match(r"^device_[^_]*_" + device + "$", repo_name):
             print("Found repository: %s" % repo_name)
             
-            manufacturer = repo_name.replace("android_device_", "").replace("_" + device, "")
+            manufacturer = repo_name.replace("device_", "").replace("_" + device, "")
             repo_path = "device/%s/%s" % (manufacturer, device)
             revision = get_default_or_fallback_revision(repo_name)
             if revision == "":
@@ -311,4 +311,4 @@ else:
             print("Done")
             sys.exit()
 
-print("Repository for %s not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
+print("Repository for %s not found in the AICP Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml." % device)
