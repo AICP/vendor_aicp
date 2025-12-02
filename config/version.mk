@@ -39,7 +39,8 @@ AICP_DISPLAY_VERSION := $(PRODUCT_VERSION_MAJOR)-$(AICP_VERSION_SUFFIX)
 
 # LineageOS version properties
 PRODUCT_SYSTEM_PROPERTIES += \
-    ro.lineage.version=$(AICP_VERSION) \
-    ro.lineage.display.version=$(AICP_DISPLAY_VERSION) \
-    ro.lineage.build.version=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR) \
+    ro.lineage.version=$(AICP_VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
+    ro.lineage.display.version=$(AICP_VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME) \
+    ro.lineage.build.version=$(AICP_VERSION) \
     ro.lineage.releasetype=$(AICP_BUILDTYPE)
+
