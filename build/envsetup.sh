@@ -53,10 +53,10 @@ function mk_timer()
     return $ret
 }
 
-CLANG_VERSION=$(${ANDROID_BUILD_TOP}/build/soong/scripts/get_clang_version.py)
+CLANG_VERSION=$(build/soong/scripts/get_clang_version.py)
 export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 
-RUST_VERSION=$(grep 'RustDefaultVersion =' ${ANDROID_BUILD_TOP}/build/soong/rust/config/global.go | awk '{print $3}' | awk -F '"' '{print $2}')
+RUST_VERSION=$(grep 'RustDefaultVersion =' build/soong/rust/config/global.go | awk '{print $3}' | awk -F '"' '{print $2}')
 export RUST_AOSP_PREBUILTS_VERSION="${RUST_VERSION}"
 
 # check to see if the supplied product is one we can build
@@ -72,7 +72,9 @@ function check_product()
     else
         AICP_BUILD=
     fi
+    # LINEAGE_BUILD = AICP_BUILD
     export AICP_BUILD
+    # export LINEAGE_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
@@ -121,7 +123,7 @@ function breakfast()
             # A buildtype was specified, assume a full device name
             lunch $target
         else
-            # This is probably just the Lineage model name
+            # This is probably just the AICP model name
             if [ -z "$variant" ]; then
                 variant="userdebug"
             fi
@@ -143,9 +145,9 @@ function eat()
             return 1
         fi
         echo "Waiting for device..."
-        adb wait-for-device-recovery
+        adb wait-for-online
         echo "Found device"
-        if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD"); then
+        if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD"); then
             echo "Rebooting to sideload for install"
             adb reboot sideload-auto-reboot
             adb wait-for-sideload
@@ -292,7 +294,7 @@ function aicpremote()
     fi
     if [ -z "$REMOTE" ]
     then
-        REMOTE=$(git config --get remote.clo.projectname)
+        REMOTE=$(git config --get remote.caf.projectname)
         AICP="false"
     fi
 
@@ -304,28 +306,27 @@ function aicpremote()
         local PROJECT=$REMOTE
     fi
 
-    local AICP_USER=$(git config --get review.gerrit.aicp-rom.com.username)
+    local AICP_USER=$(git config --get review.gerrit.aicp-rom.username)
     if [ -z "$AICP_USER" ]
     then
-        git remote add aicp ssh://gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add aicp ssh://gerrit.aicp-rom:29418/$PFX$PROJECT
     else
-        git remote add aicp ssh://$AICP_USER@gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add aicp ssh://$AICP_USER@gerrit.aicp-rom:29418/$PFX$PROJECT
     fi
     echo "Remote 'aicp' created"
 }
 
 function aospremote()
 {
-    local T=`git rev-parse --show-toplevel 2> /dev/null`
-    if [ -z "$T" ]
+    if ! git rev-parse --git-dir &> /dev/null
     then
-        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
+        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
     git remote rm aosp 2> /dev/null
 
-    if [ -f "$T/.gitupstream" ]; then
-        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
+    if [ -f ".gitupstream" ]; then
+        local REMOTE=$(cat .gitupstream | cut -d ' ' -f 1)
         git remote add aosp ${REMOTE}
     else
         local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
@@ -343,37 +344,30 @@ function aospremote()
     echo "Remote 'aosp' created"
 }
 
-function cloremote()
+function cafremote()
 {
-    local T=`git rev-parse --show-toplevel 2> /dev/null`
-    if [ -z "$T" ]
+    if ! git rev-parse --git-dir &> /dev/null
     then
-        echo "Git repository not found. Please run this from the directory of the Android repository you wish to set up."
+        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
-    git remote rm clo 2> /dev/null
-
-    if [ -f "$T/.gitupstream" ]; then
-        local REMOTE=$(cat "$T/.gitupstream" | cut -d ' ' -f 1)
-        git remote add clo ${REMOTE}
-    else
-        local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
-        # Google moved the repo location in Oreo
-        if [ $PROJECT = "build/make" ]
-        then
-            PROJECT="build_repo"
-        fi
-        if [[ $PROJECT =~ "qcom/opensource" ]];
-        then
-            PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
-        fi
-        if (echo $PROJECT | grep -qv "^device")
-        then
-            local PFX="platform/"
-        fi
-        git remote add clo https://git.codelinaro.org/clo/la/$PFX$PROJECT
+    git remote rm caf 2> /dev/null
+    local PROJECT=$(pwd -P | sed -e "s#$ANDROID_BUILD_TOP\/##; s#-caf.*##; s#\/default##")
+     # Google moved the repo location in Oreo
+    if [ $PROJECT = "build/make" ]
+    then
+        PROJECT="build"
     fi
-    echo "Remote 'clo' created"
+    if [[ $PROJECT =~ "qcom/opensource" ]];
+    then
+        PROJECT=$(echo $PROJECT | sed -e "s#qcom\/opensource#qcom-opensource#")
+    fi
+    if (echo $PROJECT | grep -qv "^device")
+    then
+        local PFX="platform/"
+    fi
+    git remote add caf https://source.codeaurora.org/quic/la/$PFX$PROJECT
+    echo "Remote 'caf' created"
 }
 
 function githubremote()
@@ -388,41 +382,13 @@ function githubremote()
 
     if [ -z "$REMOTE" ]
     then
-        REMOTE=$(git config --get remote.clo.projectname)
+        REMOTE=$(git config --get remote.caf.projectname)
     fi
 
     local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
     git remote add github https://github.com/AICP/$PROJECT
     echo "Remote 'github' created"
-}
-
-function privateremote()
-{
-    if ! git rev-parse --git-dir &> /dev/null
-    then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
-        return 1
-    fi
-    git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
-
-    git remote add private git@github.com:$PROJECT.git
-    echo "Remote 'private' created"
-}
-
-function privateremote()
-{
-    if ! git rev-parse --git-dir &> /dev/null
-    then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
-        return 1
-    fi
-    git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
-
-    git remote add private git@github.com:$PROJECT.git
-    echo "Remote 'private' created"
 }
 
 function installboot()
@@ -449,10 +415,10 @@ function installboot()
             return 1
         fi
     fi
-    adb wait-for-device-recovery
+    adb wait-for-online
     adb root
-    adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
+    adb wait-for-online
+    if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/boot.img /cache/
         adb shell dd if=/cache/boot.img of=$PARTITION
@@ -487,10 +453,10 @@ function installrecovery()
             return 1
         fi
     fi
-    adb wait-for-device-recovery
+    adb wait-for-online
     adb root
-    adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
+    adb wait-for-online
+    if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
@@ -499,6 +465,28 @@ function installrecovery()
     else
         echo "The connected device does not appear to be $AICP_BUILD, run away!"
     fi
+}
+
+function makerecipe() {
+    if [ -z "$1" ]
+    then
+        echo "No branch name provided."
+        return 1
+    fi
+    cd android
+    sed -i s/'default revision=.*'/'default revision="refs\/heads\/'$1'"'/ default.xml
+    git commit -a -m "$1"
+    cd ..
+
+    repo forall -c '
+
+    if [ "$REPO_REMOTE" = "github" ]
+    then
+        pwd
+        aicpremote
+        git push aicp HEAD:refs/heads/'$1'
+    fi
+    '
 }
 
 function aicpgerrit() {
@@ -781,7 +769,7 @@ function aicprebase() {
 }
 
 function mka() {
-    m "$@"
+    m -j "$@"
 }
 
 function cmka() {
@@ -852,7 +840,7 @@ function dopush()
         echo "Device Found."
     fi
 
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD") || [ "$FORCE_PUSH" = "true" ];
+    if (adb shell getprop ro.aicp.device | grep -q "$AICP_BUILD") || [ "$FORCE_PUSH" = "true" ];
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
@@ -867,6 +855,7 @@ function dopush()
         adb connect "$TCPIPPORT"
     fi
     adb wait-for-device &> /dev/null
+    sleep 0.3
     adb remount &> /dev/null
 
     mkdir -p $OUT
@@ -1011,8 +1000,36 @@ function fixup_common_out_dir() {
     fi
 }
 
+function sync_all_kernels() {
+    source ${ANDROID_BUILD_TOP}/vendor/aicp/vars/kernel_platform
+
+    for kver in "${!kernel_branches[@]}"; do
+        BRANCH="${kernel_branches[$kver]}"
+        KERNELVER=$(echo "$BRANCH" |awk -F"-" '{ print $3 }');
+        KERNELPATH=$(realpath ${ANDROID_BUILD_TOP}/../kernel-${KERNELVER})
+        if [ ! -d "${KERNELPATH}" ]; then
+            echo Initializing kernel-${KERNELVER};
+            mkdir -p ${KERNELPATH}
+            pushd ${KERNELPATH}
+            repo init -u $kernel_manifest_url -b $BRANCH
+            reposync
+            popd
+        else
+            echo Updating kernel-${KERNELVER};
+            pushd ${KERNELPATH}
+            CURBRANCH=$(repo info |grep '^Manifest merge branch' |awk -F'/' '{ print $NF }')
+            if [ "$CURBRANCH" != "$BRANCH" ]; then
+                echo Updating kernel-${KERNELVER} from $CURBRANCH to $BRANCH
+                repo init -b $BRANCH
+            fi
+            reposync
+            popd
+        fi
+    done
+}
+
 function build_kernel() {
-    local lineage_version="lineage-$(_get_build_var_cached PRODUCT_VERSION_MAJOR).$(_get_build_var_cached PRODUCT_VERSION_MINOR)"
+    local lineage_version="lineage-$(_get_build_var_cached LINEAGE_VERSION_MAJOR).$(_get_build_var_cached LINEAGE_VERSION_MINOR)"
 
     local target_kernel_device="$(_get_build_var_cached TARGET_KERNEL_DEVICE)"
     local target_kernel_dir="${ANDROID_BUILD_TOP}/$(_get_build_var_cached TARGET_KERNEL_DIR)"
@@ -1054,14 +1071,14 @@ function build_kernel() {
         echo "Syncing ${KERNEL_BUILD_TOP}"
         local target_kernel_manifest=$(echo android_kernel_${target_kernel_source}_manifest | tr / _)
         local repo_init_args=("-b" "${lineage_version}")
-        if [ -n "${AICP_MIRROR}" ]; then
-            repo_init_args+=("--reference" "${AICP_MIRROR}")
+        if [ -n "${LINEAGE_MIRROR}" ]; then
+            repo_init_args+=("--reference" "${LINEAGE_MIRROR}")
         fi
         if [ -n "${REPO_VERSION}" ]; then
             repo_init_args+=("--repo-rev" "${REPO_VERSION}")
         fi
 
-        yes | repo init -u https://github.com/AICP/${target_kernel_manifest}.git ${repo_init_args[@]} || [ $? -eq 141 ]
+        yes | repo init -u https://github.com/LineageOS/${target_kernel_manifest}.git ${repo_init_args[@]} || [ $? -eq 141 ]
         if [ $? -ne 0 ]; then
             echo "Kernel source repo init failed"
             popd > /dev/null
@@ -1092,33 +1109,4 @@ function build_kernel() {
     cp -a "${KERNEL_BUILD_TOP}/out/${target_kernel_device}/dist/"* "${target_kernel_dir}/"
     chmod -x "${target_kernel_dir}/"*
     echo "Kernel build output copied to ${target_kernel_dir}/"
-
-}
-
-function sync_all_kernels() {
-    source ${ANDROID_BUILD_TOP}/vendor/aicp/vars/kernel_platform
-
-    for kver in "${!kernel_branches[@]}"; do
-        BRANCH="${kernel_branches[$kver]}"
-        KERNELVER=$(echo "$BRANCH" |awk -F"-" '{ print $3 }');
-        KERNELPATH=$(realpath ${ANDROID_BUILD_TOP}/../kernel-${KERNELVER})
-        if [ ! -d "${KERNELPATH}" ]; then
-            echo Initializing kernel-${KERNELVER};
-            mkdir -p ${KERNELPATH}
-            pushd ${KERNELPATH}
-            repo init -u $kernel_manifest_url -b $BRANCH
-            reposync
-            popd
-        else
-            echo Updating kernel-${KERNELVER};
-            pushd ${KERNELPATH}
-            CURBRANCH=$(repo info |grep '^Manifest merge branch' |awk -F'/' '{ print $NF }')
-            if [ "$CURBRANCH" != "$BRANCH" ]; then
-                echo Updating kernel-${KERNELVER} from $CURBRANCH to $BRANCH
-                repo init -b $BRANCH
-            fi
-            reposync
-            popd
-        fi
-    done
 }

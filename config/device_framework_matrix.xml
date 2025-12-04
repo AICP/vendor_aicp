@@ -1,0 +1,129 @@
+<?xml version="2.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2021-2025 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<compatibility-matrix version="2.0" type="framework">
+    <!-- Camera -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.camera.motor</name>
+        <version>1.0</version>
+        <interface>
+            <name>ICameraMotor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Charging -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.chgctrl</name>
+        <version>1.0</version>
+        <interface>
+            <name>IChargeControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.health</name>
+        <version>1-2</version>
+        <interface>
+            <name>IChargingControl</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IFastCharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.powershare</name>
+        <version>1</version>
+        <interface>
+            <name>IPowerShare</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Display -->
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.livedisplay</name>
+        <version>1</version>
+        <interface>
+            <name>IAdaptiveBacklight</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAntiFlicker</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IAutoContrast</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IColorBalance</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IColorEnhancement</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayColorCalibration</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IReadingEnhancement</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!-- Touch -->
+    <hal format="aidl" optional="true">
+        <name>vendor.lineage.touch</name>
+        <version>1</version>
+        <interface>
+            <name>IGloveMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IHighTouchPollingRate</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeyDisabler</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IKeySwapper</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IStylusMode</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ITouchscreenGesture</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Trust -->
+    <hal format="hidl" optional="true">
+        <name>vendor.lineage.trust</name>
+        <version>1.0</version>
+        <interface>
+            <name>IUsbRestrict</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
