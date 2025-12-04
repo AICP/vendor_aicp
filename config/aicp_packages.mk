@@ -31,6 +31,11 @@ PRODUCT_PACKAGES += \
     libhealthd.aicp
 endif
 
+# AICP OTA
+ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+PRODUCT_PACKAGES +=  \
+   Updater
+
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
