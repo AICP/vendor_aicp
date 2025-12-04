@@ -7,12 +7,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hosts.aicp_adblock
 
+# AICP OTA
+ifneq ($(AICP_BUILDTYPE),UNOFFICIAL)
+PRODUCT_PACKAGES +=  \
+   Updater
+
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/common/etc/init/init.aicp-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.aicp-updater.rc
+endif
+
 # A/B OTA Optimization
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 endif
+
+# AicpSetupWizard
+#ifneq ($(WITH_GMS),true)
+#PRODUCT_PACKAGES += \
+#    AicpSetupWizard
+#endif
 
 # Bootanimation include
 PRODUCT_PACKAGES += \
@@ -35,26 +50,109 @@ PRODUCT_PACKAGES += \
 
 # Optional packages
 PRODUCT_PACKAGES += \
+    Aperture \
     AppPredictionService \
+    AudioFX \
+    Camelot \
+    Etar \
+    ExactCalculator \
+    Glimpse \
+    Jelly \
+    Recorder \
+    ThemePicker \
+    ThemesStub \
+    Twelve \
     WallpaperPicker2
+
+# Required packages
+PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
+
+# SystemUI plugins
+PRODUCT_PACKAGES += \
+    QuickAccessWallet
+
+# TextClassifier
+PRODUCT_PACKAGES += \
+    libtextclassifier_annotator_en_model \
+    libtextclassifier_annotator_universal_model \
+    libtextclassifier_actions_suggestions_universal_model \
+    libtextclassifier_lang_id_model
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/textclassifier/actions_suggestions.universal.model \
+    system/etc/textclassifier/lang_id.model \
+    system/etc/textclassifier/textclassifier.en.model \
+    system/etc/textclassifier/textclassifier.universal.model
+
+# su
+PRODUCT_PACKAGES += \
+    adb_root
+
+ifeq ($(WITH_SU),true)
+PRODUCT_PACKAGES += \
+    su
+endif
+
+# MusicFX
+# PRODUCT_PACKAGES += \
+#    MusicFX
+
+# Phonograph
+# PRODUCT_PACKAGES += \
+#    Phonograph
+
+# PRODUCT_PACKAGES += \
+#    GameSpace
+
+# OmniStyle
+# PRODUCT_PACKAGES += \
+#    OmniStyle
+
+# Config
+PRODUCT_PACKAGES += \
+    SimpleDeviceConfig
 
 # Extra tools
 PRODUCT_PACKAGES += \
+    openvpn \
     e2fsck \
-    libsepol \
     mke2fs \
-    tune2fs \
-    wget
+    tune2fs
 
-# Audio
-LOCAL_PATH := frameworks/base/data/sounds
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/Alarm_Classic.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Alarm_Classic.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Krypton.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Krypton-old.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Neon.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Neon-old.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Osmium.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Osmium-old.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Oxygen.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Oxygen-old.ogg \
-    $(LOCAL_PATH)/alarms/ogg/Platinum.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Platinum-old.ogg \
+# Filesystems tools
+PRODUCT_PACKAGES += \
+    fsck.ntfs \
+    mkfs.ntfs \
+    mount.ntfs
+
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/bin/fsck.ntfs \
+    system/bin/mkfs.ntfs \
+    system/bin/mount.ntfs \
+    system/%/libfuse-lite.so \
+    system/%/libntfs-3g.so
+
+# Extra tools
+PRODUCT_PACKAGES += \
+#    7z \
+    bash \
+    curl \
+    getcap \
+    htop \
+#    lib7z \
+    libsepol \
+    nano \
+#    pigz \
+    powertop \
+    rsync \
+    setcap \
+    unrar \
+    unzip \
+    vim \
+    wget \
+    zip \
+    zstd
 
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
