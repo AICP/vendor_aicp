@@ -107,7 +107,9 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/textclassifier/textclassifier.universal.model
 
 # Themes
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
 #    LineageBlackTheme \
+
+PRODUCT_PACKAGES += \
     ThemePicker \
     ThemesStub
