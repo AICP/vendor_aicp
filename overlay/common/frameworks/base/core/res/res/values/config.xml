@@ -33,27 +33,6 @@
 
          The chosen package for the specific location provider does not
          depend on the order of this list. -->
-    <string-array name="config_locationProviderPackageNames" translatable="false">
-        <!-- The Google provider -->
-        <item>com.google.android.gms</item>
-        <!-- The standard AOSP fused location provider -->
-        <item>com.android.location.fused</item>
-        <!-- The MicroG Unified location provider -->
-        <item>org.microg.nlp</item>
-    </string-array>
-
-    <string-array name="config_locationExtraPackageNames" translatable="false">
-        <!-- Bluetooth -->
-        <item>com.android.bluetooth</item>
-        <!-- TeleService -->
-        <item>com.android.phone</item>
-        <!-- CneApp -->
-        <item>com.qualcomm.qti.cne</item>
-        <!-- ImsService -->
-        <item>com.shannon.imsservice</item>
-        <!-- MediaTek ImsService -->
-        <item>com.mediatek.ims</item>
-    </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
@@ -75,7 +54,6 @@
     <integer name="config_multiuserMaximumUsers">4</integer>
 
    <!-- Set icon mask to circle -->
-   <string name="config_icon_mask" translatable="false">"M50 0A50 50,0,1,1,50 100A50 50,0,1,1,50 0"</string>
 
     <!-- Whether action menu items should be displayed in ALLCAPS or not.
          Defaults to true. If this is not appropriate for specific locales
@@ -153,7 +131,6 @@
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
          in hardware. -->
-    <bool name="config_setColorTransformAccelerated">true</bool>
 
     <!-- The default value used for RawContacts.ACCOUNT_NAME when contacts are inserted without this
          column set. These contacts are stored locally on the device and will not be removed even
