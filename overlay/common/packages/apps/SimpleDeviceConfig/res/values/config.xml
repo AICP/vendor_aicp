@@ -20,11 +20,61 @@
         <!--
             System
         -->
+        <!-- Hide Navigation handle on lockscreen -->
+        <item>systemui/nav_bar_handle_show_over_lockscreen=false</item>
 
-        <!-- Use new privacy indicators for location -->
-        <item>privacy/location_indicators_enabled=true</item>
+        <item>runtime_native_boot/iorap_perfetto_enable=true</item>
+        <!--
+            Device Personalization Services (AiAi)
+        -->
+
+        <!-- Live Caption (Pixel 2017 + OEM) -->
+        <item>device_personalization_services/Captions__enable_augmented_modality=true</item>
+        <item>device_personalization_services/Captions__enable_augmented_music=true</item>
+        <item>device_personalization_services/Captions__enable_clearcut_logging=true</item>
+        <item>device_personalization_services/Captions__enable_punctuations=true</item>
+        <item>device_personalization_services/Captions__enable_setting_page=false</item>
+        <item>device_personalization_services/Captions__enable_text_transform=true</item>
+        <item>device_personalization_services/Captions__enable_westworld_logging=false</item>
+        <item>device_personalization_services/Captions__enable_zero_day=false</item>
+        <item>device_personalization_services/Captions__manifest_url_template=https://storage.googleapis.com/captions/%{NAMESPACE}_%{VERSION}_manifest.json</item>
+        <item>device_personalization_services/Captions__model_version_v1=20190613</item>
+        <item>device_personalization_services/Captions__model_version_v1_2=20200112</item>
+        <item>device_personalization_services/Captions__new_model_version_advanced=20210930</item>
+        <item>device_personalization_services/Captions__speech_threshold=0.2</item>
+        <item>device_personalization_services/Captions__surface_sound_events=true</item>
+        <item>device_personalization_services/Captions__visibility_playing_duration_millis=5000</item>
+        <item>device_personalization_services/Captions__visibility_stopped_duration_millis=1500</item>
+
+        <!-- Now Playing (Pixel 2017) -->
+        <item>device_personalization_services/NowPlaying__ambient_music_index_manifest_17_09_02=167:https://storage.googleapis.com/music-iq-db/updatable_ytm_db/20210221-030046/manifest.json</item>
+
+        <!-- Adaptive Sound (Pixel 2020) -->
+        <item>device_personalization_services/AdaptiveAudio__enable_adaptive_audio=true</item>
+        <item>device_personalization_services/AdaptiveAudio__show_promo_notification=true</item>
+
+        <!-- Screen attention (Pixel 2019) -->
+        <item>device_personalization_services/Attention__accel_sensor_enabled=false</item>
+        <item>device_personalization_services/Attention__accel_sensor_threshold_mss=0.2</item>
+        <item>device_personalization_services/Attention__enabled=true</item>
+        <item>device_personalization_services/Attention__margin_horizontal_px=1000</item>
+        <item>device_personalization_services/Attention__margin_vertical_px=1000</item>
+        <item>device_personalization_services/Attention__proximity_sensor_enabled=false</item>
+
+        <!-- Disable unused AiAi features -->
+        <item>device_personalization_services/Autofill__enable=false</item>
+        <item>device_personalization_services/Autofill__enable_fa=false</item>
+        <item>device_personalization_services/Fedex__enable_fedex=false</item>
+        <item>device_personalization_services/Logging__enable_aiai_clearcut_logging=false</item>
+        <item>device_personalization_services/NotificationAssistant__enable_service=false</item>
+        <item>device_personalization_services/Overview__enable_overview=false</item>
+        <item>device_personalization_services/VisualCortex__enable=false</item>
+
         <!-- Allow users to disable location indicators in Developer Options -->
         <item>privacy/location_indicator_settings_enabled=true</item>
+
+        <!-- Enable smart actions in the clipboard overlay -->
+        <item>systemui/clipboard_overlay_show_actions=true</item>
 
         <!--
             Keep track of more app ops for privacy dashboard display.
@@ -48,17 +98,19 @@
         -->
         <item>privacy/discrete_history_ops_cslist=0,109,1,108,26,101,27,102,106,100,8,9,6,7,4,5,62,59,60,90,77,111,114,112,51,65,13,6,7,52,53,54,69,74,79,113,20,16,14,19,18,57</item>
 
+        <!-- Keep up to 7 days of permission usage history -->
+        <item>privacy/discrete_history_cutoff_millis=604800000</item>
+
         <!-- Disable always screen on -->
         <item>attention_manager_service/keep_screen_on_enabled=false</item>
 
-        <!-- Media Provider -->
-        <item>mediaprovider/allowed_cloud_providers=com.google.android.apps.photos.cloudpicker</item>
-
-        <!-- Autofill compatibility apps -->
-        <item>autofill/compat_mode_allowed_packages=com.android.chrome[url_bar]:com.brave.browser[url_bar]:com.brave.browser_beta[url_bar]:com.brave.browser_nightly[url_bar]:com.chrome.beta[url_bar]:com.chrome.dev[url_bar]:com.chrome.canary[url_bar]:com.microsoft.emmx[url_bar]:com.microsoft.emmx.beta[url_bar]:com.microsoft.emmx.canary[url_bar]:com.microsoft.emmx.dev[url_bar]:com.opera.browser[url_field]:com.opera.browser.beta[url_bar]:com.opera.mini.native[url_bar]:com.opera.mini.native.beta[url_bar]:com.sec.android.app.sbrowser[location_bar_edit_text]:com.sec.android.app.sbrowser.beta[location_bar_edit_text]:org.mozilla.fennec_aurora[url_bar]:org.mozilla.firefox[url_bar]:org.mozilla.firefox_beta[url_bar]:org.chromium.chrome[url_bar]</item>
-
-        <!-- For SeedVault Backup -->
-        <item>backup_and_restore/backup_transport_future_timeout_millis=900000</item>
-        <item>backup_and_restore/backup_transport_callback_timeout_millis=900000</item>
+        <!-- Show notification volume control slider separate from ring -->
+        <item>systemui/volume_separate_notification=true</item>
     </string-array>
+
+    <string-array name="configs_base_soft">
+        <!-- Use new privacy indicators for location -->
+        <item>privacy/location_indicators_enabled=true</item>
+    </string-array>
+
 </resources>
