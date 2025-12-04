@@ -13,6 +13,12 @@ PRODUCT_PACKAGES += \
     org.lineageos.platform-res \
     org.lineageos.platform
 
+# Lineage Essentials
+PRODUCT_PACKAGES += \
+    LineageParts \
+    LineageSettingsProvider \
+    Profiles
+
 # AOSP has no support of loading framework resources from /system_ext
 # so the SDK has to stay in /system for now
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
