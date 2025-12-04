@@ -81,6 +81,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ringtones/Zen_too.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/ringtones/Zen_too.ogg
 
 PRODUCT_PRODUCT_PROPERTIES += \
-   ro.config.ringtone=The_big_adventure.ogg \
    ro.config.notification_sound=Duet.ogg \
    ro.config.alarm_alert=Sunshower.ogg
