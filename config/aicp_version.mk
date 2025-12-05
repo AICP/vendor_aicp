@@ -56,6 +56,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
+# additions for LOS-recovery
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lineage.display.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
+
 # AICP Stats
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.aicp.branch=$(AICP_BRANCH) \
