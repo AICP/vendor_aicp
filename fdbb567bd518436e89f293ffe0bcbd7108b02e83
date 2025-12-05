@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "220af5a4_f3c47a6d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1375
+      },
+      "writtenOn": "2025-12-05T06:04:22Z",
+      "side": 1,
+      "message": "we will abandon this and let updater appear in all builds, so a local build can flashed too.",
+      "revId": "fdbb567bd518436e89f293ffe0bcbd7108b02e83",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
