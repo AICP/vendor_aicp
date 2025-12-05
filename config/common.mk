@@ -285,8 +285,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aicp/build/target/product/security/lineage
 
-include vendor/aicp/config/version.mk
-
 # Include AICP packages
 include vendor/aicp/config/aicp_packages.mk
 

@@ -4,6 +4,9 @@ AICP_BRANCH=w
 AICP_VERSION_MAJOR = 21
 AICP_VERSION_MINOR = 0
 AICP_VERSION_MAINTENANCE = 0
+# Base Lineage version for kernel builds
+LINEAGE_VERSION_MAJOR = 23
+LINEAGE_VERSION_MINOR = 0
 
 PRODUCT_VERSION_MAJOR := $(AICP_VERSION_MAJOR)
 PRODUCT_VERSION_MINOR := $(AICP_VERSION_MINOR)
@@ -53,6 +56,10 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.modversion=$(AICP_VERSION) \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
+# additions for LOS-recovery
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lineage.display.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
+
 # AICP Stats
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.aicp.branch=$(AICP_BRANCH) \
@@ -62,3 +69,4 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.romstats.version=$(VERSION) \
     ro.romstats.tframe=1 \
     ro.romstats.askfirst=1
+
