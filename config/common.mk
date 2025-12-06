@@ -4,7 +4,7 @@ $(call inherit-product-if-exists, vendor/extra/product.mk)
 # Allow vendor prebuilt repos to exclude themselves from bp scanning
 -include $(sort $(wildcard vendor/*/*/exclude-bp.mk))
 
-PRODUCT_BRAND ?= LineageOS
+#PRODUCT_BRAND ?= LineageOS
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -128,11 +128,11 @@ $(call enforce-product-packages-exist-internal,$(lastword $(_include_stack)),pro
 endif
 
 # Bootanimation
-TARGET_SCREEN_WIDTH ?= 1080
-TARGET_SCREEN_HEIGHT ?= 1920
-PRODUCT_PACKAGES += \
-    bootanimation.zip \
-    bootanimation-dark.zip
+#TARGET_SCREEN_WIDTH ?= 1080
+#TARGET_SCREEN_HEIGHT ?= 1920
+#PRODUCT_PACKAGES += \
+#    bootanimation.zip \
+#    bootanimation-dark.zip
 
 # Lineage interfaces
 PRODUCT_PACKAGES += \
@@ -147,8 +147,8 @@ endif
 
 ifeq ($(PRODUCT_IS_AUTOMOTIVE),)
 PRODUCT_PACKAGES += \
-    LineageParts \
-    LineageSetupWizard
+    LineageParts
+#    LineageSetupWizard
 endif
 
 PRODUCT_PACKAGES += \
@@ -285,7 +285,10 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/crowdin/overlay
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aicp/build/target/product/security/lineage
 
-include vendor/aicp/config/version.mk
+#include vendor/aicp/config/version.mk
+
+# Include AICP packages
+include vendor/aicp/config/aicp_packages.mk
 
 -include vendor/aicp-priv/keys/keys.mk
 
