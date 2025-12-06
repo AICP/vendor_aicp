@@ -196,7 +196,7 @@ def is_closed(status):
 
 def is_lineage_gerrit(remote_url):
     p = urllib.parse.urlparse(remote_url)
-    return p.hostname == "review.lineageos.org"
+    return p.hostname == "gerrit.aicp-rom.com"
 
 
 def commit_exists(project_path, revision):
@@ -302,7 +302,7 @@ def main():
     parser.add_argument(
         "-g",
         "--gerrit",
-        default="https://review.lineageos.org",
+        default="https://gerrit.aicp-rom.com",
         metavar="",
         help="Gerrit Instance to use. Form proto://[user@]host[:port]",
     )
