@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Enable All Apps header scrim (works fine with our fixed search UI) -->
+    <bool name="config_header_protection_supported">true</bool>
+
+</resources>
