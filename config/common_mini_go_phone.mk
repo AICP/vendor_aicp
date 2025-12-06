@@ -2,4 +2,4 @@
 PRODUCT_TYPE := go
 
 # Inherit mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mini_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_mini_phone.mk)
