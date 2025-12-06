@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP2A.250805.005"
+readonly build_id="BP3A.251105.013.A1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13691446"
+readonly build_number="14171100"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-bp2a.250805.005-factory-6f21846e.zip"
-readonly image_sha256="6f21846e7ce73d88947e26ff35bf34dffabc1ae12f51281dc3460248ee62555c"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-bp3a.251105.013.a1-factory-3527fab5.zip"
+readonly image_sha256="3527fab5a126e2d4c03594d2bdc6ba54fe560021b185088200646fdd74f06a9f"
 
-readonly flash_url="https://flash.android.com/build/13691446?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/14171100?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp2a.250805.005-dfcd16c8.zip"
-readonly ota_sha256="dfcd16c88192c595904188396211a1b3c75dea2fe490cf72e1711777ef8607ec"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp3a.251105.013.a1-560aceb3.zip"
+readonly ota_sha256="560aceb396c5ffa0301a1cfdfaae86662801584fbfcd2114c2db7ea6376a6688"
 
 readonly security_patch="unknown"

@@ -7,21 +7,21 @@ device_repos=(
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP2A.250805.005"
+readonly build_id="BP3A.251105.015"
 
 # Updated automatically via pixel/update-device-vars.sh
 
 readonly prev_aosp_tag="aml_tz6_351400020"
 readonly aosp_tag="unknown"
 
-readonly build_number="13691446"
+readonly build_number="14339231"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/felix-bp2a.250805.005-factory-0349b08a.zip"
-readonly image_sha256="0349b08ad980489d7395315660c844f62e0867c3dec54246f3bfe2bac601a541"
+readonly image_url="https://dl.google.com/dl/android/aosp/felix-bp3a.251105.015-factory-1a14950a.zip"
+readonly image_sha256="1a14950ac14171dcbe69a8022311814110621635c61ec395443751ff6d005b9d"
 
-readonly flash_url="https://flash.android.com/build/13691446?target=felix-user&signed"
+readonly flash_url="https://flash.android.com/build/14339231?target=felix-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-bp2a.250805.005-5f920d94.zip"
-readonly ota_sha256="5f920d94bbd2bb5f633c803b16e8d49c359a36f2883e92313cdbadc8d0e88709"
+readonly ota_url="https://dl.google.com/dl/android/aosp/felix-ota-bp3a.251105.015-5b2ab061.zip"
+readonly ota_sha256="5b2ab0615c282ab66e449efd4a8ccc4f51e48f2a15b544c5917d9055f47f2c04"
 
 readonly security_patch="unknown"
