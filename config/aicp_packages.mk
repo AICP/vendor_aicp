@@ -155,5 +155,3 @@ PRODUCT_COPY_FILES += \
 # Include AICP props
 include vendor/aicp/config/aicp_props.mk
 
-# Include AICP version
-include vendor/aicp/config/aicp_version.mk
