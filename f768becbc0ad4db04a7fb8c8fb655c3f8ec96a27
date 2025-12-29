@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85c86f32_b231c509",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 209
+      },
+      "writtenOn": "2025-12-29T19:12:26Z",
+      "side": 1,
+      "message": "Fixes breakfast caiman. I suppose it doesn\u0027t break any of our other devices, since the only AICP/android_kernel_ GitHub repo we have hasn\u0027t received updates since jellybean. So will probably merge once caiman is alive on 16.1.",
+      "revId": "f768becbc0ad4db04a7fb8c8fb655c3f8ec96a27",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
