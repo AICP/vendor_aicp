@@ -104,10 +104,6 @@ $(call inherit-product, vendor/aicp/audio/audio.mk)
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
 
-# Fonts
-PRODUCT_PACKAGES += \
-    fonts_customization.xml
-
 # Font files
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,vendor/aicp/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)

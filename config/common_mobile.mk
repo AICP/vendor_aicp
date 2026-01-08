@@ -72,14 +72,14 @@ PRODUCT_PACKAGES += \
     IconPackVictorAndroidOverlay \
     IconPackVictorLauncherOverlay \
     IconPackVictorSettingsOverlay \
-    IconPackVictorSystemUIOverlay
-#    IconShapePebbleOverlay \
-#    IconShapeRoundedRectOverlay \
-#    IconShapeSquareOverlay \
-#    IconShapeSquircleOverlay \
-#    IconShapeTaperedRectOverlay \
-#    IconShapeTeardropOverlay \
-#    IconShapeVesselOverlay
+    IconPackVictorSystemUIOverlay \
+    IconShapePebbleOverlay \
+    IconShapeRoundedRectOverlay \
+    IconShapeSquareOverlay \
+    IconShapeSquircleOverlay \
+    IconShapeTaperedRectOverlay \
+    IconShapeTeardropOverlay \
+    IconShapeVesselOverlay
 
 # Legal
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -107,9 +107,7 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/etc/textclassifier/textclassifier.universal.model
 
 # Themes
-#PRODUCT_PACKAGES += \
-#    LineageBlackTheme \
-
 PRODUCT_PACKAGES += \
+    LineageBlackTheme \
     ThemePicker \
     ThemesStub
