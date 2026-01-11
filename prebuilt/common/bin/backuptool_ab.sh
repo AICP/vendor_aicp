@@ -49,14 +49,14 @@ restore_addon_d() {
   fi
 }
 
-# Proceed only if /system is the expected major and minor version
+# Proceed only if /product or /system is the expected major and minor version
 check_prereq() {
 # If there is no build.prop file the partition is probably empty.
-if [ ! -r /system/build.prop ]; then
+if [ ! -r /product/etc/build.prop ] && [ ! -r /system/build.prop ]; then
   echo "Backup/restore is not possible. Partition is probably empty"
   return 1
 fi
-if ! grep -q "^ro.lineage.version=$V.*" /system/build.prop; then
+if ! grep -q "^ro.lineage.version=$V.*" /product/etc/build.prop /system/build.prop; then
   echo "Backup/restore is not possible. Incompatible ROM version: $V"
   return 2
 fi
