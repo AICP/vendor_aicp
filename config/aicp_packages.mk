@@ -2,12 +2,12 @@ PRODUCT_BRAND ?= AICP
 
 # AICP packages
 PRODUCT_PACKAGES += \
-    AicpExtras \
-    TilesWallpaper
+    AicpExtras
+#    TilesWallpaper
 
 # AICP Ad-block
-PRODUCT_PACKAGES += \
-    hosts.aicp_adblock
+#PRODUCT_PACKAGES += \
+#    hosts.aicp_adblock
 
 # A/B OTA Optimization
 ifneq ($(AB_OTA_PARTITIONS),)
@@ -32,21 +32,22 @@ PRODUCT_PACKAGES += \
 endif
 
 # OmniJaws
-PRODUCT_PACKAGES += \
-    OmniJaws
+#PRODUCT_PACKAGES += \
+#    OmniJaws
+
+# Optional packages
+#PRODUCT_PACKAGES += \
+#    AppPredictionService \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    AppPredictionService \
     WallpaperPicker2
 
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
-    libsepol \
     mke2fs \
-    tune2fs \
-    wget
+    tune2fs
 
 # Audio
 LOCAL_PATH := frameworks/base/data/sounds
