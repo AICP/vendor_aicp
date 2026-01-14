@@ -2,8 +2,8 @@ PRODUCT_BRAND ?= AICP
 
 # AICP packages
 PRODUCT_PACKAGES += \
-    AicpExtras \
-    TilesWallpaper
+    AicpExtras
+#    TilesWallpaper
 
 # AICP Ad-block
 PRODUCT_PACKAGES += \
@@ -32,18 +32,20 @@ PRODUCT_PACKAGES += \
 endif
 
 # OmniJaws
-PRODUCT_PACKAGES += \
-    OmniJaws
+#PRODUCT_PACKAGES += \
+#    OmniJaws
+
+# Optional packages
+#PRODUCT_PACKAGES += \
+#    AppPredictionService \
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    AppPredictionService \
     WallpaperPicker2
 
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
-    libsepol \
     mke2fs \
     tune2fs \
     wget
