@@ -44,12 +44,12 @@ endif
 
 # Build fingerprint
 ifneq ($(BUILD_FINGERPRINT),)
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
 endif
 
 # AICP System Version
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.aicp.display.version=$(AICP_VERSION) \
     ro.aicp.buildtype=$(AICP_BUILDTYPE) \
     ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
@@ -57,7 +57,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
 # AICP Stats
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.aicp.branch=$(AICP_BRANCH) \
     ro.romstats.url=https://stats.aicp-rom.com/ \
     ro.romstats.name=AICP \
@@ -67,7 +67,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.romstats.askfirst=1
 
 # additions for LOS-recovery
-PRODUCT_SYSTEM_PROPERTIES += \
+PRODUCT_PRODUCT_PROPERTIES += \
     ro.lineage.display.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME) \
     ro.lineage.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
 
