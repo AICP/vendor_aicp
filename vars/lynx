@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP3A.251105.015"
+readonly build_id="BP4A.260105.004.E1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14339231"
+readonly build_number="14587043"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/lynx-bp3a.251105.015-factory-32237bad.zip"
-readonly image_sha256="32237bad0c65d7d731a3db2906a365e5edc2391220cf3cd6a2b65c2ae7b2e7b9"
+readonly image_url="https://dl.google.com/dl/android/aosp/lynx-bp4a.260105.004.e1-factory-579db81b.zip"
+readonly image_sha256="579db81b02a9316f62490430a8a7a26f95f870a37e404274453def8d04dbfd1c"
 
-readonly flash_url="https://flash.android.com/build/14339231?target=lynx-user&signed"
+readonly flash_url="https://flash.android.com/build/14587043?target=lynx-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-bp3a.251105.015-d894eccb.zip"
-readonly ota_sha256="d894eccbf4a5dda9cbc7f81649acc8d60420c6f4e89c3aeeb71e500e6d848077"
+readonly ota_url="https://dl.google.com/dl/android/aosp/lynx-ota-bp4a.260105.004.e1-96874bc7.zip"
+readonly ota_sha256="96874bc79a6b0ca9b2107d39ac2c46352a232f446fcadff0b4254d8f3c2151c4"

@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP4A.251205.006"
+readonly build_id="BP4A.260105.004.E1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14401865"
+readonly build_number="14587043"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/comet-bp4a.251205.006-factory-de118460.zip"
-readonly image_sha256="de11846096d5eb57d4533e27872590617a3c403cfb0afa132936e2d343a8ee5a"
+readonly image_url="https://dl.google.com/dl/android/aosp/comet-bp4a.260105.004.e1-factory-9fa78e87.zip"
+readonly image_sha256="9fa78e872af57544489a2740fbf7056110ddf404172349a693cfc1154688a39c"
 
-readonly flash_url="https://flash.android.com/build/14401865?target=comet-user&signed"
+readonly flash_url="https://flash.android.com/build/14587043?target=comet-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-bp4a.251205.006-29a30d9f.zip"
-readonly ota_sha256="29a30d9f87fa1af396045850066372e202ac068be0a08555281914ca9032232e"
+readonly ota_url="https://dl.google.com/dl/android/aosp/comet-ota-bp4a.260105.004.e1-7cbdefd8.zip"
+readonly ota_sha256="7cbdefd84e72ae16cec29a14eff44635aec1f1af9fc9f14f27dbb3cad9858464"

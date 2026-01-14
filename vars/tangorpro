@@ -2,16 +2,16 @@
 
 # Updated semi-manually via pixel/update-any-var.sh
 
-readonly build_id="BP4A.251205.006"
+readonly build_id="BP4A.260105.004.E1"
 
 # Updated automatically via pixel/update-device-vars.sh
 
-readonly build_number="14401865"
+readonly build_number="14587043"
 
-readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-bp4a.251205.006-factory-e276b102.zip"
-readonly image_sha256="e276b102d73968e75ee2b91d2cbe82bb982aaf95c74ea7faed3fa0de9d729300"
+readonly image_url="https://dl.google.com/dl/android/aosp/tangorpro-bp4a.260105.004.e1-factory-a3a616db.zip"
+readonly image_sha256="a3a616db596cffac0b8c2b6410836eb319d331d282e20367027d172ca63769d2"
 
-readonly flash_url="https://flash.android.com/build/14401865?target=tangorpro-user&signed"
+readonly flash_url="https://flash.android.com/build/14587043?target=tangorpro-user&signed"
 
-readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp4a.251205.006-1c62bcad.zip"
-readonly ota_sha256="1c62bcadb9aa260113f69f7514566933a00488c458146c4d125b1e63081876c4"
+readonly ota_url="https://dl.google.com/dl/android/aosp/tangorpro-ota-bp4a.260105.004.e1-de708c2c.zip"
+readonly ota_sha256="de708c2c05d62594baaf136a7e4b6efa33180ad65525a0603ce9e66f46fc5d43"
