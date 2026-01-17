@@ -44,8 +44,7 @@ PRODUCT_PACKAGES += \
     e2fsck \
     libsepol \
     mke2fs \
-    tune2fs \
-    wget
+    tune2fs
 
 # Audio
 LOCAL_PATH := frameworks/base/data/sounds
