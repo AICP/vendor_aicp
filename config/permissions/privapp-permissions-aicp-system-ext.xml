@@ -48,4 +48,21 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
+    <!-- Additional permissions on top of privapp-permissions-platform.xml -->
+    <!-- Additional permissions for ThemePicker -->
+    <privapp-permissions package="com.android.customization">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.SET_WALLPAPER_COMPONENT"/>
+        <permission name="android.permission.CHANGE_OVERLAY_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.email">
+        <permission name="android.permission.READ_CONTACTS"/>
+        <permission name="android.permission.WRITE_CONTACTS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.apppredictionservice">
+        <permission name="android.permission.QUERY_ALL_PACKAGES"/>
+    </privapp-permissions>
+
 </permissions>
