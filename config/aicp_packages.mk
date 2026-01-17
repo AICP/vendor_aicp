@@ -35,9 +35,13 @@ endif
 #PRODUCT_PACKAGES += \
 #    OmniJaws
 
+
+# Optional packages
+#PRODUCT_PACKAGES += \
+#    AppPredictionService
+
 # Optional packages
 PRODUCT_PACKAGES += \
-    AppPredictionService \
     WallpaperPicker2
 
 # Extra tools
