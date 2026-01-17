@@ -32,7 +32,6 @@ endif
 
 # Optional packages
 PRODUCT_PACKAGES += \
-    AppPredictionService \
     WallpaperPicker2
 
 # Extra tools
