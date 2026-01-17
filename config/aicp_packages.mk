@@ -32,8 +32,8 @@ PRODUCT_PACKAGES += \
 endif
 
 # OmniJaws
-PRODUCT_PACKAGES += \
-    OmniJaws
+#PRODUCT_PACKAGES += \
+#    OmniJaws
 
 # Optional packages
 PRODUCT_PACKAGES += \
