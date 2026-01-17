@@ -4,10 +4,6 @@ PRODUCT_BRAND ?= AICP
 PRODUCT_PACKAGES += \
     AicpExtras
 
-# AICP Ad-block
-PRODUCT_PACKAGES += \
-    hosts.aicp_adblock
-
 # A/B OTA Optimization
 ifneq ($(AB_OTA_PARTITIONS),)
 PRODUCT_PACKAGES += \
