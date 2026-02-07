@@ -31,6 +31,10 @@ PRODUCT_PACKAGES += \
     libhealthd.aicp
 endif
 
+# OmniJaws
+PRODUCT_PACKAGES += \
+    OmniJaws
+
 # Optional packages
 PRODUCT_PACKAGES += \
     WallpaperPicker2
