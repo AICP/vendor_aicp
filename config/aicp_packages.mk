@@ -35,6 +35,9 @@ endif
 PRODUCT_PACKAGES += \
     OmniJaws
 
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/privapp_whitelist_org.omnirom.omnijaws-ext.xml
+
 # Optional packages
 PRODUCT_PACKAGES += \
     WallpaperPicker2
