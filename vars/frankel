@@ -1,0 +1,17 @@
+# Pixel 10
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BP4A.260205.001"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly build_number="14624666"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/frankel-bp4a.260205.001-factory-679ee187.zip"
+readonly image_sha256="679ee187cb766218e4b49f0a896f7e5b3382b5ea7d53ea16f7c35d6e5223e7ca"
+
+readonly flash_url="https://flash.android.com/build/14624666?target=frankel-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/frankel-ota-bp4a.260205.001-e7319588.zip"
+readonly ota_sha256="e731958824e11c80cdf9bff0689494e7c391cc5d85ae4dc862222b261a26a792"

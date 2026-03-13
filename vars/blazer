@@ -1,0 +1,17 @@
+# Pixel 10 Pro
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BP4A.260205.001"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly build_number="14624666"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/blazer-bp4a.260205.001-factory-44af5c18.zip"
+readonly image_sha256="44af5c18cdb62915d2191735aaf0ce5582354347be82a0329f419b5200ffbae6"
+
+readonly flash_url="https://flash.android.com/build/14624666?target=blazer-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/blazer-ota-bp4a.260205.001-645f9a1b.zip"
+readonly ota_sha256="645f9a1b274d5bf229f34f92ff2ee93a509dec817559fce7ed3cc3a58aec4ab5"

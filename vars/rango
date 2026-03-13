@@ -1,0 +1,17 @@
+# Pixel 10 Pro Fold
+
+# Updated semi-manually via pixel/update-any-var.sh
+
+readonly build_id="BP4A.260205.001"
+
+# Updated automatically via pixel/update-device-vars.sh
+
+readonly build_number="14624666"
+
+readonly image_url="https://dl.google.com/dl/android/aosp/rango-bp4a.260205.001-factory-f2b43fde.zip"
+readonly image_sha256="f2b43fde15fab871529887872d9a11436126be708670db38253f1b45e92ea238"
+
+readonly flash_url="https://flash.android.com/build/14624666?target=rango-user&signed"
+
+readonly ota_url="https://dl.google.com/dl/android/aosp/rango-ota-bp4a.260205.001-0a5ed0e7.zip"
+readonly ota_sha256="0a5ed0e7912476661a70a1c2cdad4ac5a112ad763c5bcff54c819031b6932482"
