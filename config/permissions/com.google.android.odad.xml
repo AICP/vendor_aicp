@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.odad">
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.READ_OEM_UNLOCK_STATE"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.SEND_SAFETY_CENTER_UPDATE"/>
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME"/>
+        <permission name="android.permission.MANAGE_VIRTUAL_MACHINE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.SYSTEM_ALERT_WINDOW"/>
+        <permission name="android.permission.SYSTEM_APPLICATION_OVERLAY"/>
+        <permission name="android.permission.GET_BACKGROUND_INSTALLED_PACKAGES"/>
+    </privapp-permissions>
+</permissions>

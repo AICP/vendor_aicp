@@ -124,10 +124,9 @@ PRODUCT_COPY_FILES += \
 
 # Google extra permissions and features
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml \
     vendor/aicp/config/permissions/com.google.android.feature.ANDROID_ONE_EXPERIENCE.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.feature.ANDROID_ONE_EXPERIENCE.xml \
     vendor/aicp/config/permissions/privapp-permissions-google.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-google.xml \
-    vendor/aicp/config/permissions/privapp-permissions-google-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-product.xml \
+    vendor/aicp/config/permissions/privapp-permissions-google-p.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-google-p.xml \
     vendor/aicp/config/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
     vendor/aicp/config/permissions/google_build.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google_build.xml \
     vendor/aicp/config/permissions/google-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/google-hiddenapi-package-whitelist.xml \
@@ -138,14 +137,28 @@ PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/pixel_2019_midyear_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2019_midyear_exclusive.xml \
     vendor/aicp/config/permissions/pixel_experience_2017.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2017.xml \
     vendor/aicp/config/permissions/pixel_experience_2018.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2018.xml \
-    vendor/aicp/config/permissions/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml
+    vendor/aicp/config/permissions/pixel_experience_2019_midyear.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_experience_2019_midyear.xml \
+    vendor/aicp/config/permissions/privapp_allowlist_com.google.android.ext.services.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp_allowlist_com.google.android.ext.services.xml \
+    vendor/aicp/config/permissions/privapp-permissions-google-se.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-google-se.xml
 
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/privapp-permissions-google.xml
+    system/etc/permissions/privapp-permissions-google.xml \
+    system/etc/permissions/privapp_allowlist_com.google.android.ext.services.xml
 
 # Permissions for Google product apps
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/default-permissions-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-product.xml
+    vendor/aicp/config/permissions/default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions.xml \
+    vendor/aicp/config/permissions/default-permissions-com.google.android.apps.pixel.agent.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-com.google.android.apps.pixel.agent.xml \
+    vendor/aicp/config/permissions/default-permissions-safetyhub.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions-safetyhub.xml \
+    vendor/aicp/config/permissions/default-permissions_customizationbundle.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_customizationbundle.xml \
+    vendor/aicp/config/permissions/default-permissions_pixelweather.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_pixelweather.xml \
+    vendor/aicp/config/permissions/default-permissions_wallpapereffect.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default-permissions_wallpapereffect.xml \
+    vendor/aicp/config/permissions/com.google.android.dialer.support.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.dialer.support.xml \
+    vendor/aicp/config/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml \
+    vendor/aicp/config/permissions/com.google.android.apps.setupwizard.searchselector.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.setupwizard.searchselector.xml \
+    vendor/aicp/config/permissions/com.google.android.odad.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.odad.xml \
+    vendor/aicp/config/permissions/com.google.omadm.trigger.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.omadm.trigger.xml \
+    vendor/aicp/config/permissions/split-permissions-google.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/split-permissions-google.xml
 
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
