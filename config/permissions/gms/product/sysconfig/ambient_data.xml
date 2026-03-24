@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- These are configurations that should exist on devices that support Ambient Data -->
+<config>
+    <!-- This feature identifies devices with Ambient Data (Gemini Space) -->
+    <feature name="com.google.android.feature.AMBIENT_DATA"/>
+</config>
