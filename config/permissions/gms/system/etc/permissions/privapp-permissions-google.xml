@@ -67,4 +67,9 @@ It allows additional grants on top of privapp-permissions-platform.xml
         <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.google.android.finsky">
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.CREATE_USERS"/>
+    </privapp-permissions>
+
 </permissions>
