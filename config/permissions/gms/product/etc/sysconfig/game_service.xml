@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- These are configurations that should exist on devices that support Game Service -->
+<config>
+    <!-- This feature is meant to be the feature identifying devices that support
+         Game Service -->
+    <feature name="android.software.game_service" />
+    <!-- Signals that the device is using the Google Games Service provided by
+         GMSCore. This subjects the device to addition GTS testing and also
+         serves as a mechanism to target devices that should download the
+         required GMSCore modules. -->
+    <feature name="com.google.android.feature.GMS_GAME_SERVICE" />
+</config>
