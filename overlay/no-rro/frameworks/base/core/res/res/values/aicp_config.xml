@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Build properties from a GMS certified device against current platform SPL level -->
+    <string-array name="config_certifiedBuildProperties" translatable="false">
+        <item>MANUFACTURER:Google</item>
+        <item>MODEL:Pixel 9</item>
+        <item>FINGERPRINT:google/tokay_beta/tokay:16/CP11.251209.007.A1/14691868:user/release-keys</item>
+        <item>BRAND:google</item>
+        <item>PRODUCT:tokay_beta</item>
+        <item>DEVICE:tokay</item>
+        <item>VERSION.RELEASE:16</item>
+        <item>ID:CP11.251209.007.A1</item>
+        <item>VERSION.INCREMENTAL:14691868</item>
+        <item>TYPE:user</item>  
+        <item>TAGS:release-keys</item>
+        <item>VERSION.SECURITY_PATCH:2026-01-05</item>
+        <item>VERSION.DEVICE_INITIAL_SDK_INT:21</item>
+    </string-array>
+</resources>
