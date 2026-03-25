@@ -128,6 +128,7 @@ PRODUCT_COPY_FILES += \
 # Include AICP props
 include vendor/aicp/config/aicp_props.mk
 
+ifneq ($(no_gms),true)
 # Include google perms and features
 include vendor/aicp/config/aicp_gms.mk
-
+endif
