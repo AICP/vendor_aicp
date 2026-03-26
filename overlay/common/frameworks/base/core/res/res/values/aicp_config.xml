@@ -1,13 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- set defaults for google services -->
-    <string name="config_appsAuthorizedForSharedAccounts">;com.android.vending;com.android.settings;</string>
-    <string name="config_persistentDataPackageName">com.google.android.gms</string>
-
-    <!-- default dnd acess packages -->
-    <string name="config_defaultDndAccessPackages">com.google.android.GoogleCamera</string>
-
     <!-- Disable stock OTA components if installed -->
     <string-array name="config_globallyDisabledComponents" translatable="false">
         <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
@@ -23,41 +16,17 @@
         <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
     </string-array>
 
-    <!-- non blockable notification packages -->
-    <string-array name="config_nonBlockableNotificationPackages">
-        <item>com.android.dialer</item>
-        <item>com.google.android.dialer</item>
-        <item>com.google.android.deskclock</item>
-    </string-array>
-
-    <!-- empheral resolver packages -->
-    <string-array name="config_ephemeralResolverPackage">
-        <item>com.google.android.gms</item>
-    </string-array>
-
     <!-- Flag indicating whether we should enable smart battery. -->
     <bool name="config_smart_battery_available">true</bool>
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
-    <!-- The name of the package that will hold the assistant role by default. -->
-    <string name="config_defaultAssistant" translatable="false">com.google.android.googlequicksearchbox</string>
-
-    <!-- Component name for default assistant on this device -->
-    <string name="config_defaultAssistantComponentName">com.google.android.googlequicksearchbox/com.google.android.voiceinteraction.GsaVoiceInteractionService</string>
-
     <!-- System font packages (overlay in vendor) -->
     <string-array name="config_fontPackages" translatable="false">
         <item>com.invictrix.fonts</item>
     </string-array>
 
-    <!-- The package name for the default wellbeing app.
-         This package must be trusted, as it has the permissions to control other applications
-         on the device.
-         Example: "com.android.wellbeing"
-     -->
-    <string name="config_defaultWellbeingPackage">com.google.android.apps.wellbeing</string>
 
     <!-- The component name, flattened to a string, for the default autofill service
          to  enabled for an user. This service must be trusted, as it can be activated
@@ -119,7 +88,6 @@
          Internet network (except when the current default network is mobile,
          in which case a DUN network will be used if required). -->
     <bool name="config_tether_upstream_automatic">true</bool>
-
 
     <!-- The app which will handle routine based automatic battery saver, if empty the UI for
          routine based battery saver will be hidden -->
