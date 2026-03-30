@@ -122,6 +122,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/aicp/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_PRODUCT)/lib/content-types.properties
 
+# Component overrides
+PRODUCT_PACKAGES += \
+    aicp-component-overrides.xml
+
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
 
