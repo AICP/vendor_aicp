@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <component-override package="org.lineageos.lineageparts">
+        <component class=".lineagestats.ReportingServiceManager" enabled="false" />
+        <component class=".lineagestats.ReportingService" enabled="false" />
+        <component class=".lineagestats.StatsUploadJobService" enabled="false" />
+    </component-override>
+</config>
