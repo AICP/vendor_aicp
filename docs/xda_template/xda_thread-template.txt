@@ -11,6 +11,8 @@ Until Android Lollipop, the ROM has always been based on AOKP. Unfortunately, si
 With the re-brand of CM to LineageOS (LOS), we became LineageOS based with some tweaks from AOSP and then changed to be based on the "Ground Zero Open Source Project" (GZOSP) for Android Pie.
 We changed again for Android Q-S with a base of AOSP repositories and some additions from LineageOS for device-specific repositories.
 
+We are now based on LineageOS again
+
 If there are any bugs we will sort them out if it concerns our codebase. This ROM isn't LineageOS supported, so there is no need to report errors/bugs to them!!
 
 
@@ -28,7 +30,7 @@ If there are any bugs we will sort them out if it concerns our codebase. This RO
  */
 [/CODE]
 
-[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/w16.0/docs/xda_template/features.png[/IMG]
+[IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/w16.2/docs/xda_template/features.png[/IMG]
 [URL="https://github.com/AICP/vendor_aicp/blob/w16.0/docs/features.md"]Feature list (rough overview)[/URL]
 
 
