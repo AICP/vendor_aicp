@@ -15,13 +15,13 @@
 * Accepted applicants should also keep in mind that spreading/sharing parts of the team's internal conversations to anyone for whatever purpose will result in a ban from the team.
 
 
-*Note: Successfully passing the application for the team also gives you the possibility of opening an "official" DevDB thread on XDA for your device using our [XDA template](https://raw.githubusercontent.com/AICP/vendor_aicp/w16.0/docs/xda_template/xda_thread-template.txt).*
+*Note: Successfully passing the application for the team also gives you the possibility of opening an "official" DevDB thread on XDA for your device using our [XDA template](https://raw.githubusercontent.com/AICP/vendor_aicp/w16.2/docs/xda_template/xda_thread-template.txt).*
 
 ---
 
 ## Maintainer
 
-* Maintainers **must** have a Gmail address on Gerrit, and Github.
+* Maintainers **must** have an email address on Gerrit, and Github.
 * Maintainers **must** be familiar with Gerrit etiquette. Maintainers should be able to push, rebase, review, and cherrypick; they should be able to assign topics to commits and reviewers to commits and topics.
 * Maintainers **must** know how to handle Git correctly, including rebasing, merging, pulling, or amending to commits as well as cloning and working with repositories.
 * Maintainers **must** retain proper authorship on commits or changes including the commit history when using "picked" commits from other sources. Authorship hereby means the **original** author must be named as the author on commits in the commit history. As authorship is important for us in the open-source community, it is mandatory to have proper authorship for pushing to Github or Gerrit.
@@ -32,16 +32,16 @@
 ## Device
 
 * The device **must** be buildable by using open-sourced dependencies that have a valid commit history.
-* The device **must** have an official or at least a working and publicly available recovery (TWRP preferred).
+* The device **must** have an official or at least a working and publicly available recovery (TWRP or Lineage preferred).
 * The device **must** enforce SELinux before going official. If not possible at the moment of adding, it will stay in the beta stage until SELinux can be enforced.
 * Kernel feature additions **must** be approved by the team before adding. *lowering the CPU minimum frequency beyond OEM limits is not allowed, and raising the maximum CPU frequency beyond OEM limits is not allowed, and undervolting/overvolting is generally not allowed but can be approved on a per device basis as needed*
 * The device's storage capabilities (internal and/or external) **must** be fully working.
-* The device **must** have working audio for phone calls(!) on at least handset, speaker, headset (phone jack), and Bluetooth.
+* When applicable, the device **must** have working audio for phone calls(!) on at least handset, speaker, headset (phone jack), and Bluetooth.
 * The device **must** be able to make data connections via SIM and/or Wi-Fi. If the device has more than one SIM slot, both slots must be working.
 * The device **must** have other features for data transfers/communication working, like Bluetooth / NFC / Wifi Hotspot or USB tethering. This is of course dependent on the device's hardware.
-* The device **must** have a working camera. This includes front and rear cameras, if applicable. This means that **all** Camera supported features for Photo and Video should be supported and working.
+* The device **must** have a working camera. This includes front and rear cameras, if applicable. This means that **all** camera supported features for photo and video should be supported and working.
 * The device's sensors, including fingerprint / proximity / acceleration / etc., **must** be working.
-* The device tree **must** not include any unused overlays, but **must** include the basic overlays to work with AICP features like e.g. key configs, pocketmode, doze, etc.
+* The device tree **should** not include any unused overlays, and **should** include the basic overlays to work with AICP features like e.g. key configs, pocketmode, doze, etc.
 * The device tree **can** include device-specific overlays and packages, but should not include any obsolete packages or unnecessary properties. Under no circumstances should the device tree include vendor copyrighted and DRM violating items in it.
 
 *Note: Once you and your device have been successfully accepted, you will be given access to our team chat and limited access to our servers for your needed device repositories. Of course, you will receive help on maintaining your device and have to coordinate your device with the development of AICP.*
