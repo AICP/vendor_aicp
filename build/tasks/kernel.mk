@@ -85,8 +85,22 @@
 #                                          final DTB image when NOT using QCOM's merge_dtbs
 #                                          script. Allows multiple patterns.
 #
+#   TARGET_MERGE_DTBOS_WILDCARD        = Optional, limits the .dtbo files used to generate the
+#                                          final DTBO image when using QCOM's merge_dtbs script.
+#
 #   TARGET_KERNEL_PLATFORM_TARGET      = Optional, enables building an external kernel
 #                                          platform tree, this specifies the base target name
+#
+#   TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS = Optional, automatically collects kernel module
+#                                              dependencies from *_KERNEL_MODULES
+#                                              and include these back to the variable.
+#
+#   {BOOT,RECOVERY}_KERNEL_MODULES_FINDER  = Optional, specifies path to a program that outputs
+#                                              a list of kernel modules to be included in boot
+#                                              or recovery ramdisk.
+#
+#   BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING = Optional, allows kernel modules specified in
+#                                               *_MODULES_LOAD to be missing.
 
 ifneq ($(TARGET_NO_KERNEL),true)
 ifneq ($(TARGET_NO_KERNEL_OVERRIDE),true)
@@ -103,11 +117,14 @@ KERNEL_DEFCONFIG_EXT := $(TARGET_KERNEL_CONFIG_EXT)
 # dtb generation - optional
 TARGET_MERGE_DTBS_WILDCARD ?= *
 TARGET_DTB_LIST_WILDCARD ?= *
+# dtbo generation - optional
+TARGET_MERGE_DTBOS_WILDCARD ?= *
 # recovery modules.load fallback - optional
 BOARD_RECOVERY_KERNEL_MODULES_LOAD ?= $(BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD)
 TARGET_KERNEL_MIXED_MODE ?= true
 
 ## Internal variables
+COLLECT_MODULE_DEPS_CMD := python3 $(BUILD_TOP)/lineage/scripts/collect-kernel-module-deps/collect-kernel-module-deps.py --non-interactive
 DTC := $(HOST_OUT_EXECUTABLES)/dtc
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTBO_OUT := $(TARGET_OUT_INTERMEDIATES)/DTBO_OBJ
@@ -393,8 +410,11 @@ define build-image-kernel-modules-lineage
         if [ -n "$$(find $(2)/lib/modules$(6) -type f -name $$NAME'.ko')" ]; then \
             echo "$$NAME" >> $(2)/lib/modules$(6)/modules.load; \
         else \
-            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir, module load list must be corrected" 1>&2; \
-            ERROR=1; \
+            echo "ERROR: $$NAME.ko was not found in the kernel modules intermediates dir" 1>&2; \
+            if [ "$(BOARD_KERNEL_MODULES_LOAD_ALLOW_MISSING)" != "true" ]; then \
+                echo "Module load list must be corrected." 1>&2; \
+                ERROR=1; \
+            fi; \
         fi; \
     done; \
     if [ -n "$$ERROR" ]; then \
@@ -487,7 +507,7 @@ KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call int
 $(INSTALLED_RAMDISK_TARGET): $(TARGET_PREBUILT_INT_KERNEL)
 endif
 
-ifneq ($(RECOVERY_KERNEL_MODULES),)
+ifneq ($(RECOVERY_KERNEL_MODULES)$(RECOVERY_KERNEL_MODULES_FINDER),)
 KERNEL_RECOVERY_DEPMOD_STAGING_DIR := $(KERNEL_BUILD_OUT_PREFIX)$(call intermediates-dir-for,PACKAGING,depmod_recovery)
 KERNEL_RECOVERY_MODULES_OUT := $(TARGET_RECOVERY_ROOT_OUT)
 $(recovery_uncompressed_ramdisk): $(TARGET_PREBUILT_INT_KERNEL)
@@ -504,7 +524,7 @@ $(KERNEL_CONFIG): $(KERNEL_OUT) $(ALL_KERNEL_DEFCONFIG_SRCS)
 	@echo "Building Kernel Config"
 	$(call make-kernel-config,$(KERNEL_OUT),$(ALL_KERNEL_DEFCONFIG_SRCS))
 
-$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST)
+$(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULES_PARTITION_FILE_LIST) $(SYSTEM_KERNEL_MODULES_PARTITION_FILE_LIST) $(BOOT_KERNEL_MODULES_FINDER) $(RECOVERY_KERNEL_MODULES_FINDER)
 	@echo "Building Kernel Image ($(BOARD_KERNEL_IMAGE_NAME))"
 	$(call make-kernel-target,$(BOARD_KERNEL_IMAGE_NAME))
 	$(hide) if [ -d "$(KERNEL_SRC)/arch/$(KERNEL_ARCH)/boot/dts/" ]; then \
@@ -540,7 +560,10 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 			) \
 			filtered_modules=""; \
 			$(if $(SYSTEM_KERNEL_MODULES),\
-				gki_modules=$$(for m in $(SYSTEM_KERNEL_MODULES); do \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
+					gki_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(SYSTEM_KERNEL_MODULES) | tr '\n' ' '); \
+				) \
+				gki_modules=$$(for m in $(SYSTEM_KERNEL_MODULES) $$gki_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from SYSTEM_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
@@ -561,16 +584,28 @@ $(TARGET_PREBUILT_INT_KERNEL): $(KERNEL_CONFIG) $(DEPMOD) $(DTC) $(KERNEL_MODULE
 				,\
 				($(call build-image-kernel-modules-lineage,$$all_modules,$(KERNEL_MODULES_OUT),$(KERNEL_MODULE_MOUNTPOINT)/,$(KERNEL_DEPMOD_STAGING_DIR),$(BOARD_VENDOR_KERNEL_MODULES_LOAD),,$(KERNEL_MODULES_PARTITION_FILE_LIST),)) || exit "$$?"; \
 			) \
-			$(if $(BOOT_KERNEL_MODULES),\
-				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES); do \
+			$(if $(BOOT_KERNEL_MODULES)$(BOOT_KERNEL_MODULES_FINDER),\
+				$(if $(BOOT_KERNEL_MODULES_FINDER), \
+					boot_kernel_modules_finder_output=$$($(BOOT_KERNEL_MODULES_FINDER) $(KERNEL_OUT) | tr '\n' ' '); \
+				) \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
+					boot_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_finder_output | tr '\n' ' '); \
+				) \
+				vendor_boot_modules=$$(for m in $(BOOT_KERNEL_MODULES) $$boot_kernel_modules_deps $$boot_kernel_modules_finder_output; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from BOOT_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
 				[ $$? -ne 0 ] && exit 1; \
 				($(call build-image-kernel-modules-lineage,$$vendor_boot_modules,$(KERNEL_VENDOR_RAMDISK_MODULES_OUT),,$(KERNEL_VENDOR_RAMDISK_DEPMOD_STAGING_DIR),$(KERNEL_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),,,)) || exit "$$?"; \
 			) \
-			$(if $(RECOVERY_KERNEL_MODULES),\
-				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES); do \
+			$(if $(RECOVERY_KERNEL_MODULES)$(RECOVERY_KERNEL_MODULES_FINDER),\
+				$(if $(RECOVERY_KERNEL_MODULES_FINDER), \
+					recovery_kernel_modules_finder_output=$$($(RECOVERY_KERNEL_MODULES_FINDER) $(KERNEL_OUT) | tr '\n' ' '); \
+				) \
+				$(if $(filter true,$(TARGET_AUTO_COLLECT_KERNEL_MODULE_DEPS)), \
+					recovery_kernel_modules_deps=$$($(COLLECT_MODULE_DEPS_CMD) $(KERNEL_OUT) $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output | tr '\n' ' '); \
+				) \
+				recovery_modules=$$(for m in $(RECOVERY_KERNEL_MODULES) $$recovery_kernel_modules_finder_output $$recovery_kernel_modules_deps; do \
 					p=$$(echo $$all_modules | tr ' ' '\n' | grep /$$m); \
 					if [ -n "$$p" ]; then echo $$p; else echo "ERROR: $$m from RECOVERY_KERNEL_MODULES was not found" 1>&2 && exit 1; fi; \
 				done); \
@@ -617,7 +652,7 @@ $(BOARD_PREBUILT_DTBOIMAGE): $(DTC) $(MKDTIMG) $(MKDTBOIMG)
 $(BOARD_PREBUILT_DTBOIMAGE):
 	@echo "Building dtbo.img"
 ifeq ($(BOARD_USES_QCOM_MERGE_DTBS_SCRIPT),true)
-	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBS_OUT) -type f -name "*.dtbo" | sort)
+	$(MKDTBOIMG) create $@ --page_size=$(BOARD_KERNEL_PAGESIZE) $(shell find $(DTBS_OUT) -type f -name "${TARGET_MERGE_DTBOS_WILDCARD}.dtbo" | sort)
 else
 	$(hide) find $(DTBO_OUT)/arch/$(KERNEL_ARCH)/boot/dts -type f -name "*.dtbo" | xargs rm -f
 	$(call make-dtbo-target,$(KERNEL_DEFCONFIG))
