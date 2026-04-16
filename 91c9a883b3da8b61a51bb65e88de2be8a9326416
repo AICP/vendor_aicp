@@ -16,6 +16,24 @@
       "message": "Ok with me, but I think the Mastodon line (200) and the \"/B\" in line 199 are discounted? Should not line 200 also be printed in bold?",
       "revId": "91c9a883b3da8b61a51bb65e88de2be8a9326416",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c94e1230_afd9c72b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2026-04-16T17:43:53Z",
+      "side": 1,
+      "message": "fixed",
+      "parentUuid": "07c8ee3b_d621634a",
+      "revId": "91c9a883b3da8b61a51bb65e88de2be8a9326416",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
