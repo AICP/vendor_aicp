@@ -94,17 +94,8 @@ PRODUCT_COPY_FILES += \
 # Don't compile SystemUITests
 EXCLUDE_SYSTEMUI_TESTS := true
 
-# AICP permissions
-PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/privapp-permissions-aicp-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-aicp.xml \
-    vendor/aicp/config/permissions/privapp-permissions-aicp-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aicp.xml
-
 # Audio files
 $(call inherit-product, vendor/aicp/audio/audio.mk)
-
-# Hidden API whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
 
 # Font files
 PRODUCT_COPY_FILES += \
