@@ -95,6 +95,9 @@ PRODUCT_COPY_FILES += \
 EXCLUDE_SYSTEMUI_TESTS := true
 
 # AICP permissions
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/etc/permissions/privapp-permissions-aicp.xml
+
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/privapp-permissions-aicp-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aicp.xml \
     vendor/aicp/config/permissions/privapp-permissions-aicp-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-aicp.xml \
