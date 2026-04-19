@@ -53,6 +53,9 @@ PRODUCT_PACKAGES += \
     GameSpace
 
 # Extra tools
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/lib64/libsepol.so
+
 PRODUCT_PACKAGES += \
     e2fsck \
     libsepol \
