@@ -98,7 +98,7 @@ endif
 
 # Clean cache script
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_PRODUCT)/bin/clean_cache.sh
+    vendor/aicp/prebuilt/common/bin/clean_cache.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/clean_cache.sh
 
 # system mount
 PRODUCT_COPY_FILES += \
@@ -125,15 +125,15 @@ PRODUCT_COPY_FILES += \
 
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
-    vendor/aicp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.nfc.beam.xml
+    vendor/aicp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.software.sip.voip.xml
+    frameworks/native/data/etc/android.software.sip.voip.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.sip.voip.xml
 
 # Copy over added mimetype supported in libcore.net.MimeUtils
 PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_PRODUCT)/lib/content-types.properties
+    vendor/aicp/prebuilt/common/lib/content-types.properties:$(TARGET_COPY_OUT_SYSTEM)/lib/content-types.properties
 
 # AICP overlays
 -include packages/overlays/AICP/product_packages.mk
