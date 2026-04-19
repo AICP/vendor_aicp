@@ -55,6 +55,7 @@ PRODUCT_PACKAGES += \
 # Extra tools
 PRODUCT_PACKAGES += \
     e2fsck \
+    libsepol \
     mke2fs \
     tune2fs
 
