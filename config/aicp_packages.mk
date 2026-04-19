@@ -31,19 +31,26 @@ PRODUCT_PACKAGES += \
     libhealthd.aicp
 endif
 
-# OnDeviceAppPrediction
+# System Allow List
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/priv-app/AppPredictionService/AppPredictionService.apk
+    system/bin/clean_cache.sh \
+    system/etc/hosts.aicp_adblock \
+    system/etc/permissions/android.software.nfc.beam.xml \
+    system/etc/permissions/android.software.sip.voip.xml \
+    system/etc/permissions/privapp-permissions-aicp.xml \
+    system/etc/permissions/privapp_whitelist_org.omnirom.omnijaws-ext.xml \
+    system/lib/content-types.properties \
+    system/lib64/libsepol.so \
+    system/priv-app/AppPredictionService/AppPredictionService.apk \
+    system/xbin/wget
 
+# OnDeviceAppPrediction
 PRODUCT_PACKAGES += \
     AppPredictionService
 
 # OmniJaws
 PRODUCT_PACKAGES += \
     OmniJaws
-
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/privapp_whitelist_org.omnirom.omnijaws-ext.xml
 
 # Optional packages
 PRODUCT_PACKAGES += \
@@ -53,10 +60,6 @@ PRODUCT_PACKAGES += \
     GameSpace
 
 # Extra tools
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/lib64/libsepol.so \
-    system/xbin/wget
-
 PRODUCT_PACKAGES += \
     e2fsck \
     libsepol \
@@ -108,9 +111,6 @@ PRODUCT_COPY_FILES += \
 EXCLUDE_SYSTEMUI_TESTS := true
 
 # AICP permissions
-PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
-    system/etc/permissions/privapp-permissions-aicp.xml
-
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/privapp-permissions-aicp-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aicp.xml \
     vendor/aicp/config/permissions/privapp-permissions-aicp-system-ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-aicp.xml \
