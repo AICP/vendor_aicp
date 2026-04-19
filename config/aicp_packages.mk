@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
 endif
 
 # OnDeviceAppPrediction
+PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
+    system/priv-app/AppPredictionService/AppPredictionService.apk
+
 PRODUCT_PACKAGES += \
     AppPredictionService
 
