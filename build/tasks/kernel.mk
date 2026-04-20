@@ -176,7 +176,7 @@ ifeq "$(wildcard $(KERNEL_SRC) )" ""
     endif
 
     ifneq ($(TARGET_KERNEL_PLATFORM_TARGET),)
-        ifeq "$(wildcard $(abspath $(BUILD_TOP)/../kernel-$(TARGET_KERNEL_VERSION))/$(KERNEL_SRC) )" ""
+        ifeq "$(wildcard $(abspath $(BUILD_TOP)/kernel/platform/kernel-$(TARGET_KERNEL_VERSION))/$(KERNEL_SRC) )" ""
             $(warning ***************************************************************)
             $(warning *                                                             *)
             $(warning * No kernel platform source found.                            *)
