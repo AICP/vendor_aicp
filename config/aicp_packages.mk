@@ -140,3 +140,6 @@ PRODUCT_COPY_FILES += \
 
 # Include AICP props
 include vendor/aicp/config/aicp_props.mk
+
+# Include google perms and features from mind the gapps
+include vendor/aicp/config/aicp_gms.mk
