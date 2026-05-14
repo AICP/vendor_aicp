@@ -40,7 +40,7 @@ a, a code {
 a:active,
 a:active code {
   color:#f00;
-} 
+}
 
 a:visited,
 a:visited code {
@@ -678,7 +678,7 @@ td.gsc-search-button {
 #topAnnouncement {
   background:url(images/home/bg_home_announcement.png) no-repeat 0 0;
 }
-  
+
 #homeTitle {
   padding:15px 15px 0;
   height:30px;
@@ -2074,7 +2074,7 @@ p.table-caption {
 }
 
 
-/* toggle for misc content (such as long sample code) 
+/* toggle for misc content (such as long sample code)
    see toggleContent() script in android-developer-docs.js */
 .toggle-content.closed .toggle-content-toggleme {
   display:none;
@@ -2356,7 +2356,7 @@ div.training-nav-button-next a:active,
 div.training-nav-button-previous a:active {
   border:1px solid #f00; /* match link color */
 }
-  
+
 div.training-nav-button-previous {
   float:left;
   text-align:left;

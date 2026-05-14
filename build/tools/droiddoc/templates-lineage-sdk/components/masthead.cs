@@ -5,6 +5,5 @@
               src="<?cs var:toroot ?>assets/lineage_logo.svg" alt="CID" width="144" height="72"/>
           <span id="masthead-title"  style="font-size:  28px;">LineageOS Platform SDK</span></a>
       </div>
-  </div><!-- header --><?cs 
+  </div><!-- header --><?cs
 /def ?>
-

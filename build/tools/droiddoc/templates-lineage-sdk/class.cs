@@ -107,8 +107,8 @@ Summary:
 
 <div id="jd-header">
     <?cs var:class.scope ?>
-    <?cs var:class.static ?> 
-    <?cs var:class.final ?> 
+    <?cs var:class.static ?>
+    <?cs var:class.final ?>
     <?cs var:class.abstract ?>
     <?cs var:class.kind ?>
 <h1 itemprop="name"><?cs var:class.name ?></h1>
@@ -119,9 +119,9 @@ Summary:
     extends <?cs call:type_link(supr.short_class) ?><br/>
   <?cs /if ?>
   <?cs if:last(supr) && subcount(supr.interfaces) ?>
-      implements 
+      implements
       <?cs each:t=supr.interfaces ?>
-        <?cs call:type_link(t) ?> 
+        <?cs call:type_link(t) ?>
       <?cs /each ?>
   <?cs /if ?>
   <?cs set:colspan = colspan-1 ?>
@@ -139,11 +139,11 @@ Summary:
     <tr>
         <?cs loop:i = 1, (subcount(class.inheritance)-colspan), 1 ?>
             <td class="jd-inheritance-space">&nbsp;<?cs if:(subcount(class.inheritance)-colspan) == i ?>&nbsp;&nbsp;&#x21b3;<?cs /if ?></td>
-        <?cs /loop ?> 	
+        <?cs /loop ?>
         <td colspan="<?cs var:colspan ?>" class="jd-inheritance-class-cell"><?cs
             if:colspan == 1
-                ?><?cs call:class_name(class.qualifiedType) ?><?cs 
-            else 
+                ?><?cs call:class_name(class.qualifiedType) ?><?cs
+            else
                 ?><?cs call:type_link(supr.class) ?><?cs
             /if ?></td>
     </tr>
@@ -270,8 +270,8 @@ Summary:
     <tr class="<?cs if:count % #2 ?>alt-color<?cs /if ?> api apilevel-<?cs var:cl.since ?>" >
       <td class="jd-typecol"><nobr>
         <?cs var:cl.scope ?>
-        <?cs var:cl.static ?> 
-        <?cs var:cl.final ?> 
+        <?cs var:cl.static ?>
+        <?cs var:cl.final ?>
         <?cs var:cl.abstract ?>
         <?cs var:cl.kind ?></nobr></td>
       <td class="jd-linkcol"><?cs call:type_link(cl.type) ?></td>
@@ -511,12 +511,12 @@ From <?cs var:cl.kind ?>
 <?cs # the A tag in the next line must remain where it is, so that Eclipse can parse the docs ?>
 <A NAME="<?cs var:field.anchor ?>"></A>
 <?cs # The apilevel-N class MUST BE LAST in the sequence of class names ?>
-<div class="jd-details api apilevel-<?cs var:field.since ?>"> 
+<div class="jd-details api apilevel-<?cs var:field.since ?>">
     <h4 class="jd-details-title">
       <span class="normal">
-        <?cs var:field.scope ?> 
-        <?cs var:field.static ?> 
-        <?cs var:field.final ?> 
+        <?cs var:field.scope ?>
+        <?cs var:field.static ?>
+        <?cs var:field.final ?>
         <?cs call:type_link(field.type) ?>
       </span>
         <?cs var:field.name ?>
@@ -551,14 +551,14 @@ From <?cs var:cl.kind ?>
 <?cs # the A tag in the next line must remain where it is, so that Eclipse can parse the docs ?>
 <A NAME="<?cs var:method.anchor ?>"></A>
 <?cs # The apilevel-N class MUST BE LAST in the sequence of class names ?>
-<div class="jd-details api apilevel-<?cs var:method.since ?>"> 
+<div class="jd-details api apilevel-<?cs var:method.since ?>">
     <h4 class="jd-details-title">
       <span class="normal">
-        <?cs var:method.scope ?> 
-        <?cs var:method.static ?> 
-        <?cs var:method.final ?> 
-        <?cs var:method.abstract ?> 
-        <?cs var:method.synchronized ?> 
+        <?cs var:method.scope ?>
+        <?cs var:method.static ?>
+        <?cs var:method.final ?>
+        <?cs var:method.abstract ?>
+        <?cs var:method.synchronized ?>
         <?cs call:type_link(method.returnType) ?>
       </span>
       <span class="sympad"><?cs var:method.name ?></span>
@@ -580,7 +580,7 @@ From <?cs var:cl.kind ?>
 <?cs each:attr=attrs ?>
 <?cs # the A tag in the next line must remain where it is, so that Eclipse can parse the docs ?>
 <A NAME="<?cs var:attr.anchor ?>"></A>
-<div class="jd-details"> 
+<div class="jd-details">
     <h4 class="jd-details-title"><?cs var:attr.name ?>
     </h4>
     <div class="jd-details-descr">
