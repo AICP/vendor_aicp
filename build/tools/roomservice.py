@@ -45,14 +45,14 @@ except IndexError:
 
 if not depsonly:
     print(
-        f'Device {device} not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).'
+        f'Device {device} not found. Attempting to retrieve device repository from AICP Github (http://github.com/AICP).'
     )
 
 repositories = []
 
 if not depsonly:
     githubreq = urllib.request.Request(
-        'https://raw.githubusercontent.com/LineageOS/mirror/main/default.xml'
+        'https://raw.githubusercontent.com/AICP/mirror/main/default.xml'
     )
     try:
         result = ElementTree.fromstring(
@@ -65,7 +65,8 @@ if not depsonly:
         print('Failed to parse return data from GitHub')
         sys.exit(1)
     for res in result.findall('.//project'):
-        repositories.append(res.attrib['name'][10:])
+#        repositories.append(res.attrib['name'][10:])
+        repositories.append(res.attrib['name'][0:])
 
 local_manifests = r'.repo/local_manifests'
 if not os.path.exists(local_manifests):
@@ -111,10 +112,11 @@ def get_manifest_path():
 
 
 def get_default_revision():
-    m = ElementTree.parse(get_manifest_path())
-    d = m.findall('default')[0]
-    r = d.get('revision')
-    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+#    m = ElementTree.parse(get_manifest_path())
+#   d = m.findall('default')[0]
+#    r = d.get('revision')
+#    return r.replace('refs/heads/', '').replace('refs/tags/', '')
+    return 'w16.2'
 
 
 def get_from_manifest(devicename):
@@ -126,7 +128,8 @@ def get_from_manifest(devicename):
             lm = ElementTree.Element('manifest')
 
         for localpath in lm.findall('project'):
-            if re.search(f'android_device_.*_{device}$', localpath.get('name')):
+#            if re.search(f'android_device_.*_{device}$', localpath.get('name')):
+            if re.search(f"device_.*_{device}", localpath.get('name')):
                 return localpath.get('path')
 
     return None
@@ -155,9 +158,9 @@ def is_in_manifest(projectpath):
         if localpath.get('path') == projectpath:
             return True
 
-    # ... and don't forget the lineage snippet
+    # ... and don't forget the aicp snippet
     try:
-        lm = ElementTree.parse('.repo/manifests/snippets/lineage.xml')
+        lm = ElementTree.parse('.repo/manifests/snippets/aicp.xml')
         lm = lm.getroot()
     except Exception:
         lm = ElementTree.Element('manifest')
@@ -185,7 +188,8 @@ def add_to_manifest(repositories):
         repo_revision = repository['branch']
         print(f'Checking if {repo_target} is fetched from {repo_name}')
         if is_in_manifest(repo_target):
-            print(f'LineageOS/{repo_name} already fetched to {repo_target}')
+#            print(f'LineageOS/{repo_name} already fetched to {repo_target}')
+            print(f'{repo_name} already fetched to {repo_target}')
             continue
 
         project = ElementTree.Element(
@@ -193,7 +197,8 @@ def add_to_manifest(repositories):
             attrib={
                 'path': repo_target,
                 'remote': 'github',
-                'name': f'LineageOS/{repo_name}',
+#                'name': f'LineageOS/{repo_name}',
+                'name': f'{repo_name}',
                 'revision': repo_revision,
             },
         )
@@ -221,9 +226,11 @@ def add_to_manifest(repositories):
     f.close()
 
 
-def fetch_dependencies(repo_path):
+def fetch_dependencies(repo_path, first_dependency=False):
     print(f'Looking for dependencies in {repo_path}')
-    dependencies_path = repo_path + '/lineage.dependencies'
+    if first_dependency:
+        os.system('vendor/aicp/build/tools/roomcleaner.py %s' % repo_path)
+    dependencies_path = repo_path + '/aicp.dependencies'
     syncable_repos = []
     verify_repos = []
 
@@ -264,28 +271,28 @@ def fetch_dependencies(repo_path):
             subprocess.run(['repo', 'sync', '--force-sync'] + syncable_repos)
 
     for deprepo in verify_repos:
-        fetch_dependencies(deprepo)
+        fetch_dependencies(deprepo,True)
 
 
 def get_default_or_fallback_revision(repo_name):
     default_revision = get_default_revision()
     print(f'Default revision: {default_revision}')
     print('Checking branch info')
-
-    try:
-        stdout = subprocess.run(
-            [
-                'git',
-                'ls-remote',
-                '-h',
-                'https://:@github.com/LineageOS/' + repo_name,
-            ],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-        ).stdout.decode()
-        branches = [x.split('refs/heads/')[-1] for x in stdout.splitlines()]
-    except Exception:
-        return ''
+#    try:
+#        stdout = subprocess.run(
+#            [
+#                'git',
+#                'ls-remote',
+#                '-h',
+#                'https://:@github.com/LineageOS/' + repo_name,
+#            ],
+#            stdout=subprocess.PIPE,
+#            stderr=subprocess.PIPE,
+#        ).stdout.decode()
+#        branches = [x.split('refs/heads/')[-1] for x in stdout.splitlines()]
+#    except Exception:
+#        return ''
+       return 'w16.2'
 
     if default_revision in branches:
         return default_revision
@@ -314,7 +321,7 @@ def get_default_or_fallback_revision(repo_name):
 if depsonly:
     repo_path = get_from_manifest(device)
     if repo_path:
-        fetch_dependencies(repo_path)
+        fetch_dependencies(repo_path,None, True)
     else:
         print('Trying dependencies-only mode on a non-existing device tree?')
 
@@ -322,10 +329,13 @@ if depsonly:
 
 else:
     for repo_name in repositories:
-        if re.match(r'^android_device_[^_]*_' + device + '$', repo_name):
+#        print(f"DEBUG: Looking for device [{device}] | Checking repo: [{repo_name}]")
+#        if re.match(r'^android_device_[^_]*_' + device + '$', repo_name):
+        if re.match(r'^AICP/device_[^_]*_' + device, repo_name):
             print(f'Found repository: {repo_name}')
 
-            manufacturer = repo_name.replace('android_device_', '').replace(
+#            manufacturer = repo_name.replace('android_device_', '').replace(
+            manufacturer = repo_name.replace('device_', '').replace(
                 '_' + device, ''
             )
             repo_path = f'device/{manufacturer}/{device}'
@@ -348,10 +358,10 @@ else:
             subprocess.run(['repo', 'sync', '--force-sync', repo_path])
             print('Repository synced!')
 
-            fetch_dependencies(repo_path)
+            fetch_dependencies(repo_path,True)
             print('Done')
             sys.exit()
 
 print(
-    f'Repository for {device} not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml.'
+    f'Repository for {device} not found in the AICP Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml.'
 )
