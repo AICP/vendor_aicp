@@ -55,7 +55,7 @@ if [ ! -r $$P/etc/build.prop ] && [ ! -r $S/build.prop ]; then
   echo "Backup/restore is not possible. Partition is probably empty"
   return 1
 fi
-if ! grep -q "^ro.lineage.version=$V.*" $P/etc/build.prop $S/build.prop; then
+if ! grep -q "^ro.aicp.version=$V.*" $P/etc/build.prop $S/build.prop; then
   echo "Backup/restore is not possible. Incompatible ROM version: $V"
   return 2
 fi

@@ -12,9 +12,6 @@
 list_files() {
 cat <<EOF
 etc/hosts
-product/priv-app/Phonesky/Phonesky.apk
-product/etc/permissions/privapp-permissions-google-product.xml
-EOF
 EOF
 }
 
@@ -30,7 +27,7 @@ case "$1" in
       [ -n "$REPLACEMENT" ] && R="$S/$REPLACEMENT"
       [ -f "$C/$S/$FILE" ] && restore_file $S/"$FILE" "$R"
     done
-  ;; 
+  ;;
   pre-backup)
     # Stub
   ;;
@@ -43,6 +40,4 @@ case "$1" in
   post-restore)
     # Stub
   ;;
-    rm -rf /data/app/*/com.android.vending-*
-    rm -rf /data/app/~~*/com.android.vending-*
 esac
