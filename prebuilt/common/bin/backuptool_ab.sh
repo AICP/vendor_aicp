@@ -5,7 +5,7 @@
 
 export S=/system
 export C=/postinstall/tmp/backupdir
-export V=23
+export V=16
 
 export ADDOND_VERSION=3
 
@@ -56,7 +56,7 @@ if [ ! -r /product/etc/build.prop ] && [ ! -r /system/build.prop ]; then
   echo "Backup/restore is not possible. Partition is probably empty"
   return 1
 fi
-if ! grep -q "^ro.lineage.version=$V.*" /product/etc/build.prop /system/build.prop; then
+if ! grep -q "^ro.build.version.release=$V.*" /product/etc/build.prop /system/build.prop; then
   echo "Backup/restore is not possible. Incompatible ROM version: $V"
   return 2
 fi
