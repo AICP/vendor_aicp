@@ -298,6 +298,8 @@ include vendor/aicp/config/aicp_version.mk
 # Include AICP packages
 include vendor/aicp/config/aicp_packages.mk
 
+include vendor/aicp/config/version.mk
+
 -include vendor/aicp-priv/keys/keys.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
