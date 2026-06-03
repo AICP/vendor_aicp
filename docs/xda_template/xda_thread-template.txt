@@ -66,7 +66,7 @@ We are paying for servers that build weeklies and everything that comes with thi
 
 [IMG]https://raw.githubusercontent.com/AICP/vendor_aicp/w16.2/docs/xda_template/downloads.png[/IMG]
 
-[SIZE=3][B]Latest Stable Release [/B][SIZE=2][B]Version [/B]17.1[/SIZE]
+[SIZE=3][B]Latest Stable Release [/B][SIZE=2][B]Version [/B]21.2[/SIZE]
 [/SIZE]
 [SIZE=3][B]Download link: [url]https://dwnld.aicp-rom.com/[/url][/B][/SIZE]
 
@@ -156,12 +156,13 @@ If you believe you know what you're doing - then fine, go ahead, but please don'
 3. Wipe the System (DO NOT WIPE THE SYSTEM ON A/B DEVICES!), Cache, and Data (you might need to format the data partition!).
 4. Flash the ROM zip file (reboot to recovery before flashing anything else if you have an "A/B" device).
 5. Flash the GApps (optional, needed for e.g. Google Playstore to work)
-6. Reboot and set up your device.
-7. You can then reboot to recovery and flash the root solution of your choice if you want to, and then boot back to the system.
+6. If you have an A/B device it is best to reboot to recovery and flash the rom again and then reboot to recovery and flash gapps again
+7. Reboot and set up your device.
+8. You can then reboot to recovery and flash the root solution of your choice if you want to, and then boot back to the system.
 [I][B][U]The procedure may vary from device to device and is a bit different on system updates![/I][/U][/B]
 
 
-[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once! This might differ on A/B Devices.[/B]
+[B]The ROM has GApps persistence in between dirty flashes, so you only have to flash them once![/B]
 
 
 [SIZE=3][B]Currently supported Root Solution:[/B][/SIZE]
@@ -204,8 +205,8 @@ Follow [URL="https://wiki.lineageos.org/extracting_blobs_from_zips.html"]this gu
 only mention the main ones though, probably the top four or so, otherwise this list will be a mile long xD)
 
 [B][U]Information:[/U][/B]
-[B]ROM OS Version:[/B] 12.1
-[B]Kernel:[/B] Linux x.z.y (for example: 5.4.y)
+[B]ROM OS Version:[/B] 16 qpr2
+[B]Kernel:[/B] Linux x.z.y (for example: 6.1.y)
 [B]ROM {Firmware|Vendor} required:[/B]
 [B]Status:[/B] {ALPHA|BETA|STABLE}
 [B]Release Date:[/B] mm-dd-yyyy
