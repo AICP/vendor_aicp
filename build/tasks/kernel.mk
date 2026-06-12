@@ -405,7 +405,7 @@ define build-image-kernel-modules-lineage
     sed -e 's/\(.*modules.*\):/\/\1:/g' -e 's/ \([^ ]*modules[^ ]*\)/ \/\1/g' $(4)/lib/modules/0.0/modules.dep > $(2)/lib/modules$(6)/modules.dep
     cp $(4)/lib/modules/0.0/modules.softdep $(2)/lib/modules$(6)
     cp $(4)/lib/modules/0.0/modules.alias $(2)/lib/modules$(6)
-    rm -f $(2)/lib/modules$(6)/modules.load
+    truncate -s 0 $(2)/lib/modules$(6)/modules.load
     for MODULE in $(5); do \
         NAME=$$(basename $$MODULE .ko); \
         if [ -n "$$(find $(2)/lib/modules$(6) -type f -name $$NAME'.ko')" ]; then \
