@@ -31,4 +31,8 @@
     <privapp-permissions package="com.android.apppredictionservice">
         <permission name="android.permission.QUERY_ALL_PACKAGES"/>
     </privapp-permissions>
+
+    <privapp-permissions package="com.android.wallpaper">
+        <permission name="com.google.android.apps.aiwallpapers.CONFIGURE_WALLPAPERS"/>
+    </privapp-permissions>
 </permissions>
