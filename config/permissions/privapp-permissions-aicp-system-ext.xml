@@ -48,4 +48,7 @@
         <permission name="android.permission.INTERACT_ACROSS_USERS"/>
     </privapp-permissions>
 
+    <privapp-permissions package="com.android.wallpaper">
+        <permission name="com.google.android.apps.aiwallpapers.CONFIGURE_WALLPAPERS"/>
+    </privapp-permissions>
 </permissions>
