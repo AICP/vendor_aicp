@@ -133,7 +133,7 @@ endif
 
 # ccache can't cache anything behind another wrapper, so it gives way to RBE
 ifneq ($(KERNEL_RBE_WRAPPER),)
-    KERNEL_CC_WRAPPER := $(BUILD_TOP)/vendor/lineage/build/tools/kernel_rbe_cc.sh
+    KERNEL_CC_WRAPPER := $(BUILD_TOP)/vendor/aicp/build/tools/kernel_rbe_cc.sh
 else
     KERNEL_CC_WRAPPER := $(CCACHE_BIN)
 endif
