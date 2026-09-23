@@ -1,0 +1,65 @@
+prebuilt_etc {
+    name: "aicp_charger_animation",
+    filename: "animation.txt",
+    src: "animation.txt",
+    sub_dir: "res/values/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xhdpi",
+    filename: "battery_scale.png",
+    src: "images/xhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xxhdpi",
+    filename: "battery_scale.png",
+    src: "images/xxhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xxxhdpi",
+    filename: "battery_scale.png",
+    src: "images/xxxhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_hdpi",
+    filename: "battery_scale.png",
+    src: "images/hdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_mdpi",
+    filename: "battery_scale.png",
+    src: "images/mdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_ldpi",
+    filename: "battery_scale.png",
+    src: "images/ldpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+phony {
+    name: "aicp_charger_res_images",
+    required: [
+        "aicp_charger_animation",
+        "aicp_battery_scale_xhdpi",
+    ],
+    overrides: ["charger_res_images"],
+    product_specific: true,
+}
