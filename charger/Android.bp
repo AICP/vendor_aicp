@@ -1,0 +1,68 @@
+lineage_charger_density = select(soong_config_variable("lineage_charger", "density"), {
+    any @ flag_val: "images/" + flag_val + "/aicp_battery_scale.png",
+    default: "images/mdpi/aicp_battery_scale.png",
+})
+
+prebuilt_etc {
+    name: "aicp_battery_scale.png",
+    filename: "battery_scale.png",
+    src: lineage_charger_density,
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_charger_animation",
+    filename: "animation.txt",
+    src: "animation.txt",
+    sub_dir: "res/values/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xhdpi",
+    filename: "battery_scale.png",
+    src: "images/xhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xxhdpi",
+    filename: "battery_scale.png",
+    src: "images/xxhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_xxxhdpi",
+    filename: "battery_scale.png",
+    src: "images/xxxhdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_hdpi",
+    filename: "battery_scale.png",
+    src: "images/hdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_mdpi",
+    filename: "battery_scale.png",
+    src: "images/mdpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_battery_scale_ldpi",
+    filename: "battery_scale.png",
+    src: "images/ldpi/aicp_battery_scale.png",
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}

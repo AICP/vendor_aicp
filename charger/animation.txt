@@ -1,0 +1,16 @@
+# Configuration for battery charging animation
+
+# Duration of each frame in milliseconds
+frame_delay=150
+
+# Total number of frames in battery_scale.png
+total_frames=10
+
+# Number of times the animation sequence repeats per wake cycle (0 = continuous loop)
+repeat_count=0
+
+# Coordinates for centering or drawing (fallback standard layout)
+# min_level: start percentage for this animation segment
+# level: threshold mapping
+animation=battery_scale
+fail=battery_fail
