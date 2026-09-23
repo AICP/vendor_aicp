@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 # Charger
-ifeq ($(WITH_AICP_CHARGER),true)
+ifneq ($(WITH_AICP_CHARGER),false)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.aicp
 endif
 

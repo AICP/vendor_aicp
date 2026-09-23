@@ -24,7 +24,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     charger_res_images
 
-ifeq ($(WITH_AICP_CHARGER),true)
+ifneq ($(WITH_AICP_CHARGER),false)
 PRODUCT_PACKAGES += \
     aicp_charger_res_images \
     font_log.png \
