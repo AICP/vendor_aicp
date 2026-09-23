@@ -1,0 +1,30 @@
+lineage_charger_density = select(soong_config_variable("lineage_charger", "density"), {
+    any @ flag_val: "images/" + flag_val + "/aicp_battery_scale.png",
+    default: "images/mdpi/aicp_battery_scale.png",
+})
+
+prebuilt_etc {
+    name: "aicp_battery_scale.png",
+    filename: "battery_scale.png",
+    src: lineage_charger_density,
+    sub_dir: "res/images/charger",
+    product_specific: true,
+}
+
+prebuilt_etc {
+    name: "aicp_charger_animation",
+    filename: "animation.txt",
+    src: "animation.txt",
+    sub_dir: "res/values/charger",
+    product_specific: true,
+}
+
+phony {
+    name: "aicp_charger_res_images",
+    required: [
+        "aicp_battery_scale.png",
+        "aicp_charger_animation",
+    ],
+    overrides: ["charger_res_images"],
+    product_specific: true,
+}
