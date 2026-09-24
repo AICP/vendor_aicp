@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0fb48fc1_6a89fa1f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 26
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2026-09-24T18:58:54Z",
+      "side": 1,
+      "message": "Works on husky (pixel 8 pro)",
+      "revId": "62f39c6b9340df62dfcf5dc034eb05e645c6f264",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
