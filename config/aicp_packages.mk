@@ -20,17 +20,6 @@ endif
 PRODUCT_PACKAGES += \
     bootanimation.zip
 
-# Custom off-mode charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-ifeq ($(WITH_AICP_CHARGER),true)
-PRODUCT_PACKAGES += \
-    aicp_charger_res_images \
-    font_log.png \
-    libhealthd.aicp
-endif
-
 # System Allow List
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/clean_cache.sh \
