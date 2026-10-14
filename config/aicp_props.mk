@@ -1,20 +1,25 @@
-ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.clientidbase=android-google
-else
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
-endif
+# AICP System Version
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.aicp.display.version=$(AICP_VERSION) \
+    ro.aicp.buildtype=$(AICP_BUILDTYPE) \
+    ro.aicp.version.update=$(AICP_BRANCH)-$(VERSION) \
+    ro.modversion=$(AICP_VERSION) \
+    ro.aicp.version=$(VERSION)-$(AICP_BUILDTYPE)
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    keyguard.no_require_sim=true \
-    dalvik.vm.debug.alloc=0 \
-    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
-    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
-    ro.com.android.wifi-watchlist=GoogleGuest \
-    ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
-    ro.build.selinux=1
+# additions for LOS-recovery
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.lineage.build.version=$(VERSION) \
+    ro.lineage.version=-$(shell date +%Y%m%d)_$(shell date +%H%M%S)-
+
+# AICP Stats
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.aicp.branch=$(AICP_BRANCH) \
+    ro.romstats.url=https://stats.aicp-rom.com/ \
+    ro.romstats.name=AICP \
+    ro.romstats.buildtype=$(AICP_BUILDTYPE) \
+    ro.romstats.version=$(VERSION) \
+    ro.romstats.tframe=1 \
+    ro.romstats.askfirst=1
 
 # Storage manager
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -23,7 +28,3 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Disable rescue party
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
-
-# whitelist packages for location providers not in system
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.services.whitelist.packagelist=com.google.android.gms
