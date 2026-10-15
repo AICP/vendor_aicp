@@ -42,12 +42,6 @@ else
         AICP_VERSION := $(TARGET_PRODUCT)_$(AICP_BRANCH)-$(VERSION)-UNOFFICIAL-$(shell date -u +%Y%m%d)
 endif
 
-# Build fingerprint
-ifneq ($(BUILD_FINGERPRINT),)
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.build.fingerprint=$(BUILD_FINGERPRINT)
-endif
-
 # AICP System Version
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.aicp.display.version=$(AICP_VERSION) \
@@ -71,3 +65,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.lineage.display.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME) \
     ro.lineage.version=$(VERSION)-$(shell date -u +%Y%m%d)-${AICP_BUILDTYPE}-$(DEVICE_NAME)
 
+# Include AICP packages
+include vendor/aicp/config/aicp_packages.mk
+
+# Include AICP props
+include vendor/aicp/config/aicp_props.mk
