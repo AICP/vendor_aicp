@@ -1,17 +1,17 @@
 # Inherit common mobile Lineage stuff
-$(call inherit-product, vendor/aicp/config/common.mk)
+$(call inherit-product, vendor/lineage/config/common.mk)
 
 # Include AOSP audio files
 $(call inherit-product-if-exists, frameworks/base/data/sounds/AudioPackage14.mk)
-include vendor/aicp/config/aosp_audio.mk
+include vendor/lineage/config/aosp_audio.mk
 
 # Include Lineage audio files
-include vendor/aicp/config/lineage_audio.mk
+include vendor/lineage/config/lineage_audio.mk
 
 # Default notification/alarm sounds
-#PRODUCT_PRODUCT_PROPERTIES += \
-#    ro.config.notification_sound=Argon.ogg \
-#    ro.config.alarm_alert=Hassium.ogg
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
 
 # Apps
 PRODUCT_PACKAGES += \
