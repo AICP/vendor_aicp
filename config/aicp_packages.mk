@@ -106,10 +106,6 @@ PRODUCT_COPY_FILES += \
 # Audio files
 $(call inherit-product, vendor/aicp/audio/audio.mk)
 
-# Font files
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,vendor/aicp/prebuilt/common/fonts,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-
 # Enable Android Beam on all targets
 PRODUCT_COPY_FILES += \
     vendor/aicp/config/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
