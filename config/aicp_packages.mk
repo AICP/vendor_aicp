@@ -67,9 +67,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/alarms/ogg/Oxygen.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Oxygen-old.ogg \
     $(LOCAL_PATH)/alarms/ogg/Platinum.ogg:$(TARGET_COPY_OUT_PRODUCT)/media/audio/alarms/Platinum-old.ogg
 
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.ota.allow_downgrade=true
-
 # AOSP recovery flashing
 ifeq ($(TARGET_USES_AOSP_RECOVERY),true)
 PRODUCT_PRODUCT_PROPERTIES += \
