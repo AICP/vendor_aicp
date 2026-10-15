@@ -1,58 +1,3 @@
-function __print_aicp_functions_help() {
-cat <<EOF
-Additional AICP functions:
-- cout:            Changes directory to out.
-- mmp:             Builds all of the modules in the current directory and pushes them to the device.
-- mmap:            Builds all of the modules in the current directory and its dependencies, then pushes the package to the device.
-- mmmp:            Builds all of the modules in the supplied directories and pushes them to the device.
-- aicpgerrit:   A Git wrapper that fetches/pushes patch from/to AICP Gerrit Review.
-- aicprebase:   Rebase a Gerrit change and push it again.
-- aicpremote:   Add git remote for AICP Gerrit Review.
-- aospremote:      Add git remote for matching AOSP repository.
-- cafremote:       Add git remote for matching CodeAurora repository.
-- githubremote:    Add git remote for AICP Github.
-- mka:             Builds using SCHED_BATCH on all processors.
-- mkap:            Builds the module(s) using mka and pushes them to the device.
-- cmka:            Cleans and builds using mka.
-- repodiff:        Diff 2 different branches or tags within the same repo
-- repolastsync:    Prints date and time of last repo sync.
-- reposync:        Parallel repo sync using ionice and SCHED_BATCH.
-- repopick:        Utility to fetch changes from Gerrit.
-- sort-blobs-list: Sort proprietary-files.txt sections with LC_ALL=C.
-- installboot:     Installs a boot.img to the connected device.
-- installrecovery: Installs a recovery.img to the connected device.
-EOF
-}
-
-function mk_timer()
-{
-    local start_time=$(date +"%s")
-    $@
-    local ret=$?
-    local end_time=$(date +"%s")
-    local tdiff=$(($end_time-$start_time))
-    local hours=$(($tdiff / 3600 ))
-    local mins=$((($tdiff % 3600) / 60))
-    local secs=$(($tdiff % 60))
-    local ncolors=$(tput colors 2>/dev/null)
-    echo
-    if [ $ret -eq 0 ] ; then
-        echo -n "#### make completed successfully "
-    else
-        echo -n "#### make failed to build some targets "
-    fi
-    if [ $hours -gt 0 ] ; then
-        printf "(%02g:%02g:%02g (hh:mm:ss))" $hours $mins $secs
-    elif [ $mins -gt 0 ] ; then
-        printf "(%02g:%02g (mm:ss))" $mins $secs
-    elif [ $secs -gt 0 ] ; then
-        printf "(%s seconds)" $secs
-    fi
-    echo " ####"
-    echo
-    return $ret
-}
-
 CLANG_VERSION=$(${ANDROID_BUILD_TOP}/build/soong/scripts/get_clang_version.py)
 export LLVM_AOSP_PREBUILTS_VERSION="${CLANG_VERSION}"
 
@@ -67,12 +12,12 @@ function check_product()
         echo "Couldn't locate the top of the tree. Try setting TOP." >&2
         return
     fi
-    if (echo -n $1 | grep -q -e "^aicp_") ; then
-        AICP_BUILD=$(echo -n $1 | sed -e 's/^aicp_//g')
+    if (echo -n $1 | grep -q -e "^lineage_") ; then
+        LINEAGE_BUILD=$(echo -n $1 | sed -e 's/^lineage_//g')
     else
-        AICP_BUILD=
+        LINEAGE_BUILD=
     fi
-    export AICP_BUILD
+    export LINEAGE_BUILD
 
         TARGET_PRODUCT=$1 \
         TARGET_RELEASE=$2 \
@@ -95,23 +40,11 @@ function brunch()
     return $?
 }
 
-function brunchopen()
-{
-    breakfast $*
-    if [ $? -eq 0 ]; then
-        mka bacon && xdg-open $ANDROID_PRODUCT_OUT
-    else
-        echo "No such item in brunch menu. Try 'breakfast'"
-        return 1
-    fi
-    return $?
-}
-
 function breakfast()
 {
     target=$1
     local variant=$2
-    source ${ANDROID_BUILD_TOP}/vendor/aicp/vars/aosp_target_release
+    source ${ANDROID_BUILD_TOP}/vendor/lineage/vars/aosp_target_release
 
     if [ $# -eq 0 ]; then
         # No arguments, so let's have the full menu
@@ -126,7 +59,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            lunch aicp_$target-$aosp_target_release-$variant
+            lunch lineage_$target-$aosp_target_release-$variant
         fi
     fi
     return $?
@@ -137,7 +70,7 @@ alias bib=breakfast
 function eat()
 {
     if [ "$OUT" ] ; then
-        ZIPPATH=`ls -tr "$OUT"/aicp_*.zip | tail -1`
+        ZIPPATH=`ls -tr "$OUT"/lineage-*.zip | tail -1`
         if [ ! -f $ZIPPATH ] ; then
             echo "Nothing to eat"
             return 1
@@ -145,13 +78,13 @@ function eat()
         echo "Waiting for device..."
         adb wait-for-device-recovery
         echo "Found device"
-        if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD"); then
+        if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD"); then
             echo "Rebooting to sideload for install"
             adb reboot sideload-auto-reboot
             adb wait-for-sideload
             adb sideload $ZIPPATH
         else
-            echo "The connected device does not appear to be $AICP_BUILD, run away!"
+            echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
         fi
         return $?
     else
@@ -275,43 +208,43 @@ function dddclient()
    fi
 }
 
-function aicpremote()
+function lineageremote()
 {
     if ! git rev-parse --git-dir &> /dev/null
     then
         echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
         return 1
     fi
-    git remote rm aicp 2> /dev/null
+    git remote rm lineage 2> /dev/null
     local REMOTE=$(git config --get remote.github.projectname)
-    local AICP="true"
+    local LINEAGE="true"
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.aosp.projectname)
-        AICP="false"
+        LINEAGE="false"
     fi
     if [ -z "$REMOTE" ]
     then
         REMOTE=$(git config --get remote.clo.projectname)
-        AICP="false"
+        LINEAGE="false"
     fi
 
-    if [ $AICP = "false" ]
+    if [ $LINEAGE = "false" ]
     then
         local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
-        local PFX="AICP/"
+        local PFX="LineageOS/"
     else
         local PROJECT=$REMOTE
     fi
 
-    local AICP_USER=$(git config --get review.gerrit.aicp-rom.com.username)
-    if [ -z "$AICP_USER" ]
+    local LINEAGE_USER=$(git config --get review.review.lineageos.org.username)
+    if [ -z "$LINEAGE_USER" ]
     then
-        git remote add aicp ssh://gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add lineage ssh://review.lineageos.org:29418/$PFX$PROJECT
     else
-        git remote add aicp ssh://$AICP_USER@gerrit.aicp-rom.com:29418/$PFX$PROJECT
+        git remote add lineage ssh://$LINEAGE_USER@review.lineageos.org:29418/$PFX$PROJECT
     fi
-    echo "Remote 'aicp' created"
+    echo "Remote 'lineage' created"
 }
 
 function aospremote()
@@ -393,22 +326,8 @@ function githubremote()
 
     local PROJECT=$(echo $REMOTE | sed -e "s#platform/#android/#g; s#/#_#g")
 
-    git remote add github https://github.com/AICP/$PROJECT
+    git remote add github https://github.com/LineageOS/$PROJECT
     echo "Remote 'github' created"
-}
-
-function privateremote()
-{
-    if ! git rev-parse --git-dir &> /dev/null
-    then
-        echo ".git directory not found. Please run this from the root directory of the Android repository you wish to set up."
-        return 1
-    fi
-    git remote rm private 2> /dev/null
-    local PROJECT=$(git config --get remote.github.projectname)
-
-    git remote add private git@github.com:$PROJECT.git
-    echo "Remote 'private' created"
 }
 
 function privateremote()
@@ -452,14 +371,14 @@ function installboot()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
+    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/boot.img /cache/
         adb shell dd if=/cache/boot.img of=$PARTITION
         adb shell rm -rf /cache/boot.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $AICP_BUILD, run away!"
+        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
     fi
 }
 
@@ -490,18 +409,18 @@ function installrecovery()
     adb wait-for-device-recovery
     adb root
     adb wait-for-device-recovery
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD");
+    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD");
     then
         adb push $OUT/recovery.img /cache/
         adb shell dd if=/cache/recovery.img of=$PARTITION
         adb shell rm -rf /cache/recovery.img
         echo "Installation complete."
     else
-        echo "The connected device does not appear to be $AICP_BUILD, run away!"
+        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
     fi
 }
 
-function aicpgerrit() {
+function lineagegerrit() {
     if [ "$(basename $SHELL)" = "zsh" ]; then
         # zsh does not define FUNCNAME, derive from funcstack
         local FUNCNAME=$funcstack[1]
@@ -511,7 +430,7 @@ function aicpgerrit() {
         $FUNCNAME help
         return 1
     fi
-    local user=`git config --get review.gerrit.aicp-rom.com.username`
+    local user=`git config --get review.review.lineageos.org.username`
     local review=`git config --get remote.github.review`
     local project=`git config --get remote.github.projectname`
     local command=$1
@@ -547,7 +466,7 @@ EOF
             case $1 in
                 __cmg_*) echo "For internal use only." ;;
                 changes|for)
-                    if [ "$FUNCNAME" = "aicpgerrit" ]; then
+                    if [ "$FUNCNAME" = "lineagegerrit" ]; then
                         echo "'$FUNCNAME $1' is deprecated."
                     fi
                     ;;
@@ -640,7 +559,7 @@ EOF
                 ${local_branch}:refs/for/$remote_branch || return 1
             ;;
         changes|for)
-            if [ "$FUNCNAME" = "aicpgerrit" ]; then
+            if [ "$FUNCNAME" = "lineagegerrit" ]; then
                 echo >&2 "'$FUNCNAME $command' is deprecated."
             fi
             ;;
@@ -739,15 +658,15 @@ EOF
     esac
 }
 
-function aicprebase() {
+function lineagerebase() {
     local repo=$1
     local refs=$2
     local pwd="$(pwd)"
     local dir="$(gettop)/$repo"
 
     if [ -z $repo ] || [ -z $refs ]; then
-        echo "AICP Gerrit Rebase Usage: "
-        echo "      aicprebase <path to project> <patch IDs on Gerrit>"
+        echo "LineageOS Gerrit Rebase Usage: "
+        echo "      lineagerebase <path to project> <patch IDs on Gerrit>"
         echo "      The patch IDs appear on the Gerrit commands that are offered."
         echo "      They consist on a series of numbers and slashes, after the text"
         echo "      refs/changes. For example, the ID in the following command is 26/8126/2"
@@ -768,7 +687,7 @@ function aicprebase() {
     echo "Bringing it up to date..."
     repo sync .
     echo "Fetching change..."
-    git fetch "http://gerrit.aicp-rom.com/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
+    git fetch "http://review.lineageos.org/p/$repo" "refs/changes/$refs" && git cherry-pick FETCH_HEAD
     if [ "$?" != "0" ]; then
         echo "Error cherry-picking. Not uploading!"
         return
@@ -852,7 +771,7 @@ function dopush()
         echo "Device Found."
     fi
 
-    if (adb shell getprop ro.lineage.device | grep -q "$AICP_BUILD") || [ "$FORCE_PUSH" = "true" ];
+    if (adb shell getprop ro.lineage.device | grep -q "$LINEAGE_BUILD") || [ "$FORCE_PUSH" = "true" ];
     then
     # retrieve IP and PORT info if we're using a TCP connection
     TCPIPPORT=$(adb devices \
@@ -971,7 +890,7 @@ EOF
     rm -f $OUT/.log
     return 0
     else
-        echo "The connected device does not appear to be $AICP_BUILD, run away!"
+        echo "The connected device does not appear to be $LINEAGE_BUILD, run away!"
     fi
 }
 
@@ -996,7 +915,7 @@ function fixup_common_out_dir() {
     common_out_dir=$(_get_build_var_cached OUT_DIR)/target/common
     target_device=$(_get_build_var_cached TARGET_DEVICE)
     common_target_out=common-${target_device}
-    if [ ! -z $AICP_FIXUP_COMMON_OUT ]; then
+    if [ ! -z $LINEAGE_FIXUP_COMMON_OUT ]; then
         if [ -d ${common_out_dir} ] && [ ! -L ${common_out_dir} ]; then
             mv ${common_out_dir} ${common_out_dir}-${target_device}
             ln -s ${common_target_out} ${common_out_dir}
@@ -1016,7 +935,7 @@ function build_kernel() {
         echo "Skipping kernel build"
         return
     fi
-    local lineage_version="lineage-$(_get_build_var_cached LINEAGE_VERSION_MAJOR).$(_get_build_var_cached LINEAGE_VERSION_MINOR)"
+    local lineage_version="lineage-$(_get_build_var_cached PRODUCT_VERSION_MAJOR).$(_get_build_var_cached PRODUCT_VERSION_MINOR)"
 
     local target_kernel_device="$(_get_build_var_cached TARGET_KERNEL_DEVICE)"
     local target_kernel_dir="${ANDROID_BUILD_TOP}/$(_get_build_var_cached TARGET_KERNEL_DIR)"
@@ -1058,8 +977,8 @@ function build_kernel() {
         echo "Syncing ${KERNEL_BUILD_TOP}"
         local target_kernel_manifest=$(echo android_kernel_${target_kernel_source}_manifest | tr / _)
         local repo_init_args=("-b" "${lineage_version}")
-        if [ -n "${AICP_MIRROR}" ]; then
-            repo_init_args+=("--reference" "${AICP_MIRROR}")
+        if [ -n "${LINEAGE_MIRROR}" ]; then
+            repo_init_args+=("--reference" "${LINEAGE_MIRROR}")
         fi
         if [ -n "${REPO_VERSION}" ]; then
             repo_init_args+=("--repo-rev" "${REPO_VERSION}")
@@ -1102,33 +1021,4 @@ function build_kernel() {
     cp -a "${KERNEL_BUILD_TOP}/out/${target_kernel_device}/dist/"* "${target_kernel_dir}/"
     chmod -x "${target_kernel_dir}/"*
     echo "Kernel build output copied to ${target_kernel_dir}/"
-
-}
-
-function sync_all_kernels() {
-    source ${ANDROID_BUILD_TOP}/vendor/aicp/vars/kernel_platform
-
-    for kver in "${!kernel_branches[@]}"; do
-        BRANCH="${kernel_branches[$kver]}"
-        KERNELVER=$(echo "$BRANCH" |awk -F"-" '{ print $3 }');
-        KERNELPATH=$(realpath ${ANDROID_BUILD_TOP}/../kernel-${KERNELVER})
-        if [ ! -d "${KERNELPATH}" ]; then
-            echo Initializing kernel-${KERNELVER};
-            mkdir -p ${KERNELPATH}
-            pushd ${KERNELPATH}
-            repo init -u $kernel_manifest_url -b $BRANCH
-            reposync
-            popd
-        else
-            echo Updating kernel-${KERNELVER};
-            pushd ${KERNELPATH}
-            CURBRANCH=$(repo info |grep '^Manifest merge branch' |awk -F'/' '{ print $NF }')
-            if [ "$CURBRANCH" != "$BRANCH" ]; then
-                echo Updating kernel-${KERNELVER} from $CURBRANCH to $BRANCH
-                repo init -b $BRANCH
-            fi
-            reposync
-            popd
-        fi
-    done
 }

@@ -61,7 +61,7 @@
 #   USE_CCACHE                         = Enable ccache (global Android flag)
 #   USE_RBE                            = Enable RBE (global Android flag)
 
-include vendor/aicp/build/core/utils.mk
+include vendor/lineage/build/core/utils.mk
 
 BUILD_TOP := $(abspath .)
 
@@ -133,7 +133,7 @@ endif
 
 # ccache can't cache anything behind another wrapper, so it gives way to RBE
 ifneq ($(KERNEL_RBE_WRAPPER),)
-    KERNEL_CC_WRAPPER := $(BUILD_TOP)/vendor/aicp/build/tools/kernel_rbe_cc.sh
+    KERNEL_CC_WRAPPER := $(BUILD_TOP)/vendor/lineage/build/tools/kernel_rbe_cc.sh
 else
     KERNEL_CC_WRAPPER := $(CCACHE_BIN)
 endif
@@ -145,7 +145,7 @@ KERNEL_MAKE_FLAGS :=
 KERNEL_MAKE_FLAGS += -j$(shell getconf _NPROCESSORS_ONLN)
 
 TOOLS_PATH_OVERRIDE := \
-    HIP_PATH=none PERL5LIB=$(BUILD_TOP)/prebuilts/tools-aicp/common/perl-base
+    HIP_PATH=none PERL5LIB=$(BUILD_TOP)/prebuilts/tools-lineage/common/perl-base
 
 ifneq ($(KERNEL_NO_GCC), true)
     GCC_PREBUILTS := $(BUILD_TOP)/prebuilts/gcc/$(HOST_PREBUILT_TAG)
@@ -224,9 +224,9 @@ ifneq ($(KERNEL_NO_GCC), true)
 
     ifeq ($(KERNEL_ARCH),arm64)
         # Add 32-bit GCC to PATH so that arm-linux-androidkernel-as is available for CONFIG_COMPAT_VDSO
-        TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-aicp/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$(KERNEL_TOOLCHAIN_arm):$$PATH
+        TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$(KERNEL_TOOLCHAIN_arm):$$PATH
     else
-        TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-aicp/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$$PATH
+        TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$$PATH
     endif
 
     # Set the full path to the clang command and LLVM binutils
@@ -250,7 +250,7 @@ else
     KERNEL_MAKE_FLAGS += HOSTCFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -I$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/include"
     KERNEL_MAKE_FLAGS += HOSTLDFLAGS="$(KERNEL_HOST_C_LD_FLAGS_SYSROOT) -Wl,-rpath,$(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -L $(BUILD_TOP)/prebuilts/kernel-build-tools/linux-x86/lib64 -fuse-ld=lld --rtlib=compiler-rt"
 
-    TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-aicp/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$(TARGET_KERNEL_CLANG_PATH)/bin:$(BUILD_TOP)/prebuilts/rust/$(HOST_PREBUILT_TAG)/$(TARGET_KERNEL_RUST_VERSION)/bin:$(BUILD_TOP)/prebuilts/clang-tools/$(HOST_PREBUILT_TAG)/bin:$$PATH
+    TOOLS_PATH_OVERRIDE += PATH=$(BUILD_TOP)/prebuilts/tools-lineage/$(HOST_PREBUILT_TAG)/bin:$(BUILD_TOP)/prebuilts/build-tools/$(HOST_PREBUILT_TAG)/bin:$(TARGET_KERNEL_CLANG_PATH)/bin:$(BUILD_TOP)/prebuilts/rust/$(HOST_PREBUILT_TAG)/$(TARGET_KERNEL_RUST_VERSION)/bin:$(BUILD_TOP)/prebuilts/clang-tools/$(HOST_PREBUILT_TAG)/bin:$$PATH
 endif
 
 # Set DTBO image locations so the build system knows to build them
