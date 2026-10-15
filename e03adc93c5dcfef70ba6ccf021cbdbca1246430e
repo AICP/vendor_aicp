@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0bcb999b_9e12e392",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 774
+      },
+      "writtenOn": "2026-10-15T18:58:43Z",
+      "side": 1,
+      "message": "Not sure if we still need the aosp recovery flag",
+      "revId": "e03adc93c5dcfef70ba6ccf021cbdbca1246430e",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
