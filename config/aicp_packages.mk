@@ -76,9 +76,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.recovery_update=true
 endif
 
-# Include AOSP audio files
-include vendor/aicp/config/aosp_audio.mk
-
 # Google sounds
 include vendor/aicp/google/GoogleAudio.mk
 
