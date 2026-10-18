@@ -130,11 +130,11 @@ $(call enforce-product-packages-exist-internal,$(lastword $(_include_stack)),pro
 endif
 
 # Bootanimation
-#TARGET_SCREEN_WIDTH ?= 1080
-#TARGET_SCREEN_HEIGHT ?= 1920
-#PRODUCT_PACKAGES += \
-#    bootanimation.zip \
-#    bootanimation-dark.zip
+TARGET_SCREEN_WIDTH ?= 1080
+TARGET_SCREEN_HEIGHT ?= 1920
+PRODUCT_PACKAGES += \
+    bootanimation.zip \
+    bootanimation-dark.zip
 
 # Lineage interfaces
 PRODUCT_PACKAGES += \

@@ -16,10 +16,6 @@ PRODUCT_PACKAGES += \
     otapreopt_script
 endif
 
-# Bootanimation include
-PRODUCT_PACKAGES += \
-    bootanimation.zip
-
 # System Allow List
 PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/clean_cache.sh \
